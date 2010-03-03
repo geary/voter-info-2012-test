@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+
+<ModulePrefs
+    title="Google Voter Info on GigaPad"
+    description="Google Voter Info on GigaPad"
+    author="Michael Geary, Daniel Berlin, Jonathan Blocksom"
+    author_affiliation="Google, Inc."
+    author_email="elections@google.com"
+    thumbnail=""
+    screenshot=""
+    title_url=""
+    height="1000">
+  <Require feature="sharedmap"/>
+  <Require feature="dynamic-height"/>
+  <Require feature="analytics"/>
+</ModulePrefs>
+
+<Content type="html">
+<![CDATA[
+
+<script type="text/javascript">
+	
+	// To make a local testing mapplet:
+	// 1. Check out the election-gadgets code into a directory
+	// within the webroot on your local machine (which must be
+	// running a web server).
+	// 2. Make a copy of this .xml file with a new name.
+	// 3. Edit that copy and change the baseUrl below to point to
+	// the election-gadgets directory on your local test machine.
+	// 4. Upload this .xml file to any public server.
+	// 5. Load that public .xml mapplet into Maps as usual.
+	// When you reload the mapplet, it will load the JavaScript code
+	// directly from your local machine with a cachebuster.
+
+	var opt = {
+		mapplet: true,
+		debug: true,
+		
+		baseUrl: 'http://yourlocalhost/yourpath/election-gadgets/voter-info/',
+		
+		MODULE_ID: __MODULE_ID__,
+		BIDI_START_EDGE: '__BIDI_START_EDGE__',
+		BIDI_END_EDGE: '__BIDI_END_EDGE__',
+		BIDI_DIR: '__BIDI_DIR__',
+		BIDI_REVERSE_DIR: '__BIDI_REVERSE_DIR__',
+		
+		writeScript: function( name ) {
+			// Load script with a cachebuster
+			document.write(
+				'<script type="text/javascript" src="', opt.baseUrl, name, '?t=', +new Date(), '">',
+				'<\/script>'
+			);
+		}
+	};
+	
+	opt.writeScript( 'voter-info.js' );
+	
+</script>
+
+]]>
+</Content>
+
+</Module>
