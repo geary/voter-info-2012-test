@@ -63,6 +63,20 @@ function S() {
 	return Array.prototype.join.call( arguments, '' );
 }
 
+function analytics( path ) {
+	function fixHttp( url ) {
+		return url.replace( /http:\/\//, 'http/' ).replace( /mailto:/, 'mailto/' );
+	}
+	if( path.indexOf( 'http://maps.gmodules.com/ig/ifr' ) == 0 ) return;
+	if( path.indexOf( 'http://maps.google.com/maps?f=d' ) == 0 ) path = '/directions';
+	//path = ( opt.maker ? '/creator/' : opt.home ? '/onebox/' : opt.mapplet ? '/mapplet/' : opt.inline ? '/inline/' : '/gadget/' ) + fixHttp(path);
+	path = '/iraq/' + fixHttp(path);
+	path = '/' + fixHttp(document.referrer) + '/' + path;
+	path = path.replace( /\/+/g, '/' );
+	if( opt.debug ) window.console && console.log( 'analytics', path );
+	else _IG_Analytics( 'UA-5730550-1', path );
+}
+
 // Main mapplet code
 
 var map = new GMap2;
@@ -81,7 +95,7 @@ document.write(
 		
 		'<div style="margin:12px 0;">',
 			'In partnership with the ',
-			'<a target="_blank" href="http://ocv-ihec.com/">',
+			'<a target="_blank" href="http://ocv-ihec.com/EnglishHome.asp">',
 				'Iraq High Electoral Commission',
 			'</a>',
 			'.',
@@ -115,8 +129,8 @@ document.write(
 				'<li>Governorate (governorate identification documents)</li>',
 			'</ol>',
 			'You can find more information on the Iraq High Electoral Commission Out of Country Voting website: ',
-			'<a target="_blank" href="http://ocv-ihec.com/">',
-				'www.ocv-ihec.com',
+			'<a target="_blank" href="http://ocv-ihec.com/EnglishHome.asp">',
+				'http://ocv-ihec.com/EnglishHome.asp',
 			'</a>',
 		'</div>',
 		
@@ -151,6 +165,7 @@ function addMarker( location ) {
 	};
 	var html = formatLocation( location );
 	marker.bindInfoWindowHtml( html, options );
+	GEvent.addListener( marker, 'click', function() { analytics( 'location/' + location.city ); } );
 	return marker;
 }
 	
@@ -179,6 +194,10 @@ $(function() {
 	
 	zoom();
 	
+	$('a').click( function() {
+		analytics( 'click/' + this.href );
+	});
+	
 	$('#locations')
 		.html(
 			locationStrings.mapjoin( function( string, index ) {
@@ -201,12 +220,14 @@ $(function() {
 				var index = $target.attr('href').split('#')[1];
 				var location = locations[index];
 				location.marker.openInfoWindowHtml( formatLocation(location) );
+				analytics( 'location/' + location.city );
 			}
 			return false;
 		});
 		
 	_IG_AdjustIFrameHeight();
 	
+	analytics( 'view' );
 });
 	
 })();
