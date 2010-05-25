@@ -22,6 +22,8 @@ function writeScript( url ) {
 	document.write( '<script type="text/javascript" src="', url, '"></script>' );
 }
 
+writeScript( 'http://www.google.com/jsapi' );
+
 function parseQuery( query ) {
 	var params = {};
 	if( query ) {
@@ -676,6 +678,8 @@ function gadgetWrite() {
 			'#wrapper, #wrapper * { ', fontStyle, ' }',
 			'#previewmap, #mapbox { overflow: auto; }',
 			'.heading { font-weight:bold; font-size:110%; }',
+			'.orange { padding:6px; width:95%; background-color:#FFEAC0; border:1px solid #FFBA90; }',
+			'.pink { padding:6px; width:95%; background-color:#FFD0D0; border:1px solid #FF9090; }',
 			params.home ? '.removehelp { display:none; }' : '',
 		'</style>'
 	);
@@ -856,6 +860,30 @@ function gadgetReady() {
 		var state = home.info.state;
 		if( ! state  ||  state == stateUS ) return '';
 		
+		var estimate = a.estimate ? expander(
+			S(
+				'<div style="margin-top:0.5em; font-size:90%;">',
+					'Not your home state?',
+				'</div>'
+			),
+			S(
+				'<div class="pink">',
+					'<div>',
+						'Sorry we got your location wrong!',
+					'</div>',
+					'<div style="margin-top:0.5em;">',
+						'It was our best guess based on your computer\'s ',
+						'<a target="_blank" href="http://www.google.com/search?q=ip+address">',
+							'IP address',
+						'</a>',
+					'</div>',
+					'<div style="margin-top:0.5em;">',
+						'Enter your home address in the box above and click Search for more accurate information.',
+					'</div>',
+				'</div>'
+			)
+		) : '';
+		
 		var sameDay = state.gsx$sameday.$t != 'TRUE' ? '' : S(
 			'<div style="margin-bottom:0.5em;">',
 				state.name, ' residents may register to vote at their polling place on Election Day:<br />',
@@ -984,6 +1012,7 @@ function gadgetReady() {
 						state.gsx$hotline.$t,
 					'</span>',
 				'</div>',
+				estimate,
 				formatLeo(),
 			'</div>'
 		);
@@ -2206,6 +2235,18 @@ function gadgetReady() {
 				});
 			}
 			
+			var loc = google.loader && google.loader.ClientLocation;
+			if( ! loc ) return;
+			var address = loc && loc.address;
+			if( address  &&  address.country == 'USA' ) {
+				var state = stateByAbbr( address.region );
+				if( state ) {
+					home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
+					$details.prepend( electionInfo({ estimate:true }) );
+					params.state = address.region;
+				}
+			}
+			
 			zoom = function( state ) {
 				function latlng( lat, lng ) { return new GLatLng( +lat.$t, +lng.$t ) }
 				var bounds = new GLatLngBounds(
@@ -2220,7 +2261,6 @@ function gadgetReady() {
 			
 			if( mapplet ) {
 				map = new GMap2;
-				params.state = 'va';  // 2009
 				if( params.state )
 					zoom( statesByAbbr[ params.state.toUpperCase() ] );
 				
