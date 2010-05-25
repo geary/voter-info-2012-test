@@ -1,0 +1,143 @@
+// voter-info-templates.html
+// Copyright 2008-2009 Michael Geary
+// http://mg.to/
+// Free Beer and Free Speech License (any OSI license)
+// http://freebeerfreespeech.org/
+
+::style
+
+<!-- Begin US Voter Info gadget by Google -->
+<!-- Copy this entire block of code into your HTML page -->
+
+<style type="text/css">
+  /* Font */
+  #Poll411Gadget, #Poll411Gadget * { font-family:{{fontFamily}}; font-size:{{fontSize}}{{fontUnits}}; }
+  /* Sizes */
+  #Poll411Gadget, #Poll411Form { width:{{width}}px; }
+  #Poll411Frame { width:100%; height:{{height}}px; }
+  /* Colors */
+  #Poll411Gadget { border:1px solid #AAA; }
+  #Poll411Input.example { color:#666; }
+  #Poll411Frame { border-top:1px solid #DDD; }
+  /* Layout */
+  #Poll411Gadget { margin:0; padding:6px; }
+  #Poll411Title { padding-bottom:4px; }
+  #Poll411Form { margin:0; padding:0; vertical-align:middle; }
+  #Poll411InputCell { width:99%; padding-right:8px; }
+  #Poll411ButtonCell { width:1%; }
+  #Poll411Input { width:100%; }
+  #Poll411Frame { display:none; margin-top:6px; }
+</style>
+
+::html
+
+<div id="Poll411Gadget">
+  <div id="Poll411Title">
+    {{prompt}}
+  </div>
+  <form id="Poll411Form" onsubmit="return Poll411.submit()">
+    <table cellpadding="0" cellspacing="0" style="width:100%;">
+      <tr valign="middle">
+        <td id="Poll411InputCell">
+          <input type="text" id="Poll411Input" class="example" onfocus="Poll411.focus()" onblur="Poll411.blur()" />
+        </td>
+        <td id="Poll411ButtonCell">
+          <button type="submit" id="Poll411Button"> Search</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+  <div id="Poll411Frame">
+  </div>
+</div>
+
+::scoop
+
+<div id="Poll411Gadget" style="border:none; padding:0 0 6px 0;">
+  <div id="Poll411Title">
+    Enter your address to find a Ben & Jerry&#146;s near your voting location:
+  </div>
+  <form id="Poll411Form" onsubmit="return Poll411.submit()">
+    <table cellpadding="0" cellspacing="0" style="width:100%;">
+      <tr valign="middle">
+        <td style="width:99%;">
+          <input type="text" id="Poll411Input" class="example" onfocus="Poll411.focus()" onblur="Poll411.blur()" />
+        </td>
+        <td style="width:1%;">
+          <button type="submit" id="Poll411Button"> Search</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+  <div id="Poll411Frame">
+  </div>
+</div>
+
+::scoop1
+
+<div id="Poll411Gadget" style="border:none; padding:0 0 6px 0;">
+  <div id="Poll411Title">
+    Enter your address to find your voting location:
+  </div>
+  <form id="Poll411Form" onsubmit="return Poll411.submit()">
+    <table cellpadding="0" cellspacing="0" style="width:100%;">
+      <tr valign="middle">
+        <td style="width:99%;">
+          <input type="text" id="Poll411Input" class="example" onfocus="Poll411.focus()" onblur="Poll411.blur()" />
+        </td>
+        <td style="width:1%;">
+          <button type="submit" id="Poll411Button"> Search</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+  <div id="Poll411Frame">
+  </div>
+</div>
+
+::script
+
+<script type="text/javascript">
+  (function() {
+    var fontFamily = '{{fontFamily}}', fontSize = '{{fontSize}}', fontUnits = '{{fontUnits}}';
+    function e( id ) { return document.getElementById('Poll411'+id); }
+    var label = e('Label'), input = e('Input'), button = e('Button'), frame = e('Frame');
+    
+    var example = "{{example}}";
+    input.value = example;
+    
+    Poll411 = {
+      
+      focus: function() {
+        if( input.value == example ) {
+          input.className = '';
+          input.value = '';
+        }
+      },
+      
+      blur: function() {
+        if( input.value ==  ''  ||  input.value == example ) {
+          input.className = 'example';
+          input.value = example;
+        }
+      },
+      
+      submit: function() {
+        var addr = input.value;
+        if( addr == example ) addr = addr.replace( /^.*: /, '' );
+        frame.style.display = 'block';
+        frame.innerHTML = [
+          '<iframe ',
+            'src="http://www.gmodules.com/ig/ifr?url={{gadget}}&amp;synd=open&amp;up_gadgetType=iframe&amp;up_address=', encodeURIComponent(addr), '&amp;up_fontFamily=', encodeURIComponent(fontFamily), '&amp;up_fontSize=', fontSize, '&amp;up_fontUnits=', fontUnits, '&amp;up_submit=1" ',
+            'style="width:100%; height:100%;" ',
+            'frameborder="0" ',
+            'scrolling="no" ',
+          '/>'
+        ].join('');
+        return false;
+      }
+    };
+  })();
+</script>
+
+<!-- End US Voter Info gadget by Google -->
