@@ -117,7 +117,6 @@ def readShapefile( filename ):
 		if shape['type'] != 5: continue
 		info = feature['info']
 		name = info['NAME'].decode( 'cp850' ).encode( 'utf-8' )
-		print name
 		name = re.sub( '^(\d+)\x00.*$', 'CD\\1', name )  # congressional district
 		name = districtNames.get( name, name )
 		state = info['STATE']
