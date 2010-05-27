@@ -148,12 +148,14 @@ def readShapefile( filename ):
 			points = part['points']
 			for j in xrange(n):
 				point = points[j]
-				pts.append( '[%.4f,%.4f]' %( float(point[0]), float(point[1]) ) )
-			shapes.append( '{"area":%.4f,"bounds":[[%.4f,%.4f],[%.4f,%.4f]],"centroid":[%.4f,%.4f],"points":[%s]}' %(
-				area,
-				bounds[0][0], bounds[0][1], 
-				bounds[1][0], bounds[1][1], 
-				centroid[0], centroid[1],
+				#pts.append( '[%.4f,%.4f]' %( float(point[0]), float(point[1]) ) )
+				pts.append( '{x:%.4f,y:%.4f}' %( float(point[0]), float(point[1]) ) )
+			#shapes.append( '{area:%.4f,bounds:[[%.4f,%.4f],[%.4f,%.4f]],centroid:[%.4f,%.4f],points:[%s]}' %(
+			shapes.append( '{points:[%s]}' %(
+				#area,
+				#bounds[0][0], bounds[0][1], 
+				#bounds[1][0], bounds[1][1], 
+				#centroid[0], centroid[1],
 				','.join(pts)
 			) )
 	print '%d points in %d places' %( nPoints, len(places) )
@@ -165,7 +167,7 @@ def writeUS( places, path ):
 	keys.sort()
 	for key in keys:
 		abbr = states.byNumber[ places[key]['state'] ]['abbr'].lower()
-		writeJSON( '%s.json' % abbr, getPlaceJSON( places, key, abbr, 'state' ) )
+		writeJSON( '%s.js' % abbr, getPlaceJSON( places, key, abbr, 'state' ) )
 
 #def writeStates( places, path ):
 #	p = {}
@@ -192,7 +194,7 @@ def getPlaceJSON( places, key, state, type ):
 	if not place: return ''
 	bounds = place['bounds']
 	centroid = place['centroid']
-	return '{"name":"%s", "type":"%s","state":"%s","bounds":[[%.4f,%.4f],[%.4f,%.4f]],"centroid":[%.4f,%.4f],"shapes":[%s]}' %(
+	return '{name:"%s", type:"%s",state:"%s",bounds:[[%.4f,%.4f],[%.4f,%.4f]],centroid:[%.4f,%.4f],shapes:[%s]}' %(
 		key.split(keysep)[0],
 		type, state,
 		bounds[0][0], bounds[0][1], 

@@ -7,6 +7,8 @@
 
 (function() {
 
+var gem = GoogleElectionMap = {};
+
 // Utility functions and jQuery extensions
 
 // temp?
@@ -43,6 +45,8 @@ var params = parseQuery(
 		.replace( /^\?[^?]*\?/, '' )
 		.replace( '#', '&' )
 );
+
+params.state = 'or';
 
 if( ! Array.prototype.forEach ) {
 	Array.prototype.forEach = function( fun /*, thisp*/ ) {
@@ -2223,31 +2227,40 @@ function gadgetReady() {
 			
 			indexSpecialStates();
 			
-			function polyState() {
-				stateOutlinePolys.forEach( function( poly ) {
-					var pairs = poly.points.split('|');
-					var points = [];
-					for( var pair, i = -1;  pair = pairs[++i]; ) {
-						var p = pair.split(',');
-						points.push({ x:+p[1], y:+p[0] });
-					}
-					map.addOverlay( new GPolygon( points, '#000000', 2, .7, '#000000', .07 ) );
-				});
+			function polyState( abbr ) {
+				if( gem.currentPolys ) {
+					gem.currentPolys.forEach( function( polygon ) {
+						map.removeOverlay( polygon );
+					});
+					delete gem.currentPolys;
+				}
+				gem.currentAbbr = abbr = abbr.toLowerCase();
+				gem.shapeReady = function( json ) {
+					if( json.state != gem.currentAbbr ) return;
+					gem.currentPolys = [];
+					json.shapes.forEach( function( poly ) {
+						poly.points.push( poly.points[0] );
+						var polygon = new GPolygon( poly.points, '#000000', 2, .7, '#000000', .07 );
+						map.addOverlay( polygon );
+						gem.currentPolys.push( polygon );
+					});
+				};
+				$.getScript( S( opt.baseUrl, 'shapes/json/', abbr, '.js' ) );
 			}
 			
 			var loc = google.loader && google.loader.ClientLocation;
 			if( ! loc ) return;
 			var address = loc && loc.address;
 			if( address  &&  address.country == 'USA' ) {
-				var state = stateByAbbr( address.region );
+				params.state = params.state || address.region;
+				var state = stateByAbbr( params.state );
 				if( state ) {
 					home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
 					$details.prepend( electionInfo({ estimate:true }) );
-					params.state = address.region;
 				}
 			}
 			
-			zoom = function( state ) {
+			zoom = function( abbr, state ) {
 				function latlng( lat, lng ) { return new GLatLng( +lat.$t, +lng.$t ) }
 				var bounds = new GLatLngBounds(
 					latlng( state.gsx$south, state.gsx$west ),
@@ -2255,14 +2268,14 @@ function gadgetReady() {
 				);
 				GAsync( map, 'getBoundsZoomLevel', [ bounds ], function( zoom ) {
 					map.setCenter( bounds.getCenter(), zoom );
-					polyState();
+					polyState( abbr );
 				});
 			}
 			
 			if( mapplet ) {
 				map = new GMap2;
 				if( params.state )
-					zoom( statesByAbbr[ params.state.toUpperCase() ] );
+					zoom( params.state, statesByAbbr[ params.state.toUpperCase() ] );
 				
 				(function() {
 					function e( id ) { return document.getElementById('PollingPlaceSearch'+id); }
