@@ -46,7 +46,7 @@ var params = parseQuery(
 		.replace( '#', '&' )
 );
 
-params.state = 'or';
+//params.state = 'or';
 
 if( ! Array.prototype.forEach ) {
 	Array.prototype.forEach = function( fun /*, thisp*/ ) {
