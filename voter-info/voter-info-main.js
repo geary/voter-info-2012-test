@@ -2245,7 +2245,7 @@ function gadgetReady() {
 						gem.currentPolys.push( polygon );
 					});
 				};
-				$.getScript( S( opt.baseUrl, 'shapes/json/', abbr, '.js' ) );
+				$.getScript( cacheUrl( S( opt.baseUrl, 'shapes/json/', abbr, '.js' ) ) );
 			}
 			
 			var loc = google.loader && google.loader.ClientLocation;
