@@ -539,36 +539,44 @@ function infoLinks() {
 	);
 }
 
-var fullvips = 'state and local election officials from Iowa, Kansas, Maryland, Minnesota, Missouri, Montana, North Carolina, North Dakota, Ohio, Virginia, and Los Angeles County,';
-
-var attribution = S(
-	'<div style="', fontStyle, ' color:#333;">',
-		'<div style="font-size:85%; margin-top:0.5em; border-top:1px solid #BBB; padding-top:1em;">',
-			'Developed with ',
-			//'<span id="vips" style="font-size:100%;">',
-			//	'<a style="font-size:100%;" href="#" onclick="$(\'#vips\').html(fullvips); return false;">',
-			//		'state and local election officials',
-			//	'</a>',
-			//'</span>',
-			'the ',
+function attribution() {
+	//var fullvips = 'state and local election officials from Iowa, Kansas, Maryland, Minnesota, Missouri, Montana, North Carolina, North Dakota, Ohio, Virginia, and Los Angeles County,';
+	
+	var special = {
+		VA: S(
 			'<a style="font-size:100%;" target="_blank" href="http://www.sbe.virginia.gov/">',
 				'Virginia State Board of Elections',
-			'</a>',
-			' and the ',
-			'<a style="font-size:100%;" target="_blank" href="http://www.votinginfoproject.org/">',
-				'Voting Information Project',
-			'</a>',
-			'.',
-		'</div>',
-		//'<div style="font-size:85%; margin-top:0.75em;">',
-		//	'In conjunction with the ',
-		//	'<a style="font-size:100%;" target="_blank" href="http://www.lwv.org/">',
-		//		'League of Women Voters',
-		//	'</a>',
-		//	'.',
-		//'</div>',
-	'</div>'
-);
+			'</a>'
+		)
+	}[ home && home.info && home.info.state && home.info.state.abbr ] || '';
+	if( special ) special += ' and the ';
+
+	return S(
+		'<div style="', fontStyle, ' color:#333;">',
+			'<div style="font-size:85%; margin-top:0.5em; border-top:1px solid #BBB; padding-top:1em;">',
+				'Developed with ',
+				//'<span id="vips" style="font-size:100%;">',
+				//	'<a style="font-size:100%;" href="#" onclick="$(\'#vips\').html(fullvips); return false;">',
+				//		'state and local election officials',
+				//	'</a>',
+				//'</span>',
+				'the ',
+				special,
+				'<a style="font-size:100%;" target="_blank" href="http://www.votinginfoproject.org/">',
+					'Voting Information Project',
+				'</a>',
+				'.',
+			'</div>',
+			//'<div style="font-size:85%; margin-top:0.75em;">',
+			//	'In conjunction with the ',
+			//	'<a style="font-size:100%;" target="_blank" href="http://www.lwv.org/">',
+			//		'League of Women Voters',
+			//	'</a>',
+			//	'.',
+			//'</div>',
+		'</div>'
+	);
+}
 
 function formatInfoLocality( info ) {
 	var locality = info.city ? info.city : info.county ? info.county + ' County' : '';
@@ -764,7 +772,7 @@ function gadgetWrite() {
 				'</div>',
 				'<div id="wrapper">',
 					'<div id="detailsbox">',
-						attribution,
+						attribution(),
 					'</div>',
 					'<div id="mapbox">',
 					'</div>',
@@ -1285,7 +1293,7 @@ function gadgetReady() {
 				//'</div>',
 				//electionInfo(),
 				//infoLinks(),
-				//attribution
+				//attribution()
 			) );
 		}
 		
@@ -1326,7 +1334,7 @@ function gadgetReady() {
 					'</div>',
 					electionInfo(),
 					infoLinks(),
-					attribution,
+					attribution(),
 				'</div>'
 			);
 		}
@@ -1978,7 +1986,7 @@ function gadgetReady() {
 				stateLocator(),
 				home.info ? electionInfo() : '',
 				infoLinks(),
-				attribution,
+				attribution(),
 			'</div>'
 		) : S(
 			'<div>',
