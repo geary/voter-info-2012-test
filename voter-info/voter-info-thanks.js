@@ -5,7 +5,7 @@
 
 (function() {
 
-var img = _IG_GetCachedUrl( 'http://election-maps-2008.googlecode.com/svn/trunk/vote-icon-50.png' );
+var img = _IG_GetCachedUrl( 'http://election-gadgets.googlecode.com/hg/voter-info/vote-icon-50.png' );
 
 document.write(
 	'<div style="margin:.5em; font-family:Arial,sans-serif; font-size:10pt;">',
