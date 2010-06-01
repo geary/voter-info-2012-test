@@ -411,7 +411,7 @@ function formatDate( date ) {
 	);
 }
 
-var electionDay = new Date( 2009, 10, 3 );  // year, month-1, day
+var electionDay = new Date( 2010, 5, 8 );  // year, month-1, day
 
 var today = new Date;
 today.setHours( 0, 0, 0, 0 );
@@ -476,7 +476,7 @@ var key = 'ABQIAAAAL7MXzZBubnPtVtBszDCxeRTZqGWfQErE9pT-IucjscazSdFnjBSzjqfxm1CQj
 
 var electionHeader = S(
 	'<div>',
-		'<strong>March 2, 2010 Virginia special election</strong>',
+		'<strong>June, 2010 Election</strong>',
 	'</div>'
 );
 
@@ -724,7 +724,7 @@ function gadgetWrite() {
 				'<div id="PollingPlaceSearch">',
 					'<div class="PollingPlaceSearchTitle removehelp">',
 						'<div style="margin-bottom:4px;">',
-							'Find your Virginia voting location and more.<br />',
+							'Find your 2010 voting location and more.<br />',
 							'Enter the complete <strong>home</strong> address where you are registered to vote:',
 						'</div>',
 					'</div>',
