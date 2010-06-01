@@ -2212,7 +2212,7 @@ function gadgetReady() {
 			$('head').append( $(head) );
 			var part = pref.scoop1 ? 'scoop1' : pref.scoop ? 'scoop' : 'html';
 			$('body').prepend( T( part, variables ) );
-			setFiller();
+			//setFiller();
 			setGadgetPoll411();
 			$search = $('#Poll411Gadget');
 		}

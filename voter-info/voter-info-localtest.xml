@@ -2,8 +2,8 @@
 <Module>
 
 <ModulePrefs
-    title="Google Voter Info on GigaPad"
-    description="Google Voter Info on GigaPad"
+    title="Google Voter Info on Local Host"
+    description="Google Voter Info on Local Host"
     author="Michael Geary, Daniel Berlin, Jonathan Blocksom"
     author_affiliation="Google, Inc."
     author_email="elections@google.com"
@@ -37,7 +37,8 @@
 		mapplet: true,
 		debug: true,
 		
-		baseUrl: 'http://yourlocalhost/yourpath/election-gadgets/voter-info/',
+		baseUrl: 'http://yourlocalhost/election-gadgets/hg/voter-info/',
+		dataUrl: 'http://yourpublichost/election-gadgets/hg/voter-info/',
 		
 		MODULE_ID: __MODULE_ID__,
 		BIDI_START_EDGE: '__BIDI_START_EDGE__',
