@@ -679,7 +679,7 @@ function gadgetWrite() {
 	document.write(
 		'<style type="text/css">',
 			'body.gadget { margin:0; padding:0; }',
-			'#wrapper, #wrapper * { ', fontStyle, ' }',
+			'#wrapper { ', fontStyle, ' }',
 			'#previewmap, #mapbox { overflow: auto; }',
 			'.heading { font-weight:bold; font-size:110%; }',
 			'.orange { padding:6px; width:95%; background-color:#FFEAC0; border:1px solid #FFBA90; }',
