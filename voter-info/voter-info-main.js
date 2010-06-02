@@ -730,17 +730,29 @@ function gadgetWrite() {
 		document.write(
 			'<div id="outerlimits" style="margin-right:8px;">',
 				'<div id="PollingPlaceSearch">',
-					'<div class="PollingPlaceSearchTitle removehelp">',
-						'<div style="margin-bottom:4px;">',
-							'Find your 2010 voting location and more.<br />',
-							'Enter the complete <strong>home</strong> address where you are registered to vote:',
-						'</div>',
-					'</div>',
 					'<!--<div id="PollingPlaceSearchSpinner" class="PollingPlaceSearchSpinner">-->',
 					'<!--</div>-->',
 					'<div>',
 						'<form id="PollingPlaceSearchForm" class="PollingPlaceSearchForm" onsubmit="return PollingPlaceSearch.submit()">',
-							'<table style="width:100%;">',
+							'<div class="PollingPlaceSearchTitle removehelp">',
+								'<div style="margin-bottom:4px;">',
+									//'Find your 2010 voting location and more.<br />',
+									'Select your state for registration info:',
+								'</div>',
+							'</div>',
+							'<div style="margin-bottom:4px;">',
+								'<select id="PollingPlaceSelectState" style="width:100%;">',
+									'<option value="">',
+										'&nbsp;',
+									'</option>',
+								'</select>',
+							'</div>',
+							'<div class="PollingPlaceSearchTitle removehelp">',
+								'<div style="margin:8px 0 4px;">',
+									'Or enter the <strong>home</strong> address where you are registered to vote for local info:',
+								'</div>',
+							'</div>',
+							'<table cellpadding="0" cellspacing="0" style="width:100%;">',
 								'<tr>',
 									'<td style="width:99%;">',
 										'<div>',
@@ -749,9 +761,9 @@ function gadgetWrite() {
 											'" />',
 										'</div>',
 									'</td>',
-									'<td style="width:1%;">',
+									'<td style="width:1%; padding-left:4px;">',
 										'<div>',
-											'<button type="submit" id="PollingPlaceSearchButton" class="PollingPlaceSearchButton"> Search</button>',
+											'<button type="submit" id="PollingPlaceSearchButton" class="PollingPlaceSearchButton">Search</button>',
 										'</div>',
 									'</td>',
 								'</tr>',
@@ -2208,6 +2220,7 @@ function gadgetReady() {
 	};
 	
 	var $search,
+		$selectState,
 		$tabs = $('#tabs'),
 		$previewmap = $('#previewmap'),
 		$map = $('#mapbox'),
@@ -2225,6 +2238,8 @@ function gadgetReady() {
 			$search = $('#Poll411Gadget');
 		}
 		
+		$selectState = $('#PollingPlaceSelectState');
+		
 		// http://spreadsheets.google.com/feeds/list/p9CuB_zeAq5X-twnx_mdbKg/2/public/values?alt=json
 		var stateSheet = dataUrl + 'leo/states-spreadsheet.json';
 		
@@ -2233,6 +2248,11 @@ function gadgetReady() {
 				statesByAbbr[ state.abbr = state.gsx$abbr.$t ] = state;
 				statesByName[ state.name = state.gsx$name.$t ] = state;
 				states.push( state );
+				$selectState.append( S(
+					'<option value="', state.abbr, '">',
+						state.name,
+					'</option>'
+				) );
 			});
 			
 			indexSpecialStates();
@@ -2270,7 +2290,10 @@ function gadgetReady() {
 				}
 			}
 			
-			zoom = function( abbr, state ) {
+			zoom = function( abbr ) {
+				if( ! abbr ) return;
+				abbr = abbr.toUpperCase();
+				var state = statesByAbbr[abbr];
 				function latlng( lat, lng ) { return new GLatLng( +lat.$t, +lng.$t ) }
 				var bounds = new GLatLngBounds(
 					latlng( state.gsx$south, state.gsx$west ),
@@ -2284,8 +2307,11 @@ function gadgetReady() {
 			
 			if( mapplet ) {
 				map = new GMap2;
-				if( params.state )
-					zoom( params.state, statesByAbbr[ params.state.toUpperCase() ] );
+				zoom( params.state );
+				
+				$selectState.bind( 'change keyup', function( event ) {
+					zoom( $selectState.val() );
+				});
 				
 				(function() {
 					function e( id ) { return document.getElementById('PollingPlaceSearch'+id); }
