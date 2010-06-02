@@ -737,7 +737,7 @@ function gadgetWrite() {
 							'<div class="PollingPlaceSearchTitle removehelp">',
 								'<div style="margin-bottom:4px;">',
 									//'Find your 2010 voting location and more.<br />',
-									'Select your state for registration info:',
+									'Select your state for statewide election info:',
 								'</div>',
 							'</div>',
 							'<div style="margin-bottom:4px;">',
@@ -749,7 +749,7 @@ function gadgetWrite() {
 							'</div>',
 							'<div class="PollingPlaceSearchTitle removehelp">',
 								'<div style="margin:8px 0 4px;">',
-									'Or enter the <strong>home</strong> address where you are registered to vote for local info:',
+									'Or enter your <strong>home</strong> address for local info:',
 								'</div>',
 							'</div>',
 							'<table cellpadding="0" cellspacing="0" style="width:100%;">',
@@ -879,36 +879,17 @@ function gadgetReady() {
 		 return false;
 	}
 	
-	function electionInfo( a ) {
-		a = a || {};
-		var state = home.info.state;
+	function electionInfo() {
+		return S(
+			stateLocalInfo(),
+			infoLinks(),
+			attribution()
+		);
+	}
+	
+	function stateLocalInfo() {
+		var state = home && home.info && home.info.state;
 		if( ! state  ||  state == stateUS ) return '';
-		
-		var estimate = a.estimate ? expander(
-			S(
-				'<div style="margin-top:0.5em; font-size:90%;">',
-					'Not your home state?',
-				'</div>'
-			),
-			S(
-				'<div class="pink">',
-					'<div>',
-						'Sorry we got your location wrong!',
-					'</div>',
-					'<div style="margin-top:0.5em;">',
-						'It was our best guess based on your computer\'s IP address.',
-					'</div>',
-					'<div style="margin-top:0.5em;">',
-						'Enter your home address in the box above and click Search for more accurate information.',
-					'</div>',
-					'<div style="margin-top:0.5em; font-size:85%;">',
-						'<a target="_blank" href="http://www.google.com/search?q=ip+address+geolocation">',
-							'Learn about IP address geolocation',
-						'</a>',
-					'</div>',
-				'</div>'
-			)
-		) : '';
 		
 		var sameDay = state.gsx$sameday.$t != 'TRUE' ? '' : S(
 			'<div style="margin-bottom:0.5em;">',
@@ -1038,7 +1019,6 @@ function gadgetReady() {
 						state.gsx$hotline.$t,
 					'</span>',
 				'</div>',
-				estimate,
 				formatLeo(),
 			'</div>'
 		);
@@ -1303,9 +1283,7 @@ function gadgetReady() {
 				homeAndVote()//,
 				//'<div style="padding-top:1em">',
 				//'</div>',
-				//electionInfo(),
-				//infoLinks(),
-				//attribution()
+				//electionInfo()
 			) );
 		}
 		
@@ -1345,8 +1323,6 @@ function gadgetReady() {
 					'<div style="padding-top:1em">',
 					'</div>',
 					electionInfo(),
-					infoLinks(),
-					attribution(),
 				'</div>'
 			);
 		}
@@ -1996,9 +1972,7 @@ function gadgetReady() {
 					'Please check with your state or local election officials to find your voting location.',
 				'</div>',
 				stateLocator(),
-				home.info ? electionInfo() : '',
-				infoLinks(),
-				attribution(),
+				electionInfo(),
 			'</div>'
 		) : S(
 			'<div>',
@@ -2278,22 +2252,15 @@ function gadgetReady() {
 				$.getScript( cacheUrl( S( opt.baseUrl, 'shapes/json/', abbr, '.js' ) ) );
 			}
 			
-			var loc = google.loader && google.loader.ClientLocation;
-			if( ! loc ) return;
-			var address = loc && loc.address;
-			if( address  &&  address.country == 'USA' ) {
-				params.state = params.state || address.region;
-				var state = stateByAbbr( params.state );
-				if( state ) {
-					home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
-					$details.prepend( electionInfo({ estimate:true }) );
-				}
-			}
-			
-			zoom = function( abbr ) {
+			zoomTo = function( abbr ) {
 				if( ! abbr ) return;
 				abbr = abbr.toUpperCase();
 				var state = statesByAbbr[abbr];
+				if( ! state ) return;
+				$selectState.val( abbr );
+				home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
+				vote = null;
+				$details.html( electionInfo() );
 				function latlng( lat, lng ) { return new GLatLng( +lat.$t, +lng.$t ) }
 				var bounds = new GLatLngBounds(
 					latlng( state.gsx$south, state.gsx$west ),
@@ -2305,12 +2272,19 @@ function gadgetReady() {
 				});
 			}
 			
+			var abbr = params.state;
+			if( ! abbr ) {
+				var loc = google.loader && google.loader.ClientLocation;
+				var address = loc && loc.address;
+				if( address  &&  address.country == 'USA' ) abbr = address.region;
+			}
+			
 			if( mapplet ) {
 				map = new GMap2;
-				zoom( params.state );
+				zoomTo( abbr );
 				
 				$selectState.bind( 'change keyup', function( event ) {
-					zoom( $selectState.val() );
+					zoomTo( $selectState.val() );
 				});
 				
 				(function() {
