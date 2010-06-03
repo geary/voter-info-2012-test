@@ -70,7 +70,7 @@
 		old: true,  // TEMP
 
 		baseUrl: 'http://election-gadgets.googlecode.com/hg/voter-info/',
-		gadgetUrl: 'http://election-gadgets.googlecode.com/hg/voter-info/voter-info-frame.xml'
+		gadgetUrl: 'http://election-gadgets.googlecode.com/hg/voter-info/voter-info-frame.xml',
 		
 		MODULE_ID: __MODULE_ID__,
 		BIDI_START_EDGE: '__BIDI_START_EDGE__',
