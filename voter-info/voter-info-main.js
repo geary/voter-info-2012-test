@@ -393,9 +393,15 @@ var monthNames = [
 function formatDate( date ) {
 	date = new Date( date );
 	return S(
-		dayNames[ date.getDay() ], ', ',
 		monthNames[ date.getMonth() ], ' ',
 		date.getDate()
+	);
+}
+
+function formatDayDate( date ) {
+	return S(
+		dayNames[ new Date(date).getDay() ], ', ',
+		formatDate( date )
 	);
 }
 
@@ -412,7 +418,7 @@ today.setHours( 0, 0, 0, 0 );
 //	today = new Date( 2008,  9, 6 );
 //	document.write(
 //		'<div style="font-weight:bold;">',
-//			'Test date: ', formatDate( today ),
+//			'Test date: ', formatDayDate( today ),
 //		'</div>'
 //	);
 //}
@@ -907,45 +913,31 @@ function gadgetReady() {
 		var deadlineText = {
 			mail: {
 				type: 'registration',
-				left: 'Days left to register by mail',
-				last: 'Today is the last day to register by mail',
 				mustbe: 'Registration must be postmarked by:<br />'
 			},
 			receive: {
 				type: 'registration',
-				left: 'Days left for registration to be received by your election officials',
-				last: 'Today is the last day for registration to be received by your election officials',
-				mustbe: 'Registration must be received by:<br />'
+				mustbe: 'Election officials must receive your registration by:<br />'
 			},
 			inperson: {
 				type: 'registration',
-				left: 'Days left to register in person',
-				last: 'Today is the last day to register in person',
 				mustbe: 'In person registration allowed through:<br />'
 			},
 			armail: {
 				type: 'absentee ballot request',
-				left: 'Days left to request an absentee ballot by mail',
-				last: 'Today is the last day to request an absentee ballot by mail',
 				mustbe: 'Absentee ballot requests must be postmarked by '
 			},
 			arreceive: {
 				type: 'absentee ballot request',
-				left: 'Days left for absentee ballot request to be received by your election officials',
-				last: 'Today is the last day for an absentee ballot request to be received by your election officials',
-				mustbe: 'Absentee ballot requests must be received by '
+				mustbe: 'Election officials must receive your absentee ballot request by '
 			},
 			avmail: {
 				type: 'completed absentee ballot',
-				left: 'Days left to mail your completed absentee ballot',
-				last: 'Today is the last day to mail your completed absentee ballot',
 				mustbe: 'Completed absentee ballots must be postmarked by '
 			},
 			avreceive: {
 				type: 'completed absentee ballot',
-				left: 'Days left for a completed absentee ballot to be received by your election officials',
-				last: 'Today is the last day for a completed absentee ballot to be received by your election officials',
-				mustbe: 'Completed absentee ballots must be received by '
+				mustbe: 'Election officials must receive your completed absentee ballot by '
 			}
 		};
 		
@@ -1078,16 +1070,17 @@ function gadgetReady() {
 				'</div>'
 			);
 			
-			var last = remain < 1; //  ||  sunday && remain < 2;
+			var left = remain < 1 /* ||  sunday && remain < 2 */ ? S(
+				' (Today!)'
+			) : remain < 2 ? S(
+				' (Tomorrow!)'
+			) : remain < 31 ? S(
+				' (', remain, ' days from now)'
+			) : '';
 			return S(
 				'<div style="margin-bottom:0.75em;">',
-					last ? dt.last : S( dt.left, ': ', remain ),
+					dt.mustbe, formatDayDate(date), left,
 				'</div>',
-				last ? '' : S(
-					'<div style="margin-bottom:0.75em;">',
-						dt.mustbe, formatDate(date),
-					'</div>'
-				),
 				sundayNote
 			);
 		}
@@ -1303,8 +1296,8 @@ function gadgetReady() {
 				//formatHome()
 			) : S(
 				formatHome(),
-				'<div style="padding-top:0.75em">',
-				'</div>',
+				//'<div style="padding-top:0.75em">',
+				//'</div>',
 				location()/*,
 				locationWarning()*/
 			);
