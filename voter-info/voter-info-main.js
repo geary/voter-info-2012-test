@@ -851,25 +851,25 @@ function gadgetReady() {
 		);
 	}
 	
-	function expander( link, body ) {
-		return S(
-			'<div>',
-				'<div>',
-					'<a href="#" onclick="return expandit(this);">',
-						link,
-					'</a>',
-				'</div>',
-				'<div style="display:none; margin:8px;">',
-					body,
-				'</div>',
-			'</div>'
-		);
-	}
+	//function expander( link, body ) {
+	//	return S(
+	//		'<div>',
+	//			'<div>',
+	//				'<a href="#" onclick="return expandit(this);">',
+	//					link,
+	//				'</a>',
+	//			'</div>',
+	//			'<div style="display:none; margin:8px;">',
+	//				body,
+	//			'</div>',
+	//		'</div>'
+	//	);
+	//}
 	
-	expandit = function( node ) {
-		 $(node).parent().next().slideDown('slow');
-		 return false;
-	}
+	//expandit = function( node ) {
+	//	 $(node).parent().next().slideDown('slow');
+	//	 return false;
+	//}
 	
 	function electionInfo() {
 		var info = [];
