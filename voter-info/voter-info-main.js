@@ -823,7 +823,7 @@ function gadgetReady() {
 		if( ! state  ||  state == stateUS ) return '';
 		var url = state.gsx$wheretovote.$t;
 		return url ? S(
-			'<div style="margin:1em 0 .5em 0">',
+			'<div style="margin:0.5em 0">',
 				'Check your voting location on your<br />',
 				'<a target="_blank" href="', url, '">',
 					'State voting place locator',
@@ -1973,8 +1973,8 @@ function gadgetReady() {
 		return home && home.info ? S(
 			'<div>',
 				formatHome(),
-				'<div style="padding-top:0.75em">',
-				'</div>',
+				//'<div style="padding-top:0.75em">',
+				//'</div>',
 				//'<div style="margin-bottom:1em;">',
 				//	'We are unable to provide voting location information for your address at this time. ',
 				//	'Please check with your state or local election officials to find your voting location.',
