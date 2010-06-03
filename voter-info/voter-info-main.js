@@ -1653,11 +1653,14 @@ function gadgetReady() {
 	function getJSON( url, callback, cache ) {
 		fetch( url, function( text ) {
 			// TEMP
-			if( typeof text == 'string' ) text = text.replace( '"locality": }', '"locality":null }' );
+			//if( typeof text == 'string' ) text = text.replace( '"locality": }', '"locality":null }' );
 			// END TEMP
 			//console.log( 'getJson', url );
 			//console.log( text );
-			var json = typeof text == 'object' ? text : eval( '(' + text + ')' );
+			var json =
+				typeof text == 'object' ? text :
+				text == '' ? {} :
+				eval( '(' + text + ')' );
 			callback( json );
 		}, cache );
 	}
