@@ -517,12 +517,12 @@ function infoLinks() {
 			//		'http://m.google.com/elections',
 			//	'</a>',
 			//'</div>',
-			'<div style="margin:1em 0 1em 0;">',
-				'Help others find their voter information:<br />',
-				'<a target="_blank" href="http://gmodules.com/ig/creator?synd=open&url=http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget.xml">',
-					'Get this gadget for your website',
-				'</a>',
-			'</div>',
+			//'<div style="margin:1em 0 1em 0;">',
+			//	'Help others find their voter information:<br />',
+			//	'<a target="_blank" href="http://gmodules.com/ig/creator?synd=open&url=http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget.xml">',
+			//		'Get this gadget for your website',
+			//	'</a>',
+			//'</div>',
 		'</div>'
 	);
 }
