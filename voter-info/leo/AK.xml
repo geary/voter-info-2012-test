@@ -1,0 +1,243 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="1884245637">
+    <county_name>NOME</county_name>
+    <state_id>2</state_id>
+    <name>Becka Baker</name>
+    <title> Nome Regional Office Election Supervisor</title>
+    <phone> (907) 451-2835</phone>
+    <fax> (907) 451-2832</fax>
+    <email> becka.baker@alaska.gov</email>
+  </election_official>
+  <election_official id="77471266">
+    <county_name>WADE HAMPTON</county_name>
+    <state_id>2</state_id>
+    <name>Becka Baker</name>
+    <title> Nome Regional Office Election Supervisor</title>
+    <phone> (907) 443-5285</phone>
+    <fax> (907) 443-2973</fax>
+    <email> becka.baker@alaska.gov</email>
+  </election_official>
+  <election_official id="1717230847">
+    <county_name>NORTH SLOPE</county_name>
+    <state_id>2</state_id>
+    <name>Becka Baker</name>
+    <title> Nome Regional Office Election Supervisor</title>
+    <phone> (907) 451-2835</phone>
+    <fax> (907) 451-2832</fax>
+    <email> becka.baker@alaska.gov</email>
+  </election_official>
+  <election_official id="1966759589">
+    <county_name>ALEUTIANS EAST</county_name>
+    <state_id>2</state_id>
+    <name>Becka Baker</name>
+    <title> Nome Regional Office Election Supervisor</title>
+    <phone> (907) 443-5285</phone>
+    <fax> (907) 443-2973</fax>
+    <email> becka.baker@alaska.gov</email>
+  </election_official>
+  <election_official id="264507371">
+    <county_name>ALEUTIANS WEST</county_name>
+    <state_id>2</state_id>
+    <name>Becka Baker</name>
+    <title> Nome Regional Office Election Supervisor</title>
+    <phone> (907) 443-5285</phone>
+    <fax> (907) 443-2973</fax>
+    <email> becka.baker@alaska.gov</email>
+  </election_official>
+  <election_official id="41027844">
+    <county_name>DILLINGHAM</county_name>
+    <state_id>2</state_id>
+    <name>Becka Baker</name>
+    <title> Nome Regional Office Election Supervisor</title>
+    <phone> (907) 443-5285</phone>
+    <fax> (907) 443-2973</fax>
+    <email> michelle.speegle@alaska.gov</email>
+  </election_official>
+  <election_official id="1689436880">
+    <county_name>KENAI PENINSULA</county_name>
+    <state_id>2</state_id>
+    <name>Alyce Houston</name>
+    <title> Juneau Regional Office Election Supervisor</title>
+    <phone> (907) 465-3021</phone>
+    <fax> (907) 465-2289</fax>
+    <email> alyce.houston@alaska.gov</email>
+  </election_official>
+  <election_official id="582324517">
+    <county_name>PRINCE OF WALES-OUTER KETCHIKAN</county_name>
+    <state_id>2</state_id>
+    <name>Alyce Houston</name>
+    <title> Juneau Regional Office Election Supervisor</title>
+    <phone> (907) 465-3021</phone>
+    <fax> (907) 465-2289</fax>
+    <email> alyce.houston@alaska.gov</email>
+  </election_official>
+  <election_official id="">
+    <county_name>LAKE AND PENINSULA</county_name>
+    <state_id>2</state_id>
+  </election_official>
+  <election_official id="1216687860">
+    <county_name>SITKA</county_name>
+    <state_id>2</state_id>
+    <name>Alyce Houston</name>
+    <title> Juneau Regional Office Election Supervisor</title>
+    <phone> (907) 465-3021</phone>
+    <fax> (907) 465-2289</fax>
+    <email> alyce.houston@alaska.gov</email>
+  </election_official>
+  <election_official id="802886951">
+    <county_name>BRISTOL BAY</county_name>
+    <state_id>2</state_id>
+    <name>Becka Baker</name>
+    <title> Nome Regional Office Election Supervisor</title>
+    <phone> (907) 443-5285</phone>
+    <fax> (907) 443-2973</fax>
+    <email> becka.baker@alaska.gov</email>
+  </election_official>
+  <election_official id="2081864167">
+    <county_name>WRANGELL-PETERSBURG</county_name>
+    <state_id>2</state_id>
+    <name>Alyce Houston</name>
+    <title> Juneau Regional Office Election Supervisor</title>
+    <phone> (907) 465-3021</phone>
+    <fax> (907) 465-2289</fax>
+    <email> alyce.houston@alaska.gov</email>
+  </election_official>
+  <election_official id="502156632">
+    <county_name>YAKUTAT</county_name>
+    <state_id>2</state_id>
+    <name>Alyce Houston</name>
+    <title> Juneau Regional Office Election Supervisor</title>
+    <phone> (907) 465-3021</phone>
+    <fax> (907) 465-2289</fax>
+    <email> alyce.houston@alaska.gov</email>
+  </election_official>
+  <election_official id="1437813308">
+    <county_name>DENALI</county_name>
+    <state_id>2</state_id>
+    <name>Michelle (Mickey) Speegle</name>
+    <title> Fairbanks Regional Office Election Supervisor</title>
+    <phone> (907) 451-2835</phone>
+    <fax> (907) 451-2832</fax>
+    <email> michelle.speegle@alaska.gov</email>
+  </election_official>
+  <election_official id="1375517683">
+    <county_name>NORTHWEST ARCTIC</county_name>
+    <state_id>2</state_id>
+    <name>Becka Baker</name>
+    <title> Nome Regional Office Election Supervisor</title>
+    <phone> (907) 451-2835</phone>
+    <fax> (907) 451-2832</fax>
+    <email> becka.baker@alaska.gov</email>
+  </election_official>
+  <election_official id="2104441031">
+    <county_name>KODIAK ISLAND</county_name>
+    <state_id>2</state_id>
+    <name>Alyce Houston</name>
+    <title> Juneau Regional Office Election Supervisor</title>
+    <phone> (907) 465-3021</phone>
+    <fax> (907) 465-2289</fax>
+    <email> alyce.houston@alaska.gov</email>
+  </election_official>
+  <election_official id="1858169012">
+    <county_name>VALDEZ-CORDOVA</county_name>
+    <state_id>2</state_id>
+    <name>Michelle (Mickey) Speegle</name>
+    <title> Fairbanks Regional Office Election Supervisor</title>
+    <phone> (907) 451-2835</phone>
+    <fax> (907) 451-2832</fax>
+    <email> michelle.speegle@alaska.gov</email>
+  </election_official>
+  <election_official id="1441431513">
+    <county_name>JUNEAU</county_name>
+    <state_id>2</state_id>
+    <name>Alyce Houston</name>
+    <title> Juneau Regional Office Election Supervisor</title>
+    <phone> (907) 465-3021</phone>
+    <fax>(907) 465-2289</fax>
+    <email>alyce.houston@alaska.gov</email>
+  </election_official>
+  <election_official id="1678701760">
+    <county_name>BETHEL</county_name>
+    <state_id>2</state_id>
+    <name>Becka Baker</name>
+    <title> Nome Regional Office Election Supervisor</title>
+    <phone> (907) 443-5285</phone>
+    <fax> (907) 443-2973</fax>
+    <email> becka.baker@alaska.gov</email>
+  </election_official>
+  <election_official id="864328922">
+    <county_name>YUKON-KOYUKUK</county_name>
+    <state_id>2</state_id>
+    <name>Michelle (Mickey) Speegle</name>
+    <title> Fairbanks Regional Office Election Supervisor</title>
+    <phone> (907) 451-2835</phone>
+    <fax> (907) 451-2832</fax>
+    <email> michelle.speegle@alaska.gov</email>
+  </election_official>
+  <election_official id="524846036">
+    <county_name>SKAGWAY-HOONAH-ANGOON</county_name>
+    <state_id>2</state_id>
+    <name>Alyce Houston</name>
+    <title> Juneau Regional Office Election Supervisor</title>
+    <phone> (907) 465-3021</phone>
+    <fax> (907) 465-2289</fax>
+    <email> alyce.houston@alaska.gov</email>
+  </election_official>
+  <election_official id="1056265366">
+    <county_name>MATANUSKA-SUSITNA</county_name>
+    <state_id>2</state_id>
+    <name>Doreen Barber (Acting)</name>
+    <title> Anchorage Regional Office Election Supervisor</title>
+    <phone> (907) 522-8683</phone>
+    <fax> (907) 522-2341</fax>
+    <email> doreen.barber@alaska.gov</email>
+  </election_official>
+  <election_official id="324253379">
+    <county_name>SOUTHEAST FAIRBANKS</county_name>
+    <state_id>2</state_id>
+    <name>Michelle (Mickey) Speegle</name>
+    <title> Fairbanks Regional Office Election Supervisor</title>
+    <phone> (907) 451-2835</phone>
+    <fax> (907) 451-2832</fax>
+    <email> michelle.speegle@alaska.gov</email>
+  </election_official>
+  <election_official id="1413840884">
+    <county_name>HAINES</county_name>
+    <state_id>2</state_id>
+    <name>Alyce Houston</name>
+    <title> Juneau Regional Office Election Supervisor</title>
+    <phone> (907) 465-3021</phone>
+    <fax> (907) 465-2289</fax>
+    <email> alyce.houston@alaska.gov</email>
+  </election_official>
+  <election_official id="509640406">
+    <county_name>ANCHORAGE</county_name>
+    <state_id>2</state_id>
+    <name>Doreen Barber</name>
+    <title>Anchorage Regional Office Election Supervisor</title>
+    <phone> (907) 522-8683</phone>
+    <fax> (907) 522-2341</fax>
+    <email> doreen.barber@alska.gov</email>
+  </election_official>
+  <election_official id="1755633778">
+    <county_name>KETCHIKAN GATEWAY</county_name>
+    <state_id>2</state_id>
+    <name>Alyce Houston</name>
+    <title> Juneau Regional Office Election Supervisor</title>
+    <phone> (907) 465-3021</phone>
+    <fax> (907) 465-2289</fax>
+    <email> alyce.houston@alaska.gov</email>
+  </election_official>
+  <election_official id="1555249992">
+    <county_name>FAIRBANKS NORTH STAR</county_name>
+    <state_id>2</state_id>
+    <name>Michelle (Mickey) Speegle</name>
+    <title> Fairbanks Regional Office Election Supervisor</title>
+    <phone> (907) 451-2835</phone>
+    <fax> (907) 451-2832</fax>
+    <email> michelle.speegle@alaska.gov</email>
+  </election_official>
+</listings>

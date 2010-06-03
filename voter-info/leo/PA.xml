@@ -1,0 +1,443 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="">
+    <county_name>CRAWFORD</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="513736290">
+    <county_name>MONTOUR</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Holly A. Brandon </name>
+    <title> Director of Elections </title>
+    <phone> (570) 271-3000</phone>
+    <fax> </fax>
+    <email> hbrandon@montourco.org</email>
+  </election_official>
+  <election_official id="">
+    <county_name>SUSQUEHANNA</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="1531683279">
+    <county_name>HUNTINGDON</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Sandra McNeal </name>
+    <title> Elections Coord./Voter Retistrar</title>
+    <phone> (814) 643-3091 </phone>
+    <fax> </fax>
+    <email> smcneal@huntingdoncounty.net</email>
+  </election_official>
+  <election_official id="744327695">
+    <county_name>MIFFLIN</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Nancy K. Laub </name>
+    <title> Director </title>
+    <phone> (717) 248-6571</phone>
+    <fax> </fax>
+    <email> nlaub@co.mifflin.pa.us</email>
+  </election_official>
+  <election_official id="250742913">
+    <county_name>ERIE</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Sharon A. Drayer </name>
+    <title> Director of Elections</title>
+    <phone> (814) 451-6276 </phone>
+    <fax> </fax>
+    <email> sdrayer@eriecountygov.org</email>
+  </election_official>
+  <election_official id="2059768292">
+    <county_name>BUCKS</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Deena K. Dean</name>
+    <title> Director, Bucks Co. Board of Elections/Registration </title>
+    <phone> (215) 348-6154</phone>
+    <fax> </fax>
+    <email> dkdean@co.bucks.pa.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>CLEARFIELD</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="807941910">
+    <county_name>WYOMING</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Florence Ball</name>
+    <title> Director of Elections</title>
+    <phone> (570) 996-2226</phone>
+    <fax> </fax>
+    <email> FBall@wycopa.org</email>
+  </election_official>
+  <election_official id="">
+    <county_name>ELK</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="1665215174">
+    <county_name>GREENE</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Frances D. Pratt </name>
+    <title> Director of Elections</title>
+    <phone> (724) 852-5304</phone>
+    <fax> </fax>
+    <email> fpratt@co.greene.pa.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>CUMBERLAND</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="1421383138">
+    <county_name>LANCASTER</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Diane T. Skilling</name>
+    <title> Deputy Chief Registrar/Clerk</title>
+    <phone> (717) 295-3556</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="">
+    <county_name>CENTRE</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="6543381">
+    <county_name>FAYETTE</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Laurie A. Lint</name>
+    <title> Director of Elections</title>
+    <phone> (724) 430-1289</phone>
+    <fax> </fax>
+    <email> lnicholson@fayettepa.org</email>
+  </election_official>
+  <election_official id="482744719">
+    <county_name>SOMERSET</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Tina Pritts </name>
+    <title>Director, Elections &amp; Reg. </title>
+    <phone>(814) 445-1549</phone>
+    <fax> </fax>
+    <email>voter@co.somerset.pa.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>LUZERNE</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>NORTHAMPTON</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="616784978">
+    <county_name>DAUPHIN</county_name>
+    <state_id>42</state_id>
+    <name>Mr. Steven G. Chiavetta </name>
+    <title> Director of Elections &amp; Reg.</title>
+    <phone> (717) 780-6360</phone>
+    <fax> </fax>
+    <email>   </email>
+  </election_official>
+  <election_official id="">
+    <county_name>VENANGO</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="1003031793">
+    <county_name>JUNIATA</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Eva M. Stong </name>
+    <title> Voter Registrar </title>
+    <phone> (717) 436-7706</phone>
+    <fax> </fax>
+    <email> estong@co.juniata.pa.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>WARREN</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>LACKAWANNA</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="873779399">
+    <county_name>LEBANON</county_name>
+    <state_id>42</state_id>
+    <name>Nicholas Yingst</name>
+    <title> Chief Clerk, Lebanon Co.,Director of Elections &amp; Voter Registration</title>
+    <phone> 717-274-2801 ext. 4428</phone>
+    <fax> 717-274-8094</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="">
+    <county_name>WAYNE</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="211730182">
+    <county_name>YORK</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Nikki Suchanic </name>
+    <title> Director of Elections &amp; Voter Reg</title>
+    <phone> (717)771-9604 </phone>
+    <fax> </fax>
+    <email> snsuchanic@york-county.org</email>
+  </election_official>
+  <election_official id="2090535502">
+    <county_name>LEHIGH</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Stacy Sterner</name>
+    <title> Director of Elections/ Voter Reg</title>
+    <phone> (610) 782-3198 </phone>
+    <fax> </fax>
+    <email> stacysterner@lehighcounty.org</email>
+  </election_official>
+  <election_official id="">
+    <county_name>NORTHUMBERLAND</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="796726197">
+    <county_name>BRADFORD</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Marie Zbyszinski</name>
+    <title> Director of Elections </title>
+    <phone> (570) 265-1717</phone>
+    <fax> </fax>
+    <email> Zbyszinskim@mail.bradfordco.org</email>
+  </election_official>
+  <election_official id="1182001574">
+    <county_name>BLAIR</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Shirley Crowl </name>
+    <title> Director of Elections</title>
+    <phone> (814) 693-3030</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2044818778">
+    <county_name>CAMBRIA</county_name>
+    <state_id>42</state_id>
+    <name>Mr. Fred R. Smith</name>
+    <title> Director of Elec./Chief Registrar</title>
+    <phone> (814) 472-1464 </phone>
+    <fax> </fax>
+    <email> frsmith@co.cambria.pa.us</email>
+  </election_official>
+  <election_official id="1753325515">
+    <county_name>TIOGA</county_name>
+    <state_id>42</state_id>
+    <name>Mr. George F. Coxe, Jr. </name>
+    <title> Election Director</title>
+    <phone> (570) 278-4600 Ext. 220</phone>
+    <fax> </fax>
+    <email> vrs@susqco.com</email>
+  </election_official>
+  <election_official id="329193247">
+    <county_name>BUTLER</county_name>
+    <state_id>42</state_id>
+    <name>Mr. Regis L. Young </name>
+    <title> Butler Co. Elections Dept. </title>
+    <phone> (724) 284-5308 </phone>
+    <fax> </fax>
+    <email> ryoung@co.butler.pa.us</email>
+  </election_official>
+  <election_official id="1189312151">
+    <county_name>FOREST</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Jean Ann Hitchcock</name>
+    <title> Elections Clerk </title>
+    <phone> (814) 755-3537</phone>
+    <fax> </fax>
+    <email> jahitchcock@co.forest.pa.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>POTTER</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="123100970">
+    <county_name>ALLEGHENY</county_name>
+    <state_id>42</state_id>
+    <name>Mr. Mark Wolosik</name>
+    <title> Director, Allegheny County</title>
+    <phone> (412) 350-4500</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="">
+    <county_name>MONROE</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>COLUMBIA</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>SCHUYLKILL</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="578495798">
+    <county_name>BEDFORD</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Margaret A. Koenig</name>
+    <title> Director of Elections</title>
+    <phone> (814)623-4807</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="">
+    <county_name>CAMERON</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>JEFFERSON</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>PHILADELPHIA</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>CLARION</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>LYCOMING</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="166273936">
+    <county_name>UNION</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Diana Robinson</name>
+    <title> Chief Clerk/Administrator</title>
+    <phone> (570) 524-8634</phone>
+    <fax> </fax>
+    <email>drobinson@unionco.org</email>
+  </election_official>
+  <election_official id="572489694">
+    <county_name>ADAMS</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Monica Dutko</name>
+    <title> Director of Elections &amp; Voter Reg</title>
+    <phone> (717) 337-9832</phone>
+    <fax> </fax>
+    <email> mdutko@acc.pa.net</email>
+  </election_official>
+  <election_official id="">
+    <county_name>FRANKLIN</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="328834545">
+    <county_name>FULTON</county_name>
+    <state_id>42</state_id>
+    <name>Mr. Richard L. Wible </name>
+    <title> Chief Clerk, Fulton Co</title>
+    <phone> (717) 485-3691</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="">
+    <county_name>WESTMORELAND</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="1372055981">
+    <county_name>LAWRENCE</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Marlene D. Gabriel </name>
+    <title> Director, Reg. &amp; Elections </title>
+    <phone> (724) 656-2161</phone>
+    <fax> </fax>
+    <email> lcvote@co.lawrence.pa.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>DELAWARE</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="2139439397">
+    <county_name>BEAVER</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Dorene Mandity</name>
+    <title> Director of Elections &amp; Voter Reg.</title>
+    <phone> (724) 728-3934 Ext. 11214</phone>
+    <fax> </fax>
+    <email> Dmandity@co.beaver.pa.us</email>
+  </election_official>
+  <election_official id="273021460">
+    <county_name>BERKS</county_name>
+    <state_id>42</state_id>
+    <name>Ms.Deborah Olivieri </name>
+    <title> Director of Elections </title>
+    <phone> (610) 478-6490</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="">
+    <county_name>PERRY</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>CHESTER</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="616235794">
+    <county_name>SNYDER</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Patricia P. Nace </name>
+    <title> Director of Elections </title>
+    <phone> (570) 837-4286</phone>
+    <fax/>
+    <email> pnace@snydercounty.org</email>
+  </election_official>
+  <election_official id="627756679">
+    <county_name>MERCER</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Nancy K. Laub </name>
+    <title> Director </title>
+    <phone>(717) 248-6571</phone>
+    <fax> </fax>
+    <email> nlaub@co.mifflin.pa.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>WASHINGTON</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="911917452">
+    <county_name>ARMSTRONG</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Wendy J. Buzard</name>
+    <title>Director of Elections, Armstrong Co</title>
+    <phone> (724) 548-3222</phone>
+    <fax> </fax>
+    <email> Buzard@Alltel.net</email>
+  </election_official>
+  <election_official id="">
+    <county_name>SULLIVAN</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>MCKEAN</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>MONTGOMERY</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>CARBON</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>CLINTON</county_name>
+    <state_id>42</state_id>
+  </election_official>
+  <election_official id="1013037386">
+    <county_name>PIKE</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Yolanda R. Goldsack</name>
+    <title>Director</title>
+    <phone>(570) 296-3426</phone>
+    <fax> </fax>
+    <email> ygoldsack@pikepa.org</email>
+  </election_official>
+  <election_official id="261783328">
+    <county_name>INDIANA</county_name>
+    <state_id>42</state_id>
+    <name>Ms. Robin Maryai </name>
+    <title> Chief Clerk</title>
+    <phone> (724) 465-3805</phone>
+    <fax> </fax>
+    <email> robin@countyofindiana.org</email>
+  </election_official>
+</listings>

@@ -1,0 +1,119 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="">
+    <county_name>KENNEBEC</county_name>
+    <state_id>23</state_id>
+  </election_official>
+  <election_official id="476704314">
+    <county_name>CUMBERLAND</county_name>
+    <state_id>23</state_id>
+    <name>Nadeen Daniels</name>
+    <title>Municipal Clerks</title>
+    <phone> 207-829-2205</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="">
+    <county_name>SOMERSET</county_name>
+    <state_id>23</state_id>
+  </election_official>
+  <election_official id="206763811">
+    <county_name>PENOBSCOT</county_name>
+    <state_id>23</state_id>
+    <name>Mary Ellen Gross</name>
+    <title> County Clerk</title>
+    <phone> 207-326-4364</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="744040714">
+    <county_name>YORK</county_name>
+    <state_id>23</state_id>
+    <name>Mary-Anne Szeniawski</name>
+    <title> County Clerk</title>
+    <phone> 207-363-1003</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1910197060">
+    <county_name>LINCOLN</county_name>
+    <state_id>23</state_id>
+    <name>Lisa J. Goodwin</name>
+    <title> County Clerk</title>
+    <phone> 207-794-3372</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="">
+    <county_name>PISCATAQUIS</county_name>
+    <state_id>23</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>ANDROSCOGGIN</county_name>
+    <state_id>23</state_id>
+  </election_official>
+  <election_official id="874585941">
+    <county_name>KNOX</county_name>
+    <state_id>23</state_id>
+    <name>Susan Price</name>
+    <title> County Clerk</title>
+    <phone> 207-568-3907</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1020645339">
+    <county_name>FRANKLIN</county_name>
+    <state_id>23</state_id>
+    <name>Robert W. Fernald</name>
+    <title>Clerk</title>
+    <phone> 207-565-3323</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="">
+    <county_name>AROOSTOOK</county_name>
+    <state_id>23</state_id>
+  </election_official>
+  <election_official id="1461054421">
+    <county_name>WALDO</county_name>
+    <state_id>23</state_id>
+    <name>Sandra Y. Smith</name>
+    <title> County Clerk </title>
+    <phone> 207-342-5400</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1244340533">
+    <county_name>OXFORD</county_name>
+    <state_id>23</state_id>
+    <name>Ellen Morrison</name>
+    <title> County Clerk</title>
+    <phone> 207-539-4431</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="">
+    <county_name>SAGADAHOC</county_name>
+    <state_id>23</state_id>
+  </election_official>
+  <election_official id="1342057511">
+    <county_name>WASHINGTON</county_name>
+    <state_id>23</state_id>
+    <name>Cyndie Bourgeois</name>
+    <title> County Clerk</title>
+    <phone> 207-845-2897</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="471101339">
+    <county_name>HANCOCK</county_name>
+    <state_id>23</state_id>
+    <name>Marilyn J. Lowell </name>
+    <title> Clerk</title>
+    <phone> 207-422-3393</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+</listings>

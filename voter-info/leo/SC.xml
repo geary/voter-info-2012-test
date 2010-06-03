@@ -1,0 +1,419 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="412168877">
+    <county_name>MARLBORO</county_name>
+    <state_id>45</state_id>
+    <name>Lori Davis</name>
+    <title> Marlboro County Board of Voter Registration</title>
+    <phone> (843) 479-5612</phone>
+    <fax> 479-5639</fax>
+    <email> vr35ldavis@hotmail.com</email>
+  </election_official>
+  <election_official id="1513129277">
+    <county_name>NEWBERRY</county_name>
+    <state_id>45</state_id>
+    <name>Brenda J. Rogers</name>
+    <title> Newberry County Board of Voter Registration</title>
+    <phone> (803) 321-2121 </phone>
+    <fax> 321-2122</fax>
+    <email> brogers@newberrycounty.net  </email>
+  </election_official>
+  <election_official id="502875396">
+    <county_name>WILLIAMSBURG</county_name>
+    <state_id>45</state_id>
+    <name>Edith Redden</name>
+    <title> Williamsburg County Board of Voter Registration</title>
+    <phone> (843)355-6044</phone>
+    <fax> (843)355-2039</fax>
+    <email> edith.redden@williamsburgcounty.sc.gov</email>
+  </election_official>
+  <election_official id="1532415364">
+    <county_name>CHARLESTON</county_name>
+    <state_id>45</state_id>
+    <name>Marilyn Bowers</name>
+    <title> Charleston County Board of Voter Registration</title>
+    <phone> (843) 744-8683</phone>
+    <fax> (843) 974-6419</fax>
+    <email> mbowers@charlestoncounty.org</email>
+  </election_official>
+  <election_official id="665176326">
+    <county_name>DARLINGTON</county_name>
+    <state_id>45</state_id>
+    <name>Hoyt Campbell</name>
+    <title> Darlington County Board of Voter Registration</title>
+    <phone> (843) 398-4900 </phone>
+    <fax> 398-4907 </fax>
+    <email> vr16hcampbell@hotmail.com</email>
+  </election_official>
+  <election_official id="1711955152">
+    <county_name>CHEROKEE</county_name>
+    <state_id>45</state_id>
+    <name>Martha Goforth</name>
+    <title> Cherokee County Board of Voter Registration</title>
+    <phone> (864) 487 2563</phone>
+    <fax> (864) 487 8536</fax>
+    <email> cgacherokee@hotmail.com</email>
+  </election_official>
+  <election_official id="1722474091">
+    <county_name>PICKENS</county_name>
+    <state_id>45</state_id>
+    <name>Ashley Harris</name>
+    <title> Pickens County Board of Voter Registration</title>
+    <phone> (864) 898-5949</phone>
+    <fax> (864) 898-5637</fax>
+    <email> TOOTSIEH@CO.PICKENS.SC.US</email>
+  </election_official>
+  <election_official id="832699069">
+    <county_name>ANDERSON</county_name>
+    <state_id>45</state_id>
+    <name>Katy Smith</name>
+    <title> Anderson County Board of Voter Registration </title>
+    <phone> (864) 260-4035</phone>
+    <fax> 260-4203</fax>
+    <email> acvote@andersoncountysc.org</email>
+  </election_official>
+  <election_official id="893402497">
+    <county_name>LEE</county_name>
+    <state_id>45</state_id>
+    <name>Lynn P. Fata</name>
+    <title> Lee County Board of Voter Registration</title>
+    <phone>(803) 484-5341, Ext. 324</phone>
+    <fax> Fax (803) 484-4392</fax>
+    <email> vr31lhill@hotmail.com </email>
+  </election_official>
+  <election_official id="562682300">
+    <county_name>LANCASTER</county_name>
+    <state_id>45</state_id>
+    <name>Cassie Stump</name>
+    <title> Lancaster County Board of Voter Registration</title>
+    <phone> (803) 285-2969</phone>
+    <fax> 416-9357</fax>
+    <email> cassie_stump@hotmail.com</email>
+  </election_official>
+  <election_official id="1430608058">
+    <county_name>KERSHAW</county_name>
+    <state_id>45</state_id>
+    <name>Rosalind Watson</name>
+    <title> Kershaw County Board of Voter Registration</title>
+    <phone> (803) 424-4016</phone>
+    <fax> (803) 425-7673</fax>
+    <email> voterregistration@kershaw.sc.gov</email>
+  </election_official>
+  <election_official id="2032944286">
+    <county_name>FAIRFIELD</county_name>
+    <state_id>45</state_id>
+    <name>Debby Stidham</name>
+    <title> Fairfield County Board of Voter Registration</title>
+    <phone> (803) 635-6255</phone>
+    <fax> (803) 635-5095 </fax>
+    <email> voterreg@fairfieldsc.com</email>
+  </election_official>
+  <election_official id="639829666">
+    <county_name>HAMPTON</county_name>
+    <state_id>45</state_id>
+    <name>Debra Bryant</name>
+    <title> Hampton County Board of Voter Registration</title>
+    <phone> (803) 943-7536</phone>
+    <fax> (803) 943-7556</fax>
+    <email> dbryant@hamptoncountysc.org</email>
+  </election_official>
+  <election_official id="1710129203">
+    <county_name>MARION</county_name>
+    <state_id>45</state_id>
+    <name>Teresa Moody</name>
+    <title> Marion County Board of Voter Registration</title>
+    <phone> (843) 423-8268</phone>
+    <fax> (843) 423-8267</fax>
+    <email> tmoody65@hotmail.com </email>
+  </election_official>
+  <election_official id="1565836962">
+    <county_name>HORRY</county_name>
+    <state_id>45</state_id>
+    <name>Sandy Martin</name>
+    <title> Horry County Board of Voter Registration</title>
+    <phone> (843) 915-5440</phone>
+    <fax> 915-6440</fax>
+    <email> MartinS@HorryCounty.org  </email>
+  </election_official>
+  <election_official id="750360131">
+    <county_name>MCCORMICK</county_name>
+    <state_id>45</state_id>
+    <name>Suffie Jennings</name>
+    <title> McCormick County Board of Voter Registration</title>
+    <phone> (864) 852-2089</phone>
+    <fax> (864) 852-2489</fax>
+    <email> sjennings@mccormickcountysc.gov</email>
+  </election_official>
+  <election_official id="520187278">
+    <county_name>RICHLAND</county_name>
+    <state_id>45</state_id>
+    <name>Lillian McBride</name>
+    <title> </title>
+    <phone> (803) 576-2240</phone>
+    <fax> 576-2249</fax>
+    <email> absenteeballots@rcgov.us</email>
+  </election_official>
+  <election_official id="417214699">
+    <county_name>BAMBERG</county_name>
+    <state_id>45</state_id>
+    <name>Patti Jeffcoat</name>
+    <title> Bamberg County Board of Voter Registration</title>
+    <phone> (803) 245-3028</phone>
+    <fax> (803) 245-3027</fax>
+    <email> ppj57@bellsouth.net</email>
+  </election_official>
+  <election_official id="5371368">
+    <county_name>CALHOUN</county_name>
+    <state_id>45</state_id>
+    <name>Thomasine </name>
+    <title> Calhoun County Board of Voter Registration</title>
+    <phone> (803) 874-2929</phone>
+    <fax> 874-1242</fax>
+    <email> mtbrice@yahoo.com  </email>
+  </election_official>
+  <election_official id="918760853">
+    <county_name>YORK</county_name>
+    <state_id>45</state_id>
+    <name>Wanda Hemphill</name>
+    <title> York County Board of Voter Registration</title>
+    <phone> (803) 684-1242</phone>
+    <fax> 684-7801</fax>
+    <email> elections@yorkcountygov.com</email>
+  </election_official>
+  <election_official id="16920927">
+    <county_name>FLORENCE</county_name>
+    <state_id>45</state_id>
+    <name>Michael J. Young</name>
+    <title> Florence County Board of Voter Registration</title>
+    <phone> (843) 665-3094</phone>
+    <fax> (843) 292-1613</fax>
+    <email> elections@florenceco.org</email>
+  </election_official>
+  <election_official id="511791601">
+    <county_name>COLLETON</county_name>
+    <state_id>45</state_id>
+    <name>Rodney Allen</name>
+    <title> Colleton County Board of Voter Registration</title>
+    <phone> (843) 549-2842</phone>
+    <fax> 549-2812</fax>
+    <email> rallen@colletoncounty.org</email>
+  </election_official>
+  <election_official id="566630595">
+    <county_name>BARNWELL</county_name>
+    <state_id>45</state_id>
+    <name>Naomi DeFrenn</name>
+    <title> Barnwell County Board of Voter Registration</title>
+    <phone> (803) 541-1060</phone>
+    <fax> (803) 541-3683</fax>
+    <email> naomidefrenn06@hotmail.com </email>
+  </election_official>
+  <election_official id="1677642974">
+    <county_name>OCONEE</county_name>
+    <state_id>45</state_id>
+    <name>Joy Brooks</name>
+    <title> Oconee County Board of Voter Registration</title>
+    <phone> (864) 638-4196 </phone>
+    <fax> 638-4197</fax>
+    <email> jbrooks@oconeesc.com</email>
+  </election_official>
+  <election_official id="1745885938">
+    <county_name>LAURENS</county_name>
+    <state_id>45</state_id>
+    <name>Marcia Pye</name>
+    <title> Laurens County Board of Voter Registration</title>
+    <phone> (864) 984-4431</phone>
+    <fax> (864) 983-2529</fax>
+    <email> mpye@co.laurens.sc.us </email>
+  </election_official>
+  <election_official id="926241169">
+    <county_name>JASPER</county_name>
+    <state_id>45</state_id>
+    <name>Jeanine Bostick</name>
+    <title> Jasper County Board of Voter Registration</title>
+    <phone> (843) 726-7709</phone>
+    <fax> (843) 726-7626</fax>
+    <email> jbostick@jaspercountysc.gov</email>
+  </election_official>
+  <election_official id="543122865">
+    <county_name>SUMTER</county_name>
+    <state_id>45</state_id>
+    <name>Patricia Jefferson</name>
+    <title> Sumter County Board of Voter Registration</title>
+    <phone> (803) 436-2313</phone>
+    <fax> 436-2405</fax>
+    <email> pjefferson@sumtercountysc.org </email>
+  </election_official>
+  <election_official id="783161909">
+    <county_name>CHESTERFIELD</county_name>
+    <state_id>45</state_id>
+    <name>Tommy Ballard</name>
+    <title> Chesterfield County Board of Voter Registration</title>
+    <phone> (843) 623-2265</phone>
+    <fax> (843) 623-3196</fax>
+    <email> vrcfield@hotmail.com</email>
+  </election_official>
+  <election_official id="608047649">
+    <county_name>SALUDA</county_name>
+    <state_id>45</state_id>
+    <name>Frances Jaynes</name>
+    <title> Saluda County Board of Voter Registration</title>
+    <phone> (864) 445-4500, ext. 2200</phone>
+    <fax> (864) 445-9187</fax>
+    <email> vr41fjaynes@hotmail.com </email>
+  </election_official>
+  <election_official id="777638360">
+    <county_name>ALLENDALE</county_name>
+    <state_id>45</state_id>
+    <name>Dorothy J. Willis</name>
+    <title>Allendale County Board of Voter Registration</title>
+    <phone> (803) 584-4178</phone>
+    <fax>584-8147 </fax>
+    <email> vr03dwillis@hotmail.com</email>
+  </election_official>
+  <election_official id="586332446">
+    <county_name>GREENVILLE</county_name>
+    <state_id>45</state_id>
+    <name>Conway Belangia</name>
+    <title> Greenville County Board of Voter Registration</title>
+    <phone> (864) 467-7250</phone>
+    <fax> 467-7256</fax>
+    <email> cbelangia@greenvillecounty.org</email>
+  </election_official>
+  <election_official id="1108638680">
+    <county_name>DORCHESTER</county_name>
+    <state_id>45</state_id>
+    <name>Meredith Murray</name>
+    <title>Dorchester County Board of Elections and Voter Registration</title>
+    <phone> (843) 563-0132 or (843) 832-0132</phone>
+    <fax> (843) 563-0186</fax>
+    <email> mmurray1@dorchestercounty.net </email>
+  </election_official>
+  <election_official id="1716730975">
+    <county_name>BERKELEY</county_name>
+    <state_id>45</state_id>
+    <name>Wanda Farley</name>
+    <title>  Berkeley County Board of Voter Registration</title>
+    <phone> (843) 719-4056 </phone>
+    <fax> (843) 719-4060</fax>
+    <email> charrell@co.berkeley.sc.us  </email>
+  </election_official>
+  <election_official id="541736785">
+    <county_name>LEXINGTON</county_name>
+    <state_id>45</state_id>
+    <name>Dean Crepes</name>
+    <title> Lexington County Board of Voter Registration</title>
+    <phone> (803) 785-8361</phone>
+    <fax> 785-8390</fax>
+    <email> dcrepes@lex-co.com, along@lex-co.com</email>
+  </election_official>
+  <election_official id="687220000">
+    <county_name>GREENWOOD</county_name>
+    <state_id>45</state_id>
+    <name>Connie Moody</name>
+    <title> Greenwood County Board of Voter Registration</title>
+    <phone> (864) 942-8585</phone>
+    <fax> 942-8566</fax>
+    <email> conniem@co.greenwood.sc.us</email>
+  </election_official>
+  <election_official id="189046343">
+    <county_name>EDGEFIELD</county_name>
+    <state_id>45</state_id>
+    <name>Tricia G. Butler</name>
+    <title> Edgefield County Board of Voter Registration</title>
+    <phone> (803) 637-4072</phone>
+    <fax> (803) 637-4134</fax>
+    <email> tbutler@edgefieldcounty.sc.gov or vote@edgefieldcounty.sc.gov  </email>
+  </election_official>
+  <election_official id="598441138">
+    <county_name>SPARTANBURG</county_name>
+    <state_id>45</state_id>
+    <name>Henry M. Laye, III</name>
+    <title> Spartanburg County Board of Voter Registration</title>
+    <phone> (864) 596-2549</phone>
+    <fax> 596-2958</fax>
+    <email> HLaye@Spartanburgcounty.org  </email>
+  </election_official>
+  <election_official id="61220435">
+    <county_name>DILLON</county_name>
+    <state_id>45</state_id>
+    <name>Susie Edwards</name>
+    <title> Dillon County Board of Voter Registration</title>
+    <phone> (843) 774-1403 </phone>
+    <fax> 841-3728</fax>
+    <email>vr17sedwards@hotmail.com</email>
+  </election_official>
+  <election_official id="1880859598">
+    <county_name>UNION</county_name>
+    <state_id>45</state_id>
+    <name>Helen Belk</name>
+    <title> Union County Board of Voter Registration</title>
+    <phone> (864) 429-1616</phone>
+    <fax> (864) 427-7851</fax>
+    <email> vr44hbelk@hotmail.com  </email>
+  </election_official>
+  <election_official id="1515947023">
+    <county_name>BEAUFORT</county_name>
+    <state_id>45</state_id>
+    <name>Agnes Garvin</name>
+    <title> Beaufort County Board of Elections &amp; Registration</title>
+    <phone>(843) 470-3759</phone>
+    <fax>(843) 524-0617</fax>
+    <email> kweitz@ bcgov.net</email>
+  </election_official>
+  <election_official id="478447894">
+    <county_name>GEORGETOWN</county_name>
+    <state_id>45</state_id>
+    <name>Donna Mahn</name>
+    <title> Georgetown County Board of Elections and Registration</title>
+    <phone> (843) 545-3339</phone>
+    <fax> 545-3342</fax>
+    <email> vote@georgetowncountysc.org</email>
+  </election_official>
+  <election_official id="420574682">
+    <county_name>ORANGEBURG</county_name>
+    <state_id>45</state_id>
+    <name>Lekisha Benekin</name>
+    <title> Orangeburg County Board of Voter Registration</title>
+    <phone> (803) 533-6213</phone>
+    <fax> 533-6215</fax>
+    <email> lray@orangeburgcounty.org</email>
+  </election_official>
+  <election_official id="222322735">
+    <county_name>CHESTER</county_name>
+    <state_id>45</state_id>
+    <name>Earl Moore</name>
+    <title> Chester County Board of Voter Registration</title>
+    <phone> (803) 385-2562</phone>
+    <fax> (803) 581-2696</fax>
+    <email> emoore@chestercounty.org  </email>
+  </election_official>
+  <election_official id="471586864">
+    <county_name>CLARENDON</county_name>
+    <state_id>45</state_id>
+    <name>Shirley Black-Oliver</name>
+    <title> Clarendon County Board of Voter Registration</title>
+    <phone> (803) 435-8215</phone>
+    <fax> (803) 435-9074</fax>
+    <email> vr14sblack@hotmail.com </email>
+  </election_official>
+  <election_official id="2067573170">
+    <county_name>AIKEN</county_name>
+    <state_id>45</state_id>
+    <name>Stuart Bedenbaugh</name>
+    <title>Aiken County Board of Voter Registration</title>
+    <phone> (803) 642-1528</phone>
+    <fax> 642-2029</fax>
+    <email> cholland@aikencountysc.gov</email>
+  </election_official>
+  <election_official id="532691139">
+    <county_name>ABBEVILLE</county_name>
+    <state_id>45</state_id>
+    <name>Lynne West</name>
+    <title>Abbeville County Board of Voter Registration</title>
+    <phone> (864) 366-5312, Ext 108</phone>
+    <fax>(864) 366-5797 </fax>
+    <email> lwest@abbevillecountysc.com</email>
+  </election_official>
+</listings>

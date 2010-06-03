@@ -1,0 +1,194 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="466061162">
+    <county_name>GLOUCESTER</county_name>
+    <state_id>34</state_id>
+    <name>Hon. James "Jim" Hogan </name>
+    <title> County Clerk </title>
+    <phone> 856-853-3241 </phone>
+    <fax> 856-853-3327</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1990174650">
+    <county_name>ATLANTIC</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Edward P. McGettigan </name>
+    <title> County Clerk </title>
+    <phone> 609- 641-7867 </phone>
+    <fax> 609-625-4738</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1832368251">
+    <county_name>SALEM</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Gilda T. Gill </name>
+    <title>  County Clerk</title>
+    <phone> 856-935-7510 Ext. 8206</phone>
+    <fax> 856-935-8882</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="351331189">
+    <county_name>CUMBERLAND</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Gloria Noto </name>
+    <title> County Clerk </title>
+    <phone> 856-453-4860</phone>
+    <fax> 856-455-1410</fax>
+    <email/>
+  </election_official>
+  <election_official id="160514059">
+    <county_name>SOMERSET</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Brett Radi </name>
+    <title>  County Clerk</title>
+    <phone> 908-231-7013 </phone>
+    <fax> 908-253-8853</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1822326114">
+    <county_name>PASSAIC</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Karen Brown </name>
+    <title>  County Clerk</title>
+    <phone> 973-225-3632 ext 500 or 501 </phone>
+    <fax> 973-742-5744</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="378315927">
+    <county_name>BERGEN</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Kathleen A. Donovan </name>
+    <title> County Clerk </title>
+    <phone> 201-336-7073</phone>
+    <fax> 201-336-7002</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1189534242">
+    <county_name>WARREN</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Patricia J. Kolb </name>
+    <title>  County Clerk </title>
+    <phone> 908-475-6211</phone>
+    <fax> 908-475-6221</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="439055443">
+    <county_name>MONMOUTH</county_name>
+    <state_id>34</state_id>
+    <name>Hon. M. Claire French </name>
+    <title> County Clerk </title>
+    <phone> 732-431-7790 </phone>
+    <fax> 732-409-4887, 732-409-7566 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1230756625">
+    <county_name>ESSEX</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Christopher J. Durkin</name>
+    <title> County Clerk </title>
+    <phone> 973-621-4921</phone>
+    <fax> 973-621-2527/2537hindi songs</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2016156986">
+    <county_name>HUDSON</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Barbara A. Netchert</name>
+    <title> County Clerk </title>
+    <phone> 201-795-6112 </phone>
+    <fax> 201-795-2581</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="519035148">
+    <county_name>SUSSEX</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Erma Gormley </name>
+    <title>  County Clerk </title>
+    <phone> 973-579-0900</phone>
+    <fax> 973-383-7493</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1197473836">
+    <county_name>UNION</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Joanne Rajoppi </name>
+    <title>  County Clerk </title>
+    <phone> 908-527-4998/4999 </phone>
+    <fax> 908-558-2589</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1448878123">
+    <county_name>CAPE MAY</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Rita Marie Fulginiti</name>
+    <title> County Clerk</title>
+    <phone> 609-465-1013</phone>
+    <fax> 609-465-8625</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="788031736">
+    <county_name>MIDDLESEX</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Elaine Flynn </name>
+    <title> County Clerk</title>
+    <phone> 732-745-3827 </phone>
+    <fax> 732-745-2170</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1225592886">
+    <county_name>MORRIS</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Joan Bramhall </name>
+    <title> County Clerk </title>
+    <phone> 973-285-6059 </phone>
+    <fax> 973-285-5233</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="703952774">
+    <county_name>OCEAN</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Carl W. Block </name>
+    <title> County Clerk</title>
+    <phone> 732-929-2018 </phone>
+    <fax> 732-349-4336</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="312301848">
+    <county_name>HUNTERDON</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Mary H. Melfi </name>
+    <title> County Clerk </title>
+    <phone> 908-788-1214 </phone>
+    <fax> 908-782-4068</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="621301867">
+    <county_name>MERCER</county_name>
+    <state_id>34</state_id>
+    <name>Hon. Paula Sollami-Covello </name>
+    <title> County Clerk </title>
+    <phone> 609-989-6998</phone>
+    <fax> 609-989-1111</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2098255721">
+    <county_name>BURLINGTON</county_name>
+    <state_id>34</state_id>
+    <name>Wade Hale</name>
+    <title> County Clerk </title>
+    <phone> 609-265-5122</phone>
+    <fax> 609-265-0696</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1273596710">
+    <county_name>CAMDEN</county_name>
+    <state_id>34</state_id>
+    <name>Hon. James E. Beach </name>
+    <title> County Clerk</title>
+    <phone> 856-225-7219 </phone>
+    <fax> 856-756-2213</fax>
+    <email> </email>
+  </election_official>
+</listings>

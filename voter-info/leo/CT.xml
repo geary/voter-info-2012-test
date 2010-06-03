@@ -1,0 +1,72 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="2045923949">
+    <county_name>FAIRFIELD</county_name>
+    <state_id>9</state_id>
+    <name>Betsy Browne (R)</name>
+    <title> Town Clerk</title>
+    <phone> (203) 256-3000</phone>
+    <fax> </fax>
+    <email> bbrowne@town.fairfield.ct.us</email>
+  </election_official>
+  <election_official id="1596220712">
+    <county_name>WINDHAM</county_name>
+    <state_id>9</state_id>
+    <name> Linda Morrell</name>
+    <title> Clerk</title>
+    <phone> (860) 465-3013</phone>
+    <fax> (860) 465-3012</fax>
+    <email>lsmorrell@town.windham.me.us</email>
+  </election_official>
+  <election_official id="1124551372">
+    <county_name>NEW HAVEN</county_name>
+    <state_id>9</state_id>
+    <name> Ron Smith</name>
+    <title> Clerk</title>
+    <phone> (203) 946-8346</phone>
+    <fax> </fax>
+    <email> sbrown@newhavenct.net</email>
+  </election_official>
+  <election_official id="1822383608">
+    <county_name>TOLLAND</county_name>
+    <state_id>9</state_id>
+    <name>Margaret DeVito</name>
+    <title> Town Clerk</title>
+    <phone> (860) 871-3630</phone>
+    <fax> (860) 871-3663</fax>
+    <email> mdevito@tolland.org</email>
+  </election_official>
+  <election_official id="489088223">
+    <county_name>LITCHFIELD</county_name>
+    <state_id>9</state_id>
+    <name>Lisa A. Losee</name>
+    <title>Town Clerk</title>
+    <phone> (860) 567-7561</phone>
+    <fax> (860) 567-7552</fax>
+    <email> curtisa@townoflitchfield.org</email>
+  </election_official>
+  <election_official id="1806634585">
+    <county_name>HARTFORD</county_name>
+    <state_id>9</state_id>
+    <name>Daniel M. Carey</name>
+    <title> Town and City Clerk</title>
+    <phone> (860) 757-9690</phone>
+    <fax> </fax>
+    <email> kbilodeau@hartford.gov</email>
+  </election_official>
+  <election_official id="2112044190">
+    <county_name>NEW LONDON</county_name>
+    <state_id>9</state_id>
+    <name>Michael J. Tranchida</name>
+    <title> City Clerk</title>
+    <phone> 860-447-5205</phone>
+    <fax> </fax>
+    <email> mtranchida@ci.new-london.ct.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>MIDDLESEX</county_name>
+    <state_id>9</state_id>
+  </election_official>
+</listings>

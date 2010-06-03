@@ -1,0 +1,581 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="302572817">
+    <county_name>CATAHOULA</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Janet T. Payne</name>
+    <title> Clerk</title>
+    <phone> 318-744-5497</phone>
+    <fax> 318-744-5488</fax>
+    <email> jtpayne184@yahoo.com</email>
+  </election_official>
+  <election_official id="869415533">
+    <county_name>LA SALLE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Steve H. Crooks</name>
+    <title> Clerk</title>
+    <phone> 318-992-2158, Ext. 21</phone>
+    <fax> 318-992-2157</fax>
+    <email> lasclerk@centurytel.net</email>
+  </election_official>
+  <election_official id="2013260301">
+    <county_name>MADISON</county_name>
+    <state_id>22</state_id>
+    <name>Hon. C. Calvin Adams, Jr.</name>
+    <title> Clerk</title>
+    <phone> 318-574-0655</phone>
+    <fax> 318-574-3961</fax>
+    <email> madisoncoc@bellsouth.net</email>
+  </election_official>
+  <election_official id="1878751461">
+    <county_name>SAINT LANDRY</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Charles Jagneaux</name>
+    <title> Clerk</title>
+    <phone> 337-942-5606 X 103</phone>
+    <fax> 337-948-9158</fax>
+    <email> stldclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="282265398">
+    <county_name>VERMILION</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Diane Meaux Broussard</name>
+    <title> Clerk</title>
+    <phone> 337-898-1992 ext. 243</phone>
+    <fax> 337-898-9803</fax>
+    <email>vermilionclerk@cox-internet.com</email>
+  </election_official>
+  <election_official id="856656014">
+    <county_name>POINTE COUPEE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Lanell Swindler Landry</name>
+    <title> Clerk</title>
+    <phone> 225-638-9596</phone>
+    <fax> 225-638-9590</fax>
+    <email> pcclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="791905767">
+    <county_name>WINN</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Donald E. “Don” Kelley</name>
+    <title> Clerk </title>
+    <phone> 318-628-3515</phone>
+    <fax> 318-628-3527</fax>
+    <email> winnrov@sos.louisiana.gov</email>
+  </election_official>
+  <election_official id="1526305549">
+    <county_name>BEAUREGARD</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Ronald L. “Ronny” Nichols</name>
+    <title> Clerk</title>
+    <phone> 337-463-8595</phone>
+    <fax> 337-462-3916</fax>
+    <email> beauregardrov@sos.louisiana.gov</email>
+  </election_official>
+  <election_official id="189988095">
+    <county_name>EVANGELINE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Walter Lee</name>
+    <title> Clerk</title>
+    <phone> 337-363-5671</phone>
+    <fax> 337-363-5780</fax>
+    <email> rovevangeline@sos.louisiana.gov</email>
+  </election_official>
+  <election_official id="1395506287">
+    <county_name>WEST FELICIANA</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Felicia Ann Daniel Hendl</name>
+    <title>Clerk</title>
+    <phone> 225-635-3794</phone>
+    <fax> 225-635-3770</fax>
+    <email> wfelicianaclerk@bellsouth.net</email>
+  </election_official>
+  <election_official id="1385799612">
+    <county_name>ACADIA</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Robert T. “Robby” Barousse</name>
+    <title> Clerk</title>
+    <phone> 337-788-8881</phone>
+    <fax> 337-788-1048</fax>
+    <email> blane@acadiaparishclerk.com</email>
+  </election_official>
+  <election_official id="1337280817">
+    <county_name>SAINT JAMES</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Edmond E. Kinler, Jr.</name>
+    <title> Clerk</title>
+    <phone> 225-562-2270</phone>
+    <fax> 225-562-2383</fax>
+    <email> st.jamesrova@sos.louisiana.gov</email>
+  </election_official>
+  <election_official id="16376841">
+    <county_name>ORLEANS</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Arthur A. Morrell, Crim.Dist.Ct</name>
+    <title> Clerk</title>
+    <phone> 504 -658-9000</phone>
+    <fax> 504-658-9183</fax>
+    <email> dplombard@cityofno.com</email>
+  </election_official>
+  <election_official id="262381733">
+    <county_name>PLAQUEMINES</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Dorothy M. Lundin</name>
+    <title> Clerk </title>
+    <phone> 504-297-5180</phone>
+    <fax> 504-297-5151</fax>
+    <email> dlundin@clerk25th.com</email>
+  </election_official>
+  <election_official id="1976686273">
+    <county_name>LIVINGSTON</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Thomas “Tom” Sullivan, Jr.</name>
+    <title> Clerk</title>
+    <phone> 225-686-2216 ext. 5009</phone>
+    <fax> 225-686-1867</fax>
+    <email> vbarnett@livclerk.org</email>
+  </election_official>
+  <election_official id="57555533">
+    <county_name>SAINT TAMMANY</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Malise Prieto</name>
+    <title> Clerk</title>
+    <phone> 985-809-8723</phone>
+    <fax> 985-809-8725</fax>
+    <email> angelarg58@yahoo.com</email>
+  </election_official>
+  <election_official id="1833285872">
+    <county_name>MOREHOUSE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Carol Jones</name>
+    <title> Clerk</title>
+    <phone> 318-281-3343</phone>
+    <fax> 318-281-3775</fax>
+    <email> morehouseclerk@bayou.com</email>
+  </election_official>
+  <election_official id="321170069">
+    <county_name>RICHLAND</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Ramona N. Haire</name>
+    <title> Clerk</title>
+    <phone> 318-728-4171</phone>
+    <fax> 318-728-7020</fax>
+    <email> richlandparishcc@bellsouth.net</email>
+  </election_official>
+  <election_official id="1760739525">
+    <county_name>RED RIVER</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Stuart Shaw</name>
+    <title> Clerk</title>
+    <phone> 318-932-6741</phone>
+    <fax> 318-932-3126</fax>
+    <email> rrclerk@bellsouth.net</email>
+  </election_official>
+  <election_official id="1502531991">
+    <county_name>CONCORDIA</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Clyde Ray Webber, Jr.</name>
+    <title> Clerk</title>
+    <phone> 318-336-4204</phone>
+    <fax> 318-336-8777</fax>
+    <email> parishofconcordia@AINweb.net</email>
+  </election_official>
+  <election_official id="1859711318">
+    <county_name>IBERIA</county_name>
+    <state_id>22</state_id>
+    <name>Hon. “Mike” Thibodeaux</name>
+    <title> Clerk</title>
+    <phone> 337-365-7282</phone>
+    <fax> 337-369-2928</fax>
+    <email> iberiaclerk@bellsouth.net</email>
+  </election_official>
+  <election_official id="666666245">
+    <county_name>EAST FELICIANA</county_name>
+    <state_id>22</state_id>
+    <name>Hon. David Dart</name>
+    <title> Clerk</title>
+    <phone> 225-683-5145</phone>
+    <fax> 225-683-3556</fax>
+    <email> david@eastfelicianaclerk.org</email>
+  </election_official>
+  <election_official id="1035418631">
+    <county_name>SAINT MARTIN</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Allen Blanchard, Sr.</name>
+    <title> Clerk</title>
+    <phone> 337-394-2210 ext. 5</phone>
+    <fax> 337-394-7772</fax>
+    <email> allen@stmartinclerkofcourt.com</email>
+  </election_official>
+  <election_official id="93348322">
+    <county_name>LINCOLN</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Linda Cook</name>
+    <title> Clerk</title>
+    <phone> 318-251-5130</phone>
+    <fax> 318-255-6004</fax>
+    <email> lindat@lincolnparish.org</email>
+  </election_official>
+  <election_official id="1336773732">
+    <county_name>SAINT HELENA</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Beverly A. Gordon</name>
+    <title> Clerk</title>
+    <phone> 225-222-4521</phone>
+    <fax> 225-222-3443</fax>
+    <email> beverlyagordon@yahoo.com</email>
+  </election_official>
+  <election_official id="120134960">
+    <county_name>LAFAYETTE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Louis J. Perret</name>
+    <title> Clerk</title>
+    <phone> 337-291-6368</phone>
+    <fax> 337-291-6392</fax>
+    <email> pbcarroll@lpclerk.com</email>
+  </election_official>
+  <election_official id="1275611651">
+    <county_name>CLAIBORNE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. James Patrick Gladney</name>
+    <title> Clerk</title>
+    <phone> 318-927-9601</phone>
+    <fax> 318-927-2345</fax>
+    <email> claib212@bellsouth.net</email>
+  </election_official>
+  <election_official id="1445566862">
+    <county_name>WEST BATON ROUGE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Mark J. Graffeo</name>
+    <title> Clerk</title>
+    <phone> 225-383-0378</phone>
+    <fax> 225-383-3694</fax>
+    <email> mark.graffeo@wbrclerk.org</email>
+  </election_official>
+  <election_official id="441745119">
+    <county_name>BIENVILLE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. James W. “Jim” Martin</name>
+    <title> Clerk</title>
+    <phone> 318-263-2123</phone>
+    <fax> 318-263-4101</fax>
+    <email> jimmartin@bienvilleparish.org</email>
+  </election_official>
+  <election_official id="724244770">
+    <county_name>EAST BATON ROUGE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. “Doug” Welborn, Elections Dept</name>
+    <title> Clerk</title>
+    <phone> 225-295-4765</phone>
+    <fax> 225-295-4750</fax>
+    <email> rcannon@ebrclerkofcourt.org</email>
+  </election_official>
+  <election_official id="1938807924">
+    <county_name>CALDWELL</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Eugene Dunn</name>
+    <title> Clerk</title>
+    <phone> 318-649-2272</phone>
+    <fax> 318-649-2037</fax>
+    <email> caldclerk@bellsouth.net</email>
+  </election_official>
+  <election_official id="1332625857">
+    <county_name>ALLEN</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Gerald Harrington</name>
+    <title> Clerk</title>
+    <phone> 337-639-4351</phone>
+    <fax> 337-639-2030</fax>
+    <email> apcofc@centurytel.net</email>
+  </election_official>
+  <election_official id="1557440730">
+    <county_name>VERNON</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Willie Deon, Jr.</name>
+    <title> Clerk</title>
+    <phone> 337-238-1384</phone>
+    <fax>337-238-9902</fax>
+    <email> vernonclerk@bellsouth.net</email>
+  </election_official>
+  <election_official id="1255057077">
+    <county_name>TERREBONNE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. I. Robert “Bobby” Boudreaux</name>
+    <title> Clerk</title>
+    <phone> 985-868-7113</phone>
+    <fax> 985-868-8166</fax>
+    <email> naboudreaux@triparish.net</email>
+  </election_official>
+  <election_official id="1583549036">
+    <county_name>SAINT BERNARD</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Lena R. Torres</name>
+    <title> Clerk</title>
+    <phone> 504-271-3434</phone>
+    <fax> 504-278-4380</fax>
+    <email> ltnunez@bellsouth.net</email>
+  </election_official>
+  <election_official id="267781244">
+    <county_name>ASCENSION</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Kermit “Hart” Bourque</name>
+    <title> Clerk</title>
+    <phone> 225-621-8400</phone>
+    <fax> 225-621-8403</fax>
+    <email> bhanna@ascensioncourthouse.org</email>
+  </election_official>
+  <election_official id="1806594773">
+    <county_name>NATCHITOCHES</county_name>
+    <state_id>22</state_id>
+    <name>Hon. “Louie” Bernard</name>
+    <title> Clerk</title>
+    <phone> 318-352-8152</phone>
+    <fax> 318-352-9321</fax>
+    <email> lbernard@cp-tel.net</email>
+  </election_official>
+  <election_official id="2099094482">
+    <county_name>CADDO</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Gary Loftin</name>
+    <title>Clerk</title>
+    <phone> 318-226-6788</phone>
+    <fax> 318-629-1105</fax>
+    <email> clerk@caddoclerk.com</email>
+  </election_official>
+  <election_official id="1421721161">
+    <county_name>TENSAS</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Ernest Sikes</name>
+    <title> Clerk</title>
+    <phone> 318-766-3921</phone>
+    <fax> 318-766-3926</fax>
+    <email> noninic@bellsouth.net</email>
+  </election_official>
+  <election_official id="1476343297">
+    <county_name>SAINT MARY</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Cliff Dressel</name>
+    <title> Clerk</title>
+    <phone> 337-828-4100 ext. 200</phone>
+    <fax> 337-828-2509</fax>
+    <email> stmaryclerk@teche.net</email>
+  </election_official>
+  <election_official id="570124595">
+    <county_name>RAPIDES</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Carolyn Jones Ryland</name>
+    <title> Clerk </title>
+    <phone> 318-473-8153</phone>
+    <fax> 318-473-4667</fax>
+    <email> cjryland@rapidesclerk.org</email>
+  </election_official>
+  <election_official id="343743488">
+    <county_name>BOSSIER</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Joan Carraway</name>
+    <title> Clerk </title>
+    <phone> 318-965-2336</phone>
+    <fax> 318-965-2713</fax>
+    <email> bossier@softdisk.com</email>
+  </election_official>
+  <election_official id="1889542643">
+    <county_name>LAFOURCHE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Vernon H. Rodrigue</name>
+    <title> Clerk</title>
+    <phone> 985-447-4841</phone>
+    <fax>985-447-5800 </fax>
+    <email> lafourchecoc@bellsouth.net</email>
+  </election_official>
+  <election_official id="258363111">
+    <county_name>WEST CARROLL</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Kay S. Bolding</name>
+    <title> Clerk </title>
+    <phone> 318-428-3281</phone>
+    <fax> 318-428-9896</fax>
+    <email> wcclerk@bellsouth.net</email>
+  </election_official>
+  <election_official id="1679002013">
+    <county_name>CALCASIEU</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Horace Lynn Jones, II</name>
+    <title> Clerk</title>
+    <phone> 337-437-3558 ext.123</phone>
+    <fax> 337-437-3350</fax>
+    <email> lynnjones@calclerkofcourt.com</email>
+  </election_official>
+  <election_official id="583446701">
+    <county_name>WEBSTER</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Holli W. Vining</name>
+    <title> Clerk</title>
+    <phone> 318-371-0366</phone>
+    <fax> 318-371-0226</fax>
+    <email> hollivining@yahoo.com</email>
+  </election_official>
+  <election_official id="967473669">
+    <county_name>DE SOTO</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Ollie L. “Sonny” Stone, Jr.</name>
+    <title> Clerk</title>
+    <phone> 318-872-3110</phone>
+    <fax> 318-872-4202</fax>
+    <email> desotocourt@bellsouth.net</email>
+  </election_official>
+  <election_official id="1224043830">
+    <county_name>CAMERON</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Carl E. Broussard</name>
+    <title> Clerk</title>
+    <phone> 337-775-5316</phone>
+    <fax> 337-775-7172</fax>
+    <email> carl_broussard@msn.com</email>
+  </election_official>
+  <election_official id="1725497380">
+    <county_name>EAST CARROLL</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Edna Bishop Brock</name>
+    <title> Clerk</title>
+    <phone> 318-559-2399</phone>
+    <fax> 318-559-0037</fax>
+    <email> eastcarrollrov@sos.louisiana.gov</email>
+  </election_official>
+  <election_official id="101020501">
+    <county_name>ASSUMPTION</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Darlene Landry</name>
+    <title> Clerk</title>
+    <phone> 985-369-6653</phone>
+    <fax> 985-369-2032</fax>
+    <email> dlandry@assumptionclerk.com</email>
+  </election_official>
+  <election_official id="2044750819">
+    <county_name>JEFFERSON</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Jon A. Gegenheimer</name>
+    <title> Clerk</title>
+    <phone> 504-364-2900</phone>
+    <fax> 504-736-8738</fax>
+    <email> bfreese@jpclerkofcourt.us</email>
+  </election_official>
+  <election_official id="215273552">
+    <county_name>ST JOHN THE BAPTIST</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Eliana Olivier DeFrancesch</name>
+    <title> Clerk</title>
+    <phone> 985-497-3331</phone>
+    <fax> 985-497-6941</fax>
+    <email> eliana@bellsouth.net</email>
+  </election_official>
+  <election_official id="751404615">
+    <county_name>AVOYELLES</county_name>
+    <state_id>22</state_id>
+    <name>Hon. “Sammy” Couvillon</name>
+    <title> Clerk</title>
+    <phone> 318-253-7523</phone>
+    <fax> 318-253-4614</fax>
+    <email> scouvillon@bellsouth.net</email>
+  </election_official>
+  <election_official id="213584681">
+    <county_name>TANGIPAHOA</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Julian E. Dufreche</name>
+    <title> Clerk</title>
+    <phone> 985-748-4146</phone>
+    <fax> 985-748-6503</fax>
+    <email> election@tangiclerk.org</email>
+  </election_official>
+  <election_official id="1509592163">
+    <county_name>UNION</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Sue Buckley</name>
+    <title> Clerk</title>
+    <phone> 318-368-3055</phone>
+    <fax> 318-368-3861</fax>
+    <email> upclerk@bayou.com</email>
+  </election_official>
+  <election_official id="71987013">
+    <county_name>SAINT CHARLES</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Charles J. Oubre, Jr</name>
+    <title> Clerk</title>
+    <phone> 985-783-6632</phone>
+    <fax> 985-783-2005</fax>
+    <email> stcharlescoc@bellsouth.net</email>
+  </election_official>
+  <election_official id="272328958">
+    <county_name>GRANT</county_name>
+    <state_id>22</state_id>
+    <name>Hon. J. ElRay Lemoine</name>
+    <title> Clerk</title>
+    <phone> 318-627-3246</phone>
+    <fax> 318-627-3201</fax>
+    <email> gpclerkct263@aol.com</email>
+  </election_official>
+  <election_official id="1577105773">
+    <county_name>OUACHITA</county_name>
+    <state_id>22</state_id>
+    <name>Hon. “Bill” Hodge</name>
+    <title> Clerk </title>
+    <phone> 318-327-1444</phone>
+    <fax> 318-327-1462</fax>
+    <email> ouaclerk@aol.com</email>
+  </election_official>
+  <election_official id="1150411477">
+    <county_name>FRANKLIN</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Ann Johnson</name>
+    <title> Clearwater County Clerk</title>
+    <phone> 318-435-5133</phone>
+    <fax> 318-435-6792 or 435-5134</fax>
+    <email> franklinclerk@inetsouth.com</email>
+  </election_official>
+  <election_official id="689853683">
+    <county_name>JEFFERSON DAVIS</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Carlton L. Duhon</name>
+    <title> Clerk</title>
+    <phone> 337-824-1160</phone>
+    <fax> 337-824-1354</fax>
+    <email> jdclerk@hotmail.com</email>
+  </election_official>
+  <election_official id="1139397069">
+    <county_name>SABINE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Dollie Moore Knippers</name>
+    <title> Clerk</title>
+    <phone> 318-256-6223</phone>
+    <fax> 318-256-9037</fax>
+    <email> sabineclerk@bellsouth.net</email>
+  </election_official>
+  <election_official id="648444765">
+    <county_name>JACKSON</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Ann B. Walsworth</name>
+    <title> Clerk</title>
+    <phone> 318-259-2424</phone>
+    <fax> 318-395-0386</fax>
+    <email> clerk@jacksonparishclerk.org</email>
+  </election_official>
+  <election_official id="240107315">
+    <county_name>WASHINGTON</county_name>
+    <state_id>22</state_id>
+    <name>Hon. Johnny D. Crain</name>
+    <title> Clerk </title>
+    <phone> 985-839-4663</phone>
+    <fax> 985-839-3116</fax>
+    <email> washparcoc@yahoo.com</email>
+  </election_official>
+  <election_official id="1276016075">
+    <county_name>IBERVILLE</county_name>
+    <state_id>22</state_id>
+    <name>Hon. J. G. “Bubbie” Dupont, Jr.</name>
+    <title> Clerk</title>
+    <phone> 225-687-5160</phone>
+    <fax> 225-687-5260</fax>
+    <email> acmatirne@bellsouth.net</email>
+  </election_official>
+</listings>

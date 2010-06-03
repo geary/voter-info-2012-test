@@ -1,0 +1,698 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="875203961">
+    <county_name>BECKHAM</county_name>
+    <state_id>40</state_id>
+    <name>Deidre O'Briant</name>
+    <title>&#160;</title>
+    <phone>&#160;580-928-3314    </phone>
+    <fax>&#160;580-928-9266    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1654932803">
+    <county_name>MCCURTAIN</county_name>
+    <state_id>40</state_id>
+    <name>Lue Davis             </name>
+    <title>&#160;</title>
+    <phone>&#160;580-286-7405    </phone>
+    <fax>&#160;580-286-7499    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1624031479">
+    <county_name>PITTSBURG</county_name>
+    <state_id>40</state_id>
+    <name>Cathy Thornton        </name>
+    <title>&#160;</title>
+    <phone>&#160;918-423-3877    </phone>
+    <fax>&#160;918-423-7321    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="685129046">
+    <county_name>HARMON</county_name>
+    <state_id>40</state_id>
+    <name>Frankie Long          </name>
+    <title>&#160;</title>
+    <phone>&#160;580-688-2460    </phone>
+    <fax>&#160;580-688-9784    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="580848077">
+    <county_name>PAYNE</county_name>
+    <state_id>40</state_id>
+    <name>Glenna Craig          </name>
+    <title>&#160;</title>
+    <phone>&#160;405-747-8350    </phone>
+    <fax>&#160;405-747-8393    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="948168109">
+    <county_name>PAWNEE</county_name>
+    <state_id>40</state_id>
+    <name>Tonda Miner           </name>
+    <title>&#160;</title>
+    <phone>&#160;918-762-2125    </phone>
+    <fax>&#160;918-762-2387    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1526811175">
+    <county_name>GARVIN</county_name>
+    <state_id>40</state_id>
+    <name>Cathy Brinley         </name>
+    <title>&#160;</title>
+    <phone>&#160;405-238-3303    </phone>
+    <fax>&#160;405-238-1140    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="710412851">
+    <county_name>ADAIR</county_name>
+    <state_id>40</state_id>
+    <name>Marilyn Hill-Russell  </name>
+    <title>&#160;</title>
+    <phone>&#160;918-696-7221</phone>
+    <fax>&#160;918-696-4905</fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1218361298">
+    <county_name>GRADY</county_name>
+    <state_id>40</state_id>
+    <name>Susan Turner          </name>
+    <title>&#160;</title>
+    <phone>&#160;405-224-1430    </phone>
+    <fax>&#160;405-224-6576</fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="98173581">
+    <county_name>LE FLORE</county_name>
+    <state_id>40</state_id>
+    <name>Phillip Zearley       </name>
+    <title>&#160;</title>
+    <phone>&#160;918-647-3701    </phone>
+    <fax>&#160;918-647-5262    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="533677285">
+    <county_name>OSAGE</county_name>
+    <state_id>40</state_id>
+    <name>Andrea L. Conner      </name>
+    <title>&#160;</title>
+    <phone>&#160;918-287-3036    </phone>
+    <fax>&#160;918-287-4820    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="641737099">
+    <county_name>CHEROKEE</county_name>
+    <state_id>40</state_id>
+    <name>Connie Parnell        </name>
+    <title>&#160;</title>
+    <phone>&#160; 918-456-2261    </phone>
+    <fax>&#160;918-453-2022    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1757893967">
+    <county_name>MCINTOSH</county_name>
+    <state_id>40</state_id>
+    <name>Polly Williams </name>
+    <title>&#160;</title>
+    <phone>&#160;918-689-2452    </phone>
+    <fax>&#160;918-689-2914    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="182561357">
+    <county_name>ALFALFA</county_name>
+    <state_id>40</state_id>
+    <name>Joyce Thornburgh      </name>
+    <title>&#160;</title>
+    <phone>&#160;580-596-2718    </phone>
+    <fax>&#160;580-596-2778    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1641191495">
+    <county_name>CIMARRON</county_name>
+    <state_id>40</state_id>
+    <name>Vicki Turner          </name>
+    <title>&#160;</title>
+    <phone>&#160;580-544-3377    </phone>
+    <fax>&#160;580-544-3377    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="612063227">
+    <county_name>ROGER MILLS</county_name>
+    <state_id>40</state_id>
+    <name>Donna Eakins          </name>
+    <title>&#160;</title>
+    <phone>&#160;580-497-3330    </phone>
+    <fax>&#160;580-497-3546    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="274060989">
+    <county_name>MAYES</county_name>
+    <state_id>40</state_id>
+    <name>Jill McCullah         </name>
+    <title>&#160;</title>
+    <phone>&#160;918-825-1826    </phone>
+    <fax>&#160;918-825-3848    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="617275967">
+    <county_name>ATOKA</county_name>
+    <state_id>40</state_id>
+    <name>Kathie Jones          </name>
+    <title>&#160;</title>
+    <phone>&#160;580-889-5297    </phone>
+    <fax>&#160;580-889-5311    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1837584312">
+    <county_name>WASHITA</county_name>
+    <state_id>40</state_id>
+    <name>Leah Jones            </name>
+    <title>&#160;</title>
+    <phone>&#160;580-832-3658    </phone>
+    <fax>&#160;580-832-3658    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="584850033">
+    <county_name>COTTON</county_name>
+    <state_id>40</state_id>
+    <name>Leota Guinn           </name>
+    <title>&#160;</title>
+    <phone>&#160;580-927-3456    </phone>
+    <fax>&#160;580-927-3456    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1533797264">
+    <county_name>GREER</county_name>
+    <state_id>40</state_id>
+    <name>Claudia Boyle         </name>
+    <title>&#160;</title>
+    <phone>&#160;580-782-2307    </phone>
+    <fax>&#160;580-782-2307    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="920465720">
+    <county_name>ELLIS</county_name>
+    <state_id>40</state_id>
+    <name>Glenda Martin         </name>
+    <title>&#160;</title>
+    <phone>&#160;580-885-7721    </phone>
+    <fax>&#160;580-885-7258    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="429088498">
+    <county_name>MCCLAIN</county_name>
+    <state_id>40</state_id>
+    <name>Marilyn McReynolds    </name>
+    <title>&#160;</title>
+    <phone>&#160;405-527-3121    </phone>
+    <fax>&#160;405-527-9347    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="318680560">
+    <county_name>KINGFISHER</county_name>
+    <state_id>40</state_id>
+    <name>Sharon O'Hern         </name>
+    <title>&#160;</title>
+    <phone>405-375-3895    &#160;</phone>
+    <fax>&#160;405-375-5962    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="874454785">
+    <county_name>LINCOLN</county_name>
+    <state_id>40</state_id>
+    <name>Melissa Stambaugh     </name>
+    <title>&#160;</title>
+    <phone>&#160;405-258-1349    </phone>
+    <fax>&#160;405-258-5565    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="513157721">
+    <county_name>TEXAS</county_name>
+    <state_id>40</state_id>
+    <name> Melissa Costner       </name>
+    <title>&#160;</title>
+    <phone>&#160;580-338-7644    </phone>
+    <fax>&#160;580-338-2618    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1803678679">
+    <county_name>COAL</county_name>
+    <state_id>40</state_id>
+    <name>Leota Guinn           </name>
+    <title>&#160;</title>
+    <phone>&#160;580-927-3456    </phone>
+    <fax>&#160;580-927-3456    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="293396347">
+    <county_name>KIOWA</county_name>
+    <state_id>40</state_id>
+    <name>Lynne Morris          </name>
+    <title>&#160;</title>
+    <phone>&#160;580-726-2509    </phone>
+    <fax>&#160;580-726-2124    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1537471524">
+    <county_name>MARSHALL</county_name>
+    <state_id>40</state_id>
+    <name>LaRue Wilhite         </name>
+    <title>&#160;</title>
+    <phone>&#160;580-795-5460    </phone>
+    <fax>&#160;580-795-5460    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1768192254">
+    <county_name>CHOCTAW</county_name>
+    <state_id>40</state_id>
+    <name>Darlene Rickman       </name>
+    <title>&#160;</title>
+    <phone>&#160;580-326-5164    </phone>
+    <fax>&#160;580-317-8245    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="2098834699">
+    <county_name>PONTOTOC</county_name>
+    <state_id>40</state_id>
+    <name>Marilyn McDaniel      </name>
+    <title>&#160;</title>
+    <phone>&#160;580-332-4534    </phone>
+    <fax>&#160;580-421-7765    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="2043534806">
+    <county_name>DEWEY</county_name>
+    <state_id>40</state_id>
+    <name>Barbara Squires       </name>
+    <title>&#160;</title>
+    <phone>&#160;580-328-5668    </phone>
+    <fax>&#160;580-328-5768    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1687220342">
+    <county_name>OKFUSKEE</county_name>
+    <state_id>40</state_id>
+    <name> Jo Mahaffey           </name>
+    <title>&#160;</title>
+    <phone>&#160;918-623-0105    </phone>
+    <fax>&#160;918-623-1222    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="421591321">
+    <county_name>TILLMAN</county_name>
+    <state_id>40</state_id>
+    <name>Wynnell Jackson       </name>
+    <title>&#160;</title>
+    <phone>&#160;580-335-2287    </phone>
+    <fax>&#160;580-335-2699    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="282544218">
+    <county_name>CADDO</county_name>
+    <state_id>40</state_id>
+    <name>Jean Anne McKee       </name>
+    <title>&#160;</title>
+    <phone>&#160;405-247-5001    </phone>
+    <fax>&#160;405-247-2052    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="412081896">
+    <county_name>STEPHENS</county_name>
+    <state_id>40</state_id>
+    <name>Peggy Winton          </name>
+    <title>&#160;</title>
+    <phone>&#160;580-255-8782    </phone>
+    <fax>&#160;580-255-3188    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="680692455">
+    <county_name>OKLAHOMA</county_name>
+    <state_id>40</state_id>
+    <name>Doug Sanderson        </name>
+    <title>&#160;</title>
+    <phone>&#160;405-713-1515    </phone>
+    <fax>&#160;405-713-7191    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1805358061">
+    <county_name>LOVE</county_name>
+    <state_id>40</state_id>
+    <name>Cleta Willis          </name>
+    <title>&#160;</title>
+    <phone>&#160;580-276-2242    </phone>
+    <fax>&#160;580-276-3726    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="787549215">
+    <county_name>LATIMER</county_name>
+    <state_id>40</state_id>
+    <name>Barbara Helmert       </name>
+    <title>&#160;</title>
+    <phone>&#160;918-465-3703    </phone>
+    <fax>&#160;918-465-4019    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1958830295">
+    <county_name>TULSA</county_name>
+    <state_id>40</state_id>
+    <name>Patricia Brown Bryant </name>
+    <title>&#160;</title>
+    <phone>&#160;918-596-5780    </phone>
+    <fax>&#160;918-596-4536    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1603648421">
+    <county_name>CREEK</county_name>
+    <state_id>40</state_id>
+    <name>Joy Naifeh            </name>
+    <title>&#160;</title>
+    <phone>&#160;918-224-3529    </phone>
+    <fax>&#160;918-227-6332    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="285586805">
+    <county_name>WAGONER</county_name>
+    <state_id>40</state_id>
+    <name>Duane O'Dell          </name>
+    <title>&#160;</title>
+    <phone>&#160;918-485-2142    </phone>
+    <fax>&#160;918-485-8063    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="344918380">
+    <county_name>CARTER</county_name>
+    <state_id>40</state_id>
+    <name>Helen McReynolds      </name>
+    <title>&#160;</title>
+    <phone>&#160;580-223-5290    </phone>
+    <fax>&#160;580-223-8203    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1445727060">
+    <county_name>JEFFERSON</county_name>
+    <state_id>40</state_id>
+    <name>Tammy Richardson      </name>
+    <title>&#160;</title>
+    <phone>&#160;580-228-3150    </phone>
+    <fax>&#160;580-228-2775    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="125432743">
+    <county_name>HARPER</county_name>
+    <state_id>40</state_id>
+    <name>Pauletta Roberts      </name>
+    <title>&#160;</title>
+    <phone>&#160;580-735-2313    </phone>
+    <fax>&#160;580-735-2311    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="2076749921">
+    <county_name>GARFIELD</county_name>
+    <state_id>40</state_id>
+    <name>Lue Ann Root          </name>
+    <title>&#160;</title>
+    <phone>&#160;580-237-6016    </phone>
+    <fax>&#160;580-249-5959    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1760180056">
+    <county_name>BLAINE</county_name>
+    <state_id>40</state_id>
+    <name>Jane Crawford</name>
+    <title>&#160;</title>
+    <phone>&#160;580-623-5518    </phone>
+    <fax>&#160;580-623-5519 </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1644028651">
+    <county_name>KAY</county_name>
+    <state_id>40</state_id>
+    <name>Carol Kellum          </name>
+    <title>&#160;</title>
+    <phone>&#160;580-362-2130    </phone>
+    <fax>&#160;580-362-1100    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="884746867">
+    <county_name>NOBLE</county_name>
+    <state_id>40</state_id>
+    <name>Helen Webb            </name>
+    <title>&#160;</title>
+    <phone>&#160;580-336-3527    </phone>
+    <fax>&#160;580-336-2035    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1997053360">
+    <county_name>CANADIAN</county_name>
+    <state_id>40</state_id>
+    <name>Dorothy Riley         </name>
+    <title>&#160;</title>
+    <phone>&#160;405-422-2423    </phone>
+    <fax>&#160;405-422-2450    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1596292972">
+    <county_name>GRANT</county_name>
+    <state_id>40</state_id>
+    <name>Harvey Bush           </name>
+    <title>&#160;</title>
+    <phone>&#160;580-395-2862    </phone>
+    <fax>&#160;580-395-2603    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="77735536">
+    <county_name>SEQUOYAH</county_name>
+    <state_id>40</state_id>
+    <name>Kathy Webb            </name>
+    <title>&#160;</title>
+    <phone>&#160;918-775-2614    </phone>
+    <fax>&#160;918-775-1205    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1901014389">
+    <county_name>CLEVELAND</county_name>
+    <state_id>40</state_id>
+    <name>Paula Roberts         </name>
+    <title>&#160;</title>
+    <phone>&#160;405-366-0210    </phone>
+    <fax>&#160;405-366-0209    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="2062789385">
+    <county_name>MUSKOGEE</county_name>
+    <state_id>40</state_id>
+    <name>William Bull          </name>
+    <title>&#160;</title>
+    <phone>&#160;918-687-8151    </phone>
+    <fax>&#160;918-687-0382    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1604834252">
+    <county_name>SEMINOLE</county_name>
+    <state_id>40</state_id>
+    <name> Mary Jo Rains         </name>
+    <title>&#160;</title>
+    <phone>&#160;405-257-2786   </phone>
+    <fax>&#160;405-257-3912    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1721939646">
+    <county_name>DELAWARE</county_name>
+    <state_id>40</state_id>
+    <name>Dixie F. Smith        </name>
+    <title>&#160;</title>
+    <phone>&#160;918-253-8762    </phone>
+    <fax>&#160;918-253-3286    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="984861999">
+    <county_name>POTTAWATOMIE</county_name>
+    <state_id>40</state_id>
+    <name>Diana Knight          </name>
+    <title>&#160;</title>
+    <phone>&#160;405-273-8376    </phone>
+    <fax>&#160;405-275-3240    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1430873466">
+    <county_name>MAJOR</county_name>
+    <state_id>40</state_id>
+    <name>Mary Ann Lynch        </name>
+    <title>&#160;</title>
+    <phone>&#160;580-227-4520    </phone>
+    <fax>&#160;580-227-2736    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="801158680">
+    <county_name>BEAVER</county_name>
+    <state_id>40</state_id>
+    <name>Vera Floyd            </name>
+    <title>&#160;</title>
+    <phone>&#160;580-625-4742    </phone>
+    <fax>&#160;580-625-4742    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1554163146">
+    <county_name>MURRAY</county_name>
+    <state_id>40</state_id>
+    <name>Rosa Thomas           </name>
+    <title>&#160;</title>
+    <phone>&#160;580-622-3800    </phone>
+    <fax>&#160;580-622-4319    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="695880607">
+    <county_name>PUSHMATAHA</county_name>
+    <state_id>40</state_id>
+    <name>Peggy Melton          </name>
+    <title>&#160;</title>
+    <phone>&#160;580-298-3292    </phone>
+    <fax>&#160;580-298-3292    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1132964673">
+    <county_name>JACKSON</county_name>
+    <state_id>40</state_id>
+    <name>Mary Mitchell         </name>
+    <title>&#160;</title>
+    <phone>&#160;580-482-2370    </phone>
+    <fax>&#160;580-482-2370    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1721077328">
+    <county_name>WOODS</county_name>
+    <state_id>40</state_id>
+    <name>Wylodean Linder       </name>
+    <title>&#160;</title>
+    <phone>&#160;580-327-1452    </phone>
+    <fax>&#160;580-327-6216    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="115915742">
+    <county_name>JOHNSTON</county_name>
+    <state_id>40</state_id>
+    <name>Janis Stewart         </name>
+    <title>&#160;</title>
+    <phone>&#160;580-371-3670    </phone>
+    <fax>&#160;580-371-3670 </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1854998203">
+    <county_name>CRAIG</county_name>
+    <state_id>40</state_id>
+    <name>Debbie Davenport      </name>
+    <title>&#160;</title>
+    <phone>&#160; 918-256-7559    </phone>
+    <fax>&#160;918-256-8173    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1744077485">
+    <county_name>WOODWARD</county_name>
+    <state_id>40</state_id>
+    <name>Carol Carrell         </name>
+    <title>&#160;</title>
+    <phone>&#160;580-256-3609    </phone>
+    <fax>&#160;580-254-6877    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1668803247">
+    <county_name>COMANCHE</county_name>
+    <state_id>40</state_id>
+    <name>Monica Baughman       </name>
+    <title>&#160;</title>
+    <phone>&#160;580-353-1880    </phone>
+    <fax>&#160;580-353-0049    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="343514517">
+    <county_name>WASHINGTON</county_name>
+    <state_id>40</state_id>
+    <name>Brad Johnson          </name>
+    <title>&#160;</title>
+    <phone>&#160;918-337-2850    </phone>
+    <fax>&#160;918-337-2895    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="875325969">
+    <county_name>NOWATA</county_name>
+    <state_id>40</state_id>
+    <name>Barbara Dawson        </name>
+    <title>&#160;</title>
+    <phone>&#160;918-273-0710    </phone>
+    <fax>&#160;918-273-2578    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1017585156">
+    <county_name>BRYAN</county_name>
+    <state_id>40</state_id>
+    <name>Linda Fahrendorf </name>
+    <title>&#160;</title>
+    <phone>&#160;580-924-3228</phone>
+    <fax>&#160;580-924-3228    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1618581051">
+    <county_name>OTTAWA</county_name>
+    <state_id>40</state_id>
+    <name>Verna Bass            </name>
+    <title>&#160;</title>
+    <phone>&#160;918-542-2893    </phone>
+    <fax>&#160;918-542-3005    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="281391478">
+    <county_name>HASKELL</county_name>
+    <state_id>40</state_id>
+    <name>Marcia Goff </name>
+    <title>&#160;</title>
+    <phone>&#160;918-967-8792    </phone>
+    <fax>&#160;918-967-2199    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="2131639330">
+    <county_name>CUSTER</county_name>
+    <state_id>40</state_id>
+    <name>Narci Smith </name>
+    <title>&#160;</title>
+    <phone>&#160;580-323-5124    </phone>
+    <fax>&#160;580-323-5130    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="253680083">
+    <county_name>HUGHES</county_name>
+    <state_id>40</state_id>
+    <name>Brandy West           </name>
+    <title>&#160;</title>
+    <phone>&#160;405-379-2174    </phone>
+    <fax>&#160;405-379-7734 </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1066600016">
+    <county_name>ROGERS</county_name>
+    <state_id>40</state_id>
+    <name>Terri Thomas          </name>
+    <title>&#160;</title>
+    <phone>&#160;918-341-2965    </phone>
+    <fax>&#160;918-341-4666    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="1381789507">
+    <county_name>OKMULGEE</county_name>
+    <state_id>40</state_id>
+    <name>Ann Powders           </name>
+    <title>&#160;</title>
+    <phone>&#160;918-756-2365    </phone>
+    <fax>&#160;918-758-1275    </fax>
+    <email>&#160;</email>
+  </election_official>
+  <election_official id="813241179">
+    <county_name>LOGAN</county_name>
+    <state_id>40</state_id>
+    <name>Dondee Klein          </name>
+    <title>&#160;</title>
+    <phone>&#160;405-282-1900    </phone>
+    <fax>&#160;405-282-1994    </fax>
+    <email>&#160;</email>
+  </election_official>
+</listings>

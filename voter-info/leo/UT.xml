@@ -1,0 +1,266 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="225610975">
+    <county_name>EMERY</county_name>
+    <state_id>49</state_id>
+    <name>Brenda Dugmore </name>
+    <title> Emery County Clerk </title>
+    <phone> 435-381-5106 </phone>
+    <fax> 381-5183 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="18749178">
+    <county_name>DAVIS</county_name>
+    <state_id>49</state_id>
+    <name>Steve Rawlings </name>
+    <title> Davis County Clerk/Auditor </title>
+    <phone> 801-451-3420 </phone>
+    <fax> 451-3421 </fax>
+    <email> rawlings@ co.davis.ut.us</email>
+  </election_official>
+  <election_official id="1197457834">
+    <county_name>UINTAH</county_name>
+    <state_id>49</state_id>
+    <name>Mike Wilkins </name>
+    <title> Uintah County Clerk </title>
+    <phone> 435-781-5361 </phone>
+    <fax> 781-6701 </fax>
+    <email> mwilkins@ co.uintah.ut.us </email>
+  </election_official>
+  <election_official id="1965196636">
+    <county_name>DAGGETT</county_name>
+    <state_id>49</state_id>
+    <name>Vickie McKee </name>
+    <title> Daggett County Clerk/Treasurer</title>
+    <phone> 435-784-3154 </phone>
+    <fax> 784-3335 </fax>
+    <email> vmckee@ daggett.state.ut.us</email>
+  </election_official>
+  <election_official id="1588150454">
+    <county_name>WAYNE</county_name>
+    <state_id>49</state_id>
+    <name>Ryan Torgerson</name>
+    <title> Wayne County Clerk</title>
+    <phone> 435-836-1300 </phone>
+    <fax> 836-2479 </fax>
+    <email> ryan@ wco.state.ut.us </email>
+  </election_official>
+  <election_official id="1599664847">
+    <county_name>SEVIER</county_name>
+    <state_id>49</state_id>
+    <name>Steven C. Wall </name>
+    <title> Sevier County Clerk </title>
+    <phone> 435-893-0400 </phone>
+    <fax> 896-8888 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="892653626">
+    <county_name>GRAND</county_name>
+    <state_id>49</state_id>
+    <name>Diana Carroll </name>
+    <title> Grand CountyClerk/Auditor </title>
+    <phone> 435-259-1321 </phone>
+    <fax> 259-2959 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="12877963">
+    <county_name>RICH</county_name>
+    <state_id>49</state_id>
+    <name>Becky Peart</name>
+    <title> Rich County Clerk/Auditor</title>
+    <phone> 435-793-2415 </phone>
+    <fax> 793-2410 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="290185956">
+    <county_name>SAN JUAN</county_name>
+    <state_id>49</state_id>
+    <name>Norm Johnson </name>
+    <title> San Juan County Clerk/Auditor</title>
+    <phone> 435-587-3223 </phone>
+    <fax> 587-2425 </fax>
+    <email> njohnson@ sanjuancounty.org </email>
+  </election_official>
+  <election_official id="391932278">
+    <county_name>PIUTE</county_name>
+    <state_id>49</state_id>
+    <name>Valeen H. Brown </name>
+    <title> Piute County Clerk/Auditor </title>
+    <phone> 435-577-2840 </phone>
+    <fax> 577-2433 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1373165404">
+    <county_name>WASATCH</county_name>
+    <state_id>49</state_id>
+    <name>Brent R. Titcomb </name>
+    <title> Wasatch County Clerk </title>
+    <phone> 435-654-3211 </phone>
+    <fax> 654-5116 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="122892182">
+    <county_name>SUMMIT</county_name>
+    <state_id>49</state_id>
+    <name>Kent H. Jones </name>
+    <title> Summit County Clerk </title>
+    <phone> 435-336-3204 </phone>
+    <fax> 336-3030 </fax>
+    <email> kentjones@ co.summit.ut.us</email>
+  </election_official>
+  <election_official id="2138736010">
+    <county_name>KANE</county_name>
+    <state_id>49</state_id>
+    <name>Karla Johnson </name>
+    <title> Kane County Clerk/Auditor </title>
+    <phone> 435-644-2458 </phone>
+    <fax> 644-2052 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1466052598">
+    <county_name>MILLARD</county_name>
+    <state_id>49</state_id>
+    <name>Norma Brunson </name>
+    <title> Millard County Clerk </title>
+    <phone> 435-743-6223 </phone>
+    <fax> 743-6923 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="876309212">
+    <county_name>BOX ELDER</county_name>
+    <state_id>49</state_id>
+    <name>LuAnn Adams </name>
+    <title> Box Elder County Clerk </title>
+    <phone> 435-734-3351 </phone>
+    <fax> 734-3382 </fax>
+    <email> ladams@ boxeldercounty.org </email>
+  </election_official>
+  <election_official id="545305398">
+    <county_name>TOOELE</county_name>
+    <state_id>49</state_id>
+    <name>Marilyn K. Gillette </name>
+    <title> Tooele County Clerk </title>
+    <phone> 435-843-3140  </phone>
+    <fax> 882-7317 </fax>
+    <email> mgillette@ co.tooele.ut.us </email>
+  </election_official>
+  <election_official id="1217054387">
+    <county_name>SANPETE</county_name>
+    <state_id>49</state_id>
+    <name>Sandy Neill</name>
+    <title> Sanpete County Clerk </title>
+    <phone> 435-835-2131 </phone>
+    <fax> 835-2135    </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1726955409">
+    <county_name>GARFIELD</county_name>
+    <state_id>49</state_id>
+    <name>Camille Moore </name>
+    <title> Garfield County Clerk/Auditor </title>
+    <phone> 435-676-8826 </phone>
+    <fax> 676-8239</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="856256021">
+    <county_name>JUAB</county_name>
+    <state_id>49</state_id>
+    <name>Patricia Ingram </name>
+    <title> Juab County Clerk/Auditor </title>
+    <phone> 435-623-3410 </phone>
+    <fax> 623-5936 </fax>
+    <email> pati@ co.juab.ut.us </email>
+  </election_official>
+  <election_official id="1310031433">
+    <county_name>SALT LAKE</county_name>
+    <state_id>49</state_id>
+    <name>Sherrie Swensen </name>
+    <title> Salt Lake County Clerk </title>
+    <phone> 801-468-3427 </phone>
+    <fax> </fax>
+    <email> sswensen@ co.slc.ut.us </email>
+  </election_official>
+  <election_official id="1275568379">
+    <county_name>CACHE</county_name>
+    <state_id>49</state_id>
+    <name>Jill Zollinger </name>
+    <title> Cache County Clerk </title>
+    <phone> 435-716-7150 </phone>
+    <fax> 752-3597 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="7810139">
+    <county_name>WEBER</county_name>
+    <state_id>49</state_id>
+    <name>Alan D. McEwan </name>
+    <title> Weber County Clerk/Auditor </title>
+    <phone> 801-399-8400 </phone>
+    <fax> 399-8300 </fax>
+    <email> amcewan@co.weber.ut.us </email>
+  </election_official>
+  <election_official id="1062992437">
+    <county_name>BEAVER</county_name>
+    <state_id>49</state_id>
+    <name>Paul B. Barton </name>
+    <title> Beaver County Clerk </title>
+    <phone> 435-438-6463 </phone>
+    <fax> 438-6481 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1824338764">
+    <county_name>WASHINGTON</county_name>
+    <state_id>49</state_id>
+    <name>Calvin R. Robison </name>
+    <title> Washington County Clerk </title>
+    <phone> 435-634-5712 </phone>
+    <fax> 634-5753 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="787053617">
+    <county_name>MORGAN</county_name>
+    <state_id>49</state_id>
+    <name>Stacy Lafite </name>
+    <title> Morgan County Clerk/Auditor </title>
+    <phone> 801-845-4011 </phone>
+    <fax> 829-6176 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="217071285">
+    <county_name>UTAH</county_name>
+    <state_id>49</state_id>
+    <name>Bryan E. Thompson </name>
+    <title> Utah County Clerk </title>
+    <phone> 801-851-8128 </phone>
+    <fax> 851-8232 </fax>
+    <email> bryant.ucadm@state.ut.us </email>
+  </election_official>
+  <election_official id="1098177174">
+    <county_name>CARBON</county_name>
+    <state_id>49</state_id>
+    <name>Robert P. Pero </name>
+    <title> Carbon County Clerk/Auditor </title>
+    <phone> 435-636-3224 </phone>
+    <fax> 636-3210  </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="45462048">
+    <county_name>IRON</county_name>
+    <state_id>49</state_id>
+    <name>David I. Yardley </name>
+    <title> Iron County Clerk </title>
+    <phone> 435-477-8340 </phone>
+    <fax> 477-8847 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1470500136">
+    <county_name>DUCHESNE</county_name>
+    <state_id>49</state_id>
+    <name>Diane Freston </name>
+    <title> Duchesne County Clerk </title>
+    <phone> 435-738-1100 </phone>
+    <fax> 738-5522 </fax>
+    <email> </email>
+  </election_official>
+</listings>

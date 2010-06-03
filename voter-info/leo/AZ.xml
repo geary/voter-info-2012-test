@@ -1,0 +1,140 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="300764604">
+    <county_name>COCONINO</county_name>
+    <state_id>4</state_id>
+    <name>Patty Hansen, Election Administrator</name>
+    <title>clerk</title>
+    <phone>(928)779-6589</phone>
+    <fax>(928)779-6739</fax>
+    <email>phansen@coconino.az.gov</email>
+  </election_official>
+  <election_official id="842090513">
+    <county_name>APACHE</county_name>
+    <state_id>4</state_id>
+    <name> Steve Kizer, Director</name>
+    <title> Clerk</title>
+    <phone>(928)337-7537 </phone>
+    <fax>(928)337-7538 </fax>
+    <email>skizer@co.apache.az.us</email>
+  </election_official>
+  <election_official id="436421087">
+    <county_name>MOHAVE</county_name>
+    <state_id>4</state_id>
+    <name>Allen Tempert, Director</name>
+    <title>clerk</title>
+    <phone>(928)753-0733</phone>
+    <fax>(928)718-4956</fax>
+    <email>elections@co.mohave.az.us</email>
+  </election_official>
+  <election_official id="1678232015">
+    <county_name>PIMA</county_name>
+    <state_id>4</state_id>
+    <name>Brad R. Nelson, Director</name>
+    <title> Clerk</title>
+    <phone>(520)351-6830</phone>
+    <fax>(520)351-6870</fax>
+    <email>elections@pima.gov</email>
+  </election_official>
+  <election_official id="1690404348">
+    <county_name>YUMA</county_name>
+    <state_id>4</state_id>
+    <name>Sue Stallworth, Clerk of the Board</name>
+    <title> Clerk</title>
+    <phone>(928)373-1014 </phone>
+    <fax>(928)373-1154 </fax>
+    <email>sue.stallworth@co.yuma.az.us</email>
+  </election_official>
+  <election_official id="1699914971">
+    <county_name>NAVAJO</county_name>
+    <state_id>4</state_id>
+    <name>Lisa McKee , Director </name>
+    <title> Clerk</title>
+    <phone>(928)524-4062</phone>
+    <fax>(928)524-4048</fax>
+    <email>Lisa.McKee@navajocountyaz.gov</email>
+  </election_official>
+  <election_official id="1144465408">
+    <county_name>GILA</county_name>
+    <state_id>4</state_id>
+    <name>Dixie Mundy, Director	</name>
+    <title> clerk</title>
+    <phone>(928)402-8708</phone>
+    <fax>(928)425-0319</fax>
+    <email>dmundy@co.gila.az.us</email>
+  </election_official>
+  <election_official id="1539578098">
+    <county_name>MARICOPA</county_name>
+    <state_id>4</state_id>
+    <name>Karen Osborne, Director</name>
+    <title> clerk</title>
+    <phone>(602)506-1511</phone>
+    <fax>(602)506-3069</fax>
+    <email>elections@risc.maricopa.gov</email>
+  </election_official>
+  <election_official id="236191894">
+    <county_name>COCHISE</county_name>
+    <state_id>4</state_id>
+    <name>Thomas Schelling, Elections Officer</name>
+    <title> Clerk</title>
+    <phone>(520)432-8970</phone>
+    <fax>(520)432-8995</fax>
+    <email>tschelling@co.cochise.az.us</email>
+  </election_official>
+  <election_official id="60113970">
+    <county_name>SANTA CRUZ</county_name>
+    <state_id>4</state_id>
+    <name>Melinda Meek, Clerk/Elections Director </name>
+    <title>Clerk</title>
+    <phone>(520)375-7808</phone>
+    <fax>(520)761-7843</fax>
+    <email>mmeek@co.santa-cruz.az.us</email>
+  </election_official>
+  <election_official id="1104971937">
+    <county_name>GREENLEE</county_name>
+    <state_id>4</state_id>
+    <name>Yvonne Pearson, Election Director</name>
+    <title> Clerk</title>
+    <phone>(928)865-2072</phone>
+    <fax>(928)865-4417</fax>
+    <email>ypearson@co.greenlee.az.us</email>
+  </election_official>
+  <election_official id="1503060157">
+    <county_name>LA PAZ</county_name>
+    <state_id>4</state_id>
+    <name>Donna J. Hale, Clerk</name>
+    <title> Clerk</title>
+    <phone>(928)669-6115</phone>
+    <fax>(928)669-9709</fax>
+    <email>dhale@co.la-paz.az.us</email>
+  </election_official>
+  <election_official id="1935887421">
+    <county_name>YAVAPAI</county_name>
+    <state_id>4</state_id>
+    <name>Lynn A. Constabile, Director</name>
+    <title> Clerk</title>
+    <phone>(928)771-3250</phone>
+    <fax>(928)771-3446</fax>
+    <email>web.elections@co.yavapai.az.us</email>
+  </election_official>
+  <election_official id="189458263">
+    <county_name>GRAHAM</county_name>
+    <state_id>4</state_id>
+    <name>Judy Dickerson, Elections Officer</name>
+    <title> Clerk</title>
+    <phone>(928)792-5037</phone>
+    <fax>(928)428-5951</fax>
+    <email>jdickerson@graham.az.gov</email>
+  </election_official>
+  <election_official id="763583334">
+    <county_name>PINAL</county_name>
+    <state_id>4</state_id>
+    <name>Gilberto Hoyos, Director</name>
+    <title> Clerk</title>
+    <phone>(520)866-7550 </phone>
+    <fax>(520)866-7551</fax>
+    <email>pcelections@co.pinal.az.us</email>
+  </election_official>
+</listings>
