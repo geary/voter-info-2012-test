@@ -202,6 +202,10 @@ function htmlEscape( str ) {
 	return div.innerHTML;
 }
 
+function adjustHeight() {
+	if( mapplet ) _IG_AdjustIFrameHeight();
+}
+
 function cacheUrl( url, cache, always ) {
 	if( opt.nocache  &&  ! always ) return url + '?q=' + new Date().getTime();
 	if( opt.nocache ) cache = 0;
@@ -552,7 +556,7 @@ function attribution() {
 	if( special ) special += ' and the ';
 
 	return S(
-		'<div style="', fontStyle, ' color:#333;">',
+		'<div style="margin-bottom:0.5em;', fontStyle, ' color:#333;">',
 			'<div style="font-size:85%; margin-top:0.5em; border-top:1px solid #BBB; padding-top:1em;">',
 				'Developed with ',
 				//'<span id="vips" style="font-size:100%;">',
@@ -663,6 +667,7 @@ function makerWrite() {
 			T( 'script', variables );
 		$('#outerlimits').html( body ).height( height );
 		$getcode.show();
+		adjustHeight();
 		$('#btnGetCode').click( function() {
 			$codearea.val( head + '\n\n' + body + '\n' );
 			$havecode.show();
@@ -1246,6 +1251,7 @@ function gadgetReady() {
 	function setVoteHtml() {
 		if( ! vote.info ) {
 			$details.append( log.print() );
+			adjustHeight();
 			return;
 		}
 		//var largeMapLink = mapplet ? '' : S(
@@ -1272,7 +1278,7 @@ function gadgetReady() {
 					locationWarning(),
 				'</div>'
 			);
-			_IG_AdjustIFrameHeight();
+			adjustHeight();
 		}
 		else {
 			$tabs.show();
@@ -1768,6 +1774,7 @@ function gadgetReady() {
 							) );
 							var $radios = $('#radios');
 							$radios.append( formatPlaces(places) );
+							adjustHeight();
 							$details.find('input:radio').click( function() {
 								var radio = this;
 								spin( true );
@@ -1817,6 +1824,7 @@ function gadgetReady() {
 		}
 		$map.hide();
 		$details.html( html ).show();
+		adjustHeight();
 		spin( false );
 	}
 	
@@ -1965,6 +1973,7 @@ function gadgetReady() {
 			$tabs.html( tabLinks('#detailsbox') ).show();
 		}
 		$details.show();
+		adjustHeight();
 		spin( false );
 	}
 	
@@ -2268,6 +2277,7 @@ function gadgetReady() {
 				home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
 				vote = null;
 				$details.html( electionInfo() );
+				adjustHeight();
 				function latlng( lat, lng ) { return new GLatLng( +lat.$t, +lng.$t ) }
 				var bounds = new GLatLngBounds(
 					latlng( state.gsx$south, state.gsx$west ),
