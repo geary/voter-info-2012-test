@@ -21,11 +21,15 @@ end
 
 def add_hash( hash, key, root, field )
 	f = (root/field)
-	hash[key] = f.text if f.text != ''
+	text = f.text.strip
+	hash[key] = text if text != ''
 end
 
 def fix_phone text
-	text.sub!( /^(\d{3})(\d{3})(\d{4})$/, '(\1) \2-\3' ) if text
+	if text
+		text.strip!
+		text.sub!( /^(\d{3})(\d{3})(\d{4})$/, '(\1) \2-\3' )
+	end
 end
 
 class Converter
@@ -101,7 +105,7 @@ class Converter
 				[ :location_name, :line1, :line2,  :city, :state, :zip ]
 			)
 			address.delete(:line2) if address[:line2] == a[:elections_url]
-			a[:official] = @officials[ (admin/:eo_id).text ]
+			a[:official] = @officials[ (admin/:eo_id).text.strip ]
 		}
 		
 		print "Getting localities\n"
@@ -109,10 +113,10 @@ class Converter
 		mixups = []
 		
 		(vip/:locality).each { |locality|
-			name = (locality/:name).text
-			type = (locality/:type).text
+			name = (locality/:name).text.strip
+			type = (locality/:type).text.strip
 			#admin = @admins[ (locality/:election_administration_id).text ]
-			admin_id = (locality/:election_administration_id).text
+			admin_id = (locality/:election_administration_id).text.strip
 			admin = @admins[admin_id]
 			admin_name = admin[:name]
 			id = locality[:id]
@@ -148,7 +152,7 @@ class Converter
 		eo.each { |official|
 			id = official[:id]
 			next if id == ''
-			county = (official/:county_name).text
+			county = (official/:county_name).text.strip
 			next if county == ''
 			@counties[county] = id
 			@localities[id] = locality = {}
