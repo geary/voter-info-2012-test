@@ -146,7 +146,10 @@ class Converter
 		eo.each { |official|
 			id = official[:id]
 			next if id == ''
-			@localities[id] = @counties[id] = locality = {}
+			county = (official/:county_name).text
+			next if county == ''
+			@counties[county] = id
+			@localities[id] = locality = {}
 			add_hash( locality, :name, official, :title )
 			locality[:official] = o = make_hash(
 				official,
