@@ -1,0 +1,1 @@
+GoogleElectionMap.leoReady({"state":"dc","localities":{"1200508714":{"name":"FOIA Officer","official":{"phone":"(202) 727-2525","fax":"(202) 347-2648"}}},"cities":{},"counties":{"DISTRICT OF COLUMBIA":"1200508714"}})

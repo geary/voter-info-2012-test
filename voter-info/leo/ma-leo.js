@@ -1,0 +1,1 @@
+GoogleElectionMap.leoReady({"state":"ma","localities":{},"cities":{},"counties":{}})

@@ -1589,8 +1589,8 @@ function gadgetReady() {
 	
 	function getleo( home, callback ) {
 		var info = home.info;
-		var url = S( dataUrl, 'leo/', info.state.abbr.toLowerCase(), '-leo.json' );
-		getJSON( url, function( leo ) {
+		
+		gem.leoReady = function( leo ) {
 			var city = info.city.toUpperCase(), county = info.county.toUpperCase();
 			home.leo = {
 				leo: leo,
@@ -1599,7 +1599,11 @@ function gadgetReady() {
 			};
 			if( leo.city == leo.county ) delete leo.county;
 			callback();
-		}, 60 );
+		};
+		
+		var url = S( opt.baseUrl, 'leo/', info.state.abbr.toLowerCase(), '-leo.js' );
+		$.getScript( cacheUrl( url, 60 ) );
+		
 	}
 	
 	function pollingApi( address, normalize, callback ) {

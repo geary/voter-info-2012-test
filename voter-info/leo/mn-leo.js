@@ -1,0 +1,1 @@
+GoogleElectionMap.leoReady({"state":"mn","localities":{},"cities":{},"counties":{}})

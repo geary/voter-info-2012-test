@@ -33,7 +33,7 @@ class Converter
 	def initialize abbr
 		@abbr = abbr
 		@xml_path = "#{abbr}.xml"
-		@json_path = "#{abbr.downcase}-leo.json"
+		@json_path = "#{abbr.downcase}-leo.js"
 		
 		@localities = {}
 		@counties = {}
@@ -64,8 +64,10 @@ class Converter
 		}.to_json
 		#print json
 		
+		js = "GoogleElectionMap.leoReady(#{json})"
+		
 		print "Writing #{@json_path}\n"
-		File.open( @json_path, 'w' ) { |f| f.write json }
+		File.open( @json_path, 'w' ) { |f| f.write js }
 	end
 	
 	def convert_vip

@@ -1,0 +1,1 @@
+GoogleElectionMap.leoReady({"state":"nd","localities":{},"cities":{},"counties":{}})
