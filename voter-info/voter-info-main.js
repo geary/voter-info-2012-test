@@ -929,19 +929,19 @@ function gadgetReady() {
 			},
 			armail: {
 				type: 'absentee ballot request',
-				mustbe: 'Absentee ballot requests must be postmarked by '
+				mustbe: 'Absentee ballot requests must be postmarked by:<br />'
 			},
 			arreceive: {
 				type: 'absentee ballot request',
-				mustbe: 'Election officials must receive your absentee ballot request by '
+				mustbe: 'Election officials must receive your absentee ballot request by:<br />'
 			},
 			avmail: {
 				type: 'completed absentee ballot',
-				mustbe: 'Completed absentee ballots must be postmarked by '
+				mustbe: 'Completed absentee ballots must be postmarked by:<br />'
 			},
 			avreceive: {
 				type: 'completed absentee ballot',
-				mustbe: 'Election officials must receive your completed absentee ballot by '
+				mustbe: 'Election officials must receive your completed absentee ballot by:<br />'
 			}
 		};
 		
