@@ -399,8 +399,11 @@ function formatDate( date ) {
 	);
 }
 
-var electionDay = new Date( 2010, 5, 8 );  // year, month-1, day
-
+function dateFromMDY( mdy ) {
+	mdy = mdy.split('/');
+	return new Date( mdy[2], mdy[0]-1, mdy[1] );
+}
+	
 var today = new Date;
 today.setHours( 0, 0, 0, 0 );
 
@@ -869,16 +872,23 @@ function gadgetReady() {
 	}
 	
 	function electionInfo() {
+		var info = [];
+		var state = home && home.info && home.info.state;
+		if( state  &&  state != stateUS ) {
+			for( var i = 1;  i < 9;  ++i ) {
+				var date = state['gsx$date'+i];
+				if( date ) date = date.$t;
+				if( date ) info.push( stateLocalInfo( state, dateFromMDY(date), state['gsx$type'+i].$t ) );
+			}
+		}
 		return S(
-			stateLocalInfo(),
+			info.join(''),
 			infoLinks(),
 			attribution()
 		);
 	}
 	
-	function stateLocalInfo() {
-		var state = home && home.info && home.info.state;
-		if( ! state  ||  state == stateUS ) return '';
+	function stateLocalInfo( state, electionDay, electionName ) {
 		
 		var sameDay = state.gsx$sameday.$t != 'TRUE' ? '' : S(
 			'<div style="margin-bottom:0.5em;">',
@@ -976,6 +986,9 @@ function gadgetReady() {
 		//	);
 		return S(
 			'<div style="margin-bottom:0.5em;">',
+				'<div class="heading" style="font-size:120%; margin:0.75em 0;">',
+					formatDate(electionDay), ' ', electionName,
+				'</div>',
 				candidates(),
 				'<div class="heading" style="font-size:110%; margin:0.75em 0;">',
 					'Vote by Mail',
@@ -2218,7 +2231,8 @@ function gadgetReady() {
 		// http://spreadsheets.google.com/feeds/list/p9CuB_zeAq5X-twnx_mdbKg/2/public/values?alt=json
 		var stateSheet = dataUrl + 'leo/states-spreadsheet.json';
 		
-		getJSON( stateSheet, function( json ) {
+		getJSON( stateSheet, sheetReady, 300 );
+		function sheetReady( json ) {
 			json.feed.entry.forEach( function( state ) {
 				statesByAbbr[ state.abbr = state.gsx$abbr.$t ] = state;
 				statesByName[ state.name = state.gsx$name.$t ] = state;
@@ -2333,7 +2347,7 @@ function gadgetReady() {
 				if( pref.ready )
 					submit( pref.address || pref.example );
 			}
-		});
+		}
 	});
 	
 	analytics( 'view' );
