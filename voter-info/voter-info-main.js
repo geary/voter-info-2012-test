@@ -884,7 +884,11 @@ function gadgetReady() {
 			for( var i = 1;  i < 9;  ++i ) {
 				var date = state['gsx$date'+i];
 				if( date ) date = date.$t;
-				if( date ) info.push( stateLocalInfo( state, dateFromMDY(date), state['gsx$type'+i].$t ) );
+				if( date ) {
+					date = dateFromMDY( date );
+					if( date >= today )
+						info.push( stateLocalInfo( state, date, state['gsx$type'+i].$t ) );
+				}
 			}
 		}
 		return S(
