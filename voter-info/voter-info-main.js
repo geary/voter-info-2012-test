@@ -1830,6 +1830,7 @@ function gadgetReady() {
 		log( 'Getting home map info' );
 		home.info = mapInfo( geo, place );
 		if( ! home.info  /*||  home.info.accuracy < Accuracy.address*/ ) { sorry(); return; }
+		$selectState.val( home.info.state.abbr );
 		var location;
 		
 		getleo( home, function() {
