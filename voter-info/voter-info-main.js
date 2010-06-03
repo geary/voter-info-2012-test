@@ -2257,6 +2257,7 @@ function gadgetReady() {
 				abbr = abbr.toUpperCase();
 				var state = statesByAbbr[abbr];
 				if( ! state ) return;
+				$('#PollingPlaceSearchInput').val('');
 				$selectState.val( abbr );
 				home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
 				vote = null;
