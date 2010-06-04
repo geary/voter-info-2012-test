@@ -2250,21 +2250,14 @@ function gadgetReady() {
 			indexSpecialStates();
 			
 			function polyState( abbr ) {
-				if( gem.currentPolys ) {
-					gem.currentPolys.forEach( function( polygon ) {
-						map.removeOverlay( polygon );
-					});
-					delete gem.currentPolys;
-				}
 				gem.currentAbbr = abbr = abbr.toLowerCase();
 				gem.shapeReady = function( json ) {
 					if( json.state != gem.currentAbbr ) return;
-					gem.currentPolys = [];
+					map.clearOverlays();
 					json.shapes.forEach( function( poly ) {
 						poly.points.push( poly.points[0] );
 						var polygon = new GPolygon( poly.points, '#000000', 2, .7, '#000000', .07 );
 						map.addOverlay( polygon );
-						gem.currentPolys.push( polygon );
 					});
 				};
 				$.getScript( cacheUrl( S( opt.baseUrl, 'shapes/json/', abbr, '.js' ) ) );
