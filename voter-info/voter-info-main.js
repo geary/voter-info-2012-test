@@ -346,7 +346,7 @@ var pref = {
 	details: 'tab',
 	address: '',
 	fontFamily: 'Arial,sans-serif',
-	fontSize: '10',
+	fontSize: '11',
 	fontUnits: 'pt',
 	logo: '',
 	scoop: '',
@@ -687,7 +687,7 @@ function gadgetWrite() {
 			'body.gadget { margin:0; padding:0; }',
 			'#wrapper, #wrapper td { ', fontStyle, ' }',
 			'#previewmap, #mapbox { overflow: auto; }',
-			'.heading { font-weight:bold; font-size:110%; }',
+			'.heading { font-weight:bold; }',
 			'.orange { padding:6px; width:95%; background-color:#FFEAC0; border:1px solid #FFBA90; }',
 			'.pink { padding:6px; width:95%; background-color:#FFD0D0; border:1px solid #FF9090; }',
 			params.home ? '.removehelp { display:none; }' : '',
@@ -697,7 +697,7 @@ function gadgetWrite() {
 	if( mapplet ) {
 		document.write(
 			'<style type="text/css">',
-				'#PollingPlaceSearch, #PollingPlaceSearch td { font-size:10pt; margin:0; padding:0; }',
+				'#PollingPlaceSearch, #PollingPlaceSearch td { font-size:11pt; margin:0; padding:0; }',
 				'#PollingPlaceSearch { background-color:#E8ECF9; margin:0; padding:6px; width:95%; }',
 				'.PollingPlaceSearchForm { margin:0; padding:0; }',
 				'.PollingPlaceSearchTitle { /*font-weight:bold;*/ /*font-size:110%;*/ /*padding-bottom:4px;*/ }',
@@ -878,7 +878,7 @@ function gadgetReady() {
 	//}
 	
 	function electionInfo() {
-		var info = [];
+		var elections = [];
 		var state = home && home.info && home.info.state;
 		if( state  &&  state != stateUS ) {
 			for( var i = 1;  i < 9;  ++i ) {
@@ -887,30 +887,164 @@ function gadgetReady() {
 				if( date ) {
 					date = dateFromMDY( date );
 					if( date >= today )
-						info.push( stateLocalInfo( state, date, state['gsx$type'+i].$t ) );
+						elections.push( perElectionInfo( state, date, state['gsx$type'+i].$t ) );
 				}
 			}
 		}
 		return S(
-			info.join(''),
+			generalInfo( state ),
+			elections.join(''),
 			infoLinks(),
 			attribution()
 		);
 	}
 	
-	function stateLocalInfo( state, electionDay, electionName ) {
-		
-		var sameDay = state.gsx$sameday.$t != 'TRUE' ? '' : S(
-			'<div style="margin-bottom:0.5em;">',
-				state.name, ' residents may register to vote at their polling place on Election Day:<br />',
-				'Tuesday, March 2',
-			'</div>'
-		);
+	function generalInfo( state ) {
 		
 		var comments = state.gsx$comments.$t;
 		if( comments ) comments = S(
 			'<div style="margin-bottom:0.5em;">',
 				comments,
+			'</div>'
+		);
+		
+		var absenteeLinkTitle = {
+			//'Early': 'Absentee ballot and early voting information',
+			'Early': 'Absentee ballot information',
+			'Mail': 'Vote by mail information'
+		}[state.gsx$absentee.$t] || 'Get an absentee ballot';
+		
+		var absentee = S(
+			'<div style="margin-bottom:0.5em;">',
+				fix( state.gsx$absenteeautomatic.$t == 'TRUE' ?
+					'Any %S voter may vote by mail.' :
+					'Some %S voters may qualify to vote by mail.'
+				),
+			'</div>',
+			infolink( 'gsx$absenteeinfo', absenteeLinkTitle )
+		);
+		
+		return S(
+			'<div style="margin-bottom:0.5em;">',
+				'<div class="heading" style="margin-bottom:0.75em;">',
+					fix( 'How to vote in %S' ),
+				'</div>',
+				infolink( 'gsx$electionwebsite', '%S election website' ),
+				infolink( 'gsx$areyouregistered', 'Are you registered to vote?' ),
+				absentee,
+				//infolink( 'gsx$registrationinfo', state.abbr == 'ND' ? '%S voter qualifications' : 'How to register in %S', true ),
+				'<div style="margin:1.0em 0 0.5em 0;">',
+					state.name, ' voter hotline: ',
+					'<span style="white-space:nowrap;">',
+						state.gsx$hotline.$t,
+					'</span>',
+				'</div>',
+				comments,
+				formatLeo(),
+			'</div>'
+		);
+		
+		function fix( text, prefix ) {
+			return( text
+				.replace( '%S', S(
+					prefix && state.prefix ? state.prefix  + ' ' : '',
+					state.name
+				) )
+				//.replace( '%C', S(
+				//	home.info.county // TODO?
+				//) )
+			);
+		}
+		
+		function infolink( key, text, prefix ) {
+			var url = state[key].$t;
+			return ! url ? '' : S(
+				'<div style="margin-bottom:0.5em;">',
+					'<a target="_blank" href="', url, '">',
+						fix( text, prefix ),
+					'</a>',
+				'</div>'
+			);
+		}
+		
+		function formatLeo() {
+			var leo = home.leo;
+			return(
+				! leo ? '' :
+				leo.locality ? formatLeoList([ leo.locality ]) :
+				formatLeoList([ leo.city, leo.county ])
+			);
+		}
+		
+		function formatLeoList( ids ) {
+			var out = [];
+			ids && ids.forEach( function( id ) {
+				var leo = home.leo.leo.localities[id];
+				if( ! leo ) return;
+				var a = leo.address || {}, o = leo.official || {};
+				out.push( S(
+					'<div>',
+						'<div style="margin-bottom:0.15em;">',
+							linkIf( leo.name || '', leo.elections_url || '' ),
+						'</div>',
+						'<div>',
+							a.location_name || '',
+						'</div>',
+						'<div>',
+							a.line1 || '',
+						'</div>',
+						'<div>',
+							a.line2 || '',
+						'</div>',
+						'<div>',
+							a.city && a.state ? S( a.city, ', ', a.state, ' ', a.zip || '' ) : '',
+						'</div>',
+						'<div>',
+							'<table cellspacing="0" cellpadding="0">',
+								o.phone ? '<tr><td>Phone:&nbsp;</td><td>' + o.phone + '</td></tr>' : '',
+								o.fax ? '<tr><td>Fax:&nbsp;</td><td>' + o.fax + '</td></tr>' : '',
+							'</table>',
+						'</div>',
+						//leo.email ? S( '<div>', 'Email: ', linkto(leo.email), '</div>' ) : '',
+						!( a.line1 && a.city && a.state && a.zip ) ? '' : S(
+							'<div style="margin-top:0.1em;">',
+							'</div>',
+							directionsLink( home, {
+								info: {
+									accuracy: Accuracy.address,
+									address: S(
+										a.line1 ? a.line1 + ', ' : '',
+										a.city, ', ', a.state, ' ', a.zip
+									)
+								}
+							})
+						),
+					'</div>'
+				) );
+			});
+			if( ! out.length ) return '';
+			return S(
+				'<div style="padding:0.5em 0 0.75em 0;">',
+					'<div class="heading" style="margin-bottom:0.75em">',
+						'Your Local Election Office',
+					'</div>',
+					out.length < 2 ? '' : S(
+						'<div style="font-style:italic; margin-bottom:0.75em;">',
+							'Your local election office is listed below, but we were unable to determine which one serves your location. Please contact both offices for more information:',
+						'</div>'
+					),
+					out.join('<div style="padding:0.5em;"></div>'),
+				'</div>'
+			);
+		}
+	}
+	
+	function perElectionInfo( state, electionDay, electionName ) {
+		
+		var sameDay = state.gsx$sameday.$t != 'TRUE' ? '' : S(
+			'<div style="margin-bottom:0.5em;">',
+				state.name, ' residents may register to vote at their polling place on Election Day:<br />',
+				formatDayDate( electionDay ),
 			'</div>'
 		);
 		
@@ -945,26 +1079,7 @@ function gadgetReady() {
 			}
 		};
 		
-		//var w = window.open();
-		//w.document.write( biglist() );
-		//w.document.close();
-		
-		var absenteeLinkTitle = {
-			//'Early': 'Absentee ballot and early voting information',
-			'Early': 'Absentee ballot information',
-			'Mail': 'Vote by mail information'
-		}[state.gsx$absentee.$t] || 'Get an absentee ballot';
-		
 		var absentee = S(
-			'<div style="margin-bottom:0.5em;">',
-				fix( state.gsx$absenteeautomatic.$t == 'TRUE' ?
-					'Any %S voter may vote by mail.' :
-					'Some %S voters may qualify to vote by mail.'
-				),
-			'</div>',
-			'<ul style="margin-top:0; margin-bottom:0;">',
-				election( 'gsx$absenteeinfo', absenteeLinkTitle ),
-			'</ul>',
 			deadline( state, 'gsx$absrequestpostmark', 'armail' ),
 			deadline( state, 'gsx$absrequestreceive', 'arreceive' ),
 			deadline( state, 'gsx$absvotepostmark', 'avmail' ),
@@ -982,39 +1097,15 @@ function gadgetReady() {
 		//	);
 		return S(
 			'<div style="margin-bottom:0.5em;">',
-				'<div class="heading" style="font-size:120%; margin:0.75em 0;">',
+				'<div class="heading" style="margin:0.75em 0;">',
 					formatDate(electionDay), ' ', electionName,
 				'</div>',
-				candidates(),
-				'<div class="heading" style="font-size:110%; margin:0.75em 0;">',
-					'Vote by Mail',
-				'</div>',
+				deadlines || '',
 				'<div style="margin-bottom:1em;">',
 					absentee,
 				'</div>',
-				'<div class="heading" style="font-size:110%; margin-bottom:0.75em;">',
-					'Voter Registration',
-				'</div>',
-				deadlines || '',
 				sameDay,
-				comments,
-				mapplet ? S(
-					'<div style="margin-bottom:0.75em;">',
-						'Get information about voting in your state:',
-					'</div>'
-				) : '',
-				'<ul style="margin-top:0; margin-bottom:0;">',
-					election( 'gsx$areyouregistered', 'Are you registered to vote?' ),
-					//election( 'gsx$registrationinfo', state.abbr == 'ND' ? '%S voter qualifications' : 'How to register in %S', true ),
-					election( 'gsx$electionwebsite', '%S election website' ),
-				'</ul>',
-				'<div style="margin:1.0em 0 0.5em 0;">',
-					state.name, ' voter hotline: ',
-					'<span style="white-space:nowrap;">',
-						state.gsx$hotline.$t,
-					'</span>',
-				'</div>',
-				formatLeo(),
+				candidates(),
 			'</div>'
 		);
 		
@@ -1086,95 +1177,13 @@ function gadgetReady() {
 			);
 		}
 		
-		function election( key, text, prefix ) {
-			var url = state[key].$t;
-			return ! url ? '' : S(
-				'<li style="margin-bottom:0.5em; margin-left:-1.25em;">',
-					'<a target="_blank" href="', url, '">',
-						fix( text, prefix ),
-					'</a>',
-				'</li>'
-			);
-		}
-		
-		function formatLeo() {
-			var leo = home.leo;
-			return(
-				! leo ? '' :
-				leo.locality ? formatLeoList([ leo.locality ]) :
-				formatLeoList([ leo.city, leo.county ])
-			);
-		}
-		
-		function formatLeoList( ids ) {
-			var out = [];
-			ids && ids.forEach( function( id ) {
-				var leo = home.leo.leo.localities[id];
-				if( ! leo ) return;
-				var a = leo.address || {}, o = leo.official || {};
-				out.push( S(
-					'<div>',
-						'<div style="margin-bottom:0.15em;">',
-							linkIf( leo.name || '', leo.elections_url || '' ),
-						'</div>',
-						'<div>',
-							a.location_name || '',
-						'</div>',
-						'<div>',
-							a.line1 || '',
-						'</div>',
-						'<div>',
-							a.line2 || '',
-						'</div>',
-						'<div>',
-							a.city && a.state ? S( a.city, ', ', a.state, ' ', a.zip || '' ) : '',
-						'</div>',
-						'<div>',
-							'<table cellspacing="0" cellpadding="0">',
-								o.phone ? '<tr><td>Phone:&nbsp;</td><td>' + o.phone + '</td></tr>' : '',
-								o.fax ? '<tr><td>Fax:&nbsp;</td><td>' + o.fax + '</td></tr>' : '',
-							'</table>',
-						'</div>',
-						//leo.email ? S( '<div>', 'Email: ', linkto(leo.email), '</div>' ) : '',
-						!( a.line1 && a.city && a.state && a.zip ) ? '' : S(
-							'<div style="margin-top:0.1em;">',
-							'</div>',
-							directionsLink( home, {
-								info: {
-									accuracy: Accuracy.address,
-									address: S(
-										a.line1 ? a.line1 + ', ' : '',
-										a.city, ', ', a.state, ' ', a.zip
-									)
-								}
-							})
-						),
-					'</div>'
-				) );
-			});
-			if( ! out.length ) return '';
-			return S(
-				'<div style="padding:0.5em 0 0.75em 0;">',
-					'<div class="heading" style="font-size:110%; margin-bottom:0.75em">',
-						'Your Local Election Office',
-					'</div>',
-					out.length < 2 ? '' : S(
-						'<div style="font-style:italic; margin-bottom:0.75em;">',
-							'Your local election office is listed below, but we were unable to determine which one serves your location. Please contact both offices for more information:',
-						'</div>'
-					),
-					out.join('<div style="padding:0.5em;"></div>'),
-				'</div>'
-			);
-		}
-		
 		function candidates() {
 			var contests = vote && vote.poll && vote.poll.contests;
 			if( ! contests  ||  ! contests.length ) return '';
 			contests = sortArrayBy( contests, 'ballot_placement', { numeric:true } );
 			return S(
 				'<div style="padding:0.5em 0;">',
-					'<div class="heading" style="font-size:110%;">',
+					'<div class="heading" style="">',
 						'Special Election Candidates',
 					'</div>',
 					'<div style="font-size:85%; font-style:italic; margin-top:0.5em">',
