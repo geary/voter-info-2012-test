@@ -1,4 +1,4 @@
-// Copyright 2008 Michael Geary
+// Copyright 2008-2010 Michael Geary
 // http://mg.to/
 // Free Beer and Free Speech License (any OSI license)
 // http://freebeerfreespeech.org/
