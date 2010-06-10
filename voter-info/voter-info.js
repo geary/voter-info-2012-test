@@ -8,4 +8,4 @@ document.write(
 	'</script>'
 );
 
-opt.writeScript( opt.old ? 'voter-info-main.js' : 'voter-info-iraq.js' );
+opt.writeScript( 'voter-info-main.js' );
