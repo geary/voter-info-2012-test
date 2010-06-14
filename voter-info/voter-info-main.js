@@ -1618,7 +1618,9 @@ function gadgetReady() {
 			normalize ? 'normalize=1&' : '',
 			'q=', encodeURIComponent(address)
 		);
-		getJSON( url, callback );
+		getJSON( url, function( poll ) {
+			callback( poll.errorcode == null ? { errorcode:1 } : poll );
+		});
 	}
 	
 	function lookupPollingPlace( inputAddress, info, callback ) {
