@@ -1619,7 +1619,7 @@ function gadgetReady() {
 			'q=', encodeURIComponent(address)
 		);
 		getJSON( url, function( poll ) {
-			callback( poll.errorcode == null ? { errorcode:1 } : poll );
+			callback( typeof poll == 'object' ? poll : { errorcode:1 } );
 		});
 	}
 	
