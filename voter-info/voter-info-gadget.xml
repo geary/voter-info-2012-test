@@ -2,7 +2,7 @@
 <Module>
 
 <ModulePrefs
-    title="Virginia Polling Place Information"
+    title="Google Voter Info"
     description="Enter your home address to find your voter registration information, voting location and more. Embed this gadget on your website or blog to help others find this important information."
     author="Google, Inc."
     author_affiliation="Google, Inc."
@@ -27,8 +27,7 @@
 
 <!--<UserPref name="prompt" datatype="string" display_name="Prompt" default_value="Find your 2009 voter information. Enter the *home* address where you are registered to vote:"/>-->
 
-<!--<UserPref name="example" datatype="string" display_name="Example&#160;Addr" default_value="Ex: 1600 Pennsylvania Ave, Washington DC 20006"/>-->
-<!--<UserPref name="example" datatype="string" display_name="Example&#160;Addr" default_value="Ex: 703 E Grace St 23219"/>-->
+<!--<UserPref name="example" datatype="string" display_name="Example&#160;Addr" default_value="Ex: 1600 Pennsylvania Ave 20500"/>-->
 
 <UserPref name="fontFamily" datatype="string" display_name="Font&#160;Family" default_value="Arial,sans-serif"/>
 
@@ -67,8 +66,6 @@
 <script type="text/javascript">
 
 	var opt = {
-		old: true,  // TEMP
-
 		baseUrl: 'http://election-gadgets.googlecode.com/hg/voter-info/',
 		gadgetUrl: 'http://election-gadgets.googlecode.com/hg/voter-info/voter-info-frame.xml',
 		
