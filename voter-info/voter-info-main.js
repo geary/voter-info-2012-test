@@ -575,14 +575,6 @@ function attribution() {
 	);
 }
 
-function formatInfoLocality( info ) {
-	var locality = info.city ? info.city : info.county ? info.county + ' County' : '';
-	return S(
-		locality ? locality  + ', ' + info.state.abbr : info.address.length > 2 ? info.address : info.state.name,
-		info.zip ? ' ' + info.zip : ''
-	);
-}
-
 // Maker inline initialization
 
 function makerWrite() {
@@ -1178,7 +1170,7 @@ function gadgetReady() {
 		}
 		
 		function candidates() {
-			var contests = vote && vote.poll && vote.poll.contests;
+			var contests = vote && vote.poll && vote.poll.contests && vote.poll.contests[0];
 			if( ! contests  ||  ! contests.length ) return '';
 			contests = sortArrayBy( contests, 'ballot_placement', { numeric:true } );
 			return S(
@@ -1515,15 +1507,7 @@ function gadgetReady() {
 			info.address != '703 E Grace St, Richmond, VA 23219' ? '' :
 			'<div style="font-size:90%; margin-bottom:0.25em;">GOVERNOR\'S MANSION</div>';
 		var locality = info.city ? info.city : info.county ? info.county + ' County' : '';
-		var addr = info.rawAddress ? S(
-			'<div>',
-				info.location ? '<strong>' + htmlEscape(info.location) + '</strong><br />' : '',
-				info.description ? '<span style="font-size:90%">' + htmlEscape(info.description) + '</span><br />' : '',
-				'<div style="margin-top:', info.location || info.description ? '0.25' : '0', 'em;">',
-					formatAddress(info.rawAddress).replace( /  |, /, '<br />' ),
-				'</div>',
-			'</div>'
-		) : S(
+		var addr = S(
 			'<div>',
 				special,
 				info.location ? '<strong>' + htmlEscape(info.location) + '</strong><br />' : '',
@@ -1572,17 +1556,6 @@ function gadgetReady() {
 		);
 	}
 	
-	function formatInfoAddress( info ) {
-		return S(
-			'<div>',
-				info.street,
-			'</div>',
-			'<div>',
-				formatInfoLocality( info ),
-			'</div>'
-		);
-	}
-	
 	function spin( yes ) {
 		//console.log( 'spin', yes );
 		$('#spinner').css({ visibility: yes ? 'visible' : 'hidden' });
@@ -1619,18 +1592,17 @@ function gadgetReady() {
 			'q=', encodeURIComponent(address)
 		);
 		getJSON( url, function( poll ) {
-			callback( typeof poll == 'object' ? poll : { errorcode:1 } );
+			callback( typeof poll == 'object' ? poll : { status:"ERROR" } );
 		});
 	}
 	
 	function lookupPollingPlace( inputAddress, info, callback ) {
-		function ok( poll ) { return poll.errorcode == 0  ||  poll.errorcode == 3; }
+		function ok( poll ) { return ! poll.status; }
 		function countyAddress() {
 			return S( info.street, ', ', info.county, ', ', info.state.abbr, ' ', info.zip );
 		}
 		//if( address == '1600 Pennsylvania Ave NW, Washington, DC 20006, USA' ) {
 		//	callback({
-		//		errorcode: 0,
 		//		locations: [{
 		//			address: '600 22nd St NW, Washington, DC 20037, USA',
 		//			location: 'George Washington University',
@@ -1643,12 +1615,12 @@ function gadgetReady() {
 			if( ok(poll) )
 				callback( poll );
 			else
-				pollingApi( countyAddress(), false, function( poll ) {
-					if( ok(poll)  ||  ! inputAddress  )
-						callback( poll );
-					else
+				//pollingApi( countyAddress(), false, function( poll ) {
+				//	if( ok(poll)  ||  ! inputAddress  )
+				//		callback( poll );
+				//	else
 						pollingApi( inputAddress, true, callback );
-				});
+				//});
 		});
 	}
 	
@@ -1854,73 +1826,39 @@ function gadgetReady() {
 		getleo( home, function() {
 			lookupPollingPlace( inputAddress, home.info, function( poll ) {
 				vote.poll = poll;
-				log( 'Polling errorcode: ' + poll.errorcode + ({
-					0: ' (exact match)',
-					1: ' (no match)',
-					2: ' (bad address)',
-					3: ' (interpolated)'
-				}[poll.errorcode] || '' ) );
-				// temp fix for no pollingplace data
-				if( !( poll.locations && poll.locations[0] && poll.locations[0].address ) )
-					poll.errorcode = 2;
-				if( poll.errorcode != 0  && poll.errorcode != 3 ) {
+				log( 'API status code: ' + poll.status || '(OK)' );
+				var locations = poll.locations && poll.locations[0];
+				var location = locations && locations[0];
+				var address = location && location.address;
+				if( ! address )
+					poll.status = 'TEMP_NO_ADDRESS';
+				if( poll.status ) {
 					sorry();
 				}
 				else {
-					interpolated = ( poll.errorcode == 3 );
-					location = poll.locations[0];
-					var address  = location.address;
-					var rawAddress = address.replace( /&amp;/, '&' );
-					log( 'Polling address:', address );
-					if( ! address  ||  address.length < 10 ) {
-						log( 'Rejecting short address' );
-						if( location.location ) {
-							setNoGeo( location, rawAddress );
-						}
-						else {
-							sorry();
-						}
-						return;
-					}
+					// TODO:
+					//interpolated = ( poll.errorcode == 3 );
 					home.leo.locality = '' + poll.locality;
-					var ok = address.match( /(,| +)\d\d\d\d\d(-\d\d\d\d)? *$/i );
-					if( ! ok ) {
-						var match = address.match( /(,| +) *([a-z][a-z])(,| *)$/i );
-						ok = match && statesByAbbr[ match[2].toUpperCase() ];
-					}
-					if( ! ok ) {
-						address = address
-							.replace( /(,| +) *\w\w *$/, ' ' )
-							.replace( / *, */, ' ' )
-							+ ', ' + home.info.city + ', ' + home.info.state.abbr;
-					}
-					log( 'Modified address:', address );
-					geocode( address, function( geo ) {
+					var addr = S(
+						address.line1 ? address.line1 + ', ' : '',
+						address.line2 ? address.line2 + ', ' : '',
+						address.city, ', ', address.state,
+						address.zip ? ' ' + address.zip.slice(0,5) : ''
+					);
+					log( 'Polling address:', addr );
+					geocode( addr, function( geo ) {
 						var places = geo && geo.Placemark;
-						set( geo, places, location, address, rawAddress );
+						set( geo, places, location, addr );
 					});
 				}
 			});
 		});
 		
-		function set( geo, places, location, address, rawAddress ) {
+		function set( geo, places, location, address ) {
 			//if( places && places.length == 1 ) {
 			if( places && places.length >= 1 ) {
 				if( places.length > 1  &&  address != '1500 E Main St  Richmond, VA 23219-3634' ) {
-					//alert( S(
-					//	'TEST ALERT\n\n',
-					//	'Uncertain polling place address:\n\n',
-					//	rawAddress, ' (original)\n',
-					//	address, ' (searched)\n\n',
-					//	'Geocoding results:\n\n',
-					//	places.map( function( place ) {
-					//		return S( formatAddress(place.address), '\n' );
-					//	}).join(''),
-					//	'\n',
-					//	'Please report this in the issue tracker.\n\n',
-					//	'You can copy and paste the text from this alert in many browsers.'
-					//) );
-					setNoGeo( location, rawAddress );
+					setNoGeo( location );
 					return;
 				}
 				try {
@@ -1930,12 +1868,12 @@ function gadgetReady() {
 					log( 'Polling state: ' + st.name );
 					if( st != home.info.state ) {
 						log( 'Polling place geocoded to wrong state' );
-						setNoGeo( location, rawAddress );
+						setNoGeo( location );
 						return;
 					}
 					if( details.Accuracy < Accuracy.intersection ) {
 						log( 'Polling place geocoding not accurate enough' );
-						setNoGeo( location, rawAddress );
+						setNoGeo( location );
 						return;
 					}
 				}
@@ -1943,16 +1881,15 @@ function gadgetReady() {
 					log( 'Error getting polling state' );
 				}
 				log( 'Getting polling place map info' );
-				setMap( vote.info = mapInfo( geo, places[0], location, rawAddress ) );
+				setMap( vote.info = mapInfo( geo, places[0], location ) );
 				return;
 			}
-			setNoGeo( location, rawAddress );
+			setNoGeo( location );
 		}
 		
-		function setNoGeo( location, rawAddress ) {
+		function setNoGeo( location ) {
 			vote.info = {
 				address: ( location.address || '' ).replace( / *, */g, '<br />' ),
-				rawAddress: rawAddress,
 				location: location.location,
 				description: location.description,
 				directions: location.directions,
@@ -2081,7 +2018,7 @@ function gadgetReady() {
 	var Kind = [ '', 'Country', 'State', 'County', 'City', 'Neighborhood', 'Neighborhood', 'Neighborhood', 'Home', 'Home' ];
 	var Zoom = [ 4, 5, 6, 10, 11, 12, 13, 14, 15, 15 ];
 	
-	function mapInfo( geo, place, extra, rawAddress ) {
+	function mapInfo( geo, place, extra ) {
 		extra = extra || {};
 		var details = place.AddressDetails;
 		var accuracy = Math.min( details.Accuracy, Accuracy.address );
@@ -2129,7 +2066,6 @@ function gadgetReady() {
 			geo: geo,
 			place: place,
 			address: formatted,
-			rawAddress: rawAddress,
 			location: extra.location,
 			description: extra.description,
 			directions: extra.directions,
@@ -2354,8 +2290,10 @@ function gadgetReady() {
 function log() {
 	if( arguments.length == 0 )
 		log.log = [];
-	else for( var i = -1, text;  text = arguments[++i]; )
+	else for( var i = -1, text;  text = arguments[++i]; ) {
 		log.log.push( text );
+		window.console && console.log && console.log( text );
+	}
 }
 
 log.print = function() {
