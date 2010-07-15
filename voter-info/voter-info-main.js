@@ -1747,9 +1747,11 @@ function gadgetReady() {
 	
 	function setHeights() {
 		var height = Math.floor( $window.height() - $tabs.height() );
-		$map.show().height( height );
+		$map.height( height );
 		$details.height( height );
 	}
+	
+	$(window).resize( setHeights );
 	
 	function detailsOnly( html ) {
 		if( ! mapplet ) {

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd"
+	>
+<html lang="en">
+<head>
+	
+	<title>Google Voter Info</title>
+	
+	<style type="text/css">
+		body { margin:0; padding:0; overflow:hidden; }
+	</style>
+	
+</head>
+<body>
+	
+	<iframe
+		id="gadget"
+		style="display:none;"
+		frameborder="0"
+		scrolling="no"
+		src="http://www.gmodules.com/ig/ifr?url=http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget.xml&amp;up_gadgetType=iframe&amp;up_fontFamily=Arial%2Csans-serif&amp;up_fontSize=17&amp;up_fontUnits=px&amp;up_logo=&amp;synd=open&amp;nocache=1"
+	></iframe>
+	
+	<script type="text/javascript">
+		var resize = window.onresize = function() {
+			var gadget = document.getElementById('gadget'), style = gadget.style;
+			style.width = window.innerWidth + 'px';
+			style.height = window.innerHeight + 'px';
+			style.display = 'block';
+		};
+		
+		resize();
+	</script>
+	
+</body>
+</html>
