@@ -348,12 +348,9 @@ var pref = {
 	fontFamily: 'Arial,sans-serif',
 	fontSize: '11',
 	fontUnits: 'pt',
-	logo: '',
-	scoop: '',
-	scoop1: ''
+	logo: ''
 };
 for( var name in pref ) pref[name] = prefs.getString(name) || pref[name];
-if( pref.scoop1 ) pref.scoop = pref.scoop1;
 pref.ready = prefs.getBool('submit');
 
 pref.prompt = 'Find your polling place information. Enter the complete *home* address where you are registered to vote:';
@@ -465,7 +462,7 @@ function initialMap() {
 }
 
 var map;
-var home, vote, scoop, interpolated;
+var home, vote, interpolated;
 
 var key = 'ABQIAAAAL7MXzZBubnPtVtBszDCxeRTZqGWfQErE9pT-IucjscazSdFnjBSzjqfxm1CQj7RDgG-OoyNfebJK0w';
 
@@ -1358,36 +1355,15 @@ function gadgetReady() {
 				setMarker({
 					place: home,
 					image: 'marker-green.png',
-					open: ! scoop && only,
+					open: only,
 					html: mapplet || ! only ? formatHome(true) : vote.html || infoWrap( sorryHtml() )
 				});
 				if( vote.info  &&  vote.info.latlng )
 					setMarker({
 						place: vote,
 						html: vote.html,
-						open: ! scoop
+						open: true
 					});
-				if( scoop ) {
-					var icon = new GIcon( G_DEFAULT_ICON );
-					icon.image = imgUrl('scoop.png');
-					icon.shadow = null;
-					icon.iconSize = new GSize( 48, 48 );
-					icon.shadowSize = null;
-					icon.iconAnchor = new GPoint( 15, 47 );
-					icon.infoWindowAnchor = new GPoint( 27, 0 );
-					icon.imageMap = [
-						0, 0,
-						0, 48,
-						48, 48,
-						48, 0
-					];
-					setMarker({
-						place: scoop,
-						icon: icon,
-						html: scoop.html,
-						open: false
-					});
-				}
 			}, 500 );
 		}
 		
@@ -1433,7 +1409,6 @@ function gadgetReady() {
 			}
 			
 			if( ! hi ) return;
-			//if( scoop ) {
 			if( vi  &&  vi.latlng ) {
 				var directions = new GDirections( null/*, $directions[0]*/ );
 				GEvent.addListener( directions, 'load', function() {
@@ -1622,16 +1597,6 @@ function gadgetReady() {
 						pollingApi( inputAddress, true, callback );
 				//});
 		});
-	}
-	
-	function scooper( lat, lng, callback ) {
-		if( pref.scoop ) {
-			var url = S( 'http://s.mg.to/elections/scoop.py/find?lat=', lat, '&lng=', lng );
-			getJSON( url, callback, 3600 );
-		}
-		else {
-			callback();
-		}
 	}
 	
 	function getJSON( url, callback, cache ) {
@@ -1944,35 +1909,7 @@ function gadgetReady() {
 			a.width = $map.width();
 			$map.show().height( a.height = Math.floor( $window.height() - $map.offset().top ) );
 		}
-		scooper( a.lat, a.lng, function( shop ) {
-			if( shop ) {
-				scoop = {
-					info: {
-						address: shop.address,
-						lat: shop.lat,
-						lng: shop.lng,
-						latlng: new GLatLng( shop.lat, shop.lng )
-					}
-				}
-				scoop.html = S(
-					'<div style="', fontStyle, '">',
-						'<div style="font-size:125%; font-weight:bold;">',
-							'Ben & Jerry&#146;s',
-						'</div>',
-						'<div>',
-							shop.address.replace( /,/, '<br />' ),
-						'</div>',
-						directionsLink( vote && vote.info ? vote : home, scoop ),
-						'<div style="margin-top:0.5em;">',
-							'<a target="_blank" href="http://www.benandjerrys.com/">',
-								'www.benandjerrys.com',
-							'</a>',
-						'</div>',
-					'</div>'
-				);
-			}
-			initMap( a );
-		});
+		initMap( a );
 	}
 	
 	function formatAddress( address ) {
@@ -2093,8 +2030,7 @@ function gadgetReady() {
 		if( iframe ) {
 			var w = $map.width(), h = Math.floor( $window.height() - $map.offset().top );
 			if( w * h == 0 ) return;
-			filler = pref.scoop && ! pref.scoop1 ? S(
-				'<img style="width:395px; height:410px; border:none;" src="', imgUrl('BenAndJerry.png'), '" />' ) : S(
+			filler = S(
 				'<div style="position:relative;">',
 					// US:
 					//'<img style="width:', w, 'px; height:', h, 'px; border:none;" src="http://maps.google.com/staticmap?center=38,-95.9&span=26.9,52.7&size=', w, 'x', h, '&key=', key, '" />'
@@ -2160,8 +2096,7 @@ function gadgetReady() {
 	T( 'style', variables, function( head ) {
 		if( ! mapplet  &&  ! pref.ready ) {
 			$('head').append( $(head) );
-			var part = pref.scoop1 ? 'scoop1' : pref.scoop ? 'scoop' : 'html';
-			$('body').prepend( T( part, variables ) );
+			$('body').prepend( T( 'html', variables ) );
 			//setFiller();
 			setGadgetPoll411();
 			$search = $('#Poll411Gadget');
