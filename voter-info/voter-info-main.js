@@ -347,8 +347,8 @@ var pref = {
 	example: ( mapplet ? '' : 'Ex: ' ) + '1600 Pennsylvania Ave 20500',
 	address: '',
 	fontFamily: 'Arial,sans-serif',
-	fontSize: '11',
-	fontUnits: 'pt',
+	fontSize: '16',
+	fontUnits: 'px',
 	logo: '',
 	prompt: 'Find your polling place information. Enter the complete *home* address where you are registered to vote:'
 };
