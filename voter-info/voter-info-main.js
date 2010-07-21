@@ -344,17 +344,16 @@ var prefs = new _IG_Prefs();
 var pref = {
 	gadgetType: 'iframe',
 	details: 'tab',
+	example: ( mapplet ? '' : 'Ex: ' ) + '1600 Pennsylvania Ave 20500',
 	address: '',
 	fontFamily: 'Arial,sans-serif',
 	fontSize: '11',
 	fontUnits: 'pt',
-	logo: ''
+	logo: '',
+	prompt: 'Find your polling place information. Enter the complete *home* address where you are registered to vote:'
 };
 for( var name in pref ) pref[name] = prefs.getString(name) || pref[name];
 pref.ready = prefs.getBool('submit');
-
-pref.prompt = 'Find your polling place information. Enter the complete *home* address where you are registered to vote:';
-pref.example = ( mapplet ? '' : 'Ex: ' ) + '1600 Pennsylvania Ave 20500';
 
 var maker = decodeURIComponent(location.href).indexOf('source=http://www.gmodules.com/ig/creator?') > -1;
 
