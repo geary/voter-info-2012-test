@@ -1575,16 +1575,23 @@ function gadgetReady() {
 		function countyAddress() {
 			return S( info.street, ', ', info.county, ', ', info.state.abbr, ' ', info.zip );
 		}
-		//if( address == '1600 Pennsylvania Ave NW, Washington, DC 20006, USA' ) {
-		//	callback({
-		//		locations: [{
-		//			address: '600 22nd St NW, Washington, DC 20037, USA',
-		//			location: 'George Washington University',
-		//			description: "The Smith Center-80's Club Room"
-		//		}]
-		//	});
-		//	return;
-		//}
+		if( info.place.address == '1600 Pennsylvania Ave NW, Washington, DC 20500, USA' ) {
+			callback({
+				locations: [
+					[{
+						address: {
+							line1: '600 22nd St NW',
+							city: 'Washington',
+							state: 'DC',
+							zip: '20037',
+							location_name: 'George Washington University'
+						},
+						description: "The Smith Center-80's Club Room"
+					}]
+				]
+			});
+			return;
+		}
 		pollingApi( info.place.address, false, function( poll ) {
 			if( ok(poll) )
 				callback( poll );
