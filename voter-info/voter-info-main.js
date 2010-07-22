@@ -7,6 +7,8 @@
 
 (function() {
 
+var key = 'ABQIAAAAL7MXzZBubnPtVtBszDCxeRTZqGWfQErE9pT-IucjscazSdFnjBSzjqfxm1CQj7RDgG-OoyNfebJK0w';
+
 var gem = GoogleElectionMap = {};
 
 // Utility functions and jQuery extensions
@@ -24,7 +26,7 @@ function writeScript( url ) {
 	document.write( '<script type="text/javascript" src="', url, '"></script>' );
 }
 
-writeScript( 'http://www.google.com/jsapi' );
+writeScript( 'http://www.google.com/jsapi?key=' + key );
 
 function parseQuery( query ) {
 	var params = {};
@@ -462,8 +464,6 @@ function initialMap() {
 
 var map;
 var home, vote, interpolated;
-
-var key = 'ABQIAAAAL7MXzZBubnPtVtBszDCxeRTZqGWfQErE9pT-IucjscazSdFnjBSzjqfxm1CQj7RDgG-OoyNfebJK0w';
 
 // HTML snippets
 
@@ -1741,7 +1741,7 @@ function gadgetReady() {
 		if( window.GMap2 )
 			submitReady();
 		else
-			$.getScript( 'http://maps.google.com/maps?file=api&v=2&async=2&callback=submitReady&key=' + key );
+			google.load( 'maps', '2', { callback:submitReady } );
 	}
 	
 	function setHeights() {
