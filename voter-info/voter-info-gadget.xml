@@ -31,7 +31,7 @@
 
 <UserPref name="fontFamily" datatype="string" display_name="Font&#160;Family" default_value="Arial,sans-serif"/>
 
-<UserPref name="fontSize" datatype="enum" display_name="Font&#160;Size" default_value="10">
+<UserPref name="fontSize" datatype="enum" display_name="Font&#160;Size" default_value="16">
 	<EnumValue value="6"/>
 	<EnumValue value="7"/>
 	<EnumValue value="8"/>
@@ -53,7 +53,7 @@
 	<EnumValue value="24"/>
 </UserPref>
 
-<UserPref name="fontUnits" datatype="enum" display_name="Font&#160;Units" default_value="pt">
+<UserPref name="fontUnits" datatype="enum" display_name="Font&#160;Units" default_value="px">
 	<EnumValue value="pt" display_value="Points (pt)"/>
 	<EnumValue value="px" display_value="Pixels (px)"/>
 </UserPref>
