@@ -685,7 +685,7 @@ function gadgetWrite() {
 	if( mapplet ) {
 		document.write(
 			'<style type="text/css">',
-				'#PollingPlaceSearch, #PollingPlaceSearch td { font-size:11pt; margin:0; padding:0; }',
+				'#PollingPlaceSearch, #PollingPlaceSearch td { font-size:16px; margin:0; padding:0; }',
 				'#PollingPlaceSearch { background-color:#E8ECF9; margin:0; padding:6px; width:95%; }',
 				'.PollingPlaceSearchForm { margin:0; padding:0; }',
 				'.PollingPlaceSearchTitle { /*font-weight:bold;*/ /*font-size:110%;*/ /*padding-bottom:4px;*/ }',
