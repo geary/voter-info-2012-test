@@ -832,7 +832,8 @@ function gadgetReady() {
 			'It may be incorrect and may change before election day.'
 		) : S(
 			registered,
-			'This voting location is for the March 2 election only, and it is only for voters registered at the home address entered. ',
+			//'This voting location is for the March 2 election only, and it is only for voters registered at the home address entered. ',
+			'This voting location is only for voters registered at the home address entered. ',
 			'Please verify this voting location with your local election officials to ensure that it is correct.'
 		);
 		return S(
