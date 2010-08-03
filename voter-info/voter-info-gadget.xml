@@ -25,10 +25,6 @@
 <!--	<EnumValue value="balloon" display_value="Balloon (Large Gadget)"/>-->
 <!--</UserPref>-->
 
-<!--<UserPref name="prompt" datatype="string" display_name="Prompt" default_value="Find your 2009 voter information. Enter the *home* address where you are registered to vote:"/>-->
-
-<!--<UserPref name="example" datatype="string" display_name="Example&#160;Addr" default_value="Ex: 1600 Pennsylvania Ave 20500"/>-->
-
 <UserPref name="fontFamily" datatype="string" display_name="Font&#160;Family" default_value="Arial,sans-serif"/>
 
 <UserPref name="fontSize" datatype="enum" display_name="Font&#160;Size" default_value="16">
@@ -58,7 +54,15 @@
 	<EnumValue value="px" display_value="Pixels (px)"/>
 </UserPref>
 
+<UserPref name="prompt" datatype="string" display_name="Prompt" default_value="Find your voter information. Enter the *home* address where you are registered to vote:"/>
+
+<UserPref name="example" datatype="string" display_name="Example&#160;Addr" default_value="Ex: 1600 Pennsylvania Ave 20500"/>
+
+<UserPref name="electionId" datatype="string" display_name="Election&#160;ID" default_value=""/>
+
 <UserPref name="logo" datatype="string" display_name="Logo&#160;URL" default_value=""/>
+
+<UserPref name="submit" datatype="bool" display_name="Preload&#160;Test" default_value=""/>
 
 <Content type="html">
 <![CDATA[

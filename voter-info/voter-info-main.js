@@ -360,7 +360,7 @@ var pref = {
 	fontSize: '16',
 	fontUnits: 'px',
 	logo: '',
-	prompt: 'Find your polling place information. Enter the complete *home* address where you are registered to vote:'
+	prompt: 'Find your voter information. Enter the *home* address where you are registered to vote:'
 };
 for( var name in pref ) pref[name] = prefs.getString(name) || pref[name];
 pref.ready = prefs.getBool('submit');
