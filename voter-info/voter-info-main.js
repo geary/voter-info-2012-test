@@ -360,7 +360,11 @@ var pref = {
 	fontSize: '16',
 	fontUnits: 'px',
 	logo: '',
-	prompt: 'Find your voter information. Enter the *home* address where you are registered to vote:'
+	prompt: 'Find your voter information. Enter the *home* address where you are registered to vote:',
+	state: '',
+	stateSelector: true,
+	electionId: '',
+	logo: ''
 };
 for( var name in pref ) pref[name] = prefs.getString(name) || pref[name];
 pref.ready = prefs.getBool('submit');
@@ -2166,13 +2170,13 @@ function gadgetReady() {
 			zoomTo = function( abbr ) {
 				if( ! abbr ) return;
 				abbr = abbr.toUpperCase();
-				var state = statesByAbbr[abbr];
+				var state = abbr == 'US' ? stateUS : statesByAbbr[abbr];
 				if( ! state ) return;
 				$('#Poll411SearchInput').val('');
 				$selectState.val( abbr );
 				home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
 				vote = null;
-				$details.html( electionInfo() );
+				if( state != stateUS ) $details.html( electionInfo() );
 				adjustHeight();
 				function latlng( lat, lng ) { return new GLatLng( +lat.$t, +lng.$t ) }
 				var bounds = new GLatLngBounds(
@@ -2185,7 +2189,7 @@ function gadgetReady() {
 				});
 			}
 			
-			var abbr = params.state;
+			var abbr = pref.state;
 			if( ! abbr ) {
 				var loc = google.loader && google.loader.ClientLocation;
 				var address = loc && loc.address;

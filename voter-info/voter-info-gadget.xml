@@ -54,15 +54,73 @@
 	<EnumValue value="px" display_value="Pixels (px)"/>
 </UserPref>
 
+<UserPref name="state" datatype="enum" display_name="Preview&#160;State" default_value="">
+	<EnumValue value="" display_value="Automatic"/>
+	<EnumValue value="US" display_value="USA"/>
+	<EnumValue value="AL" display_value="Alabama"/>
+	<EnumValue value="AK" display_value="Alaska"/>
+	<EnumValue value="AZ" display_value="Arizona"/>
+	<EnumValue value="AR" display_value="Arkansas"/>
+	<EnumValue value="CA" display_value="California"/>
+	<EnumValue value="CO" display_value="Colorado"/>
+	<EnumValue value="CT" display_value="Connecticut"/>
+	<EnumValue value="DE" display_value="Delaware"/>
+	<EnumValue value="DC" display_value="District of Columbia"/>
+	<EnumValue value="FL" display_value="Florida"/>
+	<EnumValue value="GA" display_value="Georgia"/>
+	<EnumValue value="HI" display_value="Hawaii"/>
+	<EnumValue value="ID" display_value="Idaho"/>
+	<EnumValue value="IL" display_value="Illinois"/>
+	<EnumValue value="IN" display_value="Indiana"/>
+	<EnumValue value="IA" display_value="Iowa"/>
+	<EnumValue value="KS" display_value="Kansas"/>
+	<EnumValue value="KY" display_value="Kentucky"/>
+	<EnumValue value="LA" display_value="Louisiana"/>
+	<EnumValue value="ME" display_value="Maine"/>
+	<EnumValue value="MD" display_value="Maryland"/>
+	<EnumValue value="MA" display_value="Massachusetts"/>
+	<EnumValue value="MI" display_value="Michigan"/>
+	<EnumValue value="MN" display_value="Minnesota"/>
+	<EnumValue value="MS" display_value="Mississippi"/>
+	<EnumValue value="MO" display_value="Missouri"/>
+	<EnumValue value="MT" display_value="Montana"/>
+	<EnumValue value="NE" display_value="Nebraska"/>
+	<EnumValue value="NV" display_value="Nevada"/>
+	<EnumValue value="NH" display_value="New Hampshire"/>
+	<EnumValue value="NJ" display_value="New Jersey"/>
+	<EnumValue value="NM" display_value="New Mexico"/>
+	<EnumValue value="NY" display_value="New York"/>
+	<EnumValue value="NC" display_value="North Carolina"/>
+	<EnumValue value="ND" display_value="North Dakota"/>
+	<EnumValue value="OH" display_value="Ohio"/>
+	<EnumValue value="OK" display_value="Oklahoma"/>
+	<EnumValue value="OR" display_value="Oregon"/>
+	<EnumValue value="PA" display_value="Pennsylvania"/>
+	<EnumValue value="RI" display_value="Rhode Island"/>
+	<EnumValue value="SC" display_value="South Carolina"/>
+	<EnumValue value="SD" display_value="South Dakota"/>
+	<EnumValue value="TN" display_value="Tennessee"/>
+	<EnumValue value="TX" display_value="Texas"/>
+	<EnumValue value="UT" display_value="Utah"/>
+	<EnumValue value="VT" display_value="Vermont"/>
+	<EnumValue value="VA" display_value="Virginia"/>
+	<EnumValue value="WA" display_value="Washington"/>
+	<EnumValue value="WV" display_value="West Virginia"/>
+	<EnumValue value="WI" display_value="Wisconsin"/>
+	<EnumValue value="WY" display_value="Wyoming"/>
+</UserPref>
+
+<UserPref name="stateSelector" datatype="bool" display_name="State&#160;Selector" default_value=""/>
+
 <UserPref name="prompt" datatype="string" display_name="Prompt" default_value="Find your voter information. Enter the *home* address where you are registered to vote:"/>
 
 <UserPref name="example" datatype="string" display_name="Example&#160;Addr" default_value="Ex: 1600 Pennsylvania Ave 20500"/>
 
+<UserPref name="submit" datatype="bool" display_name="Preload&#160;Addr" default_value=""/>
+
 <UserPref name="electionId" datatype="string" display_name="Election&#160;ID" default_value=""/>
 
 <UserPref name="logo" datatype="string" display_name="Logo&#160;URL" default_value=""/>
-
-<UserPref name="submit" datatype="bool" display_name="Preload&#160;Test" default_value=""/>
 
 <Content type="html">
 <![CDATA[
