@@ -9,6 +9,14 @@
 
 var key = 'ABQIAAAAL7MXzZBubnPtVtBszDCxeRTZqGWfQErE9pT-IucjscazSdFnjBSzjqfxm1CQj7RDgG-OoyNfebJK0w';
 
+$.fn.visibleHeight = function() {
+	return this.is(':visible') ? this.height() : 0;
+};
+
+$.fn.visibleWidth = function() {
+	return this.is(':visible') ? this.width() : 0;
+};
+
 var gem = GoogleElectionMap = {};
 
 // Utility functions and jQuery extensions
@@ -685,12 +693,12 @@ function gadgetWrite() {
 	if( mapplet ) {
 		document.write(
 			'<style type="text/css">',
-				'#PollingPlaceSearch, #PollingPlaceSearch td { font-size:16px; margin:0; padding:0; }',
-				'#PollingPlaceSearch { background-color:#E8ECF9; margin:0; padding:6px; width:95%; }',
-				'.PollingPlaceSearchForm { margin:0; padding:0; }',
-				'.PollingPlaceSearchTitle { /*font-weight:bold;*/ /*font-size:110%;*/ /*padding-bottom:4px;*/ }',
-				//'.PollingPlaceSearchLabelBox { position:relative; float:left; margin-right:6px; }',
-				'.PollingPlaceSearchInput { width:100%; }',
+				'#Poll411Search, #Poll411Search td { font-size:16px; margin:0; padding:0; }',
+				'#Poll411Search { background-color:#E8ECF9; margin:0; padding:6px; width:95%; }',
+				'.Poll411SearchForm { margin:0; padding:0; }',
+				'.Poll411SearchTitle { /*font-weight:bold;*/ /*font-size:110%;*/ /*padding-bottom:4px;*/ }',
+				//'.Poll411SearchLabelBox { position:relative; float:left; margin-right:6px; }',
+				'.Poll411SearchInput { width:100%; }',
 				'#detailsbox { margin-top:12px; }',
 			'</style>'
 		);
@@ -715,25 +723,25 @@ function gadgetWrite() {
 	if( mapplet ) {
 		document.write(
 			'<div id="outerlimits" style="margin-right:8px;">',
-				'<div id="PollingPlaceSearch">',
-					'<!--<div id="PollingPlaceSearchSpinner" class="PollingPlaceSearchSpinner">-->',
+				'<div id="Poll411Search">',
+					'<!--<div id="Poll411SearchSpinner" class="Poll411SearchSpinner">-->',
 					'<!--</div>-->',
 					'<div>',
-						'<form id="PollingPlaceSearchForm" class="PollingPlaceSearchForm" onsubmit="return PollingPlaceSearch.submit()">',
-							'<div class="PollingPlaceSearchTitle removehelp">',
+						'<form id="Poll411SearchForm" class="Poll411SearchForm" onsubmit="return Poll411Search.submit()">',
+							'<div class="Poll411SearchTitle removehelp">',
 								'<div style="margin-bottom:4px;">',
 									//'Find your 2010 voting location and more.<br />',
 									'Select your state for statewide election info:',
 								'</div>',
 							'</div>',
 							'<div style="margin-bottom:4px;">',
-								'<select id="PollingPlaceSelectState" style="width:100%;">',
+								'<select id="Poll411SelectState" style="width:100%;">',
 									'<option value="">',
 										'&nbsp;',
 									'</option>',
 								'</select>',
 							'</div>',
-							'<div class="PollingPlaceSearchTitle removehelp">',
+							'<div class="Poll411SearchTitle removehelp">',
 								'<div style="margin:8px 0 4px;">',
 									'Or enter your <strong>home</strong> address for local info:',
 								'</div>',
@@ -742,14 +750,14 @@ function gadgetWrite() {
 								'<tr>',
 									'<td style="width:99%;">',
 										'<div>',
-											'<input id="PollingPlaceSearchInput" class="PollingPlaceSearchInput" type="text" value="',
+											'<input id="Poll411SearchInput" class="Poll411SearchInput" type="text" value="',
 												htmlEscape( ( params.home || '' ).replace( /!/g, ' ' ) ),
 											'" />',
 										'</div>',
 									'</td>',
 									'<td style="width:1%; padding-left:4px;">',
 										'<div>',
-											'<button type="submit" id="PollingPlaceSearchButton" class="PollingPlaceSearchButton">Search</button>',
+											'<button type="submit" id="Poll411SearchButton" class="Poll411SearchButton">Search</button>',
 										'</div>',
 									'</td>',
 								'</tr>',
@@ -759,7 +767,7 @@ function gadgetWrite() {
 					'<div class="removehelp">',
 						'<div style="margin-top:0.25em; font-size:90%;">',
 							'Example: ',
-							'<a style="" href="#" onclick="return PollingPlaceSearch.sample();">',
+							'<a style="" href="#" onclick="return Poll411Search.sample();">',
 								htmlEscape( pref.example ),
 							'</a>',
 						'</div>',
@@ -1331,23 +1339,32 @@ function gadgetReady() {
 		)
 	}
 	
-	function initMap( a ) {
+	function initMap( go ) {
 		if( mapplet ) {
+			map = new GMap2;
 			go();
 		}
 		else {
-			GBrowserIsCompatible() && setTimeout( function() {
-				map = new GMap2( $map[0], {
-					//googleBarOptions: { showOnLoad: true },
-					mapTypes: [
-						G_NORMAL_MAP,
-						G_SATELLITE_MAP,
-						G_SATELLITE_3D_MAP
-					]
-				});
-				go();
-			}, 1 );
+			google.load( 'maps', '2', { callback: function() {
+				if( GBrowserIsCompatible() ) {
+					map = new GMap2( $map[0], {
+						//googleBarOptions: { showOnLoad: true },
+						mapTypes: [
+							G_NORMAL_MAP,
+							G_SATELLITE_MAP,
+							G_SATELLITE_3D_MAP
+						]
+					});
+					map.addControl( new GSmallMapControl );
+					map.addControl( new GMapTypeControl );
+					go();
+				}
+			} });
 		}
+	}
+	
+	function loadMap( a ) {
+		go();
 		
 		function ready() {
 			setTimeout( function() {
@@ -1395,7 +1412,6 @@ function gadgetReady() {
 			
 			if( ! mapplet ) {
 				$tabs.html( tabLinks( initialMap() ? '#mapbox' : '#detailsbox' ) );
-				GEvent.addListener( map, 'load', ready );
 				$map.css({ visibility:'hidden' });
 				setHeights();
 				if( initialMap() ) {
@@ -1466,13 +1482,9 @@ function gadgetReady() {
 				//	point.y - height * .275
 				//);
 				//map.setCenter( map.fromDivPixelToLatLng(point), a.zoom );
-				map.addControl( new GSmallMapControl );
-				map.addControl( new GMapTypeControl );
-				//map.enableGoogleBar();
 			}
 			
-			if( mapplet )
-				ready();
+			ready();
 			spin( false );
 		}
 	}
@@ -1693,7 +1705,6 @@ function gadgetReady() {
 			map && map.clearOverlays();
 			$spinner.show();
 			$details.empty();
-			$map.empty();
 			closehelp( function() {
 				geocode( addr, function( geo ) {
 					var places = geo && geo.Placemark;
@@ -1746,14 +1757,15 @@ function gadgetReady() {
 			});
 		}
 		
-		if( window.GMap2 )
-			submitReady();
-		else
-			google.load( 'maps', '2', { callback:submitReady } );
+		submitReady();
 	}
 	
 	function setHeights() {
-		var height = Math.floor( $window.height() - $tabs.height() );
+		var formHeight = $('#Poll411Gadget').visibleHeight();
+		if( formHeight ) formHeight += 14;  // TODO: WHY DO WE NEED THIS?
+		var height = Math.floor(
+			$window.height() - formHeight - $tabs.visibleHeight()
+		);
 		$map.height( height );
 		$details.height( height );
 	}
@@ -1918,7 +1930,7 @@ function gadgetReady() {
 			a.width = $map.width();
 			$map.show().height( a.height = Math.floor( $window.height() - $map.offset().top ) );
 		}
-		initMap( a );
+		loadMap( a );
 	}
 	
 	function formatAddress( address ) {
@@ -1932,16 +1944,16 @@ function gadgetReady() {
 		if( places.length == 1 ) checked = 'checked="checked" ';
 		else spin( false );
 		var list = places.map( function( place, i ) {
-			var id = 'PollingPlaceSearchPlaceRadio-' + i;
+			var id = 'Poll411SearchPlaceRadio-' + i;
 			place.extra = { index:i, id:id };
 			return S(
-				'<tr class="PollingPlaceSearchPlace" style="vertical-align:top;">',
+				'<tr class="Poll411SearchPlace" style="vertical-align:top;">',
 					'<td style="width:1%; padding:2px 0;">',
-						'<input type="radio" ', checked, 'name="PollingPlaceSearchPlaceRadio" class="PollingPlaceSearchPlaceRadio" id="', id, '" />',
+						'<input type="radio" ', checked, 'name="Poll411SearchPlaceRadio" class="Poll411SearchPlaceRadio" id="', id, '" />',
 					'</td>',
 					'<td style="width:99%; padding:5px 0 2px 2px;">',
 						'<div>',
-							'<label for="', id, '" class="PollingPlaceSearchPlaceAddress">',
+							'<label for="', id, '" class="Poll411SearchPlaceAddress">',
 								formatAddress(place.address),
 							'</label>',
 						'</div>',
@@ -1951,7 +1963,7 @@ function gadgetReady() {
 		});
 		
 		return S(
-			'<table id="PollingPlaceSearchPlaces" cellspacing="0">',
+			'<table id="Poll411SearchPlaces" cellspacing="0">',
 				list.join(''),
 			'</table>'
 		);
@@ -2074,9 +2086,11 @@ function gadgetReady() {
 			$details.empty();
 			$tabs.hide();
 			$spinner.css({ display:'none' });
-			$map.empty().hide();
+			$map.hide();
 			$search.slideDown( 250, function() {
-				$previewmap.show();
+				//$previewmap.show();
+				setHeights();
+				$map.show();
 			});
 		}
 		else {
@@ -2106,12 +2120,13 @@ function gadgetReady() {
 		if( ! mapplet  &&  ! pref.ready ) {
 			$('head').append( $(head) );
 			$('body').prepend( T( 'html', variables ) );
+			setHeights();
 			//setFiller();
 			setGadgetPoll411();
 			$search = $('#Poll411Gadget');
 		}
 		
-		$selectState = $('#PollingPlaceSelectState');
+		$selectState = $('#Poll411SelectState');
 		
 		// http://spreadsheets.google.com/feeds/list/p9CuB_zeAq5X-twnx_mdbKg/2/public/values?alt=json
 		var stateSheet = dataUrl + 'leo/states-spreadsheet.json';
@@ -2150,7 +2165,7 @@ function gadgetReady() {
 				abbr = abbr.toUpperCase();
 				var state = statesByAbbr[abbr];
 				if( ! state ) return;
-				$('#PollingPlaceSearchInput').val('');
+				$('#Poll411SearchInput').val('');
 				$selectState.val( abbr );
 				home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
 				vote = null;
@@ -2174,57 +2189,60 @@ function gadgetReady() {
 				if( address  &&  address.country == 'USA' ) abbr = address.region;
 			}
 			
-			if( mapplet ) {
-				map = new GMap2;
-				zoomTo( abbr );
-				
+			initMap( function() {
 				$selectState.bind( 'change keyup', function( event ) {
 					zoomTo( $selectState.val() );
 				});
 				
-				(function() {
-					function e( id ) { return document.getElementById('PollingPlaceSearch'+id); }
-					var /*spinner = e('Spinner'),*/ /*label = e('Label'),*/ input = e('Input'), button = e('Button');
-					button.disabled = false;
+				if( mapplet ) {
+					zoomTo( abbr );
 					
-					window.PollingPlaceSearch = {
+					(function() {
+						function e( id ) { return document.getElementById('Poll411Search'+id); }
+						var /*spinner = e('Spinner'),*/ /*label = e('Label'),*/ input = e('Input'), button = e('Button');
+						button.disabled = false;
 						
-						focus: function() {
-							//label.style.textIndent = '-1000px';
-						},
+						window.Poll411Search = {
+							
+							focus: function() {
+								//label.style.textIndent = '-1000px';
+							},
+							
+							blur: function() {
+								//if( input.value === '' )
+								//	label.style.textIndent = '0px';
+							},
+							
+							sample: function() {
+								input.value = pref.example;
+								this.submit();
+								return false;
+							},
+							
+							submit: function() {
+								//spinner.style.backgroundPosition = '0px 0px';
+								if( ! input.value ) input.value = pref.example;
+								submit( input.value );
+								return false;
+							}
+						};
 						
-						blur: function() {
-							//if( input.value === '' )
-							//	label.style.textIndent = '0px';
-						},
-						
-						sample: function() {
-							input.value = pref.example;
-							this.submit();
-							return false;
-						},
-						
-						submit: function() {
-							//spinner.style.backgroundPosition = '0px 0px';
-							if( ! input.value ) input.value = pref.example;
-							submit( input.value );
-							return false;
-						}
-					};
-					
-					PollingPlaceSearch.focus();
-					PollingPlaceSearch.blur();
-					if( params.home )
-						PollingPlaceSearch.submit();
+						Poll411Search.focus();
+						Poll411Search.blur();
+						if( params.home )
+							Poll411Search.submit();
+						else
+							input.focus();
+					})();
+				}
+				else {
+					setupTabs();
+					if( pref.ready )
+						submit( pref.address || pref.example );
 					else
-						input.focus();
-				})();
-			}
-			else {
-				setupTabs();
-				if( pref.ready )
-					submit( pref.address || pref.example );
-			}
+						zoomTo( abbr );
+				}
+			});
 		}
 	});
 	
