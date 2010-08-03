@@ -2120,13 +2120,13 @@ function gadgetReady() {
 		$directions = $('#directions');
 	
 	T( 'style', variables, function( head ) {
-		if( ! mapplet  &&  ! pref.ready ) {
+		if( ! mapplet ) {
 			$('head').append( $(head) );
 			$('body').prepend( T( 'html', variables ) );
-			setHeights();
-			//setFiller();
-			setGadgetPoll411();
 			$search = $('#Poll411Gadget');
+			if( pref.ready ) $search.hide();
+			else setGadgetPoll411();
+			setHeights();
 		}
 		
 		$selectState = $('#Poll411SelectState');
