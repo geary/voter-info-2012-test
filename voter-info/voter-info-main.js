@@ -1995,7 +1995,10 @@ function gadgetReady() {
 			return null;
 		}
 		var areaname = area.AdministrativeAreaName;
-		var state = statesByName[areaname] || statesByAbbr[ areaname.toUpperCase() ] || statesByName[ (place.address||'').replace( /, USA$/, '' ) ];
+		var state =
+			statesByName[areaname] ||
+			statesByAbbr[ areaname.toUpperCase() ] ||
+			statesByName[ ( place.address || '' ).replace( /, USA$/, '' ) ];
 		if( ! state ) {
 			log( 'No state' );
 			return null;
