@@ -372,7 +372,7 @@ var fontStyle = S( 'font-family:', escape(pref.fontFamily), '; font-size:', pref
 var width = $(window).width(), height = $(window).height();
 
 var variables = {
-	width: width - 14,
+	width: width - 8,
 	height: height - 80,
 	prompt: minimarkdown(pref.prompt),
 	example: pref.example,
@@ -1762,7 +1762,7 @@ function gadgetReady() {
 	
 	function setHeights() {
 		var formHeight = $('#Poll411Gadget').visibleHeight();
-		if( formHeight ) formHeight += 14;  // TODO: WHY DO WE NEED THIS?
+		if( formHeight ) formHeight += 8;  // TODO: WHY DO WE NEED THIS?
 		var height = Math.floor(
 			$window.height() - formHeight - $tabs.visibleHeight()
 		);
