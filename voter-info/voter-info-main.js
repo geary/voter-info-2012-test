@@ -1876,7 +1876,7 @@ function gadgetReady() {
 		function setNoGeo( location ) {
 			vote.info = {
 				address: ( location.address || '' ).replace( / *, */g, '<br />' ),
-				location: location.location,
+				location: location.address && location.address.location_name,
 				description: location.description,
 				directions: location.directions,
 				hours: location.hours,
