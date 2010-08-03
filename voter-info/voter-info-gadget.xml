@@ -2,8 +2,8 @@
 <Module>
 
 <ModulePrefs
-    title="Google Voter Info"
-    description="Enter your home address to find your voter registration information, voting location and more. Embed this gadget on your website or blog to help others find this important information."
+    title="Google Election Center app"
+    description="Enter your home address to find your voter registration information, voting location and more. Embed this app on your website or blog to help others find this important information."
     author="Google, Inc."
     author_affiliation="Google, Inc."
     author_email="elections@google.com"
