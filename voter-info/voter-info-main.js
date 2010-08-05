@@ -642,34 +642,6 @@ function makerWrite() {
 		'</div>',
 		overlays
 	);
-	
-	var $getcode = $('#getcode'), $havecode = $('#havecode'), $codearea = $('#codearea');
-	$codearea.height( height - 150 );
-	center( $getcode );
-	center( $havecode );
-	
-	function center( $item ) {
-		$item.css({
-			left: ( width - $item.width() ) / 2,
-			top: ( height - $item.height() ) / 2
-		});
-	}
-	
-	T( 'style', variables, function( head ) {
-		$('head').append( $(head) );
-		var body =
-			T( 'html', variables ) + '\n\n' +
-			T( 'script', variables );
-		$('#outerlimits').html( body ).height( height );
-		$getcode.show();
-		adjustHeight();
-		$('#btnGetCode').click( function() {
-			$codearea.val( head + '\n\n' + body + '\n' );
-			$havecode.show();
-			document.codeform.codearea.focus()
-			document.codeform.codearea.select()
-		});
-	});
 }
 
 // Gadget inline initialization
@@ -816,6 +788,34 @@ function gadgetWrite() {
 
 function makerReady() {
 	analytics( 'creator' );
+	
+	var $getcode = $('#getcode'), $havecode = $('#havecode'), $codearea = $('#codearea');
+	$codearea.height( height - 150 );
+	center( $getcode );
+	center( $havecode );
+	
+	function center( $item ) {
+		$item.css({
+			left: ( width - $item.width() ) / 2,
+			top: ( height - $item.height() ) / 2
+		});
+	}
+	
+	T( 'style', variables, function( head ) {
+		$('head').append( $(head) );
+		var body =
+			T( 'html', variables ) + '\n\n' +
+			T( 'script', variables );
+		$('#outerlimits').html( body ).height( height );
+		$getcode.show();
+		adjustHeight();
+		$('#btnGetCode').click( function() {
+			$codearea.val( head + '\n\n' + body + '\n' );
+			$havecode.show();
+			document.codeform.codearea.focus()
+			document.codeform.codearea.select()
+		});
+	});
 }
 
 function gadgetReady() {
