@@ -110,9 +110,11 @@
 	<EnumValue value="WY" display_value="Wyoming"/>
 </UserPref>
 
-<UserPref name="stateSelector" datatype="bool" display_name="State&#160;Selector" default_value=""/>
+<UserPref name="statePrompt" datatype="string" display_name="State Prompt" default_value="Select your state for statewide election info:"/>
 
-<UserPref name="prompt" datatype="string" display_name="Prompt" default_value="Find your voter information. Enter the *home* address where you are registered to vote:"/>
+<!--<UserPref name="stateSelector" datatype="bool" display_name="State&#160;Selector" default_value="true"/>-->
+
+<UserPref name="addrPrompt" datatype="string" display_name="Addr Prompt" default_value="Or enter your *home* address for local info:"/>
 
 <UserPref name="example" datatype="string" display_name="Example&#160;Addr" default_value="Ex: 1600 Pennsylvania Ave 20500"/>
 

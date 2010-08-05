@@ -360,9 +360,10 @@ var pref = {
 	fontSize: '16',
 	fontUnits: 'px',
 	logo: '',
-	prompt: 'Find your voter information. Enter the *home* address where you are registered to vote:',
 	state: '',
+	statePrompt: 'Select your state for statewide election info:',
 	stateSelector: true,
+	addrPrompt: 'Or enter your *home* address for local info:',
 	electionId: '',
 	logo: ''
 };
@@ -378,7 +379,8 @@ var width = $(window).width(), height = $(window).height();
 var variables = {
 	width: width - 8,
 	height: height - 80,
-	prompt: minimarkdown(pref.prompt),
+	statePrompt: minimarkdown(pref.statePrompt),
+	addrPrompt: minimarkdown(pref.addrPrompt),
 	example: pref.example,
 	fontFamily: pref.fontFamily.replace( "'", '"' ),
 	fontSize: pref.fontSize,
