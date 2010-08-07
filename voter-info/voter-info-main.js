@@ -1213,7 +1213,7 @@ function gadgetReady() {
 								}
 								return S(
 									'<div>',
-										candidateLink( contest, candidate ),
+										linkIf( candidate.name, candidate.url ),
 										party(),
 									'</div>'
 								);
@@ -1223,15 +1223,6 @@ function gadgetReady() {
 				'</div>'
 			);
 		}
-	}
-	
-	function candidateLink( contest, candidate ) {
-		var special = {
-			"Member House of Delegates  - 93rd District|Phillip A. Hamilton": "http://www.philhamilton.com/"
-		};
-		//console.log( '{' + contest.office + '|' + candidate.name + '}' );
-		var url = candidate.url || special[ contest.office + '|' + candidate.name ];
-		return linkIf( candidate.name, url );
 	}
 	
 	function directionsLink( from, to ) {
