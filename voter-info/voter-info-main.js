@@ -179,11 +179,10 @@ T = function( name, values, give) {
 		return ready();
 	
 	fetch( url, function( data ) {
-		var a = data.replace( /\r\n/g, '\n' ).split( /\n::/g );
+		var a = data.replace( /\r\n/g, '\n' ).split( /\n\s*<!--::\s+(\S+)\s+::-->\s*/g );
 		var o = T.urls[url] = {};
-		for( var i = 1, n = a.length;  i < n;  ++i ) {
-			var s = a[i], k = s.match(/^\S+/), v = s.replace( /^.*\n/, '' );
-			o[k] = $.trim(v);
+		for( var i = 1, n = a.length - 1;  i < n;  i += 2 ) {
+			o[ $.trim(a[i]) ] = $.trim( a[i+1] );
 		}
 		ready();
 	});
