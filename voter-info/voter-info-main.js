@@ -171,7 +171,7 @@ function fetch( url, callback, cache ) {
 	}
 }
 
-T = function( name, values, give) {
+T = function( name, values, give ) {
 	name = name.split(':');
 	var file = name[1] ? name[0] : T.file;
 	var url = T.baseUrl + file + '.html', part = name[1] || name[0];
@@ -191,7 +191,7 @@ T = function( name, values, give) {
 		var text = T.urls[url][part].replace(
 			/\{\{(\w+)\}\}/g,
 			function( match, name ) {
-				var value = values[name];
+				var value = ( values || T.variables )[name];
 				return value != null ? value : match;
 			});
 		give && give(text);
@@ -375,16 +375,19 @@ var fontStyle = S( 'font-family:', escape(pref.fontFamily), '; font-size:', pref
 
 var width = $(window).width(), height = $(window).height();
 
-var variables = {
+T.variables = {
 	width: width - 8,
 	height: height - 80,
+	heightFull: height,
 	statePrompt: minimarkdown(pref.statePrompt),
 	addrPrompt: minimarkdown(pref.addrPrompt),
 	example: pref.example,
 	fontFamily: pref.fontFamily.replace( "'", '"' ),
 	fontSize: pref.fontSize,
 	fontUnits: pref.fontUnits,
-	gadget: opt.gadgetUrl
+	fontStyle: fontStyle,
+	gadget: opt.gadgetUrl,
+	spinDisplay: pref.ready ? '' : 'display:none;'
 };
 
 // Date and time
@@ -633,10 +636,6 @@ function makerWrite() {
 	);
 	
 	document.write(
-		'<style type="text/css">',
-			'.popupOuter { z-index:1; position:absolute; background-color:white; display:none; }',
-			'.popupInner { background-color:#E5ECF9; border:1px solid #3366CC; padding:8px; margin:4px; }',
-		'</style>',
 		'<div id="outerlimits">',
 		'</div>',
 		overlays
@@ -654,48 +653,6 @@ function gadgetWrite() {
 	//		'</a>',
 	//	'</div>'
 	//) : '';
-	
-	document.write(
-		'<style type="text/css">',
-			'body.gadget { margin:0; padding:0; }',
-			'#wrapper, #wrapper td { ', fontStyle, ' }',
-			'#previewmap, #mapbox { overflow: auto; }',
-			'.heading { font-weight:bold; }',
-			'.orange { padding:6px; width:95%; background-color:#FFEAC0; border:1px solid #FFBA90; }',
-			'.pink { padding:6px; width:95%; background-color:#FFD0D0; border:1px solid #FF9090; }',
-			params.home ? '.removehelp { display:none; }' : '',
-		'</style>'
-	);
-	
-	if( mapplet ) {
-		document.write(
-			'<style type="text/css">',
-				'#Poll411Search, #Poll411Search td { font-size:16px; margin:0; padding:0; }',
-				'#Poll411Search { background-color:#E8ECF9; margin:0; padding:6px; width:95%; }',
-				'.Poll411SearchForm { margin:0; padding:0; }',
-				'.Poll411SearchTitle { /*font-weight:bold;*/ /*font-size:110%;*/ /*padding-bottom:4px;*/ }',
-				//'.Poll411SearchLabelBox { position:relative; float:left; margin-right:6px; }',
-				'.Poll411SearchInput { width:100%; }',
-				'#detailsbox { margin-top:12px; }',
-			'</style>'
-		);
-	}
-	else {
-		document.write(
-			'<style type="text/css">',
-				'body { height:', height, 'px; }',
-				'#spinner { z-index: 1; position:absolute; width:100%; height:100%; background-image:url(', imgUrl('spinner.gif'), '); background-position:center; background-repeat:no-repeat; opacity:0.30; -moz-opacity:0.30;', pref.ready ? '' : 'display:none;', '}',
-				'#spinner { filter:alpha(opacity=30); }',
-				'#tabs { width:100%; background-color:#E8ECF9; }',
-				'#tablinks { padding:4px; }',
-				'#tablinks span, #tablinks a { margin-right:1em; }',
-				'#tablinks span { font-weight:bold; }',
-				'#tablinks a { color:#0000CC; }',
-				'#previewmap, #mapbox { width:100%; }',
-				'#detailsbox { width:100%; overflow:scroll; overflow-x:auto; overflow-y:scroll; }',
-			'</style>'
-		);
-	}
 	
 	if( mapplet ) {
 		document.write(
@@ -800,11 +757,12 @@ function makerReady() {
 		});
 	}
 	
-	T( 'style', variables, function( head ) {
-		$('head').append( $(head) );
+	T( 'style', null, function( style ) {
+		$(style).appendTo('head');
+		$( T('makerStyle') ).appendTo('head');
 		var body =
-			T( 'html', variables ) + '\n\n' +
-			T( 'script', variables );
+			T('html') + '\n\n' +
+			T('script');
 		$('#outerlimits').html( body ).height( height );
 		$getcode.show();
 		adjustHeight();
@@ -2115,10 +2073,16 @@ function gadgetReady() {
 		$spinner = $('#spinner'),
 		$directions = $('#directions');
 	
-	T( 'style', variables, function( head ) {
-		if( ! mapplet ) {
-			$('head').append( $(head) );
-			$('body').prepend( T( 'html', variables ) );
+	T( 'style', null, function( style ) {
+		if( mapplet ) {
+			$( T('gadgetMappletStyle') ).appendTo('head');
+			$( T('mappletStyle') ).appendTo('head');
+		}
+		else {
+			$(style).appendTo('head');
+			$( T('gadgetMappletStyle') ).appendTo('head');
+			$( T('gadgetStyle') ).appendTo('head');
+			$('body').prepend( T('html') );
 			$search = $('#Poll411Gadget');
 			if( pref.ready ) $search.hide();
 			else setGadgetPoll411();
