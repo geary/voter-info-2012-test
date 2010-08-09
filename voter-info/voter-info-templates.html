@@ -88,6 +88,7 @@
 
 </head>
 <body>
+<div>
 
 <!--:: html ::-->
 
@@ -257,15 +258,17 @@
     <div class="popupInner">
         <div>
             <div style="font-size:16px; margin-bottom:6px;">
-                <strong>Copy and paste this HTML to include the gadget on your website.</strong><br />
+                <strong>Copy and paste this HTML to include the gadget on your website.</strong><br>
             </div>
             <div style="font-size:15px; margin-bottom:8px;">
                 Or click <strong>Get the Code</strong> below for a simpler fixed-height <strong><code>&lt;iframe&gt;</code></strong> gadget.
             </div>
             <div style="font-size:12px;">
-                <form id="codeform" name="codeform" style="margin:0; padding:0;">
-                    <textarea id="codearea" name="codearea" style="width:100%; height:80%; font-family: Consolas,Courier New,Courier,monospace;" value="">
-                    </textarea>
+                <form id="codeform" name="codeform" style="margin:0; padding:0;" action="">
+                    <div>
+                        <textarea id="codearea" name="codearea" style="width:100%; height:80%; font-family: Consolas,Courier New,Courier,monospace;" rows="1" cols="1">
+                        </textarea>
+                    </div>
                 </form>
             </div>
         </div>
@@ -294,7 +297,7 @@
         <!--<div id="Poll411SearchSpinner" class="Poll411SearchSpinner">-->
         <!--</div>-->
         <div>
-            <form id="Poll411SearchForm" class="Poll411SearchForm" onsubmit="return Poll411Search.submit()">
+            <form id="Poll411SearchForm" class="Poll411SearchForm" onsubmit="return Poll411Search.submit()" action="">
                 <div class="Poll411SearchTitle removehelp">
                     <div style="margin-bottom:4px;">
                         Select your state for statewide election info:
@@ -314,7 +317,7 @@
                     <tr>
                         <td style="width:99%;">
                             <div>
-                                <input id="Poll411SearchInput" class="Poll411SearchInput" type="text" value="" />
+                                <input id="Poll411SearchInput" class="Poll411SearchInput" type="text" value="">
                             </div>
                         </td>
                         <td style="width:1%; padding-left:4px;">
@@ -463,6 +466,15 @@ We did not find that address. Please check the spelling and try again. Be sure t
     {{info}}
 </div>
 
+<!--:: stateLocator ::-->
+
+<div style="margin:0.5em 0">
+    Check your voting location on your<br />
+    <a target="_blank" href="{{url}}">
+        State voting place locator
+    </a>
+</div>
+
 <!--:: location ::-->
 
 <div {{select}}>
@@ -504,7 +516,7 @@ temp
   </div>
   <div>
     <span style="font-size:90%">{{description}}</span>
-  <div>
+  </div>
   <div style="margin-top:{{streetMargin}}">
     {{street}}
   </div>
@@ -564,5 +576,6 @@ temp
 
 <!--:: ignore ::-->
 
+</div>
 </body>
 </html>
