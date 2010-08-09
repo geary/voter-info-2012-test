@@ -611,29 +611,12 @@ function gadgetReady() {
 	}
 	
 	function locationWarning() {
-		var registered = home.info.state.abbr == 'ND' ? '' : S(
-			'You must be registered in order to vote. '
-		);
-		var warning = interpolated ? S(
-			registered,
-			'Verify your voting location with your local election officials. ',
-			//'This voting location is for the November 3 election only (not for early voting), and it is an estimate based on nearby addresses. ',
-			//'This voting location is for the November 3 election only, and it is an estimate based on nearby addresses. ',
-			'It may be incorrect and may change before election day.'
-		) : S(
-			registered,
-			//'This voting location is for the March 2 election only, and it is only for voters registered at the home address entered. ',
-			'This voting location is only for voters registered at the home address entered. ',
-			'Please verify this voting location with your local election officials to ensure that it is correct.'
-		);
-		return S(
-			'<div style="padding-top:.75em; font-size:90%;">',
-				'<span style="font-weight:bold;">',
-					'Important: ',
-				'</span>',
-				warning,
-			'</div>'
-		);
+		return T( 'locationWarning', {
+			mustBeRegistered:
+				home.info.state.abbr == 'ND' ? '' : T('mustBeRegistered'),
+			addressWarning:
+				T( interpolated ? 'interpolatedWarning' : 'nonInterpolatedWarning' )
+		});
 	}
 	
 	//function expander( link, body ) {

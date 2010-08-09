@@ -1,5 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC
+  "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd"
+  [ <!ATTLIST a target CDATA #IMPLIED> ]
+>
 <html lang="en">
 <head><meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <title></title>
@@ -446,7 +449,7 @@ We did not find that address. Please check the spelling and try again. Be sure t
 
 <div style="{{fontStyle}} margin-top:12px; padding-right:4px; overflow:auto;">
     {{html}}
-</div
+</div>
 
 <!--:: longInfo ::-->
 
@@ -469,7 +472,7 @@ We did not find that address. Please check the spelling and try again. Be sure t
 <!--:: stateLocator ::-->
 
 <div style="margin:0.5em 0">
-    Check your voting location on your<br />
+    Check your voting location on your<br>
     <a target="_blank" href="{{url}}">
         State voting place locator
     </a>
@@ -485,7 +488,7 @@ We did not find that address. Please check the spelling and try again. Be sure t
       <table cellpadding="0" cellspacing="0">
         <tr valign="top">
           <td style="width:20px; padding:2px .75em 0 0;">
-            <img src="{{iconSrc}}" style="width:{{iconWidth}}px; height:{{iconHeight}}px;" />
+            <img src="{{iconSrc}}" style="width:{{iconWidth}}px; height:{{iconHeight}}px;" alt="">
           </td>
           <td>
               {{address}}
@@ -506,6 +509,31 @@ We did not find that address. Please check the spelling and try again. Be sure t
 <!--:: specialLocation ::-->
 
 temp
+
+<!--:: locationWarning ::-->
+
+<div style="padding-top:.75em; font-size:90%;">
+    <span style="font-weight:bold;">
+        Important: 
+    </span>
+    {{mustBeRegistered}}
+    {{addressWarning}}
+</div>
+
+<!--:: mustBeRegistered ::-->
+
+You must be registered in order to vote.
+
+<!--:: interpolatedWarning ::-->
+
+Verify your voting location with your local election officials. 
+<!-- This voting location is for the November 3 election only, and it is an estimate based on nearby addresses. -->
+It may be incorrect and may change before election day.
+
+<!--:: nonInterpolatedWarning ::-->
+
+This voting location is only for voters registered at the home address entered.
+Please verify this voting location with your local election officials to ensure that it is correct.
 
 <!--:: address ::-->
 
