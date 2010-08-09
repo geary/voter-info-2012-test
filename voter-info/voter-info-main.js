@@ -188,11 +188,16 @@ T = function( name, values, give ) {
 	});
 	
 	function ready() {
-		var text = T.urls[url][part].replace(
-			/\{\{(\w+)\}\}/g,
-			function( match, name ) {
-				var value = ( values || T.variables )[name];
-				return value != null ? value : match;
+		var text = T.urls[url][part];
+		if( ! text ) window.console && console.log( "T('" + part + "') missing" );
+		text = text.replace(
+			/(<!--)?\{\{(\w+)\}\}(-->)?/g,
+			function( match, ignore, name ) {
+				//window.console && console.log( name );
+				var value = values && values[name];
+				if( value == null ) value = T.variables && T.variables[name];
+				if( value == null ) value = match;
+				return value;
 			});
 		give && give(text);
 		return text;
@@ -204,6 +209,10 @@ T.urls = {};
 
 T.baseUrl = dataUrl;
 T.file = 'voter-info-templates';
+
+$.T = function( name, values /* TODO: , give */ ) {
+	return $( T( name, values ) );
+};
 
 function htmlEscape( str ) {
 	var div = document.createElement( 'div' );
@@ -495,96 +504,29 @@ function includeMap() {
 
 function tabLinks( active ) {
 	function tab( id, label ) {
-		return id == active ? S(
-			'<span class="', id, '">', label, '</span>'
-		) : S(
-			'<a href="', id, '">', label, '</a>'
-		);
+		return T( id == active ? 'tabLinkActive' : 'tabLinkInactive', {
+			id: id,
+			label: label
+		});
 	}
-	return S(
-		'<div id="tablinks">',
-			tab( '#detailsbox', 'Details' ),
-			includeMap() ? tab( '#mapbox', 'Map' ) : '',
-			pref.ready ? '' : tab( '#Poll411Gadget', 'Search' ),
-		'</div>'
-	);
+	return T( 'tabLinks', {
+		tab1: tab( '#detailsbox', 'Details' ),
+		tab2: includeMap() ? tab( '#mapbox', 'Map' ) : '',
+		tab3: pref.ready ? '' : tab( '#Poll411Gadget', 'Search' )
+	});
 }
 
 function infoLinks() {
-	var info = home && home.info;
-	if( ! info ) return '';
-	return S(
-		'<div style="', fontStyle, '">',
-			'<div style="margin-top:0.5em;">',
-				'<a target="_blank" href="http://spreadsheets.google.com/viewform?formkey=dG5rTHNRNWVYdGYwMmFjbDBydzlLR2c6MA">',
-					'Report an error',
-				'</a>',
-			'</div>',
-			//'<div style="margin-top:1em; border-top:1px solid #BBB; padding-top:1em;">',
-			//	'Full election coverage:<br />',
-			//	'<a target="_blank" href="http://www.google.com/2008election">',
-			//		'Google 2008 Election Site',
-			//	'</a>',
-			//'</div>',
-			//'<div style="margin-top:1em;">',
-			//	'More election maps:<br />',
-			//	'<a target="_blank" href="http://maps.google.com/elections">',
-			//		'Google Elections Map Gallery',
-			//	'</a>',
-			//'</div>',
-			//'<div style="margin-top:1em;">',
-			//	'Get election info on your phone:<br />',
-			//	'<a target="_blank" href="http://m.google.com/elections">',
-			//		'http://m.google.com/elections',
-			//	'</a>',
-			//'</div>',
-			//'<div style="margin:1em 0 1em 0;">',
-			//	'Help others find their voter information:<br />',
-			//	'<a target="_blank" href="http://gmodules.com/ig/creator?synd=open&url=http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget.xml">',
-			//		'Get this gadget for your website',
-			//	'</a>',
-			//'</div>',
-		'</div>'
-	);
+	return home && home.info ? T('infoLinks') : '';
 }
 
 function attribution() {
-	//var fullvips = 'state and local election officials from Iowa, Kansas, Maryland, Minnesota, Missouri, Montana, North Carolina, North Dakota, Ohio, Virginia, and Los Angeles County,';
-	
 	var special = {
-		VA: S(
-			'<a style="font-size:100%;" target="_blank" href="http://www.sbe.virginia.gov/">',
-				'Virginia State Board of Elections',
-			'</a>'
-		)
+		VA: T('attributionVA')
 	}[ home && home.info && home.info.state && home.info.state.abbr ] || '';
 	if( special ) special += ' and the ';
 
-	return S(
-		'<div style="margin-bottom:0.5em;', fontStyle, ' color:#333;">',
-			'<div style="font-size:85%; margin-top:0.5em; border-top:1px solid #BBB; padding-top:1em;">',
-				'Developed with ',
-				//'<span id="vips" style="font-size:100%;">',
-				//	'<a style="font-size:100%;" href="#" onclick="$(\'#vips\').html(fullvips); return false;">',
-				//		'state and local election officials',
-				//	'</a>',
-				//'</span>',
-				'the ',
-				special,
-				'<a style="font-size:100%;" target="_blank" href="http://www.votinginfoproject.org/">',
-					'Voting Information Project',
-				'</a>',
-				'.',
-			'</div>',
-			//'<div style="font-size:85%; margin-top:0.75em;">',
-			//	'In conjunction with the ',
-			//	'<a style="font-size:100%;" target="_blank" href="http://www.lwv.org/">',
-			//		'League of Women Voters',
-			//	'</a>',
-			//	'.',
-			//'</div>',
-		'</div>'
-	);
+	return T( 'attribution', { special: special });
 }
 
 // Maker inline initialization
@@ -593,52 +535,9 @@ function makerWrite() {
 	if( msie ) $('body')[0].scroll = 'no';
 	$('body').css({ margin:0, padding:0 });
 	
-	var overlays = pref.gadgetType == 'iframe' ? '' : S(
-		'<div id="getcode" class="popupOuter">',
-			'<div class="popupInner" style="width:225px;">',
-				'<div style="text-align:center; margin-bottom:10px;">',
-					'<button type="button" id="btnGetCode" style="font-size:24px;">',
-						'Get the Code',
-					'</button>',
-				'</div>',
-				'<div style="font-size:14px;">',
-					'<div style="margin-bottom:8px;">',
-						'Click this button for an <strong>inline</strong> gadget using HTML and JavaScript. ',
-					'</div>',
-					'<div style="margin-bottom:8px;">',
-						'The inline gadget initially displays only the search input form, without taking extra space on your page. When you click the <strong>Search</strong> button, the gadget expands to its full height.',
-					'</div>',
-					'<div style="margin-bottom:8px;">',
-						'Not all websites support the inline gadget. ',
-						'For a simpler gadget, change the <strong>Gadget Type</strong> below to Standard Gadget.',
-					'</div>',
-				'</div>',
-			'</div>',
-		'</div>',
-		'<div id="havecode" class="popupOuter" style="width:95%; height:90%;">',
-			'<div class="popupInner">',
-				'<div>',
-					'<div style="font-size:16px; margin-bottom:6px;">',
-						'<strong>Copy and paste this HTML to include the gadget on your website.</strong><br />',
-					'</div>',
-					'<div style="font-size:15px; margin-bottom:8px;">',
-						'Or click <strong>Get the Code</strong> below for a simpler fixed-height <strong><code>&lt;iframe&gt;</code></strong> gadget.',
-					'</div>',
-					'<div style="font-size:12px;">',
-						'<form id="codeform" name="codeform" style="margin:0; padding:0;">',
-							'<textarea id="codearea" name="codearea" style="width:100%; height:80%; font-family: Consolas,Courier New,Courier,monospace;" value="">',
-							'</textarea>',
-						'</form>',
-					'</div>',
-				'</div>',
-			'</div>',
-		'</div>'
-	);
-	
 	document.write(
 		'<div id="outerlimits">',
-		'</div>',
-		overlays
+		'</div>'
 	);
 }
 
@@ -654,88 +553,12 @@ function gadgetWrite() {
 	//	'</div>'
 	//) : '';
 	
-	if( mapplet ) {
-		document.write(
-			'<div id="outerlimits" style="margin-right:8px;">',
-				'<div id="Poll411Search">',
-					'<!--<div id="Poll411SearchSpinner" class="Poll411SearchSpinner">-->',
-					'<!--</div>-->',
-					'<div>',
-						'<form id="Poll411SearchForm" class="Poll411SearchForm" onsubmit="return Poll411Search.submit()">',
-							'<div class="Poll411SearchTitle removehelp">',
-								'<div style="margin-bottom:4px;">',
-									//'Find your 2010 voting location and more.<br />',
-									'Select your state for statewide election info:',
-								'</div>',
-							'</div>',
-							'<div style="margin-bottom:4px;">',
-								'<select id="Poll411SelectState" style="width:100%;">',
-									'<option value="">',
-										'&nbsp;',
-									'</option>',
-								'</select>',
-							'</div>',
-							'<div class="Poll411SearchTitle removehelp">',
-								'<div style="margin:8px 0 4px;">',
-									'Or enter your <strong>home</strong> address for local info:',
-								'</div>',
-							'</div>',
-							'<table cellpadding="0" cellspacing="0" style="width:100%;">',
-								'<tr>',
-									'<td style="width:99%;">',
-										'<div>',
-											'<input id="Poll411SearchInput" class="Poll411SearchInput" type="text" value="',
-												htmlEscape( ( params.home || '' ).replace( /!/g, ' ' ) ),
-											'" />',
-										'</div>',
-									'</td>',
-									'<td style="width:1%; padding-left:4px;">',
-										'<div>',
-											'<button type="submit" id="Poll411SearchButton" class="Poll411SearchButton">Search</button>',
-										'</div>',
-									'</td>',
-								'</tr>',
-							'</table>',
-						'</form>',
-					'</div>',
-					'<div class="removehelp">',
-						'<div style="margin-top:0.25em; font-size:90%;">',
-							'Example: ',
-							'<a style="" href="#" onclick="return Poll411Search.sample();">',
-								htmlEscape( pref.example ),
-							'</a>',
-						'</div>',
-					'</div>',
-				'</div>',
-				//backLink,
-				'<div id="spinner">',
-				'</div>',
-				'<div id="wrapper">',
-					'<div id="detailsbox">',
-						attribution(),
-					'</div>',
-					'<div id="mapbox">',
-					'</div>',
-				'</div>',
-			'</div>'
-		);
-	}
-	else {
-		document.write(
-			'<div id="spinner">',
-			'</div>',
-			'<div id="wrapper">',
-				'<div id="tabs" style="display:none;">',
-				'</div>',
-				'<div id="previewmap">',
-				'</div>',
-				'<div id="mapbox">',
-				'</div>',
-				'<div id="detailsbox" style="display:none;">',
-				'</div>',
-			'</div>'
-		);
-		
+	document.write(
+		'<div id="outerlimits">',
+		'</div>'
+	);
+	
+	if( ! mapplet ) {
 		document.body.scroll = 'no';
 	}
 }
@@ -745,10 +568,7 @@ function gadgetWrite() {
 function makerReady() {
 	analytics( 'creator' );
 	
-	var $getcode = $('#getcode'), $havecode = $('#havecode'), $codearea = $('#codearea');
-	$codearea.height( height - 150 );
-	center( $getcode );
-	center( $havecode );
+	var $outerlimits = $('#outerlimits');
 	
 	function center( $item ) {
 		$item.css({
@@ -757,22 +577,28 @@ function makerReady() {
 		});
 	}
 	
-	T( 'style', null, function( style ) {
-		$(style).appendTo('head');
-		$( T('makerStyle') ).appendTo('head');
-		var body =
-			T('html') + '\n\n' +
-			T('script');
-		$('#outerlimits').html( body ).height( height );
+	function addCodePopups() {
+		$.T('makerOverlays').insertAfter($outerlimits);
+		var $getcode = $('#getcode'), $havecode = $('#havecode'), $codearea = $('#codearea');
+		$codearea.height( height - 150 );
+		center( $getcode );
+		center( $havecode );
 		$getcode.show();
-		adjustHeight();
 		$('#btnGetCode').click( function() {
-			$codearea.val( head + '\n\n' + body + '\n' );
+			$codearea.val( style + '\n\n' + body + '\n' );
 			$havecode.show();
 			document.codeform.codearea.focus()
 			document.codeform.codearea.select()
 		});
-	});
+	}
+	
+	var style = T('style');
+	$(style).appendTo('head');
+	$.T('makerStyle').appendTo('head');
+	var body = T('html') + '\n\n' + T('script');
+	$outerlimits.html( body ).height( height );
+	if( pref.gadgetType != 'iframe' ) addCodePopups( style, body );
+	adjustHeight();
 }
 
 function gadgetReady() {
@@ -781,14 +607,7 @@ function gadgetReady() {
 		var state = home.info.state;
 		if( ! state  ||  state == stateUS ) return '';
 		var url = state.gsx$wheretovote.$t;
-		return url ? S(
-			'<div style="margin:0.5em 0">',
-				'Check your voting location on your<br />',
-				'<a target="_blank" href="', url, '">',
-					'State voting place locator',
-				'</a>',
-			'</div>'
-		) : '';
+		return url ? T( 'stateLocator', { url:url } ) : '';
 	}
 	
 	function locationWarning() {
@@ -1212,7 +1031,7 @@ function gadgetReady() {
 		//		'</a>',
 		//	'</div>'
 		//);
-		var extra = home.info.latlng && vote.info.latlng ? directionsLink( home, vote ) : '';
+		var extra = home.info.latlng && vote.info.latlng && directionsLink( home, vote );
 		function location( infowindow ) {
 			return formatLocation( vote.info,
 				infowindow
@@ -1265,32 +1084,20 @@ function gadgetReady() {
 		}
 		
 		function longInfo() {
-			return S(
-				log.print(),
-				'<div>',
-					electionHeader,
-					'<div style="padding-top:0.75em">',
-					'</div>',
-					formatHome(),
-					'<div style="padding-top:0.75em">',
-					'</div>',
-					location(),
-					stateLocator(),
-					locationWarning(),
-					'<div style="padding-top:1em">',
-					'</div>',
-					electionInfo(),
-				'</div>'
-			);
+			return T( 'longInfo', {
+				log: log.print(),
+				header: electionHeader,
+				home: formatHome(),
+				location: location(),
+				stateLocator: stateLocator(),
+				warning: locationWarning(),
+				info: electionInfo()
+			});
 		}
 	}
 	
 	function infoWrap( html ) {
-		return S(
-			'<div style="', fontStyle, ' margin-top:12px; padding-right:4px; overflow:auto;">',
-				html,
-			'</div>'
-		)
+		return T( 'infoWrap', { html:html } );
 	}
 	
 	function initMap( go ) {
@@ -1448,53 +1255,31 @@ function gadgetReady() {
 			info.address != '703 E Grace St, Richmond, VA 23219' ? '' :
 			'<div style="font-size:90%; margin-bottom:0.25em;">GOVERNOR\'S MANSION</div>';
 		var locality = info.city ? info.city : info.county ? info.county + ' County' : '';
-		var addr = S(
-			'<div>',
-				special,
-				info.location ? '<strong>' + htmlEscape(info.location) + '</strong><br />' : '',
-				info.description ? '<span style="font-size:90%">' + htmlEscape(info.description) + '</span><br />' : '',
-				'<div style="margin-top:', info.location || info.description ? '0.25' : '0', 'em;">',
-					info.street,
-				'</div>',
-			'</div>',
-			'<div>',
-				locality ? locality  + ', ' + info.state.abbr : info.address.length > 2 ? info.address : info.state.name,
-				info.zip ? ' ' + info.zip : '',
-			'</div>'
-		);
-		var select = includeMap() ? ' onclick="return maybeSelectTab(\'#mapbox\',event);" style="cursor:pointer;"' : ''
-		return S(
-			'<div', select, '>',
-				'<div style="font-weight:bold; font-size:110%;">',
-					title,
-				'</div>',
-				'<div style="padding:0.5em 0;">',
-					'<table cellpadding="0" cellspacing="0">',
-						'<tr valign="top">',
-							'<td style="width:20px; padding:2px .75em 0 0;">',
-								'<img src="', imgUrl(icon.url), '" style="width:', icon.width, 'px; height:', icon.height, 'px;" />',
-							'</td>',
-							'<td>',
-								addr,
-								'<div>',
-									info.directions || '',
-								'</div>',
-								'<div>',
-									info.hours ? 'Hours: ' + info.hours : '',
-								'</div>',
-								extra,
-							'</td>',
-						'</tr>',
-					'</table>',
-					info.latlng ? '' : S(
-						'<div style="padding-top: 0.5em">',
-							'We were unable to locate this voting place on the map. ',
-							'Please check with your election officals for the exact address.',
-						'</div>'
-					),
-				'</div>',
-			'</div>'
-		);
+		var address = T( 'address', {
+			special: special,
+			location: htmlEscape( info.location || '' ),
+			description: htmlEscape( info.description || '' ),
+			street: info.street,
+			streetMargin: info.location || info.description ? '0.25em' : '0',
+			state: locality ? locality  + ', ' + info.state.abbr :
+				info.address.length > 2 ? info.address :
+				info.state.name,
+			zip: info.zip
+		});
+		var unable = info.latlng ? '' : T('locationUnable');
+		var select = includeMap() ? 'onclick="return maybeSelectTab(\'#mapbox\',event);" style="cursor:pointer;"' : ''
+		return T( 'location', {
+			select: select,
+			title: title,
+			iconSrc: imgUrl(icon.url),
+			iconWidth: icon.width,
+			iconHeight: icon.height,
+			address: address,
+			directions: info.directions || '',
+			hours: info.hours ? 'Hours: ' + info.hours : '',
+			extra: extra || '',
+			unable: unable
+		});
 	}
 	
 	function spin( yes ) {
@@ -1668,7 +1453,7 @@ function gadgetReady() {
 						spin( false );
 						detailsOnly( S(
 							log.print(),
-							'We did not find that address. Please check the spelling and try again. Be sure to include your zip code or city and state.'
+							T('didNotFind')
 						) );
 					}
 					else if( n == 1 ) {
@@ -1676,13 +1461,7 @@ function gadgetReady() {
 					}
 					else {
 						if( places ) {
-							detailsOnly( S(
-								'<div id="radios">',
-									'<div id="radios" style="padding-top:0.5em;">',
-										'<strong>Select your address:</strong>',
-									'</div>',
-								'</div>'
-							) );
+							detailsOnly( T('selectAddressHeader') );
 							var $radios = $('#radios');
 							$radios.append( formatPlaces(places) );
 							adjustHeight();
@@ -1728,12 +1507,7 @@ function gadgetReady() {
 	
 	function detailsOnly( html ) {
 		if( ! mapplet ) {
-			$tabs.html( S(
-				'<div id="tablinks">',
-					'<span class="#detailsbox" style="display:none;"></span>',
-					'<a href="#Poll411Gadget">Search Again</a>',
-				'</div>'
-			) ).show();
+			$tabs.html( tabLinks('#detailsbox') ).show();
 			setHeights();
 		}
 		$map.hide();
@@ -1745,7 +1519,8 @@ function gadgetReady() {
 	function formatHome( infowindow ) {
 		return S(
 			'<div style="', fontStyle, '">',
-				formatLocation( home.info,
+				formatLocation(
+					home.info,
 					infowindow
 						? { url:'home-icon-50.png', width:50, height:50 }
 						: { url:'home-pin-icon.png', width:29, height:57 },
@@ -1872,8 +1647,6 @@ function gadgetReady() {
 			'</div>'
 		) : S(
 			'<div>',
-				//'This application has information for the November 3 Virginia general election only (not for early voting or elections in other states).',
-				'This application has information for the March 2 Virginia special election only, not for elections in other states.',
 			'</div>'
 		);
 	}
@@ -1895,32 +1668,19 @@ function gadgetReady() {
 		if( ! places ) return sorryHtml();
 		
 		var checked = '';
-		if( places.length == 1 ) checked = 'checked="checked" ';
+		if( places.length == 1 ) checked = 'checked="checked"';
 		else spin( false );
 		var list = places.map( function( place, i ) {
 			var id = 'Poll411SearchPlaceRadio-' + i;
 			place.extra = { index:i, id:id };
-			return S(
-				'<tr class="Poll411SearchPlace" style="vertical-align:top;">',
-					'<td style="width:1%; padding:2px 0;">',
-						'<input type="radio" ', checked, 'name="Poll411SearchPlaceRadio" class="Poll411SearchPlaceRadio" id="', id, '" />',
-					'</td>',
-					'<td style="width:99%; padding:5px 0 2px 2px;">',
-						'<div>',
-							'<label for="', id, '" class="Poll411SearchPlaceAddress">',
-								formatAddress(place.address),
-							'</label>',
-						'</div>',
-					'</td>',
-				'</tr>'
-			);
+			return T( 'placeRadioRow', {
+				checked: checked,
+				id: 'Poll411SearchPlaceRadio-' + i,
+				address: formatAddress(place.address)
+			});
 		});
 		
-		return S(
-			'<table id="Poll411SearchPlaces" cellspacing="0">',
-				list.join(''),
-			'</table>'
-		);
+		return T( 'placeRadioTable', { rows:list.join('') } );
 	}
 	
 	var Accuracy = {
@@ -2000,28 +1760,28 @@ function gadgetReady() {
 		};
 	}
 	
-	function setFiller() {
-		function makePaths( poly ) {
-			return 'path=weight:2|color:0x000000B0|fillcolor:0x00000010|enc:' + poly.encoded;
-		}
-		var filler = '';
-		if( iframe ) {
-			var w = $map.width(), h = Math.floor( $window.height() - $map.offset().top );
-			if( w * h == 0 ) return;
-			filler = S(
-				'<div style="position:relative;">',
-					// US:
-					//'<img style="width:', w, 'px; height:', h, 'px; border:none;" src="http://maps.google.com/staticmap?center=38,-95.9&span=26.9,52.7&size=', w, 'x', h, '&key=', key, '" />'
-					// VA:
-					// TODO: Get encoded polyline working!
-					'<img style="width:', w, 'px; height:', h, 'px; border:none;" src="http://maps.google.com/maps/api/staticmap?sensor=false&size=', w, 'x', h, '&key=', key, '&', stateOutlinePolys.map(makePaths).join('&'), '" />',
-					pref.logo ?
-						'<img style="position:absolute; left:0; top:0;" src="' + _IG_GetCachedUrl(pref.logo) + '" />' : '',
-				'</div>'
-			);
-			$previewmap.html( filler );
-		}
-	}
+	//function setFiller() {
+	//	function makePaths( poly ) {
+	//		return 'path=weight:2|color:0x000000B0|fillcolor:0x00000010|enc:' + poly.encoded;
+	//	}
+	//	var filler = '';
+	//	if( iframe ) {
+	//		var w = $map.width(), h = Math.floor( $window.height() - $map.offset().top );
+	//		if( w * h == 0 ) return;
+	//		filler = S(
+	//			'<div style="position:relative;">',
+	//				// US:
+	//				//'<img style="width:', w, 'px; height:', h, 'px; border:none;" src="http://maps.google.com/staticmap?center=38,-95.9&span=26.9,52.7&size=', w, 'x', h, '&key=', key, '" />'
+	//				// VA:
+	//				// TODO: Get encoded polyline working!
+	//				'<img style="width:', w, 'px; height:', h, 'px; border:none;" src="http://maps.google.com/maps/api/staticmap?sensor=false&size=', w, 'x', h, '&key=', key, '&', stateOutlinePolys.map(makePaths).join('&'), '" />',
+	//				pref.logo ?
+	//					'<img style="position:absolute; left:0; top:0;" src="' + _IG_GetCachedUrl(pref.logo) + '" />' : '',
+	//			'</div>'
+	//		);
+	//		$previewmap.html( filler );
+	//	}
+	//}
 	
 	function setupTabs() {
 		var $tabs = $('#tabs');
@@ -2064,8 +1824,24 @@ function gadgetReady() {
 		return true;
 	};
 	
-	var $search,
-		$selectState,
+	if( mapplet ) {
+		$.T('gadgetMappletStyle').appendTo('head');
+		$.T('mappletStyle').appendTo('head');
+		$.T( 'mappletBody', {
+			example: htmlEscape( pref.example ),
+			attribution: attribution()
+		}).appendTo('#outerlimits');
+	}
+	else {
+		$.T('style').appendTo('head');
+		$.T('gadgetMappletStyle').appendTo('head');
+		$.T('gadgetStyle').appendTo('head');
+		$('body').prepend( T('html') );
+		$.T('gadgetBody').appendTo('#outerlimits');
+	}
+	
+	var $search = $('#Poll411Gadget'),
+		$selectState = $('#Poll411SelectState'),
 		$tabs = $('#tabs'),
 		$previewmap = $('#previewmap'),
 		$map = $('#mapbox'),
@@ -2073,141 +1849,128 @@ function gadgetReady() {
 		$spinner = $('#spinner'),
 		$directions = $('#directions');
 	
-	T( 'style', null, function( style ) {
-		if( mapplet ) {
-			$( T('gadgetMappletStyle') ).appendTo('head');
-			$( T('mappletStyle') ).appendTo('head');
+	if( ! mapplet ) {
+		if( pref.ready ) $search.hide();
+		else setGadgetPoll411();
+		setHeights();
+	}
+	
+	// http://spreadsheets.google.com/feeds/list/p9CuB_zeAq5X-twnx_mdbKg/2/public/values?alt=json
+	var stateSheet = dataUrl + 'leo/states-spreadsheet.json';
+	
+	getJSON( stateSheet, sheetReady, 300 );
+	function sheetReady( json ) {
+		json.feed.entry.forEach( function( state ) {
+			statesByAbbr[ state.abbr = state.gsx$abbr.$t ] = state;
+			statesByName[ state.name = state.gsx$name.$t ] = state;
+			states.push( state );
+			$selectState.append( S(
+				'<option value="', state.abbr, '">',
+					state.name,
+				'</option>'
+			) );
+		});
+		
+		indexSpecialStates();
+		
+		function polyState( abbr ) {
+			gem.currentAbbr = abbr = abbr.toLowerCase();
+			gem.shapeReady = function( json ) {
+				if( json.state != gem.currentAbbr ) return;
+				map.clearOverlays();
+				json.shapes.forEach( function( poly ) {
+					poly.points.push( poly.points[0] );
+					var polygon = new GPolygon( poly.points, '#000000', 2, .7, '#000000', .07 );
+					map.addOverlay( polygon );
+				});
+			};
+			$.getScript( cacheUrl( S( opt.baseUrl, 'shapes/json/', abbr, '.js' ) ) );
 		}
-		else {
-			$(style).appendTo('head');
-			$( T('gadgetMappletStyle') ).appendTo('head');
-			$( T('gadgetStyle') ).appendTo('head');
-			$('body').prepend( T('html') );
-			$search = $('#Poll411Gadget');
-			if( pref.ready ) $search.hide();
-			else setGadgetPoll411();
-			setHeights();
+		
+		zoomTo = function( abbr ) {
+			if( ! abbr ) return;
+			abbr = abbr.toUpperCase();
+			var state = abbr == 'US' ? stateUS : statesByAbbr[abbr];
+			if( ! state ) return;
+			$('#Poll411SearchInput').val('');
+			$selectState.val( abbr );
+			home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
+			vote = null;
+			if( state != stateUS ) $details.html( electionInfo() );
+			adjustHeight();
+			function latlng( lat, lng ) { return new GLatLng( +lat.$t, +lng.$t ) }
+			var bounds = new GLatLngBounds(
+				latlng( state.gsx$south, state.gsx$west ),
+				latlng( state.gsx$north, state.gsx$east )
+			);
+			GAsync( map, 'getBoundsZoomLevel', [ bounds ], function( zoom ) {
+				map.setCenter( bounds.getCenter(), zoom );
+				polyState( abbr );
+			});
 		}
 		
-		$selectState = $('#Poll411SelectState');
+		var abbr = pref.state;
+		if( ! abbr ) {
+			var loc = google.loader && google.loader.ClientLocation;
+			var address = loc && loc.address;
+			if( address  &&  address.country == 'USA' ) abbr = address.region;
+		}
 		
-		// http://spreadsheets.google.com/feeds/list/p9CuB_zeAq5X-twnx_mdbKg/2/public/values?alt=json
-		var stateSheet = dataUrl + 'leo/states-spreadsheet.json';
-		
-		getJSON( stateSheet, sheetReady, 300 );
-		function sheetReady( json ) {
-			json.feed.entry.forEach( function( state ) {
-				statesByAbbr[ state.abbr = state.gsx$abbr.$t ] = state;
-				statesByName[ state.name = state.gsx$name.$t ] = state;
-				states.push( state );
-				$selectState.append( S(
-					'<option value="', state.abbr, '">',
-						state.name,
-					'</option>'
-				) );
+		initMap( function() {
+			$selectState.bind( 'change keyup', function( event ) {
+				zoomTo( $selectState.val() );
 			});
 			
-			indexSpecialStates();
-			
-			function polyState( abbr ) {
-				gem.currentAbbr = abbr = abbr.toLowerCase();
-				gem.shapeReady = function( json ) {
-					if( json.state != gem.currentAbbr ) return;
-					map.clearOverlays();
-					json.shapes.forEach( function( poly ) {
-						poly.points.push( poly.points[0] );
-						var polygon = new GPolygon( poly.points, '#000000', 2, .7, '#000000', .07 );
-						map.addOverlay( polygon );
-					});
-				};
-				$.getScript( cacheUrl( S( opt.baseUrl, 'shapes/json/', abbr, '.js' ) ) );
-			}
-			
-			zoomTo = function( abbr ) {
-				if( ! abbr ) return;
-				abbr = abbr.toUpperCase();
-				var state = abbr == 'US' ? stateUS : statesByAbbr[abbr];
-				if( ! state ) return;
-				$('#Poll411SearchInput').val('');
-				$selectState.val( abbr );
-				home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
-				vote = null;
-				if( state != stateUS ) $details.html( electionInfo() );
-				adjustHeight();
-				function latlng( lat, lng ) { return new GLatLng( +lat.$t, +lng.$t ) }
-				var bounds = new GLatLngBounds(
-					latlng( state.gsx$south, state.gsx$west ),
-					latlng( state.gsx$north, state.gsx$east )
-				);
-				GAsync( map, 'getBoundsZoomLevel', [ bounds ], function( zoom ) {
-					map.setCenter( bounds.getCenter(), zoom );
-					polyState( abbr );
-				});
-			}
-			
-			var abbr = pref.state;
-			if( ! abbr ) {
-				var loc = google.loader && google.loader.ClientLocation;
-				var address = loc && loc.address;
-				if( address  &&  address.country == 'USA' ) abbr = address.region;
-			}
-			
-			initMap( function() {
-				$selectState.bind( 'change keyup', function( event ) {
-					zoomTo( $selectState.val() );
-				});
+			if( mapplet ) {
+				zoomTo( abbr );
 				
-				if( mapplet ) {
-					zoomTo( abbr );
+				(function() {
+					function e( id ) { return document.getElementById('Poll411Search'+id); }
+					var /*spinner = e('Spinner'),*/ /*label = e('Label'),*/ input = e('Input'), button = e('Button');
+					button.disabled = false;
 					
-					(function() {
-						function e( id ) { return document.getElementById('Poll411Search'+id); }
-						var /*spinner = e('Spinner'),*/ /*label = e('Label'),*/ input = e('Input'), button = e('Button');
-						button.disabled = false;
+					window.Poll411Search = {
 						
-						window.Poll411Search = {
-							
-							focus: function() {
-								//label.style.textIndent = '-1000px';
-							},
-							
-							blur: function() {
-								//if( input.value === '' )
-								//	label.style.textIndent = '0px';
-							},
-							
-							sample: function() {
-								input.value = pref.example;
-								this.submit();
-								return false;
-							},
-							
-							submit: function() {
-								//spinner.style.backgroundPosition = '0px 0px';
-								if( ! input.value ) input.value = pref.example;
-								submit( input.value );
-								return false;
-							}
-						};
+						focus: function() {
+							//label.style.textIndent = '-1000px';
+						},
 						
-						Poll411Search.focus();
-						Poll411Search.blur();
-						if( params.home )
-							Poll411Search.submit();
-						else
-							input.focus();
-					})();
-				}
-				else {
-					setupTabs();
-					if( pref.ready )
-						submit( pref.address || pref.example );
+						blur: function() {
+							//if( input.value === '' )
+							//	label.style.textIndent = '0px';
+						},
+						
+						sample: function() {
+							input.value = pref.example;
+							this.submit();
+							return false;
+						},
+						
+						submit: function() {
+							//spinner.style.backgroundPosition = '0px 0px';
+							if( ! input.value ) input.value = pref.example;
+							submit( input.value );
+							return false;
+						}
+					};
+					
+					Poll411Search.focus();
+					Poll411Search.blur();
+					if( params.home )
+						Poll411Search.submit();
 					else
-						zoomTo( abbr );
-				}
-			});
-		}
-	});
+						input.focus();
+				})();
+			}
+			else {
+				setupTabs();
+				if( pref.ready )
+					submit( pref.address || pref.example );
+				else
+					zoomTo( abbr );
+			}
+		});
+	}
 	
 	analytics( 'view' );
 }
@@ -2222,14 +1985,16 @@ function log() {
 }
 
 log.print = function() {
-	return log.yes ? S( '<div style="padding:4px; margin-bottom:4px; border:1px solid red;">', log.log.join('<br />'), '</div>' ) : '';
+	return log.yes ? T( 'log', { content:log.log.join('<br />') } ) : '';
 }
 
 // Final initialization
 
 maker && inline ? makerWrite() : gadgetWrite();
 $(function() {
-	maker && inline ? makerReady() : gadgetReady();
+	T( 'ignore', null, function() {
+		maker && inline ? makerReady() : gadgetReady();
+	});
 	$('body').click( function( event ) {
 		var target = event.target;
 		if( $(target).is('a') )

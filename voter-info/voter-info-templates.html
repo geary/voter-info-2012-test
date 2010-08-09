@@ -54,7 +54,6 @@
     .heading { font-weight:bold; }
     .orange { padding:6px; width:95%; background-color:#FFEAC0; border:1px solid #FFBA90; }
     .pink { padding:6px; width:95%; background-color:#FFD0D0; border:1px solid #FF9090; }
-    /* params.home ? '.removehelp { display:none; }' : '', */
 </style>
 
 <!--:: gadgetStyle ::-->
@@ -75,6 +74,7 @@
 <!--:: mappletStyle ::-->
 
 <style type="text/css">
+    #outerlimits { margin-right:8px; }
     #Poll411Search, #Poll411Search td { font-size:16px; margin:0; padding:0; }
     #Poll411Search { background-color:#E8ECF9; margin:0; padding:6px; width:95%; }
     .Poll411SearchForm { margin:0; padding:0; }
@@ -229,6 +229,338 @@
 </script>
 
 <!-- End US Voter Info gadget by Google -->
+
+<!--:: makerOverlays ::-->
+
+<div id="getcode" class="popupOuter">
+    <div class="popupInner" style="width:225px;">
+        <div style="text-align:center; margin-bottom:10px;">
+            <button type="button" id="btnGetCode" style="font-size:24px;">
+                Get the Code
+            </button>
+        </div>
+        <div style="font-size:14px;">
+            <div style="margin-bottom:8px;">
+                Click this button for an <strong>inline</strong> gadget using HTML and JavaScript. 
+            </div>
+            <div style="margin-bottom:8px;">
+                The inline gadget initially displays only the search input form, without taking extra space on your page. When you click the <strong>Search</strong> button, the gadget expands to its full height.
+            </div>
+            <div style="margin-bottom:8px;">
+                Not all websites support the inline gadget. 
+                For a simpler gadget, change the <strong>Gadget Type</strong> below to Standard Gadget.
+            </div>
+        </div>
+    </div>
+</div>
+<div id="havecode" class="popupOuter" style="width:95%; height:90%;">
+    <div class="popupInner">
+        <div>
+            <div style="font-size:16px; margin-bottom:6px;">
+                <strong>Copy and paste this HTML to include the gadget on your website.</strong><br />
+            </div>
+            <div style="font-size:15px; margin-bottom:8px;">
+                Or click <strong>Get the Code</strong> below for a simpler fixed-height <strong><code>&lt;iframe&gt;</code></strong> gadget.
+            </div>
+            <div style="font-size:12px;">
+                <form id="codeform" name="codeform" style="margin:0; padding:0;">
+                    <textarea id="codearea" name="codearea" style="width:100%; height:80%; font-family: Consolas,Courier New,Courier,monospace;" value="">
+                    </textarea>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--:: gadgetBody ::-->
+
+<div id="spinner">
+</div>
+<div id="wrapper">
+    <div id="tabs" style="display:none;">
+    </div>
+    <div id="previewmap">
+    </div>
+    <div id="mapbox">
+    </div>
+    <div id="detailsbox" style="display:none;">
+    </div>
+</div>
+
+<!--:: mappletBody ::-->
+
+<div>
+    <div id="Poll411Search">
+        <!--<div id="Poll411SearchSpinner" class="Poll411SearchSpinner">-->
+        <!--</div>-->
+        <div>
+            <form id="Poll411SearchForm" class="Poll411SearchForm" onsubmit="return Poll411Search.submit()">
+                <div class="Poll411SearchTitle removehelp">
+                    <div style="margin-bottom:4px;">
+                        Select your state for statewide election info:
+                    </div>
+                </div>
+                <div style="margin-bottom:4px;">
+                    <select id="Poll411SelectState" style="width:100%;">
+                        <option value="">&nbsp;</option>
+                    </select>
+                </div>
+                <div class="Poll411SearchTitle removehelp">
+                    <div style="margin:8px 0 4px;">
+                        Or enter your <strong>home</strong> address for local info:
+                    </div>
+                </div>
+                <table cellpadding="0" cellspacing="0" style="width:100%;">
+                    <tr>
+                        <td style="width:99%;">
+                            <div>
+                                <input id="Poll411SearchInput" class="Poll411SearchInput" type="text" value="" />
+                            </div>
+                        </td>
+                        <td style="width:1%; padding-left:4px;">
+                            <div>
+                                <button type="submit" id="Poll411SearchButton" class="Poll411SearchButton">Search</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="removehelp">
+            <div style="margin-top:0.25em; font-size:90%;">
+                Example: 
+                <a style="" href="#" onclick="return Poll411Search.sample();">
+                    {{example}}
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="spinner">
+    </div>
+    <div id="wrapper">
+        <div id="detailsbox">
+            {{attribution}}
+        </div>
+        <div id="mapbox">
+        </div>
+    </div>
+</div>
+
+<!--:: attribution ::-->
+
+<div style="margin-bottom:0.5em; color:#333; {{fontStyle}}">
+    <div style="font-size:85%; margin-top:0.5em; border-top:1px solid #BBB; padding-top:1em;">
+        Developed with 
+<!--
+        <span id="vips" style="font-size:100%;">
+            <a style="font-size:100%;" href="#" onclick="$(\'#vips\').html(fullvips); return false;">
+                state and local election officials
+            </a>
+        </span>
+-->
+        the 
+        {{special}}
+        <a style="font-size:100%;" target="_blank" href="http://www.votinginfoproject.org/">
+            Voting Information Project
+        </a>
+        .
+    </div>
+<!--
+    <div style="font-size:85%; margin-top:0.75em;">
+        In conjunction with the 
+        <a style="font-size:100%;" target="_blank" href="http://www.lwv.org/">
+            League of Women Voters
+        </a>
+        .
+    </div>
+-->
+</div>
+
+<!--:: attributionVA ::-->
+
+<a style="font-size:100%;" target="_blank" href="http://www.sbe.virginia.gov/">
+    Virginia State Board of Elections
+</a>
+
+<!--:: placeRadioTable ::-->
+
+<table id="Poll411SearchPlaces" cellspacing="0">
+  <!--{{rows}}-->
+</table>
+
+<!--:: ignore ::-->
+
+<table>
+
+<!--:: placeRadioRow ::-->
+
+<tr class="Poll411SearchPlace" style="vertical-align:top;">
+    <td style="width:1%; padding:2px 0;">
+        <input type="radio" {{checked}} name="Poll411SearchPlaceRadio" class="Poll411SearchPlaceRadio" id="{{id}}" />
+    </td>
+    <td style="width:99%; padding:5px 0 2px 2px;">
+        <div>
+            <label for="{{id}}" class="Poll411SearchPlaceAddress">
+                {{address}}
+            </label>
+        </div>
+    </td>
+</tr>
+
+<!--:: ignore ::-->
+
+</table>
+
+<!--:: tabLinks ::-->
+
+<div id="tablinks">
+    {{tab1}}
+    {{tab2}}
+    {{tab3}}
+</div>
+
+<!--:: tabLinkActive ::-->
+
+<span class="{{id}}">{{label}}</span>
+
+<!--:: tabLinkInactive ::-->
+
+<a href="{{id}}">{{label}}</a>
+
+<!--:: selectAddressHeader ::-->
+
+<div id="radios">
+    <div style="padding-top:0.5em;">
+        <strong>Select your address:</strong>
+    </div>
+</div>
+
+<!--:: didNotFind ::-->
+  
+We did not find that address. Please check the spelling and try again. Be sure to include your zip code or city and state.
+
+<!--:: infoWrap ::-->
+
+<div style="{{fontStyle}} margin-top:12px; padding-right:4px; overflow:auto;">
+    {{html}}
+</div
+
+<!--:: longInfo ::-->
+
+{{log}}
+<div>
+    {{header}}
+    <div style="padding-top:0.75em">
+    </div>
+    {{home}}
+    <div style="padding-top:0.75em">
+    </div>
+    {{location}}
+    {{stateLocator}}
+    {{warning}}
+    <div style="padding-top:1em">
+    </div>
+    {{info}}
+</div>
+
+<!--:: location ::-->
+
+<div {{select}}>
+    <div style="font-weight:bold; font-size:110%;">
+      {{title}}
+    </div>
+    <div style="padding:0.5em 0;">
+      <table cellpadding="0" cellspacing="0">
+        <tr valign="top">
+          <td style="width:20px; padding:2px .75em 0 0;">
+            <img src="{{iconSrc}}" style="width:{{iconWidth}}px; height:{{iconHeight}}px;" />
+          </td>
+          <td>
+              {{address}}
+              <div>
+                {{directions}}
+              </div>
+              <div>
+                {{hours}}
+              </div>
+              {{extra}}
+          </td>
+        </tr>
+      </table>
+      {{unable}}
+    </div>
+</div>
+
+<!--:: specialLocation ::-->
+
+temp
+
+<!--:: address ::-->
+
+<div>
+  {{special}}
+  <div>
+    <strong>{{location}}</strong>
+  </div>
+  <div>
+    <span style="font-size:90%">{{description}}</span>
+  <div>
+  <div style="margin-top:{{streetMargin}}">
+    {{street}}
+  </div>
+</div>
+<div>
+  {{state}} {{zip}}
+</div>
+
+<!--:: locationUnable ::-->
+
+<div style="padding-top: 0.5em">
+  We were unable to locate this voting place on the map. 
+  Please check with your election officals for the exact address.
+</div>
+
+<!--:: infoLinks ::-->
+
+<div style="{{fontStyle}}">
+    <div style="margin-top:0.5em;">
+        <a target="_blank" href="http://spreadsheets.google.com/viewform?formkey=dG5rTHNRNWVYdGYwMmFjbDBydzlLR2c6MA">
+            Report an error
+        </a>
+    </div>
+<!--
+    <div style="margin-top:1em; border-top:1px solid #BBB; padding-top:1em;">
+    	Full election coverage:<br />
+    	<a target="_blank" href="http://www.google.com/2008election">
+    		Google 2008 Election Site
+    	</a>
+    </div>
+    <div style="margin-top:1em;">
+    	More election maps:<br />
+    	<a target="_blank" href="http://maps.google.com/elections">
+    		Google Elections Map Gallery
+    	</a>
+    </div>
+    <div style="margin-top:1em;">
+    	Get election info on your phone:<br />
+    	<a target="_blank" href="http://m.google.com/elections">
+    		http://m.google.com/elections
+    	</a>
+    </div>
+    <div style="margin:1em 0 1em 0;">
+    	Help others find their voter information:<br />
+    	<a target="_blank" href="http://gmodules.com/ig/creator?synd=open&url=http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget.xml">
+    		Get this gadget for your website
+    	</a>
+    </div>
+-->
+</div>
+
+<!--:: log ::-->
+
+<div style="padding:4px; margin-bottom:4px; border:1px solid red;">
+  {{content}}
+</div>
 
 <!--:: ignore ::-->
 
