@@ -22,7 +22,7 @@
 
 <style type="text/css">
   /* Font */
-  #Poll411Gadget, #Poll411Gadget * { font-family:{{fontFamily}}; font-size:{{fontSize}}{{fontUnits}}; }
+  #Poll411Gadget, #Poll411Gadget * { {{fontStyle}} }
   /* Sizes */
   #Poll411Gadget, #Poll411Form { width:{{width}}px; }
   #Poll411Frame { width:100%; height:{{height}}px; }
@@ -52,7 +52,7 @@
 
 <style type="text/css">
     body.gadget { margin:0; padding:0; }
-    #wrapper, #wrapper td { {{fontStyle}} }
+    body, body td { {{fontStyle}} }
     #previewmap, #mapbox { overflow: auto; }
     .heading { font-weight:bold; }
     .orange { padding:6px; width:95%; background-color:#FFEAC0; border:1px solid #FFBA90; }
@@ -282,15 +282,13 @@
 
 <div id="spinner">
 </div>
-<div id="wrapper">
-    <div id="tabs" style="display:none;">
-    </div>
-    <div id="previewmap">
-    </div>
-    <div id="mapbox">
-    </div>
-    <div id="detailsbox" style="display:none;">
-    </div>
+<div id="tabs" style="display:none;">
+</div>
+<div id="previewmap">
+</div>
+<div id="mapbox">
+</div>
+<div id="detailsbox" style="display:none;">
 </div>
 
 <!--:: mappletBody ::-->
@@ -343,12 +341,10 @@
     </div>
     <div id="spinner">
     </div>
-    <div id="wrapper">
-        <div id="detailsbox">
-            {{attribution}}
-        </div>
-        <div id="mapbox">
-        </div>
+    <div id="detailsbox">
+        {{attribution}}
+    </div>
+    <div id="mapbox">
     </div>
 </div>
 
