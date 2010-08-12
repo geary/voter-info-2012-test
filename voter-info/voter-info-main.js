@@ -189,7 +189,7 @@ T = function( name, values, give ) {
 	
 	function ready() {
 		var text = T.urls[url][part];
-		if( ! text ) window.console && console.log( "T('" + part + "') missing" );
+		if( ! text ) alert(S( "T('", part, "') missing from ", url ));
 		text = text.replace(
 			/(<!--)?\{\{(\w+)\}\}(-->)?/g,
 			function( match, ignore, name ) {
