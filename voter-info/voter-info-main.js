@@ -28,7 +28,7 @@ var mapplet = opt.mapplet;
 var baseUrl = opt.baseUrl;
 var dataUrl = opt.dataUrl || baseUrl;
 
-var $window = $(window);
+var $window = $(window), $body = $('body');
 
 function writeScript( url ) {
 	document.write( '<script type="text/javascript" src="', url, '"></script>' );
@@ -373,7 +373,8 @@ var pref = {
 	stateSelector: true,
 	addrPrompt: 'Or enter your *home* address for local info:',
 	electionId: '',
-	logo: ''
+	logo: '',
+	sidebar: false
 };
 for( var name in pref ) pref[name] = prefs.getString(name) || pref[name];
 pref.ready = prefs.getBool('submit');
@@ -382,7 +383,7 @@ var maker = decodeURIComponent(location.href).indexOf('source=http://www.gmodule
 
 var fontStyle = S( 'font-family:', escape(pref.fontFamily), '; font-size:', pref.fontSize, pref.fontUnits, '; ' );
 
-var width = $(window).width(), height = $(window).height();
+var width = $window.width(), height = $window.height();
 
 T.variables = {
 	width: width - 8,
@@ -481,7 +482,8 @@ function indexSpecialStates() {
 
 var inline = ! mapplet  &&  pref.gadgetType == 'inline';
 var iframe = ! mapplet  &&  ! inline;
-var balloon = mapplet  ||  ( $(window).width() >= 450 && $(window).height() >= 400 );
+var balloon = pref.sidebar  ||  mapplet  ||  ( width >= 450  &&  height >= 400 );
+var sidebar = pref.sidebar  ||  ( ! mapplet  &&  width >= 750  &&  height >= 500 );
 
 function initialMap() {
 	return balloon && vote && vote.info && vote.info.latlng;
@@ -1157,14 +1159,14 @@ function gadgetReady() {
 			if( ! mapplet ) {
 				$tabs.html( tabLinks( initialMap() ? '#mapbox' : '#detailsbox' ) );
 				$map.css({ visibility:'hidden' });
-				setHeights();
+				setLayout();
 				if( initialMap() ) {
 					$map.show().css({ visibility:'visible' });
-					$details.hide();
+					if( ! sidebar ) $detailsbox.hide();
 				}
 				else {
 					$map.hide();
-					$details.show();
+					$detailsbox.show();
 				}
 			}
 			
@@ -1476,22 +1478,30 @@ function gadgetReady() {
 		submitReady();
 	}
 	
-	function setHeights() {
+	function setLayout() {
+		$body.toggleClass( 'sidebar', sidebar );
 		var formHeight = $('#Poll411Gadget').visibleHeight();
 		if( formHeight ) formHeight += 8;  // TODO: WHY DO WE NEED THIS?
 		var height = Math.floor(
 			$window.height() - formHeight - $tabs.visibleHeight()
 		);
 		$map.height( height );
-		$details.height( height );
+		$detailsbox.height( height );
+		if( sidebar ) {
+			// TODO: Float drop without the -1. Why did I need it?
+			// Maybe use absolute positioning instead of float
+			$map.css({
+				width: Math.floor( $window.width() - $detailsbox.width() - 1 )
+			});
+		}
 	}
 	
-	$(window).resize( setHeights );
+	$window.resize( setLayout );
 	
 	function detailsOnly( html ) {
 		if( ! mapplet ) {
 			$tabs.html( tabLinks('#detailsbox') ).show();
-			setHeights();
+			setLayout();
 		}
 		$map.hide();
 		$details.html( html ).show();
@@ -1610,7 +1620,7 @@ function gadgetReady() {
 			$map.hide();
 			$tabs.html( tabLinks('#detailsbox') ).show();
 		}
-		$details.show();
+		$detailsbox.show();
 		adjustHeight();
 		spin( false );
 	}
@@ -1789,7 +1799,7 @@ function gadgetReady() {
 			$map.hide();
 			$search.slideDown( 250, function() {
 				//$previewmap.show();
-				setHeights();
+				setLayout();
 				$map.show();
 			});
 		}
@@ -1810,6 +1820,7 @@ function gadgetReady() {
 	if( mapplet ) {
 		$.T('gadgetMappletStyle').appendTo('head');
 		$.T('mappletStyle').appendTo('head');
+		
 		$.T( 'mappletBody', {
 			example: htmlEscape( pref.example ),
 			attribution: attribution()
@@ -1819,6 +1830,7 @@ function gadgetReady() {
 		$.T('style').appendTo('head');
 		$.T('gadgetMappletStyle').appendTo('head');
 		$.T('gadgetStyle').appendTo('head');
+		
 		$('body').prepend( T('html') );
 		$.T('gadgetBody').appendTo('#outerlimits');
 	}
@@ -1828,14 +1840,15 @@ function gadgetReady() {
 		$tabs = $('#tabs'),
 		$previewmap = $('#previewmap'),
 		$map = $('#mapbox'),
-		$details = $('#detailsbox'),
+		$details = $('#details'),
+		$detailsbox = $('#detailsbox'),
 		$spinner = $('#spinner'),
 		$directions = $('#directions');
 	
 	if( ! mapplet ) {
 		if( pref.ready ) $search.hide();
 		else setGadgetPoll411();
-		setHeights();
+		setLayout();
 	}
 	
 	// http://spreadsheets.google.com/feeds/list/p9CuB_zeAq5X-twnx_mdbKg/2/public/values?alt=json
