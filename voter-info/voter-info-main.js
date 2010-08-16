@@ -164,6 +164,12 @@ function fetch( url, callback, cache ) {
 	if( cache === false ) {
 		$.getJSON( url, callback );
 	}
+	else if( opt.dataUrl && url.indexOf(opt.dataUrl) == 0 ) {
+		$.getJSON( url, function( data ) {
+			if( data.error ) alert( data.error + ':\n' + url );
+			callback( data.result );
+		});
+	}
 	else {
 		_IG_FetchContent( url, callback, {
 			refreshInterval: cache != null ? cache : opt.nocache ? 1 : opt.cache || 600
