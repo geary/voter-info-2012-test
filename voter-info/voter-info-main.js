@@ -966,12 +966,7 @@ function gadgetReady() {
 							'</div>',
 							contest.ballot.candidate.randomized().mapjoin( function( candidate ) {
 								function party() {
-									return candidate.party && ({
-										'Governor': true,
-										'Lieutenant Governor': true,
-										'Attorney General': true,
-										'Member House of Delegates': true
-									})[contest.office] ? S(
+									return candidate.party ? S(
 										'<span style="color:#444; font-size:85%;">',
 											' - ',
 											candidate.party,
@@ -980,7 +975,7 @@ function gadgetReady() {
 								}
 								return S(
 									'<div>',
-										linkIf( candidate.name, candidate.url ),
+										linkIf( candidate.name, candidate.candidate_url ),
 										party(),
 									'</div>'
 								);
