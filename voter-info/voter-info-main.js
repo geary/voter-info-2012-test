@@ -25,8 +25,8 @@ var gem = GoogleElectionMap = {};
 opt.nocache = opt.debug;
 
 var mapplet = opt.mapplet;
-var baseUrl = opt.baseUrl;
-var dataUrl = opt.dataUrl || baseUrl;
+opt.dataUrl = opt.codeUrl;
+if( opt.debug ) opt.dataUrl += 'proxy-local.php?jsonp=?&file=';
 
 var $window = $(window), $body = $('body');
 
@@ -213,7 +213,7 @@ T = function( name, values, give ) {
 };
 T.urls = {};
 
-T.baseUrl = dataUrl;
+T.baseUrl = opt.dataUrl;
 T.file = 'voter-info-templates';
 
 $.T = function( name, values /* TODO: , give */ ) {
@@ -240,7 +240,7 @@ function cacheUrl( url, cache, always ) {
 }
 
 function imgUrl( url, cache, always ) {
-	return cacheUrl( baseUrl + 'images/' + url, cache, always );
+	return cacheUrl( opt.codeUrl + 'images/' + url, cache, always );
 }
 
 function url( base, params, delim ) {
@@ -1292,7 +1292,7 @@ function gadgetReady() {
 			callback();
 		};
 		
-		var url = S( opt.baseUrl, 'leo/', info.state.abbr.toLowerCase(), '-leo.js' );
+		var url = S( opt.codeUrl, 'leo/', info.state.abbr.toLowerCase(), '-leo.js' );
 		$.getScript( cacheUrl( url, 60 ) );
 		
 	}
@@ -1858,7 +1858,7 @@ function gadgetReady() {
 	}
 	
 	// http://spreadsheets.google.com/feeds/list/p9CuB_zeAq5X-twnx_mdbKg/2/public/values?alt=json
-	var stateSheet = dataUrl + 'leo/states-spreadsheet.json';
+	var stateSheet = opt.dataUrl + 'leo/states-spreadsheet.json';
 	
 	getJSON( stateSheet, sheetReady, 300 );
 	function sheetReady( json ) {
@@ -1886,7 +1886,7 @@ function gadgetReady() {
 					map.addOverlay( polygon );
 				});
 			};
-			$.getScript( cacheUrl( S( opt.baseUrl, 'shapes/json/', abbr, '.js' ) ) );
+			$.getScript( cacheUrl( S( opt.codeUrl, 'shapes/json/', abbr, '.js' ) ) );
 		}
 		
 		zoomTo = function( abbr ) {

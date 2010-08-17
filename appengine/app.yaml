@@ -1,0 +1,8 @@
+application: election-gadgets
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /.*voter-info-gadget\.xml
+  script: voter-info-gadget.py

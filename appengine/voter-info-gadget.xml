@@ -128,10 +128,11 @@
 <![CDATA[
 
 <script type="text/javascript">
-
+	
 	var opt = {
-		baseUrl: 'http://election-gadgets.googlecode.com/hg/voter-info/',
-		gadgetUrl: 'http://election-gadgets.googlecode.com/hg/voter-info/voter-info-frame.xml',
+		debug: '{{debug}}',
+		codeUrl: 'http://election-gadgets.googlecode.com/hg/voter-info/',
+		gadgetUrl: 'http://election-gadgets.appspot.com/{{debug}}voter-info-gadget.xml',
 		
 		MODULE_ID: __MODULE_ID__,
 		BIDI_START_EDGE: '__BIDI_START_EDGE__',
@@ -142,12 +143,18 @@
 		writeScript: function( name, seconds ) {
 			document.write(
 				'<script type="text/javascript" src="',
-					_IG_GetCachedUrl( opt.baseUrl + name, { refreshInterval: seconds || 60 } ),
+					opt.debug ?
+						opt.codeUrl + name + '?t=' + (+new Date) :
+						_IG_GetCachedUrl(
+							opt.codeUrl + name, { refreshInterval: seconds || 60 }
+						),
 				'">',
 				'<\/script>'
 			);
 		}
 	};
+	
+	if( opt.debug ) opt.codeUrl = 'http://' + opt.debug;
 	
 	opt.writeScript( 'voter-info.js' );
 	
