@@ -25,8 +25,14 @@ var gem = GoogleElectionMap = {};
 opt.nocache = opt.debug;
 
 var mapplet = opt.mapplet;
-opt.dataUrl = opt.codeUrl;
-if( opt.debug ) opt.dataUrl += 'proxy-local.php?jsonp=?&file=';
+if( mapplet ) {
+	opt.codeUrl = opt.baseUrl;
+	opt.dataUrl = opt.dataUrl || opt.baseUrl;
+}
+else {
+	opt.dataUrl = opt.codeUrl;
+	if( opt.debug ) opt.dataUrl += 'proxy-local.php?jsonp=?&file=';
+}
 
 var $window = $(window), $body = $('body');
 
