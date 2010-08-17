@@ -170,10 +170,11 @@ function fetch( url, callback, cache ) {
 	if( cache === false ) {
 		$.getJSON( url, callback );
 	}
-	else if( opt.dataUrl && url.indexOf(opt.dataUrl) == 0 ) {
+	else if( opt.debug  &&  url.indexOf(opt.dataUrl) == 0 ) {
 		$.getJSON( url, function( data ) {
+			if( ! data ) data = { error: 'Null data' };
 			if( data.error ) alert( data.error + ':\n' + url );
-			callback( data.result );
+			else callback( data.result );
 		});
 	}
 	else {
