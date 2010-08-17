@@ -496,7 +496,7 @@ function indexSpecialStates() {
 var inline = ! mapplet  &&  pref.gadgetType == 'inline';
 var iframe = ! mapplet  &&  ! inline;
 var balloon = pref.sidebar  ||  mapplet  ||  ( width >= 450  &&  height >= 400 );
-var sidebar = pref.sidebar  ||  ( ! mapplet  &&  width >= 750  &&  height >= 500 );
+var sidebar = !!( pref.sidebar  ||  ( ! mapplet  &&  width >= 750  &&  height >= 500 ) );
 
 function initialMap() {
 	return balloon && vote && vote.info && vote.info.latlng;
@@ -1493,18 +1493,18 @@ function gadgetReady() {
 	
 	function setLayout() {
 		$body.toggleClass( 'sidebar', sidebar );
+		var headerHeight = $('#header').visibleHeight();
 		var formHeight = $('#Poll411Gadget').visibleHeight();
 		if( formHeight ) formHeight += 8;  // TODO: WHY DO WE NEED THIS?
-		var height = Math.floor(
-			$window.height() - formHeight - $tabs.visibleHeight()
-		);
+		var height = $window.height() - headerHeight - formHeight - $tabs.visibleHeight();
 		$map.height( height );
 		$detailsbox.height( height );
 		if( sidebar ) {
-			// TODO: Float drop without the -1. Why did I need it?
-			// Maybe use absolute positioning instead of float
+			var left = $detailsbox.width();
 			$map.css({
-				width: Math.floor( $window.width() - $detailsbox.width() - 1 )
+				left: left,
+				top: 0,
+				width: $window.width() - left
 			});
 		}
 	}
@@ -1844,7 +1844,10 @@ function gadgetReady() {
 		$.T('gadgetMappletStyle').appendTo('head');
 		$.T('gadgetStyle').appendTo('head');
 		
-		$('body').prepend( T('html') );
+		$('body').prepend( S(
+			pref.logo ? T('header') : '',
+			T('html')
+		) );
 		$.T('gadgetBody').appendTo('#outerlimits');
 	}
 	

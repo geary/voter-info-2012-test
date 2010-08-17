@@ -5,56 +5,30 @@
 	<title>Google Voter Information</title>
 	
 	<style type="text/css">
-		body { margin:0; padding:0; overflow:hidden; font-family: Arial,sans-serif; font-size:16px; }
-		#header { padding:10px 10px 4px 10px; height:40px; position:relative; }
-		#logo img { border:none; width:175px; height:40px; }
-		#title { position:absolute; left:200px; bottom:11px; font-size:26px; }
+		body { margin:0; padding:0; overflow:hidden; }
 	</style>
 	
 </head>
 <body scroll="no">
-	
-	<div id="header">
-		<a id="logo"
-		   href="http://maps.google.com/"
-		   onclick="urchinTracker('/outbound/help/maps/vote/mapslogo');"
-		>
-			<img src="http://maps.google.com/intl/en_us/images/logos/maps_logo.gif">
-		</a>
-		<div id="title">
-			Voter Information
-		</div>
-	</div>
 	
 	<iframe
 		id="gadget"
 		style="display:none;"
 		frameborder="0"
 		scrolling="no"
-		src="http://www.gmodules.com/ig/ifr?url=http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget.xml&amp;synd=open"
-	>
-	</iframe>
+		src="http://www.gmodules.com/ig/ifr?url=http://election-gadgets.appspot.com/voter-info-gadget.xml&amp;up_gadgetType=iframe&amp;up_fontFamily=Arial%2Csans-serif&amp;up_fontSize=17&amp;up_fontUnits=px&amp;up_logo=1&amp;up_sidebar=1&amp;synd=open"
+	></iframe>
 	
 	<script type="text/javascript">
-	
-		window.onresize = function() {
-			var header = document.getElementById('header');
+		var resize = window.onresize = function() {
 			var gadget = document.getElementById('gadget'), style = gadget.style;
-			var doc = document.documentElement;
-			style.width = doc.clientWidth + 'px';
-			style.height = doc.clientHeight - header.clientHeight + 'px';
+			style.width = window.innerWidth + 'px';
+			style.height = window.innerHeight + 'px';
 			style.display = 'block';
 		};
 		
-		window.onresize();
-		
+		resize();
 	</script>
 	
-	<script type="text/javascript" src="http://www.google-analytics.com/urchin.js">
-	</script>
-	<script type="text/javascript">
-		_uacct = "UA-5730550-1";
-		_utcp="/help/maps/elections/";
-	</script>
 </body>
 </html>
