@@ -1398,11 +1398,16 @@ function gadgetReady() {
 			
 			submit: function() {
 				$previewmap.hide();
-				$map.hide().css({ visibility:'hidden' });
-				$search.slideUp( 250, function() {
-					$spinner.show();
+				if( sidebar ) {
 					submit( input.value );
-				});
+				}
+				else {
+					$map.hide().css({ visibility:'hidden' });
+					$search.slideUp( 250, function() {
+						$spinner.show();
+						submit( input.value );
+					});
+				}
 				return false;
 			}
 		};
