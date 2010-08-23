@@ -1252,9 +1252,7 @@ function gadgetReady() {
 		var address = T( 'address', {
 			special: special,
 			location: htmlEscape( info.location || '' ),
-			description: htmlEscape( info.description || '' ),
 			street: info.street,
-			streetMargin: info.location || info.description ? '0.25em' : '0',
 			state: locality ? locality  + ', ' + info.state.abbr :
 				info.address.length > 2 ? info.address :
 				info.state.name,
@@ -1331,8 +1329,7 @@ function gadgetReady() {
 							state: 'DC',
 							zip: '20037',
 							location_name: 'George Washington University'
-						},
-						description: "The Smith Center-80's Club Room"
+						}
 					}]
 				]
 			});
@@ -1613,7 +1610,6 @@ function gadgetReady() {
 			vote.info = {
 				address: ( location.address || '' ).replace( / *, */g, '<br />' ),
 				location: location.address && location.address.location_name,
-				description: location.description,
 				directions: location.directions,
 				hours: location.hours,
 				_:''
@@ -1748,8 +1744,7 @@ function gadgetReady() {
 			geo: geo,
 			place: place,
 			address: formatted,
-			location: extra.location,
-			description: extra.description,
+			location: extra.address && extra.address.location_name,
 			directions: extra.directions,
 			hours: extra.hours,
 			lat: lat,
