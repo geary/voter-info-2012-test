@@ -411,7 +411,8 @@ T.variables = {
 	fontUnits: pref.fontUnits,
 	fontStyle: fontStyle,
 	gadget: opt.gadgetUrl,
-	spinDisplay: pref.ready ? '' : 'display:none;'
+	spinDisplay: pref.ready ? '' : 'display:none;',
+	spinImage: imgUrl('spinner.gif')
 };
 
 // Date and time
