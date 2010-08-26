@@ -66,9 +66,9 @@
     /*body { height:{{height}}px; }*/
     #spinner { z-index: 1; position:absolute; width:100%; height:100%; background-image:url(', imgUrl('spinner.gif'), '); background-position:center; background-repeat:no-repeat; opacity:0.30; -moz-opacity:0.30; {{spinDisplay}} }
     #spinner { filter:alpha(opacity=30); }
-    #header-pad { padding:10px 10px 4px 10px; }
+    #header-pad { padding:10px 10px 4px 6px; }
     #logo img { border:none; width:175px; height:40px; }
-    #title { font-size:24px; }
+    #title { font-size:20px; padding-left:4px; }
     #tabs { width:100%; background-color:#E8ECF9; }
     #tablinks { padding:4px; }
     #tablinks span, #tablinks a { margin-right:1em; }
@@ -77,6 +77,8 @@
     #previewmap, #mapbox { width:100%; }
     #detailsbox { width:100%; overflow:scroll; overflow-x:auto; overflow-y:scroll; display:none; }
     body.sidebar #outerlimits { position:relative; }
+    body.sidebar #Poll411Gadget { padding: 4px 4px 4px 8px; }
+    body.sidebar #Poll411Gadget, body.sidebar #Poll411Form { width:auto; }
     body.sidebar #detailsbox { width:24em; /*position:absolute; left:0; top:0;*/ display:block; }
     body.sidebar #details { margin:8px; }
     body.sidebar #mapbox { position:absolute; }
@@ -112,9 +114,9 @@
     >
       <img src="http://maps.google.com/intl/en_us/images/logos/maps_logo.gif">
     </a>
-  </div>
-  <div id="title">
-    Voter Information
+    <div id="title">
+      Voter Information
+    </div>
   </div>
 </div>
 

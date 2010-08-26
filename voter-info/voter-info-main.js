@@ -499,6 +499,8 @@ var iframe = ! mapplet  &&  ! inline;
 var balloon = pref.sidebar  ||  mapplet  ||  ( width >= 450  &&  height >= 400 );
 var sidebar = !!( pref.sidebar  ||  ( ! mapplet  &&  width >= 750  &&  height >= 500 ) );
 
+$body.toggleClass( 'sidebar', sidebar );
+
 function initialMap() {
 	return balloon && vote && vote.info && vote.info.latlng;
 }
