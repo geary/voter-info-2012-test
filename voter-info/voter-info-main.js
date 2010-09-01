@@ -199,7 +199,7 @@ T = function( name, values, give ) {
 			o[k] = $.trim(v);
 		}
 		ready();
-	});
+	}, 60 );
 	
 	function ready() {
 		var text = T.urls[url][part];
@@ -1869,7 +1869,7 @@ function gadgetReady() {
 	// http://spreadsheets.google.com/feeds/list/p9CuB_zeAq5X-twnx_mdbKg/2/public/values?alt=json
 	var stateSheet = opt.dataUrl + 'leo/states-spreadsheet.json';
 	
-	getJSON( stateSheet, sheetReady, 300 );
+	getJSON( stateSheet, sheetReady, 60 );
 	function sheetReady( json ) {
 		json.feed.entry.forEach( function( state ) {
 			statesByAbbr[ state.abbr = state.gsx$abbr.$t ] = state;
