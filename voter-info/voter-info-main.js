@@ -203,7 +203,7 @@ T = function( name, values, give ) {
 	
 	function ready() {
 		var text = T.urls[url][part];
-		if( ! text ) alert(S( "T('", part, "') missing from ", url ));
+		if( ! text ) return T.error && T.error( url, part );
 		text = text.replace(
 			/(<!--)?\{\{(\w+)\}\}(-->)?/g,
 			function( match, ignore, name ) {
@@ -223,6 +223,19 @@ T.urls = {};
 
 T.baseUrl = opt.dataUrl;
 T.file = 'voter-info-templates';
+T.error = function( url, part ) {
+	if( part == 'ignore' ) {
+		$('#outerlimits').html( S(
+			'<div>',
+				'Sorry, we are having trouble loading the Google Election Center app.<br>',
+				'Please try again later.',
+			'</div>'
+		) );
+	}
+	else {
+		alert(S( "T('", part, "') missing from ", url ));
+	}
+};
 
 $.T = function( name, values /* TODO: , give */ ) {
 	return $( T( name, values ) );
