@@ -1224,7 +1224,7 @@ function gadgetReady() {
 						);
 						GAsync( map, 'getBoundsZoomLevel', [ bounds ], function( zoom ) {
 							map.setCenter( bounds.getCenter(), Math.min(zoom,16) );
-							map.addOverlay( polyline );
+							polyline && map.addOverlay( polyline );
 						});
 					});
 				});
