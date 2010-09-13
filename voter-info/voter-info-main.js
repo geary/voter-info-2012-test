@@ -9,9 +9,9 @@
 
 // Temp - hard code next election ID for upcoming primaries
 var upcoming = {
-	DC: 100,
-	HI: 74,
-	MD: 117
+	DC: { id:100, name:'District of Columbia Primary<br>September 14, 2010' },
+	HI: { id:74, name:'Hawaii Primary Elections<br>September 18, 2010' },
+	MD: { id:117, name:'Maryland Primary Elections<br>September 14, 2010' }
 };
 
 var key = 'ABQIAAAAL7MXzZBubnPtVtBszDCxeRTZqGWfQErE9pT-IucjscazSdFnjBSzjqfxm1CQj7RDgG-OoyNfebJK0w';
@@ -531,11 +531,16 @@ var home, vote, interpolated;
 
 // HTML snippets
 
-var electionHeader = S(
-	'<div>',
-		'<strong>June, 2010 Election</strong>',
-	'</div>'
-);
+function electionHeader() {
+	var abbr = vote.info && vote.info.state && vote.info.state.abbr;
+	var election = upcoming[abbr];
+	name = election && election.name || '';
+	return S(
+		'<div style="font-weight:bold;">',
+			name,
+		'</div>'
+	);
+}
 
 function includeMap() {
 	return vote && vote.info && vote.info.latlng;
@@ -896,7 +901,8 @@ function gadgetReady() {
 		//			//state.gsx$regcomments.$t || '',
 		//		'</div>'
 		//	);
-		return S(
+		var cands = candidates();
+		return deadlines || absentee || sameDay || cands ? S(
 			'<div style="margin-bottom:0.5em;">',
 				'<div class="heading" style="margin:0.75em 0;">',
 					formatDate(electionDay), ' ', electionName,
@@ -906,9 +912,9 @@ function gadgetReady() {
 					absentee,
 				'</div>',
 				sameDay,
-				candidates(),
+				cands,
 			'</div>'
-		);
+		) : '';
 		
 		function fix( text, prefix ) {
 			return( text
@@ -1072,7 +1078,7 @@ function gadgetReady() {
 			$details.html( longInfo() ).show();
 			vote.html = infoWrap( S(
 				log.print(),
-				electionHeader,
+				electionHeader(),
 				homeAndVote()//,
 				//'<div style="padding-top:1em">',
 				//'</div>',
@@ -1103,7 +1109,7 @@ function gadgetReady() {
 		function longInfo() {
 			return T( 'longInfo', {
 				log: log.print(),
-				header: electionHeader,
+				header: electionHeader(),
 				home: formatHome(),
 				location: location(),
 				stateLocator: stateLocator(),
@@ -1327,7 +1333,8 @@ function gadgetReady() {
 	}
 	
 	function pollingApi( address, abbr, normalize, callback ) {
-		var id = upcoming[abbr];
+		var election = upcoming[abbr];
+		var id = election && election.id;
 		var url = S(
 			'http://pollinglocation.apis.google.com/?',
 			normalize ? 'normalize=1&' : '',
