@@ -7,6 +7,13 @@
 
 (function() {
 
+// Temp - hard code next election ID for upcoming primaries
+var upcoming = {
+	DC: 100,
+	HI: 74,
+	MD: 117
+};
+
 var key = 'ABQIAAAAL7MXzZBubnPtVtBszDCxeRTZqGWfQErE9pT-IucjscazSdFnjBSzjqfxm1CQj7RDgG-OoyNfebJK0w';
 
 $.fn.visibleHeight = function() {
@@ -1319,10 +1326,12 @@ function gadgetReady() {
 		
 	}
 	
-	function pollingApi( address, normalize, callback ) {
+	function pollingApi( address, abbr, normalize, callback ) {
+		var id = upcoming[abbr];
 		var url = S(
 			'http://pollinglocation.apis.google.com/?',
 			normalize ? 'normalize=1&' : '',
+			id ? 'electionid=' + id + '&' : '',
 			'q=', encodeURIComponent(address)
 		);
 		getJSON( url, function( poll ) {
@@ -1351,15 +1360,16 @@ function gadgetReady() {
 			});
 			return;
 		}
-		pollingApi( info.place.address, false, function( poll ) {
+		var abbr = info.state && info.state.abbr;
+		pollingApi( info.place.address, abbr, false, function( poll ) {
 			if( ok(poll) )
 				callback( poll );
 			else
-				//pollingApi( countyAddress(), false, function( poll ) {
+				//pollingApi( countyAddress(), abbr, false, function( poll ) {
 				//	if( ok(poll)  ||  ! inputAddress  )
 				//		callback( poll );
 				//	else
-						pollingApi( inputAddress, true, callback );
+						pollingApi( inputAddress, abbr, true, callback );
 				//});
 		});
 	}
