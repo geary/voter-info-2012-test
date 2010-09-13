@@ -9,7 +9,7 @@
 
 // Temp - hard code next election ID for upcoming primaries
 var upcoming = {
-	DC: { id:100, name:'District of Columbia Primary<br>September 14, 2010' },
+	//DC: { id:100, name:'District of Columbia Primary<br>September 14, 2010' },
 	HI: { id:74, name:'Hawaii Primary Elections<br>September 18, 2010' },
 	MD: { id:117, name:'Maryland Primary Elections<br>September 14, 2010' }
 };
