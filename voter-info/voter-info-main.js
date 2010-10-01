@@ -985,6 +985,8 @@ function gadgetReady() {
 		}
 		
 		function candidates() {
+			return '';  // TEMP: turn this off until contest data available
+			// OLD CODE:
 			var contests = vote && vote.poll && vote.poll.contests && vote.poll.contests[0];
 			if( ! contests  ||  ! contests.length ) return '';
 			contests = sortArrayBy( contests, 'ballot_placement', { numeric:true } );
