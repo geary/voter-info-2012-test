@@ -166,8 +166,10 @@ function S() {
 }
 
 function linkIf( text, href, title ) {
+	title = htmlEscape( title || text ).replace( /"/g, '&quot;' );
+	text = htmlEscape( text );
 	return ! href ? text : S(
-		'<a target="_blank" href="', href, '" title="', title || text, '">',
+		'<a target="_blank" href="', href, '" title="', title, '">',
 			text,
 		'</a>'
 	);
