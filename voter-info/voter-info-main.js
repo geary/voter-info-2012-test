@@ -993,7 +993,7 @@ function gadgetReady() {
 			return S(
 				'<div style="padding:0.5em 0;">',
 					'<div class="heading" style="">',
-						'Contests and Candidates',
+						'Election Candidates',
 					'</div>',
 					'<div style="font-size:85%; font-style:italic; margin-top:0.5em">',
 						'Candidates are listed in random order',
