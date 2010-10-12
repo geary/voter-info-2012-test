@@ -1349,7 +1349,7 @@ function gadgetReady() {
 	}
 	
 	function lookupPollingPlace( inputAddress, info, callback ) {
-		function ok( poll ) { return ! poll.status; }
+		function ok( poll ) { return poll.status == 'SUCCESS'; }
 		function countyAddress() {
 			return S( info.street, ', ', info.county, ', ', info.state.abbr, ' ', info.zip );
 		}
@@ -1586,7 +1586,7 @@ function gadgetReady() {
 				var address = location && location.address;
 				if( ! address )
 					poll.status = 'TEMP_NO_ADDRESS';
-				if( poll.status ) {
+				if( poll.status != 'SUCCESS' ) {
 					sorry();
 				}
 				else {
