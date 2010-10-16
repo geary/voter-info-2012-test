@@ -1495,6 +1495,7 @@ function gadgetReady() {
 							detailsOnly( T('selectAddressHeader') );
 							var $radios = $('#radios');
 							$radios.append( formatPlaces(places) );
+							$detailsbox.show();
 							adjustHeight();
 							$details.find('input:radio').click( function() {
 								var radio = this;
