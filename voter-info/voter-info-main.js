@@ -1959,6 +1959,7 @@ function gadgetReady() {
 			var address = loc && loc.address;
 			if( address  &&  address.country == 'USA' ) abbr = address.region;
 		}
+		abbr = abbr || 'US';
 		
 		initMap( function() {
 			$selectState.bind( 'change keyup', function( event ) {
