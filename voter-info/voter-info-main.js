@@ -1286,7 +1286,7 @@ function gadgetReady() {
 			street: info.street,
 			state: locality ? locality  + ', ' + info.state.abbr :
 				info.address.length > 2 ? info.address :
-				info.state.name,
+				info.state && info.state.name || '',
 			zip: info.zip
 		});
 		var unable = info.latlng ? '' : T('locationUnable');
@@ -1595,17 +1595,25 @@ function gadgetReady() {
 					// TODO:
 					//interpolated = ( poll.errorcode == 3 );
 					home.leo.locality = '' + poll.locality;
-					var addr = S(
-						address.line1 ? address.line1 + ', ' : '',
-						address.line2 ? address.line2 + ', ' : '',
-						address.city, ', ', address.state,
-						address.zip ? ' ' + address.zip.slice(0,5) : ''
-					);
-					log( 'Polling address:', addr );
-					geocode( addr, function( geo ) {
-						var places = geo && geo.Placemark;
-						set( geo, places, location, addr );
-					});
+					if( address.line1 && (
+						( address.city && address.state ) || address.zip )
+					) {
+						var addr = S(
+							address.line1 ? address.line1 + ', ' : '',
+							address.line2 ? address.line2 + ', ' : '',
+							address.city, ', ', address.state,
+							address.zip ? ' ' + address.zip.slice(0,5) : ''
+						);
+						log( 'Polling address:', addr );
+						geocode( addr, function( geo ) {
+							var places = geo && geo.Placemark;
+							set( geo, places, location, addr );
+						});
+					}
+					else {
+						log( 'No polling address' );
+						setNoGeo( location );
+					}
 				}
 			});
 		});
@@ -1645,7 +1653,10 @@ function gadgetReady() {
 		
 		function setNoGeo( location ) {
 			vote.info = {
-				address: ( location.address || '' ).replace( / *, */g, '<br />' ),
+				address: '',  // ( location.address || '' ).replace( / *, */g, '<br />' ),
+				street: '',
+				city: '',
+				zip: '',
 				location: location.address && location.address.location_name,
 				directions: location.directions,
 				hours: location.hours,
