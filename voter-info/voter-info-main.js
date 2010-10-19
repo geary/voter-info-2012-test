@@ -1353,8 +1353,9 @@ function gadgetReady() {
 		function countyAddress() {
 			return S( info.street, ', ', info.county, ', ', info.state.abbr, ' ', info.zip );
 		}
-		if( info.place.address == '1600 Pennsylvania Ave NW, Washington, DC 20500, USA' ) {
+		if( /1600 Pennsylvania Ave NW.* 20500, USA/.test( info.place.address ) ) {
 			callback({
+				status: 'SUCCESS',
 				locations: [
 					[{
 						address: {
