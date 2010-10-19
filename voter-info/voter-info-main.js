@@ -1920,11 +1920,6 @@ function gadgetReady() {
 			statesByAbbr[ state.abbr = state.gsx$abbr.$t ] = state;
 			statesByName[ state.name = state.gsx$name.$t ] = state;
 			states.push( state );
-			$selectState.append( S(
-				'<option value="', state.abbr, '">',
-					state.name,
-				'</option>'
-			) );
 		});
 		
 		indexSpecialStates();
