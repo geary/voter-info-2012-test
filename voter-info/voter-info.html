@@ -13,12 +13,12 @@
 	
 	<script type="text/javascript">
 		
-		function get( what ) {
-			return document.documentElement[ 'offset' + what ] || window[ 'inner' + what ];
+		function getWH( what ) {
+			return window[ 'inner' + what ] || document.documentElement[ 'offset' + what ];
 		}
 		
-		function width() { return get('Width'); }
-		function height() { return get('Height'); }
+		function width() { return getWH('Width'); }
+		function height() { return getWH('Height'); }
 		
 		document.write(
 			'<iframe  id="gadget" frameborder="0" scrolling="no" ',
