@@ -17,30 +17,30 @@
 
 <!--:: style ::-->
 
-<!-- Begin Google Election Center gadget -->
-<!-- Copy this entire block of code into your HTML page -->
-
-<style type="text/css">
-  /* Font */
-  #Poll411Gadget, #Poll411Gadget * { {{fontStyle}} }
-  /* Sizes */
-  #Poll411Gadget, #Poll411Form { width:{{width}}px; }
-  #Poll411Frame { width:100%; height:{{height}}px; }
-  /* Colors */
-  /*#Poll411Gadget { border:1px solid #AAA; }*/
-  #Poll411Input.example { color:#666; }
-  #Poll411Frame { border-top:1px solid #DDD; }
-  /* Layout */
-  #Poll411Gadget { margin:0; padding:4px 0 4px 2px; }
-  #Poll411SelectState { margin-bottom:4px; }
-  #Poll411Title { padding-bottom:4px; }
-  #Poll411Form { margin:0; padding:0; vertical-align:middle; }
-  #Poll411InputCell { width:99%; padding-right:8px; }
-  #Poll411ButtonCell { width:1%; }
-  #Poll411Input { width:100%; }
-  #Poll411Frame { display:none; margin-top:6px; }
-</style>
-
+<!-- Begin Google Election Center gadget --> 
+<!-- Copy this entire block of code into your HTML page --> 
+ 
+<style type="text/css"> 
+  /* Font */ 
+  #Poll411Gadget, #Poll411Gadget * { {{fontStyle}} } 
+  /* Sizes */ 
+  #Poll411Gadget, #Poll411Form { width:{{width}}px; } 
+  #Poll411Frame { width:100%; height:{{height}}px; } 
+  /* Colors */ 
+  /*#Poll411Gadget { border:1px solid #AAA; }*/ 
+  #Poll411Input.example { color:#666; } 
+  #Poll411Frame { border-top:1px solid #DDD; } 
+  /* Layout */ 
+  #Poll411Gadget { margin:0; padding:4px 0 4px 2px; } 
+  #Poll411SelectState { margin-bottom:4px; } 
+  #Poll411Title { padding-bottom:4px; } 
+  #Poll411Form { margin:0; padding:0; vertical-align:middle; } 
+  #Poll411InputCell { width:99%; padding-right:8px; } 
+  #Poll411ButtonCell { width:1%; } 
+  #Poll411Input { width:100%; } 
+  #Poll411Frame { display:none; margin-top:6px; } 
+</style> 
+ 
 <!--:: makerStyle ::-->
 
 <style type="text/css">
@@ -118,81 +118,75 @@
 
 <!--:: html ::-->
 
-<div id="Poll411Gadget">
-  <form id="Poll411Form" action="" onsubmit="return Poll411.submit()">
+<div id="Poll411Gadget"> 
+  <form id="Poll411Form" action="" onsubmit="return Poll411.submit()"> 
     
-    <div class="Poll411SearchTitle removehelp">
-      {{homePrompt}}
-    </div>
+    <div class="Poll411SearchTitle removehelp"> 
+      {{homePrompt}} 
+    </div> 
     
-    <table cellpadding="0" cellspacing="0" style="width:100%;">
-      <tr valign="middle">
-        <td id="Poll411InputCell">
-          <input type="text" id="Poll411Input" class="example" onfocus="Poll411.focus()" onblur="Poll411.blur()">
-        </td>
-        <td id="Poll411ButtonCell">
-          <button type="submit" id="Poll411Button"> Search</button>
-        </td>
-      </tr>
-    </table>
-  </form>
-  <div id="Poll411Frame">
-  </div>
-</div>
-
+    <table cellpadding="0" cellspacing="0" style="width:100%;"> 
+      <tr valign="middle"> 
+        <td id="Poll411InputCell"> 
+          <input type="text" id="Poll411Input" class="example" onfocus="Poll411.focus()" onblur="Poll411.blur()"> 
+        </td> 
+        <td id="Poll411ButtonCell"> 
+          <button type="submit" id="Poll411Button"> Search</button> 
+        </td> 
+      </tr> 
+    </table> 
+  </form> 
+  <div id="Poll411Frame"> 
+  </div> 
+</div> 
+ 
 <!--:: script ::-->
 
-<script type="text/javascript">
-  (function() {
-    var fontFamily = '{{fontFamily}}', fontSize = '{{fontSize}}', fontUnits = '{{fontUnits}}';
-    function e( id ) { return document.getElementById('Poll411'+id); }
-    var label = e('Label'), input = e('Input'), button = e('Button'), frame = e('Frame');
+<script type="text/javascript"> 
+  (function() { 
+    var fontFamily = '{{fontFamily}}', fontSize = '{{fontSize}}', fontUnits = '{{fontUnits}}'; 
+    function e( id ) { return document.getElementById('Poll411'+id); } 
+    var label = e('Label'), input = e('Input'), button = e('Button'), frame = e('Frame'); 
     
-    var example = "{{example}}";
-    input.value = example;
+    var example = "{{example}}"; 
+    input.value = example; 
     
-    // TODO: maybe use this code instead of <select>
-    //var states = 'AL.Alabama|AK.Alaska|AZ.Arizona|AR.Arkansas|CA.California|CO.Colorado|CT.Connecticut|DE.Delaware|DC.District of Columbia|FL.Florida|GA.Georgia|HI.Hawaii|ID.Idaho|IL.Illinois|IN.Indiana|IA.Iowa|KS.Kansas|KY.Kentucky|LA.Louisiana|ME.Maine|MD.Maryland|MA.Massachusetts|MI.Michigan|MN.Minnesota|MS.Mississippi|MO.Missouri|MT.Montana|NE.Nebraska|NV.Nevada|NH.New Hampshire|NJ.New Jersey|NM.New Mexico|NY.New York|NC.North Carolina|ND.North Dakota|OH.Ohio|OK.Oklahoma|OR.Oregon|PA.Pennsylvania|RI.Rhode Island|SC.South Carolina|SD.South Dakota|TN.Tennessee|TX.Texas|UT.Utah|VT.Vermont|VA.Virginia|WA.Washington|WV.West Virginia|WI.Wisconsin|WY.Wyoming'.split('|');
-    //for( var state, i = -1;  state = states[++i]; ) {
-    //  state = state.split('.');
-    //}
-    
-    Poll411 = {
+    Poll411 = { 
       
-      focus: function() {
-        if( input.value == example ) {
-          input.className = '';
-          input.value = '';
-        }
-      },
+      focus: function() { 
+        if( input.value == example ) { 
+          input.className = ''; 
+          input.value = ''; 
+        } 
+      }, 
       
-      blur: function() {
-        if( input.value ==  ''  ||  input.value == example ) {
-          input.className = 'example';
-          input.value = example;
-        }
-      },
+      blur: function() { 
+        if( input.value ==  ''  ||  input.value == example ) { 
+          input.className = 'example'; 
+          input.value = example; 
+        } 
+      }, 
       
-      select: function() {
-      },
+      select: function() { 
+      }, 
       
-      submit: function() {
-        var addr = input.value;
-        if( addr == example ) addr = addr.replace( /^.*: /, '' );
-        frame.style.display = 'block';
-        frame.innerHTML = [
-          '<iframe ',
-            'src="http://www.gmodules.com/ig/ifr?url={{gadget}}&amp;synd=open&amp;up_gadgetType=iframe&amp;up_address=', encodeURIComponent(addr), '&amp;up_fontFamily=', encodeURIComponent(fontFamily), '&amp;up_fontSize=', fontSize, '&amp;up_fontUnits=', fontUnits, '&amp;up_submit=1" ',
-            'style="width:100%; height:100%;" ',
-            'frameborder="0" ',
-            'scrolling="no" ',
-          '/>'
-        ].join('');
-        return false;
-      }
-    };
-  })();
-</script>
+      submit: function() { 
+        var addr = input.value; 
+        if( addr == example ) addr = addr.replace( /^.*: /, '' ); 
+        frame.style.display = 'block'; 
+        frame.innerHTML = [ 
+          '<iframe ', 
+            'src="http://www.gmodules.com/ig/ifr?url={{gadget}}&amp;synd=open&amp;up_gadgetType=iframe&amp;up_address=', encodeURIComponent(addr), '&amp;up_fontFamily=', encodeURIComponent(fontFamily), '&amp;up_fontSize=', fontSize, '&amp;up_fontUnits=', fontUnits, '&amp;up_submit=1" ', 
+            'style="width:100%; height:100%;" ', 
+            'frameborder="0" ', 
+            'scrolling="no" ', 
+          '/>' 
+        ].join(''); 
+        return false; 
+      } 
+    }; 
+  })(); 
+</script> 
 
 <!-- End Google Election Center gadget -->
 

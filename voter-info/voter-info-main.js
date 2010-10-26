@@ -209,7 +209,10 @@ T = function( name, values, give ) {
 	
 	fetch( url, function( data ) {
 		var o = T.urls[url] = {};
-		var a = data.replace( /\r/g, '' ).replace( /\n+\s*/g, '' ).split( /\s*<!--::\s+/g );
+		var a = data
+			.replace( /\r/g, '' )
+			.replace( /([^ ])\n+\s*/g, '$1' )
+			.split( /\s*<!--::\s+/g );
 		for( var i = 1, n = a.length;  i < n;  ++i ) {
 			var s = a[i], k = s.match(/^\S+/), v = s.replace( /^\S+\s+::-->/, '' );
 			o[k] = $.trim(v);
