@@ -1050,7 +1050,7 @@ function gadgetReady() {
 	}
 	
 	function setVoteHtml() {
-		if( ! vote.info ) {
+		if( !( vote.info || vote.locations ) ) {
 			$details.append( log.print() );
 			adjustHeight();
 			return;
@@ -1062,27 +1062,44 @@ function gadgetReady() {
 		//		'</a>',
 		//	'</div>'
 		//);
-		var extra = home.info.latlng && vote.info.latlng && directionsLink( home, vote );
-		function location( infowindow ) {
-			return formatLocation( vote.info,
-				infowindow
-					? { url:'vote-icon-50.png', width:50, height:50 }
-					: { url:'vote-pin-icon.png', width:29, height:66 },
-				'Your Voting Location', infowindow, extra
-			);
+		
+		var extra = home.info.latlng && vote.info && vote.info.latlng &&
+			directionsLink( home, vote );
+		
+		function voteLocation( infowindow ) {
+			if( vote.info )
+				return formatLocations( null, vote.info,
+					infowindow
+						? { url:'vote-icon-50.png', width:50, height:50 }
+						: { url:'vote-pin-icon.png', width:29, height:66 },
+					'Your Voting Location', infowindow, extra
+				);
+			if( vote.locations )
+				return infowindow ? '' : formatLocations( vote.locations, null,
+					{ url:'vote-icon-32.png', width:32, height:32 },
+					'Your Voting Locations', false, extra
+				);
+			return '';
 		}
+		
 		if( mapplet ) {
 			$details.append( longInfo() );
 			vote.html = S(
 				'<div style="', fontStyle, '">',
-					location( true ),
+					voteLocation(),
+					locationWarning(),
+				'</div>'
+			);
+			vote.htmlInfowindow = S(
+				'<div style="', fontStyle, '">',
+					voteLocation( true ),
 					locationWarning(),
 				'</div>'
 			);
 			adjustHeight();
 		}
 		else {
-			$tabs.show();
+			if( ! sidebar ) $tabs.show();
 			$details.html( longInfo() ).show();
 			vote.html = infoWrap( S(
 				log.print(),
@@ -1092,11 +1109,19 @@ function gadgetReady() {
 				//'</div>',
 				//electionInfo()
 			) );
+			vote.htmlInfowindow = infoWrap( S(
+				log.print(),
+				electionHeader(),
+				homeAndVote( true )//,
+				//'<div style="padding-top:1em">',
+				//'</div>',
+				//electionInfo()
+			) );
 		}
 		
-		function homeAndVote() {
-			return vote.info.latlng ? S(
-				location( true ),
+		function homeAndVote( infowindow ) {
+			return vote.info && vote.info.latlng ? S(
+				voteLocation( true ),
 				'<div style="padding-top:0.75em;">',
 					'<a href="#detailsbox" onclick="return selectTab(\'#detailsbox\');">View Candidates and Details</a>',
 				'</div>'
@@ -1109,7 +1134,7 @@ function gadgetReady() {
 				formatHome(),
 				//'<div style="padding-top:0.75em">',
 				//'</div>',
-				location()/*,
+				voteLocation( infowindow )/*,
 				locationWarning()*/
 			);
 		}
@@ -1119,7 +1144,7 @@ function gadgetReady() {
 				log: log.print(),
 				header: electionHeader(),
 				home: formatHome(),
-				location: location(),
+				location: voteLocation(),
 				stateLocator: stateLocator(),
 				warning: locationWarning(),
 				info: electionInfo()
@@ -1165,12 +1190,12 @@ function gadgetReady() {
 					place: home,
 					image: 'marker-green.png',
 					open: only,
-					html: mapplet || ! only ? formatHome(true) : vote.html || infoWrap( sorryHtml() )
+					html: mapplet || ! only ? formatHome(true) : vote.htmlInfowindow || infoWrap( sorryHtml() )
 				});
 				if( vote.info  &&  vote.info.latlng )
 					setMarker({
 						place: vote,
-						html: vote.html,
+						html: vote.htmlInfowindow,
 						open: true
 					});
 			}, 500 );
@@ -1204,14 +1229,14 @@ function gadgetReady() {
 			
 			if( ! mapplet ) {
 				$tabs.html( tabLinks( initialMap() ? '#mapbox' : '#detailsbox' ) );
-				$map.css({ visibility:'hidden' });
+				if( ! sidebar ) $map.css({ visibility:'hidden' });
 				setLayout();
 				if( initialMap() ) {
 					$map.show().css({ visibility:'visible' });
 					if( ! sidebar ) $detailsbox.hide();
 				}
 				else {
-					$map.hide();
+					if( ! sidebar ) $map.hide();
 					$detailsbox.show();
 				}
 			}
@@ -1281,34 +1306,59 @@ function gadgetReady() {
 		}
 	}
 	
-	function formatLocation( info, icon, title, infowindow, extra ) {
-		var special =
-			info.address != '703 E Grace St, Richmond, VA 23219' ? '' :
-			'<div style="font-size:90%; margin-bottom:0.25em;">GOVERNOR\'S MANSION</div>';
-		var locality = info.city ? info.city : info.county ? info.county + ' County' : '';
-		var address = T( 'address', {
-			special: special,
-			location: htmlEscape( info.location || '' ),
-			street: info.street,
-			state: locality ? locality  + ', ' + info.state.abbr :
-				info.address.length > 2 ? info.address :
-				info.state && info.state.name || '',
-			zip: info.zip
-		});
-		var unable = info.latlng ? '' : T('locationUnable');
-		var select = includeMap() ? 'onclick="return maybeSelectTab(\'#mapbox\',event);" style="cursor:pointer;"' : ''
-		return T( 'location', {
-			select: select,
-			title: title,
-			iconSrc: imgUrl(icon.url),
-			iconWidth: icon.width,
-			iconHeight: icon.height,
-			address: address,
-			directions: info.directions || '',
-			hours: info.hours ? 'Hours: ' + info.hours : '',
-			extra: extra || '',
-			unable: unable
-		});
+	function formatLocations( locations, info, icon, title, infowindow, extra ) {
+		
+		function formatLocationRow( info ) {
+			var special =
+				info.address != '703 E Grace St, Richmond, VA 23219' ? '' :
+				'<div style="font-size:90%; margin-bottom:0.25em;">GOVERNOR\'S MANSION</div>';
+			var locality = info.city ? info.city : info.county ? info.county + ' County' : '';
+			var address = T( 'address', {
+				special: special,
+				location: htmlEscape( info.location || '' ),
+				street: info.street,
+				state: locality ? locality  + ', ' + info.state.abbr :
+					info.address.length > 2 ? info.address :
+					info.state && info.state.name || '',
+				zip: info.zip
+			});
+			return T( 'locationRow', {
+				iconSrc: imgUrl(icon.url),
+				iconWidth: icon.width,
+				iconHeight: icon.height,
+				address: address,
+				directions: info.directions || '',
+				hours: info.hours ? 'Hours: ' + info.hours : '',
+				extra: extra || ''
+			});
+		}
+		
+		var rows = info ?
+			[ formatLocationRow(info) ] :
+			locations.map( function( location ) {
+				var a = location.address;
+				return formatLocationRow({
+					location: a && a.location_name || '',
+					directions: location.directions || '',
+					hours: location.pollinghours || '',
+					address: '',
+					street: ( a && a.line1 || '' ) + ( a && a.line2 ? '<br>' + a.line2 : '' ),
+					city: a && a.city || '',
+					state: a && a.state && statesByAbbr[ a.state.toUpperCase() ],
+					zip: a && a.zip || ''
+				});
+			});
+			
+		return S(
+			T( 'locationHead', {
+				select: includeMap() ? 'onclick="return maybeSelectTab(\'#mapbox\',event);" style="cursor:pointer;"' : '',
+				title: title
+			}),
+			rows.join(''),
+			T( 'locationFoot', {
+				unable: info && info.latlng ? '' : T('locationUnable')
+			})
+		);
 	}
 	
 	function spin( yes ) {
@@ -1553,11 +1603,11 @@ function gadgetReady() {
 	$window.resize( setLayout );
 	
 	function detailsOnly( html ) {
-		if( ! mapplet ) {
+		if( !( mapplet || sidebar ) ) {
 			$tabs.html( tabLinks('#detailsbox') ).show();
 			setLayout();
 		}
-		$map.hide();
+		if( ! sidebar ) $map.hide();
 		$details.html( html ).show();
 		adjustHeight();
 		spin( false );
@@ -1566,7 +1616,8 @@ function gadgetReady() {
 	function formatHome( infowindow ) {
 		return S(
 			'<div style="', fontStyle, '">',
-				formatLocation(
+				formatLocations(
+					null,
 					home.info,
 					infowindow
 						? { url:'home-icon-50.png', width:50, height:50 }
@@ -1587,48 +1638,42 @@ function gadgetReady() {
 		
 		getleo( home, function() {
 			lookupPollingPlace( inputAddress, home.info, function( poll ) {
-				vote.poll = poll;
 				log( 'API status code: ' + poll.status || '(OK)' );
-				var locations = poll.locations && poll.locations[0];
-				var location = locations && locations[0];
-				var address = location && location.address;
-				if( ! address )
-					poll.status = 'TEMP_NO_ADDRESS';
-				if( poll.status != 'SUCCESS' ) {
+				vote.poll = poll;
+				var locations = vote.locations = poll.locations && poll.locations[0];
+				if( poll.status != 'SUCCESS'  ||  ! locations  ||  ! locations.length ) {
 					sorry();
+					return;
+				}
+				if( locations.length > 1 ) {
+					log( 'Multiple polling locations' );
+					setVoteNoGeo();
+					return;
+				}
+				var address = locations[0].address;
+				home.leo.locality = '' + poll.locality;
+				if( address.line1 && (
+					( address.city && address.state ) || address.zip )
+				) {
+					var addr = oneLineAddress( address );
+					log( 'Polling address:', addr );
+					geocode( addr, function( geo ) {
+						var places = geo && geo.Placemark;
+						setVoteGeo( geo, places, addr );
+					});
 				}
 				else {
-					// TODO:
-					//interpolated = ( poll.errorcode == 3 );
-					home.leo.locality = '' + poll.locality;
-					if( address.line1 && (
-						( address.city && address.state ) || address.zip )
-					) {
-						var addr = S(
-							address.line1 ? address.line1 + ', ' : '',
-							address.line2 ? address.line2 + ', ' : '',
-							address.city, ', ', address.state,
-							address.zip ? ' ' + address.zip.slice(0,5) : ''
-						);
-						log( 'Polling address:', addr );
-						geocode( addr, function( geo ) {
-							var places = geo && geo.Placemark;
-							set( geo, places, location, addr );
-						});
-					}
-					else {
-						log( 'No polling address' );
-						setNoGeo( location );
-					}
+					log( 'No polling address' );
+					setVoteNoGeo();
 				}
 			});
 		});
 		
-		function set( geo, places, location, address ) {
+		function setVoteGeo( geo, places, address ) {
 			//if( places && places.length == 1 ) {
 			if( places && places.length >= 1 ) {
 				if( places.length > 1  &&  address != '1500 E Main St  Richmond, VA 23219-3634' ) {
-					setNoGeo( location );
+					setVoteNoGeo();
 					return;
 				}
 				try {
@@ -1638,12 +1683,12 @@ function gadgetReady() {
 					log( 'Polling state: ' + st.name );
 					if( st != home.info.state ) {
 						log( 'Polling place geocoded to wrong state' );
-						setNoGeo( location );
+						setVoteNoGeo();
 						return;
 					}
 					if( details.Accuracy < Accuracy.intersection ) {
 						log( 'Polling place geocoding not accurate enough' );
-						setNoGeo( location );
+						setVoteNoGeo();
 						return;
 					}
 				}
@@ -1651,23 +1696,13 @@ function gadgetReady() {
 					log( 'Error getting polling state' );
 				}
 				log( 'Getting polling place map info' );
-				setMap( vote.info = mapInfo( geo, places[0], location ) );
+				setMap( vote.info = mapInfo( geo, places[0], vote.locations[0] ) );
 				return;
 			}
-			setNoGeo( location );
+			setVoteNoGeo();
 		}
 		
-		function setNoGeo( location ) {
-			vote.info = {
-				address: '',  // ( location.address || '' ).replace( / *, */g, '<br />' ),
-				street: '',
-				city: '',
-				zip: '',
-				location: location.address && location.address.location_name,
-				directions: location.directions,
-				hours: location.hours,
-				_:''
-			};
+		function setVoteNoGeo() {
 			setVoteHtml();
 			forceDetails();
 		}
@@ -1680,7 +1715,7 @@ function gadgetReady() {
 	
 	function forceDetails() {
 		setMap( home.info );
-		if( ! mapplet ) {
+		if( !( mapplet || sidebar ) ) {
 			$map.hide();
 			$tabs.html( tabLinks('#detailsbox') ).show();
 		}
@@ -1715,6 +1750,15 @@ function gadgetReady() {
 			$map.show().height( a.height = Math.floor( winHeight() - $map.offset().top ) );
 		}
 		loadMap( a );
+	}
+	
+	function oneLineAddress( address ) {
+		return S(
+			address.line1 ? address.line1 + ', ' : '',
+			address.line2 ? address.line2 + ', ' : '',
+			address.city, ', ', address.state,
+			address.zip ? ' ' + address.zip.slice(0,5) : ''
+		);
 	}
 	
 	function formatAddress( address ) {
