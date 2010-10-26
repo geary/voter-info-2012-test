@@ -16,6 +16,14 @@ var upcoming = {
 
 var key = 'ABQIAAAAL7MXzZBubnPtVtBszDCxeRTZqGWfQErE9pT-IucjscazSdFnjBSzjqfxm1CQj7RDgG-OoyNfebJK0w';
 
+function getWH( what ) {
+	return document.documentElement[ 'offset' + what ] || window[ 'inner' + what ];
+}
+
+function winWidth() { return getWH('Width'); }
+function winHeight() { return getWH('Height'); }
+
+
 $.fn.visibleHeight = function() {
 	return this.is(':visible') ? this.height() : 0;
 };
@@ -417,12 +425,10 @@ var maker = decodeURIComponent(location.href).indexOf('source=http://www.gmodule
 
 var fontStyle = S( 'font-family:', escape(pref.fontFamily), '; font-size:', pref.fontSize, pref.fontUnits, '; ' );
 
-var width = window.innerWidth, height = window.innerHeight;
-
 T.variables = {
-	width: width - 8,
-	height: height - 80,
-	heightFull: height,
+	width: winWidth() - 8,
+	height: winHeight() - 80,
+	heightFull: winHeight(),
 	homePrompt: minimarkdown(pref.homePrompt),
 	example: pref.example,
 	fontFamily: pref.fontFamily.replace( "'", '"' ),
@@ -517,8 +523,8 @@ function indexSpecialStates() {
 
 var inline = ! mapplet  &&  pref.gadgetType == 'inline';
 var iframe = ! mapplet  &&  ! inline;
-var balloon = pref.sidebar  ||  mapplet  ||  ( width >= 450  &&  height >= 400 );
-var sidebar = !!( pref.sidebar  ||  ( ! mapplet  &&  width >= 750  &&  height >= 500 ) );
+var balloon = pref.sidebar  ||  mapplet  ||  ( winWidth() >= 450  &&  winHeight() >= 400 );
+var sidebar = !!( pref.sidebar  ||  ( ! mapplet  &&  winWidth() >= 750  &&  winHeight() >= 500 ) );
 
 $body.toggleClass( 'sidebar', sidebar );
 
@@ -616,15 +622,15 @@ function makerReady() {
 	
 	function center( $item ) {
 		$item.css({
-			left: ( width - $item.width() ) / 2,
-			top: ( height - $item.height() ) / 2
+			left: ( winWidth() - $item.width() ) / 2,
+			top: ( winHeight() - $item.height() ) / 2
 		});
 	}
 	
 	function addCodePopups() {
 		$.T('makerOverlays').insertAfter($outerlimits);
 		var $getcode = $('#getcode'), $havecode = $('#havecode'), $codearea = $('#codearea');
-		$codearea.height( height - 150 );
+		$codearea.height( winHeight() - 150 );
 		center( $getcode );
 		center( $havecode );
 		$getcode.show();
@@ -640,7 +646,7 @@ function makerReady() {
 	$(style).appendTo('head');
 	$.T('makerStyle').appendTo('head');
 	var body = T('html') + '\n\n' + T('script');
-	$outerlimits.html( body ).height( height );
+	$outerlimits.html( body ).height( winHeight() );
 	if( pref.gadgetType != 'iframe' ) addCodePopups( style, body );
 	adjustHeight();
 }
@@ -1529,7 +1535,7 @@ function gadgetReady() {
 		var headerHeight = $('#header').visibleHeight();
 		var formHeight = $('#Poll411Gadget').visibleHeight();
 		if( formHeight ) formHeight += 8;  // TODO: WHY DO WE NEED THIS?
-		var height = window.innerHeight - headerHeight - formHeight - $tabs.visibleHeight();
+		var height = winHeight() - headerHeight - formHeight - $tabs.visibleHeight();
 		$map.height( height );
 		$detailsbox.height( height );
 		if( sidebar ) {
@@ -1537,7 +1543,7 @@ function gadgetReady() {
 			$map.css({
 				left: left,
 				top: 0,
-				width: $window.width() - left
+				width: winWidth() - left
 			});
 		}
 	}
@@ -1704,7 +1710,7 @@ function gadgetReady() {
 		if( ! a ) return;
 		if( ! mapplet ) {
 			a.width = $map.width();
-			$map.show().height( a.height = Math.floor( window.innerHeight - $map.offset().top ) );
+			$map.show().height( a.height = Math.floor( winHeight() - $map.offset().top ) );
 		}
 		loadMap( a );
 	}
@@ -1814,7 +1820,7 @@ function gadgetReady() {
 	//	}
 	//	var filler = '';
 	//	if( iframe ) {
-	//		var w = $map.width(), h = Math.floor( window.innerHeight - $map.offset().top );
+	//		var w = $map.width(), h = Math.floor( winHeight() - $map.offset().top );
 	//		if( w * h == 0 ) return;
 	//		filler = S(
 	//			'<div style="position:relative;">',

@@ -12,18 +12,25 @@
 <body scroll="no">
 	
 	<script type="text/javascript">
-	
+		
+		function get( what ) {
+			return document.documentElement[ 'offset' + what ] || window[ 'inner' + what ];
+		}
+		
+		function width() { return get('Width'); }
+		function height() { return get('Height'); }
+		
 		document.write(
 			'<iframe  id="gadget" frameborder="0" scrolling="no" ',
-				'style="width:', window.innerWidth, 'px; height:', window.innerHeight, 'px;" ',
+				'style="width:', width(), 'px; height:', height(), 'px;" ',
 				'src="http://www.gmodules.com/ig/ifr?url=http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget.xml&amp;up_gadgetType=iframe&amp;up_fontFamily=Arial%2Csans-serif&amp;up_fontSize=17&amp;up_fontUnits=px&amp;up_logo=1&amp;up_sidebar=1&amp;synd=open" ',
 			'></iframe>'
 		);
 		
 		window.onresize = function() {
 			var style = document.getElementById('gadget').style;
-			style.width = window.innerWidth + 'px';
-			style.height = window.innerHeight + 'px';
+			style.width = width() + 'px';
+			style.height = height() + 'px';
 		};
 		
 	</script>
