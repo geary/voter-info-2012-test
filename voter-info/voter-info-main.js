@@ -405,7 +405,7 @@ var pref = {
 	fontUnits: 'px',
 	logo: '',
 	state: '',
-	homePrompt: 'Get your election info! Enter the *home* address where you are registered to vote:',
+	homePrompt: 'Get your voter info! Enter your *home* address&#8212;where you&#8217;re registered to vote:',
 	electionId: '',
 	logo: '',
 	sidebar: false

@@ -110,7 +110,7 @@
 	<EnumValue value="WY" display_value="Wyoming"/>
 </UserPref>
 
-<UserPref name="homePrompt" datatype="string" display_name="Addr Prompt" default_value="Get your election info! Enter the *home* address where you are registered to vote:"/>
+<UserPref name="homePrompt" datatype="string" display_name="Addr Prompt" default_value="Get your voter info! Enter your *home* address&#8212;where you&#8217;re registered to vote:"/>
 
 <UserPref name="example" datatype="string" display_name="Example&#160;Addr" default_value="Ex: 1600 Pennsylvania Ave 20500"/>
 
