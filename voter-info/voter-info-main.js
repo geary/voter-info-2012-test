@@ -417,7 +417,7 @@ var maker = decodeURIComponent(location.href).indexOf('source=http://www.gmodule
 
 var fontStyle = S( 'font-family:', escape(pref.fontFamily), '; font-size:', pref.fontSize, pref.fontUnits, '; ' );
 
-var width = $window.width(), height = $window.height();
+var width = window.innerWidth, height = window.innerHeight;
 
 T.variables = {
 	width: width - 8,
@@ -1529,7 +1529,7 @@ function gadgetReady() {
 		var headerHeight = $('#header').visibleHeight();
 		var formHeight = $('#Poll411Gadget').visibleHeight();
 		if( formHeight ) formHeight += 8;  // TODO: WHY DO WE NEED THIS?
-		var height = $window.height() - headerHeight - formHeight - $tabs.visibleHeight();
+		var height = window.innerHeight - headerHeight - formHeight - $tabs.visibleHeight();
 		$map.height( height );
 		$detailsbox.height( height );
 		if( sidebar ) {
@@ -1704,7 +1704,7 @@ function gadgetReady() {
 		if( ! a ) return;
 		if( ! mapplet ) {
 			a.width = $map.width();
-			$map.show().height( a.height = Math.floor( $window.height() - $map.offset().top ) );
+			$map.show().height( a.height = Math.floor( window.innerHeight - $map.offset().top ) );
 		}
 		loadMap( a );
 	}
@@ -1814,7 +1814,7 @@ function gadgetReady() {
 	//	}
 	//	var filler = '';
 	//	if( iframe ) {
-	//		var w = $map.width(), h = Math.floor( $window.height() - $map.offset().top );
+	//		var w = $map.width(), h = Math.floor( window.innerHeight - $map.offset().top );
 	//		if( w * h == 0 ) return;
 	//		filler = S(
 	//			'<div style="position:relative;">',
