@@ -526,7 +526,7 @@ function indexSpecialStates() {
 var inline = ! mapplet  &&  pref.gadgetType == 'inline';
 var iframe = ! mapplet  &&  ! inline;
 var balloon = pref.sidebar  ||  mapplet  ||  ( winWidth() >= 450  &&  winHeight() >= 400 );
-var sidebar = !!( pref.sidebar  ||  ( ! mapplet  &&  winWidth() >= 750  &&  winHeight() >= 500 ) );
+var sidebar = !!( pref.sidebar  ||  ( ! mapplet  &&  winWidth() >= 800  &&  winHeight() >= 500 ) );
 
 $body.toggleClass( 'sidebar', sidebar );
 
