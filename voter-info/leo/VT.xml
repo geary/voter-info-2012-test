@@ -1,0 +1,116 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="735138326">
+    <county_name>GRAND ISLE</county_name>
+    <state_id>50</state_id>
+    <name>Cheryl Titus Vantine</name>
+    <title> Clerk-Treasurer</title>
+    <phone> 372-8830 </phone>
+    <fax> 372-8815</fax>
+    <email> clerk@town.grand-isle.vt.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>CALEDONIA</county_name>
+    <state_id>50</state_id>
+  </election_official>
+  <election_official id="177051811">
+    <county_name>CHITTENDEN</county_name>
+    <state_id>50</state_id>
+    <name>Roberta Janoski</name>
+    <title> Clerk-Treasurer</title>
+    <phone> 483-6647 </phone>
+    <fax> 483-2504</fax>
+    <email> chittendenvt@comcast.net</email>
+  </election_official>
+  <election_official id="">
+    <county_name>ORLEANS</county_name>
+    <state_id>50</state_id>
+  </election_official>
+  <election_official id="602579792">
+    <county_name>BENNINGTON</county_name>
+    <state_id>50</state_id>
+    <name>Timothy R. Corcoran</name>
+    <title> Clerk</title>
+    <phone> 442-1043 </phone>
+    <fax> 442-1068</fax>
+    <email> cbarbeau@bennington.com</email>
+  </election_official>
+  <election_official id="2145115730">
+    <county_name>WINDHAM</county_name>
+    <state_id>50</state_id>
+    <name>Carol C. Merritt</name>
+    <title> Clerk-Treasurer</title>
+    <phone> 874-4211 </phone>
+    <fax> 874-4144</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="61228463">
+    <county_name>WINDSOR</county_name>
+    <state_id>50</state_id>
+    <name>Sandra H. Micka</name>
+    <title> Clerk</title>
+    <phone> 674-5610 </phone>
+    <fax> 674-1017</fax>
+    <email> smicka@windsor-vt.gov</email>
+  </election_official>
+  <election_official id="496635898">
+    <county_name>ESSEX</county_name>
+    <state_id>50</state_id>
+    <name>Cheryl Moomey</name>
+    <title> Clerk-Treasurer</title>
+    <phone> 879-0413 </phone>
+    <fax> 878-1353</fax>
+    <email> cmoomey@essex.org</email>
+  </election_official>
+  <election_official id="">
+    <county_name>LAMOILLE</county_name>
+    <state_id>50</state_id>
+  </election_official>
+  <election_official id="813061068">
+    <county_name>ORANGE</county_name>
+    <state_id>50</state_id>
+    <name>Rita R. Bisson</name>
+    <title> Clerk-Treasurer</title>
+    <phone> 479-2673 </phone>
+    <fax> 479-2673</fax>
+    <email> rbiss-orange@netscape.com</email>
+  </election_official>
+  <election_official id="1736059543">
+    <county_name>FRANKLIN</county_name>
+    <state_id>50</state_id>
+    <name>Lisa A. Larivee</name>
+    <title> Clerk-Treasurer</title>
+    <phone> 285-2101 </phone>
+    <fax> 285-2181</fax>
+    <email> townoff@franklinvt.net</email>
+  </election_official>
+  <election_official id="1369607127">
+    <county_name>ADDISON</county_name>
+    <state_id>50</state_id>
+    <name>Jane B. Grace</name>
+    <title> Clerk-Treasurer</title>
+    <phone> 759-2020 </phone>
+    <fax> 759-2233</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1345060744">
+    <county_name>RUTLAND</county_name>
+    <state_id>50</state_id>
+    <name>Susan A. Clark</name>
+    <title> Clerk</title>
+    <phone> 773-1800 ext. 233 </phone>
+    <fax> 773-1846</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="541856890">
+    <county_name>WASHINGTON</county_name>
+    <state_id>50</state_id>
+    <name>Carol Davis</name>
+    <title> Clerk-Treasurer</title>
+    <phone> 883-2218 </phone>
+    <fax> 883-2218</fax>
+    <email> </email>
+  </election_official>
+</listings>

@@ -1,0 +1,896 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="905216300">
+    <county_name>POLK</county_name>
+    <state_id>19</state_id>
+    <name>Jamie Fitzgerald</name>
+    <title> </title>
+    <phone> 515-286-3247</phone>
+    <fax> 515-286-3608</fax>
+    <email>jfitzge@co.polk.ia.us</email>
+  </election_official>
+  <election_official id="1583666692">
+    <county_name>CRAWFORD</county_name>
+    <state_id>19</state_id>
+    <name>Cecilia Fineran</name>
+    <title> </title>
+    <phone>  712-263-3045</phone>
+    <fax>  712-263-8382</fax>
+    <email>cfineran@crawfordcounty.org</email>
+  </election_official>
+  <election_official id="827331126">
+    <county_name>LOUISA</county_name>
+    <state_id>19</state_id>
+    <name>Sylvia Belzer</name>
+    <title> </title>
+    <phone> 319-523-3373</phone>
+    <fax> 319-523-3713</fax>
+    <email>auditr58@louisacomm.net</email>
+  </election_official>
+  <election_official id="140208027">
+    <county_name>HARDIN</county_name>
+    <state_id>19</state_id>
+    <name>Renee McClellan</name>
+    <title> </title>
+    <phone> 641-939-8109</phone>
+    <fax> 641-939-8245</fax>
+    <email>rmcclellan@co.hardin.ia.us</email>
+  </election_official>
+  <election_official id="716656095">
+    <county_name>MADISON</county_name>
+    <state_id>19</state_id>
+    <name> Joan Welch </name>
+    <title> </title>
+    <phone> 515-462-3914</phone>
+    <fax> 515-462-5888</fax>
+    <email>aud61@I-rule.net</email>
+  </election_official>
+  <election_official id="155836663">
+    <county_name>BLACK HAWK</county_name>
+    <state_id>19</state_id>
+    <name> Grant Veeder </name>
+    <title> </title>
+    <phone> 319-833-3002</phone>
+    <fax> 319-833-3119</fax>
+    <email>gveeder@co.black-hawk.ia.us</email>
+  </election_official>
+  <election_official id="1529834300">
+    <county_name>BUENA VISTA</county_name>
+    <state_id>19</state_id>
+    <name>Karen Strawn</name>
+    <title> </title>
+    <phone> 712-749-2542</phone>
+    <fax> 712-732-2603</fax>
+    <email>kstrawn@co.buena-vista.ia.us</email>
+  </election_official>
+  <election_official id="1175894886">
+    <county_name>CARROLL</county_name>
+    <state_id>19</state_id>
+    <name>Joan Schettler </name>
+    <title> </title>
+    <phone> 712-792-9802</phone>
+    <fax> 712-775-2148</fax>
+    <email>ccaud@co.carroll.ia.us</email>
+  </election_official>
+  <election_official id="813074314">
+    <county_name>ADAIR</county_name>
+    <state_id>19</state_id>
+    <name>Mindy Schaefer </name>
+    <title> </title>
+    <phone> 641-743-2546</phone>
+    <fax> 641-743-2565</fax>
+    <email>adairaud@ll.net</email>
+  </election_official>
+  <election_official id="1796845364">
+    <county_name>HUMBOLDT</county_name>
+    <state_id>19</state_id>
+    <name>Peggy Rice</name>
+    <title> </title>
+    <phone> 515-332-1571</phone>
+    <fax> 515-332-1738</fax>
+    <email>price@humboldtcountyia.org</email>
+  </election_official>
+  <election_official id="1708366726">
+    <county_name>CHEROKEE</county_name>
+    <state_id>19</state_id>
+    <name>Bonnie Ebel </name>
+    <title> </title>
+    <phone>  712-225-6704</phone>
+    <fax> 712-225-6708</fax>
+    <email>bebel@co.cherokee.ia.us</email>
+  </election_official>
+  <election_official id="2099138192">
+    <county_name>PAGE</county_name>
+    <state_id>19</state_id>
+    <name>Judy Clark </name>
+    <title> </title>
+    <phone> 712-542-3219</phone>
+    <fax> 712-542-5019</fax>
+    <email>jclark@co.page.ia.us</email>
+  </election_official>
+  <election_official id="721476935">
+    <county_name>CERRO GORDO</county_name>
+    <state_id>19</state_id>
+    <name>Kenneth Kline </name>
+    <title> </title>
+    <phone> 641-421-3034</phone>
+    <fax> 641-421-3139</fax>
+    <email>kkline@co.cerro-gordo.ia.us</email>
+  </election_official>
+  <election_official id="2005573076">
+    <county_name>STORY</county_name>
+    <state_id>19</state_id>
+    <name>Mary Mosiman</name>
+    <title> </title>
+    <phone> 515-382-7210</phone>
+    <fax> 515-382-7221</fax>
+    <email>mmosiman@storycounty.com</email>
+  </election_official>
+  <election_official id="1603574014">
+    <county_name>POWESHIEK</county_name>
+    <state_id>19</state_id>
+    <name>Diana Dawley</name>
+    <title> </title>
+    <phone> 641-623-5443</phone>
+    <fax> 641-623-2363</fax>
+    <email>ddawley@poweshiekcounty.org</email>
+  </election_official>
+  <election_official id="163213481">
+    <county_name>EMMET</county_name>
+    <state_id>19</state_id>
+    <name>Beverly Juhl</name>
+    <title> </title>
+    <phone> 712-362-4261</phone>
+    <fax> 712-362-7454</fax>
+    <email>emmetaudbj@yourstarnet.net</email>
+  </election_official>
+  <election_official id="290084165">
+    <county_name>SIOUX</county_name>
+    <state_id>19</state_id>
+    <name>Lois Huitink </name>
+    <title> </title>
+    <phone> 712-737-2216</phone>
+    <fax> 712-737-2537</fax>
+    <email>loish@siouxcounty.org</email>
+  </election_official>
+  <election_official id="286764558">
+    <county_name>LEE</county_name>
+    <state_id>19</state_id>
+    <name>Anne Pedersen</name>
+    <title> </title>
+    <phone> 319-372-3705</phone>
+    <fax> 319-372-7033</fax>
+    <email>apedersen@leecounty.org</email>
+  </election_official>
+  <election_official id="510214883">
+    <county_name>RINGGOLD</county_name>
+    <state_id>19</state_id>
+    <name> Renda Paxson</name>
+    <title> </title>
+    <phone> 641-464-3239</phone>
+    <fax>  641-464-0663</fax>
+    <email>rcauditor@iowatelecom.net</email>
+  </election_official>
+  <election_official id="861133069">
+    <county_name>DALLAS</county_name>
+    <state_id>19</state_id>
+    <name>Gene Krumm</name>
+    <title> </title>
+    <phone> 515-993-4751</phone>
+    <fax> 515-993-5845</fax>
+    <email>gkrumm@co.dallas.ia.us</email>
+  </election_official>
+  <election_official id="381718143">
+    <county_name>GREENE</county_name>
+    <state_id>19</state_id>
+    <name>Jane Heun</name>
+    <title> </title>
+    <phone> 515-386-5680</phone>
+    <fax> 515-386-2216</fax>
+    <email>greeneau@netins.net</email>
+  </election_official>
+  <election_official id="1819323228">
+    <county_name>DAVIS</county_name>
+    <state_id>19</state_id>
+    <name>Goldie Rysdam</name>
+    <title> </title>
+    <phone> 641-664-2101</phone>
+    <fax> 641-664-1395</fax>
+    <email>daviscou@netins.net</email>
+  </election_official>
+  <election_official id="1118728030">
+    <county_name>MONONA</county_name>
+    <state_id>19</state_id>
+    <name>Benita J. Davis </name>
+    <title> </title>
+    <phone> 712-433-2191</phone>
+    <fax> 712-433-3203</fax>
+    <email>mocoaud@longlines.com</email>
+  </election_official>
+  <election_official id="273866641">
+    <county_name>FAYETTE</county_name>
+    <state_id>19</state_id>
+    <name>Larry Popenhagen</name>
+    <title> </title>
+    <phone> 563-422-3497</phone>
+    <fax> 563-422-9201</fax>
+    <email>lpopenhagen@co.fayette.ia.us</email>
+  </election_official>
+  <election_official id="1860671562">
+    <county_name>FREMONT</county_name>
+    <state_id>19</state_id>
+    <name>Joan Kirk</name>
+    <title> </title>
+    <phone> 712-374-2031</phone>
+    <fax> 712-374-4523</fax>
+    <email>jkirk@co.fremont.ia.us</email>
+  </election_official>
+  <election_official id="646842522">
+    <county_name>VAN BUREN</county_name>
+    <state_id>19</state_id>
+    <name>Jon Finney</name>
+    <title> </title>
+    <phone> 319-293-3129</phone>
+    <fax> 319-293-6404</fax>
+    <email>jfinney@vbcoia.org</email>
+  </election_official>
+  <election_official id="1386694202">
+    <county_name>MARION</county_name>
+    <state_id>19</state_id>
+    <name> Jake Grandia </name>
+    <title> </title>
+    <phone> 641-828-2217</phone>
+    <fax> 641-828-6351</fax>
+    <email>jgrandia@co.marion.ia.us</email>
+  </election_official>
+  <election_official id="1170343274">
+    <county_name>GRUNDY</county_name>
+    <state_id>19</state_id>
+    <name> Mary Schmidt </name>
+    <title> </title>
+    <phone> 319-824-3122</phone>
+    <fax>  319-824-6098</fax>
+    <email>mschmidt@gccourthouse.org</email>
+  </election_official>
+  <election_official id="1433602676">
+    <county_name>WOODBURY</county_name>
+    <state_id>19</state_id>
+    <name>Patrick Gill</name>
+    <title> </title>
+    <phone> 712-279-6465</phone>
+    <fax>  712-279-6629</fax>
+    <email>pgill@sioux-city.org</email>
+  </election_official>
+  <election_official id="982288906">
+    <county_name>BUCHANAN</county_name>
+    <state_id>19</state_id>
+    <name>Cindy Witt</name>
+    <title> </title>
+    <phone> 319-334-4109</phone>
+    <fax>  319-334-4234</fax>
+    <email>cwitt@co.buchanan.ia.us</email>
+  </election_official>
+  <election_official id="2115162751">
+    <county_name>HENRY</county_name>
+    <state_id>19</state_id>
+    <name>Hettie Maschmann </name>
+    <title> </title>
+    <phone> 319-385-0756</phone>
+    <fax> 319-385-3601</fax>
+    <email>hmaschmann@henrycountyiowa.us</email>
+  </election_official>
+  <election_official id="823239741">
+    <county_name>WARREN</county_name>
+    <state_id>19</state_id>
+    <name> Traci VanderLinden</name>
+    <title> </title>
+    <phone> 515-961-1020</phone>
+    <fax> 515-961-1049</fax>
+    <email>traciv@co.warren.ia.us</email>
+  </election_official>
+  <election_official id="1788922852">
+    <county_name>OBRIEN</county_name>
+    <state_id>19</state_id>
+    <name>Barbara Rohwer</name>
+    <title> </title>
+    <phone> 712-957-3225</phone>
+    <fax> 712-957-0425</fax>
+    <email>brienaud@tcaexpress.net</email>
+  </election_official>
+  <election_official id="231900825">
+    <county_name>FLOYD</county_name>
+    <state_id>19</state_id>
+    <name>Gloria Carr</name>
+    <title> </title>
+    <phone> 641-257-6131</phone>
+    <fax> 641-257-6112</fax>
+    <email>gcarr@floydcoia.org</email>
+  </election_official>
+  <election_official id="365776642">
+    <county_name>PLYMOUTH</county_name>
+    <state_id>19</state_id>
+    <name>K. Kae Meyer </name>
+    <title> </title>
+    <phone> 712-546-6100</phone>
+    <fax> 712-546-5784</fax>
+    <email>kmeyer@co.plymouth.ia.us</email>
+  </election_official>
+  <election_official id="920884668">
+    <county_name>CEDAR</county_name>
+    <state_id>19</state_id>
+    <name>Cari Gritton </name>
+    <title> </title>
+    <phone>  563-886-3168</phone>
+    <fax> 563-886-3339</fax>
+    <email>cgritton@cedarcounty.org</email>
+  </election_official>
+  <election_official id="1279451863">
+    <county_name>LINN</county_name>
+    <state_id>19</state_id>
+    <name> Joel Miller</name>
+    <title> </title>
+    <phone> 319-892-5300</phone>
+    <fax> 319-892-5359</fax>
+    <email>auditor@linncounty.org</email>
+  </election_official>
+  <election_official id="1144342507">
+    <county_name>WAPELLO</county_name>
+    <state_id>19</state_id>
+    <name> Phyllis Dean</name>
+    <title> </title>
+    <phone>641-683-0024</phone>
+    <fax> 641-683-0053</fax>
+    <email>wapauditor@pcsia.net</email>
+  </election_official>
+  <election_official id="1779643966">
+    <county_name>WAYNE</county_name>
+    <state_id>19</state_id>
+    <name>Sue Ruble</name>
+    <title>&#160;</title>
+    <phone>641-872-2242</phone>
+    <fax>641-872-2843</fax>
+    <email>aud@grm.net</email>
+  </election_official>
+  <election_official id="1468883985">
+    <county_name>WINNEBAGO</county_name>
+    <state_id>19</state_id>
+    <name> Jennifer Fjelstad</name>
+    <title> </title>
+    <phone> 641-585-3412</phone>
+    <fax> 641-585-9032</fax>
+    <email>winnaudofc@wctatel.net</email>
+  </election_official>
+  <election_official id="1465238734">
+    <county_name>CALHOUN</county_name>
+    <state_id>19</state_id>
+    <name>Judy Howrey </name>
+    <title> </title>
+    <phone> 712-297-7741</phone>
+    <fax> 712-297-7382</fax>
+    <email>jhowrey@calhouncountyiowa.com</email>
+  </election_official>
+  <election_official id="1252716247">
+    <county_name>CLAY</county_name>
+    <state_id>19</state_id>
+    <name>Marjorie Pitts</name>
+    <title> </title>
+    <phone> 712-262-1569</phone>
+    <fax> 712-262-5793</fax>
+    <email>mpitts@co.clay.ia.us</email>
+  </election_official>
+  <election_official id="1148114828">
+    <county_name>BREMER</county_name>
+    <state_id>19</state_id>
+    <name> Lynn Brase</name>
+    <title> </title>
+    <phone> 319-352-0340</phone>
+    <fax> 319-352-0290</fax>
+    <email>brase@co.bremer.ia.us</email>
+  </election_official>
+  <election_official id="1292914602">
+    <county_name>MITCHELL</county_name>
+    <state_id>19</state_id>
+    <name>Lowell Tesch</name>
+    <title> </title>
+    <phone> 641-732-5861</phone>
+    <fax> 641-732-5218</fax>
+    <email>ltesch@mitchellcoia.us</email>
+  </election_official>
+  <election_official id="1289181986">
+    <county_name>JOHNSON</county_name>
+    <state_id>19</state_id>
+    <name>Tom Slockett </name>
+    <title> </title>
+    <phone> 319-356-6004</phone>
+    <fax> 319-356-6086</fax>
+    <email>tslocket@co.johnson.ia.us</email>
+  </election_official>
+  <election_official id="1328462355">
+    <county_name>DES MOINES</county_name>
+    <state_id>19</state_id>
+    <name>Carol Copeland</name>
+    <title> </title>
+    <phone> 319-753-8232</phone>
+    <fax> 319-753-8227</fax>
+    <email>copelandc@co.des-moines.ia.us</email>
+  </election_official>
+  <election_official id="1702691914">
+    <county_name>WORTH</county_name>
+    <state_id>19</state_id>
+    <name>Kay Clark</name>
+    <title> </title>
+    <phone> 641-324-2316</phone>
+    <fax> 641-324-3682</fax>
+    <email>auditor@worthcounty.org</email>
+  </election_official>
+  <election_official id="2022678273">
+    <county_name>BOONE</county_name>
+    <state_id>19</state_id>
+    <name>Philippe E. Meier</name>
+    <title> </title>
+    <phone>  515-433-0502</phone>
+    <fax> 515-432-8102</fax>
+    <email>boonecoaud@co.boone.ia.us</email>
+  </election_official>
+  <election_official id="1433236350">
+    <county_name>SAC</county_name>
+    <state_id>19</state_id>
+    <name>Jim Dowling</name>
+    <title> </title>
+    <phone> 712-662-7310</phone>
+    <fax> 712-662-7879</fax>
+    <email>sacoaud@saccounty.org</email>
+  </election_official>
+  <election_official id="602962428">
+    <county_name>MARSHALL</county_name>
+    <state_id>19</state_id>
+    <name>Karen Squiers</name>
+    <title> </title>
+    <phone> 641-754-6323</phone>
+    <fax> 641-754-6321</fax>
+    <email>ksquiers@co.marshall.ia.us</email>
+  </election_official>
+  <election_official id="468874103">
+    <county_name>CLAYTON</county_name>
+    <state_id>19</state_id>
+    <name>Dennis Freitag </name>
+    <title> </title>
+    <phone> 563-245-1106</phone>
+    <fax> 563-245-2353</fax>
+    <email>dfreitag@claytoncountyiowa.net</email>
+  </election_official>
+  <election_official id="925930717">
+    <county_name>LUCAS</county_name>
+    <state_id>19</state_id>
+    <name>Julie Masters</name>
+    <title> </title>
+    <phone> 641-774-4512</phone>
+    <fax> 641-774-2993</fax>
+    <email>mastersj@lucasco.org</email>
+  </election_official>
+  <election_official id="1868229553">
+    <county_name>BUTLER</county_name>
+    <state_id>19</state_id>
+    <name> Holly A. Fokkena</name>
+    <title> </title>
+    <phone> 319-267-2670</phone>
+    <fax> 319-267-2625</fax>
+    <email>auditor@butlercoiowa.org</email>
+  </election_official>
+  <election_official id="1776890887">
+    <county_name>SHELBY</county_name>
+    <state_id>19</state_id>
+    <name>Marsha Carter</name>
+    <title> </title>
+    <phone> 712-755-3831</phone>
+    <fax> 712-755-3200</fax>
+    <email>mcarter@shco.org</email>
+  </election_official>
+  <election_official id="280580687">
+    <county_name>HOWARD</county_name>
+    <state_id>19</state_id>
+    <name>Adolph </name>
+    <title> </title>
+    <phone> 563-547-2880</phone>
+    <fax> 563-547-2629</fax>
+    <email>amgamez@co.howard.ia.us</email>
+  </election_official>
+  <election_official id="39656481">
+    <county_name>HARRISON</county_name>
+    <state_id>19</state_id>
+    <name>Susan Bonham</name>
+    <title> </title>
+    <phone> 712-644-2401</phone>
+    <fax> 712-644-2643</fax>
+    <email>auditor@harrisoncountyia.org</email>
+  </election_official>
+  <election_official id="852844353">
+    <county_name>MILLS</county_name>
+    <state_id>19</state_id>
+    <name>Carol Robertson</name>
+    <title> </title>
+    <phone> 712-527-3146</phone>
+    <fax> 712-527-1579</fax>
+    <email>crobertson@millscoia.us</email>
+  </election_official>
+  <election_official id="44973948">
+    <county_name>MAHASKA</county_name>
+    <state_id>19</state_id>
+    <name>Kay Swanson </name>
+    <title> </title>
+    <phone>  641-673-7148</phone>
+    <fax>  641-673-8979</fax>
+    <email>auditor@mahaskacounty.org</email>
+  </election_official>
+  <election_official id="892041976">
+    <county_name>TAMA</county_name>
+    <state_id>19</state_id>
+    <name>Laura Kopsa</name>
+    <title> </title>
+    <phone> 641-484-2740</phone>
+    <fax> 641-484-5127</fax>
+    <email>lkopsa@tamacounty.org</email>
+  </election_official>
+  <election_official id="277735645">
+    <county_name>MONROE</county_name>
+    <state_id>19</state_id>
+    <name> Jeannie Bettis</name>
+    <title> </title>
+    <phone> 641-932-2865</phone>
+    <fax>  641-932-5905</fax>
+    <email>auditor@monroecoia.us</email>
+  </election_official>
+  <election_official id="435537250">
+    <county_name>JASPER</county_name>
+    <state_id>19</state_id>
+    <name> Dennis Parrott</name>
+    <title> </title>
+    <phone> 641-792-7016</phone>
+    <fax> 641-792-1053</fax>
+    <email>auditor@co.jasper.ia.us</email>
+  </election_official>
+  <election_official id="233803453">
+    <county_name>CLARKE</county_name>
+    <state_id>19</state_id>
+    <name>Judy Church </name>
+    <title> </title>
+    <phone>  641-342-3315</phone>
+    <fax> 641-342-1592</fax>
+    <email>ccaudjc@iowatelecom.net</email>
+  </election_official>
+  <election_official id="2137522290">
+    <county_name>CASS</county_name>
+    <state_id>19</state_id>
+    <name>Dale Sunderman</name>
+    <title> </title>
+    <phone> 712-243-4570</phone>
+    <fax> 712-243-6660</fax>
+    <email>auditor@casscoia.us</email>
+  </election_official>
+  <election_official id="1606826624">
+    <county_name>DICKINSON</county_name>
+    <state_id>19</state_id>
+    <name> Nancy Reiman </name>
+    <title> </title>
+    <phone> 712-336-3356</phone>
+    <fax> 712-336-2677</fax>
+    <email>nreiman@co.dickinson.ia.us</email>
+  </election_official>
+  <election_official id="1256222355">
+    <county_name>WEBSTER</county_name>
+    <state_id>19</state_id>
+    <name>Carol Messerly</name>
+    <title> </title>
+    <phone> 515-573-7175</phone>
+    <fax>  515-574-3714</fax>
+    <email>auditor@webstercountyia.org</email>
+  </election_official>
+  <election_official id="2082393964">
+    <county_name>IDA</county_name>
+    <state_id>19</state_id>
+    <name>Lorna Steenbock</name>
+    <title> </title>
+    <phone>  712-364-2626</phone>
+    <fax> 712-364-3929</fax>
+    <email>idacoaud@pionet.net</email>
+  </election_official>
+  <election_official id="715339238">
+    <county_name>LYON</county_name>
+    <state_id>19</state_id>
+    <name> Wayne Grooters</name>
+    <title> </title>
+    <phone> 712-472-3713</phone>
+    <fax> 712-472-3800</fax>
+    <email>wgrooters@co.lyon.ia.us</email>
+  </election_official>
+  <election_official id="753424579">
+    <county_name>JEFFERSON</county_name>
+    <state_id>19</state_id>
+    <name> Scott Reneker</name>
+    <title> </title>
+    <phone> 641-472-2840</phone>
+    <fax> 641-472-2597</fax>
+    <email>jeffaud@iowatelecom.net</email>
+  </election_official>
+  <election_official id="1108924600">
+    <county_name>WRIGHT</county_name>
+    <state_id>19</state_id>
+    <name>Betty Ellis </name>
+    <title> </title>
+    <phone> 515-532-2771</phone>
+    <fax> 515-532-2669</fax>
+    <email>auditor@wrightcounty.org</email>
+  </election_official>
+  <election_official id="1266885508">
+    <county_name>KOSSUTH</county_name>
+    <state_id>19</state_id>
+    <name>Joann Bormann</name>
+    <title> </title>
+    <phone>  515-295-2718</phone>
+    <fax> 515-295-3071</fax>
+    <email>jbormann@co.kossuth.ia.us</email>
+  </election_official>
+  <election_official id="1586865168">
+    <county_name>SCOTT</county_name>
+    <state_id>19</state_id>
+    <name>Karen Fitzsimmons</name>
+    <title> </title>
+    <phone> 563-326-8631</phone>
+    <fax> 563-326-8601</fax>
+    <email>auditor@scottcountyiowa.com</email>
+  </election_official>
+  <election_official id="977033496">
+    <county_name>MUSCATINE</county_name>
+    <state_id>19</state_id>
+    <name> Leslie Soule </name>
+    <title> </title>
+    <phone> 563-263-5821</phone>
+    <fax> 563-263-7248</fax>
+    <email>auditor@co.muscatine.ia.us</email>
+  </election_official>
+  <election_official id="638209660">
+    <county_name>APPANOOSE</county_name>
+    <state_id>19</state_id>
+    <name>Linda Demry </name>
+    <title> </title>
+    <phone> 641-856-6191</phone>
+    <fax> 641-856-8023</fax>
+    <email>ldemry@appanoosecounty.net</email>
+  </election_official>
+  <election_official id="608788236">
+    <county_name>WINNESHIEK</county_name>
+    <state_id>19</state_id>
+    <name>Georgiann Schweinefus </name>
+    <title> </title>
+    <phone> 563-382-5085</phone>
+    <fax> 563-387-4083</fax>
+    <email>gschweinefus@co.winneshiek.ia.us</email>
+  </election_official>
+  <election_official id="578683982">
+    <county_name>UNION</county_name>
+    <state_id>19</state_id>
+    <name>Sandy Hysell</name>
+    <title> </title>
+    <phone> 641-782-1701</phone>
+    <fax> 641-782-1709</fax>
+    <email>uncoaud@iowatelecom.net</email>
+  </election_official>
+  <election_official id="598874897">
+    <county_name>HAMILTON</county_name>
+    <state_id>19</state_id>
+    <name> Kim Schaa </name>
+    <title> </title>
+    <phone> 515-832-9510</phone>
+    <fax> 515-832-9514</fax>
+    <email>kschaa@hamiltoncounty.org</email>
+  </election_official>
+  <election_official id="229392331">
+    <county_name>TAYLOR</county_name>
+    <state_id>19</state_id>
+    <name>Bonny Baker</name>
+    <title> </title>
+    <phone> 712-523-2280</phone>
+    <fax> 712-523-2274</fax>
+    <email>auditor@frontiernet.net</email>
+  </election_official>
+  <election_official id="1985381589">
+    <county_name>KEOKUK</county_name>
+    <state_id>19</state_id>
+    <name>Christy Bates </name>
+    <title> </title>
+    <phone>  641-622-2320</phone>
+    <fax> 641-622-2286</fax>
+    <email>auditor@keokukcountyia.com</email>
+  </election_official>
+  <election_official id="1267168874">
+    <county_name>DUBUQUE</county_name>
+    <state_id>19</state_id>
+    <name> Denise Dolan</name>
+    <title> </title>
+    <phone> 563-589-4499</phone>
+    <fax> 563-589-4478</fax>
+    <email>auditor@dbqco.org</email>
+  </election_official>
+  <election_official id="1788065090">
+    <county_name>ADAMS</county_name>
+    <state_id>19</state_id>
+    <name> Nichole Tucker </name>
+    <title> </title>
+    <phone> 641-322-3340</phone>
+    <fax> 641-322-4647</fax>
+    <email>acaudit@frontiernet.net</email>
+  </election_official>
+  <election_official id="1420648211">
+    <county_name>PALO ALTO</county_name>
+    <state_id>19</state_id>
+    <name>Gary Leonard</name>
+    <title> </title>
+    <phone> 712-852-2924</phone>
+    <fax> 712-852-4671</fax>
+    <email>gleonard@co.palo-alto.ia.us</email>
+  </election_official>
+  <election_official id="2051630751">
+    <county_name>FRANKLIN</county_name>
+    <state_id>19</state_id>
+    <name>Michelle Giddings</name>
+    <title> </title>
+    <phone> 641-456-5622</phone>
+    <fax> 641-456-6001</fax>
+    <email>auditor@co.franklin.ia.us</email>
+  </election_official>
+  <election_official id="1968553006">
+    <county_name>OSCEOLA</county_name>
+    <state_id>19</state_id>
+    <name>Barbara Echter</name>
+    <title> </title>
+    <phone> 712-754-2241</phone>
+    <fax>  712-754-3743</fax>
+    <email>bechter@osceolacoia.org</email>
+  </election_official>
+  <election_official id="90173153">
+    <county_name>DELAWARE</county_name>
+    <state_id>19</state_id>
+    <name> Carla K. Becker</name>
+    <title> </title>
+    <phone> 563-927-4701</phone>
+    <fax> 563-927-6423</fax>
+    <email>cbecker@co.delaware.ia.us</email>
+  </election_official>
+  <election_official id="1979851047">
+    <county_name>POTTAWATTAMIE</county_name>
+    <state_id>19</state_id>
+    <name>Marilyn Jo Drake</name>
+    <title> </title>
+    <phone> 712-328-5700</phone>
+    <fax>  712-328-4740</fax>
+    <email>pottauditor@pottcounty.com</email>
+  </election_official>
+  <election_official id="887425384">
+    <county_name>JACKSON</county_name>
+    <state_id>19</state_id>
+    <name>Joell Deppe</name>
+    <title> </title>
+    <phone> 563-652-3144</phone>
+    <fax> 563-652-6975</fax>
+    <email>jdeppe@co.jackson.ia.us</email>
+  </election_official>
+  <election_official id="1532115294">
+    <county_name>AUDUBON</county_name>
+    <state_id>19</state_id>
+    <name> Lisa Frederiksen</name>
+    <title> </title>
+    <phone> 712-563-2584</phone>
+    <fax>  712-563-2556</fax>
+    <email>audcoaud@iowatelecom.net</email>
+  </election_official>
+  <election_official id="1290856296">
+    <county_name>GUTHRIE</county_name>
+    <state_id>19</state_id>
+    <name>Jerri Christman </name>
+    <title> </title>
+    <phone> 641-747-3619</phone>
+    <fax> 641-747-3027</fax>
+    <email>guthriecauditor@netins.net</email>
+  </election_official>
+  <election_official id="1922426211">
+    <county_name>CHICKASAW</county_name>
+    <state_id>19</state_id>
+    <name>Judy Babcock </name>
+    <title> </title>
+    <phone> 641-394-2100</phone>
+    <fax> 641-394-5541</fax>
+    <email>ccauditor@hotmail.com</email>
+  </election_official>
+  <election_official id="263890306">
+    <county_name>ALLAMAKEE</county_name>
+    <state_id>19</state_id>
+    <name>Mary O'Neill </name>
+    <title> </title>
+    <phone> 563-568-3522</phone>
+    <fax>  563-568-4978</fax>
+    <email>moneill@co.allamakee.ia.us</email>
+  </election_official>
+  <election_official id="2135276752">
+    <county_name>WASHINGTON</county_name>
+    <state_id>19</state_id>
+    <name>William Fredrick</name>
+    <title> </title>
+    <phone> 319-653-7715</phone>
+    <fax> 319-653-7788</fax>
+    <email>bfredrick@co.washington.ia.us</email>
+  </election_official>
+  <election_official id="1163604114">
+    <county_name>POCAHONTAS</county_name>
+    <state_id>19</state_id>
+    <name>Margene Bunda</name>
+    <title> </title>
+    <phone> 712-335-3361</phone>
+    <fax> 712-335-4502</fax>
+    <email>mbunda@pocahontascoia.us</email>
+  </election_official>
+  <election_official id="1951981085">
+    <county_name>BENTON</county_name>
+    <state_id>19</state_id>
+    <name>Jill Marlow </name>
+    <title> </title>
+    <phone> 319-472-2365</phone>
+    <fax>  319-472-3692</fax>
+    <email>bcauditor@co.benton.ia.us</email>
+  </election_official>
+  <election_official id="2025446003">
+    <county_name>MONTGOMERY</county_name>
+    <state_id>19</state_id>
+    <name>Joni Ernst</name>
+    <title>&#160;</title>
+    <phone>712-623-5127</phone>
+    <fax> 712-623-2346</fax>
+    <email>jernst@montgomerycoia.us</email>
+  </election_official>
+  <election_official id="1119611227">
+    <county_name>CLINTON</county_name>
+    <state_id>19</state_id>
+    <name>Charles A. Sheridan</name>
+    <title> </title>
+    <phone> 563-244-0568</phone>
+    <fax> 563-243-5869</fax>
+    <email>csheridan@clintoncountyiowa.com</email>
+  </election_official>
+  <election_official id="2134431456">
+    <county_name>IOWA</county_name>
+    <state_id>19</state_id>
+    <name>Linda Griggs</name>
+    <title> </title>
+    <phone> 319-642-3923</phone>
+    <fax> 319-642-7637</fax>
+    <email>lgriggs@co.iowa.ia.us</email>
+  </election_official>
+  <election_official id="549534177">
+    <county_name>DECATUR</county_name>
+    <state_id>19</state_id>
+    <name>Tiffani M. Edwards</name>
+    <title> </title>
+    <phone> 641-446-4323</phone>
+    <fax> 641-446-7149</fax>
+    <email>aud-dec@grm.net</email>
+  </election_official>
+  <election_official id="112038801">
+    <county_name>HANCOCK</county_name>
+    <state_id>19</state_id>
+    <name>Debra Bellinghausen </name>
+    <title> </title>
+    <phone> 641-923-3163</phone>
+    <fax> 641-923-4191</fax>
+    <email>hanauddb@hancockcountyia.org</email>
+  </election_official>
+  <election_official id="592791962">
+    <county_name>JONES</county_name>
+    <state_id>19</state_id>
+    <name>Janine Sulzner </name>
+    <title> </title>
+    <phone> 319-462-2282</phone>
+    <fax> 319-462-5815</fax>
+    <email>auditor@co.jones.ia.us</email>
+  </election_official>
+</listings>

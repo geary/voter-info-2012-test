@@ -1,0 +1,914 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="870476836">
+    <county_name>CRAWFORD</county_name>
+    <state_id>17</state_id>
+    <name>Patty Lycan</name>
+    <title>Crawford County Clerk</title>
+    <phone> 618/546-1212</phone>
+    <fax> </fax>
+    <email>plycan@crawfordcountycentral.com</email>
+  </election_official>
+  <election_official id="1287531953">
+    <county_name>HARDIN</county_name>
+    <state_id>17</state_id>
+    <name>Mary Ellen Denton</name>
+    <title>Hardin County Clerk</title>
+    <phone> 618/287-2251</phone>
+    <fax> </fax>
+    <email>.hcdenton@shawneelink.net</email>
+  </election_official>
+  <election_official id="1690757546">
+    <county_name>LA SALLE</county_name>
+    <state_id>17</state_id>
+    <name>JoAnn Carretto</name>
+    <title> LaSalle County Clerk</title>
+    <phone> 815/434-8202</phone>
+    <fax> </fax>
+    <email>countyclerk@lasallecounty.org</email>
+  </election_official>
+  <election_official id="454120850">
+    <county_name>MADISON</county_name>
+    <state_id>17</state_id>
+    <name>Mark Von Nida</name>
+    <title>Madison County Clerk</title>
+    <phone> 618/692-6290</phone>
+    <fax> </fax>
+    <email> mavonnida@co.madison.il.us</email>
+  </election_official>
+  <election_official id="858894595">
+    <county_name>WHITE</county_name>
+    <state_id>17</state_id>
+    <name>Paula Dozier</name>
+    <title>White County Clerk</title>
+    <phone> 618/382-7211</phone>
+    <fax> </fax>
+    <email>pdee398@shawneelink.net</email>
+  </election_official>
+  <election_official id="1929849915">
+    <county_name>JERSEY</county_name>
+    <state_id>17</state_id>
+    <name>Steve Pohlman</name>
+    <title>Jersey County Clerk</title>
+    <phone> 618/498-5571</phone>
+    <fax> </fax>
+    <email>countyclerk@jerseycounty-il.us</email>
+  </election_official>
+  <election_official id="481005992">
+    <county_name>CARROLL</county_name>
+    <state_id>17</state_id>
+    <name>Brian Woessner</name>
+    <title>Carroll County Clerk</title>
+    <phone> 815/244-0221</phone>
+    <fax> </fax>
+    <email> 	bw.clerk@hotmail.com</email>
+  </election_official>
+  <election_official id="673533845">
+    <county_name>COOK</county_name>
+    <state_id>17</state_id>
+    <name>David D. Orr</name>
+    <title>Cook County Clerk</title>
+    <phone> 	312/603-0996</phone>
+    <fax> </fax>
+    <email>dorr@cookcountygov.com</email>
+  </election_official>
+  <election_official id="2079843177">
+    <county_name>GALLATIN</county_name>
+    <state_id>17</state_id>
+    <name>Elizabeth A. Wargel</name>
+    <title>Gallatin County Clerk</title>
+    <phone> 	618/269-3025</phone>
+    <fax> </fax>
+    <email>bawargel@shawneelink.net</email>
+  </election_official>
+  <election_official id="1372024976">
+    <county_name>BROWN</county_name>
+    <state_id>17</state_id>
+    <name>Judy J. Woodworth</name>
+    <title>Brown County Clerk</title>
+    <phone> 217/773-3421</phone>
+    <fax> </fax>
+    <email>woodworthsieben@hotmail.com</email>
+  </election_official>
+  <election_official id="2051888118">
+    <county_name>VERMILION</county_name>
+    <state_id>17</state_id>
+    <name>Lynn Foster</name>
+    <title>Vermilion County Clerk</title>
+    <phone>217/554-1900 </phone>
+    <fax> </fax>
+    <email>coclerk@vercounty.org</email>
+  </election_official>
+  <election_official id="141771051">
+    <county_name>PULASKI</county_name>
+    <state_id>17</state_id>
+    <name>Julie Sauerbrunn</name>
+    <title>Pulaski County Clerk </title>
+    <phone> 618/748-9360</phone>
+    <fax> </fax>
+    <email>juliesauerbrunn@yahoo.com</email>
+  </election_official>
+  <election_official id="193842041">
+    <county_name>ROCK ISLAND</county_name>
+    <state_id>17</state_id>
+    <name>Richard "Dick" Leibovitz</name>
+    <title>Rock Island County Clerk</title>
+    <phone> 309/558-3570</phone>
+    <fax> </fax>
+    <email> 	rdl@ricountyclerk.org</email>
+  </election_official>
+  <election_official id="1339198958">
+    <county_name>DE KALB</county_name>
+    <state_id>17</state_id>
+    <name>Sharon L. Holmes</name>
+    <title>DeKalb County Clerk</title>
+    <phone> 815/895-7149</phone>
+    <fax> </fax>
+    <email> mailto:sholmes@dekalbcounty.org</email>
+  </election_official>
+  <election_official id="1171354291">
+    <county_name>LEE</county_name>
+    <state_id>17</state_id>
+    <name>Nancy Nelson</name>
+    <title>Lee County Clerk</title>
+    <phone> 815/288-3309</phone>
+    <fax> </fax>
+    <email>nnelson@countyoflee.org</email>
+  </election_official>
+  <election_official id="1551393172">
+    <county_name>MCDONOUGH</county_name>
+    <state_id>17</state_id>
+    <name>Gretchen DeJaynes</name>
+    <title>McDonough County Clerk</title>
+    <phone> 309/833-2474</phone>
+    <fax> </fax>
+    <email> gdejaynes@mcdonoughcountyclerk.org</email>
+  </election_official>
+  <election_official id="223451638">
+    <county_name>EDGAR</county_name>
+    <state_id>17</state_id>
+    <name>Rebecca R. (Becky) Kraemer</name>
+    <title>Edgar County Clerk</title>
+    <phone> 217/466-7433</phone>
+    <fax> </fax>
+    <email>coclk@edgarcounty-il.gov</email>
+  </election_official>
+  <election_official id="289681979">
+    <county_name>GREENE</county_name>
+    <state_id>17</state_id>
+    <name>Deborah Banghart</name>
+    <title>Greene County Clerk</title>
+    <phone> 	217/942-5443</phone>
+    <fax> </fax>
+    <email>grctyclk@hotmail.com</email>
+  </election_official>
+  <election_official id="66848143">
+    <county_name>CUMBERLAND</county_name>
+    <state_id>17</state_id>
+    <name>Julie Gentry</name>
+    <title>Cumberland County Clerk</title>
+    <phone> 217/849-2631</phone>
+    <fax> </fax>
+    <email>clerk-record@cumberlandco.org</email>
+  </election_official>
+  <election_official id="277750925">
+    <county_name>PIATT</county_name>
+    <state_id>17</state_id>
+    <name>Patricia</name>
+    <title>Piatt County Clerk</title>
+    <phone> 217/762-9487</phone>
+    <fax> </fax>
+    <email>countyclerk@piattcounty.org</email>
+  </election_official>
+  <election_official id="1892253056">
+    <county_name>RANDOLPH</county_name>
+    <state_id>17</state_id>
+    <name>Pat Laramore</name>
+    <title>Randolph County Clerk</title>
+    <phone> 618/826-5000</phone>
+    <fax> </fax>
+    <email>gwaly@email.com</email>
+  </election_official>
+  <election_official id="396277528">
+    <county_name>FAYETTE</county_name>
+    <state_id>17</state_id>
+    <name>Terri D. Braun</name>
+    <title>Fayette County Clerk</title>
+    <phone> 618/283-5000</phone>
+    <fax> </fax>
+    <email>fayettecountyclerk@gmail.com</email>
+  </election_official>
+  <election_official id="1789197676">
+    <county_name>BOND</county_name>
+    <state_id>17</state_id>
+    <name>Randy L. Reitz</name>
+    <title>Bond County Clerk</title>
+    <phone> 618/664-0449</phone>
+    <fax> </fax>
+    <email> mailto:randybcc@sbcglobal.net</email>
+  </election_official>
+  <election_official id="1850291209">
+    <county_name>KENDALL</county_name>
+    <state_id>17</state_id>
+    <name>Rennetta Mickelson</name>
+    <title>Kendall County Clerk</title>
+    <phone> 	630/553-4104</phone>
+    <fax> </fax>
+    <email>rmickelson@co.kendall.il.us</email>
+  </election_official>
+  <election_official id="1612709360">
+    <county_name>WILLIAMSON</county_name>
+    <state_id>17</state_id>
+    <name>Saundra K. Jent </name>
+    <title>Williamson County Clerk </title>
+    <phone> 618/997-1301</phone>
+    <fax> </fax>
+    <email>williamsoncountyclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="1659190956">
+    <county_name>MACON</county_name>
+    <state_id>17</state_id>
+    <name>Stephen M. Bean</name>
+    <title>Macon County Clerk</title>
+    <phone> 217/424-1305</phone>
+    <fax> </fax>
+    <email> sbean@co.macon.il.us</email>
+  </election_official>
+  <election_official id="1430546566">
+    <county_name>GRUNDY</county_name>
+    <state_id>17</state_id>
+    <name>Lana J. Phillips</name>
+    <title>Grundy County Clerk</title>
+    <phone> 	815/941-3222</phone>
+    <fax> </fax>
+    <email> 	lphillips@mornet.org</email>
+  </election_official>
+  <election_official id="1132515718">
+    <county_name>MARION</county_name>
+    <state_id>17</state_id>
+    <name>Steve Bailey</name>
+    <title>Marion County Clerk</title>
+    <phone> 618/548-3400</phone>
+    <fax> </fax>
+    <email> 	ilmarioncountyclerk@ussonet.net</email>
+  </election_official>
+  <election_official id="670589066">
+    <county_name>LIVINGSTON</county_name>
+    <state_id>17</state_id>
+    <name>Kristy A. Masching</name>
+    <title>Livingston County Clerk</title>
+    <phone> 815/844-2006</phone>
+    <fax> </fax>
+    <email>coclerk@maxwire.net</email>
+  </election_official>
+  <election_official id="147035621">
+    <county_name>HENRY</county_name>
+    <state_id>17</state_id>
+    <name>Barb Link</name>
+    <title>Henry County Clerk</title>
+    <phone> 309/937-3481</phone>
+    <fax> </fax>
+    <email>blink@henrycty.com</email>
+  </election_official>
+  <election_official id="979959795">
+    <county_name>WARREN</county_name>
+    <state_id>17</state_id>
+    <name>Tina Conard</name>
+    <title>Warren County Clerk</title>
+    <phone> 	309/734-8592</phone>
+    <fax> </fax>
+    <email>warrencountyclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="637197570">
+    <county_name>EDWARDS</county_name>
+    <state_id>17</state_id>
+    <name>Mary Beth (Saxe) Smith</name>
+    <title>Edwards County Clerk</title>
+    <phone> 618/445-2115</phone>
+    <fax> </fax>
+    <email>marybeth22@hotmail.com</email>
+  </election_official>
+  <election_official id="1259290166">
+    <county_name>RICHLAND</county_name>
+    <state_id>17</state_id>
+    <name>Alice Mullinax</name>
+    <title>Richland County Clerk</title>
+    <phone> 618/392-3111</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="215343574">
+    <county_name>WAYNE</county_name>
+    <state_id>17</state_id>
+    <name>Donna F. Endsley </name>
+    <title>Wayne County Clerk </title>
+    <phone> 618/842-5182</phone>
+    <fax> </fax>
+    <email>donnae@fairfieldwireless.net</email>
+  </election_official>
+  <election_official id="976159301">
+    <county_name>WINNEBAGO</county_name>
+    <state_id>17</state_id>
+    <name>Margie Mullins </name>
+    <title>Winnebago County Clerk </title>
+    <phone> 815/987-3050</phone>
+    <fax> </fax>
+    <email>mmullins@co.winnebago.il.us</email>
+  </election_official>
+  <election_official id="691106951">
+    <county_name>CLAY</county_name>
+    <state_id>17</state_id>
+    <name>Brenda Britton</name>
+    <title>Clay County Clerk</title>
+    <phone> 618/665-3626</phone>
+    <fax> </fax>
+    <email>claycoclk@wabash.net</email>
+  </election_official>
+  <election_official id="2067202852">
+    <county_name>JO DAVIESS</county_name>
+    <state_id>17</state_id>
+    <name>Jean Dimke</name>
+    <title>JoDaviess County Clerk</title>
+    <phone> 815/777-0161</phone>
+    <fax> </fax>
+    <email>jdimke@jodaviess.org</email>
+  </election_official>
+  <election_official id="365772143">
+    <county_name>MENARD</county_name>
+    <state_id>17</state_id>
+    <name>Gene Treseler</name>
+    <title>Menard County Clerk</title>
+    <phone> 217/632-3201</phone>
+    <fax> </fax>
+    <email> 	gtreseler@co.menard.il.us</email>
+  </election_official>
+  <election_official id="746925278">
+    <county_name>WHITESIDE</county_name>
+    <state_id>17</state_id>
+    <name>Dana Nelson </name>
+    <title>Whiteside County Clerk </title>
+    <phone> 815/772-5189</phone>
+    <fax> </fax>
+    <email>dnelson@whiteside.org</email>
+  </election_official>
+  <election_official id="822121965">
+    <county_name>JOHNSON</county_name>
+    <state_id>17</state_id>
+    <name>Robin Harper-Whitehead</name>
+    <title>Johnson County Clerk</title>
+    <phone> 618/658-3611</phone>
+    <fax> </fax>
+    <email>macabud@hotmail.com</email>
+  </election_official>
+  <election_official id="335914024">
+    <county_name>FORD</county_name>
+    <state_id>17</state_id>
+    <name>Linda Kellerhals</name>
+    <title>Ford County Clerk</title>
+    <phone> 217/379-2721</phone>
+    <fax> </fax>
+    <email>clerk@fordcountycourthouse.com</email>
+  </election_official>
+  <election_official id="988713652">
+    <county_name>OGLE</county_name>
+    <state_id>17</state_id>
+    <name>Rebecca Huntley</name>
+    <title>Ogle County Clerk</title>
+    <phone> 	815/732-1110</phone>
+    <fax> </fax>
+    <email> countyclerk@oglecounty.org</email>
+  </election_official>
+  <election_official id="1488761121">
+    <county_name>TAZEWELL</county_name>
+    <state_id>17</state_id>
+    <name>Christie A. Webb</name>
+    <title>Tazewell County Clerk</title>
+    <phone> 309/477-2264</phone>
+    <fax> </fax>
+    <email>cwebb@tazewell.com</email>
+  </election_official>
+  <election_official id="1812661012">
+    <county_name>BOONE</county_name>
+    <state_id>17</state_id>
+    <name>Pamela D. Mccullough</name>
+    <title>Boone County Clerk</title>
+    <phone>815/544-3103</phone>
+    <fax> </fax>
+    <email>pam@boonecountyil.org</email>
+  </election_official>
+  <election_official id="339048415">
+    <county_name>LAKE</county_name>
+    <state_id>17</state_id>
+    <name>Ms. Willard R. Helander</name>
+    <title>Lake County Clerk</title>
+    <phone> 847/377-2400</phone>
+    <fax> </fax>
+    <email>countyclerk@co.lake.il.us</email>
+  </election_official>
+  <election_official id="2025677524">
+    <county_name>MCHENRY</county_name>
+    <state_id>17</state_id>
+    <name>Katherine C. Schultz</name>
+    <title> McHenry County Clerk</title>
+    <phone> 815/334-4242</phone>
+    <fax> </fax>
+    <email> 	kcschult@co.mchenry.il.us</email>
+  </election_official>
+  <election_official id="127290551">
+    <county_name>SAINT CLAIR</county_name>
+    <state_id>17</state_id>
+    <name>Bob Delaney</name>
+    <title>St. Clair County Clerk</title>
+    <phone> 	618/825-2380</phone>
+    <fax> </fax>
+    <email> elections@co.st-clair.il.us</email>
+  </election_official>
+  <election_official id="297378384">
+    <county_name>EFFINGHAM</county_name>
+    <state_id>17</state_id>
+    <name>Kerry Hirtzel</name>
+    <title>Effingham County Clerk</title>
+    <phone> 217/342-6535</phone>
+    <fax> </fax>
+    <email>countyclerk@co.effingham.il.us</email>
+  </election_official>
+  <election_official id="1558264061">
+    <county_name>MARSHALL</county_name>
+    <state_id>17</state_id>
+    <name>Andrea J. Mahoney-Platt</name>
+    <title>Marshall County Clerk</title>
+    <phone> 309/246-6325</phone>
+    <fax> </fax>
+    <email> 	mcoclerk@mtco.com</email>
+  </election_official>
+  <election_official id="789642523">
+    <county_name>KANE</county_name>
+    <state_id>17</state_id>
+    <name>John A. "Jack" Cunningham</name>
+    <title>Kane County Clerk</title>
+    <phone> 	630/232-5990</phone>
+    <fax> </fax>
+    <email> 	elections@co.kane.il.us</email>
+  </election_official>
+  <election_official id="2025142497">
+    <county_name>SCHUYLER</county_name>
+    <state_id>17</state_id>
+    <name>Linda S. Ward</name>
+    <title>Schuyler County Clerk</title>
+    <phone> 217/322-4734</phone>
+    <fax> </fax>
+    <email>clerk85@frontiernet.net</email>
+  </election_official>
+  <election_official id="2003795376">
+    <county_name>PUTNAM</county_name>
+    <state_id>17</state_id>
+    <name>Dan Kuhn</name>
+    <title>Putnam County Clerk</title>
+    <phone> 815/925-7129</phone>
+    <fax> </fax>
+    <email>dankuhn@mchsi.com</email>
+  </election_official>
+  <election_official id="2021559351">
+    <county_name>SHELBY</county_name>
+    <state_id>17</state_id>
+    <name>Kathy Lantz</name>
+    <title>Shelby County Clerk</title>
+    <phone> 217/774-4421</phone>
+    <fax> </fax>
+    <email>shelbycc@consolidated.net</email>
+  </election_official>
+  <election_official id="1811141687">
+    <county_name>IROQUOIS</county_name>
+    <state_id>17</state_id>
+    <name>Mark R. Henrichs</name>
+    <title>Iroquois County Clerk</title>
+    <phone>815/432-6960</phone>
+    <fax> </fax>
+    <email>iroquoiscountyclerk@co.iroquois.il.us</email>
+  </election_official>
+  <election_official id="1572218576">
+    <county_name>WABASH</county_name>
+    <state_id>17</state_id>
+    <name>Marie L. Kolb</name>
+    <title>Wabash County Clerk</title>
+    <phone> 	618/262-4561</phone>
+    <fax> </fax>
+    <email> wccr1@shawneelink.net</email>
+  </election_official>
+  <election_official id="1566518290">
+    <county_name>COLES</county_name>
+    <state_id>17</state_id>
+    <name>Sue Rennels</name>
+    <title>Coles County Clerk</title>
+    <phone>217/348-0501</phone>
+    <fax> </fax>
+    <email>srennels@co.coles.il.us</email>
+  </election_official>
+  <election_official id="1235438850">
+    <county_name>WOODFORD</county_name>
+    <state_id>17</state_id>
+    <name>Debbie Harms </name>
+    <title>Woodford County Clerk </title>
+    <phone> 309/467-2822</phone>
+    <fax> </fax>
+    <email>debbieh@mtco.com</email>
+  </election_official>
+  <election_official id="736652633">
+    <county_name>MONROE</county_name>
+    <state_id>17</state_id>
+    <name>Dennis M. Knobloch</name>
+    <title>Monroe County Clerk</title>
+    <phone> 	618/939-8681</phone>
+    <fax> </fax>
+    <email> 	moclerk@htc.net</email>
+  </election_official>
+  <election_official id="1556873588">
+    <county_name>CASS</county_name>
+    <state_id>17</state_id>
+    <name>Michael C. Kirchner</name>
+    <title>Cass County Clerk</title>
+    <phone> 217/452-7217</phone>
+    <fax> </fax>
+    <email> 	casselection@casscomm.com</email>
+  </election_official>
+  <election_official id="1117164781">
+    <county_name>JASPER</county_name>
+    <state_id>17</state_id>
+    <name>Linda Huth</name>
+    <title>Jasper County Clerk</title>
+    <phone> 618/783-3124</phone>
+    <fax> </fax>
+    <email> 	lindadg@psbnewton.com</email>
+  </election_official>
+  <election_official id="876833680">
+    <county_name>DEWITT</county_name>
+    <state_id>17</state_id>
+    <name>Jayne Usher</name>
+    <title>DeWitt County Clerk</title>
+    <phone> 	217/935-2119</phone>
+    <fax> </fax>
+    <email>jusher@dewittcountyill.com</email>
+  </election_official>
+  <election_official id="1648455011">
+    <county_name>DOUGLAS</county_name>
+    <state_id>17</state_id>
+    <name>James A. "Jim" Ingram</name>
+    <title>Douglas County Clerk</title>
+    <phone> 217/253-2411</phone>
+    <fax> </fax>
+    <email>clerk&amp;recorder@netcare-il.com</email>
+  </election_official>
+  <election_official id="1157898244">
+    <county_name>KNOX</county_name>
+    <state_id>17</state_id>
+    <name>Scott G. Erickson</name>
+    <title>Knox County Clerk</title>
+    <phone> 309/345-3815</phone>
+    <fax> </fax>
+    <email>serickson@knoxclerk.org</email>
+  </election_official>
+  <election_official id="1435672363">
+    <county_name>JEFFERSON</county_name>
+    <state_id>17</state_id>
+    <name>Connie Simmons</name>
+    <title>Jefferson County Clerk</title>
+    <phone> 618/244-8020</phone>
+    <fax> </fax>
+    <email>jeffcoclerk@jeffil.us</email>
+  </election_official>
+  <election_official id="2048493862">
+    <county_name>DU PAGE</county_name>
+    <state_id>17</state_id>
+    <name>Robert T. Saar</name>
+    <title>Executive Director</title>
+    <phone> 630/407-5600</phone>
+    <fax> </fax>
+    <email>rsaar@dupageco.org</email>
+  </election_official>
+  <election_official id="1706114787">
+    <county_name>SCOTT</county_name>
+    <state_id>17</state_id>
+    <name>Barbara J. Mcdade</name>
+    <title>Scott County Clerk</title>
+    <phone> 	217/742-3178</phone>
+    <fax> </fax>
+    <email>countyclerk@wincoinet.com</email>
+  </election_official>
+  <election_official id="1951881245">
+    <county_name>STARK</county_name>
+    <state_id>17</state_id>
+    <name>Linda K. Pyell</name>
+    <title>Stark County Clerk</title>
+    <phone> 309/286-5911</phone>
+    <fax> </fax>
+    <email>starkcoclerk@starkco.illinois.gov</email>
+  </election_official>
+  <election_official id="1656108375">
+    <county_name>SANGAMON</county_name>
+    <state_id>17</state_id>
+    <name>Joseph Aiello</name>
+    <title>Sangamon County Clerk</title>
+    <phone>217/753-6700</phone>
+    <fax> </fax>
+    <email> joea@co.sangamon.il.us</email>
+  </election_official>
+  <election_official id="1952219089">
+    <county_name>SALINE</county_name>
+    <state_id>17</state_id>
+    <name>William "Willie" McClusky</name>
+    <title>Saline County Clerk</title>
+    <phone> 618/253-8197</phone>
+    <fax> </fax>
+    <email> 	countyclerk@yourclearwave.com</email>
+  </election_official>
+  <election_official id="557463045">
+    <county_name>UNION</county_name>
+    <state_id>17</state_id>
+    <name>Bobby Toler, Jr.</name>
+    <title>Union County Clerk</title>
+    <phone> 618/833-5711</phone>
+    <fax> </fax>
+    <email> 	btolerjr@hotmail.com</email>
+  </election_official>
+  <election_official id="2011444092">
+    <county_name>HAMILTON</county_name>
+    <state_id>17</state_id>
+    <name>Mary Anne Hopfinger</name>
+    <title>Hamilton County Clerk</title>
+    <phone> 	618/643-2721</phone>
+    <fax> </fax>
+    <email>coclerk@hamiltonco.us</email>
+  </election_official>
+  <election_official id="1499842140">
+    <county_name>ADAMS</county_name>
+    <state_id>17</state_id>
+    <name>Georgia  Volm</name>
+    <title>Adams County Clerk</title>
+    <phone> 217/277-2150</phone>
+    <fax> </fax>
+    <email>countyclerk@co.adams.il.us</email>
+  </election_official>
+  <election_official id="739763233">
+    <county_name>CHRISTIAN</county_name>
+    <state_id>17</state_id>
+    <name>Linda Curtin</name>
+    <title>Christian County Clerk</title>
+    <phone> 217/824-4969</phone>
+    <fax> </fax>
+    <email>ccclerk@ctitech.com</email>
+  </election_official>
+  <election_official id="682832409">
+    <county_name>FRANKLIN</county_name>
+    <state_id>17</state_id>
+    <name>Dave Dobill</name>
+    <title>Franklin County Clerk</title>
+    <phone> 618/438-3221</phone>
+    <fax> </fax>
+    <email> mailto:dobill@franklincountyil.org</email>
+  </election_official>
+  <election_official id="1664459256">
+    <county_name>MASSAC</county_name>
+    <state_id>17</state_id>
+    <name>John D. "Bubba" Taylor</name>
+    <title>Massac County Clerk</title>
+    <phone> 618/524-5213</phone>
+    <fax> </fax>
+    <email> massaccountyclerk@hotmail.com</email>
+  </election_official>
+  <election_official id="822663026">
+    <county_name>CHAMPAIGN</county_name>
+    <state_id>17</state_id>
+    <name>Mark Shelden</name>
+    <title>Champaign County Clerk</title>
+    <phone>217/384-3720</phone>
+    <fax> </fax>
+    <email>mail@champaigncountyclerk.com</email>
+  </election_official>
+  <election_official id="1087145607">
+    <county_name>FULTON</county_name>
+    <state_id>17</state_id>
+    <name>James I. "Jim" Nelson</name>
+    <title>Fulton County Clerk</title>
+    <phone> 309/547-3041</phone>
+    <fax> </fax>
+    <email>jnelson@fultonco.org</email>
+  </election_official>
+  <election_official id="1653402496">
+    <county_name>BUREAU</county_name>
+    <state_id>17</state_id>
+    <name>Kamala S. "Kami" Hieronymus</name>
+    <title>Bureau County Clerk</title>
+    <phone> 815/875-2014</phone>
+    <fax> </fax>
+    <email>bureaucckami@yahoo.com</email>
+  </election_official>
+  <election_official id="292148618">
+    <county_name>HENDERSON</county_name>
+    <state_id>17</state_id>
+    <name>Marcella L. Cisna</name>
+    <title>Henderson County Clerk</title>
+    <phone> 	309/867-2911</phone>
+    <fax> </fax>
+    <email>coclerk@mchsi.com</email>
+  </election_official>
+  <election_official id="1860867565">
+    <county_name>LAWRENCE</county_name>
+    <state_id>17</state_id>
+    <name>Teri Linton</name>
+    <title>Lawrence County Clerkc</title>
+    <phone> 618/943-2346</phone>
+    <fax> </fax>
+    <email>tlintoncoclk@yahoo.com</email>
+  </election_official>
+  <election_official id="596996962">
+    <county_name>MCLEAN</county_name>
+    <state_id>17</state_id>
+    <name>Peggy Ann Milton</name>
+    <title>McLean County Clerk</title>
+    <phone> 309/888-5190</phone>
+    <fax> </fax>
+    <email>peggyann.milton@mcleancountyil.gov</email>
+  </election_official>
+  <election_official id="1421151822">
+    <county_name>STEPHENSON</county_name>
+    <state_id>17</state_id>
+    <name>Vici R. Otte</name>
+    <title>Stephenson County Clerk</title>
+    <phone> 	815/235-8289</phone>
+    <fax> </fax>
+    <email>votte@co.stephenson.il.us</email>
+  </election_official>
+  <election_official id="1110982819">
+    <county_name>PERRY</county_name>
+    <state_id>17</state_id>
+    <name>Kevin Kern</name>
+    <title>Perry County Clerk</title>
+    <phone> 618/357-5116</phone>
+    <fax> </fax>
+    <email> kkern@onecliq.net</email>
+  </election_official>
+  <election_official id="112628919">
+    <county_name>JACKSON</county_name>
+    <state_id>17</state_id>
+    <name>Larry W. Reinhardt</name>
+    <title>Jackson County Clerk</title>
+    <phone> 618/687-7360</phone>
+    <fax> </fax>
+    <email>jackson.county@live.com</email>
+  </election_official>
+  <election_official id="939984860">
+    <county_name>MACOUPIN</county_name>
+    <state_id>17</state_id>
+    <name>Michele Zippay</name>
+    <title>Macoupin County Clerk</title>
+    <phone> 217/854-3214</phone>
+    <fax> </fax>
+    <email> 	michele.zippay@macoupincountyil.gov</email>
+  </election_official>
+  <election_official id="430589512">
+    <county_name>MERCER</county_name>
+    <state_id>17</state_id>
+    <name>Thomas L. Hanson</name>
+    <title>Mercer County Clerk</title>
+    <phone> 309/582-7021</phone>
+    <fax> </fax>
+    <email> countyclerk@mercercountycourthouse.com</email>
+  </election_official>
+  <election_official id="997086471">
+    <county_name>WASHINGTON</county_name>
+    <state_id>17</state_id>
+    <name>Thomas Ganz</name>
+    <title>Washington County Clerk</title>
+    <phone> 618/327-4800</phone>
+    <fax> </fax>
+    <email>wcclerk2@hotmail.com</email>
+  </election_official>
+  <election_official id="263213344">
+    <county_name>MORGAN</county_name>
+    <state_id>17</state_id>
+    <name>Barbara J. Gross</name>
+    <title>Morgan County Clerk</title>
+    <phone> 	217/243-8581</phone>
+    <fax> </fax>
+    <email> bjgross@irtc.net</email>
+  </election_official>
+  <election_official id="416661775">
+    <county_name>MONTGOMERY</county_name>
+    <state_id>17</state_id>
+    <name>Sandy Leitheiser</name>
+    <title>Montgomery County Clerk</title>
+    <phone> 217/532-9530</phone>
+    <fax> </fax>
+    <email> sandyleitheiser@hotmail.com</email>
+  </election_official>
+  <election_official id="1141089391">
+    <county_name>CLINTON</county_name>
+    <state_id>17</state_id>
+    <name>Tom LaCaze</name>
+    <title>Clinton County Clerk</title>
+    <phone> 618/594-2464</phone>
+    <fax> </fax>
+    <email>ccclerk@clintonco.illinois.gov</email>
+  </election_official>
+  <election_official id="1807212479">
+    <county_name>MOULTRIE</county_name>
+    <state_id>17</state_id>
+    <name>Georgia C. England</name>
+    <title>Moultrie County Clerk</title>
+    <phone> 217/728-4389</phone>
+    <fax> </fax>
+    <email> 	ctyclrk@moultrie.com</email>
+  </election_official>
+  <election_official id="487151531">
+    <county_name>MASON</county_name>
+    <state_id>17</state_id>
+    <name>William R. Blessman</name>
+    <title>Mason County Clerk</title>
+    <phone> 309/543-6661</phone>
+    <fax> </fax>
+    <email>cclerk@grics.net</email>
+  </election_official>
+  <election_official id="927230291">
+    <county_name>WILL</county_name>
+    <state_id>17</state_id>
+    <name>Nancy Schultz Voots </name>
+    <title>Will County Clerk </title>
+    <phone> 	815/740-4615</phone>
+    <fax> </fax>
+    <email> nvoots@willcountyillinois.com</email>
+  </election_official>
+  <election_official id="1389708599">
+    <county_name>KANKAKEE</county_name>
+    <state_id>17</state_id>
+    <name>Bruce Clark</name>
+    <title>Kankakee County Clerk</title>
+    <phone> 815/937-2990</phone>
+    <fax> </fax>
+    <email> 	countyclerk@k3county.net</email>
+  </election_official>
+  <election_official id="1043086401">
+    <county_name>HANCOCK</county_name>
+    <state_id>17</state_id>
+    <name>Mr. Kerry Asbridge</name>
+    <title>Hancock County Clerk</title>
+    <phone> 	217/357-3911</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1030166354">
+    <county_name>CLARK</county_name>
+    <state_id>17</state_id>
+    <name>William C. "Bill" Downey</name>
+    <title>Clark County Clerk</title>
+    <phone> 217/826-8311</phone>
+    <fax> </fax>
+    <email>clerk@clarkcountyil.org</email>
+  </election_official>
+  <election_official id="1134796593">
+    <county_name>PIKE</county_name>
+    <state_id>17</state_id>
+    <name>Donnie Apps</name>
+    <title>Pike County Clerk</title>
+    <phone> 	217/285-6812</phone>
+    <fax> </fax>
+    <email>donnieapps@kcds.net</email>
+  </election_official>
+  <election_official id="926844661">
+    <county_name>ALEXANDER</county_name>
+    <state_id>17</state_id>
+    <name>Nancy Kline</name>
+    <title>Alexander County Clerk</title>
+    <phone> 	618/734-7000</phone>
+    <fax> </fax>
+    <email>alexctyclk@lazernetwireless.net</email>
+  </election_official>
+  <election_official id="1258324005">
+    <county_name>PEORIA</county_name>
+    <state_id>17</state_id>
+    <name>Robert S. (Steve) Sonnemaker</name>
+    <title>Peoria County Clerk</title>
+    <phone> 309/672-6070</phone>
+    <fax> </fax>
+    <email>ssonnemaker@peoriacounty.org</email>
+  </election_official>
+  <election_official id="263992927">
+    <county_name>POPE</county_name>
+    <state_id>17</state_id>
+    <name>Connie Gibbs</name>
+    <title>Pope County Clerk</title>
+    <phone> 	618/683-4466</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="331810709">
+    <county_name>LOGAN</county_name>
+    <state_id>17</state_id>
+    <name>Sally J. Litterly</name>
+    <title>Logan County Clerk</title>
+    <phone> 217/732-4148</phone>
+    <fax> </fax>
+    <email>slitterl@co.logan.il.us</email>
+  </election_official>
+</listings>

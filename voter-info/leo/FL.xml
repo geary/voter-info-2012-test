@@ -1,0 +1,608 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="223569312">
+    <county_name>POLK</county_name>
+    <state_id>12</state_id>
+    <name>Lori  Edwards</name>
+    <title> Polk County Supervisor of Elections</title>
+    <phone> 863-534-5888</phone>
+    <fax> 863-534-5899 </fax>
+    <email>loriedwards@polkelections.com</email>
+  </election_official>
+  <election_official id="1459747791">
+    <county_name>BREVARD</county_name>
+    <state_id>12</state_id>
+    <name>Hubert C. Childress</name>
+    <title> Brevard County Supervisor of Elections</title>
+    <phone> 321-264-6740</phone>
+    <fax> 321-264-6741</fax>
+    <email>bchildress@brevardelections.org</email>
+  </election_official>
+  <election_official id="1151212402">
+    <county_name>LEVY</county_name>
+    <state_id>12</state_id>
+    <name>Connie  Asbell</name>
+    <title> Levy County Supervisor of Elections</title>
+    <phone> 352-486-5163</phone>
+    <fax> 352-486-5146</fax>
+    <email>elections@votelevy.com</email>
+  </election_official>
+  <election_official id="687684604">
+    <county_name>PALM BEACH</county_name>
+    <state_id>12</state_id>
+    <name>Arthur W. Anderson</name>
+    <title> Palm Beach County Supervisor of Elections</title>
+    <phone> 561-656-6200</phone>
+    <fax> 561-656-6287</fax>
+    <email>mailbox@pbcelections.org</email>
+  </election_official>
+  <election_official id="799012302">
+    <county_name>FLAGLER</county_name>
+    <state_id>12</state_id>
+    <name>Peggy R. Border</name>
+    <title> Flagler County Supervisor of Elections</title>
+    <phone> 386-313-4170</phone>
+    <fax> 386-313-4171</fax>
+    <email>pborder@flaglerelections.com</email>
+  </election_official>
+  <election_official id="184228787">
+    <county_name>MADISON</county_name>
+    <state_id>12</state_id>
+    <name>Jada W. Williams</name>
+    <title> Madison County Supervisor of Elections</title>
+    <phone> 850-973-6507</phone>
+    <fax> 850-973-3780</fax>
+    <email>elections@votemadison.com</email>
+  </election_official>
+  <election_official id="875548480">
+    <county_name>HIGHLANDS</county_name>
+    <state_id>12</state_id>
+    <name>Joe A. Campbell</name>
+    <title> Highlands County Supervisor of Elections</title>
+    <phone> 863-402-6655</phone>
+    <fax> 863-402-6657</fax>
+    <email>soe@hcbcc.org</email>
+  </election_official>
+  <election_official id="848174840">
+    <county_name>BROWARD</county_name>
+    <state_id>12</state_id>
+    <name>Brenda C. Snipes</name>
+    <title> Broward County Supervisor of Elections</title>
+    <phone> 954-357-7050</phone>
+    <fax> 954-357-7070</fax>
+    <email>Elections@browardsoe.org</email>
+  </election_official>
+  <election_official id="1624310509">
+    <county_name>ALACHUA</county_name>
+    <state_id>12</state_id>
+    <name>Pam  Carpenter</name>
+    <title> Alachua County Supervisor of Elections</title>
+    <phone> 352-374-5252</phone>
+    <fax> 352-374-5264</fax>
+    <email>pwc@alachuacounty.us</email>
+  </election_official>
+  <election_official id="1524285217">
+    <county_name>LEE</county_name>
+    <state_id>12</state_id>
+    <name>Sharon L. Harrington</name>
+    <title> Lee County Supervisor of Elections</title>
+    <phone> 239-533-8683</phone>
+    <fax> 239-533-6310</fax>
+    <email>sharrington@leeelections.com</email>
+  </election_official>
+  <election_official id="713516504">
+    <county_name>HENDRY</county_name>
+    <state_id>12</state_id>
+    <name>Lucretia A. Strickland</name>
+    <title> Hendry County Supervisor of Elections</title>
+    <phone> 863-675-5230</phone>
+    <fax> 863-675-7803</fax>
+    <email>supervisor@hendryelections.org</email>
+  </election_official>
+  <election_official id="1354618486">
+    <county_name>GADSDEN</county_name>
+    <state_id>12</state_id>
+    <name>Shirley G. Knight</name>
+    <title>Gadsden County Supervisor of Elections</title>
+    <phone> 850-627-9910</phone>
+    <fax> 850-627-6144</fax>
+    <email>info@gadsdensoe.com</email>
+  </election_official>
+  <election_official id="1444907013">
+    <county_name>MARION</county_name>
+    <state_id>12</state_id>
+    <name>Dee  Brown</name>
+    <title> Marion County Supervisor of Elections</title>
+    <phone> 352-620-3290</phone>
+    <fax> 352-620-3286</fax>
+    <email>Elections@VoteMarion.com</email>
+  </election_official>
+  <election_official id="806963763">
+    <county_name>VOLUSIA</county_name>
+    <state_id>12</state_id>
+    <name>Ann  McFall</name>
+    <title> Volusia County Supervisor of Elections</title>
+    <phone> 386-736-5930</phone>
+    <fax> 386-822-5715</fax>
+    <email>amcfall@co.volusia.fl.us</email>
+  </election_official>
+  <election_official id="827788112">
+    <county_name>CALHOUN</county_name>
+    <state_id>12</state_id>
+    <name>Margie C. Laramore</name>
+    <title> Calhoun County Supervisor of Elections</title>
+    <phone> 850-674-8568</phone>
+    <fax> 850-674-2449</fax>
+    <email>soecalco@gtcom.net</email>
+  </election_official>
+  <election_official id="1963346271">
+    <county_name>CLAY</county_name>
+    <state_id>12</state_id>
+    <name>Barbara A. Kirkman</name>
+    <title> Clay County Supervisor of Elections</title>
+    <phone> 904-284-6350</phone>
+    <fax> 904-284-3975 </fax>
+    <email>bkirkman@clayelections.com</email>
+  </election_official>
+  <election_official id="257922574">
+    <county_name>OKEECHOBEE</county_name>
+    <state_id>12</state_id>
+    <name>Gwen  Chandler</name>
+    <title> Okeechobee County Supervisor of Elections</title>
+    <phone> 863-763-4014</phone>
+    <fax> 863-763-0152</fax>
+    <email>soe@voteokeechobee.com</email>
+  </election_official>
+  <election_official id="1987398866">
+    <county_name>COLLIER</county_name>
+    <state_id>12</state_id>
+    <name>Jennifer J. Edwards</name>
+    <title> Collier County Supervisor of Elections</title>
+    <phone> 239-252-8450</phone>
+    <fax> 239-774-9468</fax>
+    <email>supervisorofelections@colliergov.net</email>
+  </election_official>
+  <election_official id="462051129">
+    <county_name>GILCHRIST</county_name>
+    <state_id>12</state_id>
+    <name>Connie  Sanchez</name>
+    <title> Gilchrist County Supervisor of Elections</title>
+    <phone> 352-463-3194</phone>
+    <fax> 352-463-3196</fax>
+    <email>elections@gilchrist.fl.us</email>
+  </election_official>
+  <election_official id="1766679212">
+    <county_name>HILLSBOROUGH</county_name>
+    <state_id>12</state_id>
+    <name>Buddy  Johnson</name>
+    <title> Hillsborough County Supervisor of Elections</title>
+    <phone> 813-272-5850</phone>
+    <fax>813-272-7043 </fax>
+    <email>voter@hillsboroughcounty.org</email>
+  </election_official>
+  <election_official id="654080189">
+    <county_name>BRADFORD</county_name>
+    <state_id>12</state_id>
+    <name>Terry L. Vaughan</name>
+    <title> Bradford County Supervisor of Elections</title>
+    <phone> 904-966-6266</phone>
+    <fax> 904-966-6165</fax>
+    <email>bradsoe@bradford-co-fla.org</email>
+  </election_official>
+  <election_official id="66328021">
+    <county_name>LAFAYETTE</county_name>
+    <state_id>12</state_id>
+    <name>Lana B. Morgan</name>
+    <title> Lafayette County Supervisor of Elections</title>
+    <phone> 386-294-1261</phone>
+    <fax> 386-294-2164</fax>
+    <email>lafayettesoe@alltel.net</email>
+  </election_official>
+  <election_official id="896376000">
+    <county_name>LAKE</county_name>
+    <state_id>12</state_id>
+    <name>Emogene W. Stegall</name>
+    <title> Lake County Supervisor of Elections</title>
+    <phone> 352-343-9734</phone>
+    <fax> 352-343-3605</fax>
+    <email>elections@co.lake.fl.us</email>
+  </election_official>
+  <election_official id="1556871060">
+    <county_name>MARTIN</county_name>
+    <state_id>12</state_id>
+    <name>Vicki  Davis</name>
+    <title> Martin County Supervisor of Elections</title>
+    <phone> 772-288-5637</phone>
+    <fax> 772-288-5765 </fax>
+    <email>elections@martinvotes.com</email>
+  </election_official>
+  <election_official id="1459115123">
+    <county_name>ESCAMBIA</county_name>
+    <state_id>12</state_id>
+    <name>David H. Stafford</name>
+    <title> Escambia County Supervisor of Elections</title>
+    <phone> 850-595-3900</phone>
+    <fax> 850-595-3914</fax>
+    <email>soe@escambiavotes.com</email>
+  </election_official>
+  <election_official id="136741759">
+    <county_name>GULF</county_name>
+    <state_id>12</state_id>
+    <name>Linda  Griffin</name>
+    <title> Gulf County Supervisor of Elections</title>
+    <phone> 850-229-6117</phone>
+    <fax> 850-229-8975</fax>
+    <email>gulfsoe@fairpoint.net</email>
+  </election_official>
+  <election_official id="1312281312">
+    <county_name>HERNANDO</county_name>
+    <state_id>12</state_id>
+    <name>Annie D. Williams</name>
+    <title> Hernando County Supervisor of Elections</title>
+    <phone> 352-754-4125</phone>
+    <fax> 352-754-4425</fax>
+    <email>awilliams@hernandocounty.us</email>
+  </election_official>
+  <election_official id="1636848221">
+    <county_name>MIAMI-DADE</county_name>
+    <state_id>12</state_id>
+    <name>Lester  Sola</name>
+    <title> Miami-Dade County Supervisor of Elections</title>
+    <phone> 305-499-8683</phone>
+    <fax> 305-468-2507</fax>
+    <email>soedade@miamidade.gov</email>
+  </election_official>
+  <election_official id="544447743">
+    <county_name>HARDEE</county_name>
+    <state_id>12</state_id>
+    <name>Jeffery  Ussery</name>
+    <title> Hardee County Supervisor of Elections</title>
+    <phone> 863-773-6061</phone>
+    <fax> 863-773-6813</fax>
+    <email>hardeesoe@yahoo.com</email>
+  </election_official>
+  <election_official id="1702098802">
+    <county_name>PUTNAM</county_name>
+    <state_id>12</state_id>
+    <name>Susan C. McCool</name>
+    <title> Putnam County Supervisor of Elections</title>
+    <phone> 386-329-0224</phone>
+    <fax> 386-329-0455</fax>
+    <email>mccool@putnam-fl.com</email>
+  </election_official>
+  <election_official id="192824469">
+    <county_name>HOLMES</county_name>
+    <state_id>12</state_id>
+    <name>Debbie W. Morris</name>
+    <title> Holmes County Supervisor of Elections</title>
+    <phone> 850-547-1107</phone>
+    <fax> 850-547-4168</fax>
+    <email>debbie@holmeselections.com</email>
+  </election_official>
+  <election_official id="1143366349">
+    <county_name>PINELLAS</county_name>
+    <state_id>12</state_id>
+    <name>Deborah  Clark</name>
+    <title> Pinellas County Supervisor of Elections</title>
+    <phone> 727-464-6108</phone>
+    <fax> 727-464-6239</fax>
+    <email>election@votepinellas.com</email>
+  </election_official>
+  <election_official id="1363465641">
+    <county_name>MONROE</county_name>
+    <state_id>12</state_id>
+    <name>Harry L. Sawyer</name>
+    <title> Monroe County Supervisor of Elections</title>
+    <phone> 305-292-3416</phone>
+    <fax> 305-292-3406</fax>
+    <email>info@keys-elections.org</email>
+  </election_official>
+  <election_official id="1764651757">
+    <county_name>SUMTER</county_name>
+    <state_id>12</state_id>
+    <name>Karen S. Krauss</name>
+    <title> Sumter County Supervisor of Elections</title>
+    <phone> 352-793-0230</phone>
+    <fax> 352-793-0232</fax>
+    <email>Kkrauss@sumterelections.org</email>
+  </election_official>
+  <election_official id="449309548">
+    <county_name>SUWANNEE</county_name>
+    <state_id>12</state_id>
+    <name>Glenda B. Williams</name>
+    <title> Suwannee County Supervisor of Elections</title>
+    <phone> 386-362-2616</phone>
+    <fax> 386-364-5185 </fax>
+    <email>gwilliams@suwanneevotes.com</email>
+  </election_official>
+  <election_official id="1427379697">
+    <county_name>MANATEE</county_name>
+    <state_id>12</state_id>
+    <name>Bob  Sweat</name>
+    <title> Manatee County Supervisor of Elections</title>
+    <phone> 941-741-3823</phone>
+    <fax> 941-741-3820</fax>
+    <email>info@votemanatee.com</email>
+  </election_official>
+  <election_official id="10820046">
+    <county_name>COLUMBIA</county_name>
+    <state_id>12</state_id>
+    <name>Elizabeth P. Horne</name>
+    <title> Columbia County Supervisor of Elections</title>
+    <phone> 386-758-1026</phone>
+    <fax> 386-755-7233 </fax>
+    <email>election@votecolumbia.com</email>
+  </election_official>
+  <election_official id="1914790331">
+    <county_name>CHARLOTTE</county_name>
+    <state_id>12</state_id>
+    <name>Mac V. Horton</name>
+    <title> Charlotte County Supervisor of Elections</title>
+    <phone> 941-833-5400</phone>
+    <fax> 941-833-5422</fax>
+    <email>soe@charlottevotes.com</email>
+  </election_official>
+  <election_official id="1763880710">
+    <county_name>BAKER</county_name>
+    <state_id>12</state_id>
+    <name>Nita  Crawford</name>
+    <title> Baker County Supervisor of Elections</title>
+    <phone> 904-259-6339</phone>
+    <fax> 904-259-2799</fax>
+    <email>vote@bakercountyfl.org</email>
+  </election_official>
+  <election_official id="709096278">
+    <county_name>NASSAU</county_name>
+    <state_id>12</state_id>
+    <name>Vicki P. Cannon</name>
+    <title>  Nassau County Supervisor of Elections</title>
+    <phone> 904-491-7500</phone>
+    <fax> 904-432-1400</fax>
+    <email>vcannon@votenassau.com</email>
+  </election_official>
+  <election_official id="1669576320">
+    <county_name>INDIAN RIVER</county_name>
+    <state_id>12</state_id>
+    <name>Kay  Clem</name>
+    <title> Indian River County Supervisor of Elections</title>
+    <phone> 772-226-3440</phone>
+    <fax> 772-770-5367</fax>
+    <email>info@voteindianriver.com</email>
+  </election_official>
+  <election_official id="1214505306">
+    <county_name>ORANGE</county_name>
+    <state_id>12</state_id>
+    <name>Bill  Cowles</name>
+    <title> Orange County Supervisor of Elections</title>
+    <phone> 407-836-2070</phone>
+    <fax> 407-254-6596</fax>
+    <email>voter@ocfelections.com</email>
+  </election_official>
+  <election_official id="208589617">
+    <county_name>DE SOTO</county_name>
+    <state_id>12</state_id>
+    <name>Mark F. Negley</name>
+    <title> DeSoto County Supervisor of Elections</title>
+    <phone> 863-993-4871</phone>
+    <fax> 863-993-4875</fax>
+    <email>info@votedesoto.com</email>
+  </election_official>
+  <election_official id="1474449582">
+    <county_name>DIXIE</county_name>
+    <state_id>12</state_id>
+    <name>Starlet  Cannon</name>
+    <title> Dixie County Supervisor of Elections</title>
+    <phone> 352-498-1216</phone>
+    <fax> 352-498-1218</fax>
+    <email>dixiecountysoe@bellsouth.net</email>
+  </election_official>
+  <election_official id="539410186">
+    <county_name>JEFFERSON</county_name>
+    <state_id>12</state_id>
+    <name>Marty  Bishop</name>
+    <title> Jefferson County Supervisor of Elections</title>
+    <phone> 850-997-3348</phone>
+    <fax> 850-997-6958</fax>
+    <email>soejeffersonco@aol.com</email>
+  </election_official>
+  <election_official id="2061699076">
+    <county_name>WAKULLA</county_name>
+    <state_id>12</state_id>
+    <name>Sherida S. Crum</name>
+    <title> Wakulla County Supervisor of Elections</title>
+    <phone> 850-926-7575</phone>
+    <fax> 850-926-8104</fax>
+    <email>scrum@wakullaelection.com</email>
+  </election_official>
+  <election_official id="778118603">
+    <county_name>SAINT LUCIE</county_name>
+    <state_id>12</state_id>
+    <name>Gertrude  Walker</name>
+    <title> St. Lucie County Supervisor of Elections</title>
+    <phone> 772-462-1500</phone>
+    <fax> 772-462-1439</fax>
+    <email>elections@slcelections.com</email>
+  </election_official>
+  <election_official id="1161296752">
+    <county_name>BAY</county_name>
+    <state_id>12</state_id>
+    <name>Mark  Andersen</name>
+    <title> Bay County Supervisor of Elections</title>
+    <phone> 850-784-6100</phone>
+    <fax> 850-784-6141</fax>
+    <email>baysuper@bayvotes.org</email>
+  </election_official>
+  <election_official id="1402101839">
+    <county_name>OKALOOSA</county_name>
+    <state_id>12</state_id>
+    <name>Patricia M. Hollarn</name>
+    <title> Okaloosa County Supervisor of Elections</title>
+    <phone> 850-689-5600</phone>
+    <fax> 850-651-7275</fax>
+    <email>phollarn@co.okaloosa.fl.us</email>
+  </election_official>
+  <election_official id="1985490155">
+    <county_name>SAINT JOHNS</county_name>
+    <state_id>12</state_id>
+    <name>Penny  Halyburton</name>
+    <title> St. Johns County Supervisor of Elections</title>
+    <phone> 904-823-2238</phone>
+    <fax> 904-823-2249</fax>
+    <email>pennyh@sjcvotes.us</email>
+  </election_official>
+  <election_official id="1121669239">
+    <county_name>UNION</county_name>
+    <state_id>12</state_id>
+    <name>Deborah K. Osborne</name>
+    <title> Union County Supervisor of Elections</title>
+    <phone> 386-496-2236</phone>
+    <fax> 386-496-1535</fax>
+    <email>unionsoe@circuit8.org</email>
+  </election_official>
+  <election_official id="556949434">
+    <county_name>HAMILTON</county_name>
+    <state_id>12</state_id>
+    <name>Laura  Dees</name>
+    <title> Hamilton County Supervisor of Elections</title>
+    <phone> 386-792-1426</phone>
+    <fax> 386-792-3205</fax>
+    <email>elect@alltel.net</email>
+  </election_official>
+  <election_official id="881187621">
+    <county_name>TAYLOR</county_name>
+    <state_id>12</state_id>
+    <name>Molly H. Lilliott</name>
+    <title> Taylor County Supervisor of Elections</title>
+    <phone> 850-838-3515</phone>
+    <fax> 850-838-3516</fax>
+    <email>taylorelections@gtcom.net</email>
+  </election_official>
+  <election_official id="2120129720">
+    <county_name>FRANKLIN</county_name>
+    <state_id>12</state_id>
+    <name>Doris S. Gibbs</name>
+    <title> Franklin County Supervisor of Elections</title>
+    <phone> 850-653-9520</phone>
+    <fax> 850-653-9092</fax>
+    <email>dorisg@votefranklin.com</email>
+  </election_official>
+  <election_official id="1597902681">
+    <county_name>SARASOTA</county_name>
+    <state_id>12</state_id>
+    <name>Kathy  Dent</name>
+    <title> Sarasota County Supervisor of Elections</title>
+    <phone> 941-861-8600</phone>
+    <fax> 941-861-8609</fax>
+    <email>kdent@srqelections.com</email>
+  </election_official>
+  <election_official id="490499813">
+    <county_name>DUVAL</county_name>
+    <state_id>12</state_id>
+    <name>Jerry  Holland</name>
+    <title> Duval County Supervisor of Elections</title>
+    <phone> 904-630-1414</phone>
+    <fax> 904-630-2920</fax>
+    <email>jholland@coj.net</email>
+  </election_official>
+  <election_official id="1658060282">
+    <county_name>SEMINOLE</county_name>
+    <state_id>12</state_id>
+    <name>Michael  Ertel</name>
+    <title> Seminole County Supervisor of Elections</title>
+    <phone> 407-708-7700</phone>
+    <fax> 407-708-7705</fax>
+    <email>ertel@voteseminole.org</email>
+  </election_official>
+  <election_official id="1635723383">
+    <county_name>OSCEOLA</county_name>
+    <state_id>12</state_id>
+    <name>Connie  Click</name>
+    <title> Osceola County Supervisor of Elections</title>
+    <phone> 407-742-6000</phone>
+    <fax> 407-742-6001</fax>
+    <email>conn@osceola.org</email>
+  </election_official>
+  <election_official id="1667919354">
+    <county_name>JACKSON</county_name>
+    <state_id>12</state_id>
+    <name>Sylvia D. Stephens</name>
+    <title> Jackson County Supervisor of Elections</title>
+    <phone> 850-482-9652</phone>
+    <fax> 850-482-9102</fax>
+    <email>email@jacksoncountysoe.org</email>
+  </election_official>
+  <election_official id="208462972">
+    <county_name>WALTON</county_name>
+    <state_id>12</state_id>
+    <name>Bobby  Beasley</name>
+    <title> Walton County Supervisor of Elections</title>
+    <phone> 850-892-8112</phone>
+    <fax> 850-892-8113</fax>
+    <email>bbeasley@co.walton.fl.us</email>
+  </election_official>
+  <election_official id="421183274">
+    <county_name>GLADES</county_name>
+    <state_id>12</state_id>
+    <name>Holly  Whiddon</name>
+    <title> Glades County Supervisor of Elections</title>
+    <phone> 863-946-6005</phone>
+    <fax> 863-946-0313</fax>
+    <email>hollywhiddon@embarqmail.com</email>
+  </election_official>
+  <election_official id="1731968398">
+    <county_name>WASHINGTON</county_name>
+    <state_id>12</state_id>
+    <name>Carol F. Griffin</name>
+    <title> Washington County Supervisor of Elections</title>
+    <phone> 850-638-6230</phone>
+    <fax> 850-638-6238</fax>
+    <email>cgriffin@wcsoe.org</email>
+  </election_official>
+  <election_official id="1683709097">
+    <county_name>LEON</county_name>
+    <state_id>12</state_id>
+    <name>Ion V. Sancho</name>
+    <title> Leon County Supervisor of Elections</title>
+    <phone> 850-606-8683</phone>
+    <fax> 850-606-8601</fax>
+    <email>ion@leoncountyfl.gov</email>
+  </election_official>
+  <election_official id="2075103968">
+    <county_name>CITRUS</county_name>
+    <state_id>12</state_id>
+    <name>Susan A. Gill</name>
+    <title> Citrus County Supervisor of Elections</title>
+    <phone> 352-341-6740</phone>
+    <fax> 352-341-6749</fax>
+    <email>vote@elections.citrus.fl.us</email>
+  </election_official>
+  <election_official id="1710513437">
+    <county_name>PASCO</county_name>
+    <state_id>12</state_id>
+    <name>Brian E. Corley</name>
+    <title> Pasco County Supervisor of Elections</title>
+    <phone> 352-521-4302</phone>
+    <fax> 352-521-4319</fax>
+    <email>feedback@pascovotes.com</email>
+  </election_official>
+  <election_official id="909426269">
+    <county_name>SANTA ROSA</county_name>
+    <state_id>12</state_id>
+    <name>Ann W. Bodenstein</name>
+    <title> Santa Rosa County Supervisor of Elections</title>
+    <phone> 850-983-1900</phone>
+    <fax> 850-626-7688</fax>
+    <email>soe-bodenstein@co.santarosa.fl.us</email>
+  </election_official>
+  <election_official id="258222191">
+    <county_name>LIBERTY</county_name>
+    <state_id>12</state_id>
+    <name>Marcia  Wood</name>
+    <title> Liberty County Supervisor of Elections</title>
+    <phone> 850-643-5226</phone>
+    <fax> 850-643-5648</fax>
+    <email>vote@libertyelections.com</email>
+  </election_official>
+</listings>

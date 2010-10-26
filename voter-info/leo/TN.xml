@@ -1,0 +1,860 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="1319170607">
+    <county_name>CHEATHAM</county_name>
+    <state_id>47</state_id>
+    <name>Sandy Cherry</name>
+    <title> </title>
+    <phone> 615.792.5770</phone>
+    <fax> 615.792.2014</fax>
+    <email>vote@cheathamcountytn.gov</email>
+  </election_official>
+  <election_official id="1494264400">
+    <county_name>POLK</county_name>
+    <state_id>47</state_id>
+    <name>Sula Jenkins</name>
+    <title> </title>
+    <phone> 423.338.4531</phone>
+    <fax> 423.338.4549</fax>
+    <email>pocoec@comcast.net</email>
+  </election_official>
+  <election_official id="510118957">
+    <county_name>HAWKINS</county_name>
+    <state_id>47</state_id>
+    <name>Patricia Lumpkins</name>
+    <title> </title>
+    <phone> 423.272.8061</phone>
+    <fax> 423.921.9459</fax>
+    <email>VOTEHAWKINS@CHARTERINTERNET.COM</email>
+  </election_official>
+  <election_official id="1596422402">
+    <county_name>MCNAIRY</county_name>
+    <state_id>47</state_id>
+    <name>Nancy Kennedy</name>
+    <title> </title>
+    <phone> 731.645.6432</phone>
+    <fax> 731.645.9124</fax>
+    <email>mcnairyelection@charterinternet.com</email>
+  </election_official>
+  <election_official id="1472181848">
+    <county_name>DEKALB</county_name>
+    <state_id>47</state_id>
+    <name>Lisa Peterson</name>
+    <title> </title>
+    <phone> 615.597.4146</phone>
+    <fax> 615.597.7799</fax>
+    <email>dekalbelections@dtccom.net</email>
+  </election_official>
+  <election_official id="2075119596">
+    <county_name>HARDIN</county_name>
+    <state_id>47</state_id>
+    <name>Rosa Morris</name>
+    <title> </title>
+    <phone> 731.925.3375</phone>
+    <fax> 731.925.9734</fax>
+    <email>hcec@charter.net</email>
+  </election_official>
+  <election_official id="242884661">
+    <county_name>DAVIDSON</county_name>
+    <state_id>47</state_id>
+    <name>Ray Barrett</name>
+    <title> </title>
+    <phone> 615.862.8800</phone>
+    <fax> 615.862.8810</fax>
+    <email>ray.barrett@nashville.gov</email>
+  </election_official>
+  <election_official id="767859144">
+    <county_name>MADISON</county_name>
+    <state_id>47</state_id>
+    <name>Kim Buckley</name>
+    <title> </title>
+    <phone> 731.660.1796</phone>
+    <fax> 731.660.1824</fax>
+    <email>madisonelection@bellsouth.net</email>
+  </election_official>
+  <election_official id="1015549168">
+    <county_name>WHITE</county_name>
+    <state_id>47</state_id>
+    <name>Kathy Bailey</name>
+    <title> </title>
+    <phone> 931.836.3671</phone>
+    <fax> 931.837.3672</fax>
+    <email>whitecoelect@blomand.net</email>
+  </election_official>
+  <election_official id="1455328293">
+    <county_name>CARROLL</county_name>
+    <state_id>47</state_id>
+    <name>Linda Radford</name>
+    <title> </title>
+    <phone> 731.986.1968</phone>
+    <fax> 731.986.1913</fax>
+    <email>lsradford@carroll.tn.org</email>
+  </election_official>
+  <election_official id="402632592">
+    <county_name>MCMINN</county_name>
+    <state_id>47</state_id>
+    <name>Loretta Sliger</name>
+    <title> </title>
+    <phone> 423.745.0843</phone>
+    <fax> 423.744.1646</fax>
+    <email>mcelect03@comcast.net</email>
+  </election_official>
+  <election_official id="1848246178">
+    <county_name>BLEDSOE</county_name>
+    <state_id>47</state_id>
+    <name>Susan Colvard</name>
+    <title> </title>
+    <phone> 423.447.2776</phone>
+    <fax> 423.447.6856</fax>
+    <email> bledsoe.commission@state.tn.us</email>
+  </election_official>
+  <election_official id="1434923140">
+    <county_name>ANDERSON</county_name>
+    <state_id>47</state_id>
+    <name>Gail Martin</name>
+    <title/>
+    <phone> 865.457.6238</phone>
+    <fax>865.457.5624</fax>
+    <email>acec@andersontn.org</email>
+  </election_official>
+  <election_official id="574124156">
+    <county_name>LEWIS</county_name>
+    <state_id>47</state_id>
+    <name>Barbara Hinson</name>
+    <title> </title>
+    <phone> 931.796.3662</phone>
+    <fax> 931.796.3662</fax>
+    <email>lc_elect@bellsouth.net</email>
+  </election_official>
+  <election_official id="1089686923">
+    <county_name>SUMNER</county_name>
+    <state_id>47</state_id>
+    <name>Darlean McDougal</name>
+    <title> </title>
+    <phone> 615.452.1456</phone>
+    <fax> 615.230.6147</fax>
+    <email>dmcdougal@sumnertn.org</email>
+  </election_official>
+  <election_official id="83779552">
+    <county_name>GREENE</county_name>
+    <state_id>47</state_id>
+    <name>Josephine Roberts</name>
+    <title> </title>
+    <phone> 423.798.1715</phone>
+    <fax> 423.798.1719</fax>
+    <email>gcec4u@embarqmail.com</email>
+  </election_official>
+  <election_official id="1771063821">
+    <county_name>CUMBERLAND</county_name>
+    <state_id>47</state_id>
+    <name>Suzanne Smith</name>
+    <title> </title>
+    <phone> 931.484.4919</phone>
+    <fax> 931.456.9409</fax>
+    <email>ssccec@citlink.net</email>
+  </election_official>
+  <election_official id="942405652">
+    <county_name>LOUDON</county_name>
+    <state_id>47</state_id>
+    <name>Dana Zehner</name>
+    <title> </title>
+    <phone> 865.458.2560</phone>
+    <fax> 865.458.4825</fax>
+    <email>election@loudoncounty-tn.gov</email>
+  </election_official>
+  <election_official id="1616080428">
+    <county_name>FAYETTE</county_name>
+    <state_id>47</state_id>
+    <name>Lenita McCraw</name>
+    <title> </title>
+    <phone> 901.465.5223</phone>
+    <fax> 901.465.5238</fax>
+    <email>FayetteCo@bellsouth.net</email>
+  </election_official>
+  <election_official id="770016356">
+    <county_name>HUMPHREYS</county_name>
+    <state_id>47</state_id>
+    <name>Joann Bullion</name>
+    <title> </title>
+    <phone> 931.296.6504</phone>
+    <fax> 931.296.6509</fax>
+    <email>jbullion@multipro.com</email>
+  </election_official>
+  <election_official id="1429822517">
+    <county_name>WILLIAMSON</county_name>
+    <state_id>47</state_id>
+    <name>Ann Beard</name>
+    <title> </title>
+    <phone> 615.790.5711</phone>
+    <fax> 615.790.5617</fax>
+    <email>annb@williamson-tn.org</email>
+  </election_official>
+  <election_official id="72724102">
+    <county_name>BRADLEY</county_name>
+    <state_id>47</state_id>
+    <name>Libby Breeding</name>
+    <title> </title>
+    <phone> 865.273.5920</phone>
+    <fax> 865.273.5927</fax>
+    <email>lbreeding@blounttn.org</email>
+  </election_official>
+  <election_official id="612746798">
+    <county_name>VAN BUREN</county_name>
+    <state_id>47</state_id>
+    <name>Wayne Simons</name>
+    <title> </title>
+    <phone> 931.946.2728</phone>
+    <fax> 931.946.2876</fax>
+    <email>vanburen.commission@state.tn.us</email>
+  </election_official>
+  <election_official id="345684370">
+    <county_name>WEAKLEY</county_name>
+    <state_id>47</state_id>
+    <name>Diane Cashon</name>
+    <title> </title>
+    <phone> 731.364.5564</phone>
+    <fax> 731.364.3229</fax>
+    <email>weakleyelection@frontiernet.net</email>
+  </election_official>
+  <election_official id="2117502562">
+    <county_name>MACON</county_name>
+    <state_id>47</state_id>
+    <name>Dianne Cline</name>
+    <title> </title>
+    <phone> 615.666.2199</phone>
+    <fax> 615.666.7469</fax>
+    <email>maconelect@nctc.com</email>
+  </election_official>
+  <election_official id="1706291666">
+    <county_name>GRUNDY</county_name>
+    <state_id>47</state_id>
+    <name>Donna Basham</name>
+    <title> </title>
+    <phone> 931.692.3551</phone>
+    <fax> 931.692.3573</fax>
+    <email>grundyco@hotmail.com</email>
+  </election_official>
+  <election_official id="898048947">
+    <county_name>MARION</county_name>
+    <state_id>47</state_id>
+    <name>Holly Henegar</name>
+    <title> </title>
+    <phone> 423.942.2108</phone>
+    <fax> 423.942.1082</fax>
+    <email>mcelection@bellsouth.net</email>
+  </election_official>
+  <election_official id="2098553988">
+    <county_name>HOUSTON</county_name>
+    <state_id>47</state_id>
+    <name>Gay Robinson</name>
+    <title> </title>
+    <phone> 931.289.3047</phone>
+    <fax> 9312895010</fax>
+    <email>houstonelection@yahoo.com</email>
+  </election_official>
+  <election_official id="2006080461">
+    <county_name>HENRY</county_name>
+    <state_id>47</state_id>
+    <name>Glenda McNutt</name>
+    <title> </title>
+    <phone> 731.642.0411</phone>
+    <fax> 731.644.7302</fax>
+    <email>henry.commission@state.tn.us</email>
+  </election_official>
+  <election_official id="1534666444">
+    <county_name>WARREN</county_name>
+    <state_id>47</state_id>
+    <name>Donna Yates</name>
+    <title> </title>
+    <phone> 931.473.5834</phone>
+    <fax> 931.473.3984</fax>
+    <email>warren.commission@state.tn.us</email>
+  </election_official>
+  <election_official id="1848755788">
+    <county_name>SEVIER</county_name>
+    <state_id>47</state_id>
+    <name>Edgar Kuncitis</name>
+    <title> </title>
+    <phone> 865.453.6985</phone>
+    <fax> 865.429.0376</fax>
+    <email>sevierelect@yahoo.com</email>
+  </election_official>
+  <election_official id="1284787977">
+    <county_name>WAYNE</county_name>
+    <state_id>47</state_id>
+    <name>Diane Cashon</name>
+    <title> </title>
+    <phone> 731.364.5564</phone>
+    <fax> 731.364.3229</fax>
+    <email>weakleyelection@frontiernet.net</email>
+  </election_official>
+  <election_official id="1461463090">
+    <county_name>CLAY</county_name>
+    <state_id>47</state_id>
+    <name>Frances Donaldson</name>
+    <title> </title>
+    <phone> 931.243.2536</phone>
+    <fax> 931.243.2543</fax>
+    <email>fdclayelection@yahoo.com</email>
+  </election_official>
+  <election_official id="1304535664">
+    <county_name>MOORE</county_name>
+    <state_id>47</state_id>
+    <name>Judy Copeland</name>
+    <title> </title>
+    <phone> 931.759.4532</phone>
+    <fax>931.759.6394 </fax>
+    <email>vregmc@yahoo.com</email>
+  </election_official>
+  <election_official id="1321674712">
+    <county_name>WILSON</county_name>
+    <state_id>47</state_id>
+    <name>Lynn Harris</name>
+    <title> </title>
+    <phone> 615.444.0216</phone>
+    <fax> 615.443.2669</fax>
+    <email>office@wilsonelections.com</email>
+  </election_official>
+  <election_official id="762959319">
+    <county_name>LINCOLN</county_name>
+    <state_id>47</state_id>
+    <name>Shelia Allen</name>
+    <title> </title>
+    <phone> 931.433.6220</phone>
+    <fax> 931.433.9308</fax>
+    <email>electioncommission@fpunet.com</email>
+  </election_official>
+  <election_official id="579796782">
+    <county_name>BLOUNT</county_name>
+    <state_id>47</state_id>
+    <name>Libby Breeding</name>
+    <title> </title>
+    <phone> 865.273.5920</phone>
+    <fax> 865.273.5927</fax>
+    <email>lbreeding@blounttn.org</email>
+  </election_official>
+  <election_official id="1012280259">
+    <county_name>JOHNSON</county_name>
+    <state_id>47</state_id>
+    <name>Darlene Atwood</name>
+    <title> </title>
+    <phone> 423.727.8592</phone>
+    <fax> 423.727.9168</fax>
+    <email>johnson.commission@state.tn.us</email>
+  </election_official>
+  <election_official id="1576456072">
+    <county_name>CROCKETT</county_name>
+    <state_id>47</state_id>
+    <name>Pat Forsythe</name>
+    <title> </title>
+    <phone> 731.696.5465</phone>
+    <fax> 731.696.4977</fax>
+    <email>pat@crockettnet.com</email>
+  </election_official>
+  <election_official id="437126807">
+    <county_name>GILES</county_name>
+    <state_id>47</state_id>
+    <name>Kathy Bassham</name>
+    <title> </title>
+    <phone> 931.363.2424</phone>
+    <fax> 931.424.1436</fax>
+    <email>gcelection@energize.net</email>
+  </election_official>
+  <election_official id="1881651154">
+    <county_name>CLAIBORNE</county_name>
+    <state_id>47</state_id>
+    <name>Carolyn O'Dell</name>
+    <title> </title>
+    <phone> 423.626.5128</phone>
+    <fax> 423.626.6770</fax>
+    <email>claibornecounty@gmail.com</email>
+  </election_official>
+  <election_official id="805185276">
+    <county_name>LAKE</county_name>
+    <state_id>47</state_id>
+    <name>Michelle Morgan</name>
+    <title> </title>
+    <phone> 731.253.7521</phone>
+    <fax> 731.253.3481</fax>
+    <email>lakecountyof@bellsouth.net</email>
+  </election_official>
+  <election_official id="629781005">
+    <county_name>COFFEE</county_name>
+    <state_id>47</state_id>
+    <name>Connie Casteel</name>
+    <title> </title>
+    <phone> 931.723.5103</phone>
+    <fax> 931.723.8279</fax>
+    <email>votecoffee@coffeecountytn.org </email>
+  </election_official>
+  <election_official id="1717810068">
+    <county_name>GIBSON</county_name>
+    <state_id>47</state_id>
+    <name>Molly McWherter</name>
+    <title> </title>
+    <phone> 731.855.7669</phone>
+    <fax> 731.855.7606</fax>
+    <email>votegibsontn@co.gibson.tn.us</email>
+  </election_official>
+  <election_official id="1051689321">
+    <county_name>MARSHALL</county_name>
+    <state_id>47</state_id>
+    <name>Jo Ann Henry</name>
+    <title> </title>
+    <phone> 931.359.4894</phone>
+    <fax> 931.359.0554</fax>
+    <email>mcec@bellsouth.net</email>
+  </election_official>
+  <election_official id="292255098">
+    <county_name>UNICOI</county_name>
+    <state_id>47</state_id>
+    <name>Sarah Bailey</name>
+    <title> </title>
+    <phone> 423.743.6521</phone>
+    <fax> 423.735.7327</fax>
+    <email>vote@unicoicountytn.gov</email>
+  </election_official>
+  <election_official id="1116502146">
+    <county_name>CAMPBELL</county_name>
+    <state_id>47</state_id>
+    <name>Dean Sexton</name>
+    <title> </title>
+    <phone> 423.562.9777</phone>
+    <fax> 423.562.9758</fax>
+    <email>ccelectn@ccdi.net</email>
+  </election_official>
+  <election_official id="234989141">
+    <county_name>GRAINGER</county_name>
+    <state_id>47</state_id>
+    <name>Kathy Winstead</name>
+    <title> </title>
+    <phone> 865.828.5132</phone>
+    <fax> 865.828.6161</fax>
+    <email>graingerelection@gmail.com</email>
+  </election_official>
+  <election_official id="1246041765">
+    <county_name>PUTNAM</county_name>
+    <state_id>47</state_id>
+    <name>Nancy Boman</name>
+    <title> </title>
+    <phone> 931.526.2566</phone>
+    <fax> 931.526.8724</fax>
+    <email>nboman@putnamco.org</email>
+  </election_official>
+  <election_official id="216338275">
+    <county_name>SHELBY</county_name>
+    <state_id>47</state_id>
+    <name>James Johnson</name>
+    <title> </title>
+    <phone> 901.545.2600</phone>
+    <fax> 901.545.3676</fax>
+    <email>voteinfo@shelbycountytn.gov</email>
+  </election_official>
+  <election_official id="247632448">
+    <county_name>LAUDERDALE</county_name>
+    <state_id>47</state_id>
+    <name>Memory Crain</name>
+    <title> </title>
+    <phone> 731.635.2881</phone>
+    <fax> 731.221.0874</fax>
+    <email>lauderdalecou310@bellsouth.net</email>
+  </election_official>
+  <election_official id="1147660145">
+    <county_name>ROANE</county_name>
+    <state_id>47</state_id>
+    <name>Tony Brown</name>
+    <title> </title>
+    <phone> 865.376.3184</phone>
+    <fax> 865.376.2017</fax>
+    <email>tbrown@roanegov.org</email>
+  </election_official>
+  <election_official id="348040903">
+    <county_name>MONROE</county_name>
+    <state_id>47</state_id>
+    <name>Randall Moser</name>
+    <title> </title>
+    <phone> 423.442.2461</phone>
+    <fax> 423.442.9432</fax>
+    <email>monroevotes@compnet.ws</email>
+  </election_official>
+  <election_official id="858298241">
+    <county_name>TROUSDALE</county_name>
+    <state_id>47</state_id>
+    <name>Linda Potts</name>
+    <title> </title>
+    <phone> 615.374.2712</phone>
+    <fax> 615.374.2142</fax>
+    <email>tclpvote@yahoo.com</email>
+  </election_official>
+  <election_official id="249980338">
+    <county_name>CANNON</county_name>
+    <state_id>47</state_id>
+    <name>Lynn Bush</name>
+    <title> </title>
+    <phone> 615.563.5650</phone>
+    <fax> 615.563.2415</fax>
+    <email>election@dtccom.net</email>
+  </election_official>
+  <election_official id="541579939">
+    <county_name>KNOX</county_name>
+    <state_id>47</state_id>
+    <name>Greg Mackay</name>
+    <title> </title>
+    <phone> 865.215.2480</phone>
+    <fax> 865.215.4239</fax>
+    <email>election.central@knoxcounty.org</email>
+  </election_official>
+  <election_official id="23924012">
+    <county_name>SMITH</county_name>
+    <state_id>47</state_id>
+    <name>Charlene Bass</name>
+    <title> </title>
+    <phone> 615.735.8241</phone>
+    <fax> 615.735.8253</fax>
+    <email>smithelections@comcast.net</email>
+  </election_official>
+  <election_official id="1496081147">
+    <county_name>BEDFORD</county_name>
+    <state_id>47</state_id>
+    <name>Summer Leverette</name>
+    <title> </title>
+    <phone> 931.684.0531</phone>
+    <fax> 931.685.0975</fax>
+    <email> countyofbedford@bellsouth.net</email>
+  </election_official>
+  <election_official id="1087990492">
+    <county_name>STEWART</county_name>
+    <state_id>47</state_id>
+    <name>Nellie Anderson</name>
+    <title> </title>
+    <phone> 931.232.5100</phone>
+    <fax> 931.232.4017</fax>
+    <email>election_81@yahoo.com</email>
+  </election_official>
+  <election_official id="65010259">
+    <county_name>COCKE</county_name>
+    <state_id>47</state_id>
+    <name>Joyce Slagle</name>
+    <title> </title>
+    <phone> 423.623.2042</phone>
+    <fax> 423.625.8416</fax>
+    <email>ccec@cockecounty.net</email>
+  </election_official>
+  <election_official id="1631555508">
+    <county_name>CARTER</county_name>
+    <state_id>47</state_id>
+    <name>Tracy Harris</name>
+    <title> </title>
+    <phone> 423.542.1822</phone>
+    <fax> 423.547.1534</fax>
+    <email>election.carterco@charterbn.com</email>
+  </election_official>
+  <election_official id="117823">
+    <county_name>JEFFERSON</county_name>
+    <state_id>47</state_id>
+    <name>Tycia Kesterson</name>
+    <title> </title>
+    <phone> 865.397.3440</phone>
+    <fax> 865.397.5062</fax>
+    <email>tyciak@charter.net</email>
+  </election_official>
+  <election_official id="2135105905">
+    <county_name>SCOTT</county_name>
+    <state_id>47</state_id>
+    <name>Gabe Lowe</name>
+    <title> </title>
+    <phone> 423.663.2430</phone>
+    <fax> 423.663.3127</fax>
+    <email>scotteleccom@highland.net</email>
+  </election_official>
+  <election_official id="1058543616">
+    <county_name>ROBERTSON</county_name>
+    <state_id>47</state_id>
+    <name>Cathy Hamsley</name>
+    <title> </title>
+    <phone> 615.384.5592</phone>
+    <fax> 615.382.3122</fax>
+    <email>robertson.commission@state.tn.us</email>
+  </election_official>
+  <election_official id="133887981">
+    <county_name>MAURY</county_name>
+    <state_id>47</state_id>
+    <name>Todd Baxter</name>
+    <title> </title>
+    <phone> 931.375.6001</phone>
+    <fax> 931.375.6019</fax>
+    <email>mauryelection@maurycounty-tn.gov</email>
+  </election_official>
+  <election_official id="451796474">
+    <county_name>UNION</county_name>
+    <state_id>47</state_id>
+    <name>Larry Roe</name>
+    <title> </title>
+    <phone> 865.992.3471</phone>
+    <fax> 865.992.7360</fax>
+    <email>lroe136@comcast.net</email>
+  </election_official>
+  <election_official id="231970475">
+    <county_name>HAMILTON</county_name>
+    <state_id>47</state_id>
+    <name>Bud Knowles</name>
+    <title> </title>
+    <phone> 423.493.5100</phone>
+    <fax> 4234935101</fax>
+    <email>cmullis@hamiltontn.gov</email>
+  </election_official>
+  <election_official id="24684507">
+    <county_name>HICKMAN</county_name>
+    <state_id>47</state_id>
+    <name>Paulette Baker</name>
+    <title> </title>
+    <phone> 931.729.4560</phone>
+    <fax> 931.729.0375</fax>
+    <email>election@hickmanco.com</email>
+  </election_official>
+  <election_official id="1797580171">
+    <county_name>OVERTON</county_name>
+    <state_id>47</state_id>
+    <name>Tommy Simcox</name>
+    <title> </title>
+    <phone> 9318235985</phone>
+    <fax> 931.823.5884</fax>
+    <email>overton.commission@state.tn.us</email>
+  </election_official>
+  <election_official id="746952429">
+    <county_name>OBION</county_name>
+    <state_id>47</state_id>
+    <name>Katie Guess</name>
+    <title> </title>
+    <phone> 731.885.1901</phone>
+    <fax> 731.885.6280</fax>
+    <email>kguess@obioncountyelection.com</email>
+  </election_official>
+  <election_official id="433482802">
+    <county_name>FRANKLIN</county_name>
+    <state_id>47</state_id>
+    <name>Phillip Custer</name>
+    <title> </title>
+    <phone> 931.967.1893</phone>
+    <fax> 931.967.5317</fax>
+    <email>frcoelec@bellsouth.net</email>
+  </election_official>
+  <election_official id="2023777597">
+    <county_name>MEIGS</county_name>
+    <state_id>47</state_id>
+    <name>Clata Thompson</name>
+    <title> </title>
+    <phone> 423.334.5866</phone>
+    <fax> 4233347203</fax>
+    <email>meigscoelect@charterinternet.com</email>
+  </election_official>
+  <election_official id="1593848537">
+    <county_name>HENDERSON</county_name>
+    <state_id>47</state_id>
+    <name>Bob Wadley</name>
+    <title> </title>
+    <phone> 731.968.6832</phone>
+    <fax> 731.968.0937</fax>
+    <email>partyanimals@netease.net</email>
+  </election_official>
+  <election_official id="652517841">
+    <county_name>LAWRENCE</county_name>
+    <state_id>47</state_id>
+    <name>June Davis</name>
+    <title> </title>
+    <phone> 931.762.7836</phone>
+    <fax> 931.762.7839</fax>
+    <email>ec@lawcotn.org</email>
+  </election_official>
+  <election_official id="1494573695">
+    <county_name>TIPTON</county_name>
+    <state_id>47</state_id>
+    <name>Linda Burnett</name>
+    <title> </title>
+    <phone> 901.476.0223</phone>
+    <fax> 901.476.0233</fax>
+    <email>election@tiptonco.com</email>
+  </election_official>
+  <election_official id="2121244998">
+    <county_name>PERRY</county_name>
+    <state_id>47</state_id>
+    <name>Gaye Treadwell</name>
+    <title> </title>
+    <phone>931.589.2025 </phone>
+    <fax> 931.589.5819</fax>
+    <email>perry.commission@state.tn.us</email>
+  </election_official>
+  <election_official id="1100210248">
+    <county_name>HAYWOOD</county_name>
+    <state_id>47</state_id>
+    <name>Andrea Smothers</name>
+    <title> </title>
+    <phone> 731.772.1760</phone>
+    <fax> 731.772.3864</fax>
+    <email>haywoodcounty@bellsouth.net</email>
+  </election_official>
+  <election_official id="564439715">
+    <county_name>JACKSON</county_name>
+    <state_id>47</state_id>
+    <name>Barbara West</name>
+    <title> </title>
+    <phone> 931.268.9284</phone>
+    <fax> 931.268.2414</fax>
+    <email>jacksoncobw@twlakes.net</email>
+  </election_official>
+  <election_official id="477102472">
+    <county_name>CHESTER</county_name>
+    <state_id>47</state_id>
+    <name>Carolyn Thomas</name>
+    <title> </title>
+    <phone> 731.989.4039</phone>
+    <fax> 731.989.5023</fax>
+    <email>chester.commission@state.tn.us</email>
+  </election_official>
+  <election_official id="1270423608">
+    <county_name>BENTON</county_name>
+    <state_id>47</state_id>
+    <name>Diane Latimer</name>
+    <title> </title>
+    <phone> 731.584.6144</phone>
+    <fax> 731.584.5956</fax>
+    <email>becoelec@charter.net</email>
+  </election_official>
+  <election_official id="163188219">
+    <county_name>DICKSON</county_name>
+    <state_id>47</state_id>
+    <name>Luanne Greer</name>
+    <title> </title>
+    <phone> 615.789.6021</phone>
+    <fax> 615.789.3333</fax>
+    <email>lgreer@dicksoncounty.net</email>
+  </election_official>
+  <election_official id="2072256902">
+    <county_name>HAMBLEN</county_name>
+    <state_id>47</state_id>
+    <name>Wanda Neal</name>
+    <title> </title>
+    <phone> 423.586.7169</phone>
+    <fax> 423.585.4053</fax>
+    <email>wneal@co.hamblen.tn.us</email>
+  </election_official>
+  <election_official id="2055868315">
+    <county_name>WASHINGTON</county_name>
+    <state_id>47</state_id>
+    <name>Connie Sinks</name>
+    <title> </title>
+    <phone> 423.753.1688</phone>
+    <fax> 423.753.1812</fax>
+    <email>vote@wcecoffice.com</email>
+  </election_official>
+  <election_official id="932950504">
+    <county_name>DYER</county_name>
+    <state_id>47</state_id>
+    <name>Jane Heathcott</name>
+    <title> </title>
+    <phone> 731.286.4268</phone>
+    <fax> 731.286.3581</fax>
+    <email>vote1@bellsouth.net</email>
+  </election_official>
+  <election_official id="1302543273">
+    <county_name>SEQUATCHIE</county_name>
+    <state_id>47</state_id>
+    <name>Linda Pittman</name>
+    <title> </title>
+    <phone> 423.949.2431</phone>
+    <fax> 423.949.8396</fax>
+    <email>seqelection@bledsoe.net</email>
+  </election_official>
+  <election_official id="1638830469">
+    <county_name>MORGAN</county_name>
+    <state_id>47</state_id>
+    <name>Minnie Armes</name>
+    <title> </title>
+    <phone> 423.346.3190</phone>
+    <fax> 423.346.4350</fax>
+    <email>wartburg18@yahoo.com</email>
+  </election_official>
+  <election_official id="1157361234">
+    <county_name>SULLIVAN</county_name>
+    <state_id>47</state_id>
+    <name>Gena Frye</name>
+    <title> </title>
+    <phone> 423.323.6444</phone>
+    <fax> 423.323.6443</fax>
+    <email>scec@scecweb.org</email>
+  </election_official>
+  <election_official id="1063167689">
+    <county_name>MONTGOMERY</county_name>
+    <state_id>47</state_id>
+    <name>Vickie Koelman</name>
+    <title> </title>
+    <phone> 931.648.5707</phone>
+    <fax> 931.553.5155</fax>
+    <email>vote@montgomerycountytn.org</email>
+  </election_official>
+  <election_official id="182472169">
+    <county_name>PICKETT</county_name>
+    <state_id>47</state_id>
+    <name>Johnny Lee</name>
+    <title> </title>
+    <phone> 931.864.3583</phone>
+    <fax> 931.864.6362</fax>
+    <email>pickett.commission@state.tn.us</email>
+  </election_official>
+  <election_official id="230809145">
+    <county_name>RUTHERFORD</county_name>
+    <state_id>47</state_id>
+    <name>Hooper Penuel</name>
+    <title> </title>
+    <phone> 615.898.7743</phone>
+    <fax> 615.898.7938</fax>
+    <email>election@rutherfordcounty.org</email>
+  </election_official>
+  <election_official id="143960276">
+    <county_name>FENTRESS</county_name>
+    <state_id>47</state_id>
+    <name>Sherlyn Stephens-York</name>
+    <title> </title>
+    <phone> 9318797162</phone>
+    <fax> 931.879.2579</fax>
+    <email>fentress.commission@state.tn.us</email>
+  </election_official>
+  <election_official id="1021574918">
+    <county_name>DECATUR</county_name>
+    <state_id>47</state_id>
+    <name>Irene Campbell</name>
+    <title> </title>
+    <phone> 731.852.2911</phone>
+    <fax> 731.852.2059</fax>
+    <email>Decatur.Commission@state.tn.us</email>
+  </election_official>
+  <election_official id="573418037">
+    <county_name>HANCOCK</county_name>
+    <state_id>47</state_id>
+    <name>Sue Greer</name>
+    <title> </title>
+    <phone> 423.733.4549</phone>
+    <fax> 4237334596</fax>
+    <email>hancock.commission@state.tn.us</email>
+  </election_official>
+  <election_official id="539906699">
+    <county_name>HARDEMAN</county_name>
+    <state_id>47</state_id>
+    <name>Amber Moore</name>
+    <title> </title>
+    <phone> 731.658.4751</phone>
+    <fax> 731.659.2363</fax>
+    <email>hcelection@yahoo.com</email>
+  </election_official>
+  <election_official id="1400961130">
+    <county_name>RHEA</county_name>
+    <state_id>47</state_id>
+    <name>Brenda Dodson</name>
+    <title> </title>
+    <phone> 423.775.7816</phone>
+    <fax> 423.775.7880</fax>
+    <email>dodsonb@charterinternet.com</email>
+  </election_official>
+</listings>

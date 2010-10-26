@@ -1,0 +1,221 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="1759648561">
+    <county_name>CARROLL</county_name>
+    <state_id>24</state_id>
+    <name>Gail Carter</name>
+    <title> Election Director</title>
+    <phone> 410-386-2080</phone>
+    <fax> 410-876-3925</fax>
+    <email> ccboe@ccg.carr.org</email>
+  </election_official>
+  <election_official id="410308096">
+    <county_name>HARFORD</county_name>
+    <state_id>24</state_id>
+    <name>James Massey</name>
+    <title> Election Director</title>
+    <phone> 410-638-3565</phone>
+    <fax> 410-638-3310</fax>
+    <email> elections@harfordcountymd.gov</email>
+  </election_official>
+  <election_official id="1093131135">
+    <county_name>FREDERICK</county_name>
+    <state_id>24</state_id>
+    <name>Stuart Harvey</name>
+    <title> Election Director</title>
+    <phone> 301-600-8683</phone>
+    <fax> 301-600-2344</fax>
+    <email> electionboard@fredco-md.net</email>
+  </election_official>
+  <election_official id="986882264">
+    <county_name>SOMERSET</county_name>
+    <state_id>24</state_id>
+    <name>Joanne Emely</name>
+    <title> Election Director</title>
+    <phone> 410-651-0767</phone>
+    <fax> 410-651-5130</fax>
+    <email> elections@co.somerset.md.us</email>
+  </election_official>
+  <election_official id="1772390611">
+    <county_name>CECIL</county_name>
+    <state_id>24</state_id>
+    <name>Evelyn Potter</name>
+    <title> Election Director</title>
+    <phone> 410-996-5310</phone>
+    <fax> 410-996-5066</fax>
+    <email> cecil_elect@netzero.net</email>
+  </election_official>
+  <election_official id="1802641509">
+    <county_name>BALTIMORE</county_name>
+    <state_id>24</state_id>
+    <name>Jacqueline McDaniel</name>
+    <title> Election Director</title>
+    <phone> 410-887-5700</phone>
+    <fax> 410-887-0894</fax>
+    <email> elections@baltimorecountymd.gov</email>
+  </election_official>
+  <election_official id="156565143">
+    <county_name>QUEEN ANNES</county_name>
+    <state_id>24</state_id>
+    <name>Brittani Thomas</name>
+    <title> Election Director</title>
+    <phone> 410-758-0832</phone>
+    <fax> 410-758-1119</fax>
+    <email> qacelections_director@verizon.net</email>
+  </election_official>
+  <election_official id="114255928">
+    <county_name>CAROLINE</county_name>
+    <state_id>24</state_id>
+    <name>Sandra Logan</name>
+    <title>Election Director</title>
+    <phone> 410-479-8145</phone>
+    <fax> 410-479-5736</fax>
+    <email> election@co.caroline.md.us</email>
+  </election_official>
+  <election_official id="1745408452">
+    <county_name>WORCESTER</county_name>
+    <state_id>24</state_id>
+    <name>Patricia Jackson</name>
+    <title> Election Director</title>
+    <phone> 410-632-1320</phone>
+    <fax> 410-632-3031</fax>
+    <email> pattijackson@verizon.net</email>
+  </election_official>
+  <election_official id="271699922">
+    <county_name>CALVERT</county_name>
+    <state_id>24</state_id>
+    <name>Gail L. Hatfield</name>
+    <title> Election Director</title>
+    <phone> 410-535-2214 or 301-855-1376</phone>
+    <fax> 410-535-5009</fax>
+    <email> elections@co.cal.md.us</email>
+  </election_official>
+  <election_official id="291326585">
+    <county_name>TALBOT</county_name>
+    <state_id>24</state_id>
+    <name>Patricia Mitchell</name>
+    <title> Election Director</title>
+    <phone> 410-770-8099</phone>
+    <fax> 410-770-8078</fax>
+    <email> pmitchell@talbotcountymd.gov</email>
+  </election_official>
+  <election_official id="459040981">
+    <county_name>BALTIMORE CITY</county_name>
+    <state_id>24</state_id>
+    <name>Armstead B. C. Jones, </name>
+    <title> Election Director</title>
+    <phone> 410-396-5550</phone>
+    <fax> 410-962-8747</fax>
+    <email> terri.marciszewski@baltimorecity.gov</email>
+  </election_official>
+  <election_official id="923421769">
+    <county_name>ANNE ARUNDEL</county_name>
+    <state_id>24</state_id>
+    <name>Joseph A. Torre</name>
+    <title> Election Director</title>
+    <phone> 410-222-6600</phone>
+    <fax> 410-222-6833</fax>
+    <email> elections@aacounty.org</email>
+  </election_official>
+  <election_official id="1346240795">
+    <county_name>HOWARD</county_name>
+    <state_id>24</state_id>
+    <name>Betty Nordaas</name>
+    <title> Election Director</title>
+    <phone> 410-313-5820</phone>
+    <fax> 410-313-5899</fax>
+    <email> bnordaas@co.ho.md.us</email>
+  </election_official>
+  <election_official id="1345363841">
+    <county_name>KENT</county_name>
+    <state_id>24</state_id>
+    <name>Cheemoandia Blake</name>
+    <title> Election Director</title>
+    <phone> 410-778-0038</phone>
+    <fax> 410-778-0265</fax>
+    <email>elections@kentgov.org </email>
+  </election_official>
+  <election_official id="1124423934">
+    <county_name>SAINT MARYS</county_name>
+    <state_id>24</state_id>
+    <name>Brenda Burch</name>
+    <title> Election Director</title>
+    <phone> 301-475-7844</phone>
+    <fax> 301-475-4077</fax>
+    <email> brenda.burch@co.saint-marys.md.us</email>
+  </election_official>
+  <election_official id="294643569">
+    <county_name>WICOMICO</county_name>
+    <state_id>24</state_id>
+    <name>Anthony Gutierrez</name>
+    <title> Election Director</title>
+    <phone> 410-548-4830</phone>
+    <fax> 410-548-4849</fax>
+    <email> election@wicomicocounty.org</email>
+  </election_official>
+  <election_official id="409565255">
+    <county_name>DORCHESTER</county_name>
+    <state_id>24</state_id>
+    <name>Karin Kuntz</name>
+    <title> Election Director</title>
+    <phone> 410-228-2560</phone>
+    <fax> 410-228-9635</fax>
+    <email> kkuntz@docogonet.com</email>
+  </election_official>
+  <election_official id="1085285340">
+    <county_name>ALLEGANY</county_name>
+    <state_id>24</state_id>
+    <name>Catherine O. Davis</name>
+    <title> Election Director</title>
+    <phone> 301-777-5931</phone>
+    <fax> 301-777-2430</fax>
+    <email> elections@allconet.org</email>
+  </election_official>
+  <election_official id="1638517514">
+    <county_name>WASHINGTON</county_name>
+    <state_id>24</state_id>
+    <name>Dorothy Kaetzel</name>
+    <title> Election Director</title>
+    <phone> 240-313-2050</phone>
+    <fax> 240-313-2051</fax>
+    <email> dkaetzel@washco-md.net</email>
+  </election_official>
+  <election_official id="288682252">
+    <county_name>CHARLES</county_name>
+    <state_id>24</state_id>
+    <name>Tracy Dickerson</name>
+    <title> Election Director</title>
+    <phone> 301-934-8972</phone>
+    <fax> 301-934-6487</fax>
+    <email> dickerst@charlescounty.org</email>
+  </election_official>
+  <election_official id="1966349804">
+    <county_name>GARRETT</county_name>
+    <state_id>24</state_id>
+    <name>Steve Fratz</name>
+    <title> Election Director</title>
+    <phone> 301-334-6985</phone>
+    <fax> 301-334-6988</fax>
+    <email> sfratz@garrettcounty.org</email>
+  </election_official>
+  <election_official id="1262252578">
+    <county_name>PRINCE GEORGES</county_name>
+    <state_id>24</state_id>
+    <name>Alisha Alexander</name>
+    <title> Election Director</title>
+    <phone> 301-430-8020</phone>
+    <fax> 301-430-8080</fax>
+    <email> election@co.pg.md.us</email>
+  </election_official>
+  <election_official id="725238359">
+    <county_name>MONTGOMERY</county_name>
+    <state_id>24</state_id>
+    <name>Margaret A. Jurgensen</name>
+    <title> Election Director</title>
+    <phone> 240-777-8500</phone>
+    <fax> 240-777-8505</fax>
+    <email> elections@montgomerycountymd.gov</email>
+  </election_official>
+</listings>

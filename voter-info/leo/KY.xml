@@ -1,0 +1,1085 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="66538962">
+    <county_name>BREATHITT</county_name>
+    <state_id>21</state_id>
+    <name>Tony G. Watts</name>
+    <title> County Clerk</title>
+    <phone> (606) 666-3810</phone>
+    <fax> (606) 666-3807</fax>
+    <email> tonywatts@kih.net</email>
+  </election_official>
+  <election_official id="1261286394">
+    <county_name>OWEN</county_name>
+    <state_id>21</state_id>
+    <name>Joan Kincaid</name>
+    <title> County Clerk</title>
+    <phone>(502) 484-2213 </phone>
+    <fax> (502) 484-1002</fax>
+    <email>owencountyof535@bellsouth.net</email>
+  </election_official>
+  <election_official id="433219743">
+    <county_name>JESSAMINE</county_name>
+    <state_id>21</state_id>
+    <name>Eva L. McDaniel</name>
+    <title> County Clerk</title>
+    <phone>  (859) 885-4161</phone>
+    <fax> (859) 885-5837</fax>
+    <email> coclk@alltel.net</email>
+  </election_official>
+  <election_official id="1271264052">
+    <county_name>HARDIN</county_name>
+    <state_id>21</state_id>
+    <name>Kenneth L. Tabb</name>
+    <title> County Clerk</title>
+    <phone> (270) 765-2171</phone>
+    <fax> (270) 765-6193</fax>
+    <email> ktabb.hcco@hcky.org</email>
+  </election_official>
+  <election_official id="376621494">
+    <county_name>MUHLENBERG</county_name>
+    <state_id>21</state_id>
+    <name>Gaylan L. Spurlin</name>
+    <title> County Clerk</title>
+    <phone> (270) 338-1441</phone>
+    <fax> (270) 338-1774</fax>
+    <email>muhlenbergcoclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="2095009837">
+    <county_name>MADISON</county_name>
+    <state_id>21</state_id>
+    <name>Billy Gabbard</name>
+    <title> County Clerk</title>
+    <phone>(859) 624-4706</phone>
+    <fax>(859) 624-4954</fax>
+    <email> mcckco@apex.net</email>
+  </election_official>
+  <election_official id="544533791">
+    <county_name>CRITTENDEN</county_name>
+    <state_id>21</state_id>
+    <name>Carolyn Byford</name>
+    <title> County Clerk</title>
+    <phone> (270) 965-3403</phone>
+    <fax>(270) 965-3447 </fax>
+    <email> cbyford@hotmail.com </email>
+  </election_official>
+  <election_official id="1203598355">
+    <county_name>CARROLL</county_name>
+    <state_id>21</state_id>
+    <name>Marketta Brock</name>
+    <title> County Clerk</title>
+    <phone> (502) 732-7005</phone>
+    <fax> (502) 732-7007</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1802790051">
+    <county_name>MEADE</county_name>
+    <state_id>21</state_id>
+    <name>Katrina Fitzgerald</name>
+    <title> County Clerk</title>
+    <phone> (270) 422-2152</phone>
+    <fax> (270) 422-2158</fax>
+    <email>katrina.fitzgerald@ky.gov</email>
+  </election_official>
+  <election_official id="563735348">
+    <county_name>ADAIR</county_name>
+    <state_id>21</state_id>
+    <name>Sheila Blair</name>
+    <title> County Clerk </title>
+    <phone> (270) 384-2801</phone>
+    <fax> (270) 384-4805 </fax>
+    <email>adaircc2007@yahoo.com</email>
+  </election_official>
+  <election_official id="353856421">
+    <county_name>GREEN</county_name>
+    <state_id>21</state_id>
+    <name>Carolyn M. Scott</name>
+    <title> County Clerk</title>
+    <phone> (270) 932-5386</phone>
+    <fax> (270) 932-6241</fax>
+    <email> cmscott@accesshsd.net</email>
+  </election_official>
+  <election_official id="1167043399">
+    <county_name>GRAYSON</county_name>
+    <state_id>21</state_id>
+    <name>Carletta Farris</name>
+    <title> County Clerk</title>
+    <phone>(270) 259-3201 </phone>
+    <fax> (270) 259-9264</fax>
+    <email> carlettafarris@ky.gov</email>
+  </election_official>
+  <election_official id="262752474">
+    <county_name>BALLARD</county_name>
+    <state_id>21</state_id>
+    <name>Lynn W. Lane</name>
+    <title> County Clerk</title>
+    <phone> (270) 335-5168</phone>
+    <fax> (270) 335-3081</fax>
+    <email> bcclerk@brtc.net</email>
+  </election_official>
+  <election_official id="1654008047">
+    <county_name>GALLATIN</county_name>
+    <state_id>21</state_id>
+    <name>Tracy Miles</name>
+    <title> County Clerk</title>
+    <phone>(859) 567-5411 </phone>
+    <fax> (859) 567-5444</fax>
+    <email> tracymiles@gallatincountyky.com</email>
+  </election_official>
+  <election_official id="644101973">
+    <county_name>BOURBON</county_name>
+    <state_id>21</state_id>
+    <name>Richard Stipp Eads</name>
+    <title> County Clerk</title>
+    <phone> (859) 987-2142</phone>
+    <fax> (859) 987-5660</fax>
+    <email> richard.eads@ky.gov</email>
+  </election_official>
+  <election_official id="883350115">
+    <county_name>ANDERSON</county_name>
+    <state_id>21</state_id>
+    <name>Edith Hanks</name>
+    <title> County Clerk </title>
+    <phone>(502) 839-3041 </phone>
+    <fax> (502) 839-3043</fax>
+    <email>Edith.Hanks@ky.gov</email>
+  </election_official>
+  <election_official id="880969154">
+    <county_name>LEWIS</county_name>
+    <state_id>21</state_id>
+    <name>Shirley A. Hinton</name>
+    <title> County Clerk</title>
+    <phone> (606) 796-3062</phone>
+    <fax> (606) 796-6511</fax>
+    <email> lewiscoclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="1213453745">
+    <county_name>MCCRACKEN</county_name>
+    <state_id>21</state_id>
+    <name>Jeff Jerrell</name>
+    <title> County Clerk</title>
+    <phone> (270) 444-4700</phone>
+    <fax> (270) 444-4704</fax>
+    <email> mcckco@apex.net</email>
+  </election_official>
+  <election_official id="530119912">
+    <county_name>PULASKI</county_name>
+    <state_id>21</state_id>
+    <name>Ralph Troxtell</name>
+    <title> County Clerk</title>
+    <phone>(606) 679-2042 </phone>
+    <fax> (606) 678-0073</fax>
+    <email>linda.burnett@ky.gov</email>
+  </election_official>
+  <election_official id="2116433344">
+    <county_name>GRAVES</county_name>
+    <state_id>21</state_id>
+    <name>Barry Kennemore</name>
+    <title> County Clerk</title>
+    <phone> (270) 247-1676</phone>
+    <fax> (270) 247-1274</fax>
+    <email> barry.kennemore@ky.gov</email>
+  </election_official>
+  <election_official id="1565781977">
+    <county_name>WOLFE</county_name>
+    <state_id>21</state_id>
+    <name>Steve Oliver</name>
+    <title> County Clerk</title>
+    <phone> (606) 668-3515</phone>
+    <fax> (606) 668-3367</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1852795643">
+    <county_name>LEE</county_name>
+    <state_id>21</state_id>
+    <name>Russell Stamper</name>
+    <title> County Clerk</title>
+    <phone>(606) 464-4115</phone>
+    <fax>(606) 464-4102</fax>
+    <email>stamper_r@bellsouth.net</email>
+  </election_official>
+  <election_official id="193434722">
+    <county_name>MENIFEE</county_name>
+    <state_id>21</state_id>
+    <name>Jo Ann Spencer</name>
+    <title> County Clerk</title>
+    <phone> (606) 768-3512</phone>
+    <fax> (606) 768-6738</fax>
+    <email> mcc083@mrtc.com</email>
+  </election_official>
+  <election_official id="455998912">
+    <county_name>BRECKINRIDGE</county_name>
+    <state_id>21</state_id>
+    <name>Jill Irwin</name>
+    <title> County Clerk</title>
+    <phone> (270) 756-2246</phone>
+    <fax> (270) 756-1569</fax>
+    <email> jill.irwin@ky.gov</email>
+  </election_official>
+  <election_official id="1426065195">
+    <county_name>CUMBERLAND</county_name>
+    <state_id>21</state_id>
+    <name>Kim King</name>
+    <title> County Clerk</title>
+    <phone> (270) 864-3726</phone>
+    <fax> (270) 864-5884</fax>
+    <email>kim.king@ky.gov  </email>
+  </election_official>
+  <election_official id="364825528">
+    <county_name>LESLIE</county_name>
+    <state_id>21</state_id>
+    <name>James Lewis</name>
+    <title> County Clerk</title>
+    <phone>  (606) 672-2193</phone>
+    <fax>  (606) 672-4264</fax>
+    <email>  leslieclerk@TDS.net</email>
+  </election_official>
+  <election_official id="2142425637">
+    <county_name>HARLAN</county_name>
+    <state_id>21</state_id>
+    <name>Wanda S. Clem</name>
+    <title> County Clerk</title>
+    <phone> (606) 573-3636</phone>
+    <fax> (606) 573-0064</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="574332063">
+    <county_name>FAYETTE</county_name>
+    <state_id>21</state_id>
+    <name>Donald W. Blevins</name>
+    <title> County Clerk</title>
+    <phone> (859) 253-3344</phone>
+    <fax> (859) 253-8390</fax>
+    <email> info@fayettecountyclerk.com</email>
+  </election_official>
+  <election_official id="584120335">
+    <county_name>ROWAN</county_name>
+    <state_id>21</state_id>
+    <name>Jean W. Bailey</name>
+    <title> County Clerk</title>
+    <phone> (606) 784-5212</phone>
+    <fax> (606) 784-2923</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="936064858">
+    <county_name>TODD</county_name>
+    <state_id>21</state_id>
+    <name>Billy Fowler</name>
+    <title> County Clerk</title>
+    <phone> (270) 265-9966</phone>
+    <fax> (270) 265-2588</fax>
+    <email> billy.fowler@ky.gov</email>
+  </election_official>
+  <election_official id="1798903766">
+    <county_name>CASEY</county_name>
+    <state_id>21</state_id>
+    <name>Eva S. Miller</name>
+    <title> County Clerk</title>
+    <phone> (606) 787-6471</phone>
+    <fax> (606) 787-9155</fax>
+    <email> cccevamiller@yahoo.com </email>
+  </election_official>
+  <election_official id="1757115192">
+    <county_name>LETCHER</county_name>
+    <state_id>21</state_id>
+    <name>Winston Meade</name>
+    <title> County Clerk</title>
+    <phone> (606) 633-2432</phone>
+    <fax> (606) 632-9282</fax>
+    <email> letchercountyclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="171924574">
+    <county_name>CARLISLE</county_name>
+    <state_id>21</state_id>
+    <name>Theresa Owens</name>
+    <title> County Clerk</title>
+    <phone> (270) 628-3233</phone>
+    <fax> (270) 628-0191</fax>
+    <email> theresa.owens@ky.gov</email>
+  </election_official>
+  <election_official id="790445523">
+    <county_name>OLDHAM</county_name>
+    <state_id>21</state_id>
+    <name>Julie Lentz</name>
+    <title> County Clerk</title>
+    <phone>(502) 222-0047 </phone>
+    <fax> (502) 222-3208</fax>
+    <email> julielentz@yahoo.com</email>
+  </election_official>
+  <election_official id="1250706861">
+    <county_name>MARION</county_name>
+    <state_id>21</state_id>
+    <name>Karen Spalding</name>
+    <title> County Clerk</title>
+    <phone> (270) 692-2651</phone>
+    <fax> (270) 692-9811</fax>
+    <email> marioncountyclerk@alltel.net</email>
+  </election_official>
+  <election_official id="1740225379">
+    <county_name>LIVINGSTON</county_name>
+    <state_id>21</state_id>
+    <name>Carroll Walker</name>
+    <title> County Clerk</title>
+    <phone> (270) 928-2162</phone>
+    <fax> (270) 928-2162</fax>
+    <email>carroll.walker@ky.gov</email>
+  </election_official>
+  <election_official id="1012328559">
+    <county_name>HENRY</county_name>
+    <state_id>21</state_id>
+    <name>Juanita Lashley</name>
+    <title> County Clerk</title>
+    <phone> (502) 845-5705</phone>
+    <fax> (502) 845-5708</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2077841341">
+    <county_name>BULLITT</county_name>
+    <state_id>21</state_id>
+    <name>Kevin Mooney</name>
+    <title> County Clerk</title>
+    <phone> (502) 543-2513</phone>
+    <fax> (502) 543-9121</fax>
+    <email> elections@bcky.org </email>
+  </election_official>
+  <election_official id="100403261">
+    <county_name>WARREN</county_name>
+    <state_id>21</state_id>
+    <name>Dot Owens</name>
+    <title> County Clerk</title>
+    <phone> (270) 843-5306</phone>
+    <fax> (270) 843-5315</fax>
+    <email> dotowensclerk@yahoo.com </email>
+  </election_official>
+  <election_official id="481323563">
+    <county_name>FLOYD</county_name>
+    <state_id>21</state_id>
+    <name>Chris Waugh</name>
+    <title> County Clerk</title>
+    <phone> (606) 886-3816</phone>
+    <fax> (606) 886-8089</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="854384925">
+    <county_name>RUSSELL</county_name>
+    <state_id>21</state_id>
+    <name>Lisha Popplewell</name>
+    <title> County Clerk</title>
+    <phone> (270) 343-2125</phone>
+    <fax> (270) 343-4700</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1270952012">
+    <county_name>CALLOWAY</county_name>
+    <state_id>21</state_id>
+    <name>Ray Coursey, Jr.</name>
+    <title> County Clerk</title>
+    <phone> (270) 753-3923</phone>
+    <fax> (270) 759-9611</fax>
+    <email>callowayelections@murray-ky.net</email>
+  </election_official>
+  <election_official id="1436064040">
+    <county_name>BOYD</county_name>
+    <state_id>21</state_id>
+    <name>Debbie Jones</name>
+    <title> County Clerk</title>
+    <phone> (606) 739-5116</phone>
+    <fax> (606) 739-0430</fax>
+    <email> debbiejones@zoominternet.net</email>
+  </election_official>
+  <election_official id="1932458010">
+    <county_name>WAYNE</county_name>
+    <state_id>21</state_id>
+    <name>Melissa Turpin</name>
+    <title> County Clerk</title>
+    <phone> (606) 348-5721</phone>
+    <fax> (606) 348-8303</fax>
+    <email>countyclerk8303@windstream.net</email>
+  </election_official>
+  <election_official id="1165361595">
+    <county_name>CLAY</county_name>
+    <state_id>21</state_id>
+    <name>Freddy Wayne Thompson</name>
+    <title> County Clerk</title>
+    <phone> (606) 598-2544</phone>
+    <fax> (606) 599-0603</fax>
+    <email>claycoclerk@alltel.net</email>
+  </election_official>
+  <election_official id="2009669327">
+    <county_name>POWELL</county_name>
+    <state_id>21</state_id>
+    <name>Rhonda Allen Barnett</name>
+    <title> County Clerk</title>
+    <phone> (606) 663-6444</phone>
+    <fax> (606) 663-6406</fax>
+    <email> rhondaabarnett@yahoo.com</email>
+  </election_official>
+  <election_official id="1255364429">
+    <county_name>LINCOLN</county_name>
+    <state_id>21</state_id>
+    <name>George Spoonamore, IV</name>
+    <title> County Clerk</title>
+    <phone> (606) 365-4570</phone>
+    <fax> (606) 365-4572</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="664010866">
+    <county_name>BARREN</county_name>
+    <state_id>21</state_id>
+    <name>Pam Hodges Browning</name>
+    <title> County Clerk</title>
+    <phone> (270) 651-5200</phone>
+    <fax> (270) 651-1083</fax>
+    <email>pshbrowning@hotmail.com</email>
+  </election_official>
+  <election_official id="1776994890">
+    <county_name>JOHNSON</county_name>
+    <state_id>21</state_id>
+    <name>Sallee Conley Holbrook</name>
+    <title> County Clerk</title>
+    <phone> (606) 789-2557</phone>
+    <fax> (606) 789-2559</fax>
+    <email>Johnsoncoclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="1265963322">
+    <county_name>HOPKINS</county_name>
+    <state_id>21</state_id>
+    <name>Devra Steckler</name>
+    <title> County Clerk</title>
+    <phone> (270) 821-7361</phone>
+    <fax> (270) 821-3270</fax>
+    <email>kratliff@hopkinscounty.org</email>
+  </election_official>
+  <election_official id="1989532144">
+    <county_name>TRIGG</county_name>
+    <state_id>21</state_id>
+    <name>Wanda H. Thomas</name>
+    <title> County Clerk</title>
+    <phone> (270) 522-6661</phone>
+    <fax> (270) 522-6662</fax>
+    <email> wanda.thomas@ky.gov</email>
+  </election_official>
+  <election_official id="1683212127">
+    <county_name>BOONE</county_name>
+    <state_id>21</state_id>
+    <name>Rena' Ping</name>
+    <title> County Clerk</title>
+    <phone> (859) 334-2130</phone>
+    <fax> (859) 334-3575</fax>
+    <email> rping@boonecountyky.org</email>
+  </election_official>
+  <election_official id="749140959">
+    <county_name>MARTIN</county_name>
+    <state_id>21</state_id>
+    <name>Carol Sue Mills</name>
+    <title> County Clerk</title>
+    <phone> (606) 298-2810</phone>
+    <fax> (606) 298-0143</fax>
+    <email> martinclerk@hotmail.com</email>
+  </election_official>
+  <election_official id="436297710">
+    <county_name>LARUE</county_name>
+    <state_id>21</state_id>
+    <name>Linda Carter</name>
+    <title> County Clerk</title>
+    <phone> (270) 358-3544</phone>
+    <fax> (270) 358-4528</fax>
+    <email>  clerk@laruecounty.org </email>
+  </election_official>
+  <election_official id="953238855">
+    <county_name>HART</county_name>
+    <state_id>21</state_id>
+    <name>Lisa Hensley</name>
+    <title> County Clerk</title>
+    <phone> (270) 524-2751</phone>
+    <fax> (270) 524-0458</fax>
+    <email>lhensleyhartcoclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="881853944">
+    <county_name>EDMONSON</county_name>
+    <state_id>21</state_id>
+    <name>Larry Carroll</name>
+    <title> County Clerk</title>
+    <phone>(270) 597-2624 </phone>
+    <fax> (270) 597-9714</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="336260796">
+    <county_name>ESTILL</county_name>
+    <state_id>21</state_id>
+    <name>Sherry L. Fox</name>
+    <title> County Clerk</title>
+    <phone> (606) 723-5156</phone>
+    <fax> (606) 723-5108</fax>
+    <email> estillclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="925077926">
+    <county_name>MARSHALL</county_name>
+    <state_id>21</state_id>
+    <name>Dan Duke</name>
+    <title> County Clerk</title>
+    <phone> (270) 527-4740</phone>
+    <fax> (270) 527-4738</fax>
+    <email> claudia.phelps@ky.gov</email>
+  </election_official>
+  <election_official id="1797591875">
+    <county_name>PENDLETON</county_name>
+    <state_id>21</state_id>
+    <name>Rita Spencer</name>
+    <title> County Clerk</title>
+    <phone> (859) 654-3380</phone>
+    <fax> (859) 654-5600</fax>
+    <email> pendclerk1@fuse.net</email>
+  </election_official>
+  <election_official id="2030310617">
+    <county_name>CALDWELL</county_name>
+    <state_id>21</state_id>
+    <name>Toni Watson</name>
+    <title> County Clerk</title>
+    <phone> (270) 365-6754</phone>
+    <fax> (270) 365-7447</fax>
+    <email>coclerk@caldwellcourthouse.com</email>
+  </election_official>
+  <election_official id="588135460">
+    <county_name>ALLEN</county_name>
+    <state_id>21</state_id>
+    <name>Beverly Calvert</name>
+    <title> County Clerk </title>
+    <phone> (270) 237-3706</phone>
+    <fax> (270) 237-9206</fax>
+    <email>alnclerk@nctc.com</email>
+  </election_official>
+  <election_official id="535543818">
+    <county_name>DAVIESS</county_name>
+    <state_id>21</state_id>
+    <name>David Osborne</name>
+    <title> County Clerk</title>
+    <phone> (270) 685-8434</phone>
+    <fax>(270) 686-7111 </fax>
+    <email> rhouse@daviessky.org</email>
+  </election_official>
+  <election_official id="1255803033">
+    <county_name>CAMPBELL</county_name>
+    <state_id>21</state_id>
+    <name>Jack Snodgrass</name>
+    <title> County Clerk</title>
+    <phone> (859) 292-3885</phone>
+    <fax> (859) 292-3887</fax>
+    <email>jsnodgrass@campbellcountyky.org</email>
+  </election_official>
+  <election_official id="1718400742">
+    <county_name>NICHOLAS</county_name>
+    <state_id>21</state_id>
+    <name>Douglas Fryman</name>
+    <title> County Clerk</title>
+    <phone> (859) 289-3730</phone>
+    <fax> (859) 289-3709       </fax>
+    <email> lddjune@aol.com      </email>
+  </election_official>
+  <election_official id="1176032879">
+    <county_name>BUTLER</county_name>
+    <state_id>21</state_id>
+    <name>Shirley Givens</name>
+    <title> County Clerk</title>
+    <phone> (270) 526-5676</phone>
+    <fax> (270) 526-2658</fax>
+    <email> shirley.givens@ky.gov</email>
+  </election_official>
+  <election_official id="125493134">
+    <county_name>SHELBY</county_name>
+    <state_id>21</state_id>
+    <name>Sue Carole Perry</name>
+    <title> County Clerk</title>
+    <phone> (502) 633-4410</phone>
+    <fax> (502) 633-7887</fax>
+    <email> shelbyclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="1739003833">
+    <county_name>GARRARD</county_name>
+    <state_id>21</state_id>
+    <name>Stacy H. May</name>
+    <title> County Clerk</title>
+    <phone> (859) 792-3071</phone>
+    <fax> (859) 792-6751</fax>
+    <email> garrardcoclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="1550442938">
+    <county_name>ROCKCASTLE</county_name>
+    <state_id>21</state_id>
+    <name>Norma Lois Houk</name>
+    <title> County Clerk</title>
+    <phone> (606) 256-2831</phone>
+    <fax> (606) 256-4302</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1957213016">
+    <county_name>WOODFORD</county_name>
+    <state_id>21</state_id>
+    <name>Corine C. Woolums</name>
+    <title> County Clerk</title>
+    <phone> (859) 873-3421</phone>
+    <fax> (859) 873-6985 </fax>
+    <email> woodfordcoclerk@windstream.net </email>
+  </election_official>
+  <election_official id="578520366">
+    <county_name>HARRISON</county_name>
+    <state_id>21</state_id>
+    <name>Linda B. Furnish</name>
+    <title> County Clerk</title>
+    <phone> (859) 234-7130</phone>
+    <fax> (859) 234-8049</fax>
+    <email> harrclrk@setel.com</email>
+  </election_official>
+  <election_official id="191618861">
+    <county_name>MONROE</county_name>
+    <state_id>21</state_id>
+    <name>Teresa McMillin Sheffield</name>
+    <title> County Clerk</title>
+    <phone> (270) 487-5471</phone>
+    <fax> (270) 487-5976</fax>
+    <email> monroecountyclerk@mchsi.com</email>
+  </election_official>
+  <election_official id="18391673">
+    <county_name>GREENUP</county_name>
+    <state_id>21</state_id>
+    <name>Patricia Hieneman</name>
+    <title> County Clerk</title>
+    <phone> (606) 473-7394</phone>
+    <fax>(606)473-5354 </fax>
+    <email> patricia.hieneman@ky.gov</email>
+  </election_official>
+  <election_official id="831844735">
+    <county_name>NELSON</county_name>
+    <state_id>21</state_id>
+    <name>Phyllis S. Mattingly</name>
+    <title> County Clerk</title>
+    <phone> (502) 348-1820</phone>
+    <fax> (502) 348-1863</fax>
+    <email> mpm@bardstown.com</email>
+  </election_official>
+  <election_official id="1043455014">
+    <county_name>ELLIOTT</county_name>
+    <state_id>21</state_id>
+    <name>Reeda S. Ison </name>
+    <title> County Clerk</title>
+    <phone> (606) 738-5421</phone>
+    <fax> (606) 738-4462</fax>
+    <email>reeda.ison@ky.gov</email>
+  </election_official>
+  <election_official id="1230962951">
+    <county_name>METCALFE</county_name>
+    <state_id>21</state_id>
+    <name>Carol England</name>
+    <title> County Clerk</title>
+    <phone> (270) 432-4821</phone>
+    <fax> (270) 432-5176</fax>
+    <email>metclerk@scrtc.com</email>
+  </election_official>
+  <election_official id="510985721">
+    <county_name>KNOX</county_name>
+    <state_id>21</state_id>
+    <name>Mike Corey</name>
+    <title> County Clerk</title>
+    <phone> (606) 546-3568</phone>
+    <fax> (606) 546-3589</fax>
+    <email>coclerk@barbourville.com</email>
+  </election_official>
+  <election_official id="1664765913">
+    <county_name>BOYLE</county_name>
+    <state_id>21</state_id>
+    <name>Denise B. Curtsinger</name>
+    <title> County Clerk</title>
+    <phone> (859) 238-1110</phone>
+    <fax> (859) 238-1114</fax>
+    <email> denise.curtsinger@ky.gov</email>
+  </election_official>
+  <election_official id="866873900">
+    <county_name>WEBSTER</county_name>
+    <state_id>21</state_id>
+    <name>Valerie Franklin</name>
+    <title> County Clerk</title>
+    <phone> (270) 639-7006</phone>
+    <fax> (270) 639-7029</fax>
+    <email> valerie.franklin@ky.gov</email>
+  </election_official>
+  <election_official id="1990138250">
+    <county_name>FLEMING</county_name>
+    <state_id>21</state_id>
+    <name>Jarrod Fritz</name>
+    <title> County Clerk</title>
+    <phone> (606) 845-8461</phone>
+    <fax> (606) 845-0212</fax>
+    <email> countyclerk@flemingcountyky.org</email>
+  </election_official>
+  <election_official id="385675275">
+    <county_name>LYON</county_name>
+    <state_id>21</state_id>
+    <name>Sarah Defew</name>
+    <title> County Clerk</title>
+    <phone> (270) 388-2331</phone>
+    <fax> (270) 388-0634</fax>
+    <email>sdefew@bellsouth.com</email>
+  </election_official>
+  <election_official id="1668720969">
+    <county_name>JEFFERSON</county_name>
+    <state_id>21</state_id>
+    <name>Barbara Holsclaw</name>
+    <title> County Clerk</title>
+    <phone> (502) 574-5700</phone>
+    <fax> (502) 574-5566</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="654249536">
+    <county_name>CARTER</county_name>
+    <state_id>21</state_id>
+    <name>Mike D. Johnston</name>
+    <title> County Clerk</title>
+    <phone>(606) 474-5188</phone>
+    <fax>(606) 474-6883</fax>
+    <email>carterclerkmjohnston@yahoo.com</email>
+  </election_official>
+  <election_official id="1040683262">
+    <county_name>TRIMBLE</county_name>
+    <state_id>21</state_id>
+    <name>Jerry L. Powell</name>
+    <title> County Clerk</title>
+    <phone> (502) 255-7174</phone>
+    <fax> (502) 255-7045</fax>
+    <email> jpowell@iglou.com</email>
+  </election_official>
+  <election_official id="1606162982">
+    <county_name>SCOTT</county_name>
+    <state_id>21</state_id>
+    <name>Jackie R. Covington </name>
+    <title> County Clerk</title>
+    <phone> (502) 863-7875</phone>
+    <fax> (502) 863-7898</fax>
+    <email>pamwise5@aol.com       </email>
+  </election_official>
+  <election_official id="623017432">
+    <county_name>KENTON</county_name>
+    <state_id>21</state_id>
+    <name>Rodney Eldridge</name>
+    <title> County Clerk</title>
+    <phone> (859) 392-1600</phone>
+    <fax> (859) 392-1623</fax>
+    <email>rodney.eldridge@kentoncounty.org</email>
+  </election_official>
+  <election_official id="643411467">
+    <county_name>BELL</county_name>
+    <state_id>21</state_id>
+    <name>Becky Blevins</name>
+    <title> County Clerk</title>
+    <phone> (606) 337-6143</phone>
+    <fax> (606) 337-5415</fax>
+    <email> becky.blevins@ky.gov</email>
+  </election_official>
+  <election_official id="1931195564">
+    <county_name>ROBERTSON</county_name>
+    <state_id>21</state_id>
+    <name>Stephanie A. Bogucki</name>
+    <title> County Clerk</title>
+    <phone> (606) 724-5212</phone>
+    <fax> (606) 724-5022</fax>
+    <email>stephbogucki@hotmail.com</email>
+  </election_official>
+  <election_official id="1733179033">
+    <county_name>OWSLEY</county_name>
+    <state_id>21</state_id>
+    <name>Sid Gabbard</name>
+    <title> County Clerk</title>
+    <phone> (606) 593-5735</phone>
+    <fax> (606) 593-5737</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="444726118">
+    <county_name>UNION</county_name>
+    <state_id>21</state_id>
+    <name>William Stephen Peak, Jr.</name>
+    <title> County Clerk</title>
+    <phone> (270) 389-1334</phone>
+    <fax> (270) 389-9135</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2029431261">
+    <county_name>SPENCER</county_name>
+    <state_id>21</state_id>
+    <name>Judy Puckett</name>
+    <title> County Clerk</title>
+    <phone> (502) 477-3215</phone>
+    <fax> (502) 477-3216</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1085046049">
+    <county_name>LAUREL</county_name>
+    <state_id>21</state_id>
+    <name>Dean Johnson</name>
+    <title> County Clerk</title>
+    <phone> (606) 864-5158</phone>
+    <fax> (606) 864-7369</fax>
+    <email>lcc10@alltel.net</email>
+  </election_official>
+  <election_official id="2110168923">
+    <county_name>GRANT</county_name>
+    <state_id>21</state_id>
+    <name>Leatha Conrad</name>
+    <title> County Clerk</title>
+    <phone> (859) 824-3321</phone>
+    <fax> (859) 824-3367</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="461666637">
+    <county_name>TAYLOR</county_name>
+    <state_id>21</state_id>
+    <name>Mark Carney</name>
+    <title> County Clerk</title>
+    <phone> (270) 465-6677</phone>
+    <fax> (270) 789-1144 </fax>
+    <email> tcclerk@windstream.net</email>
+  </election_official>
+  <election_official id="150932586">
+    <county_name>HICKMAN</county_name>
+    <state_id>21</state_id>
+    <name>James Berry</name>
+    <title> County Clerk</title>
+    <phone> (270) 653-2131</phone>
+    <fax> (270) 653-4248</fax>
+    <email>jimbo.berry@ky.gov</email>
+  </election_official>
+  <election_official id="887538248">
+    <county_name>MCCREARY</county_name>
+    <state_id>21</state_id>
+    <name>Jo Kidd</name>
+    <title> County Clerk</title>
+    <phone> (606) 376-2411</phone>
+    <fax> (606) 376-3898</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1187019460">
+    <county_name>FRANKLIN</county_name>
+    <state_id>21</state_id>
+    <name>Guy Zeigler</name>
+    <title> County Clerk</title>
+    <phone> (502) 875-8702</phone>
+    <fax> (502) 875-8718</fax>
+    <email> guy.zeigler@ky.gov</email>
+  </election_official>
+  <election_official id="1316444313">
+    <county_name>CHRISTIAN</county_name>
+    <state_id>21</state_id>
+    <name>Michael A. Kem</name>
+    <title> County Clerk</title>
+    <phone> (270) 887-4107</phone>
+    <fax> (270) 887-4186</fax>
+    <email> michael.kem@ky.gov</email>
+  </election_official>
+  <election_official id="524027225">
+    <county_name>KNOTT</county_name>
+    <state_id>21</state_id>
+    <name>Kenneth R. Gayheart</name>
+    <title> County Clerk</title>
+    <phone> (606) 785-5651</phone>
+    <fax> (606) 785-0996</fax>
+    <email>kenclerk@tgtel.com</email>
+  </election_official>
+  <election_official id="249435432">
+    <county_name>FULTON</county_name>
+    <state_id>21</state_id>
+    <name>Betty Abernathy</name>
+    <title> County Clerk</title>
+    <phone> (270) 236-2727</phone>
+    <fax> (270) 236-2522</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1336654489">
+    <county_name>WHITLEY</county_name>
+    <state_id>21</state_id>
+    <name>Kay Schwartz</name>
+    <title> County Clerk</title>
+    <phone> (606) 549-6002</phone>
+    <fax> (606) 549-2790</fax>
+    <email> wcclerk@2geton.net</email>
+  </election_official>
+  <election_official id="1245191889">
+    <county_name>OHIO</county_name>
+    <state_id>21</state_id>
+    <name>Bess Ralph</name>
+    <title> County Clerk</title>
+    <phone> (270) 298-4422</phone>
+    <fax> (270) 298-4426</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1254511053">
+    <county_name>HENDERSON</county_name>
+    <state_id>21</state_id>
+    <name>Renny Tapp Matthews</name>
+    <title> County Clerk</title>
+    <phone> (270) 826-3906</phone>
+    <fax> (270) 826-9677</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1365397250">
+    <county_name>LAWRENCE</county_name>
+    <state_id>21</state_id>
+    <name>Chris Jobe</name>
+    <title> County Clerk</title>
+    <phone> (606) 638-4108</phone>
+    <fax> (606) 638-0638</fax>
+    <email> lawrencecoclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="953465089">
+    <county_name>MCLEAN</county_name>
+    <state_id>21</state_id>
+    <name>Linda Ray Johnson</name>
+    <title> County Clerk</title>
+    <phone> (270) 273-3082</phone>
+    <fax> (270) 273-5084</fax>
+    <email> lindar.johnson@ky.gov</email>
+  </election_official>
+  <election_official id="65018799">
+    <county_name>PERRY</county_name>
+    <state_id>21</state_id>
+    <name>Haven King</name>
+    <title> County Clerk</title>
+    <phone> (606) 436-4614</phone>
+    <fax> (606) 439-0557</fax>
+    <email>pcountyclerk481@windstream.net</email>
+  </election_official>
+  <election_official id="321938809">
+    <county_name>BATH</county_name>
+    <state_id>21</state_id>
+    <name>Carolyn Rogers</name>
+    <title> County Clerk</title>
+    <phone> (606) 674-2613</phone>
+    <fax> (606) 674-9526</fax>
+    <email> carolyn.rogers@ky.gov</email>
+  </election_official>
+  <election_official id="958948530">
+    <county_name>JACKSON</county_name>
+    <state_id>21</state_id>
+    <name>Donald Moore</name>
+    <title> County Clerk</title>
+    <phone> (606) 287-7800</phone>
+    <fax>(606) 287-7079 </fax>
+    <email> jcclerk@prtcnet.org</email>
+  </election_official>
+  <election_official id="1270533624">
+    <county_name>MERCER</county_name>
+    <state_id>21</state_id>
+    <name>Chris Horn</name>
+    <title> County Clerk</title>
+    <phone> (859) 734-6310</phone>
+    <fax> (859) 734-6309</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="850665470">
+    <county_name>BRACKEN</county_name>
+    <state_id>21</state_id>
+    <name>Rae Jean Poe</name>
+    <title> County Clerk</title>
+    <phone> (606) 735-2952</phone>
+    <fax> (606) 735-2687</fax>
+    <email>bcclerk2006@yahoo.com </email>
+  </election_official>
+  <election_official id="711613874">
+    <county_name>WASHINGTON</county_name>
+    <state_id>21</state_id>
+    <name>Glenn Black</name>
+    <title> County Clerk</title>
+    <phone> (859) 336-5425</phone>
+    <fax> (859) 336-5408</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="961528042">
+    <county_name>MORGAN</county_name>
+    <state_id>21</state_id>
+    <name>Randy Williams</name>
+    <title> County Clerk</title>
+    <phone> (606) 743-3949</phone>
+    <fax> (606) 743-2111</fax>
+    <email>rwclerk@mrtc.com</email>
+  </election_official>
+  <election_official id="1114453177">
+    <county_name>MONTGOMERY</county_name>
+    <state_id>21</state_id>
+    <name>Judy Long Witt</name>
+    <title> County Clerk</title>
+    <phone> (859) 498-8700</phone>
+    <fax> (859) 498-8729</fax>
+    <email> Judy.Witt@ky.gov</email>
+  </election_official>
+  <election_official id="2146795781">
+    <county_name>CLINTON</county_name>
+    <state_id>21</state_id>
+    <name>Jim Elmore</name>
+    <title> County Clerk</title>
+    <phone> (606) 387-5943</phone>
+    <fax> (606) 387-5258</fax>
+    <email>clintoncoclerk@alltel.net</email>
+  </election_official>
+  <election_official id="50598926">
+    <county_name>MAGOFFIN</county_name>
+    <state_id>21</state_id>
+    <name>Renee Shepherd</name>
+    <title> County Clerk</title>
+    <phone> (606) 349-2216</phone>
+    <fax> (606) 349-2328</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="700223178">
+    <county_name>SIMPSON</county_name>
+    <state_id>21</state_id>
+    <name>Bobby C. Phillips, Jr.</name>
+    <title> County Clerk</title>
+    <phone> (270) 586-8161</phone>
+    <fax> (270) 586-6464</fax>
+    <email> simpsoncountyclerk@comcast.net</email>
+  </election_official>
+  <election_official id="711963019">
+    <county_name>MASON</county_name>
+    <state_id>21</state_id>
+    <name>Frances A. Cotterill</name>
+    <title> County Clerk</title>
+    <phone> (606) 564-3341</phone>
+    <fax> (606) 564-8979</fax>
+    <email>masonclerk@maysvilleky.net</email>
+  </election_official>
+  <election_official id="315990534">
+    <county_name>HANCOCK</county_name>
+    <state_id>21</state_id>
+    <name>Trina Ogle</name>
+    <title> County Clerk</title>
+    <phone> (270) 927-6117</phone>
+    <fax> (270) 927-8639</fax>
+    <email> hcclerk@bellsouth.net</email>
+  </election_official>
+  <election_official id="2084133675">
+    <county_name>CLARK</county_name>
+    <state_id>21</state_id>
+    <name>Anita Shimfessel Jones</name>
+    <title> County Clerk</title>
+    <phone> (859) 745-0280</phone>
+    <fax> (859) 745-4251</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="539716051">
+    <county_name>PIKE</county_name>
+    <state_id>21</state_id>
+    <name>Lillian Pearl Elliott</name>
+    <title> County Clerk</title>
+    <phone> (606) 432-6211</phone>
+    <fax> (606) 432-6222</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="238251448">
+    <county_name>LOGAN</county_name>
+    <state_id>21</state_id>
+    <name>Scottie Harper</name>
+    <title> County Clerk</title>
+    <phone> (270) 726-6061</phone>
+    <fax> (270) 726-4355</fax>
+    <email> loganclk@bellsouth.net</email>
+  </election_official>
+</listings>

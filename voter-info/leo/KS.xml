@@ -1,0 +1,950 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="610688791">
+    <county_name>RAWLINS</county_name>
+    <state_id>20</state_id>
+    <name>Krystal Hutfles</name>
+    <title> </title>
+    <phone>7856263351</phone>
+    <fax>7856269019</fax>
+    <email>RA_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="668066030">
+    <county_name>LABETTE</county_name>
+    <state_id>20</state_id>
+    <name>Linda Schreppel</name>
+    <title> </title>
+    <phone>6207952138</phone>
+    <fax>6207952928</fax>
+    <email>lschreppel@labettecounty.com</email>
+  </election_official>
+  <election_official id="1356542085">
+    <county_name>CRAWFORD</county_name>
+    <state_id>20</state_id>
+    <name>Don Pyle</name>
+    <title> </title>
+    <phone>6207246115</phone>
+    <fax>6207246007</fax>
+    <email>countyclerk@ckt.net</email>
+  </election_official>
+  <election_official id="1550227848">
+    <county_name>ATCHISON</county_name>
+    <state_id>20</state_id>
+    <name>Pauline M Lee</name>
+    <title> </title>
+    <phone>9133671653</phone>
+    <fax>9133670227</fax>
+    <email>AT_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1007612043">
+    <county_name>THOMAS</county_name>
+    <state_id>20</state_id>
+    <name>Shelly Harms</name>
+    <title> </title>
+    <phone>7854604500 </phone>
+    <fax>7854604503</fax>
+    <email>TH_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1730056298">
+    <county_name>SHERIDAN</county_name>
+    <state_id>20</state_id>
+    <name>Paula Bielser</name>
+    <title> </title>
+    <phone>7856753361</phone>
+    <fax>7856753487</fax>
+    <email>sdcoclk@ruraltel.net</email>
+  </election_official>
+  <election_official id="1033397968">
+    <county_name>PAWNEE</county_name>
+    <state_id>20</state_id>
+    <name>Ruth M. Searight</name>
+    <title/>
+    <phone>6202853721</phone>
+    <fax>6202852559</fax>
+    <email>PN_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1083078628">
+    <county_name>MEADE</county_name>
+    <state_id>20</state_id>
+    <name>Janet Hale</name>
+    <title/>
+    <phone>6208738700</phone>
+    <fax>6208738713</fax>
+    <email>jhale@meadeco.org</email>
+  </election_official>
+  <election_official id="1150525131">
+    <county_name>OSAGE</county_name>
+    <state_id>20</state_id>
+    <name>Rhonda Beets</name>
+    <title> </title>
+    <phone>7858284812</phone>
+    <fax>7858284749</fax>
+    <email>OS_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1418696064">
+    <county_name>MORTON</county_name>
+    <state_id>20</state_id>
+    <name>Mary Gilmore</name>
+    <title> </title>
+    <phone>6206972157</phone>
+    <fax>6206972159</fax>
+    <email>mgilmore@elkhart.com</email>
+  </election_official>
+  <election_official id="258650005">
+    <county_name>CHEROKEE</county_name>
+    <state_id>20</state_id>
+    <name>Sandy Soper</name>
+    <title> </title>
+    <phone>6204292042</phone>
+    <fax>6204291042</fax>
+    <email>CK_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1731207790">
+    <county_name>BOURBON</county_name>
+    <state_id>20</state_id>
+    <name>Joanne J. Long</name>
+    <title> </title>
+    <phone>6202233800</phone>
+    <fax>6202235832</fax>
+    <email>BB_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="659646033">
+    <county_name>ANDERSON</county_name>
+    <state_id>20</state_id>
+    <name>Phyllis Gettler</name>
+    <title> </title>
+    <phone>7854486841</phone>
+    <fax>7854485621</fax>
+    <email>AN_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="437807533">
+    <county_name>BROWN</county_name>
+    <state_id>20</state_id>
+    <name>Debbie Parker</name>
+    <title> </title>
+    <phone>7857422581</phone>
+    <fax>7857427705</fax>
+    <email>BR_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="883449900">
+    <county_name>SUMNER</county_name>
+    <state_id>20</state_id>
+    <name>Shane J Shields</name>
+    <title> </title>
+    <phone> 6203263395</phone>
+    <fax>6203262116</fax>
+    <email>sshields@co.sumner.ks.us</email>
+  </election_official>
+  <election_official id="1514064478">
+    <county_name>NESS</county_name>
+    <state_id>20</state_id>
+    <name>Renee Kerr</name>
+    <title> </title>
+    <phone>7857982401</phone>
+    <fax>7857983180</fax>
+    <email>NS_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="427373973">
+    <county_name>COFFEY</county_name>
+    <state_id>20</state_id>
+    <name>Angie Kirchner</name>
+    <title> </title>
+    <phone>6203642191</phone>
+    <fax>6203648975</fax>
+    <email>CF_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="774731744">
+    <county_name>PHILLIPS</county_name>
+    <state_id>20</state_id>
+    <name>Linda McDowell</name>
+    <title> </title>
+    <phone>7855436825</phone>
+    <fax>7855436827</fax>
+    <email>PL_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="746912689">
+    <county_name>ELK</county_name>
+    <state_id>20</state_id>
+    <name>Donna K. Kaminska</name>
+    <title> </title>
+    <phone>6203742490</phone>
+    <fax>6203742771</fax>
+    <email>ekclerk@sktc.net </email>
+  </election_official>
+  <election_official id="1766014739">
+    <county_name>MCPHERSON</county_name>
+    <state_id>20</state_id>
+    <name>Susan R Meng</name>
+    <title> </title>
+    <phone>6202413656</phone>
+    <fax>6202411168</fax>
+    <email>smeng@mcphersoncountyks.us</email>
+  </election_official>
+  <election_official id="575146250">
+    <county_name>GOVE</county_name>
+    <state_id>20</state_id>
+    <name>Julie Hawkey</name>
+    <title> </title>
+    <phone>7859382300</phone>
+    <fax> 7859384486</fax>
+    <email>GO_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1931742751">
+    <county_name>WALLACE</county_name>
+    <state_id>20</state_id>
+    <name>Melody K. Fulton</name>
+    <title> </title>
+    <phone>7858524282</phone>
+    <fax>7858524783</fax>
+    <email>WA_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="939186826">
+    <county_name>HARVEY</county_name>
+    <state_id>20</state_id>
+    <name>Joyce Truskett</name>
+    <title> </title>
+    <phone>3162846842</phone>
+    <fax>3162846856</fax>
+    <email>jtruskett@harveycounty.com</email>
+  </election_official>
+  <election_official id="2076731094">
+    <county_name>RICE</county_name>
+    <state_id>20</state_id>
+    <name>Alicia Showalter</name>
+    <title> </title>
+    <phone>6202572232</phone>
+    <fax>6202573039</fax>
+    <email>RC_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="187744412">
+    <county_name>WICHITA</county_name>
+    <state_id>20</state_id>
+    <name>Karla Ridder</name>
+    <title> </title>
+    <phone>6203752731</phone>
+    <fax>6203754350</fax>
+    <email>coclerk@wbsnet.org</email>
+  </election_official>
+  <election_official id="1018161425">
+    <county_name>GRAY</county_name>
+    <state_id>20</state_id>
+    <name>Bonnie Swartz</name>
+    <title> </title>
+    <phone>6208553618</phone>
+    <fax>6208553107</fax>
+    <email>bswartz@grayco.org</email>
+  </election_official>
+  <election_official id="1406180925">
+    <county_name>MARION</county_name>
+    <state_id>20</state_id>
+    <name>Carol A Maggard</name>
+    <title> </title>
+    <phone>6203822185</phone>
+    <fax>6203823420</fax>
+    <email>MN_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="231435557">
+    <county_name>STEVENS</county_name>
+    <state_id>20</state_id>
+    <name>Pam Bensel</name>
+    <title> </title>
+    <phone>6205442541</phone>
+    <fax>6205444094</fax>
+    <email>SV_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="2141368389">
+    <county_name>COWLEY</county_name>
+    <state_id>20</state_id>
+    <name>Karen Brooks</name>
+    <title> </title>
+    <phone>6202215495</phone>
+    <fax>6202215498</fax>
+    <email>kbrooks@cowleycounty.org</email>
+  </election_official>
+  <election_official id="165071141">
+    <county_name>RENO</county_name>
+    <state_id>20</state_id>
+    <name>Shari Gagnebin</name>
+    <title> </title>
+    <phone>6206942732</phone>
+    <fax>6206942534</fax>
+    <email>shari.gagnebin@renogov.org</email>
+  </election_official>
+  <election_official id="2136764624">
+    <county_name>ELLIS</county_name>
+    <state_id>20</state_id>
+    <name>Alberta Klaus</name>
+    <title> </title>
+    <phone>7856289410</phone>
+    <fax>7856289413</fax>
+    <email>elliscoclk@ellisco.net</email>
+  </election_official>
+  <election_official id="840495845">
+    <county_name>EDWARDS</county_name>
+    <state_id>20</state_id>
+    <name>Gina Schuette</name>
+    <title> </title>
+    <phone>6206593000</phone>
+    <fax>6206592583</fax>
+    <email>edwardsclerk@edwards.kscoxmail.com</email>
+  </election_official>
+  <election_official id="141294108">
+    <county_name>BARTON</county_name>
+    <state_id>20</state_id>
+    <name>Donna Zimmerman</name>
+    <title> </title>
+    <phone>6207931835</phone>
+    <fax>6207931990</fax>
+    <email>clerk@bartoncounty.org</email>
+  </election_official>
+  <election_official id="160293476">
+    <county_name>RUSSELL</county_name>
+    <state_id>20</state_id>
+    <name>Mary Nuss</name>
+    <title> </title>
+    <phone>7854834641</phone>
+    <fax>7854835725</fax>
+    <email>RS_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="264643585">
+    <county_name>LINN</county_name>
+    <state_id>20</state_id>
+    <name>David L. Lamb</name>
+    <title> </title>
+    <phone>9137952668</phone>
+    <fax>9137952889</fax>
+    <email>dlamb@linncountyks.com</email>
+  </election_official>
+  <election_official id="790931892">
+    <county_name>GREELEY</county_name>
+    <state_id>20</state_id>
+    <name>Linda Firner</name>
+    <title> </title>
+    <phone>6203764256</phone>
+    <fax>6203762294</fax>
+    <email>GL_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1666550984">
+    <county_name>CLAY</county_name>
+    <state_id>20</state_id>
+    <name>Mary Brown</name>
+    <title> </title>
+    <phone>7856322552</phone>
+    <fax>7856325856</fax>
+    <email>cyclerk@sbcglobal.net</email>
+  </election_official>
+  <election_official id="880642233">
+    <county_name>WILSON</county_name>
+    <state_id>20</state_id>
+    <name>Rhonda Willard</name>
+    <title> </title>
+    <phone>6203782186</phone>
+    <fax>6203783841</fax>
+    <email>wilsoncoclerk1@twinmounds.com</email>
+  </election_official>
+  <election_official id="948235209">
+    <county_name>LINCOLN</county_name>
+    <state_id>20</state_id>
+    <name>Dawn Harlow</name>
+    <title> </title>
+    <phone>7855244757</phone>
+    <fax>7855245008</fax>
+    <email>LC_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="278847644">
+    <county_name>FINNEY</county_name>
+    <state_id>20</state_id>
+    <name>Elsa Ulrich</name>
+    <title> </title>
+    <phone>6202723522</phone>
+    <fax>6202723890</fax>
+    <email>clerk@finneycounty.org</email>
+  </election_official>
+  <election_official id="364290226">
+    <county_name>MITCHELL</county_name>
+    <state_id>20</state_id>
+    <name>Chris Treaster</name>
+    <title> </title>
+    <phone>7857386352</phone>
+    <fax>7857385524</fax>
+    <email>mitchell_co@nckcn.com</email>
+  </election_official>
+  <election_official id="665603467">
+    <county_name>CHAUTAUQUA</county_name>
+    <state_id>20</state_id>
+    <name>Lori Martin</name>
+    <title> </title>
+    <phone>6207255800</phone>
+    <fax>6207255801</fax>
+    <email>cq_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1102907888">
+    <county_name>JOHNSON</county_name>
+    <state_id>20</state_id>
+    <name>Brian Newby</name>
+    <title> </title>
+    <phone>9137823441</phone>
+    <fax>9137911753</fax>
+    <email>brian.newby@jocogov.org</email>
+  </election_official>
+  <election_official id="679414804">
+    <county_name>RILEY</county_name>
+    <state_id>20</state_id>
+    <name>Rich Vargo</name>
+    <title> </title>
+    <phone>7855376300</phone>
+    <fax>7855376394</fax>
+    <email>rvargo@rileycountyks.gov</email>
+  </election_official>
+  <election_official id="1349776957">
+    <county_name>PRATT</county_name>
+    <state_id>20</state_id>
+    <name>Sherry Kruse</name>
+    <title> </title>
+    <phone>6206724110</phone>
+    <fax>6206729541</fax>
+    <email>clerk@prattcounty.org</email>
+  </election_official>
+  <election_official id="790936415">
+    <county_name>FORD</county_name>
+    <state_id>20</state_id>
+    <name>Vicki Wells</name>
+    <title> </title>
+    <phone>6202274550</phone>
+    <fax>6202274699</fax>
+    <email>vwells@fordcounty.net</email>
+  </election_official>
+  <election_official id="427410275">
+    <county_name>STAFFORD</county_name>
+    <state_id>20</state_id>
+    <name>Nita Keenan</name>
+    <title> </title>
+    <phone>6205493509</phone>
+    <fax>6205493481</fax>
+    <email>coclerk@stjohnks.net</email>
+  </election_official>
+  <election_official id="1733313300">
+    <county_name>KIOWA</county_name>
+    <state_id>20</state_id>
+    <name>Evelyn Grimm</name>
+    <title> </title>
+    <phone>6207233366</phone>
+    <fax>6207233234</fax>
+    <email>KW_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="152107803">
+    <county_name>DONIPHAN</county_name>
+    <state_id>20</state_id>
+    <name>Peggy Franken</name>
+    <title> </title>
+    <phone>7859853513</phone>
+    <fax>7859853723</fax>
+    <email>dpcoclerk@hotmail.com</email>
+  </election_official>
+  <election_official id="1880977812">
+    <county_name>REPUBLIC</county_name>
+    <state_id>20</state_id>
+    <name>Vickie Hall</name>
+    <title> </title>
+    <phone>7855277231</phone>
+    <fax>7855272668</fax>
+    <email>vhall@nckcn.com</email>
+  </election_official>
+  <election_official id="917311448">
+    <county_name>MARSHALL</county_name>
+    <state_id>20</state_id>
+    <name>Sonya L. Stohs</name>
+    <title> </title>
+    <phone>7855625361</phone>
+    <fax>7855625262</fax>
+    <email>msctyclk@bluevalley.net</email>
+  </election_official>
+  <election_official id="943307903">
+    <county_name>WYANDOTTE</county_name>
+    <state_id>20</state_id>
+    <name>Bruce Newby</name>
+    <title> </title>
+    <phone>9135738500</phone>
+    <fax>9135738580</fax>
+    <email>bnewby@wycokck.org</email>
+  </election_official>
+  <election_official id="980760228">
+    <county_name>LANE</county_name>
+    <state_id>20</state_id>
+    <name>Crysta S. Torson</name>
+    <title> </title>
+    <phone>6203975356</phone>
+    <fax>6203975419</fax>
+    <email>LE_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="627430836">
+    <county_name>ALLEN</county_name>
+    <state_id>20</state_id>
+    <name>Sherrie L Riebel</name>
+    <title> </title>
+    <phone>6203651407</phone>
+    <fax> 6203651441</fax>
+    <email>coclerk@allencounty.org</email>
+  </election_official>
+  <election_official id="32290076">
+    <county_name>STANTON</county_name>
+    <state_id>20</state_id>
+    <name>Sharon Dimitt</name>
+    <title> </title>
+    <phone>6204922140</phone>
+    <fax>6204922688</fax>
+    <email>ST_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="2091884096">
+    <county_name>KINGMAN</county_name>
+    <state_id>20</state_id>
+    <name>Inge Luntsford</name>
+    <title> </title>
+    <phone>6205322521</phone>
+    <fax>6205322037</fax>
+    <email>KM_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1396493606">
+    <county_name>BUTLER</county_name>
+    <state_id>20</state_id>
+    <name>Ron Roberts</name>
+    <title> </title>
+    <phone>3163224233</phone>
+    <fax>3163211011</fax>
+    <email>elections@bucoks.com; clerk@bucoks.com</email>
+  </election_official>
+  <election_official id="1535502368">
+    <county_name>NORTON</county_name>
+    <state_id>20</state_id>
+    <name>Robert D. Wyatt</name>
+    <title> </title>
+    <phone>7858775710</phone>
+    <fax>7858775794</fax>
+    <email>NT_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1629662492">
+    <county_name>CHASE</county_name>
+    <state_id>20</state_id>
+    <name>June A. Morgan</name>
+    <title> </title>
+    <phone>6202736423</phone>
+    <fax>6202736617</fax>
+    <email>CS_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="598116342">
+    <county_name>CHEYENNE</county_name>
+    <state_id>20</state_id>
+    <name>Terry G. Miller</name>
+    <title> </title>
+    <phone>7853328800</phone>
+    <fax>7853328825</fax>
+    <email>CN_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="770553024">
+    <county_name>WOODSON</county_name>
+    <state_id>20</state_id>
+    <name>Shelley A Stuber</name>
+    <title> </title>
+    <phone>6206258605</phone>
+    <fax>6206258670</fax>
+    <email>coclerk@woodsoncounty.net</email>
+  </election_official>
+  <election_official id="1692120292">
+    <county_name>DICKINSON</county_name>
+    <state_id>20</state_id>
+    <name>Sandra Emig Burris</name>
+    <title> </title>
+    <phone>7852633774</phone>
+    <fax>7852632045</fax>
+    <email>DK_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1870637164">
+    <county_name>CLOUD</county_name>
+    <state_id>20</state_id>
+    <name>Linda Bogart</name>
+    <title> </title>
+    <phone>7852438110</phone>
+    <fax>7852438123</fax>
+    <email>CD_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1248758022">
+    <county_name>DOUGLAS</county_name>
+    <state_id>20</state_id>
+    <name>Jameson (Jamie) Shew</name>
+    <title> </title>
+    <phone>7858325281</phone>
+    <fax>7858325192</fax>
+    <email>jshew@douglas-county.com</email>
+  </election_official>
+  <election_official id="1078139711">
+    <county_name>SMITH</county_name>
+    <state_id>20</state_id>
+    <name>Sharon Wolters</name>
+    <title> </title>
+    <phone>7852825110</phone>
+    <fax>7852825114</fax>
+    <email>sm_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="389553305">
+    <county_name>ELLSWORTH</county_name>
+    <state_id>20</state_id>
+    <name>Janet Andrews</name>
+    <title> </title>
+    <phone>7854724161</phone>
+    <fax>7854723818</fax>
+    <email>EWCLERK@KANS.COM</email>
+  </election_official>
+  <election_official id="1026189000">
+    <county_name>TREGO</county_name>
+    <state_id>20</state_id>
+    <name>Lori Augustine</name>
+    <title> </title>
+    <phone>7857435773</phone>
+    <fax>7857435594</fax>
+    <email>TR_county_clerk@wan.kdor.state.ks.us </email>
+  </election_official>
+  <election_official id="1349068524">
+    <county_name>RUSH</county_name>
+    <state_id>20</state_id>
+    <name>Barbara Matal</name>
+    <title> </title>
+    <phone>7852222731</phone>
+    <fax>7852223559</fax>
+    <email>RH_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="961013250">
+    <county_name>NEOSHO</county_name>
+    <state_id>20</state_id>
+    <name>Randal E. Neely</name>
+    <title> </title>
+    <phone>6202443811</phone>
+    <fax>6202443810</fax>
+    <email>NO_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="923243295">
+    <county_name>GREENWOOD</county_name>
+    <state_id>20</state_id>
+    <name>Debbie Wyckoff</name>
+    <title> </title>
+    <phone>6205838121</phone>
+    <fax> 6205838124</fax>
+    <email>GW_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="235731241">
+    <county_name>SHERMAN</county_name>
+    <state_id>20</state_id>
+    <name>Janet R Rumpel</name>
+    <title> </title>
+    <phone>7858904802</phone>
+    <fax>7858904809</fax>
+    <email>SH_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1853373763">
+    <county_name>LYON</county_name>
+    <state_id>20</state_id>
+    <name>Karen Hartenbower</name>
+    <title> </title>
+    <phone>6203413245</phone>
+    <fax>6203413415</fax>
+    <email>lyclerk@lyoncounty.org</email>
+  </election_official>
+  <election_official id="1458453397">
+    <county_name>JEFFERSON</county_name>
+    <state_id>20</state_id>
+    <name>Linda Buttron</name>
+    <title> </title>
+    <phone>7858632272</phone>
+    <fax>7858633135</fax>
+    <email>lbuttron@jfcountyks.com</email>
+  </election_official>
+  <election_official id="1689790294">
+    <county_name>GEARY</county_name>
+    <state_id>20</state_id>
+    <name>Rebecca Bossemeyer</name>
+    <title> </title>
+    <phone>7852383912</phone>
+    <fax>7852385419</fax>
+    <email>rebecca.bossemeyer@gearycounty.org</email>
+  </election_official>
+  <election_official id="1429492738">
+    <county_name>SCOTT</county_name>
+    <state_id>20</state_id>
+    <name>Pamela J Faurot</name>
+    <title> </title>
+    <phone>6208722420</phone>
+    <fax>6208727145</fax>
+    <email>SC_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="109814047">
+    <county_name>JEWELL</county_name>
+    <state_id>20</state_id>
+    <name>Carla J Waugh</name>
+    <title> </title>
+    <phone>7853784020</phone>
+    <fax>7853784075</fax>
+    <email>JW_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1548903976">
+    <county_name>HARPER</county_name>
+    <state_id>20</state_id>
+    <name>Cheryl Adelhardt</name>
+    <title> </title>
+    <phone>6208425555 </phone>
+    <fax>6208423455</fax>
+    <email>clerk@harpercountyks.gov</email>
+  </election_official>
+  <election_official id="398950975">
+    <county_name>LEAVENWORTH</county_name>
+    <state_id>20</state_id>
+    <name>Linda A Scheer</name>
+    <title> </title>
+    <phone>9136840422</phone>
+    <fax>9136801489</fax>
+    <email>lscheer@leavenworthcounty.org</email>
+  </election_official>
+  <election_official id="1456041325">
+    <county_name>SEDGWICK</county_name>
+    <state_id>20</state_id>
+    <name>Bill Gale</name>
+    <title> </title>
+    <phone>3166607100</phone>
+    <fax>3166607125</fax>
+    <email>bgale@sedgwick.gov</email>
+  </election_official>
+  <election_official id="1742655083">
+    <county_name>BARBER</county_name>
+    <state_id>20</state_id>
+    <name>Debbie Wesley</name>
+    <title> </title>
+    <phone>6208863961</phone>
+    <fax>6208865425</fax>
+    <email>BA_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1935997129">
+    <county_name>SALINE</county_name>
+    <state_id>20</state_id>
+    <name>Donald R. Merriman</name>
+    <title> </title>
+    <phone>7853095820</phone>
+    <fax>7853095826</fax>
+    <email>don.merriman@saline.org</email>
+  </election_official>
+  <election_official id="1888324973">
+    <county_name>HAMILTON</county_name>
+    <state_id>20</state_id>
+    <name>Marcia J. Ashmore</name>
+    <title> </title>
+    <phone>6203845629</phone>
+    <fax>6203845853</fax>
+    <email>HM_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="60293168">
+    <county_name>GRANT</county_name>
+    <state_id>20</state_id>
+    <name>Linda McHenry</name>
+    <title> </title>
+    <phone>6203561335</phone>
+    <fax>6203563081</fax>
+    <email>clerk@pld.com</email>
+  </election_official>
+  <election_official id="458161559">
+    <county_name>OSBORNE</county_name>
+    <state_id>20</state_id>
+    <name>Vienna Janis</name>
+    <title> </title>
+    <phone>7853462431</phone>
+    <fax>7853465252</fax>
+    <email>OB_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1381158235">
+    <county_name>KEARNY</county_name>
+    <state_id>20</state_id>
+    <name>Jana G. Jenkinson</name>
+    <title> </title>
+    <phone>6203556422</phone>
+    <fax>6203557382</fax>
+    <email>KE_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1942780904">
+    <county_name>FRANKLIN</county_name>
+    <state_id>20</state_id>
+    <name>Shari Perry</name>
+    <title> </title>
+    <phone>7852293410</phone>
+    <fax>7852293419</fax>
+    <email>sperry@mail.franklincoks.org</email>
+  </election_official>
+  <election_official id="1805911712">
+    <county_name>HODGEMAN</county_name>
+    <state_id>20</state_id>
+    <name>Dena Jordan</name>
+    <title> </title>
+    <phone>6203576421</phone>
+    <fax>6203576161</fax>
+    <email>HG_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1773368491">
+    <county_name>GRAHAM</county_name>
+    <state_id>20</state_id>
+    <name>Jana Irby</name>
+    <title> </title>
+    <phone>7854213453</phone>
+    <fax>7854216374</fax>
+    <email>grahcocl@ruraltel.net</email>
+  </election_official>
+  <election_official id="611844865">
+    <county_name>POTTAWATOMIE</county_name>
+    <state_id>20</state_id>
+    <name>Susan Figge</name>
+    <title> </title>
+    <phone>7854573314</phone>
+    <fax>7854573507</fax>
+    <email>sfigge@Pottcounty.org</email>
+  </election_official>
+  <election_official id="296740015">
+    <county_name>SHAWNEE</county_name>
+    <state_id>20</state_id>
+    <name>Elizabeth Ensley</name>
+    <title> </title>
+    <phone>7852660285</phone>
+    <fax>7852660299</fax>
+    <email>electionoffice@snco.us</email>
+  </election_official>
+  <election_official id="2018480">
+    <county_name>MORRIS</county_name>
+    <state_id>20</state_id>
+    <name>Michelle Garrett</name>
+    <title> </title>
+    <phone>6207675518</phone>
+    <fax>6207676861</fax>
+    <email>morris@cgtelco.net</email>
+  </election_official>
+  <election_official id="1836925442">
+    <county_name>JACKSON</county_name>
+    <state_id>20</state_id>
+    <name>Kathy Mick</name>
+    <title> </title>
+    <phone>7853642891</phone>
+    <fax>7853644204</fax>
+    <email>JA_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1557628863">
+    <county_name>NEMAHA</county_name>
+    <state_id>20</state_id>
+    <name>Leann Jones</name>
+    <title> </title>
+    <phone>7853362170</phone>
+    <fax>7853363373</fax>
+    <email>nmclerk@carsoncomm.com</email>
+  </election_official>
+  <election_official id="808868528">
+    <county_name>SEWARD</county_name>
+    <state_id>20</state_id>
+    <name>Stacia D. Long</name>
+    <title> </title>
+    <phone>6206263201</phone>
+    <fax>6206263211</fax>
+    <email>SW_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="409982201">
+    <county_name>WASHINGTON</county_name>
+    <state_id>20</state_id>
+    <name>Louella Kern</name>
+    <title> </title>
+    <phone>7853252974</phone>
+    <fax>7853252830</fax>
+    <email>wsclerk@washingtonks.net</email>
+  </election_official>
+  <election_official id="138927862">
+    <county_name>COMANCHE</county_name>
+    <state_id>20</state_id>
+    <name>Alice Smith</name>
+    <title> </title>
+    <phone>6205822361</phone>
+    <fax>6205822426</fax>
+    <email>CM_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="799257936">
+    <county_name>MIAMI</county_name>
+    <state_id>20</state_id>
+    <name>Kathy Peckman</name>
+    <title> </title>
+    <phone>9132943976</phone>
+    <fax>9132949544</fax>
+    <email>KPeckman@miamicountyks.org</email>
+  </election_official>
+  <election_official id="1187107109">
+    <county_name>WABAUNSEE</county_name>
+    <state_id>20</state_id>
+    <name>Jennifer Savage</name>
+    <title> </title>
+    <phone>7857652421</phone>
+    <fax>7857653704</fax>
+    <email>WB_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1123533405">
+    <county_name>ROOKS</county_name>
+    <state_id>20</state_id>
+    <name>Clara Strutt</name>
+    <title> </title>
+    <phone>7854256391</phone>
+    <fax>7854256015</fax>
+    <email>ro_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="525582818">
+    <county_name>MONTGOMERY</county_name>
+    <state_id>20</state_id>
+    <name>Charlotte A. Scott-Schmidt</name>
+    <title> </title>
+    <phone>6203301200</phone>
+    <fax>6203301202</fax>
+    <email>cassschmidt@mgcountyks.org</email>
+  </election_official>
+  <election_official id="2082849014">
+    <county_name>DECATUR</county_name>
+    <state_id>20</state_id>
+    <name>Marilyn Horn</name>
+    <title> </title>
+    <phone>7854758102</phone>
+    <fax>7854758150</fax>
+    <email>DC_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1123775179">
+    <county_name>OTTAWA</county_name>
+    <state_id>20</state_id>
+    <name>Mary Arganbright</name>
+    <title> </title>
+    <phone>7853922279</phone>
+    <fax>7853922011</fax>
+    <email>occlerk@nckcn.com</email>
+  </election_official>
+  <election_official id="399917075">
+    <county_name>HASKELL</county_name>
+    <state_id>20</state_id>
+    <name>Sharon L. Hinkle</name>
+    <title> </title>
+    <phone>6206752263</phone>
+    <fax>6206752681</fax>
+    <email>HS_county_clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+  <election_official id="1737967723">
+    <county_name>CLARK</county_name>
+    <state_id>20</state_id>
+    <name>Rebecca Mishler</name>
+    <title> </title>
+    <phone>6206352813</phone>
+    <fax>6206352393</fax>
+    <email>cacoclrk@ucom.net</email>
+  </election_official>
+  <election_official id="1482518403">
+    <county_name>LOGAN</county_name>
+    <state_id>20</state_id>
+    <name>Pat Schippers</name>
+    <title> </title>
+    <phone>7856724244</phone>
+    <fax>7856723341</fax>
+    <email>LG_County_Clerk@wan.kdor.state.ks.us</email>
+  </election_official>
+</listings>

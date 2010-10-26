@@ -1,0 +1,518 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="952264863">
+    <county_name>SHASTA</county_name>
+    <state_id>6</state_id>
+    <name> Cathy Darling</name>
+    <title> County Clerk</title>
+    <phone>  (530) 225-5730 </phone>
+    <fax>  (530) 225-5454 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1778384614">
+    <county_name>TUOLUMNE</county_name>
+    <state_id>6</state_id>
+    <name> Deborah Russell</name>
+    <title> County Clerk-Auditor-Controller </title>
+    <phone>  (209) 533-5570</phone>
+    <fax>  (209) 694-8931</fax>
+    <email> clerk@tuolumnecounty.ca.gov</email>
+  </election_official>
+  <election_official id="1228772958">
+    <county_name>SAN FRANCISCO</county_name>
+    <state_id>6</state_id>
+    <name> John Arntz</name>
+    <title> Director of Elections </title>
+    <phone>  (415) 554-4375</phone>
+    <fax>  (415) 554-7344</fax>
+    <email> sfvote@sfgov.org</email>
+  </election_official>
+  <election_official id="805248466">
+    <county_name>MARIN</county_name>
+    <state_id>6</state_id>
+    <name>Elaine Ginnold</name>
+    <title> County Clerk/Registrar of Voters</title>
+    <phone> (415) 499-6456</phone>
+    <fax> (415) 499-6447 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1864232588">
+    <county_name>MONTEREY</county_name>
+    <state_id>6</state_id>
+    <name>Linda Tulett</name>
+    <title> Registrar of Voters </title>
+    <phone> (831) 796-1499 </phone>
+    <fax> (831) 755-5485 </fax>
+    <email> electionmail@montereycountyelections.us</email>
+  </election_official>
+  <election_official id="1308950088">
+    <county_name>HUMBOLDT</county_name>
+    <state_id>6</state_id>
+    <name>Carolyn Wilson Crnich</name>
+    <title> County Clerk, Recorder and Registrar of Voters</title>
+    <phone> (707) 445-7481</phone>
+    <fax> (707) 445-7204</fax>
+    <email>  humboldt_elections@co.humboldt.ca.us</email>
+  </election_official>
+  <election_official id="552540758">
+    <county_name>SAN JOAQUIN</county_name>
+    <state_id>6</state_id>
+    <name> Austin Erdman</name>
+    <title> Interim Registrar of Voters </title>
+    <phone>  (209) 468-2885 </phone>
+    <fax>  (209) 468-2889</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1464988155">
+    <county_name>YUBA</county_name>
+    <state_id>6</state_id>
+    <name> Terry A. Hansen</name>
+    <title> County Clerk-Recorder </title>
+    <phone>  (530) 749-7855 </phone>
+    <fax>  (530) 749-7854</fax>
+    <email> elections@co.yuba.ca.us</email>
+  </election_official>
+  <election_official id="963501488">
+    <county_name>TEHAMA</county_name>
+    <state_id>6</state_id>
+    <name> Beverly Ross</name>
+    <title> County Clerk-Recorder</title>
+    <phone>  (530) 527-8190</phone>
+    <fax>  (530) 527-1140</fax>
+    <email> bross@co.tehama.ca.us</email>
+  </election_official>
+  <election_official id="1045227008">
+    <county_name>LASSEN</county_name>
+    <state_id>6</state_id>
+    <name>Julie Bustamante</name>
+    <title> County Clerk-Recorder</title>
+    <phone> (530) 251-8217 </phone>
+    <fax> (530) 257-3480</fax>
+    <email> lcclerk@co.lassen.ca.us</email>
+  </election_official>
+  <election_official id="234062752">
+    <county_name>MERCED</county_name>
+    <state_id>6</state_id>
+    <name>M. Stephen Jones</name>
+    <title> County Clerk/Registrar </title>
+    <phone> (209) 385-7541 </phone>
+    <fax> (209) 385-7387 </fax>
+    <email>  webmaster@data.co.merced.ca.us</email>
+  </election_official>
+  <election_official id="409292153">
+    <county_name>MENDOCINO</county_name>
+    <state_id>6</state_id>
+    <name>Susan M. Ranochak</name>
+    <title> Assessor-County Clerk-Recorder </title>
+    <phone> (707) 463-4371 </phone>
+    <fax> (707) 463-4257 </fax>
+    <email> acr@co.mendocino.ca.us</email>
+  </election_official>
+  <election_official id="717209787">
+    <county_name>MODOC</county_name>
+    <state_id>6</state_id>
+    <name>Judith Stevens</name>
+    <title> County Auditor/Clerk/Recorder</title>
+    <phone> (530) 233-6200</phone>
+    <fax> (530) 233-6666 </fax>
+    <email> judi_stevens@modoccounty.us </email>
+  </election_official>
+  <election_official id="1793582862">
+    <county_name>PLACER</county_name>
+    <state_id>6</state_id>
+    <name>Jim McCauley</name>
+    <title> County Clerk-Recorder-Registrar </title>
+    <phone> (530) 886-5650 </phone>
+    <fax> (530) 886-5688 </fax>
+    <email> election@placer.ca.gov</email>
+  </election_official>
+  <election_official id="130325474">
+    <county_name>SAN BERNARDINO</county_name>
+    <state_id>6</state_id>
+    <name> Kari Verjil</name>
+    <title> Registrar of Voters </title>
+    <phone>  (909) 387-8300 </phone>
+    <fax>  (909) 387-2022</fax>
+    <email> rovwebmail@rov.sbcounty.gov</email>
+  </election_official>
+  <election_official id="1725898584">
+    <county_name>KINGS</county_name>
+    <state_id>6</state_id>
+    <name> Ken Baird</name>
+    <title> County Clerk-Recorder </title>
+    <phone>  (559) 582-3211 Ext. 4401</phone>
+    <fax>(559) 585-8453</fax>
+    <email>  erose@co.kings.ca.us</email>
+  </election_official>
+  <election_official id="1402844178">
+    <county_name>GLENN</county_name>
+    <state_id>6</state_id>
+    <name> Vince T. Minto</name>
+    <title> County Clerk-Recorder </title>
+    <phone>  (530) 934-6414</phone>
+    <fax>  (530) 934-6485</fax>
+    <email> elections@countyofglenn.net</email>
+  </election_official>
+  <election_official id="748011180">
+    <county_name>RIVERSIDE</county_name>
+    <state_id>6</state_id>
+    <name> Barbara Dunmore</name>
+    <title> Registrar of Voters </title>
+    <phone>  (951) 486-7200</phone>
+    <fax>  (951) 486-7335</fax>
+    <email> rovweb@co.riverside.ca.us</email>
+  </election_official>
+  <election_official id="1488992468">
+    <county_name>SAN BENITO</county_name>
+    <state_id>6</state_id>
+    <name> Joe Paul Gonzalez</name>
+    <title> County Clerk-Auditor-Recorder</title>
+    <phone>  (831) 636-4029</phone>
+    <fax>  (831) 636-2939</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1903849201">
+    <county_name>SIERRA</county_name>
+    <state_id>6</state_id>
+    <name> Heather Foster</name>
+    <title> County Clerk-Recorder </title>
+    <phone>  (530) 289-3295 </phone>
+    <fax>  (530) 289-2830</fax>
+    <email> hfoster@sierracounty.ws</email>
+  </election_official>
+  <election_official id="798935667">
+    <county_name>KERN</county_name>
+    <state_id>6</state_id>
+    <name> Ann Barnett</name>
+    <title> Auditor-Controller/County Clerk/Registrar of Voters</title>
+    <phone>  (661) 868-3590</phone>
+    <fax> (661) 868-3768</fax>
+    <email> barnetta@co.kern.ca.us, brockmans@co.kern.ca.us </email>
+  </election_official>
+  <election_official id="782957177">
+    <county_name>TRINITY</county_name>
+    <state_id>6</state_id>
+    <name> Deanna L. Bradford</name>
+    <title> County Clerk-Recorder-Assessor</title>
+    <phone>  (530) 623-1220</phone>
+    <fax>  (530) 623-8398</fax>
+    <email> elections@trinitycounty.org</email>
+  </election_official>
+  <election_official id="1534638599">
+    <county_name>MARIPOSA</county_name>
+    <state_id>6</state_id>
+    <name>Keith Williams</name>
+    <title> County Clerk </title>
+    <phone> (209) 966-2007 </phone>
+    <fax> (209) 966-6496 </fax>
+    <email> cprogner@mariposacounty.org</email>
+  </election_official>
+  <election_official id="576935210">
+    <county_name>ALAMEDA</county_name>
+    <state_id>6</state_id>
+    <name> Dave Macdonald</name>
+    <title> Registrar of Voters </title>
+    <phone>  (510) 272-6933</phone>
+    <fax>  (510) 272-6982</fax>
+    <email>  www.acgov.org/rov/index.htm</email>
+  </election_official>
+  <election_official id="217568742">
+    <county_name>SACRAMENTO</county_name>
+    <state_id>6</state_id>
+    <name> Jill LaVine</name>
+    <title> Registrar of Voters </title>
+    <phone>  (916) 875-6451</phone>
+    <fax>  (916) 875-6228</fax>
+    <email> voterinfo@saccounty.net</email>
+  </election_official>
+  <election_official id="1722973335">
+    <county_name>CONTRA COSTA</county_name>
+    <state_id>6</state_id>
+    <name> Stephen L. Weir</name>
+    <title> County Clerk</title>
+    <phone>  (925) 335-7800,  (877) 335-7802 (Domestic)</phone>
+    <fax> (925) 335-7842</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2007974967">
+    <county_name>NAPA</county_name>
+    <state_id>6</state_id>
+    <name>John Tuteur</name>
+    <title> Assessor-Recorder-County Clerk</title>
+    <phone>  (707) 253-4321 </phone>
+    <fax>  (707) 253-4390 </fax>
+    <email> elections@co.napa.ca.us</email>
+  </election_official>
+  <election_official id="899260565">
+    <county_name>LAKE</county_name>
+    <state_id>6</state_id>
+    <name> Diane C</name>
+    <title> Fridley, Registrar of Voters</title>
+    <phone>  (707) 263-2372 </phone>
+    <fax> (707) 263-2742</fax>
+    <email> dianef@co.lake.ca.us</email>
+  </election_official>
+  <election_official id="1150352325">
+    <county_name>MONO</county_name>
+    <state_id>6</state_id>
+    <name>Renn Nolan</name>
+    <title> County Clerk-Recorder </title>
+    <phone> (760) 932-5537 </phone>
+    <fax> (760) 932-5531 </fax>
+    <email> rnolan@mono.ca.gov, crobles@mono.ca.gov</email>
+  </election_official>
+  <election_official id="1227122039">
+    <county_name>SAN MATEO</county_name>
+    <state_id>6</state_id>
+    <name> Warren Slocum</name>
+    <title> Assessor-County Clerk-Recorder</title>
+    <phone>  (650) 312-5222 </phone>
+    <fax>  (650) 312-5348 </fax>
+    <email> registrar@smcare.org</email>
+  </election_official>
+  <election_official id="853305147">
+    <county_name>BUTTE</county_name>
+    <state_id>6</state_id>
+    <name> Candace Grubbs</name>
+    <title> County Clerk-Recorder-Registrar</title>
+    <phone>  (530) 538-7761,  (800) 894-7761 (Butte County Only)</phone>
+    <fax>  (530) 538-6853 </fax>
+    <email> elections@buttecounty.net</email>
+  </election_official>
+  <election_official id="600875992">
+    <county_name>SUTTER</county_name>
+    <state_id>6</state_id>
+    <name> Donna M. Johnston</name>
+    <title> County Clerk-Recorder</title>
+    <phone>  (530) 822-7122 </phone>
+    <fax>  (530) 822-7587</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1621424222">
+    <county_name>YOLO</county_name>
+    <state_id>6</state_id>
+    <name> Freddie Oakley</name>
+    <title> County Clerk-Recorder </title>
+    <phone>  (530) 666-8133</phone>
+    <fax>  (530) 666-8123</fax>
+    <email> cntyclrk@yoloelections.org</email>
+  </election_official>
+  <election_official id="2072385896">
+    <county_name>SOLANO</county_name>
+    <state_id>6</state_id>
+    <name> Ira Rosenthal</name>
+    <title> Registrar of Voters </title>
+    <phone>  (707) 784-6675</phone>
+    <fax>  (707) 784-6678</fax>
+    <email> elections@solanocounty.com</email>
+  </election_official>
+  <election_official id="369915576">
+    <county_name>INYO</county_name>
+    <state_id>6</state_id>
+    <name> Mary Roper</name>
+    <title> County Clerk/Registrar of Voters </title>
+    <phone> (760) 878-0224 </phone>
+    <fax>  (760) 878-1805</fax>
+    <email>  mroper@inyocounty.us</email>
+  </election_official>
+  <election_official id="271865692">
+    <county_name>DEL NORTE</county_name>
+    <state_id>6</state_id>
+    <name> Vicki Frazier</name>
+    <title> County Clerk-Recorder</title>
+    <phone> (707) 464-7216,  (707) 465-0383  </phone>
+    <fax> (707) 465-0321</fax>
+    <email> vfrazier@co.del-norte.ca.us</email>
+  </election_official>
+  <election_official id="1395174541">
+    <county_name>SANTA CLARA</county_name>
+    <state_id>6</state_id>
+    <name> Jesse Durazo</name>
+    <title> Registrar of Voters </title>
+    <phone>  (408) 299-VOTE,  (866) 430-VOTE</phone>
+    <fax> (408) 998-7314</fax>
+    <email> registrar@rov.sccgov.org</email>
+  </election_official>
+  <election_official id="817915901">
+    <county_name>COLUSA</county_name>
+    <state_id>6</state_id>
+    <name> Kathleen Moran</name>
+    <title>County Clerk-Recorder </title>
+    <phone>  (530) 458-0500</phone>
+    <fax>  (530) 458-0512</fax>
+    <email> info@colusacountyclerks.com</email>
+  </election_official>
+  <election_official id="652272762">
+    <county_name>VENTURA</county_name>
+    <state_id>6</state_id>
+    <name> Phil Schmit</name>
+    <title> County Clerk-Recorder-Registrar of Voters</title>
+    <phone>  (805) 654-2781</phone>
+    <fax>  (805) 648-9200</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1185717436">
+    <county_name>NEVADA</county_name>
+    <state_id>6</state_id>
+    <name> Gregory J. Diaz</name>
+    <title> Recorder, Registrar of Voters </title>
+    <phone> (530) 265-1298 </phone>
+    <fax> (530) 265-9829 </fax>
+    <email> gregory.diaz@co.nevada.ca.us</email>
+  </election_official>
+  <election_official id="410533443">
+    <county_name>FRESNO</county_name>
+    <state_id>6</state_id>
+    <name> Victor E. Salazar</name>
+    <title> County Clerk/Registrar of Voters</title>
+    <phone>  (559) 488-3246 </phone>
+    <fax>  (559) 488-3279</fax>
+    <email> kmcclue@co.fresno.ca.us</email>
+  </election_official>
+  <election_official id="493153933">
+    <county_name>ORANGE</county_name>
+    <state_id>6</state_id>
+    <name>Neal Kelley</name>
+    <title> Registrar of Voters </title>
+    <phone> (714) 567-7600 </phone>
+    <fax> (714) 567-7556 </fax>
+    <email> ocvoter@ocgov.com</email>
+  </election_official>
+  <election_official id="910249664">
+    <county_name>SANTA CRUZ</county_name>
+    <state_id>6</state_id>
+    <name> Gail Pellerin</name>
+    <title> County Clerk</title>
+    <phone>  (831) 454-2060</phone>
+    <fax>  (831) 454-2445</fax>
+    <email> gail.pellerin@co.santa-cruz.ca.us</email>
+  </election_official>
+  <election_official id="189459614">
+    <county_name>SANTA BARBARA</county_name>
+    <state_id>6</state_id>
+    <name> Joseph E. Holland</name>
+    <title>  County Clerk, Recorder and Assessor</title>
+    <phone>  (805) 568-2200 </phone>
+    <fax>  (805) 568-2209</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="517574001">
+    <county_name>STANISLAUS</county_name>
+    <state_id>6</state_id>
+    <name> Lee Lundrigan</name>
+    <title> County Clerk-Recorder </title>
+    <phone> (209) 525-5200 </phone>
+    <fax>  (209) 525-5210</fax>
+    <email> stanvote@mail.co.stanislaus.ca.us</email>
+  </election_official>
+  <election_official id="2089692882">
+    <county_name>SONOMA</county_name>
+    <state_id>6</state_id>
+    <name> Janice Atkinson</name>
+    <title> County Clerk, Recorder, Assessor, Registrar of Voters </title>
+    <phone>  (707) 565-6800</phone>
+    <fax>  (707) 565-6843</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1101090470">
+    <county_name>PLUMAS</county_name>
+    <state_id>6</state_id>
+    <name>Kathleen Williams</name>
+    <title> County Clerk-Recorder-Registrar of Voters</title>
+    <phone>  (530) 283-6256 </phone>
+    <fax>  (530) 283-6155</fax>
+    <email> elections@countyofplumas.com</email>
+  </election_official>
+  <election_official id="538545641">
+    <county_name>AMADOR</county_name>
+    <state_id>6</state_id>
+    <name> Sheldon D. Johnson</name>
+    <title> Registrar of Voters </title>
+    <phone>  (209) 223-6465</phone>
+    <fax>  (209) 223-6467</fax>
+    <email>  Elections@co.amador.ca.us</email>
+  </election_official>
+  <election_official id="1381482018">
+    <county_name>MADERA</county_name>
+    <state_id>6</state_id>
+    <name>Rebecca Martinez</name>
+    <title> County Clerk-Recorder </title>
+    <phone> (559) 675-7720 </phone>
+    <fax> (559) 675-7870 </fax>
+    <email> elections@madera-county.com</email>
+  </election_official>
+  <election_official id="620587946">
+    <county_name>TULARE</county_name>
+    <state_id>6</state_id>
+    <name> Rita A. Woodard</name>
+    <title> Registrar of Voters</title>
+    <phone>  (559) 733-6275</phone>
+    <fax>  (559) 737-4498 </fax>
+    <email> kashanno@co.tulare.ca.us</email>
+  </election_official>
+  <election_official id="751416636">
+    <county_name>SISKIYOU</county_name>
+    <state_id>6</state_id>
+    <name> Colleen Setzer</name>
+    <title> County Clerk </title>
+    <phone>  (530) 842-8084</phone>
+    <fax>  (530) 842-8093</fax>
+    <email> csetzer@co.siskiyou.ca.us</email>
+  </election_official>
+  <election_official id="1484460915">
+    <county_name>LOS ANGELES</county_name>
+    <state_id>6</state_id>
+    <name>Dean Logan</name>
+    <title> Registrar - Recorder/County Clerk</title>
+    <phone> (562) 466-1310, (800) 815-2666  </phone>
+    <fax> (562) 929-4790 </fax>
+    <email> voterinfo@rrcc.co.la.ca.us</email>
+  </election_official>
+  <election_official id="844436146">
+    <county_name>SAN DIEGO</county_name>
+    <state_id>6</state_id>
+    <name> Deborah Seiler</name>
+    <title>  Registrar of Voters </title>
+    <phone>  (858) 565-5800, (800) 696-0136</phone>
+    <fax> (858) 694-2955</fax>
+    <email> rovmail@sdcounty.ca.gov</email>
+  </election_official>
+  <election_official id="41731161">
+    <county_name>SAN LUIS OBISPO</county_name>
+    <state_id>6</state_id>
+    <name> Julie Rodewald</name>
+    <title> County Clerk-Recorder</title>
+    <phone>  (805) 781-5228</phone>
+    <fax>  (805) 781-1111</fax>
+    <email> tgong@co.slo.ca.us</email>
+  </election_official>
+  <election_official id="1251628705">
+    <county_name>CALAVERAS</county_name>
+    <state_id>6</state_id>
+    <name> Karen Varni</name>
+    <title> County Clerk</title>
+    <phone> (209) 754-6376</phone>
+    <fax> (209) 754-6733</fax>
+    <email/>
+  </election_official>
+  <election_official id="1889842293">
+    <county_name>ALPINE</county_name>
+    <state_id>6</state_id>
+    <name> Barbara Howard</name>
+    <title> County Clerk </title>
+    <phone>  (530) 694-2281</phone>
+    <fax>  (530) 694-2491</fax>
+    <email> coclerk@alpinecountyca.gov</email>
+  </election_official>
+  <election_official id="1544410984">
+    <county_name>IMPERIAL</county_name>
+    <state_id>6</state_id>
+    <name> Dolores Provencio</name>
+    <title> County Clerk-Recorder </title>
+    <phone> (760) 482-4226 </phone>
+    <fax>  (760) 337-4182</fax>
+    <email>  doloresprovencio@co.imperial.ca.us</email>
+  </election_official>
+</listings>

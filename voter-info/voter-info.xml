@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+
+<ModulePrefs
+    title="Google Voter Info"
+    description="Google Voter Info"
+    author="Michael Geary, Daniel Berlin, Jonathan Blocksom"
+    author_affiliation="Google, Inc."
+    author_email="elections@google.com"
+    thumbnail=""
+    screenshot=""
+    title_url=""
+    height="1000">
+  <Require feature="sharedmap"/>
+  <Require feature="dynamic-height"/>
+  <Require feature="analytics"/>
+</ModulePrefs>
+
+<Content type="html">
+<![CDATA[
+
+<script type="text/javascript">
+
+	var opt = {
+		mapplet: true,
+		
+		baseUrl: 'http://election-gadgets.googlecode.com/hg/voter-info/',
+		
+		MODULE_ID: __MODULE_ID__,
+		BIDI_START_EDGE: '__BIDI_START_EDGE__',
+		BIDI_END_EDGE: '__BIDI_END_EDGE__',
+		BIDI_DIR: '__BIDI_DIR__',
+		BIDI_REVERSE_DIR: '__BIDI_REVERSE_DIR__',
+		
+		writeScript: function( name, seconds ) {
+			document.write(
+				'<script type="text/javascript" src="',
+					_IG_GetCachedUrl( opt.baseUrl + name, { refreshInterval: seconds || 60 } ),
+				'">',
+				'<\/script>'
+			);
+		}
+	};
+	
+	opt.writeScript( 'voter-info.js' );
+	
+</script>
+
+]]>
+</Content>
+
+</Module>

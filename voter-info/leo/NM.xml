@@ -1,0 +1,297 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="2032485205">
+    <county_name>RIO ARRIBA</county_name>
+    <state_id>35</state_id>
+    <name>J. Fred Vigil (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 753-1780</phone>
+    <fax>&#160;(505) 753-1258</fax>
+    <email>&#160;jfvigil@rio-arriba.org</email>
+  </election_official>
+  <election_official id="865236478">
+    <county_name>CURRY</county_name>
+    <state_id>35</state_id>
+    <name>Mario Trujillo (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 763-5591</phone>
+    <fax>&#160;(575) 763-4232</fax>
+    <email>&#160;mltrujillo@currycounty.com</email>
+  </election_official>
+  <election_official id="1129316349">
+    <county_name>COLFAX</county_name>
+    <state_id>35</state_id>
+    <name>Rayetta M. LeDoux  - Trujillo (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 445-5551</phone>
+    <fax>&#160;(575) 445-4031 </fax>
+    <email>&#160;colfaxclerk@bacavalley.com</email>
+  </election_official>
+  <election_official id="359606254">
+    <county_name>SOCORRO</county_name>
+    <state_id>35</state_id>
+    <name>Audrey Jaramillo (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 835-0423</phone>
+    <fax>&#160;(575) 835-1043 </fax>
+    <email>&#160;ajaramillo@co.socorro.nm.us</email>
+  </election_official>
+  <election_official id="1517802678">
+    <county_name>SANDOVAL</county_name>
+    <state_id>35</state_id>
+    <name>Sally G. Padilla (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 867-7572</phone>
+    <fax>&#160;(505) 771-8610</fax>
+    <email>&#160;spadilla@sandovalcounty.com </email>
+  </election_official>
+  <election_official id="57988584">
+    <county_name>LUNA</county_name>
+    <state_id>35</state_id>
+    <name>Karen P. Smyer (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 546-0491</phone>
+    <fax>&#160;(505) 543-6617</fax>
+    <email>&#160; Karen_Smyer@lunacountynm.us</email>
+  </election_official>
+  <election_official id="989227598">
+    <county_name>SANTA FE</county_name>
+    <state_id>35</state_id>
+    <name>Valerie L. Espinoza (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 986-6280</phone>
+    <fax>&#160;(505) 995-2767 </fax>
+    <email>&#160;vespinoza@co.santa-fe.nm.us</email>
+  </election_official>
+  <election_official id="1037621358">
+    <county_name>TAOS</county_name>
+    <state_id>35</state_id>
+    <name>Elaine S. Montaño (D)</name>
+    <title>Clerk</title>
+    <phone>&#160;(575) 737-6380</phone>
+    <fax>&#160;(575) 737-6390 </fax>
+    <email>&#160;elaine.montano@taoscounty.org</email>
+  </election_official>
+  <election_official id="1727482789">
+    <county_name>MCKINLEY</county_name>
+    <state_id>35</state_id>
+    <name>Jacqueline C. Sloan (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 863-6866</phone>
+    <fax>&#160;(505) 863-1419 </fax>
+    <email>&#160;jsloan@co.mckinley.nm.us</email>
+  </election_official>
+  <election_official id="1127064819">
+    <county_name>SIERRA</county_name>
+    <state_id>35</state_id>
+    <name>Janice Armijo Sanchez (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 894-2840</phone>
+    <fax>&#160;(505) 894-2516</fax>
+    <email>&#160;jsanchezclerk@sierracountynm.us</email>
+  </election_official>
+  <election_official id="602876781">
+    <county_name>LINCOLN</county_name>
+    <state_id>35</state_id>
+    <name>Tammie J. Maddox (R)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 648-2394</phone>
+    <fax>&#160;(575) 648-2576</fax>
+    <email>&#160;tammiemaddox@lincolncountynm.net</email>
+  </election_official>
+  <election_official id="1389742286">
+    <county_name>SAN JUAN</county_name>
+    <state_id>35</state_id>
+    <name>Fran Hanhardt (R)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 334-9471</phone>
+    <fax>&#160;(505) 334-3635</fax>
+    <email>&#160;fhanhardt@sjcounty.net</email>
+  </election_official>
+  <election_official id="978364806">
+    <county_name>ROOSEVELT</county_name>
+    <state_id>35</state_id>
+    <name>E. Janet Collins (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 356-8562</phone>
+    <fax>&#160;(575) 356-3560</fax>
+    <email>&#160;jcollins@rooseveltcounty.com</email>
+  </election_official>
+  <election_official id="1747642501">
+    <county_name>DONA ANA</county_name>
+    <state_id>35</state_id>
+    <name>Rita Torres (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 647-7421</phone>
+    <fax>&#160;ceciliam@donaanacounty.org</fax>
+    <email>ceciliam@donaanacounty.org&#160;</email>
+  </election_official>
+  <election_official id="1887422458">
+    <county_name>GUADALUPE</county_name>
+    <state_id>35</state_id>
+    <name>Adam Gallegos (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 472-3791</phone>
+    <fax>&#160;(575) 472-4791</fax>
+    <email>&#160;agallegos@guadco-nm.us</email>
+  </election_official>
+  <election_official id="990934758">
+    <county_name>CATRON</county_name>
+    <state_id>35</state_id>
+    <name>Sharon Armijo (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 533-6400</phone>
+    <fax>&#160;(575) 533-6400</fax>
+    <email>&#160;cclerk2@gilanet.com</email>
+  </election_official>
+  <election_official id="965816269">
+    <county_name>BERNALILLO</county_name>
+    <state_id>35</state_id>
+    <name>Margaret Toulouse Oliver (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 468-1290</phone>
+    <fax>&#160;(505) 768-4151</fax>
+    <email>&#160;clerk@bernco.gov</email>
+  </election_official>
+  <election_official id="1353742842">
+    <county_name>EDDY</county_name>
+    <state_id>35</state_id>
+    <name>Darlene Rosprim (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 885-3383</phone>
+    <fax>&#160;(575) 234-1793</fax>
+    <email>&#160;darlene@co.eddy.nm.us</email>
+  </election_official>
+  <election_official id="1098474730">
+    <county_name>DE BACA</county_name>
+    <state_id>35</state_id>
+    <name>Laurie A. Pettigrew (R)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 355-2601</phone>
+    <fax>&#160;(505) 355-2441 </fax>
+    <email>&#160;dbclp@plateautel.net</email>
+  </election_official>
+  <election_official id="540711600">
+    <county_name>CHAVES</county_name>
+    <state_id>35</state_id>
+    <name>Rhoda C. Coakley (R)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 624-6614</phone>
+    <fax>&#160;(575) 624-6523 </fax>
+    <email>&#160;coclerk@co.chaves.nm.us</email>
+  </election_official>
+  <election_official id="1231016541">
+    <county_name>MORA</county_name>
+    <state_id>35</state_id>
+    <name>Charlotte Duran (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 387-2448</phone>
+    <fax>(575) 387-9023&#160;</fax>
+    <email>mora_clerk@yahoo.com</email>
+  </election_official>
+  <election_official id="275044877">
+    <county_name>LEA</county_name>
+    <state_id>35</state_id>
+    <name>Melinda Hughes (R)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 396-8623</phone>
+    <fax>&#160;(575) 396-3293</fax>
+    <email>&#160;mhughes@leacounty.net</email>
+  </election_official>
+  <election_official id="2118655027">
+    <county_name>UNION</county_name>
+    <state_id>35</state_id>
+    <name>Joyce Ann Sowers (D)</name>
+    <title>Clerk&#160;</title>
+    <phone>&#160;(505) 374-9491</phone>
+    <fax>&#160;(505) 374-2763</fax>
+    <email>&#160;unionclerk@plateautel.net</email>
+  </election_official>
+  <election_official id="1240978796">
+    <county_name>GRANT</county_name>
+    <state_id>35</state_id>
+    <name>Robert Zamiarripa (D) </name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 574-0042</phone>
+    <fax>&#160;(575) 574-0076</fax>
+    <email>&#160;grantrzamari@cybermesa.com</email>
+  </election_official>
+  <election_official id="202412966">
+    <county_name>VALENCIA</county_name>
+    <state_id>35</state_id>
+    <name>Sally Perea (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 866-2073</phone>
+    <fax>&#160;(505) 866-2023</fax>
+    <email>&#160;clk@co.valencia.nm.us</email>
+  </election_official>
+  <election_official id="186646335">
+    <county_name>QUAY</county_name>
+    <state_id>35</state_id>
+    <name>Ellen L. White (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 461-0510</phone>
+    <fax>&#160;(575) 461-0513 </fax>
+    <email>&#160;quaycountyclerk@hotmail.com</email>
+  </election_official>
+  <election_official id="161910022">
+    <county_name>OTERO</county_name>
+    <state_id>35</state_id>
+    <name>Robyn M. Holmes (R)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(575) 437-4942</phone>
+    <fax>&#160;(575) 443-2922</fax>
+    <email>&#160;rholmes@co.otero.nm.us</email>
+  </election_official>
+  <election_official id="834885753">
+    <county_name>CIBOLA</county_name>
+    <state_id>35</state_id>
+    <name>Eileen M. Martinez (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 285-2535</phone>
+    <fax>&#160;(505) 285-2562 </fax>
+    <email>&#160;eileenm@cia-g.com</email>
+  </election_official>
+  <election_official id="1900005624">
+    <county_name>HARDING</county_name>
+    <state_id>35</state_id>
+    <name>Carmen Acosta (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>(575) 542-9213&#160;</phone>
+    <fax>(575) 542-3193</fax>
+    <email>&#160;hidclk@aznex.com</email>
+  </election_official>
+  <election_official id="">
+    <county_name>HIDALGO</county_name>
+    <state_id>35</state_id>
+  </election_official>
+  <election_official id="526893506">
+    <county_name>SAN MIGUEL</county_name>
+    <state_id>35</state_id>
+    <name>Pecos Paul Maez (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 425-9331</phone>
+    <fax>&#160;(505) 454-1799</fax>
+    <email>&#160;smclerk@hotmail.com</email>
+  </election_official>
+  <election_official id="2051044203">
+    <county_name>TORRANCE</county_name>
+    <state_id>35</state_id>
+    <name>Linda Kayser (R)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 246-4735</phone>
+    <fax>&#160;(505) 384-4080 </fax>
+    <email>lkayser@torrancecountynm.org&#160;</email>
+  </election_official>
+  <election_official id="14249227">
+    <county_name>LOS ALAMOS</county_name>
+    <state_id>35</state_id>
+    <name>Mary Pat Kraemer (D)</name>
+    <title>&#160;Clerk</title>
+    <phone>&#160;(505) 662-8010</phone>
+    <fax>&#160;(505) 662-8008 </fax>
+    <email>&#160;clerks@mail.lacnm.us</email>
+  </election_official>
+</listings>

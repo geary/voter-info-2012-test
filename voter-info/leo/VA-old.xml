@@ -1,0 +1,1126 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="1083695964">
+    <county_name>CHARLES CITY</county_name>
+    <state_id>51</state_id>
+    <name>Catrinia Barneycastle</name>
+    <title>Office Of The General Registrar</title>
+    <phone> 804-652-4606</phone>
+    <fax> 804-829-6823</fax>
+    <email> cbarneycastle@co.charles-city.va.us</email>
+  </election_official>
+  <election_official id="1249728398">
+    <county_name>GLOUCESTER</county_name>
+    <state_id>51</state_id>
+    <name>Carole Gates</name>
+    <title>County Of Gloucester-Registrar</title>
+    <phone>804-693-3659</phone>
+    <fax> 804-693-3831</fax>
+    <email> cgates@gloucesterva.info</email>
+  </election_official>
+  <election_official id="525950203">
+    <county_name>PATRICK</county_name>
+    <state_id>51</state_id>
+    <name>Dianna Vipperman</name>
+    <title>County Of Patrick</title>
+    <phone> 276-694-7206</phone>
+    <fax>276-694-5488</fax>
+    <email> dvipper@co.patrick.va.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>LOUISA</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="1806191336">
+    <county_name>APPOMATTOX</county_name>
+    <state_id>51</state_id>
+    <name>Sabrina Smith</name>
+    <title>   County Of Appomattox</title>
+    <phone>   	  	 434-352-5302</phone>
+    <fax>   	 434-352-4409</fax>
+    <email> GOVOTE011@APPOMATTOXCOUNTYVA.GOV</email>
+  </election_official>
+  <election_official id="1740268666">
+    <county_name>MADISON</county_name>
+    <state_id>51</state_id>
+    <name>Diana Eanes</name>
+    <title>Madison Voter Registration &amp; Elections</title>
+    <phone>540-948-6533</phone>
+    <fax> 540-948-7825</fax>
+    <email> govote113@verizon.net</email>
+  </election_official>
+  <election_official id="167865953">
+    <county_name>RADFORD</county_name>
+    <state_id>51</state_id>
+    <name>Tracy Howard</name>
+    <title>General Registrar's Office</title>
+    <phone> 540-731-3639</phone>
+    <fax>  540-633-0152</fax>
+    <email>radfordelections@jetbroadband.com</email>
+  </election_official>
+  <election_official id="504958241">
+    <county_name>MANASSAS</county_name>
+    <state_id>51</state_id>
+    <name>Patricia Brendel   </name>
+    <title>Manassas Park City	 </title>
+    <phone> 703-335-8806</phone>
+    <fax> 703-335-9042</fax>
+    <email> registrar@cityofmanassaspark.us</email>
+  </election_official>
+  <election_official id="88846869">
+    <county_name>WILLIAMSBURG</county_name>
+    <state_id>51</state_id>
+    <name>Winifred Sowder   </name>
+    <title>City Of Williamsburg Voter Registrar - Mail</title>
+    <phone> 757-220-6157</phone>
+    <fax> 757-220-6158</fax>
+    <email> wsowder@williamsburgva.gov</email>
+  </election_official>
+  <election_official id="">
+    <county_name>BUENA VISTA</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="1863462606">
+    <county_name>CARROLL</county_name>
+    <state_id>51</state_id>
+    <name>Freida White</name>
+    <title>Voter Registration</title>
+    <phone>276-730-3035</phone>
+    <fax>276-730-3040</fax>
+    <email>   	 fwhite@carrollcountyva.org</email>
+  </election_official>
+  <election_official id="2019130322">
+    <county_name>ARLINGTON</county_name>
+    <state_id>51</state_id>
+    <name>  Linda Lindberg</name>
+    <title>Voter Registration And Electoral Board	</title>
+    <phone> 703-228-3456</phone>
+    <fax>   703-228-3659</fax>
+    <email> voters@arlingtonva.us</email>
+  </election_official>
+  <election_official id="850417162">
+    <county_name>GRAYSON</county_name>
+    <state_id>51</state_id>
+    <name>Debra Phipps</name>
+    <title>General Registrar</title>
+    <phone> 276-773-2842</phone>
+    <fax>276-773-2842</fax>
+    <email> govote077@earthlink.net</email>
+  </election_official>
+  <election_official id="831006419">
+    <county_name>FREDERICK</county_name>
+    <state_id>51</state_id>
+    <name>Rick Miller</name>
+    <title>Frederick County Voter Registration Office</title>
+    <phone> 540-665-5660</phone>
+    <fax> 540-665-8976</fax>
+    <email> fcvotes@co.frederick.va.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>FLUVANNA</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="506381960">
+    <county_name>PAGE</county_name>
+    <state_id>51</state_id>
+    <name>Carol Gaunt</name>
+    <title>County Of Page</title>
+    <phone> 540-743-3986</phone>
+    <fax> 540-743-1988</fax>
+    <email> cgaunt@pagecounty.virginia.gov</email>
+  </election_official>
+  <election_official id="117621026">
+    <county_name>FAUQUIER</county_name>
+    <state_id>51</state_id>
+    <name>Alexander Ables </name>
+    <title>Fauquier County</title>
+    <phone> 540-347-6972</phone>
+    <fax> 540-349-4397</fax>
+    <email> registrar@fauquiercounty.gov</email>
+  </election_official>
+  <election_official id="1262026034">
+    <county_name>BRUNSWICK</county_name>
+    <state_id>51</state_id>
+    <name>Barbara Lewis   </name>
+    <title>Brunswick County</title>
+    <phone> 434-848-4414 </phone>
+    <fax> 434-848-9276 </fax>
+    <email> govote025@brunswickco.com </email>
+  </election_official>
+  <election_official id="1162564337">
+    <county_name>PULASKI</county_name>
+    <state_id>51</state_id>
+    <name>Kathryn Webb</name>
+    <title>Pulaski County Registrar's Office</title>
+    <phone> 540-980-2111</phone>
+    <fax> 540-994-5883</fax>
+    <email> kwebb@pulaskicounty.org</email>
+  </election_official>
+  <election_official id="1130117188">
+    <county_name>LEE</county_name>
+    <state_id>51</state_id>
+    <name>Patsy Burchett	</name>
+    <title>Lee County Voter Registration</title>
+    <phone>276-346-7780</phone>
+    <fax>276-346-7781</fax>
+    <email> govote105@sunsetcom.com</email>
+  </election_official>
+  <election_official id="">
+    <county_name>SALEM</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="1339790806">
+    <county_name>GREENE</county_name>
+    <state_id>51</state_id>
+    <name>Sandra Shifflett</name>
+    <title>Greene County</title>
+    <phone> 434-985-5213</phone>
+    <fax>434-985-2369</fax>
+    <email>sshifflett@gcva.us</email>
+  </election_official>
+  <election_official id="257540099">
+    <county_name>EMPORIA</county_name>
+    <state_id>51</state_id>
+    <name>Lucille Dunlow</name>
+    <title>City Of Emporia</title>
+    <phone>434-634-9533</phone>
+    <fax>434-634-0003</fax>
+    <email>ldunlow@ci.emporia.va.us</email>
+  </election_official>
+  <election_official id="42249888">
+    <county_name>CUMBERLAND</county_name>
+    <state_id>51</state_id>
+    <name>Marlene Watson</name>
+    <title>Cumberland Registrar's Office</title>
+    <phone>804-492-4504</phone>
+    <fax> 804-492-4538</fax>
+    <email>mwatson@cumberlandcounty.virginia.gov</email>
+  </election_official>
+  <election_official id="1939719057">
+    <county_name>LANCASTER</county_name>
+    <state_id>51</state_id>
+    <name>Peggy Harding</name>
+    <title> Lancaster County Voter Registration Office</title>
+    <phone> 804-462-5277</phone>
+    <fax> 804-462-5228</fax>
+    <email>pharding@lancova.com</email>
+  </election_official>
+  <election_official id="">
+    <county_name>DINWIDDIE</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="1699780533">
+    <county_name>BEDFORD CITY</county_name>
+    <state_id>51</state_id>
+    <name>Randi Herrick	</name>
+    <title> City Of Bedford</title>
+    <phone> 540-587-6007</phone>
+    <fax> 540-587-6143</fax>
+    <email> Rherrick@Bedfordva.Gov</email>
+  </election_official>
+  <election_official id="11609245">
+    <county_name>KING WILLIAM</county_name>
+    <state_id>51</state_id>
+    <name>Susan Mickens</name>
+    <title> King William County</title>
+    <phone> 804-769-4952</phone>
+    <fax>804-769-4920</fax>
+    <email> GREGISTRAR@KINGWILLIAMCOUNTY.US</email>
+  </election_official>
+  <election_official id="2146244060">
+    <county_name>RAPPAHANNOCK</county_name>
+    <state_id>51</state_id>
+    <name>Nancy Newlin</name>
+    <title>Rappahannock County Registrar's Office</title>
+    <phone> 540-675-5380</phone>
+    <fax> 540-675-5381</fax>
+    <email> govote157@state.va.us</email>
+  </election_official>
+  <election_official id="1953263411">
+    <county_name>NORTHAMPTON</county_name>
+    <state_id>51</state_id>
+    <name>Theresa Wiser</name>
+    <title> Voter Registration</title>
+    <phone> 757-678-0480</phone>
+    <fax> 757-678-0453</fax>
+    <email> vote@co.northampton.va.us</email>
+  </election_official>
+  <election_official id="1543611400">
+    <county_name>DICKENSON</county_name>
+    <state_id>51</state_id>
+    <name>Reba Childress</name>
+    <title>Dickenson County</title>
+    <phone>276-926-1620</phone>
+    <fax> 276-926-8287</fax>
+    <email> Reba.Childress@dmv.virginia.gov</email>
+  </election_official>
+  <election_official id="813074568">
+    <county_name>SURRY</county_name>
+    <state_id>51</state_id>
+    <name>Lucille Epps</name>
+    <title>Surry County Voter Registration</title>
+    <phone> 757-294-5213</phone>
+    <fax>   757-294-5285</fax>
+    <email>   	 lepps@co.surry.state.va.us</email>
+  </election_official>
+  <election_official id="1836174483">
+    <county_name>JAMES CITY</county_name>
+    <state_id>51</state_id>
+    <name> Alan Cole</name>
+    <title>James City County Voter Registration &amp; Elections</title>
+    <phone> 757-253-6868</phone>
+    <fax> 757-253-6875</fax>
+    <email> vote@james-city.va.us</email>
+  </election_official>
+  <election_official id="213143893">
+    <county_name>HAMPTON</county_name>
+    <state_id>51</state_id>
+    <name>Theresa Kyle</name>
+    <title>Hampton City</title>
+    <phone> 757-727-6218</phone>
+    <fax> 757-727-6084</fax>
+    <email> tkyle@hampton.gov</email>
+  </election_official>
+  <election_official id="1134144276">
+    <county_name>AMHERST</county_name>
+    <state_id>51</state_id>
+    <name>Gary Beasley	   </name>
+    <title>Amherst County Registrar's Office  </title>
+    <phone>  	 434-946-9315</phone>
+    <fax>   	 434-946-9345</fax>
+    <email>   	 gnbeasley@countyofamherst.com</email>
+  </election_official>
+  <election_official id="1594823817">
+    <county_name>CAROLINE</county_name>
+    <state_id>51</state_id>
+    <name>  Danette Moen</name>
+    <title>Caroline County</title>
+    <phone> 804-633-9083</phone>
+    <fax>   804-633-0362</fax>
+    <email> dhmoen@co.caroline.va.us</email>
+  </election_official>
+  <election_official id="1589844226">
+    <county_name>BUCHANAN</county_name>
+    <state_id>51</state_id>
+    <name>Vicki Clevinger</name>
+    <title>Voter Registrar's Office</title>
+    <phone>  276-935-6534</phone>
+    <fax>  276-935-4320</fax>
+    <email> vlclevinger@buchanancounty-va.gov</email>
+  </election_official>
+  <election_official id="1243926627">
+    <county_name>HENRY</county_name>
+    <state_id>51</state_id>
+    <name>Elizabeth Stone   </name>
+    <title>County Of Henry</title>
+    <phone> 276-638-5108</phone>
+    <fax>  276-638-8278</fax>
+    <email> estone@co.henry.va.us</email>
+  </election_official>
+  <election_official id="1230618192">
+    <county_name>BUCKINGHAM</county_name>
+    <state_id>51</state_id>
+    <name>Margaret Thomas   </name>
+    <title>County Of Buckingham</title>
+    <phone> 434-969-4304</phone>
+    <fax> 434-969-2060</fax>
+    <email> Buckinghamelections@embarqmail.com</email>
+  </election_official>
+  <election_official id="1609682382">
+    <county_name>WARREN</county_name>
+    <state_id>51</state_id>
+    <name>Carol Tobin   </name>
+    <title>County Of Warren</title>
+    <phone>  540-635-4327</phone>
+    <fax> 540-635-5456</fax>
+    <email> vote@warrencountyva.net</email>
+  </election_official>
+  <election_official id="1986893957">
+    <county_name>POWHATAN</county_name>
+    <state_id>51</state_id>
+    <name>Inez Poe</name>
+    <title>Powhatan County Registrar</title>
+    <phone> 804-598-5604</phone>
+    <fax>   804-598-7835</fax>
+    <email>ipoe@powhatanva.gov</email>
+  </election_official>
+  <election_official id="1097776457">
+    <county_name>ALLEGHANY</county_name>
+    <state_id>51</state_id>
+    <name>Elizabeth Rose</name>
+    <title>Alleghany County</title>
+    <phone> 540-965-1690</phone>
+    <fax> 540-965-1692</fax>
+    <email> govote005@ntelos.net</email>
+  </election_official>
+  <election_official id="1422659022">
+    <county_name>STAUNTON</county_name>
+    <state_id>51</state_id>
+    <name>Amanda Dimeo</name>
+    <title>City Of Staunton </title>
+    <phone> 540-332-3840</phone>
+    <fax> 540-332-3834</fax>
+    <email> homesaj@ci.staunton.va.us</email>
+  </election_official>
+  <election_official id="1812420019">
+    <county_name>ROANOKE</county_name>
+    <state_id>51</state_id>
+    <name>Judy Stokes</name>
+    <title> Roanoke County</title>
+    <phone> 540-772-7500</phone>
+    <fax>   	 540-772-2115</fax>
+    <email> jstokes@roanokecountyva.gov</email>
+  </election_official>
+  <election_official id="459331942">
+    <county_name>BOTETOURT</county_name>
+    <state_id>51</state_id>
+    <name>Phyllis Dierschow </name>
+    <title>Botetourt County</title>
+    <phone>  540-473-8235</phone>
+    <fax> 540-473-8330</fax>
+    <email>   	 pdierschow@botetourt.org</email>
+  </election_official>
+  <election_official id="1557126573">
+    <county_name>RICHMOND CITY</county_name>
+    <state_id>51</state_id>
+    <name> J. Kirk Showalter</name>
+    <title>Office Of The General Registrar</title>
+    <phone> 804-646-5950</phone>
+    <fax>804-646-7848</fax>
+    <email> VoterRegistration@richmondgov.com</email>
+  </election_official>
+  <election_official id="2077954761">
+    <county_name>FLOYD</county_name>
+    <state_id>51</state_id>
+    <name>  Amy Ingram</name>
+    <title>Registrar County Of Floyd   </title>
+    <phone> 540-745-9350</phone>
+    <fax> 540-745-9390</fax>
+    <email>registrar@floydcova.org</email>
+  </election_official>
+  <election_official id="">
+    <county_name>RUSSELL</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="61107899">
+    <county_name>MANASSAS PARK</county_name>
+    <state_id>51</state_id>
+    <name>  </name>
+    <title>City Of Manassas  </title>
+    <phone>703-257-8230</phone>
+    <fax>703-257-0080</fax>
+    <email> VoterRegistration@ci.manassas.va.us</email>
+  </election_official>
+  <election_official id="1542686113">
+    <county_name>YORK</county_name>
+    <state_id>51</state_id>
+    <name>Walter Latham</name>
+    <title>General Registrar</title>
+    <phone>757-890-3440</phone>
+    <fax> 757-890-3449</fax>
+    <email> registrar@yorkcounty.gov</email>
+  </election_official>
+  <election_official id="1825112505">
+    <county_name>VIRGINIA BEACH</county_name>
+    <state_id>51</state_id>
+    <name>Edith Harrington</name>
+    <title>City Of Virginia Beach</title>
+    <phone> 757-385-8683</phone>
+    <fax> 757-385-5632</fax>
+    <email>pharring@vbgov.com</email>
+  </election_official>
+  <election_official id="1621475359">
+    <county_name>HIGHLAND</county_name>
+    <state_id>51</state_id>
+    <name> Alice Shumate</name>
+    <title>County Of Highland</title>
+    <phone> 540-468-2013</phone>
+    <fax> 540-468-2012</fax>
+    <email>govote091@htcnet.org</email>
+  </election_official>
+  <election_official id="169162496">
+    <county_name>NORFOLK</county_name>
+    <state_id>51</state_id>
+    <name>ELISA LONG</name>
+    <title> REGISTRAR'S OFFICE</title>
+    <phone> 757-664-4353</phone>
+    <fax>  757-664-4685</fax>
+    <email>   	 vote@norfolk.gov</email>
+  </election_official>
+  <election_official id="989212178">
+    <county_name>NORTHUMBERLAND</county_name>
+    <state_id>51</state_id>
+    <name>Kathy Goddard</name>
+    <title>County Of Northumberland</title>
+    <phone> 804-580-4655</phone>
+    <fax>804-580-2075</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="143536450">
+    <county_name>GILES</county_name>
+    <state_id>51</state_id>
+    <name>Donna Altizer</name>
+    <title>Giles County General Registrar's Office</title>
+    <phone>540-921-2802</phone>
+    <fax>540-921-3176</fax>
+    <email>govote071@verizon.net</email>
+  </election_official>
+  <election_official id="2113266344">
+    <county_name>TAZEWELL</county_name>
+    <state_id>51</state_id>
+    <name>Deborah Barrett</name>
+    <title>Tazewell County Registrar's Office   </title>
+    <phone> 276-988-1305</phone>
+    <fax> 276-988-2530</fax>
+    <email> govote@tazewellcounty.org</email>
+  </election_official>
+  <election_official id="2049809905">
+    <county_name>HOPEWELL</county_name>
+    <state_id>51</state_id>
+    <name> Pamala Clark	</name>
+    <title>General Registrar's Office</title>
+    <phone> 804-541-2232</phone>
+    <fax> 804-452-5828</fax>
+    <email>pclark@hopewellva.gov</email>
+  </election_official>
+  <election_official id="25875005">
+    <county_name>STAFFORD</county_name>
+    <state_id>51</state_id>
+    <name>Sharon Persinger</name>
+    <title>County Of Stafford	</title>
+    <phone> 540-658-4000</phone>
+    <fax> 540-658-4003</fax>
+    <email> REGISTRAR@CO.STAFFORD.VA.US</email>
+  </election_official>
+  <election_official id="488137753">
+    <county_name>LUNENBURG</county_name>
+    <state_id>51</state_id>
+    <name>Carolyn Parsons</name>
+    <title>Lunenburg County</title>
+    <phone> 434-696-3071</phone>
+    <fax>  434-696-3952</fax>
+    <email> govote111@gcronline.com</email>
+  </election_official>
+  <election_official id="1384944128">
+    <county_name>CHESAPEAKE</county_name>
+    <state_id>51</state_id>
+    <name> Virginia Garrett</name>
+    <title>  City Of Chesapeake-General Registrar</title>
+    <phone> 757-277-9797</phone>
+    <fax> 757-547-5402</fax>
+    <email>vgarrett@cityofchesapeake.net</email>
+  </election_official>
+  <election_official id="216311611">
+    <county_name>PORTSMOUTH</county_name>
+    <state_id>51</state_id>
+    <name> Deloris Overton Short</name>
+    <title>  City Of Portsmouth	</title>
+    <phone>757-393-8644</phone>
+    <fax>757-393-5415</fax>
+    <email>registrar@portsmouthva.gov</email>
+  </election_official>
+  <election_official id="2062619284">
+    <county_name>HARRISONBURG</county_name>
+    <state_id>51</state_id>
+    <name>Debbie Logan</name>
+    <title>City Of Harrisonburg</title>
+    <phone> 540-432-7707</phone>
+    <fax>  540-432-7784</fax>
+    <email> deborahl@ci.harrisonburg.va.us</email>
+  </election_official>
+  <election_official id="976434627">
+    <county_name>PRINCE EDWARD</county_name>
+    <state_id>51</state_id>
+    <name>Dale Bolt</name>
+    <title>Prince Edward County</title>
+    <phone>434-392-4767</phone>
+    <fax>434-392-3889</fax>
+    <email>govote147@embarqmail.com</email>
+  </election_official>
+  <election_official id="975834941">
+    <county_name>PETERSBURG</county_name>
+    <state_id>51</state_id>
+    <name>Dawn Williams   </name>
+    <title>City Of Petersburg Voter Registrations</title>
+    <phone>804-733-2380</phone>
+    <fax>804-863-2760</fax>
+    <email>petersburgelections@verizon.net</email>
+  </election_official>
+  <election_official id="1778538966">
+    <county_name>AMELIA</county_name>
+    <state_id>51</state_id>
+    <name>	Manda Gravley</name>
+    <title>County Of Amelia   </title>
+    <phone>   804-561-3460</phone>
+    <fax>  804-561-3490</fax>
+    <email> govote007@tds.net</email>
+  </election_official>
+  <election_official id="1103821144">
+    <county_name>CAMPBELL</county_name>
+    <state_id>51</state_id>
+    <name>Karen Danos</name>
+    <title>Campbell County General Registrar</title>
+    <phone>   434-332-9579 </phone>
+    <fax> 434-332-9689</fax>
+    <email> ktdanos@co.campbell.va.us</email>
+  </election_official>
+  <election_official id="963047965">
+    <county_name>PITTSYLVANIA</county_name>
+    <state_id>51</state_id>
+    <name>Jenny Sanders</name>
+    <title>County Of Pittsylvania</title>
+    <phone>434-432-7971</phone>
+    <fax>434-432-7973</fax>
+    <email>jennylee.sanders@pittgov.org</email>
+  </election_official>
+  <election_official id="238564685">
+    <county_name>NORTON</county_name>
+    <state_id>51</state_id>
+    <name>Marie Muir</name>
+    <title>City Of Norton</title>
+    <phone> 276-679-1162</phone>
+    <fax> 276-679-0754</fax>
+    <email>govote720@yahoo.com</email>
+  </election_official>
+  <election_official id="1461935849">
+    <county_name>FRANKLIN CITY</county_name>
+    <state_id>51</state_id>
+    <name>Sandra Holloman </name>
+    <title>City Of Franklin</title>
+    <phone> 757-562-8545</phone>
+    <fax> 757-562-8779</fax>
+    <email>sholloman@franklinva.com</email>
+  </election_official>
+  <election_official id="">
+    <county_name>KING AND QUEEN</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="527512098">
+    <county_name>LOUDOUN</county_name>
+    <state_id>51</state_id>
+    <name>Judith Brown	</name>
+    <title>Loudoun County</title>
+    <phone> 703-777-0380</phone>
+    <fax> 703-777-0622</fax>
+    <email> vote@loudoun.gov</email>
+  </election_official>
+  <election_official id="1455717504">
+    <county_name>WAYNESBORO</county_name>
+    <state_id>51</state_id>
+    <name>Mary Downs   </name>
+    <title>City Of Waynesboro Voter Registration     </title>
+    <phone> 540-942-6620</phone>
+    <fax> 540-942-6501</fax>
+    <email> downsma@ci.waynesboro.va.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>ESSEX</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="1923071045">
+    <county_name>FREDERICKSBURG</county_name>
+    <state_id>51</state_id>
+    <name>Fredericksburg City</name>
+    <title>Juanita Pitchford</title>
+    <phone>540-372-1030</phone>
+    <fax> 540-373-8381</fax>
+    <email> jpitchford@fredericksburgva.gov</email>
+  </election_official>
+  <election_official id="1313479014">
+    <county_name>HENRICO</county_name>
+    <state_id>51</state_id>
+    <name>Mark Coakley</name>
+    <title> Henrico County Registrar</title>
+    <phone> 804-501-4347</phone>
+    <fax> 804-501-5081</fax>
+    <email> coa@co.henrico.va.us</email>
+  </election_official>
+  <election_official id="1202315995">
+    <county_name>GREENSVILLE</county_name>
+    <state_id>51</state_id>
+    <name>Dorothy Kea</name>
+    <title>Greensville County</title>
+    <phone> 434-348-4228</phone>
+    <fax> 434-348-4257</fax>
+    <email>dkea@greensvillecountyva.gov</email>
+  </election_official>
+  <election_official id="1480778549">
+    <county_name>KING GEORGE</county_name>
+    <state_id>51</state_id>
+    <name>Lorrie Gump</name>
+    <title>King George</title>
+    <phone> 540-775-9186</phone>
+    <fax> 540-775-4852</fax>
+    <email>lgump@co.kinggeorge.state.va.us</email>
+  </election_official>
+  <election_official id="1661129026">
+    <county_name>CLARKE</county_name>
+    <state_id>51</state_id>
+    <name>Barbara Bosserman</name>
+    <title>Office Of Voter Registration</title>
+    <phone> 540-955-5168</phone>
+    <fax> 540-955-9667</fax>
+    <email>vote@clarkecounty.gov</email>
+  </election_official>
+  <election_official id="2068387753">
+    <county_name>LYNCHBURG</county_name>
+    <state_id>51</state_id>
+    <name>Patricia Bower</name>
+    <title>City Of Lynchburg</title>
+    <phone> 434-847-1609</phone>
+    <fax> 434-947-2798</fax>
+    <email> registrar@lynchburgva.gov</email>
+  </election_official>
+  <election_official id="1113499320">
+    <county_name>NELSON</county_name>
+    <state_id>51</state_id>
+    <name> Lisa Wooten</name>
+    <title>Nelson County</title>
+    <phone> 434-263-4068</phone>
+    <fax> 434-263-8601</fax>
+    <email>lwooten@nelsoncounty.org</email>
+  </election_official>
+  <election_official id="1059803418">
+    <county_name>CHESTERFIELD</county_name>
+    <state_id>51</state_id>
+    <name>Lawrence Haake</name>
+    <title>County Of Chesterfield</title>
+    <phone>  804-748-1471</phone>
+    <fax> 804-751-0822</fax>
+    <email> registrar@chesterfield.gov</email>
+  </election_official>
+  <election_official id="1006071901">
+    <county_name>SMYTH</county_name>
+    <state_id>51</state_id>
+    <name>Sandra Elswick</name>
+    <title>Smyth County Voter Registration</title>
+    <phone> 276-783-7000</phone>
+    <fax> 276-783-9055</fax>
+    <email> registrar@smythcounty.org</email>
+  </election_official>
+  <election_official id="1276420341">
+    <county_name>MATHEWS</county_name>
+    <state_id>51</state_id>
+    <name>Ruth Hutson	</name>
+    <title>Mathews County</title>
+    <phone> 804-725-3200</phone>
+    <fax>804-725-5786</fax>
+    <email> rhutson@co.mathews.va.us</email>
+  </election_official>
+  <election_official id="916103923">
+    <county_name>WYTHE</county_name>
+    <state_id>51</state_id>
+    <name>Elizabeth Cook</name>
+    <title>Wythe County Voter Registration Office</title>
+    <phone> 276-223-6038</phone>
+    <fax> 276-223-6039</fax>
+    <email>   	 govote@wytheco.org</email>
+  </election_official>
+  <election_official id="1089897482">
+    <county_name>FAIRFAX</county_name>
+    <state_id>51</state_id>
+    <name>Rokey Suleman </name>
+    <title>Fairfax County</title>
+    <phone> 703-222-0776</phone>
+    <fax> 703-324-2205</fax>
+    <email> voting@fairfaxcounty.gov</email>
+  </election_official>
+  <election_official id="979413059">
+    <county_name>ISLE OF WIGHT</county_name>
+    <state_id>51</state_id>
+    <name>Lisa Betterton</name>
+    <title>General Registrar</title>
+    <phone> 757-365-6230</phone>
+    <fax> 757-357-5699</fax>
+    <email>lbettert@isleofwightus.net</email>
+  </election_official>
+  <election_official id="1921179800">
+    <county_name>CHARLOTTE</county_name>
+    <state_id>51</state_id>
+    <name>Nan Lambert</name>
+    <title>General Registrar</title>
+    <phone> 434-542-5856</phone>
+    <fax> 434-542-4168</fax>
+    <email> nanlambert@kinex.net</email>
+  </election_official>
+  <election_official id="1997685196">
+    <county_name>SOUTHAMPTON</county_name>
+    <state_id>51</state_id>
+    <name>Leona Davis</name>
+    <title>Southampton County</title>
+    <phone> 757-653-9280</phone>
+    <fax> 757-653-9401</fax>
+    <email>leonadavis@charterinternet.com</email>
+  </election_official>
+  <election_official id="1997324617">
+    <county_name>NEWPORT NEWS</county_name>
+    <state_id>51</state_id>
+    <name>Vicki Lewis</name>
+    <title>City Of Newport News</title>
+    <phone>757-926-8683</phone>
+    <fax>757-926-3653</fax>
+    <email> vlewis@nngov.com</email>
+  </election_official>
+  <election_official id="">
+    <county_name>ORANGE</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="1740291960">
+    <county_name>HANOVER</county_name>
+    <state_id>51</state_id>
+    <name> Raobert Ostergren   </name>
+    <title>County Of Hanover</title>
+    <phone> 804-365-6080</phone>
+    <fax> 804-365-6078</fax>
+    <email> registrar@co.hanover.va.us</email>
+  </election_official>
+  <election_official id="201033658">
+    <county_name>BEDFORD</county_name>
+    <state_id>51</state_id>
+    <name>Barbara Gunter </name>
+    <title>Bedford County Office Of Elections</title>
+    <phone>540-586-7649</phone>
+    <fax> 540-586-8358</fax>
+    <email> bgunter@co.bedford.va.us</email>
+  </election_official>
+  <election_official id="300116421">
+    <county_name>RICHMOND</county_name>
+    <state_id>51</state_id>
+    <name>Charlotte Pierson</name>
+    <title>Voter Registration</title>
+    <phone> 804-333-4772</phone>
+    <fax> 804-333-3408</fax>
+    <email> govote159@co.richmond.va.us</email>
+  </election_official>
+  <election_official id="1884847036">
+    <county_name>HALIFAX</county_name>
+    <state_id>51</state_id>
+    <name>Judy Meeler</name>
+    <title>County Of Halifax</title>
+    <phone> 434-476-3322</phone>
+    <fax> 434-476-1045</fax>
+    <email>jmeeler@co.halifax.va.us</email>
+  </election_official>
+  <election_official id="3496933">
+    <county_name>LEXINGTON</county_name>
+    <state_id>51</state_id>
+    <name>Carolyn Rendleman</name>
+    <title>City Of Lexington</title>
+    <phone> 540-462-3706</phone>
+    <fax> 540-463-5310</fax>
+    <email> votelex@ci.lexington.va.us</email>
+  </election_official>
+  <election_official id="1430185496">
+    <county_name>FAIRFAX CITY</county_name>
+    <state_id>51</state_id>
+    <name>Jeremiah Vangen </name>
+    <title>City Of Fairfax</title>
+    <phone>703-385-7890</phone>
+    <fax> 703-591-8364</fax>
+    <email>jvangen@fairfaxva.gov</email>
+  </election_official>
+  <election_official id="1757744645">
+    <county_name>ROANOKE CITY</county_name>
+    <state_id>51</state_id>
+    <name>Beryl Brooks</name>
+    <title>Roanoke City</title>
+    <phone> 540-853-2281</phone>
+    <fax> 540-853-1025</fax>
+    <email> bbrooks@roanokeva.gov</email>
+  </election_official>
+  <election_official id="648779886">
+    <county_name>SCOTT</county_name>
+    <state_id>51</state_id>
+    <name>Willie Kilgore</name>
+    <title>Scott County Voter Registrar</title>
+    <phone> 276-386-3843</phone>
+    <fax>   	 276-386-3741</fax>
+    <email> Willie.Kilgore@dmv.virginia.gov</email>
+  </election_official>
+  <election_official id="">
+    <county_name>NOTTOWAY</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="1475268916">
+    <county_name>AUGUSTA</county_name>
+    <state_id>51</state_id>
+    <name>Brandi Lilly</name>
+    <title>County Of Augusta</title>
+    <phone>540-245-5656</phone>
+    <fax> 540-245-5621</fax>
+    <email>   	 blilly@co.augusta.va.us</email>
+  </election_official>
+  <election_official id="1991329990">
+    <county_name>SUSSEX</county_name>
+    <state_id>51</state_id>
+    <name>  William Jenkins</name>
+    <title>Sussex County Registrar</title>
+    <phone> 434-246-1047</phone>
+    <fax> 434-246-4315</fax>
+    <email> govote183@state.va.us</email>
+  </election_official>
+  <election_official id="198918512">
+    <county_name>COVINGTON</county_name>
+    <state_id>51</state_id>
+    <name>Betty Leitch</name>
+    <title>Covington City Registrar's Office</title>
+    <phone> 540-965-6380</phone>
+    <fax> 540-965-6362</fax>
+    <email> govote580@ntelos.net</email>
+  </election_official>
+  <election_official id="1730694260">
+    <county_name>FALLS CHURCH</county_name>
+    <state_id>51</state_id>
+    <name>Deborah Taylor</name>
+    <title>Falls Church Voter Registration</title>
+    <phone> 703-248-5085</phone>
+    <fax> 703-248-5204</fax>
+    <email> vote@fallschurchva.gov</email>
+  </election_official>
+  <election_official id="111127641">
+    <county_name>GOOCHLAND</county_name>
+    <state_id>51</state_id>
+    <name>Frances Ragland</name>
+    <title> Goochland County</title>
+    <phone> 804-556-5803</phone>
+    <fax> 804-556-6323</fax>
+    <email>fragland@co.goochland.va.us</email>
+  </election_official>
+  <election_official id="2118260357">
+    <county_name>FRANKLIN</county_name>
+    <state_id>51</state_id>
+    <name> KAY CHITWOOD</name>
+    <title> VOTER REGISTRAR OF FRANKLIN COUNTY</title>
+    <phone> 540-483-3025</phone>
+    <fax> 540-483-6619</fax>
+    <email> kaychitwood@franklincountyva.org</email>
+  </election_official>
+  <election_official id="2074316209">
+    <county_name>WINCHESTER</county_name>
+    <state_id>51</state_id>
+    <name>Joyce Braithwaite</name>
+    <title>City Of Winchester</title>
+    <phone> 540-545-7910</phone>
+    <fax>  540-545-7925</fax>
+    <email> vote@ci.winchester.va.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>PRINCE GEORGE</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="">
+    <county_name>COLONIAL HEIGHTS</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="227947215">
+    <county_name>NEW KENT</county_name>
+    <state_id>51</state_id>
+    <name>Gwendolyn Ellyson</name>
+    <title> County Of New Kent</title>
+    <phone> 804-966-9699</phone>
+    <fax>804-966-8536</fax>
+    <email> govote127@state.va.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>MIDDLESEX</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="534952131">
+    <county_name>ALEXANDRIA</county_name>
+    <state_id>51</state_id>
+    <name>Tom Parkins</name>
+    <title>City Of Alexandria</title>
+    <phone> 703-838-4050</phone>
+    <fax> 703-838-6449</fax>
+    <email> tom.parkins@alexandriava.gov</email>
+  </election_official>
+  <election_official id="444223450">
+    <county_name>WESTMORELAND</county_name>
+    <state_id>51</state_id>
+    <name>Kristin Hicks</name>
+    <title>Voter Registration Office</title>
+    <phone> 804-493-8898</phone>
+    <fax>804-493-0158</fax>
+    <email> govote193@oonl.com</email>
+  </election_official>
+  <election_official id="">
+    <county_name>BRISTOL</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="540261128">
+    <county_name>BATH</county_name>
+    <state_id>51</state_id>
+    <name>B Plecker  </name>
+    <title>   Bath County</title>
+    <phone>540-839-7266</phone>
+    <fax> 540-839-7277</fax>
+    <email> bathvoter@tds.net</email>
+  </election_official>
+  <election_official id="643709252">
+    <county_name>SPOTSYLVANIA</county_name>
+    <state_id>51</state_id>
+    <name>  	Shirley Boggs</name>
+    <title>Spotsylvania County General Registrar</title>
+    <phone> 540-507-7380</phone>
+    <fax> 540-582-2604</fax>
+    <email> voter@spotsylvania.va.us</email>
+  </election_official>
+  <election_official id="1320422842">
+    <county_name>SHENANDOAH</county_name>
+    <state_id>51</state_id>
+    <name>Lisa Mcdonald</name>
+    <title>County Of Shenandoah</title>
+    <phone> 540-459-6195</phone>
+    <fax> 540-459-6196</fax>
+    <email>lmcdonald@shenandoahcountyva.us</email>
+  </election_official>
+  <election_official id="181216893">
+    <county_name>POQUOSON</county_name>
+    <state_id>51</state_id>
+    <name>Tammi Pinckney   </name>
+    <title>City Of Poquoson  	</title>
+    <phone> 757-868-3070</phone>
+    <fax> 757-868-3104</fax>
+    <email> tpinckney@ci.poquoson.va.us</email>
+  </election_official>
+  <election_official id="1756216718">
+    <county_name>CRAIG</county_name>
+    <state_id>51</state_id>
+    <name>Betty Williams </name>
+    <title>General Registrar</title>
+    <phone> 540-864-6190</phone>
+    <fax> 540-864-6454</fax>
+    <email>govote045.craigco@tds.net</email>
+  </election_official>
+  <election_official id="678380543">
+    <county_name>ACCOMACK</county_name>
+    <state_id>51</state_id>
+    <name>E. Ann Loukx </name>
+    <title>Office Of The General Registrar Of Voters</title>
+    <phone> 757-787-2935 </phone>
+    <fax> 757-824-0525 </fax>
+    <email> Govote@Co.Accomack.Va.Us </email>
+  </election_official>
+  <election_official id="1030752116">
+    <county_name>MECKLENBURG</county_name>
+    <state_id>51</state_id>
+    <name>Ethelbert Carter   </name>
+    <title>County Of Mecklenburg</title>
+    <phone> 434-738-6191</phone>
+    <fax> 434-738-6104</fax>
+    <email> govote117@state.va.us</email>
+  </election_official>
+  <election_official id="566687694">
+    <county_name>CULPEPER</county_name>
+    <state_id>51</state_id>
+    <name>Michele White</name>
+    <title>Voter Registration Of Culpeper County</title>
+    <phone> 540-825-0652</phone>
+    <fax> 540-825-8454</fax>
+    <email>registrar@culpepercounty.gov</email>
+  </election_official>
+  <election_official id="">
+    <county_name>WASHINGTON</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="538640961">
+    <county_name>ALBEMARLE</county_name>
+    <state_id>51</state_id>
+    <name>Richard Washburne</name>
+    <title>Albemarle County</title>
+    <phone>  434-972-4173</phone>
+    <fax>   434-972-4178</fax>
+    <email> VoterRegistration@albemarle.org</email>
+  </election_official>
+  <election_official id="1333840421">
+    <county_name>MARTINSVILLE</county_name>
+    <state_id>51</state_id>
+    <name>Ercell Cowan  </name>
+    <title>City Of Martinsville   </title>
+    <phone>  276-403-5112</phone>
+    <fax> 276-403-5258</fax>
+    <email>ecowan@ci.martinsville.va.us</email>
+  </election_official>
+  <election_official id="595466924">
+    <county_name>PRINCE WILLIAM</county_name>
+    <state_id>51</state_id>
+    <name>Betty Weimer</name>
+    <title> Prince William Voter Registration And Elections</title>
+    <phone> 703-792-6470</phone>
+    <fax> 703-792-6461</fax>
+    <email>pwcvote@pwcgov.org</email>
+  </election_official>
+  <election_official id="1829594398">
+    <county_name>CHARLOTTESVILLE</county_name>
+    <state_id>51</state_id>
+    <name>Sheri Iachetta</name>
+    <title>Charlottesville City</title>
+    <phone> 434-970-3250</phone>
+    <fax> 434-970-3249</fax>
+    <email> iachetta@charlottesville.org</email>
+  </election_official>
+  <election_official id="409550125">
+    <county_name>SUFFOLK</county_name>
+    <state_id>51</state_id>
+    <name>City Of Suffolk	</name>
+    <title> CITY OF SUFFOLK</title>
+    <phone> 757-514-7750</phone>
+    <fax> 757-934-0719</fax>
+    <email> sthornhill@city.suffolk.va.us</email>
+  </election_official>
+  <election_official id="1041874537">
+    <county_name>BLAND</county_name>
+    <state_id>51</state_id>
+    <name>Stacy Grady	   	</name>
+    <title>County Of Bland</title>
+    <phone> 276-688-4441</phone>
+    <fax> 276-688-3552</fax>
+    <email>  govote021@embarqmail.com</email>
+  </election_official>
+  <election_official id="104935753">
+    <county_name>WISE</county_name>
+    <state_id>51</state_id>
+    <name>Tommy Chester</name>
+    <title>County Of Wise</title>
+    <phone> 276-328-8331</phone>
+    <fax> 276-328-7111</fax>
+    <email> wcreg@naxs.com</email>
+  </election_official>
+  <election_official id="">
+    <county_name>MONTGOMERY</county_name>
+    <state_id>51</state_id>
+  </election_official>
+  <election_official id="147186972">
+    <county_name>ROCKINGHAM</county_name>
+    <state_id>51</state_id>
+    <name>Doug Geib</name>
+    <title>County Of Rockingham</title>
+    <phone> 540-564-3055</phone>
+    <fax> 540-564-3057</fax>
+    <email> dgeib@rockinghamcountyva.gov</email>
+  </election_official>
+  <election_official id="828392260">
+    <county_name>GALAX</county_name>
+    <state_id>51</state_id>
+    <name>Stacey Reavis</name>
+    <title>City Of Galax</title>
+    <phone>  276-236-7509</phone>
+    <fax>  276-236-2889</fax>
+    <email>sreavis@galaxcity.org</email>
+  </election_official>
+  <election_official id="1108050965">
+    <county_name>DANVILLE</county_name>
+    <state_id>51</state_id>
+    <name>Peggy Petty </name>
+    <title>City Of Danville</title>
+    <phone> 434-799-6560</phone>
+    <fax> 434-797-8987</fax>
+    <email> pettypm@ci.danville.va.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>ROCKBRIDGE</county_name>
+    <state_id>51</state_id>
+  </election_official>
+</listings>

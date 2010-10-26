@@ -1,0 +1,500 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="39939754">
+    <county_name>MINERAL</county_name>
+    <state_id>54</state_id>
+    <name>Lauren Ellifritz</name>
+    <title> Clerk</title>
+    <phone> 788-3924</phone>
+    <fax> 788-4109</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="317374590">
+    <county_name>WIRT</county_name>
+    <state_id>54</state_id>
+    <name>Suellen Calebaugh</name>
+    <title> Clerk</title>
+    <phone> 275-4271</phone>
+    <fax> 275-3418</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1739590447">
+    <county_name>TUCKER</county_name>
+    <state_id>54</state_id>
+    <name>  Sherry Simmons</name>
+    <title> Clerk</title>
+    <phone> 478-2414</phone>
+    <fax> 478-2446</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1699844779">
+    <county_name>MONONGALIA</county_name>
+    <state_id>54</state_id>
+    <name>Carye Blaney</name>
+    <title>Clerk</title>
+    <phone> 291-7230</phone>
+    <fax>  291-7233</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1317397882">
+    <county_name>LEWIS</county_name>
+    <state_id>54</state_id>
+    <name>Mary Lou Myers</name>
+    <title> Clerk</title>
+    <phone> 269-8215</phone>
+    <fax> 269-8202</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1814771890">
+    <county_name>WYOMING</county_name>
+    <state_id>54</state_id>
+    <name>D. Michael Goode</name>
+    <title>Clerk</title>
+    <phone> 732-9659</phone>
+    <fax> 732-7262</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1073493385">
+    <county_name>RANDOLPH</county_name>
+    <state_id>54</state_id>
+    <name>Brenda Wiseman</name>
+    <title> Clerk</title>
+    <phone> 636-0543</phone>
+    <fax> 636-0544</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1929454950">
+    <county_name>RITCHIE</county_name>
+    <state_id>54</state_id>
+    <name>Susan J. Scott</name>
+    <title> Clerk</title>
+    <phone> 643-2164 ext. 226</phone>
+    <fax> 643-2906</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="290859874">
+    <county_name>FAYETTE</county_name>
+    <state_id>54</state_id>
+    <name> Kelvin E. Holliday</name>
+    <title> Clerk</title>
+    <phone> 574-4225</phone>
+    <fax> 574-4335</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1901759358">
+    <county_name>GREENBRIER</county_name>
+    <state_id>54</state_id>
+    <name> William  J. Livesay, Sr</name>
+    <title> Clerk</title>
+    <phone> 647-6602</phone>
+    <fax> 647-6694 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="609201038">
+    <county_name>MARION</county_name>
+    <state_id>54</state_id>
+    <name>Janice Lorraine Cosco</name>
+    <title> Clerk</title>
+    <phone> 367-5445</phone>
+    <fax> 367-5448</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1667989035">
+    <county_name>RALEIGH</county_name>
+    <state_id>54</state_id>
+    <name>Betty Riffe</name>
+    <title> Clerk</title>
+    <phone> 255-9126</phone>
+    <fax>  255-9352</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="82000333">
+    <county_name>UPSHUR</county_name>
+    <state_id>54</state_id>
+    <name> 	Debbie Thacker Wilfong</name>
+    <title> Clerk</title>
+    <phone> 472-1068</phone>
+    <fax>  472-1029</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="446827438">
+    <county_name>WAYNE</county_name>
+    <state_id>54</state_id>
+    <name> Robert E. Pasley</name>
+    <title> Clerk</title>
+    <phone> 272-6369</phone>
+    <fax>  272-5318</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1640225297">
+    <county_name>CALHOUN</county_name>
+    <state_id>54</state_id>
+    <name>Richard D. Kirby</name>
+    <title> Clerk</title>
+    <phone> 354-6725</phone>
+    <fax> 354-6725</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="397045202">
+    <county_name>CLAY</county_name>
+    <state_id>54</state_id>
+    <name>Connie Workman </name>
+    <title> Clerk</title>
+    <phone> 587-4259</phone>
+    <fax> 587-7329</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1619905403">
+    <county_name>BRAXTON</county_name>
+    <state_id>54</state_id>
+    <name>John D. Jordan</name>
+    <title> Clerk</title>
+    <phone> 765-2833</phone>
+    <fax> 765-2093</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="241032931">
+    <county_name>LINCOLN</county_name>
+    <state_id>54</state_id>
+    <name> Donald C. Whitten</name>
+    <title> Clerk</title>
+    <phone> 824-3336 ext. 233</phone>
+    <fax> 824-2444</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1315864445">
+    <county_name>WETZEL</county_name>
+    <state_id>54</state_id>
+    <name> Carol S. Haught</name>
+    <title> Clerk</title>
+    <phone> 455-8224</phone>
+    <fax> 455-5256</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1636497775">
+    <county_name>KANAWHA</county_name>
+    <state_id>54</state_id>
+    <name>Vera J. McCormick</name>
+    <title> Clerk</title>
+    <phone> 357-0130</phone>
+    <fax> 357-0585</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1979178863">
+    <county_name>BOONE</county_name>
+    <state_id>54</state_id>
+    <name>Gary W. Williams</name>
+    <title> Clerk</title>
+    <phone> 369-7331</phone>
+    <fax> 369-7329</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1354688500">
+    <county_name>MARSHALL</county_name>
+    <state_id>54</state_id>
+    <name>Jan Pest</name>
+    <title> Clerk</title>
+    <phone> 845-1220</phone>
+    <fax>  845-5891</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="167025060">
+    <county_name>PENDLETON</county_name>
+    <state_id>54</state_id>
+    <name>Nancy K. Gonshor</name>
+    <title> Clerk</title>
+    <phone> 358-2505</phone>
+    <fax> 358-2473</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1746607319">
+    <county_name>NICHOLAS</county_name>
+    <state_id>54</state_id>
+    <name>Wanda Hendrickson</name>
+    <title> Clerk</title>
+    <phone> 872-7820</phone>
+    <fax>  872-9600</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1818676481">
+    <county_name>PUTNAM</county_name>
+    <state_id>54</state_id>
+    <name> Brian Wood</name>
+    <title> Clerk</title>
+    <phone> 586-0202</phone>
+    <fax>  586-0280</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1022762548">
+    <county_name>SUMMERS</county_name>
+    <state_id>54</state_id>
+    <name>Mary Beth Merritt</name>
+    <title> Clerk</title>
+    <phone> 466-7104</phone>
+    <fax> 466-7146</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="149891664">
+    <county_name>HARRISON</county_name>
+    <state_id>54</state_id>
+    <name> Susan Thomas</name>
+    <title> </title>
+    <phone> 624-8672</phone>
+    <fax> 624-8575</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1394629200">
+    <county_name>ROANE</county_name>
+    <state_id>54</state_id>
+    <name>Charles B. White, Jr</name>
+    <title> Clerk</title>
+    <phone> 927-2860</phone>
+    <fax> 927-2489</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1649036347">
+    <county_name>MONROE</county_name>
+    <state_id>54</state_id>
+    <name>Donald J. Evans</name>
+    <title> Clerk</title>
+    <phone> 772-3096</phone>
+    <fax> 772-4191</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1629589719">
+    <county_name>HARDY</county_name>
+    <state_id>54</state_id>
+    <name>Gregory L. Ely</name>
+    <title> Clerk</title>
+    <phone> 530-0250</phone>
+    <fax>  530-0251</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1791380349">
+    <county_name>MCDOWELL</county_name>
+    <state_id>54</state_id>
+    <name> Donald L. Hicks</name>
+    <title> Clerk</title>
+    <phone> 436-8544</phone>
+    <fax> 436-8576</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="163672725">
+    <county_name>DODDRIDGE</county_name>
+    <state_id>54</state_id>
+    <name> Janice Ellifritt Cox</name>
+    <title> Clerk</title>
+    <phone>  873-2631</phone>
+    <fax> 873-1840</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="519262545">
+    <county_name>WEBSTER</county_name>
+    <state_id>54</state_id>
+    <name>Terry J. Payne</name>
+    <title> Clerk</title>
+    <phone> 847-2508</phone>
+    <fax> 847-5780</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="750839545">
+    <county_name>MINGO</county_name>
+    <state_id>54</state_id>
+    <name> Jim Hatfield</name>
+    <title> Clerk</title>
+    <phone> 235-0330</phone>
+    <fax> 235-0328</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1991707190">
+    <county_name>BERKELEY</county_name>
+    <state_id>54</state_id>
+    <name>John W. Small, Jr.</name>
+    <title> Clerk</title>
+    <phone> 264-1929</phone>
+    <fax> 267-1794</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="490124211">
+    <county_name>BARBOUR</county_name>
+    <state_id>54</state_id>
+    <name>Debra Harris Talbott</name>
+    <title> Clerk</title>
+    <phone> 457-2232</phone>
+    <fax> 457-2790</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1740463399">
+    <county_name>JEFFERSON</county_name>
+    <state_id>54</state_id>
+    <name> Jennifer S. Meghan</name>
+    <title> Clerk</title>
+    <phone> 728-3215</phone>
+    <fax> 728-1957</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="337948160">
+    <county_name>WOOD</county_name>
+    <state_id>54</state_id>
+    <name>James "Jamie" R. Six</name>
+    <title> Clerk</title>
+    <phone> 424-1850</phone>
+    <fax> 424-1982</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2013909572">
+    <county_name>CABELL</county_name>
+    <state_id>54</state_id>
+    <name>Karen S. Cole</name>
+    <title> Clerk</title>
+    <phone> 526-8625</phone>
+    <fax> 526-8632</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="827895991">
+    <county_name>HAMPSHIRE</county_name>
+    <state_id>54</state_id>
+    <name>Sharon Hott Link</name>
+    <title> Clerk</title>
+    <phone> 822-5112</phone>
+    <fax> 822-4039 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1885389837">
+    <county_name>TYLER</county_name>
+    <state_id>54</state_id>
+    <name>Lora G. Thomas</name>
+    <title> Clerk</title>
+    <phone> 758-2004</phone>
+    <fax>  758-2126</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1061002605">
+    <county_name>GRANT</county_name>
+    <state_id>54</state_id>
+    <name>Harold G. Hiser</name>
+    <title> Clerk</title>
+    <phone> 257-4550</phone>
+    <fax> 257-4207</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1529478285">
+    <county_name>TAYLOR</county_name>
+    <state_id>54</state_id>
+    <name>Nancy Virginia Fowler</name>
+    <title> Clerk</title>
+    <phone> 265-1401</phone>
+    <fax> 265-5450</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="694904173">
+    <county_name>OHIO</county_name>
+    <state_id>54</state_id>
+    <name>Patty Fahey</name>
+    <title> Clerk</title>
+    <phone> 234-3656</phone>
+    <fax> 234-3829</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1063496041">
+    <county_name>PRESTON</county_name>
+    <state_id>54</state_id>
+    <name>Nancy L. Reckart</name>
+    <title> Clerk</title>
+    <phone> 329-0070</phone>
+    <fax> 329-0198</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="720441477">
+    <county_name>JACKSON</county_name>
+    <state_id>54</state_id>
+    <name> Jeff Waybright</name>
+    <title> Clerk</title>
+    <phone> 373-2258</phone>
+    <fax> 372-1107</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1196452224">
+    <county_name>BROOKE</county_name>
+    <state_id>54</state_id>
+    <name>Sylvia J. Benzo</name>
+    <title> Clerk</title>
+    <phone> 737-3661</phone>
+    <fax> 737-4023</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1307550910">
+    <county_name>MERCER</county_name>
+    <state_id>54</state_id>
+    <name>Verlin Moye</name>
+    <title> Clerk</title>
+    <phone> 487-8311</phone>
+    <fax> 487-8351</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2146189201">
+    <county_name>PLEASANTS</county_name>
+    <state_id>54</state_id>
+    <name> Sue E. Morgan</name>
+    <title> Clerk</title>
+    <phone> 684-7542</phone>
+    <fax>  684-7569</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="884276362">
+    <county_name>POCAHONTAS</county_name>
+    <state_id>54</state_id>
+    <name>Sandra K. Friel</name>
+    <title> Clerk</title>
+    <phone> 799-4549</phone>
+    <fax> 799-6947</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="55597817">
+    <county_name>MORGAN</county_name>
+    <state_id>54</state_id>
+    <name> Debra A. Kesecker</name>
+    <title> Clerk</title>
+    <phone> 258-8547</phone>
+    <fax>  258-8545</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2024206686">
+    <county_name>GILMER</county_name>
+    <state_id>54</state_id>
+    <name>Beverly Marks</name>
+    <title> Clerk</title>
+    <phone> 462-7641</phone>
+    <fax> 462-8855</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1330318743">
+    <county_name>MASON</county_name>
+    <state_id>54</state_id>
+    <name> Diana N. Cromley</name>
+    <title> Clerk</title>
+    <phone> 675-1997</phone>
+    <fax> 675-2521</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="902866225">
+    <county_name>HANCOCK</county_name>
+    <state_id>54</state_id>
+    <name>Eleanor Straight</name>
+    <title> Clerk</title>
+    <phone> 564-3311 ext. 266</phone>
+    <fax> 564-5941</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1763752467">
+    <county_name>LOGAN</county_name>
+    <state_id>54</state_id>
+    <name>John Turner</name>
+    <title> Clerk</title>
+    <phone> 792-8600</phone>
+    <fax> 792-8621</fax>
+    <email> </email>
+  </election_official>
+</listings>

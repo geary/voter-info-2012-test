@@ -1,0 +1,752 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="52977786">
+    <county_name>ONTONAGON</county_name>
+    <state_id>26</state_id>
+    <name>Judith D Roehm</name>
+    <title> County Clerk </title>
+    <phone> 906-884-4255</phone>
+    <fax> (906)884-2916</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1719565701">
+    <county_name>CRAWFORD</county_name>
+    <state_id>26</state_id>
+    <name>Sandra Moore</name>
+    <title> Crawford Cty Clerk </title>
+    <phone> 989-344-3200</phone>
+    <fax> 989-344-3223</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1389432726">
+    <county_name>BRANCH</county_name>
+    <state_id>26</state_id>
+    <name>Teresa "terry" Kubasiak</name>
+    <title> County Clerk</title>
+    <phone>517 279 4306</phone>
+    <fax> 517 278 5627</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1640487849">
+    <county_name>MACKINAC</county_name>
+    <state_id>26</state_id>
+    <name>Mary Kay Tamlyn</name>
+    <title> Mackinac Cty Clerk </title>
+    <phone> (906)643-7301</phone>
+    <fax> (906)643-7302</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1222988597">
+    <county_name>ARENAC</county_name>
+    <state_id>26</state_id>
+    <name>Rick Rockwell</name>
+    <title> County Clerk </title>
+    <phone> 989-846-4626</phone>
+    <fax> 989-846-9194</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1829656664">
+    <county_name>NEWAYGO</county_name>
+    <state_id>26</state_id>
+    <name>Laurel Breuker</name>
+    <title> County Clerk </title>
+    <phone> 231-689-7200</phone>
+    <fax> 231-689-7241</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1568657284">
+    <county_name>WEXFORD</county_name>
+    <state_id>26</state_id>
+    <name>Elaine Richardson</name>
+    <title> County Clerk </title>
+    <phone> 231-779-9450</phone>
+    <fax> 231-779-0447</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1348288300">
+    <county_name>GRAND TRAVERSE</county_name>
+    <state_id>26</state_id>
+    <name>Linda Coburn</name>
+    <title> County Clerk </title>
+    <phone> 231)922-4760</phone>
+    <fax> (231)922-4658</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="723129824">
+    <county_name>MARQUETTE</county_name>
+    <state_id>26</state_id>
+    <name>Connie M Branam</name>
+    <title> Marquette Cty Clerk </title>
+    <phone> (906)225-8330</phone>
+    <fax> 906-228-1572</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="709402658">
+    <county_name>CLARE</county_name>
+    <state_id>26</state_id>
+    <name>Carol A. McAulay</name>
+    <title> County Clerk </title>
+    <phone> (989)539-7131</phone>
+    <fax> (989)539-6616</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2136721116">
+    <county_name>LENAWEE</county_name>
+    <state_id>26</state_id>
+    <name>Roxanne Holloway</name>
+    <title> Lenawee County Clerk </title>
+    <phone> (517)264-4606</phone>
+    <fax> (517)264-4533</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1940405706">
+    <county_name>MACOMB</county_name>
+    <state_id>26</state_id>
+    <name>Carmella Sabaugh</name>
+    <title> Clerk/reg. Of Deeds </title>
+    <phone> (586)469-5209</phone>
+    <fax> (586)469-6927</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2034635433">
+    <county_name>IOSCO</county_name>
+    <state_id>26</state_id>
+    <name>Nancy Heubel</name>
+    <title> Iosco County Clerk </title>
+    <phone> 989-984-1009</phone>
+    <fax> 989-984-1012</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="993218205">
+    <county_name>ALCONA</county_name>
+    <state_id>26</state_id>
+    <name>Patti Truman</name>
+    <title> County Clerk </title>
+    <phone> 989 724-9410</phone>
+    <fax> 989 724-9419</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1148014752">
+    <county_name>EMMET</county_name>
+    <state_id>26</state_id>
+    <name>Gail A. Martin</name>
+    <title> County Clerk </title>
+    <phone> 231-348-1744</phone>
+    <fax> (231)348-0633</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1031898157">
+    <county_name>SHIAWASSEE</county_name>
+    <state_id>26</state_id>
+    <name>Lauri L. Braid</name>
+    <title> County Clerk </title>
+    <phone> (989)743-2242</phone>
+    <fax> (989)743-2241</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="537620387">
+    <county_name>OSCODA</county_name>
+    <state_id>26</state_id>
+    <name>Jeri Winton</name>
+    <title> Oscoda County Clerk </title>
+    <phone> (989)826-1110</phone>
+    <fax> (989)826-1136</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="406909814">
+    <county_name>CHEBOYGAN</county_name>
+    <state_id>26</state_id>
+    <name>Mary Ellen Tryban</name>
+    <title> Clerk/register </title>
+    <phone> 231-627-8808</phone>
+    <fax> 231-627-8453</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="349674013">
+    <county_name>KEWEENAW</county_name>
+    <state_id>26</state_id>
+    <name>Marilyn M Winquist</name>
+    <title> County Clerk </title>
+    <phone> 906)337-2229</phone>
+    <fax> 906-337-2795</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="999437489">
+    <county_name>MECOSTA</county_name>
+    <state_id>26</state_id>
+    <name>Marcee Purcell</name>
+    <title> Mecosta Cty Clerk </title>
+    <phone> (231)592-0787</phone>
+    <fax> (231)592-0193</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1638211791">
+    <county_name>VAN BUREN</county_name>
+    <state_id>26</state_id>
+    <name>Tina Leary</name>
+    <title> County Clerk </title>
+    <phone> (269)657-8218</phone>
+    <fax> (269)657-8298</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1006431490">
+    <county_name>BARRY</county_name>
+    <state_id>26</state_id>
+    <name>Debbie S. Smith</name>
+    <title> County Clerk </title>
+    <phone> 269 945-1285</phone>
+    <fax> 269 945-0209</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1712622425">
+    <county_name>DELTA</county_name>
+    <state_id>26</state_id>
+    <name>Nancy Kolich</name>
+    <title> Delta County Clerk </title>
+    <phone> (906)789-5105</phone>
+    <fax> (906)789-5196</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="287592117">
+    <county_name>SAINT JOSEPH</county_name>
+    <state_id>26</state_id>
+    <name>Pattie Bender</name>
+    <title> St Joseph Cty Clerk </title>
+    <phone> 269 467-5603</phone>
+    <fax> 269 467-5628</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="873581663">
+    <county_name>WASHTENAW</county_name>
+    <state_id>26</state_id>
+    <name>Lawrence Kestenbaum</name>
+    <title> Clerk/ Register </title>
+    <phone> 734-222-6730</phone>
+    <fax> 734-994-1690</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="914796928">
+    <county_name>LIVINGSTON</county_name>
+    <state_id>26</state_id>
+    <name>Margaret M. Dunleavy</name>
+    <title> County Clerk </title>
+    <phone> 517-546-0500</phone>
+    <fax> 517-546-4354</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1505915983">
+    <county_name>ANTRIM</county_name>
+    <state_id>26</state_id>
+    <name>Laura Sexton</name>
+    <title> County Clerk</title>
+    <phone> 231-533-6353</phone>
+    <fax> 231/533-6935</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1415259849">
+    <county_name>WAYNE</county_name>
+    <state_id>26</state_id>
+    <name>Cathy Garrett</name>
+    <title> Wayne County Clerk </title>
+    <phone>(313)224-6262</phone>
+    <fax> (313)224-5364</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1860859996">
+    <county_name>CALHOUN</county_name>
+    <state_id>26</state_id>
+    <name>Anne Norlander</name>
+    <title> Clerk/reg Of Deeds </title>
+    <phone> 269-781-0988</phone>
+    <fax> 269-781-0720</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="877937236">
+    <county_name>HOUGHTON</county_name>
+    <state_id>26</state_id>
+    <name>Mary Schoos</name>
+    <title> County Clerk </title>
+    <phone> 906-482-1150</phone>
+    <fax> 906-482-7238</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1292388004">
+    <county_name>GRATIOT</county_name>
+    <state_id>26</state_id>
+    <name>Carol A. Vernon</name>
+    <title> Clerk </title>
+    <phone> 989-875-5215</phone>
+    <fax> 989-875-5254</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="347170249">
+    <county_name>LUCE</county_name>
+    <state_id>26</state_id>
+    <name>Kathy S Mahar</name>
+    <title> Luce County Clerk </title>
+    <phone> 906-293-5521</phone>
+    <fax> (906)293-5553</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1348453993">
+    <county_name>ALPENA</county_name>
+    <state_id>26</state_id>
+    <name>Bonnie Friedrichs</name>
+    <title> Clerk </title>
+    <phone> 989-354-9520</phone>
+    <fax> 989-354-9644</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2134386136">
+    <county_name>LAKE</county_name>
+    <state_id>26</state_id>
+    <name>Shelly Myers</name>
+    <title> County Clerk </title>
+    <phone> (231)745-4641</phone>
+    <fax> (231)745-2241</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1965051409">
+    <county_name>SAINT CLAIR</county_name>
+    <state_id>26</state_id>
+    <name>Marilyn Dunn</name>
+    <title> County Clerk </title>
+    <phone> (810)985-2200</phone>
+    <fax> 810-985-2241</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1549084259">
+    <county_name>MENOMINEE</county_name>
+    <state_id>26</state_id>
+    <name>Barbara Morrison</name>
+    <title> County Clerk </title>
+    <phone> (906)863-9968</phone>
+    <fax> (906)863-5819</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2043675211">
+    <county_name>OGEMAW</county_name>
+    <state_id>26</state_id>
+    <name>Gary Klacking</name>
+    <title> County Clerk </title>
+    <phone> 989-345-0215</phone>
+    <fax> 989-345-7223</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1441936584">
+    <county_name>CHARLEVOIX</county_name>
+    <state_id>26</state_id>
+    <name>Jane Brannon</name>
+    <title> County Clerk </title>
+    <phone> 231-547-7200 X12</phone>
+    <fax> 231-547-7217</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="270697374">
+    <county_name>KALKASKA</county_name>
+    <state_id>26</state_id>
+    <name>Patricia Rodgers</name>
+    <title> Kalkaska Cnty Clerk </title>
+    <phone> 231-258-3300</phone>
+    <fax> (231)258-3337</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="910005991">
+    <county_name>BENZIE</county_name>
+    <state_id>26</state_id>
+    <name>Dawn Olney</name>
+    <title> Clerk</title>
+    <phone> 231-882-9671</phone>
+    <fax> 231-882-5941</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1583005746">
+    <county_name>ALGER</county_name>
+    <state_id>26</state_id>
+    <name>Mary Ann Froberg</name>
+    <title> County Clerk </title>
+    <phone> 906-387-2076</phone>
+    <fax> 906-387-2156</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1029052277">
+    <county_name>ISABELLA</county_name>
+    <state_id>26</state_id>
+    <name>Joyce Swan</name>
+    <title> County Clerk </title>
+    <phone> (989)772-0911 X205</phone>
+    <fax> (989)773-7431</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1705208062">
+    <county_name>IONIA</county_name>
+    <state_id>26</state_id>
+    <name>Tonda Rich</name>
+    <title> County Clerk </title>
+    <phone> 616-527-5322</phone>
+    <fax> (616)527-8201</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2089090066">
+    <county_name>KENT</county_name>
+    <state_id>26</state_id>
+    <name>Mary Beth Hollinrake</name>
+    <title> County Clerk </title>
+    <phone> (616)632-7650</phone>
+    <fax> (616)632-7655</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="962600350">
+    <county_name>GLADWIN</county_name>
+    <state_id>26</state_id>
+    <name>Laura E Flach</name>
+    <title> Gladwin County Clerk </title>
+    <phone> (989)426-7351</phone>
+    <fax> (989)426-6917</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="377585242">
+    <county_name>MUSKEGON</county_name>
+    <state_id>26</state_id>
+    <name>Karen Buie</name>
+    <title> County Clerk </title>
+    <phone> 231-724-6315</phone>
+    <fax> 231-724-6262</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="443524394">
+    <county_name>MONROE</county_name>
+    <state_id>26</state_id>
+    <name>Jennifer L Cline</name>
+    <title> County Clerk </title>
+    <phone> (734)240-7020</phone>
+    <fax> (734)240-7045</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1050828057">
+    <county_name>CASS</county_name>
+    <state_id>26</state_id>
+    <name>Barbara Wilson</name>
+    <title> Clerk/register </title>
+    <phone> 269 445 4464</phone>
+    <fax> 269 445 4406</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="385432263">
+    <county_name>ALLEGAN</county_name>
+    <state_id>26</state_id>
+    <name>Joyce Watts</name>
+    <title> Clerk-register </title>
+    <phone> (269)673-0450</phone>
+    <fax> 269)673-0298</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1080140519">
+    <county_name>DICKINSON</county_name>
+    <state_id>26</state_id>
+    <name>Dolly L Cook</name>
+    <title> County Clerk </title>
+    <phone> (906)774-0988</phone>
+    <fax> (906)774-4660</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="633074143">
+    <county_name>HURON</county_name>
+    <state_id>26</state_id>
+    <name>Peggy Koehler</name>
+    <title> Huron Cty Clerk </title>
+    <phone> (989)269-9942</phone>
+    <fax> 989-269-6160</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="896769369">
+    <county_name>TUSCOLA</county_name>
+    <state_id>26</state_id>
+    <name>Margie A White-cormier</name>
+    <title> County Clerk </title>
+    <phone>  (989)672-3780</phone>
+    <fax> (989)672-4266</fax>
+    <email/>
+  </election_official>
+  <election_official id="297907291">
+    <county_name>ROSCOMMON</county_name>
+    <state_id>26</state_id>
+    <name>Ann Bonk</name>
+    <title> County Clerk </title>
+    <phone> (989)275-5923</phone>
+    <fax> 989-275-8640</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1335320438">
+    <county_name>EATON</county_name>
+    <state_id>26</state_id>
+    <name>Fran Fuller</name>
+    <title> Eaton County Clerk </title>
+    <phone> 517-543-7500</phone>
+    <fax> (517)541-0666</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2074310842">
+    <county_name>GENESEE</county_name>
+    <state_id>26</state_id>
+    <name>Michael J. Carr</name>
+    <title> County Clerk </title>
+    <phone> (810)257-3224</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1508445565">
+    <county_name>GOGEBIC</county_name>
+    <state_id>26</state_id>
+    <name>Gerry Pelissero</name>
+    <title> Gogebic County Clerk </title>
+    <phone> (906)663-4518</phone>
+    <fax> (906)663-4660</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1298744417">
+    <county_name>BAY</county_name>
+    <state_id>26</state_id>
+    <name>Cindy Luczak</name>
+    <title> Clerk </title>
+    <phone> 989-895-4280</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1251105036">
+    <county_name>MONTCALM</county_name>
+    <state_id>26</state_id>
+    <name>Kristen Millard</name>
+    <title> County Clerk </title>
+    <phone> (989)831-7339</phone>
+    <fax> (989)831-7474</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="927234531">
+    <county_name>SAGINAW</county_name>
+    <state_id>26</state_id>
+    <name>Susan Kaltenbach</name>
+    <title> County Clerk </title>
+    <phone> 989-790-5251</phone>
+    <fax> 989-790-5254</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="246794692">
+    <county_name>LAPEER</county_name>
+    <state_id>26</state_id>
+    <name>Marlene Bruns</name>
+    <title> Lapeer County Clerk </title>
+    <phone> (810)245-4863</phone>
+    <fax> (810)667-0362</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2080660615">
+    <county_name>SCHOOLCRAFT</county_name>
+    <state_id>26</state_id>
+    <name>Daniel R McKinney</name>
+    <title> County Clerk </title>
+    <phone> (906)341-3618</phone>
+    <fax> 906)341-5680</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2080951632">
+    <county_name>OCEANA</county_name>
+    <state_id>26</state_id>
+    <name>Rebecca Griffin</name>
+    <title> Oceana County Clerk </title>
+    <phone> (231)873-4328</phone>
+    <fax> (231)873-1391</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="517517714">
+    <county_name>OTSEGO</county_name>
+    <state_id>26</state_id>
+    <name>Susan I. Defeyter</name>
+    <title> County Clerk </title>
+    <phone> 989-731-7504</phone>
+    <fax> (989)731-7519</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="476349641">
+    <county_name>MIDLAND</county_name>
+    <state_id>26</state_id>
+    <name>Scott I Haines</name>
+    <title> Midland Cty Clerk </title>
+    <phone> (989)832-6739</phone>
+    <fax> (989)832-6680</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1505503033">
+    <county_name>KALAMAZOO</county_name>
+    <state_id>26</state_id>
+    <name>Timothy A. Snow</name>
+    <title> Kalamazoo Cty Clerk </title>
+    <phone> (269)383-8840</phone>
+    <fax> (269)384-8143</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1134200469">
+    <county_name>OSCEOLA</county_name>
+    <state_id>26</state_id>
+    <name>Karen Bluhm</name>
+    <title> Osceola County Clerk </title>
+    <phone> (231)832-3261</phone>
+    <fax> (231)832-6149</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="466878179">
+    <county_name>OAKLAND</county_name>
+    <state_id>26</state_id>
+    <name>Ruth Johnson</name>
+    <title> Oakland County Clerk </title>
+    <phone> 248-858-0581</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1095090087">
+    <county_name>HILLSDALE</county_name>
+    <state_id>26</state_id>
+    <name>Thomas C Mohr</name>
+    <title> County Clerk</title>
+    <phone> (517)437-3391 X110</phone>
+    <fax> (517)437-3392</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="857799927">
+    <county_name>CHIPPEWA</county_name>
+    <state_id>26</state_id>
+    <name>Diane Cork</name>
+    <title> County Clerk </title>
+    <phone> (906) 635-6300</phone>
+    <fax> (906)635-6851</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1765938309">
+    <county_name>MISSAUKEE</county_name>
+    <state_id>26</state_id>
+    <name>Carolyn Flore</name>
+    <title> County Clerk </title>
+    <phone> (231)839-4967</phone>
+    <fax> (231)839-3684</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1882020579">
+    <county_name>JACKSON</county_name>
+    <state_id>26</state_id>
+    <name>Amanda Riska</name>
+    <title> Jackson County Clerk </title>
+    <phone> (517)768-6762</phone>
+    <fax> (517)788-4601</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1715426697">
+    <county_name>SANILAC</county_name>
+    <state_id>26</state_id>
+    <name>Linda I Kozfkay</name>
+    <title> County Clerk </title>
+    <phone> (810)648-3212</phone>
+    <fax> (810)648-5466</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1601454794">
+    <county_name>BARAGA</county_name>
+    <state_id>26</state_id>
+    <name>Wendy Goodreau</name>
+    <title> County Clerk </title>
+    <phone> (906)524-6183</phone>
+    <fax> (906)524-6186</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1181417449">
+    <county_name>CLINTON</county_name>
+    <state_id>26</state_id>
+    <name>Diane Zuker</name>
+    <title> Clinton County Clerk </title>
+    <phone> 989-224-5140</phone>
+    <fax> (989)227-6473</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1930807014">
+    <county_name>MANISTEE</county_name>
+    <state_id>26</state_id>
+    <name>Marilyn Kliber</name>
+    <title> County Clerk </title>
+    <phone> (231)723-3331</phone>
+    <fax> (231)723-1492</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="310583822">
+    <county_name>INGHAM</county_name>
+    <state_id>26</state_id>
+    <name>Mike Bryanton</name>
+    <title> Ingham County Clerk </title>
+    <phone> 517-676-7204</phone>
+    <fax> 517-676-7254</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1327228023">
+    <county_name>MASON</county_name>
+    <state_id>26</state_id>
+    <name>Jim Riffle</name>
+    <title> Mason County Clerk </title>
+    <phone> (231)843-8202</phone>
+    <fax> (231)843-1972</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1671916134">
+    <county_name>IRON</county_name>
+    <state_id>26</state_id>
+    <name>Joan Luhtanen</name>
+    <title> Iron County Clerk </title>
+    <phone> 906-875-3221</phone>
+    <fax> 906-875-6775</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="435372909">
+    <county_name>OTTAWA</county_name>
+    <state_id>26</state_id>
+    <name>Dan Krueger</name>
+    <title> Ottawa County Clerk </title>
+    <phone> (616)846-8310</phone>
+    <fax> (616)846-8138</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="261635562">
+    <county_name>PRESQUE ISLE</county_name>
+    <state_id>26</state_id>
+    <name>Susan M. Rhode</name>
+    <title> Clerk </title>
+    <phone> 989-734-3288</phone>
+    <fax> 989-734-7635</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1112787116">
+    <county_name>MONTMORENCY</county_name>
+    <state_id>26</state_id>
+    <name>Cheryl A. Neilsen</name>
+    <title> Montmorency Cty Clrk </title>
+    <phone> (989)785-8022</phone>
+    <fax> (989)785-8023</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1991161809">
+    <county_name>LEELANAU</county_name>
+    <state_id>26</state_id>
+    <name>Michelle Crocker</name>
+    <title> Leelanau Cty Clerk </title>
+    <phone> (231)256-9824</phone>
+    <fax> (231)256-8295</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1655835206">
+    <county_name>BERRIEN</county_name>
+    <state_id>26</state_id>
+    <name>M. Louise Stine</name>
+    <title> County Clerk </title>
+    <phone> 269 983-7111x8241</phone>
+    <fax> 269 982-8642</fax>
+    <email> </email>
+  </election_official>
+</listings>
