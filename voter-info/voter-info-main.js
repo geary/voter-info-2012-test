@@ -430,6 +430,7 @@ T.variables = {
 	fontUnits: pref.fontUnits,
 	fontStyle: fontStyle,
 	gadget: opt.gadgetUrl,
+	logoImage: imgUrl('election_center_logo.gif'),
 	spinDisplay: pref.ready ? '' : 'display:none;',
 	spinImage: imgUrl('spinner.gif')
 };
