@@ -1172,7 +1172,7 @@ function gadgetReady() {
 							G_SATELLITE_3D_MAP
 						]
 					});
-					map.addControl( new GSmallMapControl );
+					map.addControl( new GLargeMapControl3D );
 					map.addControl( new GMapTypeControl );
 					go();
 				}
