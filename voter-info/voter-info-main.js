@@ -664,10 +664,7 @@ function gadgetReady() {
 	
 	function locationWarning() {
 		return T( 'locationWarning', {
-			mustBeRegistered:
-				home.info.state.abbr == 'ND' ? '' : T('mustBeRegistered'),
-			addressWarning:
-				T( interpolated ? 'interpolatedWarning' : 'nonInterpolatedWarning' )
+			home: home.info.address
 		});
 	}
 	
@@ -1093,7 +1090,7 @@ function gadgetReady() {
 			vote.htmlInfowindow = S(
 				'<div style="', fontStyle, '">',
 					voteLocation( true ),
-					locationWarning(),
+					//locationWarning(),
 				'</div>'
 			);
 			adjustHeight();
