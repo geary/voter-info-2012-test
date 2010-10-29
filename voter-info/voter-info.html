@@ -22,7 +22,7 @@
 		
 		var address = '';
 		var hash = decodeURIComponent( location.hash );
-		var match = hash.match( /^#address=(.*)$/ );
+		var match = hash.match( /^#+address=(.*)$/ );
 		if( match ) address = encodeURI( decodeURI( match[1] ) );
 		
 		document.write(
