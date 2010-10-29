@@ -56,28 +56,6 @@ function writeScript( url ) {
 
 writeScript( 'http://www.google.com/jsapi?key=' + key );
 
-function parseQuery( query ) {
-	var params = {};
-	if( query ) {
-		var array = query.split( '&' );
-		for( var i = 0, n = array.length;  i < n;  ++i ) {
-			var p = array[i].split( '=' ),
-				k = decodeURIComponent(p[0]),
-				v = decodeURIComponent(p[1]);
-			if( k ) params[k] = v;
-		}
-	}
-	return params;
-}
-
-var params = parseQuery(
-	unescape(location.search)
-		.replace( /^\?[^?]*\?/, '' )
-		.replace( '#', '&' )
-);
-
-//params.state = 'or';
-
 if( ! Array.prototype.forEach ) {
 	Array.prototype.forEach = function( fun /*, thisp*/ ) {
 		if( typeof fun != 'function' )
@@ -346,7 +324,7 @@ function analytics( path ) {
 	else {
 		if( path.indexOf( 'http://maps.gmodules.com/ig/ifr' ) == 0 ) return;
 		if( path.indexOf( 'http://maps.google.com/maps?f=d' ) == 0 ) path = '/directions';
-		path = ( maker ? '/creator/' : params.home ? '/onebox/' : mapplet ? '/mapplet/' : inline ? '/inline/' : '/gadget/' ) + fixHttp(path);
+		path = ( maker ? '/creator/' : pref.onebox ? '/onebox/' : mapplet ? '/mapplet/' : inline ? '/inline/' : '/gadget/' ) + fixHttp(path);
 		path = '/' + fixHttp(document.referrer) + '/' + path;
 		//console.log( 'analytics', path );
 		_IG_Analytics( 'UA-5730550-1', path );
@@ -414,6 +392,7 @@ var pref = {
 	fontSize: '16',
 	fontUnits: 'px',
 	logo: '',
+	onebox: false,
 	state: '',
 	homePrompt: 'Get your voter info! Enter your *home* address&#8212;where you&#8217;re registered to vote:',
 	electionId: '',
@@ -2055,10 +2034,7 @@ function gadgetReady() {
 					
 					Poll411Search.focus();
 					Poll411Search.blur();
-					if( params.home )
-						Poll411Search.submit();
-					else
-						input.focus();
+					input.focus();
 				})();
 			}
 			else {
