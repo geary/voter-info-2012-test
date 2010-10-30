@@ -969,20 +969,29 @@ function gadgetReady() {
 			var contests = vote && vote.poll && vote.poll.contests && vote.poll.contests[0];
 			if( ! contests  ||  ! contests.length ) return '';
 			contests = sortArrayBy( contests, 'ballot_placement', { numeric:true } );
+			var randomize = contests[0].ballot.candidate[0].order_on_ballot == null;
+			var randomizedMessage = ! randomize ? '' : S(
+				'<div style="font-size:85%; font-style:italic; margin-top:0.5em">',
+					'Candidates are listed in random order',
+				'</div>'
+			);
 			return S(
 				'<div style="padding:0.5em 0;">',
 					'<div class="heading" style="">',
 						'Election Candidates',
 					'</div>',
-					'<div style="font-size:85%; font-style:italic; margin-top:0.5em">',
-						'Candidates are listed in random order',
-					'</div>',
+					randomizedMessage,
 					contests.mapjoin( function( contest ) {
+						var candidates = contest.ballot.candidate;
+						candidates = randomize ?
+							candidates.randomized() :
+							sortArrayBy( candidates, 'order_on_ballot', { numeric:true } );
+							
 						return S(
 							'<div class="heading" style="xfont-size:110%; margin-top:0.5em">',
 								contest.office,
 							'</div>',
-							contest.ballot.candidate.randomized().mapjoin( function( candidate ) {
+							candidates.mapjoin( function( candidate ) {
 								function party() {
 									return candidate.party ? S(
 										'<span style="color:#444; font-size:85%;">',
