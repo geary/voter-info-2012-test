@@ -966,8 +966,8 @@ function gadgetReady() {
 		}
 		
 		function candidates() {
-			var contests = vote && vote.poll && vote.poll.contests && vote.poll.contests[0];
-			if( ! contests  ||  ! contests.length ) return '';
+			var contests = getContests();
+			if( ! contests ) return '';
 			contests = sortArrayBy( contests, 'ballot_placement', { numeric:true } );
 			var randomize = contests[0].ballot.candidate[0].order_on_ballot == null;
 			var randomizedMessage = ! randomize ? '' : S(
@@ -1102,10 +1102,15 @@ function gadgetReady() {
 		}
 		
 		function homeAndVote( infowindow ) {
+			var viewMessage = getContests() ?
+				'View Candidates and Details' :
+				'View Election Details';
 			return vote.info && vote.info.latlng ? S(
 				voteLocation( true ),
 				'<div style="padding-top:0.75em;">',
-					'<a href="#detailsbox" onclick="return selectTab(\'#detailsbox\');">View Candidates and Details</a>',
+					'<a href="#detailsbox" onclick="return selectTab(\'#detailsbox\');">',
+						viewMessage,
+					'</a>',
 				'</div>'
 				//stateLocator(),
 				//locationWarning(),
@@ -1132,6 +1137,11 @@ function gadgetReady() {
 				info: electionInfo()
 			});
 		}
+	}
+	
+	function getContests() {
+		var contests = vote && vote.poll && vote.poll.contests && vote.poll.contests[0];
+		return contests && contests.length && contests;
 	}
 	
 	function infoWrap( html ) {
