@@ -1105,13 +1105,16 @@ function gadgetReady() {
 			var viewMessage = getContests() ?
 				'View Candidates and Details' :
 				'View Election Details';
-			return vote.info && vote.info.latlng ? S(
-				voteLocation( true ),
+			var viewLink = sidebar ? '' : S(
 				'<div style="padding-top:0.75em;">',
 					'<a href="#detailsbox" onclick="return selectTab(\'#detailsbox\');">',
 						viewMessage,
 					'</a>',
 				'</div>'
+			);
+			return vote.info && vote.info.latlng ? S(
+				voteLocation( true ),
+				viewLink
 				//stateLocator(),
 				//locationWarning(),
 				//'<div style="padding-top:0.75em">',
