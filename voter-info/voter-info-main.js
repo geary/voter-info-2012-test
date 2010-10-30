@@ -802,10 +802,7 @@ function gadgetReady() {
 							directionsLink( home, {
 								info: {
 									accuracy: Accuracy.address,
-									address: S(
-										a.line1 ? a.line1 + ', ' : '',
-										a.city, ', ', a.state, ' ', a.zip
-									)
+									address: oneLineAddress( a )
 								}
 							})
 						),
@@ -1628,8 +1625,9 @@ function gadgetReady() {
 				}
 				var address = locations[0].address;
 				home.leo.locality = '' + poll.locality;
-				if( address.line1 && (
-					( address.city && address.state ) || address.zip )
+				if(
+					( address.line1 || address.line2 )  &&
+					( ( address.city && address.state ) || address.zip )
 				) {
 					var addr = oneLineAddress( address );
 					log( 'Polling address:', addr );
