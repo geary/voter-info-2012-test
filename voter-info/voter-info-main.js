@@ -1058,7 +1058,7 @@ function gadgetReady() {
 				);
 			if( vote.locations )
 				return infowindow ? '' : formatLocations( vote.locations, null,
-					{ url:'vote-icon-32.png?1', width:32, height:32 },
+					{ url:'vote-icon-32.png', width:32, height:32 },
 					'Your Voting Locations', false, extra
 				);
 			return '';
