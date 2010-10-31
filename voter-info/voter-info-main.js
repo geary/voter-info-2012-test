@@ -975,8 +975,18 @@ function gadgetReady() {
 					'Candidates are listed in random order',
 				'</div>'
 			);
+			var linkText = 'Sample Ballot'
+			var ballotLink = ! vote.ballotLink ? '' : S(
+				'<div style="padding:0 0 0.75em 0;">',
+					'<a target="_blank" href="', vote.ballotLink, '" title="', linkText, '">',
+						'<img style="border:0; width:17px; height:17px; margin-right:6px;" src="', imgUrl('pdficon_small.gif'), '" />',
+						linkText,
+					'</a>',
+				'</div>'
+			);
 			return S(
-				'<div style="padding:0.5em 0;">',
+				ballotLink,
+				'<div>',
 					'<div class="heading" style="">',
 						'Election Candidates',
 					'</div>',
@@ -1640,6 +1650,7 @@ function gadgetReady() {
 					sorry();
 					return;
 				}
+				checkHiBallot();
 				if( locations.length > 1 ) {
 					log( 'Multiple polling locations' );
 					setVoteNoGeo();
@@ -1664,6 +1675,21 @@ function gadgetReady() {
 				}
 			});
 		});
+		
+		function checkHiBallot() {
+			var hiBallot = home.leo.leo.hiBallot;
+			if( ! hiBallot ) return;
+			var id = vote.locations[0].id;
+			if( ! id ) return;
+			id = id.slice( -4 );
+			var ballot = hiBallot[id];
+			if( ! ballot ) return;
+			vote.ballotLink = S(
+				'http://elections3.hawaii.gov/ppl/docs/ppl/BALLOTS/English/',
+				ballot,
+				'EN.pdf'
+			);
+		}
 		
 		function setVoteGeo( geo, places, address ) {
 			//if( places && places.length == 1 ) {
