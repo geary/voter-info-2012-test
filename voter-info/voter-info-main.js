@@ -404,6 +404,10 @@ var pref = {
 for( var name in pref ) pref[name] = prefs.getString(name) || pref[name];
 pref.ready = prefs.getBool('submit');
 
+if( pref.logo || mapplet ) {
+	pref.fontSize = '13';
+}
+
 if( pref.example in {
 	'Enter your home address':1  // onebox sends us this on a no-entry click
 }) {
@@ -516,6 +520,7 @@ var iframe = ! mapplet  &&  ! inline;
 var balloon = pref.sidebar  ||  mapplet  ||  ( winWidth() >= 450  &&  winHeight() >= 400 );
 var sidebar = !!( pref.sidebar  ||  ( ! mapplet  &&  winWidth() >= 800  &&  winHeight() >= 500 ) );
 
+$body.toggleClass( 'logo', pref.logo );
 $body.toggleClass( 'sidebar', sidebar );
 
 function initialMap() {
@@ -1012,9 +1017,6 @@ function gadgetReady() {
 			return S(
 				ballotLink,
 				'<div>',
-					'<div class="heading" style="">',
-						'Election Candidates',
-					'</div>',
 					randomizedMessage,
 					contests.mapjoin( function( contest ) {
 						var candidates = contest.ballot.candidate;

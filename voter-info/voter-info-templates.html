@@ -55,7 +55,7 @@
     body, body td { {{fontStyle}} }
     #previewmap, #mapbox { overflow:auto; }
     #previewmap { display:none; }
-    .heading { font-weight:bold; }
+    .heading { font-weight:bold; padding-top:10px; }
     .orange { padding:6px; width:95%; background-color:#FFEAC0; border:1px solid #FFBA90; }
     .pink { padding:6px; width:95%; background-color:#FFD0D0; border:1px solid #FF9090; }
 </style>
@@ -75,8 +75,11 @@
     #tablinks a { color:#0000CC; }
     #previewmap, #mapbox { width:100%; }
     #detailsbox { width:100%; overflow:scroll; overflow-x:auto; overflow-y:scroll; display:none; }
+    body.logo .Poll411SearchTitle span, body.logo .Poll411SearchTitle strong, body.logo .Poll411SearchTitle b, body.logo .Poll411SearchTitle i { font-size:17px !important; }
+    body.logo #Poll411Input, body.logo #Poll411Button { font-size:17px; }
+    body.logo .heading { font-size:16px; font-weight:normal; }
     body.sidebar #outerlimits { position:relative; border-top:1px solid #BBB; }
-    body.sidebar #Poll411Gadget { padding: 4px 4px 10px 8px; }
+    body.sidebar #Poll411Gadget { padding: 4px 4px 12px 8px; }
     body.sidebar #Poll411Gadget, body.sidebar #Poll411Form { width:auto; }
     body.sidebar #detailsbox { width:24em; /*position:absolute; left:0; top:0;*/ display:block; }
     body.sidebar #details { margin:8px; }
@@ -87,13 +90,16 @@
 
 <style type="text/css">
     #outerlimits { margin-right:8px; }
-    #Poll411Search, #Poll411Search td { font-size:16px; margin:0; padding:0; }
+    #Poll411Search, #Poll411Search td { margin:0; padding:0; }
+    #Poll411Search .Poll411SearchTitle { font-size:16px; }
+    #Poll411SearchInput, #Poll411SearchButton { font-size:17px; }
     #Poll411Search { background-color:#E8ECF9; margin:0; padding:6px; width:95%; }
     .Poll411SearchForm { margin:0; padding:0; }
     .Poll411SearchTitle { /*font-weight:bold;*/ /*font-size:110%;*/ /*padding-bottom:4px;*/ }
     /*.Poll411SearchLabelBox { position:relative; float:left; margin-right:6px; }*/
     .Poll411SearchInput { width:100%; }
     #details { margin-top:12px; }
+    .heading { font-size:16px; font-weight:normal; }
 </style>
 
 <!--:: ignore ::-->
@@ -303,7 +309,7 @@
 <!--:: attribution ::-->
 
 <div style="margin-bottom:0.5em; color:#333; {{fontStyle}}">
-    <div style="font-size:85%; margin-top:0.5em; border-top:1px solid #BBB; padding-top:1em;">
+    <div style="font-size:85%; margin-top:1.5em; border-top:1px solid #BBB; padding-top:1em;">
         Developed with 
 <!--
         <span id="vips" style="font-size:100%;">
@@ -502,7 +508,7 @@ temp
 <!--:: infoLinks ::-->
 
 <div style="{{fontStyle}}">
-    <div style="margin-top:0.5em;">
+    <div style="margin-top:1.5em;">
         <a target="_blank" href="http://spreadsheets.google.com/viewform?formkey=dG5rTHNRNWVYdGYwMmFjbDBydzlLR2c6MA">
             Report an error
         </a>
