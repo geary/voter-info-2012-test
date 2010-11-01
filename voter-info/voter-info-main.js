@@ -1668,7 +1668,7 @@ function gadgetReady() {
 				if( norm ) {
 					home.info.street = norm.line1;
 					if( norm.line2 ) home.info.street += '<br>' + norm.line2;
-					home.info.city = norm.city;
+					home.info.city = norm.city.replace( 'Washington D.C.', 'Washington' );
 					home.info.state = stateByAbbr( norm.state );
 					home.info.zip = norm.zip;
 				}
