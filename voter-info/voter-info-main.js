@@ -382,11 +382,13 @@ function GAsync( obj ) {
 var userAgent = navigator.userAgent.toLowerCase(),
 	msie = /msie/.test( userAgent ) && !/opera/.test( userAgent );
 
+var example = ( mapplet ? '' : 'Ex: ' ) + '1600 Pennsylvania Ave, Washington DC';
+
 var prefs = new _IG_Prefs();
 var pref = {
 	gadgetType: 'iframe',
 	details: 'tab',
-	example: ( mapplet ? '' : 'Ex: ' ) + '1600 Pennsylvania Ave, Washington DC',
+	example: example,
 	address: '',
 	fontFamily: 'Arial,sans-serif',
 	fontSize: '16',
@@ -401,6 +403,13 @@ var pref = {
 };
 for( var name in pref ) pref[name] = prefs.getString(name) || pref[name];
 pref.ready = prefs.getBool('submit');
+
+if( pref.example in {
+	'Enter your home address':1  // onebox sends us this on a no-entry click
+}) {
+	pref.example = example;
+	pref.ready = false;
+}
 
 var maker = decodeURIComponent(location.href).indexOf('source=http://www.gmodules.com/ig/creator?') > -1;
 
