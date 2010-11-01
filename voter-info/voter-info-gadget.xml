@@ -145,7 +145,7 @@
 		}
 	};
 	
-	opt.writeScript( 'voter-info.js' );
+	opt.writeScript( 'voter-info.js?1' );
 	
 </script>
 
