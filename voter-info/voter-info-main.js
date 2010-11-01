@@ -393,12 +393,11 @@ var pref = {
 	fontFamily: 'Arial,sans-serif',
 	fontSize: '16',
 	fontUnits: 'px',
-	logo: '',
+	logo: false,
 	onebox: false,
 	state: '',
 	homePrompt: 'Get your voter info! Enter the *full home address* where you&#8217;re registered to vote, including city and state:',
 	electionId: '',
-	logo: '',
 	sidebar: false
 };
 for( var name in pref ) pref[name] = prefs.getString(name) || pref[name];
