@@ -404,6 +404,8 @@ var pref = {
 for( var name in pref ) pref[name] = prefs.getString(name) || pref[name];
 pref.ready = prefs.getBool('submit');
 
+if( pref.logo ) pref.example = pref.example.replace( 'Ex:', 'Example:' );
+
 if( pref.logo || mapplet ) {
 	pref.fontSize = '13';
 }
