@@ -386,7 +386,7 @@ var prefs = new _IG_Prefs();
 var pref = {
 	gadgetType: 'iframe',
 	details: 'tab',
-	example: ( mapplet ? '' : 'Ex: ' ) + '1600 Pennsylvania Ave 20500',
+	example: ( mapplet ? '' : 'Ex: ' ) + '1600 Pennsylvania Ave, Washington DC',
 	address: '',
 	fontFamily: 'Arial,sans-serif',
 	fontSize: '16',
@@ -394,7 +394,7 @@ var pref = {
 	logo: '',
 	onebox: false,
 	state: '',
-	homePrompt: 'Get your voter info! Enter your *home* address&#8212;where you&#8217;re registered to vote:',
+	homePrompt: 'Get your voter info! Enter the *full home address* where you&#8217;re registered to vote, including city and state:',
 	electionId: '',
 	logo: '',
 	sidebar: false
