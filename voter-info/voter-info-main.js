@@ -1088,17 +1088,18 @@ function gadgetReady() {
 			directionsLink( home, vote );
 		
 		function voteLocation( infowindow ) {
+			var loc = 'Your Voting Location';
 			if( vote.info )
 				return formatLocations( null, vote.info,
 					infowindow
 						? { url:'vote-icon-50.png', width:50, height:50 }
 						: { url:'vote-pin-icon.png', width:29, height:66 },
-					'Your Voting Location', infowindow, extra
+					loc, infowindow, extra
 				);
 			if( vote.locations )
 				return infowindow ? '' : formatLocations( vote.locations, null,
 					{ url:'vote-icon-32.png', width:32, height:32 },
-					'Your Voting Locations', false, extra
+					loc + ( vote.locations.length > 1 ? 's' : '' ), false, extra
 				);
 			return '';
 		}
@@ -1724,6 +1725,16 @@ function gadgetReady() {
 					return;
 				}
 				try {
+					var coord = places[0].Point.coordinates;
+					var lat = coord[1], lng = coord[0];
+					var latlng = new GLatLng( lat, lng );
+					var miles = latlng.distanceFrom( home.info.latlng ) / 1609.344;
+					log( miles.toFixed(2) + ' miles to polling place' );
+					if( miles > 30 ) {
+						log( 'Polling place is too far away' );
+						setVoteNoGeo();
+						return;
+					}
 					var details = places[0].AddressDetails;
 					var abbr = details.Country.AdministrativeArea.AdministrativeAreaName;
 					var st = statesByName[abbr] || statesByAbbr[ abbr.toUpperCase() ];
