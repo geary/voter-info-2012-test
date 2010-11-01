@@ -1600,6 +1600,11 @@ function gadgetReady() {
 	function setLayout() {
 		$body.toggleClass( 'sidebar', sidebar );
 		var headerHeight = $('#header').visibleHeight();
+		if( pref.logo ) {
+			$('#Poll411Form > .Poll411SearchTable').css({
+				width: $('#Poll411Form > .Poll411SearchTitle > span').width()
+			});
+		}
 		var formHeight = $('#Poll411Gadget').visibleHeight();
 		if( formHeight ) formHeight += 8;  // TODO: WHY DO WE NEED THIS?
 		var height = winHeight() - headerHeight - formHeight - $tabs.visibleHeight();
