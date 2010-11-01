@@ -8,4 +8,4 @@ document.write(
 	'</script>'
 );
 
-opt.writeScript( 'voter-info-main.js' );
+opt.writeScript( 'voter-info-main.js?1' );
