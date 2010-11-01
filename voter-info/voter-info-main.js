@@ -1666,13 +1666,13 @@ function gadgetReady() {
 				log( 'API status code: ' + poll.status || '(OK)' );
 				vote.poll = poll;
 				var norm = poll.normalized_input;
-				if( norm ) {
-					home.info.street = norm.line1;
-					if( norm.line2 ) home.info.street += '<br>' + norm.line2;
-					home.info.city = norm.city.replace( 'Washington D.C.', 'Washington' );
-					home.info.state = stateByAbbr( norm.state );
-					home.info.zip = norm.zip;
-				}
+				//if( norm ) {
+				//	home.info.street = norm.line1;
+				//	if( norm.line2 ) home.info.street += '<br>' + norm.line2;
+				//	home.info.city = norm.city.replace( 'Washington D.C.', 'Washington' );
+				//	home.info.state = stateByAbbr( norm.state );
+				//	home.info.zip = norm.zip;
+				//}
 				var locations = vote.locations = poll.locations && poll.locations[0];
 				if( poll.status != 'SUCCESS'  ||  ! locations  ||  ! locations.length ) {
 					sorry();
