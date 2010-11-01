@@ -7,7 +7,7 @@
 
 (function() {
 
-// Temp - hard code next election ID for upcoming primaries
+// Temp - hard code next election ID for upcoming primaries 
 var upcoming = {
 	// example:
 	//HI: { id:74, name:'Hawaii Primary Elections<br>September 18, 2010' },
