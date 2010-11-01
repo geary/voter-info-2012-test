@@ -1421,6 +1421,7 @@ function gadgetReady() {
 			id ? 'electionid=' + id + '&' : '',
 			'q=', encodeURIComponent(address)
 		);
+		log( 'Polling API:' );  log( url );
 		getJSON( url, function( poll ) {
 			callback( typeof poll == 'object' ? poll : { status:"ERROR" } );
 		});
