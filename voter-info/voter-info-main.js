@@ -1089,19 +1089,19 @@ function gadgetReady() {
 		
 		function voteLocation( infowindow ) {
 			var loc = 'Your Voting Location';
+			if( ! vote.locations )
+				return '';
 			if( vote.info )
-				return formatLocations( null, vote.info,
+				return formatLocations( vote.locations, null,
 					infowindow
 						? { url:'vote-icon-50.png', width:50, height:50 }
 						: { url:'vote-pin-icon.png', width:29, height:66 },
-					loc, infowindow, extra
+					loc, infowindow, extra, true
 				);
-			if( vote.locations )
-				return infowindow ? '' : formatLocations( vote.locations, null,
-					{ url:'vote-icon-32.png', width:32, height:32 },
-					loc + ( vote.locations.length > 1 ? 's' : '' ), false, extra
-				);
-			return '';
+			return infowindow ? '' : formatLocations( vote.locations, null,
+				{ url:'vote-icon-32.png', width:32, height:32 },
+				loc + ( vote.locations.length > 1 ? 's' : '' ), false, extra, false
+			);
 		}
 		
 		if( mapplet ) {
@@ -1341,7 +1341,7 @@ function gadgetReady() {
 		}
 	}
 	
-	function formatLocations( locations, info, icon, title, infowindow, extra ) {
+	function formatLocations( locations, info, icon, title, infowindow, extra, mapped ) {
 		
 		function formatLocationRow( info ) {
 			var special =
@@ -1355,7 +1355,7 @@ function gadgetReady() {
 				state: locality ? locality  + ', ' + info.state.abbr :
 					info.address.length > 2 ? info.address :
 					info.state && info.state.name || '',
-				zip: info.zip
+				zip: info.zip && info.zip.slice(0,5)
 			});
 			return T( 'locationRow', {
 				iconSrc: imgUrl(icon.url),
@@ -1391,7 +1391,7 @@ function gadgetReady() {
 			}),
 			rows.join(''),
 			T( 'locationFoot', {
-				unable: info && info.latlng ? '' : T('locationUnable')
+				unable: info && info.latlng || mapped ? '' : T('locationUnable')
 			})
 		);
 	}
