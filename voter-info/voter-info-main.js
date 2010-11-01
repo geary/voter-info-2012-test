@@ -1206,7 +1206,11 @@ function gadgetReady() {
 							G_SATELLITE_3D_MAP
 						]
 					});
-					map.addControl( new GLargeMapControl3D );
+					map.addControl(
+						winWidth() >= 400 && winHeight() >= 300 ?
+							new GLargeMapControl3D :
+							new GSmallZoomControl
+					);
 					map.addControl( new GMapTypeControl );
 					go();
 				}
