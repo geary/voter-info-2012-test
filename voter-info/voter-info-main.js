@@ -657,9 +657,9 @@ function gadgetReady() {
 	}
 	
 	function locationWarning() {
-		return T( 'locationWarning', {
-			home: home.info.address
-		});
+		return vote.locations && vote.locations.length ?
+			T( 'locationWarning', { home: home.info.address }) :
+			'';
 	}
 	
 	//function expander( link, body ) {
@@ -1088,7 +1088,7 @@ function gadgetReady() {
 		
 		function voteLocation( infowindow ) {
 			var loc = 'Your Voting Location';
-			if( ! vote.locations )
+			if( !( vote.locations && vote.locations.length ) )
 				return '';
 			if( vote.info )
 				return formatLocations( vote.locations, null,
