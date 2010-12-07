@@ -116,7 +116,7 @@
 
 <UserPref name="submit" datatype="bool" display_name="Preload&#160;Addr" default_value=""/>
 
-<!--<UserPref name="electionId" datatype="string" display_name="Election&#160;ID" default_value=""/>o-->
+<!--<UserPref name="electionId" datatype="string" display_name="Election&#160;ID" default_value=""/>-->
 
 <!--<UserPref name="logo" datatype="string" display_name="Logo&#160;URL" default_value=""/>-->
 
