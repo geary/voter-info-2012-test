@@ -137,15 +137,13 @@
 		
 		writeScript: function( name, seconds ) {
 			document.write(
-				'<script type="text/javascript" src="',
-					_IG_GetCachedUrl( opt.codeUrl + name, { refreshInterval: seconds || 60 } ),
-				'">',
+				'<script type="text/javascript" src="', opt.codeUrl + name, '">',
 				'<\/script>'
 			);
 		}
 	};
 	
-	opt.writeScript( 'voter-info.js?1' );
+	opt.writeScript( 'voter-info.js' );
 	
 </script>
 

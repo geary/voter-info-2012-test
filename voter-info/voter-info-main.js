@@ -250,10 +250,10 @@ function adjustHeight() {
 
 function cacheUrl( url, cache, always ) {
 	if( opt.nocache  &&  ! always ) return url + '?q=' + new Date().getTime();
-	if( opt.nocache ) cache = 0;
-	if( typeof cache != 'number' ) cache = 3600;
-	url = _IG_GetCachedUrl( url, { refreshInterval:cache } );
-	if( ! url.match(/^http:/) ) url = 'http://' + location.host + url;
+	//if( opt.nocache ) cache = 0;
+	//if( typeof cache != 'number' ) cache = 3600;
+	//url = _IG_GetCachedUrl( url, { refreshInterval:cache } );
+	//if( ! url.match(/^http:/) ) url = 'http://' + location.host + url;
 	return url;
 }
 
