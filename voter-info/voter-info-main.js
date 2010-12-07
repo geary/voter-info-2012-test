@@ -1430,6 +1430,10 @@ function gadgetReady() {
 	}
 	
 	function pollingApi( address, abbr, normalize, callback ) {
+		if( ! address ) {
+			callback({ status:'ERROR' });
+			return;
+		}
 		var election = upcoming[abbr];
 		var id = election && election.id;
 		var url = S(
