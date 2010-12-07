@@ -1228,7 +1228,7 @@ function gadgetReady() {
 					place: home,
 					image: 'marker-green.png',
 					open: only,
-					html: mapplet || ! only ? formatHome(true) : vote.htmlInfowindow || infoWrap( sorryHtml() )
+					html: mapplet || ! only ? formatHome(true) : vote.htmlInfowindow || formatHome(true)
 				});
 				if( vote.info  &&  vote.info.latlng )
 					setMarker({
