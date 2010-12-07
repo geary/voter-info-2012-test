@@ -1453,6 +1453,28 @@ function gadgetReady() {
 		function countyAddress() {
 			return S( info.street, ', ', info.county, ', ', info.state.abbr, ' ', info.zip );
 		}
+		// BEGIN DEMO CODE
+		if( /1600 Pennsylvania Ave NW.* 20500, USA/.test( info.place.address ) ) {
+			callback({
+				status: 'SUCCESS',
+				locations: [
+					[{
+						address: {
+							line1: '2130 G ST NW',
+							city: 'Washington',
+							state: 'DC',
+							zip: '20006',
+							location_name: 'THE SCHOOL WITHOUT WALLS'
+						}
+					}]
+				]
+			});
+		}
+		else {
+			callback({});
+		}
+		return;
+		// END DEMO CODE
 		var abbr = info.state && info.state.abbr;
 		pollingApi( info.place.address, abbr, false, function( poll ) {
 			if( ok(poll) )
