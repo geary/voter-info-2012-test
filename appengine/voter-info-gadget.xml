@@ -138,13 +138,7 @@
 		
 		writeScript: function( name, seconds ) {
 			document.write(
-				'<script type="text/javascript" src="',
-					opt.debug ?
-						opt.codeUrl + name + '?t=' + (+new Date) :
-						_IG_GetCachedUrl(
-							opt.codeUrl + name, { refreshInterval: seconds || 60 }
-						),
-				'">',
+				'<script type="text/javascript" src="', opt.codeUrl + name, '">',
 				'<\/script>'
 			);
 		}
