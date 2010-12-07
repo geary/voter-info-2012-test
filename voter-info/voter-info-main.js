@@ -1727,9 +1727,19 @@ function gadgetReady() {
 		function setVoteGeo( geo, places, address ) {
 			//if( places && places.length == 1 ) {
 			if( places && places.length >= 1 ) {
-				if( places.length > 1  &&  address != '1500 E Main St  Richmond, VA 23219-3634' ) {
-					setVoteNoGeo();
-					return;
+				// More than one place, use first match only if it has address
+				// accuracy and the remaining matches don't
+				if( places.length > 1 ) {
+					if( places[0].AddressDetails.Accuracy < Accuracy.address ) {
+						setVoteNoGeo();
+						return;
+					}
+					for( var place, i = 0;  place = places[++i]; ) {
+						if( places[i].AddressDetails.Accuracy >= Accuracy.address ) {
+							setVoteNoGeo();
+							return;
+						}
+					}
 				}
 				try {
 					var coord = places[0].Point.coordinates;
