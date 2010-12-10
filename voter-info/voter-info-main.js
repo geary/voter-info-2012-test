@@ -403,6 +403,9 @@ var pref = {
 for( var name in pref ) pref[name] = prefs.getString(name) || pref[name];
 pref.ready = prefs.getBool('submit');
 
+// Override prompt
+pref.homePrompt = 'We are not supporting any current elections. Click the *Search* button for a demo of this app:';
+
 if( pref.logo ) pref.example = pref.example.replace( 'Ex:', 'Example:' );
 
 if( pref.logo || mapplet ) {
