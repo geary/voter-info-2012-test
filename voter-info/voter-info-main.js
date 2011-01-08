@@ -7,13 +7,6 @@
 
 (function() {
 
-// Temp - hard code next election ID for upcoming primaries 
-var upcoming = {
-	// example:
-	//HI: { id:74, name:'Hawaii Primary Elections<br>September 18, 2010' },
-	//MD: { id:117, name:'Maryland Primary Elections<br>September 14, 2010' }
-};
-
 var key = 'ABQIAAAAL7MXzZBubnPtVtBszDCxeRTZqGWfQErE9pT-IucjscazSdFnjBSzjqfxm1CQj7RDgG-OoyNfebJK0w';
 
 function getWH( what ) {
@@ -404,7 +397,7 @@ for( var name in pref ) pref[name] = prefs.getString(name) || pref[name];
 pref.ready = prefs.getBool('submit');
 
 // Override prompt
-pref.homePrompt = 'We are not supporting any current elections. Click the *Search* button for a demo of this app:';
+//pref.homePrompt = 'We are not supporting any current elections. Click the *Search* button for a demo of this app:';
 
 if( pref.logo ) pref.example = pref.example.replace( 'Ex:', 'Example:' );
 
@@ -538,8 +531,7 @@ var home, vote, interpolated;
 
 function electionHeader() {
 	var abbr = vote.info && vote.info.state && vote.info.state.abbr;
-	var election = upcoming[abbr];
-	name = election && election.name || '';
+	name = 'Mississippi Special Election';
 	return S(
 		'<div style="font-weight:bold;">',
 			name,
@@ -1437,12 +1429,10 @@ function gadgetReady() {
 			callback({ status:'ERROR' });
 			return;
 		}
-		var election = upcoming[abbr];
-		var id = election && election.id;
 		var url = S(
 			'http://pollinglocation.apis.google.com/?',
 			normalize ? 'normalize=1&' : '',
-			id ? 'electionid=' + id + '&' : '',
+			pref.electionId ? 'electionid=' + pref.electionId + '&' : '',
 			'q=', encodeURIComponent(address)
 		);
 		log( 'Polling API:' );  log( url );
@@ -1472,11 +1462,8 @@ function gadgetReady() {
 					}]
 				]
 			});
+			return;
 		}
-		else {
-			callback({});
-		}
-		return;
 		// END DEMO CODE
 		var abbr = info.state && info.state.abbr;
 		pollingApi( info.place.address, abbr, false, function( poll ) {
