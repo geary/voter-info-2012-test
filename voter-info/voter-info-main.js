@@ -530,8 +530,11 @@ var home, vote, interpolated;
 // HTML snippets
 
 function electionHeader() {
-	var abbr = vote.info && vote.info.state && vote.info.state.abbr;
-	name = 'Mississippi Special Election';
+	//var abbr = vote.info && vote.info.state && vote.info.state.abbr;
+	// temp hack - get election name from API instead
+	var name =
+		pref.electionId == 1788 ? 'Mississippi Special Election' :
+		'';
 	return S(
 		'<div style="font-weight:bold;">',
 			name,
