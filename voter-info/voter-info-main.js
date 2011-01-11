@@ -684,15 +684,17 @@ function gadgetReady() {
 		var elections = [];
 		var state = home && home.info && home.info.state;
 		if( state  &&  state != stateUS ) {
-			for( var i = 1;  i < 9;  ++i ) {
-				var date = state['gsx$date'+i];
-				if( date ) date = date.$t;
-				if( date ) {
-					date = dateFromMDY( date );
-					if( date >= today )
-						elections.push( perElectionInfo( state, date, state['gsx$type'+i].$t ) );
-				}
-			}
+			//for( var i = 1;  i < 9;  ++i ) {
+			//	var date = state['gsx$date'+i];
+			//	if( date ) date = date.$t;
+			//	if( date ) {
+			//		date = dateFromMDY( date );
+			//		if( date >= today )
+			//			elections.push( perElectionInfo( state, date, state['gsx$type'+i].$t ) );
+			//	}
+			//}
+			// Temp hack for MS/VA - hard code today's election
+			elections.push( perElectionInfo( state, today, 'Election' ) );
 		}
 		return S(
 			generalInfo( state ),
