@@ -694,7 +694,7 @@ function gadgetReady() {
 			//	}
 			//}
 			// Temp hack for MS/VA - hard code today's election
-			elections.push( perElectionInfo( state, today, 'Election' ) );
+			//elections.push( perElectionInfo( state, today, 'Election' ) );
 		}
 		return S(
 			generalInfo( state ),
