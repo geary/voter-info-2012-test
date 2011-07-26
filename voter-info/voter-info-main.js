@@ -266,18 +266,6 @@ function minimarkdown( text ) {
 		.replace( /_([^_]+)_/g, '<i>$1</i>' );
 }
 
-$.extend( $.fn, {
-	
-	setClass: function( cls, add ) {
-		return this[ add ? 'addClass' : 'removeClass' ]( cls );
-	},
-	
-	toggleSlide: function( speed, callback ) {
-		return this[ this.is(':hidden') ? 'slideDown' : 'slideUp' ]( speed, callback );
-	}
-	
-});
-
 function analytics( path ) {
 	function fixHttp( url ) {
 		return url.replace( /http:\/\//, 'http/' ).replace( /mailto:/, 'mailto/' );
@@ -409,17 +397,6 @@ function dateFromMDY( mdy ) {
 var today = new Date;
 today.setHours( 0, 0, 0, 0 );
 
-////  Date tester
-//if( 0 ) {
-//	today = new Date( 2008,  9, 6 );
-//	document.write(
-//		'<div style="font-weight:bold;">',
-//			'Test date: ', formatDayDate( today ),
-//		'</div>'
-//	);
-//}
-////
-
 // State data
 
 var stateUS = {
@@ -529,14 +506,6 @@ function makerWrite() {
 
 function gadgetWrite() {
 	
-	//backLink = params.cnn || params.state ? S(
-	//	'<div style="margin:0.5em 0 0 6px; ', fontStyle, '">',
-	//		'<a target="_blank" alt="Return to CNN&#146;s Election Center 2008" href="http://www.cnn.com/ELECTION/2008/">',
-	//			'Return to CNN&#146;s Election Center 2008',
-	//		'</a>',
-	//	'</div>'
-	//) : '';
-	
 	document.write(
 		'<div id="outerlimits">',
 		'</div>'
@@ -620,19 +589,6 @@ function gadgetReady() {
 	function electionInfo() {
 		var elections = [];
 		var state = home && home.info && home.info.state;
-		if( state  &&  state != stateUS ) {
-			//for( var i = 1;  i < 9;  ++i ) {
-			//	var date = state['gsx$date'+i];
-			//	if( date ) date = date.$t;
-			//	if( date ) {
-			//		date = dateFromMDY( date );
-			//		if( date >= today )
-			//			elections.push( perElectionInfo( state, date, state['gsx$type'+i].$t ) );
-			//	}
-			//}
-			// Temp hack for MS/VA - hard code today's election
-			//elections.push( perElectionInfo( state, today, 'Election' ) );
-		}
 		return S(
 			generalInfo( state ),
 			elections.join(''),
@@ -876,21 +832,6 @@ function gadgetReady() {
 				//) )
 			);
 		}
-		
-		//function biglist() {
-		//	return S(
-		//		'<div style="margin-bottom:0.5em;">',
-		//			states.mapjoin( function( state ) {
-		//				return S(
-		//					'<div>',
-		//						'<b>', state.name, '</b>',
-		//					'</div>',
-		//					deadline( state, 'gsx$postmark', '' )
-		//				);
-		//			}),
-		//		'</div>'
-		//	);
-		//}
 		
 		function deadline( state, key, type ) {
 			var before = +state[key].$t;
@@ -1818,29 +1759,6 @@ function gadgetReady() {
 			_:''
 		};
 	}
-	
-	//function setFiller() {
-	//	function makePaths( poly ) {
-	//		return 'path=weight:2|color:0x000000B0|fillcolor:0x00000010|enc:' + poly.encoded;
-	//	}
-	//	var filler = '';
-	//	if( iframe ) {
-	//		var w = $map.width(), h = Math.floor( winHeight() - $map.offset().top );
-	//		if( w * h == 0 ) return;
-	//		filler = S(
-	//			'<div style="position:relative;">',
-	//				// US:
-	//				//'<img style="width:', w, 'px; height:', h, 'px; border:none;" src="http://maps.google.com/staticmap?center=38,-95.9&span=26.9,52.7&size=', w, 'x', h, '&key=', key, '" />'
-	//				// VA:
-	//				// TODO: Get encoded polyline working!
-	//				'<img style="width:', w, 'px; height:', h, 'px; border:none;" src="http://maps.google.com/maps/api/staticmap?sensor=false&size=', w, 'x', h, '&key=', key, '&', stateOutlinePolys.map(makePaths).join('&'), '" />',
-	//				pref.logo ?
-	//					'<img style="position:absolute; left:0; top:0;" src="' + _IG_GetCachedUrl(pref.logo) + '" />' : '',
-	//			'</div>'
-	//		);
-	//		$previewmap.html( filler );
-	//	}
-	//}
 	
 	function setupTabs() {
 		var $tabs = $('#tabs');
