@@ -31,15 +31,8 @@ var gem = GoogleElectionMap = {};
 // temp?
 opt.nocache = opt.debug;
 
-var mapplet = opt.mapplet;
-if( mapplet ) {
-	opt.codeUrl = opt.baseUrl;
-	opt.dataUrl = opt.dataUrl || opt.baseUrl;
-}
-else {
-	opt.dataUrl = opt.codeUrl;
-	if( opt.debug ) opt.dataUrl += 'proxy-local.php?jsonp=?&file=';
-}
+opt.dataUrl = opt.codeUrl;
+if( opt.debug ) opt.dataUrl += 'proxy-local.php?jsonp=?&file=';
 
 var $window = $(window), $body = $('body');
 
@@ -237,10 +230,6 @@ function htmlEscape( str ) {
 	return div.innerHTML;
 }
 
-function adjustHeight() {
-	if( mapplet ) _IG_AdjustIFrameHeight();
-}
-
 function cacheUrl( url, cache, always ) {
 	if( opt.nocache  &&  ! always ) return url + '?q=' + new Date().getTime();
 	//if( opt.nocache ) cache = 0;
@@ -317,65 +306,17 @@ function analytics( path ) {
 	else {
 		if( path.indexOf( 'http://maps.gmodules.com/ig/ifr' ) == 0 ) return;
 		if( path.indexOf( 'http://maps.google.com/maps?f=d' ) == 0 ) path = '/directions';
-		path = ( maker ? '/creator/' : pref.onebox ? '/onebox/' : mapplet ? '/mapplet/' : inline ? '/inline/' : '/gadget/' ) + fixHttp(path);
+		path = ( maker ? '/creator/' : pref.onebox ? '/onebox/' : inline ? '/inline/' : '/gadget/' ) + fixHttp(path);
 		path = '/' + fixHttp(document.referrer) + '/' + path;
 		//console.log( 'analytics', path );
 		_IG_Analytics( 'UA-5730550-1', path );
 	}
 }
 
-// GAsync v2 by Michael Geary
-// Commented version and description at:
-// http://mg.to/2007/06/22/write-the-same-code-for-google-mapplets-and-maps-api
-// Free beer and free speech license. Enjoy!
-
-function GAsync( obj ) {
-	
-	function callback() {
-		args[nArgs].apply( null, results );
-	}
-	
-	function queue( iResult, name, next ) {
-		
-		function ready( value ) {
-			results[iResult] = value;
-			if( ! --nCalls )
-				callback();
-		}
-		
-		var a = [];
-		if( next.join )
-			a = a.concat(next), ++iArg;
-		if( mapplet ) {
-			a.push( ready );
-			obj[ name+'Async' ].apply( obj, a );
-		}
-		else {
-			results[iResult] = obj[name].apply( obj, a );
-		}
-	}
-	
-	//var mapplet = ! window.GBrowserIsCompatible;
-	
-	var args = arguments, nArgs = args.length - 1;
-	var results = [], nCalls = 0;
-	
-	for( var iArg = 1;  iArg < nArgs;  ++iArg ) {
-		var name = args[iArg];
-		if( typeof name == 'object' )
-			obj = name;
-		else
-			queue( nCalls++, name, args[iArg+1] );
-	}
-	
-	if( ! mapplet )
-		callback();
-}
-
 var userAgent = navigator.userAgent.toLowerCase(),
 	msie = /msie/.test( userAgent ) && !/opera/.test( userAgent );
 
-var example = ( mapplet ? '' : 'Ex: ' ) + '1600 Pennsylvania Ave, Washington DC';
+var example = 'Ex: 1600 Pennsylvania Ave, Washington DC';
 
 var prefs = new _IG_Prefs();
 var pref = {
@@ -401,7 +342,7 @@ pref.ready = prefs.getBool('submit');
 
 if( pref.logo ) pref.example = pref.example.replace( 'Ex:', 'Example:' );
 
-if( pref.logo || mapplet ) {
+if( pref.logo ) {
 	pref.fontSize = '13';
 }
 
@@ -512,10 +453,10 @@ function indexSpecialStates() {
 		statesByName[abbr] = statesByName[ special[abbr] ];
 }
 
-var inline = ! mapplet  &&  pref.gadgetType == 'inline';
-var iframe = ! mapplet  &&  ! inline;
-var balloon = pref.sidebar  ||  mapplet  ||  ( winWidth() >= 450  &&  winHeight() >= 400 );
-var sidebar = !!( pref.sidebar  ||  ( ! mapplet  &&  winWidth() >= 800  &&  winHeight() >= 500 ) );
+var inline = pref.gadgetType == 'inline';
+var iframe = ! inline;
+var balloon = pref.sidebar  ||  ( winWidth() >= 450  &&  winHeight() >= 400 );
+var sidebar = !!( pref.sidebar  ||  ( winWidth() >= 800  &&  winHeight() >= 500 ) );
 
 $body.toggleClass( 'logo', pref.logo );
 $body.toggleClass( 'sidebar', sidebar );
@@ -602,9 +543,7 @@ function gadgetWrite() {
 		'</div>'
 	);
 	
-	if( ! mapplet ) {
-		document.body.scroll = 'no';
-	}
+	document.body.scroll = 'no';
 }
 
 // Document ready code
@@ -642,7 +581,6 @@ function makerReady() {
 	var body = T('html') + '\n\n' + T('script');
 	$outerlimits.html( body ).height( winHeight() );
 	if( pref.gadgetType != 'iframe' ) addCodePopups( style, body );
-	adjustHeight();
 }
 
 function gadgetReady() {
@@ -1072,10 +1010,9 @@ function gadgetReady() {
 	function setVoteHtml() {
 		if( !( vote.info || vote.locations ) ) {
 			$details.append( log.print() );
-			adjustHeight();
 			return;
 		}
-		//var largeMapLink = mapplet ? '' : S(
+		//var largeMapLink = S(
 		//	'<div style="padding-top:0.5em;">',
 		//		'<a target="_blank" href="http://maps.google.com/maps?f=q&hl=en&geocode=&q=', encodeURIComponent( a.address.replace( / /g, '+' ) ), '&ie=UTF8&ll=', latlng, '&z=15&iwloc=addr">',
 		//			'Large map and directions &#187;',
@@ -1103,42 +1040,24 @@ function gadgetReady() {
 			);
 		}
 		
-		if( mapplet ) {
-			$details.append( longInfo() );
-			vote.html = S(
-				'<div style="', fontStyle, '">',
-					voteLocation(),
-					locationWarning(),
-				'</div>'
-			);
-			vote.htmlInfowindow = S(
-				'<div style="', fontStyle, '">',
-					voteLocation( true ),
-					//locationWarning(),
-				'</div>'
-			);
-			adjustHeight();
-		}
-		else {
-			if( ! sidebar ) $tabs.show();
-			$details.html( longInfo() ).show();
-			vote.html = infoWrap( S(
-				log.print(),
-				electionHeader(),
-				homeAndVote()//,
-				//'<div style="padding-top:1em">',
-				//'</div>',
-				//electionInfo()
-			) );
-			vote.htmlInfowindow = infoWrap( S(
-				log.print(),
-				electionHeader(),
-				homeAndVote( true )//,
-				//'<div style="padding-top:1em">',
-				//'</div>',
-				//electionInfo()
-			) );
-		}
+		if( ! sidebar ) $tabs.show();
+		$details.html( longInfo() ).show();
+		vote.html = infoWrap( S(
+			log.print(),
+			electionHeader(),
+			homeAndVote()//,
+			//'<div style="padding-top:1em">',
+			//'</div>',
+			//electionInfo()
+		) );
+		vote.htmlInfowindow = infoWrap( S(
+			log.print(),
+			electionHeader(),
+			homeAndVote( true )//,
+			//'<div style="padding-top:1em">',
+			//'</div>',
+			//electionInfo()
+		) );
 		
 		function homeAndVote( infowindow ) {
 			var viewMessage = getContests() ?
@@ -1191,31 +1110,25 @@ function gadgetReady() {
 	}
 	
 	function initMap( go ) {
-		if( mapplet ) {
-			map = new GMap2;
-			go();
-		}
-		else {
-			google.load( 'maps', '2', { callback: function() {
-				if( GBrowserIsCompatible() ) {
-					map = new GMap2( $map[0], {
-						//googleBarOptions: { showOnLoad: true },
-						mapTypes: [
-							G_NORMAL_MAP,
-							G_SATELLITE_MAP,
-							G_SATELLITE_3D_MAP
-						]
-					});
-					map.addControl(
-						winWidth() >= 400 && winHeight() >= 300 ?
-							new GLargeMapControl3D :
-							new GSmallZoomControl
-					);
-					map.addControl( new GMapTypeControl );
-					go();
-				}
-			} });
-		}
+		google.load( 'maps', '2', { callback: function() {
+			if( GBrowserIsCompatible() ) {
+				map = new GMap2( $map[0], {
+					//googleBarOptions: { showOnLoad: true },
+					mapTypes: [
+						G_NORMAL_MAP,
+						G_SATELLITE_MAP,
+						G_SATELLITE_3D_MAP
+					]
+				});
+				map.addControl(
+					winWidth() >= 400 && winHeight() >= 300 ?
+						new GLargeMapControl3D :
+						new GSmallZoomControl
+				);
+				map.addControl( new GMapTypeControl );
+				go();
+			}
+		} });
 	}
 	
 	function loadMap( a ) {
@@ -1228,7 +1141,7 @@ function gadgetReady() {
 					place: home,
 					image: 'marker-green.png',
 					open: only,
-					html: mapplet || ! only ? formatHome(true) : vote.htmlInfowindow || formatHome(true)
+					html: ! only ? formatHome(true) : vote.htmlInfowindow || formatHome(true)
 				});
 				if( vote.info  &&  vote.info.latlng )
 					setMarker({
@@ -1246,7 +1159,7 @@ function gadgetReady() {
 				new GMarker( a.place.info.latlng, { icon:icon });
 			map.addOverlay( marker );
 			var options = {
-				maxWidth: mapplet ? 350 : Math.min( $map.width() - 100, 350 )
+				maxWidth: Math.min( $map.width() - 100, 350 )
 				/*, disableGoogleLinks:true*/
 			};
 			if( balloon ) {
@@ -1265,39 +1178,36 @@ function gadgetReady() {
 			
 			var hi = home.info, vi = vote.info;
 			
-			if( ! mapplet ) {
-				$tabs.html( tabLinks( initialMap() ? '#mapbox' : '#detailsbox' ) );
-				if( ! sidebar ) $map.css({ visibility:'hidden' });
-				setLayout();
-				if( initialMap() ) {
-					$map.show().css({ visibility:'visible' });
-					if( ! sidebar ) $detailsbox.hide();
-				}
-				else {
-					if( ! sidebar ) $map.hide();
-					$detailsbox.show();
-				}
+			$tabs.html( tabLinks( initialMap() ? '#mapbox' : '#detailsbox' ) );
+			if( ! sidebar ) $map.css({ visibility:'hidden' });
+			setLayout();
+			if( initialMap() ) {
+				$map.show().css({ visibility:'visible' });
+				if( ! sidebar ) $detailsbox.hide();
+			}
+			else {
+				if( ! sidebar ) $map.hide();
+				$detailsbox.show();
 			}
 			
 			if( ! hi ) return;
 			if( vi  &&  vi.latlng ) {
 				var directions = new GDirections( null/*, $directions[0]*/ );
 				GEvent.addListener( directions, 'load', function() {
-					GAsync( directions, 'getBounds', 'getPolyline', function( bounds, polyline ) {
-						var ne = bounds.getNorthEast();
-						var sw = bounds.getSouthWest();
-						var n = ne.lat(), e = ne.lng(), s = sw.lat(), w = sw.lng();
-						var  latpad = ( n - s ) / 4;
-						var lngpad = ( e - w )  / 4;
-						bounds = new GLatLngBounds(
-							new GLatLng( s - latpad, w - lngpad ),
-							new GLatLng( n + latpad*2, e + lngpad )
-						);
-						GAsync( map, 'getBoundsZoomLevel', [ bounds ], function( zoom ) {
-							map.setCenter( bounds.getCenter(), Math.min(zoom,16) );
-							polyline && map.addOverlay( polyline );
-						});
-					});
+					var bounds = directions.getBounds();
+					var ne = bounds.getNorthEast();
+					var sw = bounds.getSouthWest();
+					var n = ne.lat(), e = ne.lng(), s = sw.lat(), w = sw.lng();
+					var  latpad = ( n - s ) / 4;
+					var lngpad = ( e - w )  / 4;
+					bounds = new GLatLngBounds(
+						new GLatLng( s - latpad, w - lngpad ),
+						new GLatLng( n + latpad*2, e + lngpad )
+					);
+					var zoom = map.getBoundsZoomLevel( bounds )
+					map.setCenter( bounds.getCenter(), Math.min(zoom,16) );
+					var polyline = directions.getPolyline();
+					polyline && map.addOverlay( polyline );
 				});
 				directions.loadFromWaypoints(
 					[
@@ -1321,22 +1231,6 @@ function gadgetReady() {
 				//var center = latlng;
 				//var width = $map.width(), height = $map.height();
 				map.setCenter( latlng, a.zoom );
-			}
-			
-			if( mapplet ) {
-				GEvent.addListener( map, 'click', function( overlay, point ) {
-					if( !( overlay || point ) )
-						analytics( 'directions' );
-				});
-			}
-			else {
-				// Move map down a bit
-				//var point = map.fromLatLngToDivPixel( latlng );
-				//point = new GPoint(
-				//	point.x /*- width * .075*/,
-				//	point.y - height * .275
-				//);
-				//map.setCenter( map.fromDivPixelToLatLng(point), a.zoom );
 			}
 			
 			ready();
@@ -1406,7 +1300,7 @@ function gadgetReady() {
 	
 	function geocode( address, callback ) {
 		var geocoder = new GClientGeocoder();
-		geocoder[ mapplet ? 'getLocationsAsync' : 'getLocations' ]( address, callback );
+		geocoder.getLocations( address, callback );
 	}
 	
 	function getleo( home, callback ) {
@@ -1499,25 +1393,6 @@ function gadgetReady() {
 		}, cache );
 	}
 	
-	function closehelp( callback ) {
-		if( ! mapplet )
-			return callback();
-		
-		var $remove = $('.removehelp');
-		if( $remove.is(':hidden') )
-			return callback();
-		
-		if( $.browser.msie ) {
-			$remove.hide();
-			return callback();
-		}
-		
-		var count = $remove.length;
-		$remove.slideUp( 350, function() {
-			if( --count == 0 ) callback();
-		});
-	}
-	
 	function setGadgetPoll411() {
 		var input = $('#Poll411Input')[0];
 	    input.value = pref.example;
@@ -1576,50 +1451,47 @@ function gadgetReady() {
 			map && map.clearOverlays();
 			$spinner.show();
 			$details.empty();
-			closehelp( function() {
-				geocode( addr, function( geo ) {
-					var places = geo && geo.Placemark;
-					var n = places && places.length;
-					log( 'Number of matches: ' + n );
-					if( ! n ) {
-						spin( false );
-						detailsOnly( S(
-							log.print(),
-							T('didNotFind')
-						) );
-					}
-					else if( n == 1 ) {
-						findPrecinct( geo, places[0], addr );
+			geocode( addr, function( geo ) {
+				var places = geo && geo.Placemark;
+				var n = places && places.length;
+				log( 'Number of matches: ' + n );
+				if( ! n ) {
+					spin( false );
+					detailsOnly( S(
+						log.print(),
+						T('didNotFind')
+					) );
+				}
+				else if( n == 1 ) {
+					findPrecinct( geo, places[0], addr );
+				}
+				else {
+					if( places ) {
+						detailsOnly( T('selectAddressHeader') );
+						var $radios = $('#radios');
+						$radios.append( formatPlaces(places) );
+						$detailsbox.show();
+						$details.find('input:radio').click( function() {
+							var radio = this;
+							spin( true );
+							setTimeout( function() {
+								function ready() {
+									findPrecinct( geo, places[ radio.id.split('-')[1] ] );
+								}
+								if( $.browser.msie ) {
+									$radios.hide();
+									ready();
+								}
+								else {
+									$radios.slideUp( 350, ready );
+								}
+							}, 250 );
+						});
 					}
 					else {
-						if( places ) {
-							detailsOnly( T('selectAddressHeader') );
-							var $radios = $('#radios');
-							$radios.append( formatPlaces(places) );
-							$detailsbox.show();
-							adjustHeight();
-							$details.find('input:radio').click( function() {
-								var radio = this;
-								spin( true );
-								setTimeout( function() {
-									function ready() {
-										findPrecinct( geo, places[ radio.id.split('-')[1] ] );
-									}
-									if( $.browser.msie ) {
-										$radios.hide();
-										ready();
-									}
-									else {
-										$radios.slideUp( 350, ready );
-									}
-								}, 250 );
-							});
-						}
-						else {
-							sorry();
-						}
+						sorry();
 					}
-				});
+				}
 			});
 		}
 		
@@ -1652,13 +1524,12 @@ function gadgetReady() {
 	$window.resize( setLayout );
 	
 	function detailsOnly( html ) {
-		if( !( mapplet || sidebar ) ) {
+		if( ! sidebar ) {
 			$tabs.html( tabLinks('#detailsbox') ).show();
 			setLayout();
+			$map.hide();
 		}
-		if( ! sidebar ) $map.hide();
 		$details.html( html ).show();
-		adjustHeight();
 		spin( false );
 	}
 	
@@ -1807,12 +1678,11 @@ function gadgetReady() {
 	
 	function forceDetails() {
 		setMap( home.info );
-		if( !( mapplet || sidebar ) ) {
+		if( ! sidebar ) {
 			$map.hide();
 			$tabs.html( tabLinks('#detailsbox') ).show();
 		}
 		$detailsbox.show();
-		adjustHeight();
 		spin( false );
 	}
 	
@@ -1837,10 +1707,8 @@ function gadgetReady() {
 	
 	function setMap( a ) {
 		if( ! a ) return;
-		if( ! mapplet ) {
-			a.width = $map.width();
-			$map.show().height( a.height = Math.floor( winHeight() - $map.offset().top ) );
-		}
+		a.width = $map.width();
+		$map.show().height( a.height = Math.floor( winHeight() - $map.offset().top ) );
 		loadMap( a );
 	}
 	
@@ -1988,7 +1856,6 @@ function gadgetReady() {
 	}
 	
 	selectTab = function( tab ) {
-		if( mapplet ) return false;
 		analytics( tab );
 		$( $tabs.find('span')[0].className ).hide();
 		if( tab == '#Poll411Gadget' ) {
@@ -2016,26 +1883,14 @@ function gadgetReady() {
 		return true;
 	};
 	
-	if( mapplet ) {
-		$.T('gadgetMappletStyle').appendTo('head');
-		$.T('mappletStyle').appendTo('head');
-		
-		$.T( 'mappletBody', {
-			example: htmlEscape( pref.example ),
-			attribution: attribution()
-		}).appendTo('#outerlimits');
-	}
-	else {
-		$.T('style').appendTo('head');
-		$.T('gadgetMappletStyle').appendTo('head');
-		$.T('gadgetStyle').appendTo('head');
-		
-		$('body').prepend( S(
-			pref.logo ? T('header') : '',
-			T('html')
-		) );
-		$.T('gadgetBody').appendTo('#outerlimits');
-	}
+	$.T('style').appendTo('head');
+	$.T('gadgetStyle').appendTo('head');
+	
+	$('body').prepend( S(
+		pref.logo ? T('header') : '',
+		T('html')
+	) );
+	$.T('gadgetBody').appendTo('#outerlimits');
 	
 	var $search = $('#Poll411Gadget'),
 		$selectState = $('#Poll411SelectState'),
@@ -2047,11 +1902,9 @@ function gadgetReady() {
 		$spinner = $('#spinner'),
 		$directions = $('#directions');
 	
-	if( ! mapplet ) {
-		if( pref.ready ) $search.hide();
-		else setGadgetPoll411();
-		setLayout();
-	}
+	if( pref.ready ) $search.hide();
+	else setGadgetPoll411();
+	setLayout();
 	
 	// http://spreadsheets.google.com/feeds/list/p9CuB_zeAq5X-twnx_mdbKg/2/public/values?alt=json
 	var stateSheet = opt.dataUrl + 'leo/states-spreadsheet.json';
@@ -2090,16 +1943,14 @@ function gadgetReady() {
 			home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
 			vote = null;
 			if( state != stateUS ) $details.html( electionInfo() );
-			adjustHeight();
 			function latlng( lat, lng ) { return new GLatLng( +lat.$t, +lng.$t ) }
 			var bounds = new GLatLngBounds(
 				latlng( state.gsx$south, state.gsx$west ),
 				latlng( state.gsx$north, state.gsx$east )
 			);
-			GAsync( map, 'getBoundsZoomLevel', [ bounds ], function( zoom ) {
-				map.setCenter( bounds.getCenter(), zoom );
-				polyState( abbr );
-			});
+			var zoom = map.getBoundsZoomLevel( bounds );
+			map.setCenter( bounds.getCenter(), zoom );
+			polyState( abbr );
 		}
 		
 		var abbr = pref.state;
@@ -2115,51 +1966,11 @@ function gadgetReady() {
 				zoomTo( $selectState.val() );
 			});
 			
-			if( mapplet ) {
+			setupTabs();
+			if( pref.ready )
+				submit( pref.address || pref.example );
+			else
 				zoomTo( abbr );
-				
-				(function() {
-					function e( id ) { return document.getElementById('Poll411Search'+id); }
-					var /*spinner = e('Spinner'),*/ /*label = e('Label'),*/ input = e('Input'), button = e('Button');
-					button.disabled = false;
-					
-					window.Poll411Search = {
-						
-						focus: function() {
-							//label.style.textIndent = '-1000px';
-						},
-						
-						blur: function() {
-							//if( input.value === '' )
-							//	label.style.textIndent = '0px';
-						},
-						
-						sample: function() {
-							input.value = pref.example;
-							this.submit();
-							return false;
-						},
-						
-						submit: function() {
-							//spinner.style.backgroundPosition = '0px 0px';
-							if( ! input.value ) input.value = pref.example;
-							submit( input.value );
-							return false;
-						}
-					};
-					
-					Poll411Search.focus();
-					Poll411Search.blur();
-					input.focus();
-				})();
-			}
-			else {
-				setupTabs();
-				if( pref.ready )
-					submit( pref.address || pref.example );
-				else
-					zoomTo( abbr );
-			}
 		});
 	}
 	

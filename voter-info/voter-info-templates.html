@@ -48,22 +48,15 @@
     .popupInner { background-color:#E5ECF9; border:1px solid #3366CC; padding:8px; margin:4px; }
 </style>
 
-<!--:: gadgetMappletStyle ::-->
+<!--:: gadgetStyle ::-->
 
 <style type="text/css">
     body.gadget { margin:0; padding:0; }
     body, body td { {{fontStyle}} }
-    #previewmap, #mapbox { overflow:auto; }
-    #previewmap { display:none; }
+    /*body { height:{{height}}px; }*/
     .heading { font-weight:bold; padding-top:10px; }
     .orange { padding:6px; width:95%; background-color:#FFEAC0; border:1px solid #FFBA90; }
     .pink { padding:6px; width:95%; background-color:#FFD0D0; border:1px solid #FF9090; }
-</style>
-
-<!--:: gadgetStyle ::-->
-
-<style type="text/css">
-    /*body { height:{{height}}px; }*/
     #spinner { z-index: 1; position:absolute; width:100%; height:100%; background-image:url({{spinImage}}); background-position:center; background-repeat:no-repeat; opacity:0.30; -moz-opacity:0.30; {{spinDisplay}} }
     #spinner { filter:alpha(opacity=30); }
     #header-pad { padding:10px 10px 8px 6px; }
@@ -73,7 +66,8 @@
     #tablinks span, #tablinks a { margin-right:1em; }
     #tablinks span { font-weight:bold; }
     #tablinks a { color:#0000CC; }
-    #previewmap, #mapbox { width:100%; }
+    #previewmap { display:none; }
+    #previewmap, #mapbox { overflow:auto; width:100%; }
     #detailsbox { width:100%; overflow:scroll; overflow-x:auto; overflow-y:scroll; display:none; }
     body.logo .Poll411SearchTitle span, body.logo .Poll411SearchTitle strong, body.logo .Poll411SearchTitle b, body.logo .Poll411SearchTitle i { font-size:17px !important; }
     body.logo #Poll411Input, body.logo #Poll411Button { font-size:17px; }
@@ -84,22 +78,6 @@
     body.sidebar #detailsbox { width:24em; /*position:absolute; left:0; top:0;*/ display:block; }
     body.sidebar #details { margin:8px; }
     body.sidebar #mapbox { position:absolute; }
-</style>
-
-<!--:: mappletStyle ::-->
-
-<style type="text/css">
-    #outerlimits { margin-right:8px; }
-    #Poll411Search, #Poll411Search td { margin:0; padding:0; }
-    #Poll411Search .Poll411SearchTitle { font-size:16px; }
-    #Poll411SearchInput, #Poll411SearchButton { font-size:17px; }
-    #Poll411Search { background-color:#E8ECF9; margin:0; padding:6px; width:95%; }
-    .Poll411SearchForm { margin:0; padding:0; }
-    .Poll411SearchTitle { /*font-weight:bold;*/ /*font-size:110%;*/ /*padding-bottom:4px;*/ }
-    /*.Poll411SearchLabelBox { position:relative; float:left; margin-right:6px; }*/
-    .Poll411SearchInput { width:100%; }
-    #details { margin-top:12px; }
-    .heading { font-size:16px; }
 </style>
 
 <!--:: ignore ::-->
@@ -255,55 +233,6 @@
 <div id="previewmap">
 </div>
 <div id="mapbox">
-</div>
-
-<!--:: mappletBody ::-->
-
-<div>
-    <div id="Poll411Search">
-        <!--<div id="Poll411SearchSpinner" class="Poll411SearchSpinner">-->
-        <!--</div>-->
-        <div>
-            <form id="Poll411SearchForm" class="Poll411SearchForm" onsubmit="return Poll411Search.submit()" action="">
-                <div class="Poll411SearchTitle removehelp">
-                    <div style="margin:8px 0 4px;">
-                        Get your voter info! Enter the <strong>full home address</strong> where you&#8217;re registered to vote, including city and state:
-                    </div>
-                </div>
-                <table cellpadding="0" cellspacing="0" style="width:100%;">
-                    <tr>
-                        <td style="width:99%;">
-                            <div>
-                                <input id="Poll411SearchInput" class="Poll411SearchInput" type="text" value="">
-                            </div>
-                        </td>
-                        <td style="width:1%; padding-left:4px;">
-                            <div>
-                                <button type="submit" id="Poll411SearchButton" class="Poll411SearchButton">Search</button>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-        <div class="removehelp">
-            <div style="margin-top:0.25em; font-size:90%;">
-                Example: 
-                <a style="" href="#" onclick="return Poll411Search.sample();">
-                    {{example}}
-                </a>
-            </div>
-        </div>
-    </div>
-    <div id="spinner">
-    </div>
-    <div id="detailsbox">
-      <div id="details">
-          {{attribution}}
-      </div>
-    </div>
-    <div id="mapbox">
-    </div>
 </div>
 
 <!--:: attribution ::-->
