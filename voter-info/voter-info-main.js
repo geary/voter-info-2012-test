@@ -1,7 +1,6 @@
-// Copyright 2008-2010 Michael Geary
-// http://mg.to/
-// Free Beer and Free Speech License (any OSI license)
-// http://freebeerfreespeech.org/
+// voter-info-main.js
+// By Michael Geary - http://mg.to/
+// See UNLICENSE or http://unlicense.org/ for public domain notice.
 
 //window.console && typeof console.log == 'function' && console.log( location.href );
 
