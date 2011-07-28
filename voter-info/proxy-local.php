@@ -4,7 +4,7 @@ $jsonp = $_GET['jsonp'];
 $file = $_GET['file'];
 
 $ok =
-	preg_match( '/^voter-info-templates\.html$/', $file ) ||
+	preg_match( '/^templates\/[^.]+\.html$/', $file ) ||
 	preg_match( '/^leo\/states-spreadsheet\.json$/', $file );
 
 if( $ok ) {
