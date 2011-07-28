@@ -201,8 +201,8 @@ function T( name, values, give ) {
 };
 T.urls = {};
 
-T.baseUrl = opt.dataUrl;
-T.file = 'voter-info-templates';
+T.baseUrl = opt.dataUrl + 'templates/';
+T.file = 'gadget';
 T.error = function( url, part ) {
 	if( part == 'ignore' ) {
 		$('#outerlimits').html( S(
@@ -475,8 +475,8 @@ function makerSetup() {
 		});
 	}
 	
-	function addCodePopups() {
-		$.T('makerOverlays').insertAfter($outerlimits);
+	function addCodePopups( style, body ) {
+		$.T('maker:makerOverlays').insertAfter($outerlimits);
 		var $getcode = $('#getcode'), $havecode = $('#havecode'), $codearea = $('#codearea');
 		$codearea.height( winHeight() - 150 );
 		center( $getcode );
@@ -490,12 +490,14 @@ function makerSetup() {
 		});
 	}
 	
-	var style = T('style');
-	$(style).appendTo('head');
-	$.T('makerStyle').appendTo('head');
-	var body = T('html') + '\n\n' + T('script');
-	$outerlimits.html( body ).height( winHeight() );
-	if( pref.gadgetType != 'iframe' ) addCodePopups( style, body );
+	T( 'maker:ignore', null, function() {
+		var style = T('style');
+		$(style).appendTo('head');
+		$.T('maker:makerStyle').appendTo('head');
+		var body = T('html') + '\n\n' + T('maker:makerScript');
+		$outerlimits.html( body ).height( winHeight() );
+		if( pref.gadgetType != 'iframe' ) addCodePopups( style, body );
+	});
 }
 
 function directionsLink( from, to ) {
