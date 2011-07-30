@@ -336,7 +336,7 @@ function perElectionInfo( state, electionDay, electionName ) {
 			remain == 1 ?
 				'Note: Most post offices are closed Sunday. Mail your ' + dt.type + ' today to be sure of a timely postmark.' :
 			remain == 0 ?
-				"Note: Most post offices are closed today. You can still mail your ' + dt.type + ' if your post office is open and has a collection today." :
+				'Note: Most post offices are closed today. You can still mail your ' + dt.type + ' if your post office is open and has a collection today.' :
 				'';
 		
 		sundayNote = sundayNote && S(
