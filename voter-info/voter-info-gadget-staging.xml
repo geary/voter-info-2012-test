@@ -127,7 +127,7 @@
 	
 	var opt = {
 		codeUrl: 'http://staging.election-gadgets.googlecode.com/hg/voter-info/',
-		gadgetUrl: 'http://staging.election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget.xml',
+		gadgetUrl: 'http://staging.election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget-staging.xml',
 		
 		MODULE_ID: __MODULE_ID__,
 		BIDI_START_EDGE: '__BIDI_START_EDGE__',
