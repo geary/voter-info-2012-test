@@ -183,6 +183,7 @@ function T( name, values, give ) {
 	
 	function ready() {
 		var text = T.urls[url][part];
+		if( ! text ) text = T.variables && T.variables[part];
 		if( ! text ) return T.error && T.error( url, part );
 		text = text.replace(
 			/(<!--)?\{\{(\w+)\}\}(-->)?/g,
@@ -205,14 +206,10 @@ T.baseUrl = opt.dataUrl + 'templates/';
 T.file = 'gadget';
 T.error = function( url, part ) {
 	if( part == 'ignore' ) {
-		$('#outerlimits').html( S(
-			'<div>',
-				'Sorry, we are having trouble loading the Google Election Center app.<br>',
-				'Please try again later.',
-			'</div>'
-		) );
+		$('#outerlimits').html( T('troubleLoading') );
 	}
 	else {
+		// Template error, don't need to localize
 		alert(S( "T('", part, "') missing from ", url ));
 	}
 };
@@ -302,8 +299,7 @@ var userAgent = navigator.userAgent.toLowerCase(),
 	msie = /msie/.test( userAgent ) && !/opera/.test( userAgent );
 
 
-var prefs = new _IG_Prefs();
-var pref = {
+var prefInit = {
 	gadgetType: 'iframe',
 	details: 'tab',
 	example: '',
@@ -318,7 +314,9 @@ var pref = {
 	electionId: '',
 	sidebar: false
 };
-for( var name in pref ) pref[name] = prefs.getString(name) || pref[name];
+for( var name in prefInit )
+	pref[name] = prefs.getString(name) || prefInit[name];
+
 pref.ready = prefs.getBool('submit');
 
 // Override prompt
@@ -336,7 +334,7 @@ var maker = decodeURIComponent(location.href).indexOf('source=http://www.gmodule
 
 var fontStyle = S( 'font-family:', escape(pref.fontFamily), '; font-size:', pref.fontSize, pref.fontUnits, '; ' );
 
-T.variables = {
+T.variables = $.extend( pref.strings, {
 	width: winWidth() - 8,
 	height: winHeight() - 80,
 	heightFull: winHeight(),
@@ -350,35 +348,39 @@ T.variables = {
 	logoImage: imgUrl('election_center_logo.gif'),
 	spinDisplay: pref.ready ? '' : 'display:none;',
 	spinImage: imgUrl('spinner.gif')
-};
+});
 
 // Date and time
 
 var seconds = 1000, minutes = 60 * seconds, hours = 60 * minutes,
 	days = 24 * hours, weeks = 7 * days;
 
-var dayNames = [
-	'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
-];
+function dayName( date ) {
+	var day = new Date(date).getDay() + 1;
+	return T( 'dayName' + day );
+}
 
-var monthNames = [
-	'January', 'February', 'March', 'April', 'May', 'June',
-	'July', 'August', 'September', 'October', 'November', 'December'
-];
+function monthName( date ) {
+	var month = new Date(date).getMonth() + 1;
+	if( month < 10 ) month = '0' + month;
+	return T( 'monthName' + month );
+}
 
 function formatDate( date ) {
 	date = new Date( date );
-	return S(
-		monthNames[ date.getMonth() ], ' ',
-		date.getDate()
-	);
+	return T( 'dateFormat', {
+		monthName: monthName( date ),
+		dayOfMonth: date.getDate()
+	});
 }
 
 function formatDayDate( date ) {
-	return S(
-		dayNames[ new Date(date).getDay() ], ', ',
-		formatDate( date )
-	);
+	date = new Date( date );
+	return T( 'dayDateFormat', {
+		dayName: dayName( date ),
+		monthName: monthName( date ),
+		dayOfMonth: date.getDate()
+	});
 }
 
 function dateFromMDY( mdy ) {
@@ -511,7 +513,7 @@ function directionsLink( from, to ) {
 				'&daddr=', encodeURIComponent(to.address),
 				'&hl=en&mra=ls&ie=UTF8&iwloc=A&iwstate1=dir"',
 			'>',
-				'Get directions',
+				T('getDirections'),
 			'</a>',
 		'</div>'
 	);
@@ -519,6 +521,13 @@ function directionsLink( from, to ) {
 
 function infoWrap( html ) {
 	return T( 'infoWrap', { html:html } );
+}
+
+function formatWaypoint( name, info ) {
+	return S(
+		T(name), ' (', info.address, ')@',
+		info.lat.toFixed(6), ',', info.lng.toFixed(6)
+	);
 }
 
 function initMap( go ) {
@@ -623,8 +632,8 @@ function loadMap( a ) {
 			});
 			directions.loadFromWaypoints(
 				[
-					S( 'Your Home (', hi.address, ')@', hi.lat.toFixed(6), ',', hi.lng.toFixed(6) ),
-					S( 'Your Voting Location (', vi.address, ')@', vi.lat.toFixed(6), ',', vi.lng.toFixed(6) )
+					formatWaypoint( 'yourHome', hi ),
+					formatWaypoint( 'yourVotingLocation', vi )
 				],
 				{
 					getPolyline: true

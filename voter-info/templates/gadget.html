@@ -223,13 +223,9 @@
 
 <div id="radios">
     <div style="padding-top:0.5em;">
-        <strong>Did you mean:</strong>
+        <strong>{{doYouMean}}</strong>
     </div>
 </div>
-
-<!--:: didNotFind ::-->
-  
-We did not find that address. Please check the spelling and try again. Be sure to include your zip code or city and state.
 
 <!--:: infoWrap ::-->
 
@@ -305,8 +301,7 @@ temp
 <!--:: locationWarning ::-->
 
 <div style="font-size:90%;">
-    This voting location is for eligible voters living at the home address shown above.
-    <!--Please verify it with your local election officials.-->
+  {{forEligibleVoters}}
 </div>
 
 <!--:: address ::-->
@@ -327,8 +322,7 @@ temp
 <!--:: locationUnable ::-->
 
 <div style="padding-top: 0.5em">
-  We were unable to locate this voting place on the map. 
-  Please check with your election officals for the exact address.
+  {{unableToLocate}}
 </div>
 
 <!--:: infoLinks ::-->
@@ -336,7 +330,7 @@ temp
 <div style="{{fontStyle}}">
     <div style="margin-top:1.5em;">
         <a target="_blank" href="http://spreadsheets.google.com/viewform?formkey=dG5rTHNRNWVYdGYwMmFjbDBydzlLR2c6MA">
-            Report an error
+            {{reportAnError}}
         </a>
     </div>
 <!--
