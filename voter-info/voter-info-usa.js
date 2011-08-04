@@ -34,6 +34,14 @@ function indexSpecialStates() {
 		statesByName[abbr] = statesByName[ special[abbr] ];
 }
 
+function getPlaceState( place ) {
+	if( ! place ) return null;
+	var component =
+		getAddressComponent( place, 'administrative_area_level_1' );
+	var abbr = component && component.short_name || '';
+	return statesByAbbr[ abbr.toUpperCase() ];
+}
+
 function localPrefs( pref ) {
 	if( pref.example in {
 		'Enter your home address':1  // onebox sends us this on a no-entry click
@@ -84,6 +92,7 @@ function electionInfo() {
 }
 
 function generalInfo( state ) {
+	if( ! state ) return '';
 	
 	var comments = state.gsx$comments.$t;
 	if( comments ) comments = S(
@@ -176,63 +185,62 @@ function generalInfo( state ) {
 	}
 	
 	function addLeo( out, leo ) {
-		if( ! leo  ||  ! leo.authority_name ) return;
-		
-		function H( t ) { return htmlEscape( t || '' ); }  // TODO: make this global
-		var a = {
-			name: H( leo.authority_name ),
-			place: H( leo.municipality_name || leo.county_name ),
-			line1: H( leo.street || leo.mailing_street ),
-			city: H( leo.city || leo.mailing_city ),
-			state: H( leo.state || leo.mailing_state || vote.poll.stateInfo.state_abbr ),
-			zip: H( leo.zip || leo.mailing_zip ),
-			hours: H( leo.hours ),
-			phone: H( leo.phone ),
-			fax: H( leo.fax ),
-			email: H( leo.email ),
-			url: H( leo.website )
-		}
-		if( /^\d/.test(a.url) ) a.url = '';  // weed out phone numbers
-		
-		var directions =
-			a.line1 && a.city && a.state && a.zip &&
-			! /^PO /i.test(a.line1) &&
-			! /^P\.O\. /i.test(a.line1) &&
-			! /^BOX /i.test(a.line1);
-		
-		out.push( S(
-			'<div>',
-				'<div style="margin-bottom:0.15em;">',
-					linkIf( a.name, a.url ),
-				'</div>',
-				'<div>',
-					a.line1,
-				'</div>',
-				'<div>',
-					a.city ? S( a.city, ', ', a.state, ' ', a.zip || '' ) : '',
-				'</div>',
-				'<div>',
-					'<table cellspacing="0" cellpadding="0">',
-						a.phone ? '<tr><td>Phone:&nbsp;</td><td>' + a.phone + '</td></tr>' : '',
-						a.fax ? '<tr><td>Fax:&nbsp;</td><td>' + a.fax + '</td></tr>' : '',
-					'</table>',
-				'</div>',
-				//a.email ? S( '<div>', 'Email: ', linkto(a.email), '</div>' ) : '',
-				'<div>',
-					a.hours ? S( 'Hours: ', a.hours ) : '',
-				'</div>',
-				! directions ? '' : S(
-					'<div style="margin-top:0.1em;">',
-					'</div>',
-					directionsLink( home, {
-						info: {
-							accuracy: Accuracy.address,
-							address: oneLineAddress( a )
-						}
-					})
-				),
-			'</div>'
-		) );
+		//if( ! leo  ||  ! leo.authority_name ) return;
+		//
+		//var a = {
+		//	name: H( leo.authority_name ),
+		//	place: H( leo.municipality_name || leo.county_name ),
+		//	line1: H( leo.street || leo.mailing_street ),
+		//	city: H( leo.city || leo.mailing_city ),
+		//	state: H( leo.state || leo.mailing_state || vote.poll.stateInfo.state_abbr ),
+		//	zip: H( leo.zip || leo.mailing_zip ),
+		//	hours: H( leo.hours ),
+		//	phone: H( leo.phone ),
+		//	fax: H( leo.fax ),
+		//	email: H( leo.email ),
+		//	url: H( leo.website )
+		//}
+		//if( /^\d/.test(a.url) ) a.url = '';  // weed out phone numbers
+		//
+		//var directions =
+		//	a.line1 && a.city && a.state && a.zip &&
+		//	! /^PO /i.test(a.line1) &&
+		//	! /^P\.O\. /i.test(a.line1) &&
+		//	! /^BOX /i.test(a.line1);
+		//
+		//out.push( S(
+		//	'<div>',
+		//		'<div style="margin-bottom:0.15em;">',
+		//			linkIf( a.name, a.url ),
+		//		'</div>',
+		//		'<div>',
+		//			a.line1,
+		//		'</div>',
+		//		'<div>',
+		//			a.city ? S( a.city, ', ', a.state, ' ', a.zip || '' ) : '',
+		//		'</div>',
+		//		'<div>',
+		//			'<table cellspacing="0" cellpadding="0">',
+		//				a.phone ? '<tr><td>Phone:&nbsp;</td><td>' + a.phone + '</td></tr>' : '',
+		//				a.fax ? '<tr><td>Fax:&nbsp;</td><td>' + a.fax + '</td></tr>' : '',
+		//			'</table>',
+		//		'</div>',
+		//		//a.email ? S( '<div>', 'Email: ', linkto(a.email), '</div>' ) : '',
+		//		'<div>',
+		//			a.hours ? S( 'Hours: ', a.hours ) : '',
+		//		'</div>',
+		//		! directions ? '' : S(
+		//			'<div style="margin-top:0.1em;">',
+		//			'</div>',
+		//			directionsLink( home, {
+		//				info: {
+		//					accuracy: Accuracy.address,
+		//					address: oneLineAddress( a )
+		//				}
+		//			})
+		//		),
+		//	'</div>'
+		//) );
 	}
 }
 
@@ -517,18 +525,9 @@ function getContests() {
 function formatLocations( locations, info, icon, title, infowindow, extra, mapped ) {
 	
 	function formatLocationRow( info ) {
-		var special =
-			info.address != '703 E Grace St, Richmond, VA 23219' ? '' :
-			'<div style="font-size:90%; margin-bottom:0.25em;">GOVERNOR\'S MANSION</div>';
-		var locality = info.city ? info.city : info.county ? info.county + ' County' : '';
 		var address = T( 'address', {
-			special: special,
-			location: htmlEscape( info.location || '' ),
-			street: info.street,
-			state: locality ? locality  + ', ' + info.state.abbr :
-				info.address.length > 2 ? info.address :
-				info.state && info.state.name || '',
-			zip: info.zip && info.zip.slice(0,5)
+			location: H( info.location ),
+			address: multiLineAddress( info.address )
 		});
 		return T( 'locationRow', {
 			iconSrc: imgUrl(icon.url),
@@ -549,14 +548,10 @@ function formatLocations( locations, info, icon, title, infowindow, extra, mappe
 				location: a && a.location_name || '',
 				directions: location.directions || '',
 				hours: location.pollinghours || '',
-				address: '',
-				street: ( a && a.line1 || '' ) + ( a && a.line2 ? '<br>' + a.line2 : '' ),
-				city: a && a.city || '',
-				state: a && a.state && statesByAbbr[ a.state.toUpperCase() ],
-				zip: a && a.zip || ''
+				address: a
 			});
 		});
-		
+	
 	return S(
 		T( 'locationHead', {
 			select: includeMap() ? 'onclick="return maybeSelectTab(\'#mapbox\',event);" style="cursor:pointer;"' : '',
@@ -567,26 +562,6 @@ function formatLocations( locations, info, icon, title, infowindow, extra, mappe
 			unable: info && info.latlng || mapped ? '' : T('locationUnable')
 		})
 	);
-}
-
-function getleo( home, callback ) {
-	
-	var info = home.info;
-	
-	// Using old code only to do special case ballot links for HI this year
-	if( info.state.abbr != 'HI' ) {
-		callback();
-		return;
-	}
-	
-	gem.leoReady = function( leo ) {
-		home.hiBallot = leo.hiBallot;
-		callback();
-	};
-	
-	var url = S( opt.codeUrl, 'leo/', info.state.abbr.toLowerCase(), '-leo.js' );
-	$.getScript( cacheUrl( url, 60 ) );
-	
 }
 
 function lookupPollingPlace( inputAddress, info, callback ) {
@@ -636,60 +611,58 @@ function formatHome( infowindow ) {
 				infowindow
 					? { url:'home-icon-50.png', width:50, height:50 }
 					: { url:'home-pin-icon.png', width:29, height:57 },
-				'Your ' + home.info.kind, infowindow
+				T('yourHome'), infowindow
 			),
 			//extra ? electionInfo() : '',
 		'</div>'
 	);
 }
 
-function findPrecinct( geo, place, inputAddress ) {
+function findPrecinct( place, inputAddress ) {
 	log( 'Getting home map info' );
-	home.info = mapInfo( geo, place );
+	home.info = mapInfo( place );
 	if( ! home.info  /*||  home.info.accuracy < Accuracy.address*/ ) { sorry(); return; }
-	$selectState.val( home.info.state.abbr );
+	var state = getPlaceState( home.info.place )
+	if( state ) $selectState.val( state.abbr );
 	var location;
 	
-	getleo( home, function() {
-		lookupPollingPlace( inputAddress, home.info, function( poll ) {
-			log( 'API status code: ' + poll.status || '(OK)' );
-			vote.poll = poll;
-			var norm = poll.normalized_input;
-			//if( norm ) {
-			//	home.info.street = norm.line1;
-			//	if( norm.line2 ) home.info.street += '<br>' + norm.line2;
-			//	home.info.city = norm.city.replace( 'Washington D.C.', 'Washington' );
-			//	home.info.state = stateByAbbr( norm.state );
-			//	home.info.zip = norm.zip;
-			//}
-			var locations = vote.locations = poll.locations && poll.locations[0];
-			if( poll.status != 'SUCCESS'  ||  ! locations  ||  ! locations.length ) {
-				sorry();
-				return;
-			}
-			checkHiBallot();
-			if( locations.length > 1 ) {
-				log( 'Multiple polling locations' );
-				setVoteNoGeo();
-				return;
-			}
-			var address = locations[0].address;
-			if(
-				( address.line1 || address.line2 )  &&
-				( ( address.city && address.state ) || address.zip )
-			) {
-				var addr = oneLineAddress( address );
-				log( 'Polling address:', addr );
-				geocode( addr, function( geo ) {
-					var places = geo && geo.Placemark;
-					setVoteGeo( geo, places, addr );
-				});
-			}
-			else {
-				log( 'No polling address' );
-				setVoteNoGeo();
-			}
-		});
+	lookupPollingPlace( inputAddress, home.info, function( poll ) {
+		log( 'API status code: ' + poll.status || '(OK)' );
+		vote.poll = poll;
+		var norm = poll.normalized_input;
+		//if( norm ) {
+		//	home.info.street = norm.line1;
+		//	if( norm.line2 ) home.info.street += '<br>' + norm.line2;
+		//	home.info.city = norm.city.replace( 'Washington D.C.', 'Washington' );
+		//	home.info.state = stateByAbbr( norm.state );
+		//	home.info.zip = norm.zip;
+		//}
+		var locations = vote.locations = poll.locations && poll.locations[0];
+		if( poll.status != 'SUCCESS'  ||  ! locations  ||  ! locations.length ) {
+			sorry();
+			return;
+		}
+		checkHiBallot();
+		if( locations.length > 1 ) {
+			log( 'Multiple polling locations' );
+			setVoteNoGeo();
+			return;
+		}
+		var address = locations[0].address;
+		if(
+			( address.line1 || address.line2 )  &&
+			( ( address.city && address.state ) || address.zip )
+		) {
+			var addr = oneLineAddress( address );
+			log( 'Polling address:', addr );
+			geocode( addr, function( places ) {
+				setVoteGeo( places, addr );
+			});
+		}
+		else {
+			log( 'No polling address' );
+			setVoteNoGeo();
+		}
 	});
 	
 	function checkHiBallot() {
@@ -706,54 +679,53 @@ function findPrecinct( geo, place, inputAddress ) {
 		);
 	}
 	
-	function setVoteGeo( geo, places, address ) {
+	function setVoteGeo( places, address ) {
 		//if( places && places.length == 1 ) {
 		if( places && places.length >= 1 ) {
 			// More than one place, use first match only if it has address
 			// accuracy and the remaining matches don't
-			if( places.length > 1 ) {
-				if( places[0].AddressDetails.Accuracy < Accuracy.address ) {
-					setVoteNoGeo();
-					return;
-				}
-				for( var place, i = 0;  place = places[++i]; ) {
-					if( places[i].AddressDetails.Accuracy >= Accuracy.address ) {
-						setVoteNoGeo();
-						return;
-					}
-				}
-			}
+			//if( places.length > 1 ) {
+			//	if( places[0].AddressDetails.Accuracy < Accuracy.address ) {
+			//		setVoteNoGeo();
+			//		return;
+			//	}
+			//	for( var place, i = 0;  place = places[++i]; ) {
+			//		if( places[i].AddressDetails.Accuracy >= Accuracy.address ) {
+			//			setVoteNoGeo();
+			//			return;
+			//		}
+			//	}
+			//}
 			try {
-				var coord = places[0].Point.coordinates;
-				var lat = coord[1], lng = coord[0];
-				var latlng = new GLatLng( lat, lng );
-				var miles = latlng.distanceFrom( home.info.latlng ) / 1609.344;
+				var place = places[0];
+				var miles = gms.computeDistanceBetween(
+					place.geometry.location,
+					home.info.place.geometry.location
+				) / 1609.344;
 				log( miles.toFixed(2) + ' miles to polling place' );
 				if( miles > 30 ) {
 					log( 'Polling place is too far away' );
 					setVoteNoGeo();
 					return;
 				}
-				var details = places[0].AddressDetails;
-				var abbr = details.Country.AdministrativeArea.AdministrativeAreaName;
-				var st = statesByName[abbr] || statesByAbbr[ abbr.toUpperCase() ];
+				var st = getPlaceState( place );
 				log( 'Polling state: ' + st.name );
-				if( st != home.info.state ) {
+				if( st != getPlaceState(home.info.place) ) {
 					log( 'Polling place geocoded to wrong state' );
 					setVoteNoGeo();
 					return;
 				}
-				if( details.Accuracy < Accuracy.intersection ) {
-					log( 'Polling place geocoding not accurate enough' );
-					setVoteNoGeo();
-					return;
-				}
+				//if( details.Accuracy < Accuracy.intersection ) {
+				//	log( 'Polling place geocoding not accurate enough' );
+				//	setVoteNoGeo();
+				//	return;
+				//}
 			}
 			catch( e ) {
 				log( 'Error getting polling state' );
 			}
 			log( 'Getting polling place map info' );
-			setMap( vote.info = mapInfo( geo, places[0], vote.locations[0] ) );
+			setMap( vote.info = mapInfo( place, vote.locations[0] ) );
 			return;
 		}
 		setVoteNoGeo();
@@ -766,16 +738,33 @@ function findPrecinct( geo, place, inputAddress ) {
 }
 
 function oneLineAddress( address ) {
-	return S(
+	if( ! address )
+		return '';
+	if( typeof address == 'string' )
+		return H(address).replace( /, USA$/, '' );
+	return H( S(
 		address.line1 ? address.line1 + ', ' : '',
 		address.line2 ? address.line2 + ', ' : '',
 		address.city, ', ', address.state,
 		address.zip ? ' ' + address.zip.slice(0,5) : ''
-	);
+	) );
 }
 
-function formatAddress( address ) {
-	return htmlEscape( ( address || '' ).replace( /, USA$/, '' ) );
+function multiLineAddress( address ) {
+	if( ! address )
+		return '';
+	if( typeof address == 'string' )
+		return H(address)
+			.replace( /, USA$/, '' )
+			.replace( /, (\w\w) /, '\| $1 ' )
+			.replace( /, /g, '<br>' )
+			.replace( /\|/g, ',' );
+	return S(
+		address.line1 ? H(address.line1) + '<br>' : '',
+		address.line2 ? H(address.line2) + '<br>' : '',
+		H(address.city), ', ', H(address.state),
+		address.zip ? ' ' + H(address.zip.slice(0,5)) : ''
+	);
 }
 
 function fixInputAddress( addr ) {
@@ -796,12 +785,25 @@ function sheetReady( json ) {
 		gem.currentAbbr = abbr = abbr.toLowerCase();
 		gem.shapeReady = function( json ) {
 			if( json.state != gem.currentAbbr ) return;
-			map.clearOverlays();
+			clearOverlays();
+			var paths = new gm.MVCArray;
 			json.shapes.forEach( function( poly ) {
-				poly.points.push( poly.points[0] );
-				var polygon = new GPolygon( poly.points, '#000000', 2, .7, '#000000', .07 );
-				map.addOverlay( polygon );
+				var path = new gm.MVCArray;
+				paths.push( path );
+				var points = poly.points;
+				for( var point, i = -1;  point = points[++i]; )
+					path.push( new gm.LatLng( point.y, point.x ) );
+				path.push( new gm.LatLng( points[0].y, points[0].x ) );
 			});
+			var polygon = new gm.Polygon({
+				paths: paths,
+				strokeColor: '#000000',
+				strokeWeight: 2,
+				strokeOpacity: .7,
+				fillColor: '#000000',
+				fillOpacity: .07
+			});
+			addOverlay( polygon );
 		};
 		$.getScript( cacheUrl( S( opt.codeUrl, 'shapes/json/', abbr, '.js' ) ) );
 	}
@@ -816,13 +818,12 @@ function sheetReady( json ) {
 		home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
 		vote = null;
 		if( state != stateUS ) $details.html( electionInfo() );
-		function latlng( lat, lng ) { return new GLatLng( +lat.$t, +lng.$t ) }
-		var bounds = new GLatLngBounds(
+		function latlng( lat, lng ) { return new gm.LatLng( +lat.$t, +lng.$t ) }
+		var bounds = new gm.LatLngBounds(
 			latlng( state.gsx$south, state.gsx$west ),
 			latlng( state.gsx$north, state.gsx$east )
 		);
-		var zoom = map.getBoundsZoomLevel( bounds );
-		map.setCenter( bounds.getCenter(), zoom );
+		map.fitBounds( bounds );
 		polyState( abbr );
 	}
 	

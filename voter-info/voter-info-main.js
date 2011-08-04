@@ -134,8 +134,8 @@ function S() {
 }
 
 function linkIf( text, href, title ) {
-	title = htmlEscape( title || text ).replace( /"/g, '&quot;' );
-	text = htmlEscape( text );
+	title = H( title || text ).replace( /"/g, '&quot;' );
+	text = H( text );
 	return ! href ? text : S(
 		'<a target="_blank" href="', href, '" title="', title, '">',
 			text,
@@ -218,7 +218,8 @@ $.T = function( name, values /* TODO: , give */ ) {
 	return $( T( name, values ) );
 };
 
-function htmlEscape( str ) {
+function H( str ) {
+	if( str == null ) return '';
 	var div = document.createElement( 'div' );
 	div.appendChild( document.createTextNode( str ) );
 	return div.innerHTML;
@@ -247,7 +248,7 @@ function url( base, params, delim ) {
 }
 
 function linkto( addr ) {
-	var a = htmlEscape( addr ), u = a;
+	var a = H(addr), u = a;
 	if( addr.match(/@/) )
 		u = 'mailto:' + u;
 	else if( ! addr.match(/^http:\/\//) )
@@ -405,7 +406,7 @@ function initialMap() {
 	return balloon && vote && vote.info && vote.info.latlng;
 }
 
-var map;
+var gm, gme, gms, map;
 var home, vote, interpolated;
 
 // HTML snippets
@@ -505,11 +506,10 @@ function makerSetup() {
 function directionsLink( from, to ) {
 	from = from.info;
 	to = to.info;
-	//console.log( 'directions', '('+from.accuracy+')', from.address, '-', '('+to.accuracy+')', to.address );
-	return to.accuracy < Accuracy.intersection ? '' : S(
+	return ! isGeocodeAccurate(to.place) ? '' : S(
 		'<div>',
 			'<a target="_blank" href="http://maps.google.com/maps?f=d&saddr=',
-				from.accuracy < Accuracy.street ? '' : encodeURIComponent(from.address),
+				! isGeocodeAccurate(from.place) ? '' : encodeURIComponent(from.address),
 				'&daddr=', encodeURIComponent(to.address),
 				'&hl=en&mra=ls&ie=UTF8&iwloc=A&iwstate1=dir"',
 			'>',
@@ -526,30 +526,24 @@ function infoWrap( html ) {
 function formatWaypoint( name, info ) {
 	return S(
 		T(name), ' (', info.address, ')@',
-		info.lat.toFixed(6), ',', info.lng.toFixed(6)
+		info.latlng.lat().toFixed(6), ',', info.latlng.lng().toFixed(6)
 	);
 }
 
 function initMap( go ) {
-	google.load( 'maps', '2', { callback: function() {
-		if( GBrowserIsCompatible() ) {
-			map = new GMap2( $map[0], {
-				//googleBarOptions: { showOnLoad: true },
-				mapTypes: [
-					G_NORMAL_MAP,
-					G_SATELLITE_MAP,
-					G_SATELLITE_3D_MAP
-				]
+	google.load( 'maps', '3', {
+		other_params: 'libraries=geometry&sensor=false',
+		callback: function() {
+			gm = google.maps;
+			gme = gm.event;
+			gms = gm.geometry.spherical;
+			var mt = google.maps.MapTypeId;
+			map = new gm.Map( $map[0], {
+				mapTypeId: mt.ROADMAP
 			});
-			map.addControl(
-				winWidth() >= 400 && winHeight() >= 300 ?
-					new GLargeMapControl3D :
-					new GSmallZoomControl
-			);
-			map.addControl( new GMapTypeControl );
 			go();
 		}
-	} });
+	});
 }
 
 function loadMap( a ) {
@@ -574,23 +568,24 @@ function loadMap( a ) {
 	}
 	
 	function setMarker( a ) {
-		var icon = a.icon || new GIcon( G_DEFAULT_ICON );
-		if( a.image ) icon.image = imgUrl( a.image );
-		var marker = a.place.marker =
-			new GMarker( a.place.info.latlng, { icon:icon });
-		map.addOverlay( marker );
-		var options = {
-			maxWidth: Math.min( $map.width() - 100, 350 )
-			/*, disableGoogleLinks:true*/
+		var mo = {
+			position: a.place.info.latlng
 		};
-		if( balloon ) {
-			marker.bindInfoWindow( $(a.html)[0], options );
-			if( a.open ) marker.openInfoWindowHtml( a.html, options );
-		}
-		else {
-			GEvent.addListener( marker, 'click', function() {
-				selectTab( '#detailsbox' );
+		if( a.image ) mo.icon = imgUrl( a.image );
+		var marker = a.place.marker = new gm.Marker( mo );
+		addOverlay( marker );
+		gme.addListener( marker, 'click', function() {
+			if( balloon ) openBalloon();
+			else selectTab( '#detailsbox' );
+		});
+		if( balloon ) openBalloon();
+		
+		function openBalloon() {
+			var iw = new gm.InfoWindow({
+				content: $(a.html)[0],
+				maxWidth: Math.min( $map.width() - 100, 350 )
 			});
+			iw.open( map, marker );
 		}
 	}
 	
@@ -613,50 +608,54 @@ function loadMap( a ) {
 		
 		if( ! hi ) return;
 		if( vi  &&  vi.latlng ) {
-			var directions = new GDirections( null/*, $directions[0]*/ );
-			GEvent.addListener( directions, 'load', function() {
-				var bounds = directions.getBounds();
-				var ne = bounds.getNorthEast();
-				var sw = bounds.getSouthWest();
-				var n = ne.lat(), e = ne.lng(), s = sw.lat(), w = sw.lng();
-				var  latpad = ( n - s ) / 4;
-				var lngpad = ( e - w )  / 4;
-				bounds = new GLatLngBounds(
-					new GLatLng( s - latpad, w - lngpad ),
-					new GLatLng( n + latpad*2, e + lngpad )
-				);
-				var zoom = map.getBoundsZoomLevel( bounds )
-				map.setCenter( bounds.getCenter(), Math.min(zoom,16) );
-				var polyline = directions.getPolyline();
-				polyline && map.addOverlay( polyline );
+			new gm.DirectionsService().route({
+				origin: hi.latlng,
+				destination: vi.latlng,
+				travelMode: gm.TravelMode.DRIVING
+			}, function( result, status ) {
+				if( status != 'OK' ) return;
+				var route = result.routes[0];
+				map.fitBounds( route.bounds );
+				var polyline = new gm.Polyline({
+					path: route.overview_path,
+					strokeColor: '#0000FF',
+					strokeOpacity: .5,
+					strokeWeight: 5
+				});
+				addOverlay( polyline );
 			});
-			directions.loadFromWaypoints(
-				[
-					formatWaypoint( 'yourHome', hi ),
-					formatWaypoint( 'yourVotingLocation', vi )
-				],
-				{
-					getPolyline: true
-				}
-			);
 		}
 		else {
 			// Initial position with marker centered on home, or halfway between home and voting place
 			var latlng = hi.latlng;
 			if( vi  &&  vi.latlng ) {
-				latlng = new GLatLng(
-					( hi.lat + vi.lat ) / 2,
-					( hi.lng + vi.lng ) / 2
+				latlng = new gm.LatLng(
+					( hi.latlng.lat() + vi.latlng.lat() ) / 2,
+					( hi.latlng.lng() + vi.latlng.lng() ) / 2
 				);
 			}
 			//var center = latlng;
 			//var width = $map.width(), height = $map.height();
-			map.setCenter( latlng, a.zoom );
+			map.setCenter( latlng );
+			map.setZoom( a.zoom );
 		}
 		
 		ready();
 		spin( false );
 	}
+}
+
+var overlays = [];
+
+function addOverlay( overlay ) {
+	if( ! overlay ) return;
+	overlays.push( overlay );
+	overlay.setMap( map );
+}
+
+function clearOverlays() {
+	for( var overlay;  overlay = overlays.pop(); )
+		overlay.setMap( null );
 }
 
 function spin( yes ) {
@@ -665,8 +664,26 @@ function spin( yes ) {
 }
 
 function geocode( address, callback ) {
-	var geocoder = new GClientGeocoder();
-	geocoder.getLocations( address, callback );
+	new gm.Geocoder().geocode({
+		address: address
+	}, callback );
+}
+
+function getAddressComponent( place, type ) {
+	var components = place.address_components;
+	for( var i = 0;  i < components.length;  ++i ) {
+		var component = components[i], types = component.types;
+		for( var j = 0;  j < types.length;  ++j ) {
+			if( types[j] == type )
+				return component;
+		}
+	}
+	return null;
+}
+
+function isGeocodeAccurate( place ) {
+	var type = place.geometry.location_type;
+	return type == 'ROOFTOP' || type == 'RANGE_INTERPOLATED';
 }
 
 function pollingApi( address, abbr, normalize, callback ) {
@@ -755,11 +772,10 @@ function submit( addr ) {
 		if( addr == pref.example ) addr = addr.replace( /^.*: /, '' );
 		home = {};
 		vote = {};
-		map && map.clearOverlays();
+		clearOverlays();
 		$spinner.show();
 		$details.empty();
-		geocode( addr, function( geo ) {
-			var places = geo && geo.Placemark;
+		geocode( addr, function( places ) {
 			var n = places && places.length;
 			log( 'Number of matches: ' + n );
 			if( ! n ) {
@@ -770,7 +786,7 @@ function submit( addr ) {
 				) );
 			}
 			else if( n == 1 ) {
-				findPrecinct( geo, places[0], addr );
+				findPrecinct( places[0], addr );
 			}
 			else {
 				if( places ) {
@@ -783,7 +799,7 @@ function submit( addr ) {
 						spin( true );
 						setTimeout( function() {
 							function ready() {
-								findPrecinct( geo, places[ radio.id.split('-')[1] ] );
+								findPrecinct( places[ radio.id.split('-')[1] ] );
 							}
 							if( $.browser.msie ) {
 								$radios.hide();
@@ -886,87 +902,29 @@ function formatPlaces( places ) {
 		return T( 'placeRadioRow', {
 			checked: checked,
 			id: 'Poll411SearchPlaceRadio-' + i,
-			address: formatAddress(place.address)
+			address: oneLineAddress( place.formatted_address )
 		});
 	});
 	
 	return T( 'placeRadioTable', { rows:list.join('') } );
 }
 
-var Accuracy = {
-	country:1, state:2, county:3, city:4,
-	zip:5, street:6, intersection:7, address:8, premise:9
-};
-var Kind = [ '', 'Country', 'State', 'County', 'City', 'Neighborhood', 'Neighborhood', 'Neighborhood', 'Home', 'Home' ];
-var Zoom = [ 4, 5, 6, 10, 11, 12, 13, 14, 15, 15 ];
-
-function mapInfo( geo, place, extra ) {
+function mapInfo( place, extra ) {
 	extra = extra || {};
-	var details = place.AddressDetails;
-	var accuracy = Math.min( details.Accuracy, Accuracy.address );
-	if( accuracy < Accuracy.state ) {
+	if( ! isGeocodeAccurate(place) ) {
 		log( 'Not accurate enough' );
 		return null;
 	}
-	var country = details.Country;
-	if( ! country ) {
-		log( 'No country' );
-		return null;
-	}
-	var area = country.AdministrativeArea;
-	if( ! area ) {
-		log( 'No AdministrativeArea' );
-		return null;
-	}
-	var areaname = area.AdministrativeAreaName;
 	
-	// TODO: USA specific
-	var state =
-		statesByName[areaname] ||
-		statesByAbbr[ areaname.toUpperCase() ] ||
-		statesByName[ ( place.address || '' ).replace( /, USA$/, '' ) ];
-	if( ! state ) {
-		log( 'No state' );
-		return null;
-	}
-	var sub = area.SubAdministrativeArea || area, locality = sub.Locality;
-	if( locality ) {
-		log( 'Got Locality' );
-		var county = sub.SubAdministrativeAreaName || locality.LocalityName;
-		var city = locality.LocalityName;
-		var street = locality.Thoroughfare;
-		var zip = locality.PostalCode;
-	}
-	else if( area.AddressLine ) {
-		log( 'Got AddressLine' );
-		var addr = area.AddressLine[0] || '';
-		if( addr.match( / County$/ ) )
-			county = addr.replace( / County$/, '' );
-		else
-			city = addr;
-	}
-	var coord = place.Point.coordinates;
-	var lat = coord[1], lng = coord[0];
-	var formatted = formatAddress( place.address );
+	var formatted = oneLineAddress( place.formatted_address );
 	log( 'Formatted address:', formatted );
 	return {
-		geo: geo,
 		place: place,
 		address: formatted,
+		latlng: place.geometry.location,
 		location: extra.address && extra.address.location_name,
 		directions: extra.directions,
 		hours: extra.hours,
-		lat: lat,
-		lng: lng,
-		latlng: new GLatLng( lat, lng ),
-		street: street && street.ThoroughfareName || '',
-		city: city || '',
-		county: county || '',
-		state: state,
-		zip: zip && zip.PostalCodeNumber || '',
-		zoom: Zoom[accuracy],
-		accuracy: accuracy,
-		kind: Kind[accuracy],
 		_:''
 	};
 }
