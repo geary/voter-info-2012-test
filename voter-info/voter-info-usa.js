@@ -570,7 +570,7 @@ function lookupPollingPlace( inputAddress, info, callback ) {
 		return S( info.street, ', ', info.county, ', ', info.state.abbr, ' ', info.zip );
 	}
 	// BEGIN DEMO CODE
-	if( /1600 Pennsylvania Ave NW.* 20500, USA/.test( info.place.address ) ) {
+	if( /1600 Pennsylvania Ave NW.* 20500/.test( info.address ) ) {
 		callback({
 			status: 'SUCCESS',
 			locations: [
