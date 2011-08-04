@@ -4,8 +4,6 @@
 
 //window.console && typeof console.log == 'function' && console.log( location.href );
 
-var key = 'ABQIAAAAL7MXzZBubnPtVtBszDCxeRTZqGWfQErE9pT-IucjscazSdFnjBSzjqfxm1CQj7RDgG-OoyNfebJK0w';
-
 function getWH( what ) {
 	return window[ 'inner' + what ] || document.documentElement[ 'offset' + what ];
 }
@@ -37,7 +35,7 @@ function writeScript( url ) {
 	document.write( '<script type="text/javascript" src="', url, '"></script>' );
 }
 
-writeScript( 'http://www.google.com/jsapi?key=' + key );
+writeScript( 'http://www.google.com/jsapi' );
 
 if( ! Array.prototype.forEach ) {
 	Array.prototype.forEach = function( fun /*, thisp*/ ) {
