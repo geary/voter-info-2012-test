@@ -715,7 +715,7 @@ function pollingApi( address, abbr, normalize, callback ) {
 		return;
 	}
 	var url = S(
-		'http://pollinglocation.apis.google.com/?',
+		'http://pollinglocation.apis.google.com/?api_version=1.1&',
 		normalize ? 'normalize=1&' : '',
 		pref.electionId ? 'electionid=' + pref.electionId + '&' : '',
 		'q=', encodeURIComponent(address)
