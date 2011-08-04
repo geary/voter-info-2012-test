@@ -390,6 +390,30 @@ function dateFromMDY( mdy ) {
 var today = new Date;
 today.setHours( 0, 0, 0, 0 );
 
+// Geo calculations
+
+var earthRadius = 6371.0072;
+
+// Return the distance in kilometers between two LatLng objects
+function getDistance( ll1, ll2 ) {
+	var lat1 = degreesToRadians( ll1.lat() );
+	var lat2 = degreesToRadians( ll2.lat() );
+	var lng1 = ll1.lng(), lng2 = ll2.lng();
+	var lngD = degreesToRadians( lng2 - lng1 );
+	var sinLat1 = Math.sin(lat1), sinLat2 = Math.sin(lat2);
+	var cosLat1 = Math.cos(lat1), cosLat2 = Math.cos(lat2);
+	
+	return Math.acos(
+		sinLat1 * sinLat2 +
+		cosLat1 * cosLat2 * Math.cos(lngD)
+	) * earthRadius;
+}
+
+// Convert degrees to radians.
+function degreesToRadians( degrees ) {
+	return degrees * Math.PI / 180;
+}
+
 // Gadget modes
 
 var inline = pref.gadgetType == 'inline';
@@ -404,7 +428,7 @@ function initialMap() {
 	return balloon && vote && vote.info && vote.info.latlng;
 }
 
-var gm, gme, gms, map;
+var gm, gme, map;
 var home, vote, interpolated;
 
 // HTML snippets
@@ -530,11 +554,10 @@ function formatWaypoint( name, info ) {
 
 function initMap( go ) {
 	google.load( 'maps', '3', {
-		other_params: 'libraries=geometry&sensor=false',
+		other_params: 'sensor=false',
 		callback: function() {
 			gm = google.maps;
 			gme = gm.event;
-			gms = gm.geometry.spherical;
 			var mt = google.maps.MapTypeId;
 			map = new gm.Map( $map[0], {
 				mapTypeId: mt.ROADMAP

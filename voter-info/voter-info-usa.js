@@ -698,12 +698,12 @@ function findPrecinct( place, inputAddress ) {
 			//}
 			try {
 				var place = places[0];
-				var miles = gms.computeDistanceBetween(
+				var km = getDistance(
 					place.geometry.location,
 					home.info.place.geometry.location
-				) / 1609.344;
-				log( miles.toFixed(2) + ' miles to polling place' );
-				if( miles > 30 ) {
+				);
+				log( km.toFixed(2) + ' kilometers to polling place' );
+				if( km > 50 ) {
 					log( 'Polling place is too far away' );
 					setVoteNoGeo();
 					return;
