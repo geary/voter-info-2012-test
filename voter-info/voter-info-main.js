@@ -721,8 +721,14 @@ function pollingApi( address, abbr, normalize, callback ) {
 		'q=', encodeURIComponent(address)
 	);
 	log( 'Polling API:' );  log( url );
-	getJSON( url, function( poll ) {
-		callback( typeof poll == 'object' ? poll : { status:"ERROR" } );
+	$.ajax( url, {
+		cache: true,
+		dataType: 'jsonp',
+		jsonp: 'jsonp',
+		jsonpCallback: 'pollingApiCallback',
+		success: function( poll ) {
+			 callback( typeof poll == 'object' ? poll : { status:"ERROR" } );
+		}
 	});
 }
 
