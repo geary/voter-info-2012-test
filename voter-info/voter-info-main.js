@@ -560,7 +560,8 @@ function loadMap( a ) {
 				setMarker({
 					place: vote,
 					html: vote.htmlInfowindow,
-					open: true
+					open: true,
+					zIndex: 1
 				});
 		}, 500 );
 	}
@@ -581,7 +582,8 @@ function loadMap( a ) {
 		function openBalloon() {
 			var iw = new gm.InfoWindow({
 				content: $(a.html)[0],
-				maxWidth: Math.min( $map.width() - 100, 350 )
+				maxWidth: Math.min( $map.width() - 100, 350 ),
+				zIndex: a.zIndex || 0
 			});
 			iw.open( map, marker );
 		}
