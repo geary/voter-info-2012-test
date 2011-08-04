@@ -589,16 +589,11 @@ function lookupPollingPlace( inputAddress, info, callback ) {
 	}
 	// END DEMO CODE
 	var abbr = info.state && info.state.abbr;
-	pollingApi( info.place.address, abbr, false, function( poll ) {
+	pollingApi( info.place.formatted_address, abbr, function( poll ) {
 		if( ok(poll) )
 			callback( poll );
 		else
-			//pollingApi( countyAddress(), abbr, false, function( poll ) {
-			//	if( ok(poll)  ||  ! inputAddress  )
-			//		callback( poll );
-			//	else
-					pollingApi( inputAddress, abbr, true, callback );
-			//});
+			pollingApi( inputAddress, abbr, callback );
 	});
 }
 

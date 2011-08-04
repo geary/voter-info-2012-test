@@ -709,14 +709,13 @@ function isGeocodeAccurate( place ) {
 	return type == 'ROOFTOP' || type == 'RANGE_INTERPOLATED';
 }
 
-function pollingApi( address, abbr, normalize, callback ) {
+function pollingApi( address, abbr, callback ) {
 	if( ! address ) {
 		callback({ status:'ERROR' });
 		return;
 	}
 	var url = S(
 		'http://pollinglocation.apis.google.com/?api_version=1.1&',
-		normalize ? 'normalize=1&' : '',
 		pref.electionId ? 'electionid=' + pref.electionId + '&' : '',
 		'q=', encodeURIComponent(address)
 	);
@@ -790,12 +789,6 @@ function submit( addr ) {
 		log();
 		log.yes = /^!!?/.test( addr );
 		if( log.yes ) addr = $.trim( addr.replace( /^!!?/, '' ) );
-		pref.normalize = /^\*/.test( addr );
-		if( pref.normalize ) {
-			log.yes = true;
-			log( 'Setting normalize=1' );
-			addr = $.trim( addr.replace( /^\*/, '' ) );
-		}
 		log( 'Input address:', addr );
 		addr = fixInputAddress( addr );
 		if( addr == pref.example ) addr = addr.replace( /^.*: /, '' );
