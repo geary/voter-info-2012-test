@@ -68,15 +68,15 @@ function gadgetReady() {
 }
 
 function stateLocator() {
-	var state = home.info.state;
+	var state = home && home.info && home.info.state;
 	if( ! state  ||  state == stateUS ) return '';
 	var url = state.gsx$wheretovote.$t;
 	return url ? T( 'stateLocator', { url:url } ) : '';
 }
 
 function locationWarning() {
-	return vote.locations && vote.locations.length ?
-		T( 'locationWarning', { home: home.info.address }) :
+	return home && home.info && vote.locations && vote.locations.length ?
+		T('locationWarning') :
 		'';
 }
 
@@ -437,7 +437,9 @@ function setVoteHtml() {
 	//	'</div>'
 	//);
 	
-	var extra = home.info.latlng && vote.info && vote.info.latlng &&
+	var extra =
+		home.info && home.info.latlng &&
+		vote.info && vote.info.latlng &&
 		directionsLink( home, vote );
 	
 	function voteLocation( infowindow ) {
@@ -570,7 +572,7 @@ function lookupPollingPlace( inputAddress, info, callback ) {
 		return S( info.street, ', ', info.county, ', ', info.state.abbr, ' ', info.zip );
 	}
 	// BEGIN DEMO CODE
-	if( /1600 Pennsylvania Ave NW.* 20500/.test( info.address ) ) {
+	if( ! info  ||  /1600 Pennsylvania Ave NW.* 20500/.test( info.address ) ) {
 		callback({
 			status: 'SUCCESS',
 			locations: [
@@ -588,17 +590,16 @@ function lookupPollingPlace( inputAddress, info, callback ) {
 		return;
 	}
 	// END DEMO CODE
-	var abbr = info.state && info.state.abbr;
-	pollingApi( info.place.formatted_address, abbr, function( poll ) {
+	pollingApi( info.place.formatted_address, function( poll ) {
 		if( ok(poll) )
 			callback( poll );
 		else
-			pollingApi( inputAddress, abbr, callback );
+			pollingApi( inputAddress, callback );
 	});
 }
 
 function formatHome( infowindow ) {
-	return S(
+	return !( home && home.info ) ? '' : S(
 		'<div style="', fontStyle, '">',
 			formatLocations(
 				null,
@@ -614,11 +615,14 @@ function formatHome( infowindow ) {
 }
 
 function findPrecinct( place, inputAddress ) {
-	log( 'Getting home map info' );
-	home.info = mapInfo( place );
-	if( ! home.info  /*||  home.info.accuracy < Accuracy.address*/ ) { sorry(); return; }
-	var state = getPlaceState( home.info.place )
-	if( state ) $selectState.val( state.abbr );
+	if( place ) {
+		log( 'Getting home map info' );
+		home.info = mapInfo( place );
+		if( ! home.info  /*||  home.info.accuracy < Accuracy.address*/ ) { sorry(); return; }
+		var state = getPlaceState( home.info.place )
+		if( state ) $selectState.val( state.abbr );
+	}
+	
 	var location;
 	
 	lookupPollingPlace( inputAddress, home.info, function( poll ) {
@@ -693,28 +697,30 @@ function findPrecinct( place, inputAddress ) {
 			//}
 			try {
 				var place = places[0];
-				var km = getDistance(
-					place.geometry.location,
-					home.info.place.geometry.location
-				);
-				log( km.toFixed(2) + ' kilometers to polling place' );
-				if( km > 50 ) {
-					log( 'Polling place is too far away' );
-					setVoteNoGeo();
-					return;
+				if( home && home.info ) {
+					var km = getDistance(
+						place.geometry.location,
+						home.info.place.geometry.location
+					);
+					log( km.toFixed(2) + ' kilometers to polling place' );
+					if( km > 50 ) {
+						log( 'Polling place is too far away' );
+						setVoteNoGeo();
+						return;
+					}
+					var st = getPlaceState( place );
+					log( 'Polling state: ' + st.name );
+					if( st != getPlaceState(home.info.place) ) {
+						log( 'Polling place geocoded to wrong state' );
+						setVoteNoGeo();
+						return;
+					}
+					//if( details.Accuracy < Accuracy.intersection ) {
+					//	log( 'Polling place geocoding not accurate enough' );
+					//	setVoteNoGeo();
+					//	return;
+					//}
 				}
-				var st = getPlaceState( place );
-				log( 'Polling state: ' + st.name );
-				if( st != getPlaceState(home.info.place) ) {
-					log( 'Polling place geocoded to wrong state' );
-					setVoteNoGeo();
-					return;
-				}
-				//if( details.Accuracy < Accuracy.intersection ) {
-				//	log( 'Polling place geocoding not accurate enough' );
-				//	setVoteNoGeo();
-				//	return;
-				//}
 			}
 			catch( e ) {
 				log( 'Error getting polling state' );
@@ -763,6 +769,8 @@ function multiLineAddress( address ) {
 }
 
 function fixInputAddress( addr ) {
+	if( addr == pref.example )
+		addr = addr.replace( /^.*: /, '' );
 	var state = statesByAbbr[ addr.toUpperCase() ];
 	return state ? state.name : addr;
 }
