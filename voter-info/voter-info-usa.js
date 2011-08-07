@@ -623,8 +623,6 @@ function findPrecinct( place, inputAddress ) {
 		if( state ) $selectState.val( state.abbr );
 	}
 	
-	var location;
-	
 	lookupPollingPlace( inputAddress, home.info, function( poll ) {
 		log( 'API status code: ' + poll.status || '(OK)' );
 		vote.poll = poll;
@@ -662,68 +660,68 @@ function findPrecinct( place, inputAddress ) {
 			setVoteNoGeo();
 		}
 	});
-	
-	function setVoteGeo( places, address, location) {
-		//if( places && places.length == 1 ) {
-		if( places && places.length >= 1 ) {
-			// More than one place, use first match only if it has address
-			// accuracy and the remaining matches don't
-			//if( places.length > 1 ) {
-			//	if( places[0].AddressDetails.Accuracy < Accuracy.address ) {
-			//		setVoteNoGeo();
-			//		return;
-			//	}
-			//	for( var place, i = 0;  place = places[++i]; ) {
-			//		if( places[i].AddressDetails.Accuracy >= Accuracy.address ) {
-			//			setVoteNoGeo();
-			//			return;
-			//		}
-			//	}
-			//}
-			try {
-				var place = places[0];
-				if( location.latitude && location.longitude )
-					place.geometry.location =
-						new gm.LatLng( location.latitude, location.longitude );
-				if( home && home.info ) {
-					var km = getDistance(
-						place.geometry.location,
-						home.info.place.geometry.location
-					);
-					log( km.toFixed(2) + ' kilometers to polling place' );
-					if( km > 50 ) {
-						log( 'Polling place is too far away' );
-						setVoteNoGeo();
-						return;
-					}
-					var st = getPlaceState( place );
-					log( 'Polling state: ' + st.name );
-					if( st != getPlaceState(home.info.place) ) {
-						log( 'Polling place geocoded to wrong state' );
-						setVoteNoGeo();
-						return;
-					}
-					//if( details.Accuracy < Accuracy.intersection ) {
-					//	log( 'Polling place geocoding not accurate enough' );
-					//	setVoteNoGeo();
-					//	return;
-					//}
+}
+
+function setVoteGeo( places, address, location) {
+	//if( places && places.length == 1 ) {
+	if( places && places.length >= 1 ) {
+		// More than one place, use first match only if it has address
+		// accuracy and the remaining matches don't
+		//if( places.length > 1 ) {
+		//	if( places[0].AddressDetails.Accuracy < Accuracy.address ) {
+		//		setVoteNoGeo();
+		//		return;
+		//	}
+		//	for( var place, i = 0;  place = places[++i]; ) {
+		//		if( places[i].AddressDetails.Accuracy >= Accuracy.address ) {
+		//			setVoteNoGeo();
+		//			return;
+		//		}
+		//	}
+		//}
+		try {
+			var place = places[0];
+			if( location.latitude && location.longitude )
+				place.geometry.location =
+					new gm.LatLng( location.latitude, location.longitude );
+			if( home && home.info ) {
+				var km = getDistance(
+					place.geometry.location,
+					home.info.place.geometry.location
+				);
+				log( km.toFixed(2) + ' kilometers to polling place' );
+				if( km > 50 ) {
+					log( 'Polling place is too far away' );
+					setVoteNoGeo();
+					return;
 				}
+				var st = getPlaceState( place );
+				log( 'Polling state: ' + st.name );
+				if( st != getPlaceState(home.info.place) ) {
+					log( 'Polling place geocoded to wrong state' );
+					setVoteNoGeo();
+					return;
+				}
+				//if( details.Accuracy < Accuracy.intersection ) {
+				//	log( 'Polling place geocoding not accurate enough' );
+				//	setVoteNoGeo();
+				//	return;
+				//}
 			}
-			catch( e ) {
-				log( 'Error getting polling state' );
-			}
-			log( 'Getting polling place map info' );
-			setMap( vote.info = mapInfo( place, vote.locations[0] ) );
-			return;
 		}
-		setVoteNoGeo();
+		catch( e ) {
+			log( 'Error getting polling state' );
+		}
+		log( 'Getting polling place map info' );
+		setMap( vote.info = mapInfo( place, vote.locations[0] ) );
+		return;
 	}
-	
-	function setVoteNoGeo() {
-		setVoteHtml();
-		forceDetails();
-	}
+	setVoteNoGeo();
+}
+
+function setVoteNoGeo() {
+	setVoteHtml();
+	forceDetails();
 }
 
 function oneLineAddress( address ) {
