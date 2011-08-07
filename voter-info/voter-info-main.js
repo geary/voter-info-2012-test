@@ -573,12 +573,13 @@ function loadMap( a ) {
 	function ready() {
 		setTimeout( function() {
 			var only = ! vote.info  ||  ! vote.info.latlng;
-			setMarker({
-				place: home,
-				image: 'marker-green.png',
-				open: only,
-				html: ! only ? formatHome(true) : vote.htmlInfowindow || formatHome(true)
-			});
+			if( home.info  &&  home.info.latlng )
+				setMarker({
+					place: home,
+					image: 'marker-green.png',
+					open: only,
+					html: ! only ? formatHome(true) : vote.htmlInfowindow || formatHome(true)
+				});
 			if( vote.info  &&  vote.info.latlng )
 				setMarker({
 					place: vote,
@@ -615,7 +616,8 @@ function loadMap( a ) {
 	function go() {
 		setVoteHtml();
 		
-		var hi = home.info, vi = vote.info;
+		var homeLatLng = home && home.info && home.info.latlng;
+		var voteLatLng = vote && vote.info && vote.info.latlng;
 		
 		$tabs.html( tabLinks( initialMap() ? '#mapbox' : '#detailsbox' ) );
 		if( ! sidebar ) $map.css({ visibility:'hidden' });
@@ -629,11 +631,10 @@ function loadMap( a ) {
 			$detailsbox.show();
 		}
 		
-		if( ! hi ) return;
-		if( vi  &&  vi.latlng ) {
+		if( homeLatLng && voteLatLng ) {
 			new gm.DirectionsService().route({
-				origin: hi.latlng,
-				destination: vi.latlng,
+				origin: homeLatLng,
+				destination: voteLatLng,
 				travelMode: gm.TravelMode.DRIVING
 			}, function( result, status ) {
 				if( status != 'OK' ) return;
@@ -648,19 +649,9 @@ function loadMap( a ) {
 				addOverlay( polyline );
 			});
 		}
-		else {
-			// Initial position with marker centered on home, or halfway between home and voting place
-			var latlng = hi.latlng;
-			if( vi  &&  vi.latlng ) {
-				latlng = new gm.LatLng(
-					( hi.latlng.lat() + vi.latlng.lat() ) / 2,
-					( hi.latlng.lng() + vi.latlng.lng() ) / 2
-				);
-			}
-			//var center = latlng;
-			//var width = $map.width(), height = $map.height();
-			map.setCenter( latlng );
-			map.setZoom( a.zoom );
+		else if( voteLatLng ) {
+			map.setCenter( voteLatLng );
+			map.setZoom( 15 );
 		}
 		
 		ready();
@@ -709,7 +700,7 @@ function isGeocodeAccurate( place ) {
 	return type == 'ROOFTOP' || type == 'RANGE_INTERPOLATED';
 }
 
-function pollingApi( address, abbr, callback ) {
+function pollingApi( address, callback ) {
 	if( ! address ) {
 		callback({ status:'ERROR' });
 		return;
@@ -783,64 +774,73 @@ function setGadgetPoll411() {
 }
 
 function submit( addr ) {
-	submitReady = function() {
-		analytics( 'lookup' );
-		addr = $.trim( addr );
-		log();
-		log.yes = /^!!?/.test( addr );
-		if( log.yes ) addr = $.trim( addr.replace( /^!!?/, '' ) );
-		log( 'Input address:', addr );
-		addr = fixInputAddress( addr );
-		if( addr == pref.example ) addr = addr.replace( /^.*: /, '' );
-		home = {};
-		vote = {};
-		clearOverlays();
-		$spinner.show();
-		$details.empty();
-		geocode( addr, function( places ) {
-			var n = places && places.length;
-			log( 'Number of matches: ' + n );
-			if( ! n ) {
-				spin( false );
-				detailsOnly( S(
-					log.print(),
-					T('didNotFind')
-				) );
-			}
-			else if( n == 1 ) {
-				findPrecinct( places[0], addr );
+	analytics( 'lookup' );
+	
+	home = {};
+	vote = {};
+	clearOverlays();
+	$spinner.show();
+	$details.empty();
+	addr = $.trim( addr );
+	log();
+	log.yes = /^!!?/.test( addr );
+	if( log.yes ) addr = $.trim( addr.replace( /^!!?/, '' ) );
+	
+	log( 'Input address:', addr );
+	addr = fixInputAddress( addr );
+	
+	if( ! / /.test(addr) )
+		submitID( addr );
+	else
+		submitAddress( addr );
+}
+
+function submitID( id ) {
+	findPrecinct( null, id );
+}
+
+function submitAddress( addr ) {
+	geocode( addr, function( places ) {
+		var n = places && places.length;
+		log( 'Number of matches: ' + n );
+		if( ! n ) {
+			spin( false );
+			detailsOnly( S(
+				log.print(),
+				T('didNotFind')
+			) );
+		}
+		else if( n == 1 ) {
+			findPrecinct( places[0], addr );
+		}
+		else {
+			if( places ) {
+				detailsOnly( T('selectAddressHeader') );
+				var $radios = $('#radios');
+				$radios.append( formatPlaces(places) );
+				$detailsbox.show();
+				$details.find('input:radio').click( function() {
+					var radio = this;
+					spin( true );
+					setTimeout( function() {
+						function ready() {
+							findPrecinct( places[ radio.id.split('-')[1] ] );
+						}
+						if( $.browser.msie ) {
+							$radios.hide();
+							ready();
+						}
+						else {
+							$radios.slideUp( 350, ready );
+						}
+					}, 250 );
+				});
 			}
 			else {
-				if( places ) {
-					detailsOnly( T('selectAddressHeader') );
-					var $radios = $('#radios');
-					$radios.append( formatPlaces(places) );
-					$detailsbox.show();
-					$details.find('input:radio').click( function() {
-						var radio = this;
-						spin( true );
-						setTimeout( function() {
-							function ready() {
-								findPrecinct( places[ radio.id.split('-')[1] ] );
-							}
-							if( $.browser.msie ) {
-								$radios.hide();
-								ready();
-							}
-							else {
-								$radios.slideUp( 350, ready );
-							}
-						}, 250 );
-					});
-				}
-				else {
-					sorry();
-				}
+				sorry();
 			}
-		});
-	}
-	
-	submitReady();
+		}
+	});
 }
 
 function setLayout() {
@@ -933,7 +933,7 @@ function formatPlaces( places ) {
 
 function mapInfo( place, extra ) {
 	extra = extra || {};
-	if( ! isGeocodeAccurate(place) ) {
+	if( place  &&  ! isGeocodeAccurate(place) ) {
 		log( 'Not accurate enough' );
 		return null;
 	}
