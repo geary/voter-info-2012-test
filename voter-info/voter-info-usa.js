@@ -641,7 +641,6 @@ function findPrecinct( place, inputAddress ) {
 			sorry();
 			return;
 		}
-		checkHiBallot();
 		if( locations.length > 1 ) {
 			log( 'Multiple polling locations' );
 			setVoteNoGeo();
@@ -663,20 +662,6 @@ function findPrecinct( place, inputAddress ) {
 			setVoteNoGeo();
 		}
 	});
-	
-	function checkHiBallot() {
-		if( ! home.hiBallot ) return;
-		var id = vote.locations[0].id;
-		if( ! id ) return;
-		id = id.slice( -4 );
-		var ballot = home.hiBallot[id];
-		if( ! ballot ) return;
-		vote.ballotLink = S(
-			'http://elections3.hawaii.gov/ppl/docs/ppl/BALLOTS/English/',
-			ballot,
-			'EN.pdf'
-		);
-	}
 	
 	function setVoteGeo( places, address ) {
 		//if( places && places.length == 1 ) {
