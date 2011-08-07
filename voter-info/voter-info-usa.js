@@ -646,7 +646,7 @@ function findPrecinct( place, inputAddress ) {
 			setVoteNoGeo();
 			return;
 		}
-		var address = locations[0].address;
+		var location = locations[0], address = location.address;
 		if(
 			( address.line1 || address.line2 )  &&
 			( ( address.city && address.state ) || address.zip )
@@ -654,7 +654,7 @@ function findPrecinct( place, inputAddress ) {
 			var addr = oneLineAddress( address );
 			log( 'Polling address:', addr );
 			geocode( addr, function( places ) {
-				setVoteGeo( places, addr );
+				setVoteGeo( places, addr, location );
 			});
 		}
 		else {
@@ -663,7 +663,7 @@ function findPrecinct( place, inputAddress ) {
 		}
 	});
 	
-	function setVoteGeo( places, address ) {
+	function setVoteGeo( places, address, location) {
 		//if( places && places.length == 1 ) {
 		if( places && places.length >= 1 ) {
 			// More than one place, use first match only if it has address
@@ -682,6 +682,9 @@ function findPrecinct( place, inputAddress ) {
 			//}
 			try {
 				var place = places[0];
+				if( location.latitude && location.longitude )
+					place.geometry.location =
+						new gm.LatLng( location.latitude, location.longitude );
 				if( home && home.info ) {
 					var km = getDistance(
 						place.geometry.location,
