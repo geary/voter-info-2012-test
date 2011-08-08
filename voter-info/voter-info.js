@@ -7,16 +7,5 @@ document.write(
 	'</script>'
 );
 
-var prefs = new _IG_Prefs();
-var pref = {
-	lang: prefs.getString( '.lang' ) || 'en'
-};
-
-function loadStrings( strings ) {
-	pref.strings = strings;
-}
-
-opt.writeScript( 'locale/lang-' + pref.lang + '.js' );
-
 opt.writeScript( 'voter-info-usa.js' );
 opt.writeScript( 'voter-info-main.js' );

@@ -13,6 +13,7 @@ loadStrings({
 "doYouMean": "Do you mean:", 
 "forEligibleVoters": "This voting location is for eligible voters living at the home address shown above.", 
 "getDirections": "Get directions", 
+"languageName": "English", 
 "monthName01": "January", 
 "monthName02": "February", 
 "monthName03": "March", 

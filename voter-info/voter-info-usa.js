@@ -2,6 +2,28 @@
 // By Michael Geary - http://mg.to/
 // See UNLICENSE or http://unlicense.org/ for public domain notice.
 
+var defaultLanguage = 'en';
+var supportedLanguages = {
+	en: 'English',
+	//es: 'Español',
+	_: null
+};
+
+var prefs = new _IG_Prefs();
+var pref = {
+	country: prefs.getString( '.country' ),
+	lang: prefs.getString( '.lang' )
+};
+
+if( ! supportedLanguages[pref.lang] )
+	pref.lang = defaultLanguage;
+
+function loadStrings( strings ) {
+	pref.strings = strings;
+}
+
+opt.writeScript( 'locale/lang-' + pref.lang + '.js' );
+
 // State data
 
 var stateUS = {
