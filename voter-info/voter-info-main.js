@@ -19,7 +19,7 @@ $.fn.visibleWidth = function() {
 	return this.is(':visible') ? this.width() : 0;
 };
 
-var gem = GoogleElectionMap = {};
+var GoogleElectionMap = {};
 
 // Utility functions and jQuery extensions
 

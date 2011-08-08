@@ -771,9 +771,9 @@ function sheetReady( json ) {
 	indexSpecialStates();
 	
 	function polyState( abbr ) {
-		gem.currentAbbr = abbr = abbr.toLowerCase();
-		gem.shapeReady = function( json ) {
-			if( json.state != gem.currentAbbr ) return;
+		GoogleElectionMap.currentAbbr = abbr = abbr.toLowerCase();
+		GoogleElectionMap.shapeReady = function( json ) {
+			if( json.state != GoogleElectionMap.currentAbbr ) return;
 			clearOverlays();
 			var paths = new gm.MVCArray;
 			json.shapes.forEach( function( poly ) {
