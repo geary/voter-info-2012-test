@@ -23,9 +23,6 @@ var gem = GoogleElectionMap = {};
 
 // Utility functions and jQuery extensions
 
-// temp?
-opt.nocache = opt.debug;
-
 opt.dataUrl = opt.codeUrl;
 if( opt.debug ) opt.dataUrl += 'proxy-local.php?jsonp=?&file=';
 
@@ -154,7 +151,7 @@ function fetch( url, callback, cache ) {
 	}
 	else {
 		_IG_FetchContent( url, callback, {
-			refreshInterval: cache != null ? cache : opt.nocache ? 1 : opt.cache || 600
+			refreshInterval: cache != null ? cache : opt.debug ? 1 : opt.cache || 600
 		});
 	}
 }
@@ -224,8 +221,8 @@ function H( str ) {
 }
 
 function cacheUrl( url, cache, always ) {
-	if( opt.nocache  &&  ! always ) return url + '?q=' + new Date().getTime();
-	//if( opt.nocache ) cache = 0;
+	if( opt.debug  &&  ! always ) return url + '?q=' + new Date().getTime();
+	//if( opt.debug ) cache = 0;
 	//if( typeof cache != 'number' ) cache = 3600;
 	//url = _IG_GetCachedUrl( url, { refreshInterval:cache } );
 	//if( ! url.match(/^http:/) ) url = 'http://' + location.host + url;
