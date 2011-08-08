@@ -1,4 +1,4 @@
-// voter-info-main.js
+// voter-info-usa.js
 // By Michael Geary - http://mg.to/
 // See UNLICENSE or http://unlicense.org/ for public domain notice.
 
