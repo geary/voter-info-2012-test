@@ -55,7 +55,6 @@ function attribution() {
 	var special = {
 		VA: T('attributionVA')
 	}[ home && home.info && home.info.state && home.info.state.abbr ] || '';
-	if( special ) special += ' and the ';
 
 	return T( 'attribution', { special: special });
 }
