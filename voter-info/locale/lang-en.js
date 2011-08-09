@@ -1,5 +1,6 @@
 loadStrings({
 "areYouRegistered": "Are you registered to vote?", 
+"candidateRandomOrder": "Candidates are listed in random order", 
 "dateFormat": "{{monthName}} {{dayOfMonth}}", 
 "dayDateFormat": "{{dayName}}, {{monthName}} {{dayOfMonth}}", 
 "dayName1": "Sunday", 
@@ -29,6 +30,8 @@ loadStrings({
 "reportAnError": "Report an error", 
 "troubleLoading": "Sorry, we are having trouble loading the Google Election Center app.<br>Please try again later.", 
 "unableToLocate": "  We were unable to locate this voting place on the map. Please check with your election officals for the exact address.", 
+"viewCandidates": "View Candidates and Details", 
+"viewDetails": "View Election Details", 
 "yourHome": "Your Home", 
 "yourVotingLocation": "Your Voting Location"
 })

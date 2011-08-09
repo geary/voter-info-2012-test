@@ -396,7 +396,7 @@ function perElectionInfo( state, electionDay, electionName ) {
 		var randomize = contests[0].ballot.candidate[0].order_on_ballot == null;
 		var randomizedMessage = ! randomize ? '' : S(
 			'<div style="font-size:85%; font-style:italic; margin-top:0.5em">',
-				'Candidates are listed in random order',
+				T('candidateRandomOrder'),
 			'</div>'
 		);
 		var linkText = 'Sample Ballot'
@@ -464,7 +464,7 @@ function setVoteHtml() {
 		directionsLink( home, vote );
 	
 	function voteLocation( infowindow ) {
-		var loc = 'Your Voting Location';
+		var loc = T('yourVotingLocation');
 		if( !( vote.locations && vote.locations.length ) )
 			return '';
 		if( vote.info )
@@ -501,8 +501,8 @@ function setVoteHtml() {
 	
 	function homeAndVote( infowindow ) {
 		var viewMessage = getContests() ?
-			'View Candidates and Details' :
-			'View Election Details';
+			T('viewCandidates') :
+			T('viewDetails');
 		var viewLink = sidebar ? '' : S(
 			'<div style="padding-top:0.75em;">',
 				'<a href="#detailsbox" onclick="return selectTab(\'#detailsbox\');">',
