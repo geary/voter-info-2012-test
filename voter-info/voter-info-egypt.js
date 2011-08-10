@@ -2,6 +2,8 @@
 // By Michael Geary - http://mg.to/
 // See UNLICENSE or http://unlicense.org/ for public domain notice.
 
+// Language and prefs
+
 var defaultLanguage = 'ar';
 var supportedLanguages = {
 	ar: 'عربي',
@@ -26,6 +28,8 @@ opt.writeScript( 'locale/lang-' + pref.lang + '.js' );
 
 function localPrefs( pref ) {
 }
+
+// Output formatters
 
 function attribution() {
 	return T( 'attribution' );
@@ -244,6 +248,89 @@ function formatLocations( locations, info, icon, title, infowindow, extra, mappe
 	);
 }
 
+// Set up map and sidebar when the polling place location is known
+function setVoteGeo( places, address, location) {
+	//if( places && places.length == 1 ) {
+	if( places && places.length >= 1 ) {
+		// More than one place, use first match only if it has address
+		// accuracy and the remaining matches don't
+		//if( places.length > 1 ) {
+		//	if( places[0].AddressDetails.Accuracy < Accuracy.address ) {
+		//		setVoteNoGeo();
+		//		return;
+		//	}
+		//	for( var place, i = 0;  place = places[++i]; ) {
+		//		if( places[i].AddressDetails.Accuracy >= Accuracy.address ) {
+		//			setVoteNoGeo();
+		//			return;
+		//		}
+		//	}
+		//}
+		try {
+			var place = places[0];
+			if( location.latitude && location.longitude )
+				place.geometry.location =
+					new gm.LatLng( location.latitude, location.longitude );
+		}
+		catch( e ) {
+			log( 'Error getting polling state' );
+		}
+		log( 'Getting polling place map info' );
+		setMap( vote.info = mapInfo( place, vote.locations[0] ) );
+		return;
+	}
+	setVoteNoGeo();
+}
+
+// Set up map and sidebar with no polling place location
+function setVoteNoGeo() {
+	setVoteHtml();
+	forceDetails();
+}
+
+// Return a single line formatted address, from either a string or
+// an address object
+function oneLineAddress( address ) {
+	if( ! address )
+		return '';
+	//if( typeof address == 'string' )
+	//	return H(address).replace( /, USA$/, '' );
+	return H( S(
+		address.line1 ? address.line1 + ', ' : '',
+		address.line2 ? address.line2 + ', ' : '',
+		address.city, ', ', address.state,
+		address.zip ? ' ' + address.zip : ''
+	) );
+}
+
+// Return a multiline formatted address, from either a string or
+// an address object
+function multiLineAddress( address ) {
+	if( ! address )
+		return '';
+	if( typeof address == 'string' )
+		return H(address)
+			//.replace( /, USA$/, '' )
+			.replace( /, (\w\w) /, '\| $1 ' )
+			.replace( /, /g, '<br>' )
+			.replace( /\|/g, ',' );
+	return S(
+		address.line1 ? H(address.line1) + '<br>' : '',
+		address.line2 ? H(address.line2) + '<br>' : '',
+		H(address.city), ', ', H(address.state),
+		address.zip ? ' ' + H(address.zip) : ''
+	);
+}
+
+// Apply any local fixups to an address
+function fixInputAddress( addr ) {
+	//if( addr == pref.example )
+	//	addr = addr.replace( /^.*: /, '' );
+	return addr;
+}
+
+// Geocoding and Election Center API
+
 function lookupPollingPlace( inputAddress, info, callback ) {
 	function ok( poll ) { return poll.status == 'SUCCESS'; }
 	function countyAddress() {
@@ -290,79 +377,7 @@ function findPrecinct( place, inputAddress ) {
 	});
 }
 
-function setVoteGeo( places, address, location) {
-	//if( places && places.length == 1 ) {
-	if( places && places.length >= 1 ) {
-		// More than one place, use first match only if it has address
-		// accuracy and the remaining matches don't
-		//if( places.length > 1 ) {
-		//	if( places[0].AddressDetails.Accuracy < Accuracy.address ) {
-		//		setVoteNoGeo();
-		//		return;
-		//	}
-		//	for( var place, i = 0;  place = places[++i]; ) {
-		//		if( places[i].AddressDetails.Accuracy >= Accuracy.address ) {
-		//			setVoteNoGeo();
-		//			return;
-		//		}
-		//	}
-		//}
-		try {
-			var place = places[0];
-			if( location.latitude && location.longitude )
-				place.geometry.location =
-					new gm.LatLng( location.latitude, location.longitude );
-		}
-		catch( e ) {
-			log( 'Error getting polling state' );
-		}
-		log( 'Getting polling place map info' );
-		setMap( vote.info = mapInfo( place, vote.locations[0] ) );
-		return;
-	}
-	setVoteNoGeo();
-}
-
-function setVoteNoGeo() {
-	setVoteHtml();
-	forceDetails();
-}
-
-function oneLineAddress( address ) {
-	if( ! address )
-		return '';
-	//if( typeof address == 'string' )
-	//	return H(address).replace( /, USA$/, '' );
-	return H( S(
-		address.line1 ? address.line1 + ', ' : '',
-		address.line2 ? address.line2 + ', ' : '',
-		address.city, ', ', address.state,
-		address.zip ? ' ' + address.zip : ''
-	) );
-}
-
-function multiLineAddress( address ) {
-	if( ! address )
-		return '';
-	if( typeof address == 'string' )
-		return H(address)
-			//.replace( /, USA$/, '' )
-			.replace( /, (\w\w) /, '\| $1 ' )
-			.replace( /, /g, '<br>' )
-			.replace( /\|/g, ',' );
-	return S(
-		address.line1 ? H(address.line1) + '<br>' : '',
-		address.line2 ? H(address.line2) + '<br>' : '',
-		H(address.city), ', ', H(address.state),
-		address.zip ? ' ' + H(address.zip) : ''
-	);
-}
-
-function fixInputAddress( addr ) {
-	//if( addr == pref.example )
-	//	addr = addr.replace( /^.*: /, '' );
-	return addr;
-}
+// Gadget initialization
 
 function gadgetReady( json ) {
 	initMap( function() {

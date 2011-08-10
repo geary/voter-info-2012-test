@@ -2,6 +2,8 @@
 // By Michael Geary - http://mg.to/
 // See UNLICENSE or http://unlicense.org/ for public domain notice.
 
+// Language and prefs
+
 var defaultLanguage = 'en';
 var supportedLanguages = {
 	en: 'English',
@@ -23,6 +25,15 @@ function loadStrings( strings ) {
 }
 
 opt.writeScript( 'locale/lang-' + pref.lang + '.js' );
+
+function localPrefs( pref ) {
+	if( pref.example in {
+		'Enter your home address':1  // onebox sends us this on a no-entry click
+	}) {
+		pref.example = 'Ex: 1600 Pennsylvania Ave, Washington DC';
+		pref.ready = false;
+	}
+}
 
 // State data
 
@@ -64,14 +75,7 @@ function getPlaceState( place ) {
 	return statesByAbbr[ abbr.toUpperCase() ];
 }
 
-function localPrefs( pref ) {
-	if( pref.example in {
-		'Enter your home address':1  // onebox sends us this on a no-entry click
-	}) {
-		pref.example = 'Ex: 1600 Pennsylvania Ave, Washington DC';
-		pref.ready = false;
-	}
-}
+// Output formatters
 
 function attribution() {
 	var special = {
@@ -587,38 +591,6 @@ function formatLocations( locations, info, icon, title, infowindow, extra, mappe
 	);
 }
 
-function lookupPollingPlace( inputAddress, info, callback ) {
-	function ok( poll ) { return poll.status == 'SUCCESS'; }
-	function countyAddress() {
-		return S( info.street, ', ', info.county, ', ', info.state.abbr, ' ', info.zip );
-	}
-	// BEGIN DEMO CODE
-	if( ! info  ||  /1600 Pennsylvania Ave NW.* 20500/.test( info.address ) ) {
-		callback({
-			status: 'SUCCESS',
-			locations: [
-				[{
-					address: {
-						line1: '2130 G ST NW',
-						city: 'Washington',
-						state: 'DC',
-						zip: '20006',
-						location_name: 'THE SCHOOL WITHOUT WALLS'
-					}
-				}]
-			]
-		});
-		return;
-	}
-	// END DEMO CODE
-	pollingApi( info.place.formatted_address, function( poll ) {
-		if( ok(poll) )
-			callback( poll );
-		else
-			pollingApi( inputAddress, callback );
-	});
-}
-
 function formatHome( infowindow ) {
 	return !( home && home.info ) ? '' : S(
 		'<div style="', fontStyle, '">',
@@ -633,54 +605,6 @@ function formatHome( infowindow ) {
 			//extra ? electionInfo() : '',
 		'</div>'
 	);
-}
-
-function findPrecinct( place, inputAddress ) {
-	if( place ) {
-		log( 'Getting home map info' );
-		home.info = mapInfo( place );
-		if( ! home.info  /*||  home.info.accuracy < Accuracy.address*/ ) { sorry(); return; }
-		var state = getPlaceState( home.info.place )
-		if( state ) $selectState.val( state.abbr );
-	}
-	
-	lookupPollingPlace( inputAddress, home.info, function( poll ) {
-		log( 'API status code: ' + poll.status || '(OK)' );
-		vote.poll = poll;
-		var norm = poll.normalized_input;
-		//if( norm ) {
-		//	home.info.street = norm.line1;
-		//	if( norm.line2 ) home.info.street += '<br>' + norm.line2;
-		//	home.info.city = norm.city.replace( 'Washington D.C.', 'Washington' );
-		//	home.info.state = stateByAbbr( norm.state );
-		//	home.info.zip = norm.zip;
-		//}
-		var locations = vote.locations = poll.locations && poll.locations[0];
-		if( poll.status != 'SUCCESS'  ||  ! locations  ||  ! locations.length ) {
-			sorry();
-			return;
-		}
-		if( locations.length > 1 ) {
-			log( 'Multiple polling locations' );
-			setVoteNoGeo();
-			return;
-		}
-		var location = locations[0], address = location.address;
-		if(
-			( address.line1 || address.line2 )  &&
-			( ( address.city && address.state ) || address.zip )
-		) {
-			var addr = oneLineAddress( address );
-			log( 'Polling address:', addr );
-			geocode( addr, function( places ) {
-				setVoteGeo( places, addr, location );
-			});
-		}
-		else {
-			log( 'No polling address' );
-			setVoteNoGeo();
-		}
-	});
 }
 
 function setVoteGeo( places, address, location) {
@@ -781,6 +705,90 @@ function fixInputAddress( addr ) {
 	var state = statesByAbbr[ addr.toUpperCase() ];
 	return state ? state.name : addr;
 }
+
+// Geocoding and Election Center API
+
+function lookupPollingPlace( inputAddress, info, callback ) {
+	function ok( poll ) { return poll.status == 'SUCCESS'; }
+	function countyAddress() {
+		return S( info.street, ', ', info.county, ', ', info.state.abbr, ' ', info.zip );
+	}
+	// BEGIN DEMO CODE
+	if( ! info  ||  /1600 Pennsylvania Ave NW.* 20500/.test( info.address ) ) {
+		callback({
+			status: 'SUCCESS',
+			locations: [
+				[{
+					address: {
+						line1: '2130 G ST NW',
+						city: 'Washington',
+						state: 'DC',
+						zip: '20006',
+						location_name: 'THE SCHOOL WITHOUT WALLS'
+					}
+				}]
+			]
+		});
+		return;
+	}
+	// END DEMO CODE
+	pollingApi( info.place.formatted_address, function( poll ) {
+		if( ok(poll) )
+			callback( poll );
+		else
+			pollingApi( inputAddress, callback );
+	});
+}
+
+function findPrecinct( place, inputAddress ) {
+	if( place ) {
+		log( 'Getting home map info' );
+		home.info = mapInfo( place );
+		if( ! home.info  /*||  home.info.accuracy < Accuracy.address*/ ) { sorry(); return; }
+		var state = getPlaceState( home.info.place )
+		if( state ) $selectState.val( state.abbr );
+	}
+	
+	lookupPollingPlace( inputAddress, home.info, function( poll ) {
+		log( 'API status code: ' + poll.status || '(OK)' );
+		vote.poll = poll;
+		var norm = poll.normalized_input;
+		//if( norm ) {
+		//	home.info.street = norm.line1;
+		//	if( norm.line2 ) home.info.street += '<br>' + norm.line2;
+		//	home.info.city = norm.city.replace( 'Washington D.C.', 'Washington' );
+		//	home.info.state = stateByAbbr( norm.state );
+		//	home.info.zip = norm.zip;
+		//}
+		var locations = vote.locations = poll.locations && poll.locations[0];
+		if( poll.status != 'SUCCESS'  ||  ! locations  ||  ! locations.length ) {
+			sorry();
+			return;
+		}
+		if( locations.length > 1 ) {
+			log( 'Multiple polling locations' );
+			setVoteNoGeo();
+			return;
+		}
+		var location = locations[0], address = location.address;
+		if(
+			( address.line1 || address.line2 )  &&
+			( ( address.city && address.state ) || address.zip )
+		) {
+			var addr = oneLineAddress( address );
+			log( 'Polling address:', addr );
+			geocode( addr, function( places ) {
+				setVoteGeo( places, addr, location );
+			});
+		}
+		else {
+			log( 'No polling address' );
+			setVoteNoGeo();
+		}
+	});
+}
+
+// State spreadsheet (obsolete )
 
 function sheetReady( json ) {
 	json.feed.entry.forEach( function( state ) {
