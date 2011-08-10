@@ -407,7 +407,7 @@ T.variables = $.extend( pref.strings, {
 	fontSize: pref.fontSize,
 	fontUnits: pref.fontUnits,
 	fontStyle: fontStyle,
-	gadget: opt.gadgetUrl,
+	gadgetUrl: opt.gadgetUrl,
 	logoImage: imgUrl('election_center_logo.gif'),
 	spinDisplay: pref.ready ? '' : 'display:none;',
 	spinImage: imgUrl('spinner.gif')
