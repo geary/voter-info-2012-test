@@ -29,6 +29,8 @@ opt.writeScript( 'locale/lang-' + pref.lang + '.js' );
 function localPrefs( pref ) {
 }
 
+var initialBbox = [ 22.6066970, 21.61291460, 38.9982990, 31.79954240 ];
+
 // Output formatters
 
 function attribution() {
@@ -379,12 +381,20 @@ function findPrecinct( place, inputAddress ) {
 
 // Gadget initialization
 
+function zoomTo( bbox ) {
+	var bounds = new gm.LatLngBounds(
+		new gm.LatLng( bbox[1], bbox[0] ),
+		new gm.LatLng( bbox[3], bbox[2] )
+	);
+	map.fitBounds( bounds );
+}
+
 function gadgetReady( json ) {
 	initMap( function() {
 		setupTabs();
 		if( pref.ready )
 			submit( pref.address || pref.example );
-		//else
-		//	zoomTo( abbr );
+		else
+			zoomTo( initialBbox );
 	});
 }
