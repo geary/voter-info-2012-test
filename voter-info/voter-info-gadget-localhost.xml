@@ -2,7 +2,7 @@
 <Module>
 
 <ModulePrefs
-    title="Google Election Center app"
+    title="Google Election Center app on localhost"
     description="Enter your home address to find your voter registration information, voting location and more. Embed this app on your website or blog to help others find this important information."
     author="Google, Inc."
     author_affiliation="Google, Inc."
