@@ -7,5 +7,5 @@ document.write(
 	'</script>'
 );
 
-opt.writeScript( 'voter-info-usa.js' );
+opt.writeScript( opt.localJS || 'voter-info-usa.js' );
 opt.writeScript( 'voter-info-main.js' );
