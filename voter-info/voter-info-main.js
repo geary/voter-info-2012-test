@@ -802,14 +802,17 @@ function isGeocodeAccurate( place ) {
 }
 
 // Call the polling location API for an address and call the callback
-function pollingApi( address, callback ) {
+function pollingApi( address, callback, options ) {
+	options = options || {};
 	if( ! address ) {
 		callback({ status:'ERROR' });
 		return;
 	}
+	var electionId = options.electionId || pref.electionId;
 	var url = S(
 		'http://pollinglocation.apis.google.com/?api_version=1.1&',
-		pref.electionId ? 'electionid=' + pref.electionId + '&' : '',
+		electionId ? 'electionid=' + electionId + '&' : '',
+		options.noaddress ? 'nofulladdress&' : '',
 		'q=', encodeURIComponent(address)
 	);
 	log( 'Polling API:' );  log( url );
@@ -1140,6 +1143,7 @@ function gadgetSetup() {
 	setLayout();
 	
 	analytics( 'view' );
+	log();
 	gadgetReady();
 }
 
