@@ -450,10 +450,16 @@ function formatDayDate( date ) {
 	});
 }
 
-// Construct a Date object from a 'MM/DD/YYYY' string
+// Construct a Date object from a 'MM-DD-YYYY' or 'MM/DD/YYYY' string
 function dateFromMDY( mdy ) {
-	mdy = mdy.split('/');
+	mdy = mdy.split( /[/-]/ );
 	return new Date( mdy[2], mdy[0]-1, mdy[1] );
+}
+
+// Construct a Date object from a 'YYYY-MM-DD' or 'YYYY/MM/DD' string
+function dateFromYMD( ymd ) {
+	ymd = ymd.split( /[/-]/ );
+	return new Date( ymd[0], ymd[1]-1, ymd[2] );
 }
 
 // Today's date as of midnight
