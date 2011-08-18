@@ -37,25 +37,91 @@ function localPrefs( pref ) {
 
 // State data
 
+var _states = [
+	'AL|Alabama',
+	'AK|Alaska',
+	'AZ|Arizona',
+	'AR|Arkansas',
+	'CA|California',
+	'CO|Colorado',
+	'CT|Connecticut',
+	'DE|Delaware',
+	'DC|District of Columbia',
+	'FL|Florida',
+	'GA|Georgia',
+	'HI|Hawaii',
+	'ID|Idaho',
+	'IL|Illinois',
+	'IN|Indiana',
+	'IA|Iowa',
+	'KS|Kansas',
+	'KY|Kentucky',
+	'LA|Louisiana',
+	'ME|Maine',
+	'MD|Maryland',
+	'MA|Massachusetts',
+	'MI|Michigan',
+	'MN|Minnesota',
+	'MS|Mississippi',
+	'MO|Missouri',
+	'MT|Montana',
+	'NE|Nebraska',
+	'NV|Nevada',
+	'NH|New Hampshire',
+	'NJ|New Jersey',
+	'NM|New Mexico',
+	'NY|New York',
+	'NC|North Carolina',
+	'ND|North Dakota',
+	'OH|Ohio',
+	'OK|Oklahoma',
+	'OR|Oregon',
+	'PA|Pennsylvania',
+	'RI|Rhode Island',
+	'SC|South Carolina',
+	'SD|South Dakota',
+	'TN|Tennessee',
+	'TX|Texas',
+	'UT|Utah',
+	'VT|Vermont',
+	'VA|Virginia',
+	'WA|Washington',
+	'WV|West Virginia',
+	'WI|Wisconsin',
+	'WY|Wyoming'
+];
+
 var stateUS = {
-	abbr: 'US',
-	name: 'United States',
-	gsx$north: { $t: '49.3836' },
-	gsx$south: { $t: '24.5457' },
-	gsx$east: { $t: '-66.9522' },
-	gsx$west: { $t: '-124.7284' }
+	abbr: 'US',  name: 'United States',
+	coord_south: 24.5457,  coord_west: -124.7284,
+	coord_north: 49.3836,  coord_east: -66.9522
 };
 
 var states = [];
 var statesByAbbr = {};
 var statesByName = {};
+var statesByUpperName = {};
 
 function stateByAbbr( abbr ) {
 	if( typeof abbr != 'string' ) return abbr;
-	return statesByAbbr[abbr.toUpperCase()] || stateUS;
+	abbr = $.trim( abbr ).toUpperCase();
+	return(
+		statesByAbbr[abbr] ||
+		statesByUpperName[abbr] ||
+		stateUS
+	);
 }
 
-function indexSpecialStates() {
+function initStates() {
+	for( var str, i = -1;  str = _states[++i]; ) {
+		var s = str.split('|');
+		var state = { abbr:s[0], name:s[1] };
+		statesByAbbr[state.abbr] = state;
+		statesByName[state.name] = state;
+		statesByUpperName[state.name.toUpperCase()] = state;
+		states.push( state );
+	}
+	
 	var special = {
 		'N Carolina': 'North Carolina',
 		'N Dakota': 'North Dakota',
@@ -75,6 +141,28 @@ function getPlaceState( place ) {
 	return statesByAbbr[ abbr.toUpperCase() ];
 }
 
+function loadState( abbr, callback ) {
+	if( ! abbr ) return;
+	abbr = abbr.toUpperCase();
+	if( abbr == 'US' ) { callback(stateUS);  return; }
+	var state = statesByAbbr[abbr];
+	if( ! state ) return;
+	if( state.state_abbr ) { callback(state);  return; }
+	
+	// TEMP HACK
+	if( state.abbr == 'KS' )
+		abbr = 'KS 66050';
+	// END HACK
+	
+	pollingApiState( abbr, function( poll ) {
+		if( pollOK(poll) )
+			callback( state );
+	}, {
+		electionId: 1766,  // TEMP TEST
+		noaddress: true
+	});
+}
+
 // Output formatters
 
 function attribution() {
@@ -85,17 +173,10 @@ function attribution() {
 	return T( 'attribution', { special: special });
 }
 
-function gadgetReady() {
-	// http://spreadsheets.google.com/feeds/list/p9CuB_zeAq5X-twnx_mdbKg/2/public/values?alt=json
-	var stateSheet = opt.dataUrl + 'leo/states-spreadsheet.json';
-	
-	getJSON( stateSheet, sheetReady, 60 );
-}
-
 function stateLocator() {
 	var state = home && home.info && home.info.state;
 	if( ! state  ||  state == stateUS ) return '';
-	var url = state.gsx$wheretovote.$t;
+	var url = state.where_to_vote;
 	return url ? T( 'stateLocator', { url:url } ) : '';
 }
 
@@ -119,7 +200,7 @@ function electionInfo() {
 function generalInfo( state ) {
 	if( ! state ) return '';
 	
-	var comments = state.gsx$comments.$t;
+	var comments = state.comments;  // TODO
 	if( comments ) comments = S(
 		'<div style="margin-bottom:0.5em;">',
 			comments,
@@ -130,16 +211,16 @@ function generalInfo( state ) {
 		//'Early': 'Absentee ballot and early voting information',
 		'Early': 'Absentee ballot information',
 		'Mail': 'Vote by mail information'
-	}[state.gsx$absentee.$t] || 'Get an absentee ballot';
+	}[state.absentee] || 'Get an absentee ballot';
 	
 	var absentee = S(
 		'<div style="margin-bottom:0.5em;">',
-			fix( state.gsx$absenteeautomatic.$t == 'TRUE' ?
+			fix( state.absentee_auto == 'TRUE' ?
 				'Any %S voter may vote by mail.' :
 				'Some %S voters may qualify to vote by mail.'
 			),
 		'</div>',
-		infolink( 'gsx$absenteeinfo', absenteeLinkTitle )
+		infolink( 'absentee_info', absenteeLinkTitle )
 	);
 	
 	return S(
@@ -147,14 +228,14 @@ function generalInfo( state ) {
 			'<div class="heading" style="margin-bottom:0.75em;">',
 				fix( 'How to vote in %S' ),
 			'</div>',
-			infolink( 'gsx$electionwebsite', '%S election website' ),
-			infolink( 'gsx$areyouregistered', 'Are you registered to vote?' ),
+			infolink( 'election_website', '%S election website' ),
+			infolink( 'are_you_registered', 'Are you registered to vote?' ),
 			absentee,
-			//infolink( 'gsx$registrationinfo', state.abbr == 'ND' ? '%S voter qualifications' : 'How to register in %S', true ),
+			//infolink( 'registration_info', state.abbr == 'ND' ? '%S voter qualifications' : 'How to register in %S', true ),
 			'<div style="margin:1.0em 0 0.5em 0;">',
 				state.name, ' voter hotline: ',
 				'<span style="white-space:nowrap;">',
-					state.gsx$hotline.$t,
+					state.hotline,
 				'</span>',
 			'</div>',
 			comments,
@@ -175,7 +256,7 @@ function generalInfo( state ) {
 	}
 	
 	function infolink( key, text, prefix ) {
-		var url = state[key].$t;
+		var url = state[key];
 		return ! url ? '' : S(
 			'<div style="margin-bottom:0.5em;">',
 				'<a target="_blank" href="', url, '">',
@@ -271,7 +352,7 @@ function generalInfo( state ) {
 
 function perElectionInfo( state, electionDay, electionName ) {
 	
-	var sameDay = state.gsx$sameday.$t != 'TRUE' ? '' : S(
+	var sameDay = state.same_day != 'TRUE' ? '' : S(
 		'<div style="margin-bottom:0.5em;">',
 			state.name, ' residents may register to vote at their polling place on Election Day:<br />',
 			formatDayDate( electionDay ),
@@ -310,19 +391,19 @@ function perElectionInfo( state, electionDay, electionName ) {
 	};
 	
 	var absentee = S(
-		deadline( state, 'gsx$absrequestpostmark', 'armail' ),
-		deadline( state, 'gsx$absrequestreceive', 'arreceive' ),
-		deadline( state, 'gsx$absvotepostmark', 'avmail' ),
-		deadline( state, 'gsx$absvotereceive', 'avreceive' )
+		deadline( state, 'abs_request_postmark', 'armail' ),
+		deadline( state, 'abs_request_receive', 'arreceive' ),
+		deadline( state, 'abs_vote_postmark', 'avmail' ),
+		deadline( state, 'abs_vote_receive', 'avreceive' )
 	);
 	var deadlines = (
-		deadline( state, 'gsx$postmark', 'mail' )  || deadline( state, 'gsx$receive', 'receive' )
-	) + deadline( state, 'gsx$inperson', 'inperson' );
-	//if( ! deadlines  &&  state.abbr != 'ND'  &&  state.gsx$sameday.$t != 'TRUE' )
+		deadline( state, 'postmark', 'mail' )  || deadline( state, 'receive', 'receive' )
+	) + deadline( state, 'in_person', 'inperson' );
+	//if( ! deadlines  &&  state.abbr != 'ND'  &&  state.same_day != 'TRUE' )
 	//	deadlines = S(
 	//		'<div style="margin-bottom:0.75em;">',
 	//			'The deadline to mail your registration for the November 3, 2009 general election has passed. ',
-	//			//state.gsx$regcomments.$t || '',
+	//			//state.reg_comments || '',
 	//		'</div>'
 	//	);
 	var cands = candidates();
@@ -353,7 +434,7 @@ function perElectionInfo( state, electionDay, electionName ) {
 	}
 	
 	function deadline( state, key, type ) {
-		var before = +state[key].$t;
+		var before = +state[key];
 		if( before == '' ) return '';
 		if( before == -999 ) before = 0;
 		var dt = deadlineText[type];
@@ -658,7 +739,7 @@ function setVoteGeo( places, address, location) {
 			log( 'Error getting polling state' );
 		}
 		log( 'Getting polling place map info' );
-		setMap( vote.info = mapInfo( place, vote.locations[0] ) );
+		setMap( vote.info = mapInfoState( place, vote.locations[0] ) );
 		return;
 	}
 	setVoteNoGeo();
@@ -709,10 +790,17 @@ function fixInputAddress( addr ) {
 // Geocoding and Election Center API
 
 function lookupPollingPlace( inputAddress, info, callback ) {
-	function ok( poll ) { return poll.status == 'SUCCESS'; }
+	
 	function countyAddress() {
 		return S( info.street, ', ', info.county, ', ', info.state.abbr, ' ', info.zip );
 	}
+	
+	var state = stateByAbbr( info && info.address || inputAddress );
+	if( state != stateUS ) {
+		zoomTo( state.abbr );
+		return;
+	}
+	
 	// BEGIN DEMO CODE
 	if( ! info  ||  /1600 Pennsylvania Ave NW.* 20500/.test( info.address ) ) {
 		callback({
@@ -732,18 +820,18 @@ function lookupPollingPlace( inputAddress, info, callback ) {
 		return;
 	}
 	// END DEMO CODE
-	pollingApi( info.place.formatted_address, function( poll ) {
-		if( ok(poll) )
+	pollingApiState( info.place.formatted_address, function( poll ) {
+		if( pollOK(poll) )
 			callback( poll );
 		else
-			pollingApi( inputAddress, callback );
+			pollingApiState( inputAddress, callback );
 	});
 }
 
 function findPrecinct( place, inputAddress ) {
 	if( place ) {
 		log( 'Getting home map info' );
-		home.info = mapInfo( place );
+		home.info = mapInfoState( place );
 		if( ! home.info  /*||  home.info.accuracy < Accuracy.address*/ ) { sorry(); return; }
 		var state = getPlaceState( home.info.place )
 		if( state ) $selectState.val( state.abbr );
@@ -761,7 +849,7 @@ function findPrecinct( place, inputAddress ) {
 		//	home.info.zip = norm.zip;
 		//}
 		var locations = vote.locations = poll.locations && poll.locations[0];
-		if( poll.status != 'SUCCESS'  ||  ! locations  ||  ! locations.length ) {
+		if( ! pollOK(poll)  ||  ! locations  ||  ! locations.length ) {
 			sorry();
 			return;
 		}
@@ -788,62 +876,8 @@ function findPrecinct( place, inputAddress ) {
 	});
 }
 
-// State spreadsheet (obsolete )
-
-function sheetReady( json ) {
-	json.feed.entry.forEach( function( state ) {
-		statesByAbbr[ state.abbr = state.gsx$abbr.$t ] = state;
-		statesByName[ state.name = state.gsx$name.$t ] = state;
-		states.push( state );
-	});
-	
-	indexSpecialStates();
-	
-	function polyState( abbr ) {
-		GoogleElectionMap.currentAbbr = abbr = abbr.toLowerCase();
-		GoogleElectionMap.shapeReady = function( json ) {
-			if( json.state != GoogleElectionMap.currentAbbr ) return;
-			clearOverlays();
-			var paths = new gm.MVCArray;
-			json.shapes.forEach( function( poly ) {
-				var path = new gm.MVCArray;
-				paths.push( path );
-				var points = poly.points;
-				for( var point, i = -1;  point = points[++i]; )
-					path.push( new gm.LatLng( point.y, point.x ) );
-				path.push( new gm.LatLng( points[0].y, points[0].x ) );
-			});
-			var polygon = new gm.Polygon({
-				paths: paths,
-				strokeColor: '#000000',
-				strokeWeight: 2,
-				strokeOpacity: .7,
-				fillColor: '#000000',
-				fillOpacity: .07
-			});
-			addOverlay( polygon );
-		};
-		$.getScript( cacheUrl( S( opt.codeUrl, 'shapes/json/', abbr, '.js' ) ) );
-	}
-	
-	zoomTo = function( abbr ) {
-		if( ! abbr ) return;
-		abbr = abbr.toUpperCase();
-		var state = abbr == 'US' ? stateUS : statesByAbbr[abbr];
-		if( ! state ) return;
-		$('#Poll411SearchInput').val('');
-		$selectState.val( abbr );
-		home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
-		vote = null;
-		if( state != stateUS ) $details.html( electionInfo() );
-		function latlng( lat, lng ) { return new gm.LatLng( +lat.$t, +lng.$t ) }
-		var bounds = new gm.LatLngBounds(
-			latlng( state.gsx$south, state.gsx$west ),
-			latlng( state.gsx$north, state.gsx$east )
-		);
-		map.fitBounds( bounds );
-		polyState( abbr );
-	}
+function gadgetReady() {
+	initStates();
 	
 	var abbr = pref.state;
 	if( ! abbr ) {
@@ -864,4 +898,75 @@ function sheetReady( json ) {
 		else
 			zoomTo( abbr );
 	});
+}
+
+function polyState( abbr ) {
+	GoogleElectionMap.currentAbbr = abbr = abbr.toLowerCase();
+	GoogleElectionMap.shapeReady = function( json ) {
+		if( json.state != GoogleElectionMap.currentAbbr ) return;
+		clearOverlays();
+		var paths = new gm.MVCArray;
+		json.shapes.forEach( function( poly ) {
+			var path = new gm.MVCArray;
+			paths.push( path );
+			var points = poly.points;
+			for( var point, i = -1;  point = points[++i]; )
+				path.push( new gm.LatLng( point.y, point.x ) );
+			path.push( new gm.LatLng( points[0].y, points[0].x ) );
+		});
+		var polygon = new gm.Polygon({
+			paths: paths,
+			strokeColor: '#000000',
+			strokeWeight: 2,
+			strokeOpacity: .7,
+			fillColor: '#000000',
+			fillOpacity: .07
+		});
+		addOverlay( polygon );
+	};
+	$.getScript( cacheUrl( S( opt.codeUrl, 'shapes/json/', abbr, '.js' ) ) );
+}
+
+function zoomTo( abbr ) {
+	loadState( abbr, function( state ) {
+		$('#Poll411SearchInput').val('');
+		$selectState.val( abbr );
+		home = { info:{ state:state }, leo:{ leo:{ localities:{} } } };
+		vote = null;
+		if( state != stateUS ) $details.html( electionInfo() );
+		function latlng( lat, lng ) { return new gm.LatLng( +lat, +lng ) }
+		var bounds = new gm.LatLngBounds(
+			latlng( state.coord_south, state.coord_west ),
+			latlng( state.coord_north, state.coord_east )
+		);
+		map.fitBounds( bounds );
+		polyState( abbr );
+		spin( false );
+	});
+}
+
+function pollingApiState( addr, callback, options ) {
+	pollingApi( addr, function( poll ) {
+		if( pollOK(poll)  &&  poll.stateInfo ) {
+			var state = stateByAbbr( poll.stateInfo.state_abbr );
+			if( state ) $.extend( state, poll.stateInfo );
+		}
+		callback( poll );
+	}, options );
+}
+
+function pollOK( poll ) {
+	return poll.status == 'SUCCESS';
+}
+
+function mapInfoState( place, extra ) {
+	return $.extend( mapInfo( place, extra ), {
+		state: stateFromPlace( place )
+	});
+}
+
+function stateFromPlace( place ) {
+	var component = getAddressComponent( place, 'administrative_area_level_1' );
+	var abbr = component && component.short_name;
+	return abbr && stateByAbbr( abbr );
 }
