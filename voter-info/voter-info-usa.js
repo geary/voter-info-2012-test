@@ -189,6 +189,12 @@ function locationWarning() {
 function electionInfo() {
 	var elections = [];
 	var state = home && home.info && home.info.state;
+	var election = vote && vote.poll && vote.poll.election;
+	if( election ) {
+		var date = dateFromYMD( election.election_day );
+		if( date >= today )
+			elections.push( perElectionInfo( state, date, election.name ) );
+	}
 	return S(
 		generalInfo( state ),
 		elections.join(''),
