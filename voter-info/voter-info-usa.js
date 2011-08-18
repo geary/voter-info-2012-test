@@ -632,7 +632,11 @@ function setVoteHtml() {
 }
 
 function getContests() {
-	var contests = vote && vote.poll && vote.poll.contests && vote.poll.contests[0];
+	var contests = vote && vote.poll && vote.poll.contests;
+	// TEMP FOR API BUG
+	if( contests[0]  &&  contests[0].length )
+		contests = contests[0];
+	// END TEMP
 	return contests && contests.length && contests;
 }
 
