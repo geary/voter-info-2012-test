@@ -397,21 +397,25 @@ var maker = decodeURIComponent(location.href).indexOf('source=http://www.gmodule
 
 var fontStyle = S( 'font-family:', escape(pref.fontFamily), '; font-size:', pref.fontSize, pref.fontUnits, '; ' );
 
-T.variables = $.extend( pref.strings, {
-	width: winWidth() - 8,
-	height: winHeight() - 80,
-	heightFull: winHeight(),
-	homePrompt: minimarkdown(pref.homePrompt),
-	example: pref.example,
-	fontFamily: pref.fontFamily.replace( "'", '"' ),
-	fontSize: pref.fontSize,
-	fontUnits: pref.fontUnits,
-	fontStyle: fontStyle,
-	gadgetUrl: opt.gadgetUrl,
-	logoImage: imgUrl('election_center_logo.gif'),
-	spinDisplay: pref.ready ? '' : 'display:none;',
-	spinImage: imgUrl('spinner.gif')
-});
+function loadStrings( strings ) {
+	pref.strings = strings;
+	
+	T.variables = $.extend( strings, {
+		width: winWidth() - 8,
+		height: winHeight() - 80,
+		heightFull: winHeight(),
+		homePrompt: minimarkdown(pref.homePrompt),
+		example: pref.example,
+		fontFamily: pref.fontFamily.replace( "'", '"' ),
+		fontSize: pref.fontSize,
+		fontUnits: pref.fontUnits,
+		fontStyle: fontStyle,
+		gadgetUrl: opt.gadgetUrl,
+		logoImage: imgUrl('election_center_logo.gif'),
+		spinDisplay: pref.ready ? '' : 'display:none;',
+		spinImage: imgUrl('spinner.gif')
+	});
+}
 
 // Date and time
 
@@ -1171,6 +1175,7 @@ log.print = function() {
 
 // Final initialization
 
+opt.writeScript( 'locale/lang-' + pref.lang + '.js' );
 maker && inline ? makerWrite() : gadgetWrite();
 $(function() {
 	$window.resize( setLayout );

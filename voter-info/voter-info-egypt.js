@@ -20,12 +20,6 @@ var pref = {
 if( ! supportedLanguages[pref.lang] )
 	pref.lang = defaultLanguage;
 
-function loadStrings( strings ) {
-	pref.strings = strings;
-}
-
-opt.writeScript( 'locale/lang-' + pref.lang + '.js' );
-
 function localPrefs( pref ) {
 }
 
