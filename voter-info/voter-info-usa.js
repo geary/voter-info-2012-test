@@ -743,7 +743,7 @@ function setVoteGeo( places, address, location) {
 			log( 'Error getting polling state' );
 		}
 		log( 'Getting polling place map info' );
-		setMap( vote.info = mapInfoState( place, vote.locations[0] ) );
+		setMap( vote.info = mapInfoState( place, vote.locations ) );
 		return;
 	}
 	setVoteNoGeo();
@@ -810,7 +810,7 @@ function lookupPollingPlace( inputAddress, info, callback ) {
 		callback({
 			status: 'SUCCESS',
 			locations: [
-				[{
+				{
 					address: {
 						line1: '2130 G ST NW',
 						city: 'Washington',
@@ -818,7 +818,7 @@ function lookupPollingPlace( inputAddress, info, callback ) {
 						zip: '20006',
 						location_name: 'THE SCHOOL WITHOUT WALLS'
 					}
-				}]
+				}
 			]
 		});
 		return;
@@ -852,7 +852,11 @@ function findPrecinct( place, inputAddress ) {
 		//	home.info.state = stateByAbbr( norm.state );
 		//	home.info.zip = norm.zip;
 		//}
-		var locations = vote.locations = poll.locations && poll.locations[0];
+		var locations = vote.locations = poll.locations;
+		// TEMP FOR API BUG
+		if( locations  &&  locations[0]  &&  locations[0].length )
+			locations = vote.locations = locations[0];
+		// END TEMP
 		if( ! pollOK(poll)  ||  ! locations  ||  ! locations.length ) {
 			sorry();
 			return;
