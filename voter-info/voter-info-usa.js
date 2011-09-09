@@ -824,12 +824,10 @@ function lookupPollingPlace( inputAddress, info, callback ) {
 		return;
 	}
 	// END DEMO CODE
-	pollingApiState( info.place.formatted_address, function( poll ) {
-		if( pollOK(poll) )
-			callback( poll );
-		else
-			pollingApiState( inputAddress, callback );
-	});
+	pollingApiState(
+		info && info.place && info.place.formatted_address || inputAddress,
+		callback
+	);
 }
 
 function findPrecinct( place, inputAddress ) {
