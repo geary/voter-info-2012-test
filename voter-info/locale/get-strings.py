@@ -19,7 +19,8 @@
 
 import json, re, urllib2
 
-url = 'https://spreadsheets.google.com/feeds/list/0AuiC0EUz_p_xdHE3R2U5cTE0aFdHcWpTVVhPQVlzUmc/1/public/values?alt=json'
+sheet = '0AuiC0EUz_p_xdHE3R2U5cTE0aFdHcWpTVVhPQVlzUmc/1'
+url = 'https://spreadsheets.google.com/feeds/list/%s/public/values?alt=json' % sheet
 
 langs = {}
 
