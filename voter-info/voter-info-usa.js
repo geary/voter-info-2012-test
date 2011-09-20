@@ -223,6 +223,15 @@ function generalInfo( state ) {
 		infolink( 'absentee_info', absenteeLinkTitle )
 	);
 	
+	var hotline = ! state.hotline ? '' : S(
+		'<div style="margin:1.0em 0 0.5em 0;">',
+			state.name, ' voter hotline: ',
+			'<span style="white-space:nowrap;">',
+				state.hotline,
+			'</span>',
+		'</div>'
+	);
+	
 	return S(
 		'<div style="margin-bottom:0.5em;">',
 			'<div class="heading" style="margin-bottom:0.75em;">',
@@ -232,12 +241,7 @@ function generalInfo( state ) {
 			infolink( 'are_you_registered', 'Are you registered to vote?' ),
 			absentee,
 			//infolink( 'registration_info', state.abbr == 'ND' ? '%S voter qualifications' : 'How to register in %S', true ),
-			'<div style="margin:1.0em 0 0.5em 0;">',
-				state.name, ' voter hotline: ',
-				'<span style="white-space:nowrap;">',
-					state.hotline,
-				'</span>',
-			'</div>',
+			hotline,
 			comments,
 			formatLeos(),
 		'</div>'
