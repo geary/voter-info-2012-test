@@ -959,7 +959,7 @@ function zoomTo( abbr ) {
 
 function pollingApiState( addr, callback, options ) {
 	pollingApi( addr, function( poll ) {
-		if( pollOK(poll)  &&  poll.stateInfo ) {
+		if( poll && poll.stateInfo ) {
 			var state = stateByAbbr( poll.stateInfo.state_abbr );
 			if( state ) $.extend( state, poll.stateInfo );
 		}
