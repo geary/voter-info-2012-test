@@ -434,8 +434,10 @@ function perElectionInfo( state, electionDay, electionName ) {
 	}
 	
 	function deadline( state, key, type ) {
-		var before = +state[key];
+		var before = state[key];
 		if( before == '' ) return '';
+		before = +before;
+		if( isNaN(before) ) return '';
 		if( before == -999 ) before = 0;
 		var dt = deadlineText[type];
 		var date = electionDay - before*days;
