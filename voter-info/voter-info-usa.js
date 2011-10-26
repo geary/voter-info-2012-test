@@ -484,7 +484,9 @@ function perElectionInfo( state, electionDay, electionName ) {
 		var contests = getContests();
 		if( ! contests ) return '';
 		contests = sortArrayBy( contests, 'ballot_placement', { numeric:true } );
-		var randomize = contests[0].ballot.candidate[0].order_on_ballot == null;
+		var ballot = contests[0] && contests[0].ballot;
+		var candidate = ballot && ballot.candidate && ballot.candidate[0];
+		var randomize = candidate && candidate.order_on_ballot == null;
 		var randomizedMessage = ! randomize ? '' : S(
 			'<div style="font-size:85%; font-style:italic; margin-top:0.5em">',
 				T('candidateRandomOrder'),
@@ -504,7 +506,8 @@ function perElectionInfo( state, electionDay, electionName ) {
 			'<div>',
 				randomizedMessage,
 				contests.mapjoin( function( contest ) {
-					var candidates = contest.ballot.candidate;
+					var candidates = contest.ballot && contest.ballot.candidate;
+					if( ! candidates ) return '';
 					candidates = randomize ?
 						candidates.randomized() :
 						sortArrayBy( candidates, 'order_on_ballot', { numeric:true } );
