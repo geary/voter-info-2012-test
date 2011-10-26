@@ -484,10 +484,38 @@ function perElectionInfo( state, electionDay, electionName ) {
 		var contests = getContests();
 		if( ! contests ) return '';
 		contests = sortArrayBy( contests, 'ballot_placement', { numeric:true } );
-		var ballot = contests[0] && contests[0].ballot;
-		var candidate = ballot && ballot.candidate && ballot.candidate[0];
-		var randomize = candidate && candidate.order_on_ballot == null;
-		var randomizedMessage = ! randomize ? '' : S(
+		var randomized = false;
+		var contestsHtml = contests.mapjoin( function( contest ) {
+			var candidates = contest.ballot && contest.ballot.candidate;
+			if( !( candidates && candidates.length ) ) return '';
+			var randomize = candidates[0].order_on_ballot == null;
+			if( randomize )
+				candidates = candidates.randomized(),  randomized = true;
+			else
+				sortArrayBy( candidates, 'order_on_ballot', { numeric:true } );
+			return S(
+				'<div class="heading" style="xfont-size:110%; margin-top:0.5em">',
+					contest.office,
+				'</div>',
+				candidates.mapjoin( function( candidate ) {
+					function party() {
+						return candidate.party ? S(
+							'<span style="color:#444; font-size:85%;">',
+								' - ',
+								candidate.party,
+							'</span>'
+						) : '';
+					}
+					return S(
+						'<div>',
+							linkIf( candidate.name, candidate.candidate_url ),
+							party(),
+						'</div>'
+					);
+				})
+			);
+		});
+		var randomizedMessage = ! randomized ? '' : S(
 			'<div style="font-size:85%; font-style:italic; margin-top:0.5em">',
 				T('candidateRandomOrder'),
 			'</div>'
@@ -505,35 +533,7 @@ function perElectionInfo( state, electionDay, electionName ) {
 			ballotLink,
 			'<div>',
 				randomizedMessage,
-				contests.mapjoin( function( contest ) {
-					var candidates = contest.ballot && contest.ballot.candidate;
-					if( ! candidates ) return '';
-					candidates = randomize ?
-						candidates.randomized() :
-						sortArrayBy( candidates, 'order_on_ballot', { numeric:true } );
-						
-					return S(
-						'<div class="heading" style="xfont-size:110%; margin-top:0.5em">',
-							contest.office,
-						'</div>',
-						candidates.mapjoin( function( candidate ) {
-							function party() {
-								return candidate.party ? S(
-									'<span style="color:#444; font-size:85%;">',
-										' - ',
-										candidate.party,
-									'</span>'
-								) : '';
-							}
-							return S(
-								'<div>',
-									linkIf( candidate.name, candidate.candidate_url ),
-									party(),
-								'</div>'
-							);
-						})
-					);
-				}),
+				contestsHtml,
 			'</div>'
 		);
 	}
