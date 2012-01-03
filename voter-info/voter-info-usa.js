@@ -231,8 +231,18 @@ function generalInfo( state ) {
 			'</span>',
 		'</div>'
 	);
+
+        var caucusinfo = "If your caucus location couldn't be found, you can first go to the <a href=\"https://sos.iowa.gov/elections/VoterReg/PollingPlace/search.aspx\">Iowa Secretary of State's</a> website to look up your precinct if you don't know it. You can go to the <a href=\"http://www.iowagop.org/caucus/findmycaucus.php\">Republican Party of Iowa's</a> website to look up the caucus location for your precinct. Note that caucus locations may be different than normal polling places.";
 	
-	return S(
+        // TEMP HACK for Iowa Caucuses
+	if( state.abbr == 'IA' ) {
+          return S(
+		'<div style="margin-bottom:0.5em;">',
+                caucusinfo,
+		'</div>'
+              );
+        } else {
+	  return S(
 		'<div style="margin-bottom:0.5em;">',
 			'<div class="heading" style="margin-bottom:0.75em;">',
 				fix( 'How to vote in %S' ),
@@ -245,7 +255,8 @@ function generalInfo( state ) {
 			comments,
 			formatLeos(),
 		'</div>'
-	);
+	  );
+        }
 	
 	function fix( text, prefix ) {
 		return( text
