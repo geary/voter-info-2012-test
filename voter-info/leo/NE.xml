@@ -1,0 +1,837 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="381709671">
+    <county_name>POLK</county_name>
+    <state_id>31</state_id>
+    <name>Debra Girard</name>
+    <title> </title>
+    <phone> (402) 747-5431</phone>
+    <fax> (402) 747-2656</fax>
+    <email> clerk@polk.nacone.org</email>
+  </election_official>
+  <election_official id="1862549823">
+    <county_name>GARDEN</county_name>
+    <state_id>31</state_id>
+    <name>Teresa McKeeman</name>
+    <title> </title>
+    <phone> (308) 772-3924</phone>
+    <fax> (308) 772-0124</fax>
+    <email> mailto:clerk@garden.nacone.org</email>
+  </election_official>
+  <election_official id="383536094">
+    <county_name>THOMAS</county_name>
+    <state_id>31</state_id>
+    <name>Wendy Rinestine</name>
+    <title> </title>
+    <phone> (308) 645-2261</phone>
+    <fax> (308) 645-2623</fax>
+    <email> mailto:clerk@thomas.nacone.org</email>
+  </election_official>
+  <election_official id="445511190">
+    <county_name>SHERIDAN</county_name>
+    <state_id>31</state_id>
+    <name>Sindy Coburn</name>
+    <title> </title>
+    <phone> (308) 327-5650</phone>
+    <fax> (308) 327-2712</fax>
+    <email> clerk@sheridan.nacone.org</email>
+  </election_official>
+  <election_official id="246999302">
+    <county_name>PAWNEE</county_name>
+    <state_id>31</state_id>
+    <name>Carol Young</name>
+    <title> </title>
+    <phone> (402) 852-2962</phone>
+    <fax> (402) 852-2963 </fax>
+    <email> clerk@pawnee.nacone.org</email>
+  </election_official>
+  <election_official id="1575340547">
+    <county_name>NUCKOLLS</county_name>
+    <state_id>31</state_id>
+    <name>Jackie Kassebaum</name>
+    <title> </title>
+    <phone> (402) 225-4361</phone>
+    <fax> (402) 225-4301</fax>
+    <email> clerk@nuckolls.nacone.org</email>
+  </election_official>
+  <election_official id="1220577655">
+    <county_name>MADISON</county_name>
+    <state_id>31</state_id>
+    <name>Nancy Scheer</name>
+    <title> </title>
+    <phone> (402) 454-3311, ext. 136</phone>
+    <fax> (402) 454-6682</fax>
+    <email>coclerk@co.madison.ne.us</email>
+  </election_official>
+  <election_official id="1388493826">
+    <county_name>PIERCE</county_name>
+    <state_id>31</state_id>
+    <name>Shannon Wragge </name>
+    <title> </title>
+    <phone> (402) 329-4225</phone>
+    <fax> (402) 329-6439</fax>
+    <email> piecoclk@ptcnet.net</email>
+  </election_official>
+  <election_official id="105211500">
+    <county_name>COLFAX</county_name>
+    <state_id>31</state_id>
+    <name>Rita Mundil</name>
+    <title> </title>
+    <phone> (402) 352-8504</phone>
+    <fax> (402) 352-8515</fax>
+    <email>mailto:colfax@megavision.com</email>
+  </election_official>
+  <election_official id="91863314">
+    <county_name>BANNER</county_name>
+    <state_id>31</state_id>
+    <name>Sharon Sandberg</name>
+    <title> </title>
+    <phone> (308) 436-5265</phone>
+    <fax> (308) 436-4180</fax>
+    <email> mailto:clerk@banner.nacone.org</email>
+  </election_official>
+  <election_official id="1407135650">
+    <county_name>BROWN</county_name>
+    <state_id>31</state_id>
+    <name>Janet Huggins</name>
+    <title> </title>
+    <phone> (402) 387-2705</phone>
+    <fax> (402) 387-0918</fax>
+    <email> mailto:bcclerk@threeriver.net</email>
+  </election_official>
+  <election_official id="1014654510">
+    <county_name>HALL</county_name>
+    <state_id>31</state_id>
+    <name>Dale Baker (Election Commissioner)</name>
+    <title> </title>
+    <phone> (308) 385-5085</phone>
+    <fax> (308) 385-5071</fax>
+    <email> mailto:daleb@hallcountyne.gov</email>
+  </election_official>
+  <election_official id="470976595">
+    <county_name>SIOUX</county_name>
+    <state_id>31</state_id>
+    <name>Wendi McCormick</name>
+    <title> </title>
+    <phone> (308) 668-2443</phone>
+    <fax> (308) 668-2443</fax>
+    <email> wmccormick@sioux.nacone.org</email>
+  </election_official>
+  <election_official id="60181583">
+    <county_name>BOX BUTTE</county_name>
+    <state_id>31</state_id>
+    <name>Cheryl McDuffie</name>
+    <title> </title>
+    <phone> (308) 762-6565</phone>
+    <fax> (308) 762-2867</fax>
+    <email> mailto:clerk@boxbutte.nacone.org</email>
+  </election_official>
+  <election_official id="2019620198">
+    <county_name>MCPHERSON</county_name>
+    <state_id>31</state_id>
+    <name>Judy Dailey</name>
+    <title> </title>
+    <phone> (308) 587-2363</phone>
+    <fax> (308) 587-2363</fax>
+    <email> clerk@mcpherson.nacone.org</email>
+  </election_official>
+  <election_official id="2048908396">
+    <county_name>DIXON</county_name>
+    <state_id>31</state_id>
+    <name>Diane Mohr</name>
+    <title> </title>
+    <phone> (402) 755-5602</phone>
+    <fax> (402) 755-5650</fax>
+    <email> mailto:clerk@dixon.nacone.org</email>
+  </election_official>
+  <election_official id="16534575">
+    <county_name>THURSTON</county_name>
+    <state_id>31</state_id>
+    <name>Tammy Moore</name>
+    <title> </title>
+    <phone> (402) 385-2343</phone>
+    <fax> (402) 385-3544</fax>
+    <email> clerk@thurston.nacone.org</email>
+  </election_official>
+  <election_official id="1566380570">
+    <county_name>LANCASTER</county_name>
+    <state_id>31</state_id>
+    <name>David J. Shively (Election Commissioner)</name>
+    <title> </title>
+    <phone> (402) 441-7311</phone>
+    <fax> (402) 441-6379</fax>
+    <email> dshively@lancaster.ne.gov </email>
+  </election_official>
+  <election_official id="213196200">
+    <county_name>HARLAN</county_name>
+    <state_id>31</state_id>
+    <name>Shirley Bailey</name>
+    <title> </title>
+    <phone> (308) 928-2173</phone>
+    <fax> (308) 928-2079</fax>
+    <email> clerk@harlan.nacone.org</email>
+  </election_official>
+  <election_official id="414421734">
+    <county_name>SARPY</county_name>
+    <state_id>31</state_id>
+    <name>Kay Forslund (Election Commissioner)</name>
+    <title> </title>
+    <phone> (402) 593-2166</phone>
+    <fax> (402) 593-5770</fax>
+    <email> kay@sarpy.com</email>
+  </election_official>
+  <election_official id="2074753761">
+    <county_name>NANCE</county_name>
+    <state_id>31</state_id>
+    <name>Danette Zarek</name>
+    <title> </title>
+    <phone> (308) 536-2331</phone>
+    <fax> (308) 536-2742</fax>
+    <email> dzareknanceclerk@hamilton.net</email>
+  </election_official>
+  <election_official id="900069262">
+    <county_name>DAWSON</county_name>
+    <state_id>31</state_id>
+    <name>Karla Zlatkovsky</name>
+    <title> </title>
+    <phone> (308) 324-6106</phone>
+    <fax> (308) 324-6106</fax>
+    <email> mailto:electionoffice@cozadtel.net</email>
+  </election_official>
+  <election_official id="708294770">
+    <county_name>ARTHUR</county_name>
+    <state_id>31</state_id>
+    <name>Becky Swanson</name>
+    <title> </title>
+    <phone> (308) 764-2203</phone>
+    <fax> (308) 764-2216</fax>
+    <email> mailto:becky.swanson@courts.ne.gov</email>
+  </election_official>
+  <election_official id="1213086498">
+    <county_name>RED WILLOW</county_name>
+    <state_id>31</state_id>
+    <name>Pauletta Gerver</name>
+    <title> </title>
+    <phone> (308) 345-1552</phone>
+    <fax> (308) 345-4460</fax>
+    <email> clerkrod@redwillow.nacone.org</email>
+  </election_official>
+  <election_official id="1401345529">
+    <county_name>ROCK</county_name>
+    <state_id>31</state_id>
+    <name>Joyce Stahl</name>
+    <title> </title>
+    <phone> (402) 684-3933</phone>
+    <fax> (402) 684-2471</fax>
+    <email> clerk@rock.nacone.org</email>
+  </election_official>
+  <election_official id="1286775736">
+    <county_name>DEUEL</county_name>
+    <state_id>31</state_id>
+    <name>Polly Olson</name>
+    <title> </title>
+    <phone> (308) 874-3308</phone>
+    <fax> (308) 874-3472</fax>
+    <email> mailto:polly.olson@courts.ne.gov</email>
+  </election_official>
+  <election_official id="1587254784">
+    <county_name>SCOTTS BLUFF</county_name>
+    <state_id>31</state_id>
+    <name>Vera Dulaney</name>
+    <title> </title>
+    <phone> (308) 436-6604</phone>
+    <fax> (308) 436-3178</fax>
+    <email> vdulaney@scottsbluffcounty.org</email>
+  </election_official>
+  <election_official id="1938560860">
+    <county_name>DODGE</county_name>
+    <state_id>31</state_id>
+    <name>Fred Mytty</name>
+    <title> </title>
+    <phone> (402) 727-2767</phone>
+    <fax> (402) 727-2764</fax>
+    <email> mailto:soscou05@nol.org</email>
+  </election_official>
+  <election_official id="457750437">
+    <county_name>DAKOTA</county_name>
+    <state_id>31</state_id>
+    <name>Ted Piepho</name>
+    <title> </title>
+    <phone> (402) 987-2126</phone>
+    <fax> (402) 494-9228</fax>
+    <email> mailto:tpiepho@dakotacountyne.org</email>
+  </election_official>
+  <election_official id="1073968818">
+    <county_name>CEDAR</county_name>
+    <state_id>31</state_id>
+    <name>David Dowling</name>
+    <title> </title>
+    <phone> (402) 254-7411</phone>
+    <fax> (402) 254-7410</fax>
+    <email> mailto:cedarclk@hartel.net</email>
+  </election_official>
+  <election_official id="1539616070">
+    <county_name>KIMBALL</county_name>
+    <state_id>31</state_id>
+    <name>Cathleen Sibal</name>
+    <title> </title>
+    <phone> (308) 235-2241</phone>
+    <fax> (308) 235-3654</fax>
+    <email> clerk@kimball.nacone.org</email>
+  </election_official>
+  <election_official id="210449351">
+    <county_name>KEITH</county_name>
+    <state_id>31</state_id>
+    <name>Sandra K. Olson</name>
+    <title> </title>
+    <phone> (308) 284-4726</phone>
+    <fax> (308) 284-6277</fax>
+    <email> clerk@keithcountyne.gov</email>
+  </election_official>
+  <election_official id="1170584624">
+    <county_name>BURT</county_name>
+    <state_id>31</state_id>
+    <name>Ila Davis</name>
+    <title> </title>
+    <phone> (402) 374-2955</phone>
+    <fax> (402) 374-2956</fax>
+    <email> mailto:burtcoclerk@huntel.net</email>
+  </election_official>
+  <election_official id="1487782106">
+    <county_name>BOYD</county_name>
+    <state_id>31</state_id>
+    <name>Tracy Reiser</name>
+    <title> </title>
+    <phone> (402) 775-2391</phone>
+    <fax> (402) 775-2146</fax>
+    <email> mailto:clerk@boyd.nacone.org</email>
+  </election_official>
+  <election_official id="1288105120">
+    <county_name>FILLMORE</county_name>
+    <state_id>31</state_id>
+    <name>Amy Nelson</name>
+    <title> </title>
+    <phone> (402) 759-4931</phone>
+    <fax> (402) 759-4307</fax>
+    <email> mailto:amy.nelson@fillmore.nacone.org</email>
+  </election_official>
+  <election_official id="259725607">
+    <county_name>WAYNE</county_name>
+    <state_id>31</state_id>
+    <name>Deb Finn</name>
+    <title> </title>
+    <phone> (402) 375-2288</phone>
+    <fax> (402) 375-4137</fax>
+    <email> coclerk@bloomnet.com</email>
+  </election_official>
+  <election_official id="1284445633">
+    <county_name>MERRICK</county_name>
+    <state_id>31</state_id>
+    <name>Marcia Wichmann </name>
+    <title> </title>
+    <phone> (308) 946-2881</phone>
+    <fax> (308) 946-2332</fax>
+    <email> clerk@merrick.nacone.org </email>
+  </election_official>
+  <election_official id="1851395859">
+    <county_name>KEARNEY</county_name>
+    <state_id>31</state_id>
+    <name>Myra Johnson</name>
+    <title> </title>
+    <phone> (308) 832-2723</phone>
+    <fax> (308) 832-2729</fax>
+    <email> clerk@kearney.nacone.org</email>
+  </election_official>
+  <election_official id="393414985">
+    <county_name>GREELEY</county_name>
+    <state_id>31</state_id>
+    <name>Mindy Grossart</name>
+    <title> </title>
+    <phone> (308) 428-3625</phone>
+    <fax> (308) 428-3022</fax>
+    <email> mailto:clerk@greeley.nacone.org</email>
+  </election_official>
+  <election_official id="223147076">
+    <county_name>CLAY</county_name>
+    <state_id>31</state_id>
+    <name>Deb Karnatz</name>
+    <title> </title>
+    <phone> (402) 762-3463</phone>
+    <fax> (402) 762-3506</fax>
+    <email> mailto:clerk@clay.nacone.org</email>
+  </election_official>
+  <election_official id="1464524261">
+    <county_name>YORK</county_name>
+    <state_id>31</state_id>
+    <name>Cynthia Heine</name>
+    <title> </title>
+    <phone> (402) 362-7759</phone>
+    <fax> (402) 362-7558</fax>
+    <email> dccdh@mainstaycomm.net</email>
+  </election_official>
+  <election_official id="228699011">
+    <county_name>LINCOLN</county_name>
+    <state_id>31</state_id>
+    <name>Becky Rossell</name>
+    <title> </title>
+    <phone> (308) 534-4350</phone>
+    <fax> (402) 535-3522</fax>
+    <email> clerk@co.lincoln.ne.us</email>
+  </election_official>
+  <election_official id="1292526660">
+    <county_name>DAWES</county_name>
+    <state_id>31</state_id>
+    <name>Cheryl Feist</name>
+    <title> </title>
+    <phone> (308) 432-0100</phone>
+    <fax> (308) 432-5179</fax>
+    <email> mailto:clerk@dawes.nacone.org</email>
+  </election_official>
+  <election_official id="683691152">
+    <county_name>JOHNSON</county_name>
+    <state_id>31</state_id>
+    <name>Kathleen Nieveen</name>
+    <title> </title>
+    <phone> (402) 335-6300</phone>
+    <fax> (402) 335-6311</fax>
+    <email> clerk@johnson.nacone.org</email>
+  </election_official>
+  <election_official id="1167752122">
+    <county_name>BOONE</county_name>
+    <state_id>31</state_id>
+    <name>Kathy Thorberg</name>
+    <title> </title>
+    <phone> (402) 395-2055</phone>
+    <fax> (402) 395-2055</fax>
+    <email> mailto:clerk@boone.nacone.org</email>
+  </election_official>
+  <election_official id="903703036">
+    <county_name>PHELPS</county_name>
+    <state_id>31</state_id>
+    <name>Sally Fox</name>
+    <title> </title>
+    <phone> (308) 995-4469</phone>
+    <fax> (308) 995-4368</fax>
+    <email> clerk@phelps.nacone.org</email>
+  </election_official>
+  <election_official id="1246135249">
+    <county_name>STANTON</county_name>
+    <state_id>31</state_id>
+    <name>Martha Detleftsen</name>
+    <title> </title>
+    <phone> (402) 439-2222</phone>
+    <fax> (402) 439-2200</fax>
+    <email> clerk@stanton.nacone.org</email>
+  </election_official>
+  <election_official id="72657823">
+    <county_name>ANTELOPE</county_name>
+    <state_id>31</state_id>
+    <name>Carolyn Pedersen</name>
+    <title> </title>
+    <phone> (402) 887-4410</phone>
+    <fax> (402) 887-4719</fax>
+    <email> mailto:antelopeclerk@frontiernet.net</email>
+  </election_official>
+  <election_official id="1638694015">
+    <county_name>BUTLER</county_name>
+    <state_id>31</state_id>
+    <name>Vicki L. Truksa</name>
+    <title> </title>
+    <phone> (402) 367-7430</phone>
+    <fax> (402) 367-3329</fax>
+    <email> mailto:clerk@butler.nacone.org</email>
+  </election_official>
+  <election_official id="1986819994">
+    <county_name>HOWARD</county_name>
+    <state_id>31</state_id>
+    <name>Marge Palmberg</name>
+    <title> </title>
+    <phone> (308) 754-4343</phone>
+    <fax> (308) 754-4125</fax>
+    <email> clerk@howard.nacone.org</email>
+  </election_official>
+  <election_official id="590360407">
+    <county_name>MORRILL</county_name>
+    <state_id>31</state_id>
+    <name>Kathleen Brandt</name>
+    <title> </title>
+    <phone> (308) 262-0860</phone>
+    <fax> (308) 262-1469</fax>
+    <email> clerk@morrill.nacone.org</email>
+  </election_official>
+  <election_official id="23498760">
+    <county_name>HOLT</county_name>
+    <state_id>31</state_id>
+    <name>Cathy Pavel</name>
+    <title> </title>
+    <phone> (402) 336-1762</phone>
+    <fax> (402) 336-1762</fax>
+    <email> holtclerkcathy@morcomm.net </email>
+  </election_official>
+  <election_official id="1623016455">
+    <county_name>CHASE</county_name>
+    <state_id>31</state_id>
+    <name>Debra Clark</name>
+    <title> </title>
+    <phone> (308) 882-7500</phone>
+    <fax> (308) 882-7552</fax>
+    <email> mailto:ccclerk@chase3000.com</email>
+  </election_official>
+  <election_official id="368046740">
+    <county_name>RICHARDSON</county_name>
+    <state_id>31</state_id>
+    <name>Mary Eickhoff</name>
+    <title> </title>
+    <phone> (402) 245-2911</phone>
+    <fax> (402) 245-2946</fax>
+    <email> clerk@richardson.nacone.org</email>
+  </election_official>
+  <election_official id="1508606581">
+    <county_name>CHEYENNE</county_name>
+    <state_id>31</state_id>
+    <name>Beth Fiegenschuh</name>
+    <title> </title>
+    <phone> (308) 254-2141</phone>
+    <fax> (308) 254-5049</fax>
+    <email> mailto:beth@hamilton.net</email>
+  </election_official>
+  <election_official id="952522102">
+    <county_name>CASS</county_name>
+    <state_id>31</state_id>
+    <name>Nancy Josoff (Election Commissioner)</name>
+    <title> </title>
+    <phone> (402) 296-9309</phone>
+    <fax> (402) 296-9309</fax>
+    <email> mailto:nancyj@cassne.org</email>
+  </election_official>
+  <election_official id="215080231">
+    <county_name>CHERRY</county_name>
+    <state_id>31</state_id>
+    <name>Thomas Elliott</name>
+    <title> </title>
+    <phone> (402) 376-2771</phone>
+    <fax> (402) 376-3095</fax>
+    <email> mailto:clerk@cherry.nacone.org</email>
+  </election_official>
+  <election_official id="216803311">
+    <county_name>PLATTE</county_name>
+    <state_id>31</state_id>
+    <name>Diane Olmer (Election Commissioner)</name>
+    <title> </title>
+    <phone> (402) 563-4908</phone>
+    <fax> (402) 564-7733</fax>
+    <email> pcelect@megavision.com</email>
+  </election_official>
+  <election_official id="927788061">
+    <county_name>DOUGLAS</county_name>
+    <state_id>31</state_id>
+    <name>Dave Phipps (Election Commissioner)</name>
+    <title> </title>
+    <phone> (402) 444-8683</phone>
+    <fax> (402) 444-4181</fax>
+    <email> mailto:questions@votedouglascounty.com</email>
+  </election_official>
+  <election_official id="276385283">
+    <county_name>WHEELER</county_name>
+    <state_id>31</state_id>
+    <name>Lorraine Woeppel</name>
+    <title> </title>
+    <phone> (308) 654-3235</phone>
+    <fax> (308) 750-3470</fax>
+    <email> clerk@wheeler.nacone.org</email>
+  </election_official>
+  <election_official id="712885572">
+    <county_name>SAUNDERS</county_name>
+    <state_id>31</state_id>
+    <name>Patti Lindgren</name>
+    <title> </title>
+    <phone> (402) 443-8101</phone>
+    <fax> (402) 443-5010</fax>
+    <email> countyclerk@co.saunders.ne.us</email>
+  </election_official>
+  <election_official id="22932727">
+    <county_name>KNOX</county_name>
+    <state_id>31</state_id>
+    <name>Joann Fischer</name>
+    <title> </title>
+    <phone> (402) 288-5604</phone>
+    <fax> (402) 288-5605</fax>
+    <email> clerk@knox.nacone.org </email>
+  </election_official>
+  <election_official id="2028481678">
+    <county_name>HAYES</county_name>
+    <state_id>31</state_id>
+    <name>Susan Messersmith</name>
+    <title> </title>
+    <phone> (308) 286-3413</phone>
+    <fax> (308) 286-3208</fax>
+    <email> clerk@hayes.nacone.org</email>
+  </election_official>
+  <election_official id="233475575">
+    <county_name>WEBSTER</county_name>
+    <state_id>31</state_id>
+    <name>Lonnie Knehans</name>
+    <title> </title>
+    <phone> (402) 746-2716</phone>
+    <fax> (402) 746-2710</fax>
+    <email>clerk@webster.nacone.org </email>
+  </election_official>
+  <election_official id="570396882">
+    <county_name>SHERMAN</county_name>
+    <state_id>31</state_id>
+    <name>Marcy Sekutera</name>
+    <title> </title>
+    <phone> (308) 745-1513 ext.100</phone>
+    <fax> (308) 745-0297</fax>
+    <email> clerk@sherman.nacone.org </email>
+  </election_official>
+  <election_official id="107930709">
+    <county_name>JEFFERSON</county_name>
+    <state_id>31</state_id>
+    <name>Sandra Stelling</name>
+    <title> </title>
+    <phone> (402) 729-6818</phone>
+    <fax> (402) 729-6806</fax>
+    <email> jeffcoclerk@diodecom.net</email>
+  </election_official>
+  <election_official id="1594039297">
+    <county_name>GARFIELD</county_name>
+    <state_id>31</state_id>
+    <name>Linda Heermann</name>
+    <title> </title>
+    <phone> (308) 346-4161</phone>
+    <fax> (308) 346-4651</fax>
+    <email> mailto:clerk@garfield.nacone.org</email>
+  </election_official>
+  <election_official id="588671065">
+    <county_name>DUNDY</county_name>
+    <state_id>31</state_id>
+    <name>Tony Lutz</name>
+    <title> </title>
+    <phone> (308) 423-2058</phone>
+    <fax> (308) 423-2325</fax>
+    <email> mailto:clerk@dundy.nacone.org</email>
+  </election_official>
+  <election_official id="201792855">
+    <county_name>BLAINE</county_name>
+    <state_id>31</state_id>
+    <name>April Wescott</name>
+    <title> </title>
+    <phone> (308) 547-2222 ext.201</phone>
+    <fax> (308) 547-2228</fax>
+    <email> mailto:clerk@blaine.nacone.org</email>
+  </election_official>
+  <election_official id="1429137850">
+    <county_name>SALINE</county_name>
+    <state_id>31</state_id>
+    <name>Linda Kastanek</name>
+    <title> </title>
+    <phone> (402) 821-2374</phone>
+    <fax> (402) 821-3381</fax>
+    <email> clerk@saline.nacone.org</email>
+  </election_official>
+  <election_official id="24669222">
+    <county_name>HAMILTON</county_name>
+    <state_id>31</state_id>
+    <name>Patricia Anderson</name>
+    <title> </title>
+    <phone> (402) 694-3443</phone>
+    <fax> (402) 694-3443</fax>
+    <email> clerk@hamilton.net</email>
+  </election_official>
+  <election_official id="1343267059">
+    <county_name>GRANT</county_name>
+    <state_id>31</state_id>
+    <name>Tonchita Ring</name>
+    <title> </title>
+    <phone> (308) 458-2488</phone>
+    <fax> (308) 458-2780</fax>
+    <email> mailto:clerk@grant.nacone.org</email>
+  </election_official>
+  <election_official id="1086582649">
+    <county_name>CUMING</county_name>
+    <state_id>31</state_id>
+    <name>Bonnie Vogltance</name>
+    <title> </title>
+    <phone> (402) 372-6002</phone>
+    <fax> (402) 372-6013</fax>
+    <email> mailto:ccclerk@cableone.net</email>
+  </election_official>
+  <election_official id="1591649923">
+    <county_name>ADAMS</county_name>
+    <state_id>31</state_id>
+    <name>Chris Lewis</name>
+    <title> </title>
+    <phone> (402) 461-7107</phone>
+    <fax> (402) 461-7185</fax>
+    <email> mailto:clewis@adamscounty.org</email>
+  </election_official>
+  <election_official id="1569117180">
+    <county_name>FRANKLIN</county_name>
+    <state_id>31</state_id>
+    <name>Marcia Volk</name>
+    <title> </title>
+    <phone> (308) 425-6202</phone>
+    <fax> (308) 425-6093</fax>
+    <email> mailto:clerk@franklin.nacone.org</email>
+  </election_official>
+  <election_official id="590617750">
+    <county_name>GOSPER</county_name>
+    <state_id>31</state_id>
+    <name>Cynthia Evans</name>
+    <title> </title>
+    <phone> (308) 785-2611</phone>
+    <fax> (308) 785-2300</fax>
+    <email> mailto:goclerk73@atcjet.net</email>
+  </election_official>
+  <election_official id="">
+    <county_name>PERKINS</county_name>
+    <state_id>31</state_id>
+  </election_official>
+  <election_official id="1570954890">
+    <county_name>VALLEY</county_name>
+    <state_id>31</state_id>
+    <name>Jenette Lindsey</name>
+    <title> </title>
+    <phone> (308) 728-3700</phone>
+    <fax> (308) 728-7725</fax>
+    <email> clerk@valley.nacone.org </email>
+  </election_official>
+  <election_official id="1149264798">
+    <county_name>THAYER</county_name>
+    <state_id>31</state_id>
+    <name>Marie Rauner</name>
+    <title> </title>
+    <phone> (402) 768-6126</phone>
+    <fax> (402) 768-2129</fax>
+    <email> clerk@thayer.nacone.org </email>
+  </election_official>
+  <election_official id="743094477">
+    <county_name>GAGE</county_name>
+    <state_id>31</state_id>
+    <name>Dawn Hill</name>
+    <title> </title>
+    <phone> (402) 223-1300</phone>
+    <fax> (402) 223-1371</fax>
+    <email> mailto:clerk@gage.nacone.org</email>
+  </election_official>
+  <election_official id="1953227516">
+    <county_name>NEMAHA</county_name>
+    <state_id>31</state_id>
+    <name>Joyce Oakley</name>
+    <title> </title>
+    <phone> (402) 274-4213</phone>
+    <fax> (402) 274-4389</fax>
+    <email> clerk@nemaha.nacone.org</email>
+  </election_official>
+  <election_official id="1222275666">
+    <county_name>SEWARD</county_name>
+    <state_id>31</state_id>
+    <name>Sherry Schweitzer</name>
+    <title> </title>
+    <phone> (402) 643-2883</phone>
+    <fax> (402) 643-9243</fax>
+    <email> sschweitzer@alltel.net</email>
+  </election_official>
+  <election_official id="865334165">
+    <county_name>WASHINGTON</county_name>
+    <state_id>31</state_id>
+    <name>Merry M. Truhlsen</name>
+    <title> </title>
+    <phone> (402) 426-6822</phone>
+    <fax> (402) 426-6825</fax>
+    <email> clerk@washingtoncountyne.org</email>
+  </election_official>
+  <election_official id="1858865375">
+    <county_name>BUFFALO</county_name>
+    <state_id>31</state_id>
+    <name>Glenda Debrie (Election Commissioner)</name>
+    <title> </title>
+    <phone> (308) 236-1233</phone>
+    <fax> (308) 233-3663</fax>
+    <email> mailto:ninecoelect@kearney.net</email>
+  </election_official>
+  <election_official id="359495415">
+    <county_name>OTOE</county_name>
+    <state_id>31</state_id>
+    <name>Janene Bennett</name>
+    <title> </title>
+    <phone> (402) 873-9505</phone>
+    <fax> (402) 873-9506</fax>
+    <email> clerk@otoe.nacone.org </email>
+  </election_official>
+  <election_official id="2110251991">
+    <county_name>LOUP</county_name>
+    <state_id>31</state_id>
+    <name>Debbie Postany</name>
+    <title> </title>
+    <phone> (308) 942-3135</phone>
+    <fax> (308) 942-3103</fax>
+    <email> clerk@loup.nacone.org</email>
+  </election_official>
+  <election_official id="5033505">
+    <county_name>FRONTIER</county_name>
+    <state_id>31</state_id>
+    <name>Darla Walther</name>
+    <title> </title>
+    <phone> (308) 367-8641</phone>
+    <fax> (308) 367-8730</fax>
+    <email> mailto:clerkfc@curtis-ne.com</email>
+  </election_official>
+  <election_official id="56932559">
+    <county_name>HOOKER</county_name>
+    <state_id>31</state_id>
+    <name>Dave Sullivan</name>
+    <title> </title>
+    <phone> (308) 546-2244</phone>
+    <fax> (308) 546-2490</fax>
+    <email> soscou93@nebnet.net</email>
+  </election_official>
+  <election_official id="135124557">
+    <county_name>FURNAS</county_name>
+    <state_id>31</state_id>
+    <name>Kennis McClelland</name>
+    <title> </title>
+    <phone> (308) 268-4145</phone>
+    <fax> (308) 268-3205</fax>
+    <email> mailto:clerk@furnas.nacone.org</email>
+  </election_official>
+  <election_official id="1881268851">
+    <county_name>CUSTER</county_name>
+    <state_id>31</state_id>
+    <name>Conni Gracey</name>
+    <title> </title>
+    <phone> (308) 872-5701</phone>
+    <fax> (308) 872-2221</fax>
+    <email> mailto:countyclerk4@hotmail.com</email>
+  </election_official>
+  <election_official id="1013595348">
+    <county_name>HITCHCOCK</county_name>
+    <state_id>31</state_id>
+    <name>Margaret Pollmann</name>
+    <title> </title>
+    <phone> (308) 334-5646</phone>
+    <fax> (308) 334-5398</fax>
+    <email> clerk@hitchcock.nacone.org</email>
+  </election_official>
+  <election_official id="109374699">
+    <county_name>LOGAN</county_name>
+    <state_id>31</state_id>
+    <name>Pat Harvey</name>
+    <title> </title>
+    <phone> (308) 636-2311</phone>
+    <fax> (308) 636-2333</fax>
+    <email>clerk@logan.nacone.org</email>
+  </election_official>
+  <election_official id="1634613750">
+    <county_name>KEYA PAHA</county_name>
+    <state_id>31</state_id>
+    <name>Suzy Wentworth</name>
+    <title> </title>
+    <phone> (402) 497-3791</phone>
+    <fax> (402) 497-3799</fax>
+    <email> clerk@keyapaha.nacone.org</email>
+  </election_official>
+</listings>

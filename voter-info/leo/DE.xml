@@ -1,0 +1,32 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="286195846">
+    <county_name>NEW CASTLE</county_name>
+    <state_id>10</state_id>
+    <name>Anthony J. Albence</name>
+    <title> Director</title>
+    <phone> 302-577-3464 </phone>
+    <fax> 302-577-6545 </fax>
+    <email> anthony.albence@state.de.us</email>
+  </election_official>
+  <election_official id="1756349789">
+    <county_name>KENT</county_name>
+    <state_id>10</state_id>
+    <name>Joyce L. Wright</name>
+    <title>  Administrative Director</title>
+    <phone> 302-739-4498 </phone>
+    <fax> 302-739-4515</fax>
+    <email> joycel.wright@state.de.us</email>
+  </election_official>
+  <election_official id="1880543555">
+    <county_name>SUSSEX</county_name>
+    <state_id>10</state_id>
+    <name>Kenneth L. McDowell</name>
+    <title>  Administrative Director </title>
+    <phone>302-856-5367 </phone>
+    <fax>302-856-5082 </fax>
+    <email>kenneth.l.mcdowell@state.de.us</email>
+  </election_official>
+</listings>

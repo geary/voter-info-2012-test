@@ -1,0 +1,509 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="613893333">
+    <county_name>MINERAL</county_name>
+    <state_id>30</state_id>
+    <name>Katherine Jasper</name>
+    <title> </title>
+    <phone>822-3521</phone>
+    <fax>822-3579</fax>
+    <email>kjasper@co.mineral.mt.us</email>
+  </election_official>
+  <election_official id="1093495208">
+    <county_name>SHERIDAN</county_name>
+    <state_id>30</state_id>
+    <name>Mary Lynch</name>
+    <title> </title>
+    <phone>765-3403</phone>
+    <fax>765-2609</fax>
+    <email>mlynch@co.sheridan.mt.us</email>
+  </election_official>
+  <election_official id="194268280">
+    <county_name>MEAGHER</county_name>
+    <state_id>30</state_id>
+    <name>Cameron Lowe</name>
+    <title> </title>
+    <phone>547-3612 x2</phone>
+    <fax>547-3388</fax>
+    <email>clowe@meaghercounty.org</email>
+  </election_official>
+  <election_official id="422009946">
+    <county_name>CASCADE</county_name>
+    <state_id>30</state_id>
+    <name>Rina Moore</name>
+    <title> </title>
+    <phone>454-6803</phone>
+    <fax>454-6725</fax>
+    <email>elections@co.cascade.mt.us</email>
+  </election_official>
+  <election_official id="1288400842">
+    <county_name>MADISON</county_name>
+    <state_id>30</state_id>
+    <name>Peggy Kaatz Stemler</name>
+    <title> </title>
+    <phone>843-4270</phone>
+    <fax>843-5264</fax>
+    <email> pkaatz@madison.mt.gov</email>
+  </election_official>
+  <election_official id="1351119107">
+    <county_name>DANIELS</county_name>
+    <state_id>30</state_id>
+    <name>Kristy Jones</name>
+    <title> </title>
+    <phone>487-5561</phone>
+    <fax>487-5583</fax>
+    <email>clerkrec@danielsco.mt.gov</email>
+  </election_official>
+  <election_official id="1379620284">
+    <county_name>GALLATIN</county_name>
+    <state_id>30</state_id>
+    <name>Charlotte Mills</name>
+    <title> </title>
+    <phone>582-3060</phone>
+    <fax>582-3068</fax>
+    <email>charlotte.mills@gallatin.mt.gov</email>
+  </election_official>
+  <election_official id="188540009">
+    <county_name>PARK</county_name>
+    <state_id>30</state_id>
+    <name>Denise Nelson</name>
+    <title> </title>
+    <phone>222-4111</phone>
+    <fax>222-4193</fax>
+    <email>clerkrecorder@parkcounty.org</email>
+  </election_official>
+  <election_official id="1365311538">
+    <county_name>SILVER BOW</county_name>
+    <state_id>30</state_id>
+    <name>Mary McMahon</name>
+    <title> </title>
+    <phone>497-6342</phone>
+    <fax>497-6328</fax>
+    <email>mmcmahon@bsb.mt.gov</email>
+  </election_official>
+  <election_official id="671051863">
+    <county_name>SANDERS</county_name>
+    <state_id>30</state_id>
+    <name>Jennine Robbins</name>
+    <title> </title>
+    <phone>827-6922</phone>
+    <fax>827-6970</fax>
+    <email>clerk&amp;recorder@sanderscounty.mt.gov</email>
+  </election_official>
+  <election_official id="835119084">
+    <county_name>PHILLIPS</county_name>
+    <state_id>30</state_id>
+    <name>Laurel N Hines</name>
+    <title> </title>
+    <phone>654-2423</phone>
+    <fax>654-2429</fax>
+    <email>clerkrecorder@phillipscounty.mt.gov</email>
+  </election_official>
+  <election_official id="1442987230">
+    <county_name>FERGUS</county_name>
+    <state_id>30</state_id>
+    <name>Rana Wichman</name>
+    <title> </title>
+    <phone>535-5242</phone>
+    <fax>535-9023</fax>
+    <email>clerkrecorder@co.fergus.mt.us</email>
+  </election_official>
+  <election_official id="429732911">
+    <county_name>DAWSON</county_name>
+    <state_id>30</state_id>
+    <name>Nancy Howard</name>
+    <title> </title>
+    <phone>377-3058</phone>
+    <fax>377-1717</fax>
+    <email>dawclerk@midrivers.com</email>
+  </election_official>
+  <election_official id="1331727629">
+    <county_name>POWDER RIVER</county_name>
+    <state_id>30</state_id>
+    <name>Karen D Amende</name>
+    <title> </title>
+    <phone>436-2361</phone>
+    <fax>436-2151</fax>
+    <email>kamende@prco.mt.gov</email>
+  </election_official>
+  <election_official id="657043687">
+    <county_name>WHEATLAND</county_name>
+    <state_id>30</state_id>
+    <name>Mary E Miller</name>
+    <title> </title>
+    <phone>632-4891</phone>
+    <fax>632-4880</fax>
+    <email>wccr@mtintouch.net</email>
+  </election_official>
+  <election_official id="295187899">
+    <county_name>HILL</county_name>
+    <state_id>30</state_id>
+    <name>Diane E Mellem</name>
+    <title> </title>
+    <phone>265-5481 x221</phone>
+    <fax>265-2445</fax>
+    <email>mellemd@co.hill.mt.us</email>
+  </election_official>
+  <election_official id="1479974768">
+    <county_name>MCCONE</county_name>
+    <state_id>30</state_id>
+    <name>Maridel L Kassner</name>
+    <title> </title>
+    <phone>485-3505</phone>
+    <fax>485-2689</fax>
+    <email>clerk@midrivers.com</email>
+  </election_official>
+  <election_official id="1981854510">
+    <county_name>JUDITH BASIN</county_name>
+    <state_id>30</state_id>
+    <name>Amanda H Kelly</name>
+    <title> </title>
+    <phone>566-2277 x109</phone>
+    <fax>566-2211</fax>
+    <email>akelly@co.judith-basin.mt.us</email>
+  </election_official>
+  <election_official id="49258056">
+    <county_name>RICHLAND</county_name>
+    <state_id>30</state_id>
+    <name>Penni D Lewis</name>
+    <title> </title>
+    <phone>433-1708</phone>
+    <fax>433-3731</fax>
+    <email>plewis@richland.org</email>
+  </election_official>
+  <election_official id="891678">
+    <county_name>PRAIRIE</county_name>
+    <state_id>30</state_id>
+    <name>Toni Kalfell</name>
+    <title> </title>
+    <phone>635-5575</phone>
+    <fax>635-5576</fax>
+    <email>clerkrecorder@prairie.mt.gov</email>
+  </election_official>
+  <election_official id="596964390">
+    <county_name>SWEET GRASS</county_name>
+    <state_id>30</state_id>
+    <name>Sherry Bjorndal</name>
+    <title> </title>
+    <phone>932-5152</phone>
+    <fax>932-3026</fax>
+    <email>sgclerk1@cablemt.net</email>
+  </election_official>
+  <election_official id="869607149">
+    <county_name>POWELL</county_name>
+    <state_id>30</state_id>
+    <name>Diane S Grey</name>
+    <title> </title>
+    <phone>846-3680 x223</phone>
+    <fax>846-3891</fax>
+    <email>dsgmt2001@yahoo.com</email>
+  </election_official>
+  <election_official id="1237646754">
+    <county_name>LINCOLN</county_name>
+    <state_id>30</state_id>
+    <name>Tammy D Lauer</name>
+    <title> </title>
+    <phone>293-7781 x200</phone>
+    <fax>293-8577</fax>
+    <email>lcclerk@libby.org</email>
+  </election_official>
+  <election_official id="1694602815">
+    <county_name>LEWIS AND CLARK</county_name>
+    <state_id>30</state_id>
+    <name>Paulette DeHart</name>
+    <title> </title>
+    <phone>447-8338</phone>
+    <fax>457-8598</fax>
+    <email>pdehart@co.lewis-clark.mt.us</email>
+  </election_official>
+  <election_official id="2135032336">
+    <county_name>FALLON</county_name>
+    <state_id>30</state_id>
+    <name>Brenda J Wood</name>
+    <title> </title>
+    <phone>778-7106</phone>
+    <fax>778-2048</fax>
+    <email> falloncc@midrivers.com</email>
+  </election_official>
+  <election_official id="529854008">
+    <county_name>ROOSEVELT</county_name>
+    <state_id>30</state_id>
+    <name>Cheryl A Hansen</name>
+    <title> </title>
+    <phone>653-6229</phone>
+    <fax>653-6289</fax>
+    <email>chansen@rooseveltcounty.org</email>
+  </election_official>
+  <election_official id="1379391140">
+    <county_name>MUSSELSHELL</county_name>
+    <state_id>30</state_id>
+    <name>Jane E Mang</name>
+    <title> </title>
+    <phone>323-1104</phone>
+    <fax>323-3303</fax>
+    <email>mshlcocr@midrivers.com</email>
+  </election_official>
+  <election_official id="57271760">
+    <county_name>LAKE</county_name>
+    <state_id>30</state_id>
+    <name>Kathie Newgard</name>
+    <title> </title>
+    <phone>883-7268</phone>
+    <fax>883-7230</fax>
+    <email>knewgard@lakemt.gov</email>
+  </election_official>
+  <election_official id="1928143526">
+    <county_name>GLACIER</county_name>
+    <state_id>30</state_id>
+    <name>Glenda Hall</name>
+    <title> </title>
+    <phone>873-3609</phone>
+    <fax>873-2125</fax>
+    <email>glaciercounty@yahoo.com</email>
+  </election_official>
+  <election_official id="1429585529">
+    <county_name>YELLOWSTONE</county_name>
+    <state_id>30</state_id>
+    <name>Duane Winslow</name>
+    <title> </title>
+    <phone> 256-2740</phone>
+    <fax>254-7940</fax>
+    <email>dwinslow@co.yellowstone.mt.gov</email>
+  </election_official>
+  <election_official id="2041629425">
+    <county_name>GRANITE</county_name>
+    <state_id>30</state_id>
+    <name>Blanche McLure</name>
+    <title> </title>
+    <phone>859-3771</phone>
+    <fax>859-3817</fax>
+    <email>graclerk@co.granite.mt.us</email>
+  </election_official>
+  <election_official id="1577539769">
+    <county_name>WIBAUX</county_name>
+    <state_id>30</state_id>
+    <name>Patricia Zinda</name>
+    <title> </title>
+    <phone>796-2481</phone>
+    <fax>796-2625</fax>
+    <email>wibauxco@midrivers.com</email>
+  </election_official>
+  <election_official id="176659019">
+    <county_name>BEAVERHEAD</county_name>
+    <state_id>30</state_id>
+    <name>Debbie Scott </name>
+    <title> Clerk</title>
+    <phone> 683-3720 </phone>
+    <fax> 683-3778</fax>
+    <email> clerk@co.beaverhead.mt.us</email>
+  </election_official>
+  <election_official id="1691952966">
+    <county_name>STILLWATER</county_name>
+    <state_id>30</state_id>
+    <name>Pauline M Mishler</name>
+    <title> </title>
+    <phone>322-8000</phone>
+    <fax>322-8007</fax>
+    <email>pmishler@stillwater.mt.gov</email>
+  </election_official>
+  <election_official id="1309926468">
+    <county_name>DEER LODGE</county_name>
+    <state_id>30</state_id>
+    <name>Marie Hatche</name>
+    <title> </title>
+    <phone>563-4060</phone>
+    <fax>563-4001 </fax>
+    <email>clerk-recorder@anacondadeerlodge.mt.gov</email>
+  </election_official>
+  <election_official id="2069461443">
+    <county_name>TOOLE</county_name>
+    <state_id>30</state_id>
+    <name>Mary Ann Harwood</name>
+    <title> </title>
+    <phone>424-8300</phone>
+    <fax>424-8301</fax>
+    <email>tcclerk@3rivers.net</email>
+  </election_official>
+  <election_official id="1101141319">
+    <county_name>ROSEBUD</county_name>
+    <state_id>30</state_id>
+    <name>Geraldine Custer</name>
+    <title> </title>
+    <phone>346-7318</phone>
+    <fax>346-7551</fax>
+    <email>clerkandrecorder@rangeweb.net</email>
+  </election_official>
+  <election_official id="1999630170">
+    <county_name>RAVALLI</county_name>
+    <state_id>30</state_id>
+    <name>Regina Plettenberg</name>
+    <title> </title>
+    <phone>375-6550</phone>
+    <fax>375-6326</fax>
+    <email>rplettenberg@ravallicounty.mt.gov</email>
+  </election_official>
+  <election_official id="1852412590">
+    <county_name>BIG HORN</county_name>
+    <state_id>30</state_id>
+    <name>Cyndy R Maxwell </name>
+    <title> Clerk </title>
+    <phone> 665-9730 </phone>
+    <fax> 665-9738 </fax>
+    <email> cmaxwell@co.bighorn.mt.us</email>
+  </election_official>
+  <election_official id="443396993">
+    <county_name>JEFFERSON</county_name>
+    <state_id>30</state_id>
+    <name>Bonnie Ramey</name>
+    <title> </title>
+    <phone>225-4020</phone>
+    <fax>225-4149</fax>
+    <email>bramey@jeffco.mt.gov</email>
+  </election_official>
+  <election_official id="782078415">
+    <county_name>CARTER</county_name>
+    <state_id>30</state_id>
+    <name>Pamela Castleberry</name>
+    <title> </title>
+    <phone>775-8749</phone>
+    <fax>775-8750</fax>
+    <email>cccnrc@midrivers.com</email>
+  </election_official>
+  <election_official id="2099089881">
+    <county_name>GARFIELD</county_name>
+    <state_id>30</state_id>
+    <name>Janet Sherer</name>
+    <title> </title>
+    <phone>557-2760</phone>
+    <fax>557-2765</fax>
+    <email>gccr@midrivers.com</email>
+  </election_official>
+  <election_official id="843681060">
+    <county_name>BLAINE</county_name>
+    <state_id>30</state_id>
+    <name>Sandra L Boardman </name>
+    <title> Clerk</title>
+    <phone> 357-3240 </phone>
+    <fax> 357-2199 </fax>
+    <email> sboardman@co.blaine.mt.gov</email>
+  </election_official>
+  <election_official id="218262118">
+    <county_name>PETROLEUM</county_name>
+    <state_id>30</state_id>
+    <name>Mary L Brindley</name>
+    <title> </title>
+    <phone>429-5311</phone>
+    <fax>429-6328</fax>
+    <email>mbrindley@mt.gov</email>
+  </election_official>
+  <election_official id="4395209">
+    <county_name>TREASURE</county_name>
+    <state_id>30</state_id>
+    <name>Ruth L Baker</name>
+    <title> </title>
+    <phone>342-5547</phone>
+    <fax>342-5445</fax>
+    <email> clerkrecorder@rangeweb.net</email>
+  </election_official>
+  <election_official id="1459225181">
+    <county_name>GOLDEN VALLEY</county_name>
+    <state_id>30</state_id>
+    <name>Mary Lu Berry</name>
+    <title> </title>
+    <phone>568-2231</phone>
+    <fax>568-2428</fax>
+    <email>berryml@midrivers.com</email>
+  </election_official>
+  <election_official id="1405254006">
+    <county_name>VALLEY</county_name>
+    <state_id>30</state_id>
+    <name>Lynne Nyquist</name>
+    <title> </title>
+    <phone>228-6226</phone>
+    <fax>228-9027</fax>
+    <email>lnyquist@co.valley.mt.us</email>
+  </election_official>
+  <election_official id="1492535077">
+    <county_name>PONDERA</county_name>
+    <state_id>30</state_id>
+    <name>Janice Hoppes</name>
+    <title> </title>
+    <phone>271-4000</phone>
+    <fax>271-4070</fax>
+    <email>clerkrec@3rivers.net</email>
+  </election_official>
+  <election_official id="558912444">
+    <county_name>TETON</county_name>
+    <state_id>30</state_id>
+    <name>Paula J Jaconetty</name>
+    <title> </title>
+    <phone>466-2693</phone>
+    <fax>466-3244</fax>
+    <email>paula@3rivers.net</email>
+  </election_official>
+  <election_official id="650947328">
+    <county_name>MISSOULA</county_name>
+    <state_id>30</state_id>
+    <name>Vickie Zeier</name>
+    <title> </title>
+    <phone>523-4751</phone>
+    <fax>523-2921</fax>
+    <email>vzeier@co.missoula.mt.us</email>
+  </election_official>
+  <election_official id="1661035732">
+    <county_name>BROADWATER</county_name>
+    <state_id>30</state_id>
+    <name>Rhonda C Nelson </name>
+    <title> Clerk</title>
+    <phone> 266-3443 </phone>
+    <fax> 266-3674 </fax>
+    <email> treas@co.broadwater.mt.us</email>
+  </election_official>
+  <election_official id="1295402871">
+    <county_name>FLATHEAD</county_name>
+    <state_id>30</state_id>
+    <name>Paula Robinson</name>
+    <title> </title>
+    <phone>758-2453</phone>
+    <fax>758-5877</fax>
+    <email> electionweb@co.flathead.mt.us</email>
+  </election_official>
+  <election_official id="1238102090">
+    <county_name>CHOUTEAU</county_name>
+    <state_id>30</state_id>
+    <name>JoAnn L Johnson</name>
+    <title> </title>
+    <phone>622-5151</phone>
+    <fax>622-3012</fax>
+    <email>joann59442@yahoo.com</email>
+  </election_official>
+  <election_official id="1241554491">
+    <county_name>CARBON</county_name>
+    <state_id>30</state_id>
+    <name>Sally A. Rodibaugh </name>
+    <title> Clerk</title>
+    <phone> 446-1220 </phone>
+    <fax> 446-2640</fax>
+    <email> elections@co.carbon.mt.us</email>
+  </election_official>
+  <election_official id="1790450734">
+    <county_name>CUSTER</county_name>
+    <state_id>30</state_id>
+    <name>Marie Wehri</name>
+    <title> </title>
+    <phone>874-3343</phone>
+    <fax>874-3452</fax>
+    <email>m.wehri@co.custer.mt.us</email>
+  </election_official>
+  <election_official id="489275320">
+    <county_name>LIBERTY</county_name>
+    <state_id>30</state_id>
+    <name>Rhonda S Pimley</name>
+    <title> </title>
+    <phone>759-5365</phone>
+    <fax>759-5395</fax>
+    <email> clerk@co.liberty.mt.gov</email>
+  </election_official>
+</listings>

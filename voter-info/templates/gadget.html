@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC
+  "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd"
+  [ <!ATTLIST a target CDATA #IMPLIED> ]
+>
+<html lang="en">
+<head><meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<title></title>
+
+<!--
+  templates/gadget.html
+  By Michael Geary - http://mg.to/
+  See UNLICENSE or http://unlicense.org/ for public domain notice.
+-->
+
+<!--:: style ::-->
+
+<!-- Begin Google Election Center gadget --> 
+<!-- Copy this entire block of code into your HTML page --> 
+ 
+<style type="text/css"> 
+  /* Font */ 
+  #Poll411Gadget, #Poll411Gadget * { {{fontStyle}} } 
+  /* Sizes */ 
+  #Poll411Gadget, #Poll411Form { width:{{width}}px; } 
+  #Poll411Frame { width:100%; height:{{height}}px; } 
+  /* Colors */ 
+  /*#Poll411Gadget { border:1px solid #AAA; }*/ 
+  #Poll411Input.example { color:#666; } 
+  #Poll411Frame { border-top:1px solid #DDD; } 
+  /* Layout */ 
+  #Poll411Gadget { margin:0; padding:4px 0 4px 2px; } 
+  #Poll411SelectState { margin-bottom:4px; } 
+  #Poll411Title { padding-bottom:4px; } 
+  #Poll411Form { margin:0; padding:0; vertical-align:middle; } 
+  #Poll411InputCell { width:99%; padding-right:8px; } 
+  #Poll411ButtonCell { width:1%; } 
+  #Poll411Input { width:100%; } 
+  #Poll411Frame { display:none; margin-top:6px; } 
+</style> 
+ 
+<!--:: gadgetStyle ::-->
+
+<style type="text/css">
+    body.gadget { margin:0; padding:0; }
+    body, body td { {{fontStyle}} }
+    /*body { height:{{height}}px; }*/
+    .heading { font-weight:bold; padding-top:10px; }
+    .orange { padding:6px; width:95%; background-color:#FFEAC0; border:1px solid #FFBA90; }
+    .pink { padding:6px; width:95%; background-color:#FFD0D0; border:1px solid #FF9090; }
+    #spinner { z-index: 1; position:absolute; width:100%; height:100%; background-image:url({{spinImage}}); background-position:center; background-repeat:no-repeat; opacity:0.30; -moz-opacity:0.30; {{spinDisplay}} }
+    #spinner { filter:alpha(opacity=30); }
+    #header-pad { padding:10px 10px 8px 6px; }
+    #logo img { border:none; width:288px; height:43px; }
+    #tabs { width:100%; background-color:#E8ECF9; }
+    #tablinks { padding:4px; }
+    #tablinks span, #tablinks a { margin-right:1em; }
+    #tablinks span { font-weight:bold; }
+    #tablinks a { color:#0000CC; }
+    #previewmap { display:none; }
+    #previewmap, #mapbox { overflow:auto; width:100%; }
+    #detailsbox { width:100%; overflow:scroll; overflow-x:auto; overflow-y:scroll; display:none; }
+    body.logo .Poll411SearchTitle span, body.logo .Poll411SearchTitle strong, body.logo .Poll411SearchTitle b, body.logo .Poll411SearchTitle i { font-size:17px !important; }
+    body.logo #Poll411Input, body.logo #Poll411Button { font-size:17px; }
+    body.logo .heading { font-size:16px; }
+    body.sidebar #outerlimits { position:relative; border-top:1px solid #BBB; }
+    body.sidebar #Poll411Gadget { padding: 4px 4px 12px 8px; }
+    body.sidebar #Poll411Gadget, body.sidebar #Poll411Form { width:auto; }
+    body.sidebar #detailsbox { width:24em; /*position:absolute; left:0; top:0;*/ display:block; }
+    body.sidebar #details { margin:8px; }
+    body.sidebar #mapbox { position:absolute; }
+</style>
+
+<!--:: ignore ::-->
+
+</head>
+<body>
+<div>
+
+<!--:: header ::-->
+
+<div id="header">
+  <div id="header-pad">
+    <a id="logo"
+       href="http://electioncenter.googlelabs.com/"
+       target="_blank"
+       onclick="analytics('logo');"
+    >
+      <img src="{{logoImage}}">
+    </a>
+  </div>
+</div>
+
+<!--:: html ::-->
+
+<div id="Poll411Gadget"> 
+  <form id="Poll411Form" action="" onsubmit="return Poll411.submit()"> 
+    
+    <div class="Poll411SearchTitle removehelp"> 
+      <span> 
+        {{homePrompt}} 
+      </span> 
+    </div> 
+    
+    <table class="Poll411SearchTable" cellpadding="0" cellspacing="0" style="width:100%;"> 
+      <tr valign="middle"> 
+        <td id="Poll411InputCell"> 
+          <input type="text" id="Poll411Input" class="example" onfocus="Poll411.focus()" onblur="Poll411.blur()"> 
+        </td> 
+        <td id="Poll411ButtonCell"> 
+          <button type="submit" id="Poll411Button"> Search</button> 
+        </td> 
+      </tr> 
+    </table> 
+  </form> 
+  <div id="Poll411Frame"> 
+  </div> 
+</div> 
+ 
+<!--:: gadgetBody ::-->
+
+<div id="spinner">
+</div>
+<div id="tabs" style="display:none;">
+</div>
+<div id="detailsbox">
+  <div id="details">
+  </div>
+</div>
+<div id="previewmap">
+</div>
+<div id="mapbox">
+</div>
+
+<!--:: attribution ::-->
+
+<div style="margin-bottom:0.5em; color:#333; {{fontStyle}}">
+    <div style="font-size:85%; margin-top:1.5em; border-top:1px solid #BBB; padding-top:1em;">
+        Developed with 
+<!--
+        <span id="vips" style="font-size:100%;">
+            <a style="font-size:100%;" href="#" onclick="$(\'#vips\').html(fullvips); return false;">
+                state and local election officials
+            </a>
+        </span>
+-->
+        the 
+        {{special}}
+        <a style="font-size:100%;" target="_blank" href="http://www.votinginfoproject.org/">
+            Voting Information Project
+        </a>
+        .
+    </div>
+<!--
+    <div style="font-size:85%; margin-top:0.75em;">
+        In conjunction with the 
+        <a style="font-size:100%;" target="_blank" href="http://www.lwv.org/">
+            League of Women Voters
+        </a>
+        .
+    </div>
+-->
+    <div style="font-size:85%; margin:1em 0 1em 0;">
+    	Help others find their voter information:<br />
+    	<a target="_blank" href="http://gmodules.com/ig/creator?synd=open&url=http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget.xml">
+    		Get this app for your website
+    	</a>
+    </div>
+</div>
+
+<!--:: attributionVA ::-->
+
+<a style="font-size:100%;" target="_blank" href="http://www.sbe.virginia.gov/">
+    Virginia State Board of Elections and the 
+</a>
+
+<!--:: placeRadioTable ::-->
+
+<table id="Poll411SearchPlaces" cellspacing="0">
+  <!--{{rows}}-->
+</table>
+
+<!--:: ignore ::-->
+
+<table>
+
+<!--:: placeRadioRow ::-->
+
+<tr class="Poll411SearchPlace" style="vertical-align:top;">
+    <td style="width:1%; padding:2px 0;">
+        <input type="radio" {{checked}} name="Poll411SearchPlaceRadio" class="Poll411SearchPlaceRadio" id="{{id}}" />
+    </td>
+    <td style="width:99%; padding:5px 0 2px 2px;">
+        <div>
+            <label for="{{id}}" class="Poll411SearchPlaceAddress">
+                {{address}}
+            </label>
+        </div>
+    </td>
+</tr>
+
+<!--:: ignore ::-->
+
+</table>
+
+<!--:: tabLinks ::-->
+
+<div id="tablinks">
+    {{tab1}}
+    {{tab2}}
+    {{tab3}}
+</div>
+
+<!--:: tabLinkActive ::-->
+
+<span class="{{id}}">{{label}}</span>
+
+<!--:: tabLinkInactive ::-->
+
+<a href="{{id}}">{{label}}</a>
+
+<!--:: selectAddressHeader ::-->
+
+<div id="radios">
+    <div style="padding-top:0.5em;">
+        <strong>{{doYouMean}}</strong>
+    </div>
+</div>
+
+<!--:: infoWrap ::-->
+
+<div style="{{fontStyle}} margin-top:12px; padding-right:4px; overflow:auto;">
+    {{html}}
+</div>
+
+<!--:: longInfo ::-->
+
+{{log}}
+<div>
+    {{header}}
+    <div style="padding-top:0.75em">
+    </div>
+    {{home}}
+    <div style="padding-top:0.75em">
+    </div>
+    {{location}}
+    {{warning}}
+    {{stateLocator}}
+    <div style="padding-top:1em">
+    </div>
+    {{info}}
+</div>
+
+<!--:: stateLocator ::-->
+
+<div style="margin:0.5em 0">
+    Check your voting location on your 
+    <a target="_blank" href="{{url}}">
+        state voting place locator
+    </a>
+</div>
+
+<!--:: locationHead ::-->
+
+<div {{select}}>
+    <div style="font-weight:bold; font-size:110%;">
+      {{title}}
+    </div>
+    <div style="padding:0.5em 0;">
+      <table cellpadding="0" cellspacing="0">
+
+<!--:: locationRow ::-->
+
+        <tr valign="top">
+          <td style="width:20px; padding:2px .75em 8 0;">
+            <img src="{{iconSrc}}" style="width:{{iconWidth}}px; height:{{iconHeight}}px;" alt="">
+          </td>
+          <td style="padding-bottom:6px;">
+              {{address}}
+              <div>
+                {{directions}}
+              </div>
+              <div>
+                {{hours}}
+              </div>
+              {{extra}}
+          </td>
+        </tr>
+
+<!--:: locationFoot ::-->
+
+      </table>
+      {{unable}}
+    </div>
+</div>
+
+<!--:: specialLocation ::-->
+
+temp
+
+<!--:: locationWarning ::-->
+
+<div style="font-size:90%;">
+  {{forEligibleVoters}}
+</div>
+
+<!--:: address ::-->
+
+<div>
+  <div>
+    <strong>{{location}}</strong>
+  </div>
+  <div>
+    {{address}}
+  </div>
+</div>
+
+<!--:: locationUnable ::-->
+
+<div style="padding-top: 0.5em">
+  {{unableToLocate}}
+</div>
+
+<!--:: infoLinks ::-->
+
+<div style="{{fontStyle}}">
+    <div style="margin-top:1.5em;">
+        <a target="_blank" href="http://spreadsheets.google.com/viewform?formkey=dG5rTHNRNWVYdGYwMmFjbDBydzlLR2c6MA">
+            {{reportAnError}}
+        </a>
+    </div>
+<!--
+    <div style="margin-top:1em; border-top:1px solid #BBB; padding-top:1em;">
+    	Full election coverage:<br />
+    	<a target="_blank" href="http://www.google.com/2008election">
+    		Google 2008 Election Site
+    	</a>
+    </div>
+    <div style="margin-top:1em;">
+    	More election maps:<br />
+    	<a target="_blank" href="http://maps.google.com/elections">
+    		Google Elections Map Gallery
+    	</a>
+    </div>
+    <div style="margin-top:1em;">
+    	Get voter info on your phone:<br />
+    	<a target="_blank" href="http://m.google.com/elections">
+    		http://m.google.com/elections
+    	</a>
+    </div>
+-->
+</div>
+
+<!--:: log ::-->
+
+<div style="padding:4px; margin-bottom:4px; border:1px solid red;">
+  {{content}}
+</div>
+
+<!--:: ignore ::-->
+
+</div>
+</body>
+</html>

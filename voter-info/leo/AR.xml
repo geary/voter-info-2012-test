@@ -1,0 +1,680 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="685247329">
+    <county_name>POLK</county_name>
+    <state_id>5</state_id>
+    <name> Terri Harrison</name>
+    <title> Clerk</title>
+    <phone> (479) 394-8123</phone>
+    <fax> (479) 394-8115</fax>
+    <email> PolkClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="46441972">
+    <county_name>IZARD</county_name>
+    <state_id>5</state_id>
+    <name> Rhonda Halbrook</name>
+    <title>Clerk</title>
+    <phone> (870) 368-4316</phone>
+    <fax> (870) 368-4748</fax>
+    <email> IzardClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="946045970">
+    <county_name>CRAWFORD</county_name>
+    <state_id>5</state_id>
+    <name>Patti Hill</name>
+    <title>Clerk</title>
+    <phone> (479) 474-1312</phone>
+    <fax> (479) 474-3236</fax>
+    <email> CrawfordClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="610446378">
+    <county_name>CLEBURNE</county_name>
+    <state_id>5</state_id>
+    <name>Dana Guffey</name>
+    <title>Clerk</title>
+    <phone> (501) 362-4620</phone>
+    <fax>(501) 362-4622</fax>
+    <email> CleburneClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="925703800">
+    <county_name>CHICOT</county_name>
+    <state_id>5</state_id>
+    <name>Pam Donaldson</name>
+    <title> Clerk</title>
+    <phone> (870) 265-8000</phone>
+    <fax> (870) 265-8006</fax>
+    <email> ChicotClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1331468397">
+    <county_name>BAXTER</county_name>
+    <state_id>5</state_id>
+    <name> Rhonda Porter</name>
+    <title>Clerk</title>
+    <phone> (870) 425-3475</phone>
+    <fax> (870) 424-5105</fax>
+    <email> BaxterClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1876495560">
+    <county_name>WHITE</county_name>
+    <state_id>5</state_id>
+    <name>Tanya Burleson</name>
+    <title> Clerk</title>
+    <phone> (501) 279-6204</phone>
+    <fax> (501) 279-6260</fax>
+    <email> WhiteClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="2100651357">
+    <county_name>MADISON</county_name>
+    <state_id>5</state_id>
+    <name> Faron Ledbetter</name>
+    <title>Clerk</title>
+    <phone> (479) 738-2747</phone>
+    <fax> (479) 738-2735</fax>
+    <email> MadisonClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="734863212">
+    <county_name>GARLAND</county_name>
+    <state_id>5</state_id>
+    <name>Judy Hughes</name>
+    <title>Clerk</title>
+    <phone> (501) 622-3610</phone>
+    <fax> (501) 624-0665</fax>
+    <email> GarlandClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="2044328736">
+    <county_name>CRITTENDEN</county_name>
+    <state_id>5</state_id>
+    <name>Ruth Trent</name>
+    <title>Clerk</title>
+    <phone> (870) 739-4434</phone>
+    <fax> </fax>
+    <email> CrittendenClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="2098205127">
+    <county_name>CARROLL</county_name>
+    <state_id>5</state_id>
+    <name>Shirley Doss</name>
+    <title>Clerk</title>
+    <phone> (870) 423-2022</phone>
+    <fax> (870) 423-7400</fax>
+    <email> CarrollClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1221601168">
+    <county_name>WOODRUFF</county_name>
+    <state_id>5</state_id>
+    <name> County Becky Hicks</name>
+    <title> Clerk</title>
+    <phone> (870) 347-2871</phone>
+    <fax> </fax>
+    <email> WoodruffClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="223471773">
+    <county_name>SHARP</county_name>
+    <state_id>5</state_id>
+    <name> Tommy Estes</name>
+    <title> Clerk</title>
+    <phone> (870) 994-7361</phone>
+    <fax> (870) 994-7712</fax>
+    <email> SharpClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1312351562">
+    <county_name>CONWAY</county_name>
+    <state_id>5</state_id>
+    <name> Debbie Hartman</name>
+    <title>Clerk</title>
+    <phone> (501) 354-9621</phone>
+    <fax> (501) 354-9610</fax>
+    <email> ConwayClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1804489573">
+    <county_name>HEMPSTEAD</county_name>
+    <state_id>5</state_id>
+    <name> Velora Haltom</name>
+    <title>Clerk</title>
+    <phone> (870) 777-2241</phone>
+    <fax> (870) 777-7829</fax>
+    <email> HempsteadClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="360530612">
+    <county_name>PULASKI</county_name>
+    <state_id>5</state_id>
+    <name> Pat O’Brien</name>
+    <title>Clerk</title>
+    <phone> 501-340-8330</phone>
+    <fax>501-340-8340 </fax>
+    <email> PulaskiClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1003480123">
+    <county_name>LEE</county_name>
+    <state_id>5</state_id>
+    <name> Pat Wilson</name>
+    <title> Clerk</title>
+    <phone> (870) 295-7715</phone>
+    <fax> (870) 295-7783</fax>
+    <email> LeeClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1855247282">
+    <county_name>DALLAS</county_name>
+    <state_id>5</state_id>
+    <name>Janice McDaniel</name>
+    <title> Clerk</title>
+    <phone>(870) 352-2307</phone>
+    <fax> (870) 352-7179</fax>
+    <email> DallasClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1808143296">
+    <county_name>PHILLIPS</county_name>
+    <state_id>5</state_id>
+    <name>Linda White</name>
+    <title>Clerk</title>
+    <phone> (870) 338-5505</phone>
+    <fax> (870) 338-5509</fax>
+    <email> PhillipsClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1477269192">
+    <county_name>GREENE</county_name>
+    <state_id>5</state_id>
+    <name> Linda Heritage</name>
+    <title>Clerk</title>
+    <phone> (870) 239-6345</phone>
+    <fax> (870) 239-6350</fax>
+    <email> GreeneClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="336432037">
+    <county_name>RANDOLPH</county_name>
+    <state_id>5</state_id>
+    <name> Janis Mock</name>
+    <title>Clerk</title>
+    <phone> (870) 892-5822</phone>
+    <fax> (870) 892-5829</fax>
+    <email> RandolphClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1718242357">
+    <county_name>BRADLEY</county_name>
+    <state_id>5</state_id>
+    <name>Janet Kimbrell</name>
+    <title>Clerk</title>
+    <phone> (870) 226-3464</phone>
+    <fax> (870) 226-8404</fax>
+    <email> BradleyClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="195440372">
+    <county_name>MISSISSIPPI</county_name>
+    <state_id>5</state_id>
+    <name> Lib Shippen</name>
+    <title>Clerk</title>
+    <phone> (870) 762-3212</phone>
+    <fax> (870) 838-7784</fax>
+    <email> MississippiClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="744238337">
+    <county_name>VAN BUREN</county_name>
+    <state_id>5</state_id>
+    <name> Ester Bass</name>
+    <title> Clerk</title>
+    <phone> (501) 745-4140</phone>
+    <fax> (501) 745-7400</fax>
+    <email> VanBurenClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1893712851">
+    <county_name>ARKANSAS</county_name>
+    <state_id>5</state_id>
+    <name>Aline Ellenberg</name>
+    <title> Clerk</title>
+    <phone> (870) 946-4349</phone>
+    <fax> (870) 946-4349</fax>
+    <email> ArkansasClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1466168204">
+    <county_name>SAINT FRANCIS</county_name>
+    <state_id>5</state_id>
+    <name> </name>
+    <title> </title>
+    <phone> </phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="702850156">
+    <county_name>MARION</county_name>
+    <state_id>5</state_id>
+    <name> Dee Carleton</name>
+    <title>Clerk</title>
+    <phone> (870) 449-6226</phone>
+    <fax> (870) 449-4979</fax>
+    <email> MarionClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="751558755">
+    <county_name>MILLER</county_name>
+    <state_id>5</state_id>
+    <name> Ann Nicholas</name>
+    <title> Clerk</title>
+    <phone> (870) 774-1501</phone>
+    <fax> </fax>
+    <email> MillerClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1330028405">
+    <county_name>SEVIER</county_name>
+    <state_id>5</state_id>
+    <name> County Sandra Dunn</name>
+    <title> Clerk</title>
+    <phone> (870) 642-2852</phone>
+    <fax> </fax>
+    <email> SevierClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1273115217">
+    <county_name>PRAIRIE</county_name>
+    <state_id>5</state_id>
+    <name> Karan Skarda</name>
+    <title> Clerk</title>
+    <phone> (870) 256-4434</phone>
+    <fax> (870) 256-4434</fax>
+    <email> PrairieClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1124258415">
+    <county_name>CALHOUN</county_name>
+    <state_id>5</state_id>
+    <name>Alma Davis</name>
+    <title>Clerk</title>
+    <phone> (870) 798-4818</phone>
+    <fax> (870) 798-2428</fax>
+    <email> CalhounClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1526259216">
+    <county_name>CLAY</county_name>
+    <state_id>5</state_id>
+    <name>Sharon Williams</name>
+    <title>Clerk</title>
+    <phone> (870) 598-2813</phone>
+    <fax> (870) 598-2813</fax>
+    <email> ClayClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1046268973">
+    <county_name>YELL</county_name>
+    <state_id>5</state_id>
+    <name> Carolyn Morris</name>
+    <title> Clerk</title>
+    <phone> (479) 495-4850</phone>
+    <fax> (479) 495-4875</fax>
+    <email> YellClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="2049005113">
+    <county_name>LINCOLN</county_name>
+    <state_id>5</state_id>
+    <name> Katherine Lawson</name>
+    <title>Clerk</title>
+    <phone> (870) 628-5114</phone>
+    <fax> (870) 628-5794</fax>
+    <email> LincolnClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="746028451">
+    <county_name>INDEPENDENCE</county_name>
+    <state_id>5</state_id>
+    <name> Margaret Boothby</name>
+    <title>Clerk</title>
+    <phone> (870) 793-8828</phone>
+    <fax> (870) 793-8831</fax>
+    <email> IndependenceClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="146739248">
+    <county_name>JOHNSON</county_name>
+    <state_id>5</state_id>
+    <name> Kathy Pitts</name>
+    <title>Clerk</title>
+    <phone> (479) 754-3967</phone>
+    <fax> (479) 754-2286</fax>
+    <email> JohnsonClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="104356684">
+    <county_name>LAFAYETTE</county_name>
+    <state_id>5</state_id>
+    <name> Diane Fletcher</name>
+    <title>Clerk</title>
+    <phone> (870) 921-4633</phone>
+    <fax> (870) 921-4505</fax>
+    <email> LafayetteClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1274938803">
+    <county_name>POINSETT</county_name>
+    <state_id>5</state_id>
+    <name> Fonda Condra</name>
+    <title> Clerk</title>
+    <phone> (870) 578-4412</phone>
+    <fax> (870) 578-2441</fax>
+    <email> PoinsettClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="2125689921">
+    <county_name>BOONE</county_name>
+    <state_id>5</state_id>
+    <name>Melinda Mulford</name>
+    <title> Clerk</title>
+    <phone> (870) 741-8428</phone>
+    <fax> (870) 741-9724</fax>
+    <email> BooneClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1104873450">
+    <county_name>ASHLEY</county_name>
+    <state_id>5</state_id>
+    <name>Regina Kersten</name>
+    <title>Clerk</title>
+    <phone> (870) 853-2020</phone>
+    <fax> (870) 853-2082</fax>
+    <email> AshleyClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="599872254">
+    <county_name>CROSS</county_name>
+    <state_id>5</state_id>
+    <name>Peggy Jones</name>
+    <title>Clerk</title>
+    <phone> (870) 238-5735</phone>
+    <fax> (870) 238-5739</fax>
+    <email> CrossClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="74676519">
+    <county_name>STONE</county_name>
+    <state_id>5</state_id>
+    <name> Donna Wilson</name>
+    <title> Clerk</title>
+    <phone> (870) 269-5550</phone>
+    <fax> (870) 269-9058</fax>
+    <email> StoneClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1559228560">
+    <county_name>DREW</county_name>
+    <state_id>5</state_id>
+    <name>Lyna Gulledge</name>
+    <title>Clerk</title>
+    <phone> (870) 460-6260</phone>
+    <fax> (870) 460-6246</fax>
+    <email> DrewClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="684870676">
+    <county_name>CRAIGHEAD</county_name>
+    <state_id>5</state_id>
+    <name>Nancy Nelms</name>
+    <title>Clerk</title>
+    <phone> (870) 933-4520</phone>
+    <fax> (870) 933-4514</fax>
+    <email> CraigheadClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="412775567">
+    <county_name>HOWARD</county_name>
+    <state_id>5</state_id>
+    <name> Janice Huffman</name>
+    <title>Clerk</title>
+    <phone> (870) 845-7502</phone>
+    <fax> (870) 845-7505</fax>
+    <email> HowardClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="94429442">
+    <county_name>MONROE</county_name>
+    <state_id>5</state_id>
+    <name> Janet Tweedle</name>
+    <title>Clerk</title>
+    <phone> (870) 747-3632</phone>
+    <fax> (870) 747-5961</fax>
+    <email> MonroeClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1067161504">
+    <county_name>NEVADA</county_name>
+    <state_id>5</state_id>
+    <name> Julie Stockton</name>
+    <title>Clerk</title>
+    <phone> (870) 887-2710</phone>
+    <fax> </fax>
+    <email> NevadaClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="739412088">
+    <county_name>FAULKNER</county_name>
+    <state_id>5</state_id>
+    <name> Melinda Reynolds</name>
+    <title> Clerk</title>
+    <phone>(501) 450-4909</phone>
+    <fax> (501) 450-4938</fax>
+    <email> FaulknerClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="27006051">
+    <county_name>COLUMBIA</county_name>
+    <state_id>5</state_id>
+    <name>Sherry Bell</name>
+    <title> Clerk</title>
+    <phone> (870) 235-3774</phone>
+    <fax> (870) 235-3773</fax>
+    <email> ColumbiaClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="456170129">
+    <county_name>SEBASTIAN</county_name>
+    <state_id>5</state_id>
+    <name> Doris Tate</name>
+    <title> Clerk</title>
+    <phone> (479) 782-5065</phone>
+    <fax> (479) 784-1567</fax>
+    <email> SebastianClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1798379957">
+    <county_name>DESHA</county_name>
+    <state_id>5</state_id>
+    <name>Brenda Morgan</name>
+    <title>Clerk</title>
+    <phone> (870) 877-2323</phone>
+    <fax> (870) 877-3413</fax>
+    <email> DeshaClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1052525695">
+    <county_name>LITTLE RIVER</county_name>
+    <state_id>5</state_id>
+    <name> Linda Coleman</name>
+    <title>Clerk</title>
+    <phone> (870) 898-7210</phone>
+    <fax> (870) 898-7207</fax>
+    <email> LittleRiverClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1595030923">
+    <county_name>JEFFERSON</county_name>
+    <state_id>5</state_id>
+    <name> Helen Bradley</name>
+    <title>Clerk</title>
+    <phone> (870) 541-5322</phone>
+    <fax> (870) 541-5324</fax>
+    <email> JeffersonClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1751109915">
+    <county_name>SCOTT</county_name>
+    <state_id>5</state_id>
+    <name> James Owens</name>
+    <title>Clerk</title>
+    <phone> (479) 637-2642</phone>
+    <fax> 479-637-0124</fax>
+    <email> ScottClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="789770426">
+    <county_name>SALINE</county_name>
+    <state_id>5</state_id>
+    <name> Freddy Burton</name>
+    <title> Clerk</title>
+    <phone> (501) 303-5630</phone>
+    <fax> 501-303-5684</fax>
+    <email> SalineClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1694300570">
+    <county_name>NEWTON</county_name>
+    <state_id>5</state_id>
+    <name> Donnie Davis</name>
+    <title>Clerk</title>
+    <phone> (870) 446-5125</phone>
+    <fax> </fax>
+    <email> NewtonClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1132741984">
+    <county_name>UNION</county_name>
+    <state_id>5</state_id>
+    <name> Connie Chandler</name>
+    <title> Clerk</title>
+    <phone> 870-864-1910</phone>
+    <fax> </fax>
+    <email> UnionClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1772268225">
+    <county_name>GRANT</county_name>
+    <state_id>5</state_id>
+    <name> Carol Ewing</name>
+    <title>Clerk</title>
+    <phone> (870) 942-2631</phone>
+    <fax> (870) 942-3564</fax>
+    <email> GrantClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="195430961">
+    <county_name>OUACHITA</county_name>
+    <state_id>5</state_id>
+    <name>Britt Williford</name>
+    <title>Clerk</title>
+    <phone> (870) 837-2220</phone>
+    <fax> (870) 837-2217</fax>
+    <email> OuachitaClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1301714445">
+    <county_name>FRANKLIN</county_name>
+    <state_id>5</state_id>
+    <name>Sharon Needham</name>
+    <title> Clerk</title>
+    <phone> (479) 667-3607</phone>
+    <fax> (479) 667-4247</fax>
+    <email> FranklinClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1987106751">
+    <county_name>CLEVELAND</county_name>
+    <state_id>5</state_id>
+    <name>Sharon Gray</name>
+    <title>Clerk</title>
+    <phone> (870) 325-6521</phone>
+    <fax> (870) 325-6144</fax>
+    <email> ClevelandClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="294331232">
+    <county_name>FULTON</county_name>
+    <state_id>5</state_id>
+    <name>Vickie Bishop</name>
+    <title>Clerk</title>
+    <phone> (870) 895-3310</phone>
+    <fax> (870) 895-3383</fax>
+    <email> FultonClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1825168086">
+    <county_name>LAWRENCE</county_name>
+    <state_id>5</state_id>
+    <name> Tina Stowers</name>
+    <title>Clerk</title>
+    <phone> (870) 886-1111</phone>
+    <fax> </fax>
+    <email> LawrenceClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1572184177">
+    <county_name>PERRY</county_name>
+    <state_id>5</state_id>
+    <name> Barbara Lovell</name>
+    <title>Clerk</title>
+    <phone> (501) 889-5126</phone>
+    <fax> (501) 889-5759</fax>
+    <email> PerryClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1807850205">
+    <county_name>JACKSON</county_name>
+    <state_id>5</state_id>
+    <name> Dottie Calhoun</name>
+    <title>Clerk</title>
+    <phone> (870) 523-7420</phone>
+    <fax> (870) 523-7404</fax>
+    <email> JacksonClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="2118709423">
+    <county_name>LONOKE</county_name>
+    <state_id>5</state_id>
+    <name> Prudie Percefull</name>
+    <title>Clerk</title>
+    <phone> (501) 676-2368</phone>
+    <fax> (501) 676-3038</fax>
+    <email> LonokeClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="264241847">
+    <county_name>WASHINGTON</county_name>
+    <state_id>5</state_id>
+    <name> Karen Pritchard</name>
+    <title>Clerk</title>
+    <phone> (479) 444-1711</phone>
+    <fax> (479) 444-1894</fax>
+    <email> WashingtonClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="460727502">
+    <county_name>BENTON</county_name>
+    <state_id>5</state_id>
+    <name>Mary Slinkard</name>
+    <title>Clerk</title>
+    <phone> (479) 271-1013</phone>
+    <fax> </fax>
+    <email> BentonClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1300367933">
+    <county_name>HOT SPRING</county_name>
+    <state_id>5</state_id>
+    <name> Mary Walters</name>
+    <title> Clerk</title>
+    <phone>(501) 332-2291</phone>
+    <fax> (501) 337-5260</fax>
+    <email> HotSpringClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="880417250">
+    <county_name>MONTGOMERY</county_name>
+    <state_id>5</state_id>
+    <name> Debbie Baxter</name>
+    <title> Clerk</title>
+    <phone> (870) 867-3521</phone>
+    <fax> </fax>
+    <email> MontgomeryClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="638080713">
+    <county_name>CLARK</county_name>
+    <state_id>5</state_id>
+    <name>Rhonda Cole</name>
+    <title>Clerk</title>
+    <phone> (870) 246-5847</phone>
+    <fax> (870) 246-6505</fax>
+    <email> ClarkClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="113370919">
+    <county_name>SEARCY</county_name>
+    <state_id>5</state_id>
+    <name> Wesley Smith</name>
+    <title> Clerk</title>
+    <phone> (870) 448-3807</phone>
+    <fax> 870-448-5005</fax>
+    <email> SearcyClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="2110521652">
+    <county_name>PIKE</county_name>
+    <state_id>5</state_id>
+    <name> Sandy Campbell</name>
+    <title>Clerk</title>
+    <phone> (870) 285-3900</phone>
+    <fax> </fax>
+    <email> PikeClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="1534289182">
+    <county_name>POPE</county_name>
+    <state_id>5</state_id>
+    <name> Don Johnson</name>
+    <title>Clerk</title>
+    <phone> (479) 968-6064</phone>
+    <fax> (479) 967-2291</fax>
+    <email> PopeClerk@arkansasclerks.com</email>
+  </election_official>
+  <election_official id="667061300">
+    <county_name>LOGAN</county_name>
+    <state_id>5</state_id>
+    <name> Lynda Brooks</name>
+    <title>Clerk</title>
+    <phone> (479) 963-2618</phone>
+    <fax> (479) 963-9017</fax>
+    <email> LoganClerk@arkansasclerks.com</email>
+  </election_official>
+</listings>

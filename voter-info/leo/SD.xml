@@ -1,0 +1,589 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="1115523573">
+    <county_name>SPINK</county_name>
+    <state_id>46</state_id>
+    <name>Cindy  Schultz</name>
+    <title> </title>
+    <phone>605-472-4580</phone>
+    <fax>605-472-4582</fax>
+    <email>cindy.schultz@state.sd.us</email>
+  </election_official>
+  <election_official id="1459201375">
+    <county_name>GREGORY</county_name>
+    <state_id>46</state_id>
+    <name> Jim Waterbury</name>
+    <title> </title>
+    <phone>605-775-2664</phone>
+    <fax>605-775-2596</fax>
+    <email>jim.waterbury@state.sd.us</email>
+  </election_official>
+  <election_official id="766912352">
+    <county_name>BRULE</county_name>
+    <state_id>46</state_id>
+    <name>Pam Petrak</name>
+    <title> </title>
+    <phone>605-234-4430</phone>
+    <fax>605-234-4430</fax>
+    <email>brulaud@midstatesd.net</email>
+  </election_official>
+  <election_official id="549562078">
+    <county_name>HUTCHINSON</county_name>
+    <state_id>46</state_id>
+    <name>Jeanie Simonsen</name>
+    <title> </title>
+    <phone>605-387-4212</phone>
+    <fax>605-387-4209</fax>
+    <email>jeanie.simonsen@state.sd.us</email>
+  </election_official>
+  <election_official id="292660389">
+    <county_name>MEADE</county_name>
+    <state_id>46</state_id>
+    <name>Lisa Schieffer</name>
+    <title> </title>
+    <phone>605-347-2360</phone>
+    <fax> 605-347-5925</fax>
+    <email> auditor@meadecounty.org</email>
+  </election_official>
+  <election_official id="984395062">
+    <county_name>FAULK</county_name>
+    <state_id>46</state_id>
+    <name>Pat</name>
+    <title>Holdren</title>
+    <phone>605-598-6224</phone>
+    <fax>605-598-6680</fax>
+    <email>faulkaud@westtelco.com</email>
+  </election_official>
+  <election_official id="993997369">
+    <county_name>SULLY</county_name>
+    <state_id>46</state_id>
+    <name>Patty McGee</name>
+    <title> </title>
+    <phone> 605-258-2541</phone>
+    <fax>605-258-2884</fax>
+    <email>sullyaud@venturecomm.net</email>
+  </election_official>
+  <election_official id="269138891">
+    <county_name>STANLEY</county_name>
+    <state_id>46</state_id>
+    <name>Lola Scott</name>
+    <title> </title>
+    <phone> 605-223-7780</phone>
+    <fax>605-223-7791</fax>
+    <email>lola.scott@state.sd.us </email>
+  </election_official>
+  <election_official id="2018268136">
+    <county_name>BROWN</county_name>
+    <state_id>46</state_id>
+    <name>Maxine Taylor</name>
+    <title> </title>
+    <phone>605-626-7110</phone>
+    <fax>605-626-4010</fax>
+    <email>auditor@brown.sd.us</email>
+  </election_official>
+  <election_official id="743390707">
+    <county_name>CODINGTON</county_name>
+    <state_id>46</state_id>
+    <name>Cindy Brugman</name>
+    <title> </title>
+    <phone>605-882-6297</phone>
+    <fax>605-882-6288</fax>
+    <email>cbrugman@codington.org</email>
+  </election_official>
+  <election_official id="90723884">
+    <county_name>BENNETT</county_name>
+    <state_id>46</state_id>
+    <name>Susan Williams</name>
+    <title> </title>
+    <phone>605-685-6931</phone>
+    <fax>605-685-6311</fax>
+    <email>susan.williams@state.sd.us</email>
+  </election_official>
+  <election_official id="1684034950">
+    <county_name>MCPHERSON</county_name>
+    <state_id>46</state_id>
+    <name> Steven Serr</name>
+    <title> </title>
+    <phone>605-439-3314</phone>
+    <fax>605-439-3394</fax>
+    <email>mcphersonaud@valleytel.net</email>
+  </election_official>
+  <election_official id="">
+    <county_name>TODD</county_name>
+    <state_id>46</state_id>
+  </election_official>
+  <election_official id="678799546">
+    <county_name>MELLETTE</county_name>
+    <state_id>46</state_id>
+    <name>Jerry  Schwarting</name>
+    <title> </title>
+    <phone> 605-259-3291</phone>
+    <fax>605-259-3194</fax>
+    <email>jerry.schwarting@state.sd.us</email>
+  </election_official>
+  <election_official id="">
+    <county_name>SHANNON</county_name>
+    <state_id>46</state_id>
+  </election_official>
+  <election_official id="1876134674">
+    <county_name>DEUEL</county_name>
+    <state_id>46</state_id>
+    <name>Pam Lynde</name>
+    <title> </title>
+    <phone>605-874-2312</phone>
+    <fax>605-874-1306</fax>
+    <email>pam.lynde@state.sd.us</email>
+  </election_official>
+  <election_official id="1630730445">
+    <county_name>MINNEHAHA</county_name>
+    <state_id>46</state_id>
+    <name>Sue Roust</name>
+    <title> </title>
+    <phone>605-367-4220</phone>
+    <fax>605-367-7409</fax>
+    <email>sroust@minnehahacounty.org</email>
+  </election_official>
+  <election_official id="700314297">
+    <county_name>CLAY</county_name>
+    <state_id>46</state_id>
+    <name>Ruth Bremer</name>
+    <title> </title>
+    <phone>605-677-7120</phone>
+    <fax>605-677-7104</fax>
+    <email>ruth.bremer@claycountysd.org</email>
+  </election_official>
+  <election_official id="901596593">
+    <county_name>LINCOLN</county_name>
+    <state_id>46</state_id>
+    <name>Paula Feucht</name>
+    <title> </title>
+    <phone>605-764-2581</phone>
+    <fax>605-764-0134</fax>
+    <email>Auditor@lincolncountysd.org</email>
+  </election_official>
+  <election_official id="903773746">
+    <county_name>BON HOMME</county_name>
+    <state_id>46</state_id>
+    <name>Linda Pesek</name>
+    <title> </title>
+    <phone>605-589-4212</phone>
+    <fax>605-589-4202</fax>
+    <email>linda.pesek@state.sd.us</email>
+  </election_official>
+  <election_official id="1325719017">
+    <county_name>AURORA</county_name>
+    <state_id>46</state_id>
+    <name>Susan Urban</name>
+    <title> </title>
+    <phone> 605-942-7752</phone>
+    <fax> 605-942-7746</fax>
+    <email> susan.urban@state.sd.us</email>
+  </election_official>
+  <election_official id="1558726368">
+    <county_name>LYMAN</county_name>
+    <state_id>46</state_id>
+    <name>Pam Michalek</name>
+    <title> </title>
+    <phone>605-869-2247</phone>
+    <fax>605-869-2203</fax>
+    <email>auditor@lymancounty.org</email>
+  </election_official>
+  <election_official id="1510373080">
+    <county_name>LAKE</county_name>
+    <state_id>46</state_id>
+    <name>Kay Schmidt</name>
+    <title> </title>
+    <phone>605-256-7600</phone>
+    <fax>605-256-7622</fax>
+    <email>lakeauditor@iw.net</email>
+  </election_official>
+  <election_official id="1377301190">
+    <county_name>TRIPP</county_name>
+    <state_id>46</state_id>
+    <name>Kathleen Flakus</name>
+    <title> </title>
+    <phone>605-842-3727</phone>
+    <fax>605-842-1116</fax>
+    <email>kathleen.flakus@state.sd.us</email>
+  </election_official>
+  <election_official id="1922012039">
+    <county_name>MARSHALL</county_name>
+    <state_id>46</state_id>
+    <name>Julie Hagen</name>
+    <title> </title>
+    <phone>605-448-2401</phone>
+    <fax>605-448-2116</fax>
+    <email>mcauditor@sbtc.net</email>
+  </election_official>
+  <election_official id="473676856">
+    <county_name>BUTTE</county_name>
+    <state_id>46</state_id>
+    <name>Elaine Jensen</name>
+    <title> </title>
+    <phone>605-892-4485</phone>
+    <fax>605-892-4525</fax>
+    <email>elaine.jensen@state.sd.us</email>
+  </election_official>
+  <election_official id="408825032">
+    <county_name>MOODY</county_name>
+    <state_id>46</state_id>
+    <name>Lori Schaefers</name>
+    <title> </title>
+    <phone>605-997-3161</phone>
+    <fax>605-997-9996</fax>
+    <email>mcaud1@moodycounty.net</email>
+  </election_official>
+  <election_official id="751375328">
+    <county_name>HAMLIN</county_name>
+    <state_id>46</state_id>
+    <name>Dixie Opdahl</name>
+    <title> </title>
+    <phone>605-783-3201</phone>
+    <fax>605-783-3201</fax>
+    <email>dixie.opdahl@state.sd.us</email>
+  </election_official>
+  <election_official id="1588902107">
+    <county_name>DAVISON</county_name>
+    <state_id>46</state_id>
+    <name>Susan Kiepke</name>
+    <title> </title>
+    <phone>605-995-8608</phone>
+    <fax>605-995-8618</fax>
+    <email>auditor@davisoncounty.org</email>
+  </election_official>
+  <election_official id="552985794">
+    <county_name>CAMPBELL</county_name>
+    <state_id>46</state_id>
+    <name>Lisa Schaefbauer</name>
+    <title> </title>
+    <phone>605-955-3366</phone>
+    <fax>605-955-3308</fax>
+    <email>lisa.schaefbauer@state.sd.us</email>
+  </election_official>
+  <election_official id="1118242198">
+    <county_name>HYDE</county_name>
+    <state_id>46</state_id>
+    <name>Colleen Leisinger</name>
+    <title> </title>
+    <phone>605-852-2519</phone>
+    <fax>605-852-3178</fax>
+    <email>colleen.leisinger@state.sd.us</email>
+  </election_official>
+  <election_official id="1799274819">
+    <county_name>DEWEY</county_name>
+    <state_id>46</state_id>
+    <name>Adele Enright</name>
+    <title> </title>
+    <phone>605-865-3672</phone>
+    <fax>605-865-3691</fax>
+    <email>adele.enright@state.sd.us</email>
+  </election_official>
+  <election_official id="24956577">
+    <county_name>MINER</county_name>
+    <state_id>46</state_id>
+    <name>Susan Connor</name>
+    <title> </title>
+    <phone>605-772-4671</phone>
+    <fax>605-772-4821</fax>
+    <email>minerauditor@alliancecom.net</email>
+  </election_official>
+  <election_official id="1849344043">
+    <county_name>POTTER</county_name>
+    <state_id>46</state_id>
+    <name>Karen Doerr</name>
+    <title> </title>
+    <phone>605-765-9408</phone>
+    <fax>605-765-2836</fax>
+    <email>pcaudit@sbtc.net</email>
+  </election_official>
+  <election_official id="1767805804">
+    <county_name>ROBERTS</county_name>
+    <state_id>46</state_id>
+    <name>Dawn Sattler</name>
+    <title> </title>
+    <phone>605-698-7336</phone>
+    <fax>605-698-4277</fax>
+    <email>dawn.sattler@state.sd.us</email>
+  </election_official>
+  <election_official id="1082474166">
+    <county_name>BEADLE</county_name>
+    <state_id>46</state_id>
+    <name>Connie Muth</name>
+    <title> </title>
+    <phone>605-353-8400</phone>
+    <fax>605-353-8402</fax>
+    <email>beadle@midco.net</email>
+  </election_official>
+  <election_official id="1139757040">
+    <county_name>DOUGLAS</county_name>
+    <state_id>46</state_id>
+    <name>Karen Blume</name>
+    <title> </title>
+    <phone>605-724-2423</phone>
+    <fax>605-724-2204</fax>
+    <email>karen.blume@state.sd.us</email>
+  </election_official>
+  <election_official id="625465711">
+    <county_name>HANSON</county_name>
+    <state_id>46</state_id>
+    <name>Lesa Trabing</name>
+    <title> </title>
+    <phone>605-239-4714</phone>
+    <fax>605-239-4296</fax>
+    <email>lesa.trabing@state.sd.us</email>
+  </election_official>
+  <election_official id="537353669">
+    <county_name>EDMUNDS</county_name>
+    <state_id>46</state_id>
+    <name>Keith Schurr</name>
+    <title> </title>
+    <phone>605-426-6762</phone>
+    <fax>605-426-6164</fax>
+    <email>keith.schurr@state.sd.us</email>
+  </election_official>
+  <election_official id="1501346706">
+    <county_name>HAND</county_name>
+    <state_id>46</state_id>
+    <name>Sandy Selting</name>
+    <title> </title>
+    <phone>605-853-2182</phone>
+    <fax>605-853-2769</fax>
+    <email>auditor.handcoem@midconetwork.com</email>
+  </election_official>
+  <election_official id="1148785602">
+    <county_name>TURNER</county_name>
+    <state_id>46</state_id>
+    <name>Sheila  Hagemann </name>
+    <title> </title>
+    <phone> 605-297-3153</phone>
+    <fax>605-297-5556</fax>
+    <email>turcoaud@iw.net</email>
+  </election_official>
+  <election_official id="767884604">
+    <county_name>CORSON</county_name>
+    <state_id>46</state_id>
+    <name>Dorothy  Schuh</name>
+    <title> </title>
+    <phone>605-273-4229</phone>
+    <fax>605-273-4233</fax>
+    <email>corsonauditor@sdplains.com</email>
+  </election_official>
+  <election_official id="296857016">
+    <county_name>ZIEBACH</county_name>
+    <state_id>46</state_id>
+    <name>Cindy Longbrake</name>
+    <title> </title>
+    <phone>605-365-5157</phone>
+    <fax>605-365-5204</fax>
+    <email>cindy.longbrake@state.sd.us</email>
+  </election_official>
+  <election_official id="492898384">
+    <county_name>UNION</county_name>
+    <state_id>46</state_id>
+    <name>Carol  Klumper</name>
+    <title> </title>
+    <phone>605-356-2101</phone>
+    <fax>605-356-3047</fax>
+    <email>ucauditor@iw.net</email>
+  </election_official>
+  <election_official id="1463118261">
+    <county_name>GRANT</county_name>
+    <state_id>46</state_id>
+    <name>Karen Layher</name>
+    <title> </title>
+    <phone>605-432-6711</phone>
+    <fax>605-432-9004</fax>
+    <email>karen.layher@state.sd.us</email>
+  </election_official>
+  <election_official id="1028643850">
+    <county_name>HAAKON</county_name>
+    <state_id>46</state_id>
+    <name>Freeman Patricia</name>
+    <title> </title>
+    <phone>605-859-2800</phone>
+    <fax>605-859-2801</fax>
+    <email>haakon@gwtc.net</email>
+  </election_official>
+  <election_official id="2037242964">
+    <county_name>DAY</county_name>
+    <state_id>46</state_id>
+    <name>Sandra Raap</name>
+    <title> </title>
+    <phone>605-345-9500</phone>
+    <fax>605-345-9507</fax>
+    <email>sandra.raap@state.sd.us</email>
+  </election_official>
+  <election_official id="1795480464">
+    <county_name>FALL RIVER</county_name>
+    <state_id>46</state_id>
+    <name>Sue Ganje</name>
+    <title> </title>
+    <phone>605-745-5130</phone>
+    <fax>605-745-6835</fax>
+    <email>sue.ganje@state.sd.us</email>
+  </election_official>
+  <election_official id="94824376">
+    <county_name>PERKINS</county_name>
+    <state_id>46</state_id>
+    <name>Sylvia Chapman</name>
+    <title> </title>
+    <phone>605-244-5624</phone>
+    <fax>605-244-7289</fax>
+    <email>sylvia.chapman@state.sd.us</email>
+  </election_official>
+  <election_official id="1199127722">
+    <county_name>CHARLES MIX</county_name>
+    <state_id>46</state_id>
+    <name>Angela Meyerink</name>
+    <title> </title>
+    <phone>605-487-7131</phone>
+    <fax>605-487-7221</fax>
+    <email>cmixaud@hcinet.net</email>
+  </election_official>
+  <election_official id="5811763">
+    <county_name>LAWRENCE</county_name>
+    <state_id>46</state_id>
+    <name>Connie Atkinson</name>
+    <title> </title>
+    <phone>605-578-1941</phone>
+    <fax>605-578-1065</fax>
+    <email>catkinso@lawrence.sd.us</email>
+  </election_official>
+  <election_official id="1700878026">
+    <county_name>WALWORTH</county_name>
+    <state_id>46</state_id>
+    <name>Gwenn Ackerman</name>
+    <title> </title>
+    <phone>605-649-7878</phone>
+    <fax> 605-649-7867</fax>
+    <email>auditor.walworthco@midconetwork.com</email>
+  </election_official>
+  <election_official id="1070994199">
+    <county_name>PENNINGTON</county_name>
+    <state_id>46</state_id>
+    <name>Julie Pearson</name>
+    <title> </title>
+    <phone>605-394-2153</phone>
+    <fax>  605-394-6840</fax>
+    <email>juliep@co.pennington.sd.us</email>
+  </election_official>
+  <election_official id="609135544">
+    <county_name>JACKSON</county_name>
+    <state_id>46</state_id>
+    <name>Vicki Wilson</name>
+    <title> </title>
+    <phone>605-837-2422</phone>
+    <fax>605-837-2447</fax>
+    <email>vicki.wilson@state.sd.us</email>
+  </election_official>
+  <election_official id="896303976">
+    <county_name>HARDING</county_name>
+    <state_id>46</state_id>
+    <name>Kathy Glines</name>
+    <title> </title>
+    <phone>605-375-3313</phone>
+    <fax>605-375-3318</fax>
+    <email>kathy.glines@state.sd.us</email>
+  </election_official>
+  <election_official id="117075038">
+    <county_name>SANBORN</county_name>
+    <state_id>46</state_id>
+    <name>Diane Larson</name>
+    <title> </title>
+    <phone>605-796-4513</phone>
+    <fax>605-796-4509</fax>
+    <email>sancoaud@santel.net</email>
+  </election_official>
+  <election_official id="609435988">
+    <county_name>KINGSBURY</county_name>
+    <state_id>46</state_id>
+    <name>Jennifer Albrecht</name>
+    <title> </title>
+    <phone>605-854-3832</phone>
+    <fax>605-854-3833</fax>
+    <email>jennifer.albrecht@state.sd.us</email>
+  </election_official>
+  <election_official id="1916891935">
+    <county_name>MCCOOK</county_name>
+    <state_id>46</state_id>
+    <name>Geralyn Sherman</name>
+    <title> </title>
+    <phone>605-425-2791</phone>
+    <fax>605-425-2534</fax>
+    <email>geralyn.sherman@state.sd.us</email>
+  </election_official>
+  <election_official id="839992569">
+    <county_name>BUFFALO</county_name>
+    <state_id>46</state_id>
+    <name>Elaine Wulff</name>
+    <title> </title>
+    <phone>605-293-3217</phone>
+    <fax>605-293-3240</fax>
+    <email>elaine.wulff@state.sd.us</email>
+  </election_official>
+  <election_official id="654131004">
+    <county_name>YANKTON</county_name>
+    <state_id>46</state_id>
+    <name>Paula  Jones</name>
+    <title> </title>
+    <phone>605-260-4400</phone>
+    <fax>605-260-4494</fax>
+    <email>paula@co.yankton.sd.us</email>
+  </election_official>
+  <election_official id="1854626275">
+    <county_name>JERAULD</county_name>
+    <state_id>46</state_id>
+    <name>Cindy Peterson</name>
+    <title> </title>
+    <phone>605-539-9301</phone>
+    <fax>605-539-9125</fax>
+    <email>cindy.peterson@state.sd.us</email>
+  </election_official>
+  <election_official id="399153760">
+    <county_name>CLARK</county_name>
+    <state_id>46</state_id>
+    <name>Nancy Worth</name>
+    <title> </title>
+    <phone>605-532-5921</phone>
+    <fax>605-532-5931</fax>
+    <email>nmw@itctel.com</email>
+  </election_official>
+  <election_official id="1724813428">
+    <county_name>HUGHES</county_name>
+    <state_id>46</state_id>
+    <name>Shellie Baumgart</name>
+    <title> </title>
+    <phone>605-773-7451</phone>
+    <fax>605-773-7479</fax>
+    <email>shellie.baumgart@co.hughes.sd.us</email>
+  </election_official>
+  <election_official id="1040156068">
+    <county_name>CUSTER</county_name>
+    <state_id>46</state_id>
+    <name>Linda Nelson</name>
+    <title> </title>
+    <phone> 605-673-8173</phone>
+    <fax>605-673-8150</fax>
+    <email>lnelson@custercountysd.com</email>
+  </election_official>
+  <election_official id="490357081">
+    <county_name>JONES</county_name>
+    <state_id>46</state_id>
+    <name>John Brunskill</name>
+    <title> </title>
+    <phone>605-669-7100</phone>
+    <fax>605-669-7120</fax>
+    <email>john.brunskill@state.sd.us</email>
+  </election_official>
+  <election_official id="1148746695">
+    <county_name>BROOKINGS</county_name>
+    <state_id>46</state_id>
+    <name>Vicki Buseth</name>
+    <title> </title>
+    <phone>605-696-8200</phone>
+    <fax>605-696-8211</fax>
+    <email> vbuseth@brookingscountysd.gov</email>
+  </election_official>
+</listings>

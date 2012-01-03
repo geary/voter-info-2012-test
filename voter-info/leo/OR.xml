@@ -1,0 +1,329 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="687034251">
+    <county_name>POLK</county_name>
+    <state_id>41</state_id>
+    <name>Valerie Unger </name>
+    <title>  Polk County Clerk </title>
+    <phone>  (503) 623-9217</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1714975175">
+    <county_name>CURRY</county_name>
+    <state_id>41</state_id>
+    <name>Reneé Kolen </name>
+    <title>  Curry County Clerk </title>
+    <phone>  (541) 247-3297  </phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1091743060">
+    <county_name>WASCO</county_name>
+    <state_id>41</state_id>
+    <name>Karen LeBreton Coats</name>
+    <title> Wasco County Clerk </title>
+    <phone> (541) 506-2530</phone>
+    <fax/>
+    <email> </email>
+  </election_official>
+  <election_official id="1664346844">
+    <county_name>GILLIAM</county_name>
+    <state_id>41</state_id>
+    <name>Rena Kennedy </name>
+    <title>  Gilliam County Clerk </title>
+    <phone>  (541) 384-2311 </phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="209942294">
+    <county_name>WALLOWA</county_name>
+    <state_id>41</state_id>
+    <name>Dana Roberts</name>
+    <title> Wallowa County Clerk </title>
+    <phone> (541) 426-4543, Ext. 17 </phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="340947625">
+    <county_name>CLATSOP</county_name>
+    <state_id>41</state_id>
+    <name>Cathie Garber</name>
+    <title>  Interim Clatsop County Clerk</title>
+    <phone>  (503) 325-8511</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1133661173">
+    <county_name>MARION</county_name>
+    <state_id>41</state_id>
+    <name>Bill Burgess</name>
+    <title>  Marion County Clerk</title>
+    <phone>  (503) 588-5041</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="8926667">
+    <county_name>YAMHILL</county_name>
+    <state_id>41</state_id>
+    <name>Jan Coleman</name>
+    <title>  Yamhill County Clerk </title>
+    <phone>  (503) 434-7518</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1207180957">
+    <county_name>COOS</county_name>
+    <state_id>41</state_id>
+    <name> Terri Turi </name>
+    <title>  Coos County Clerk</title>
+    <phone>  (541) 396-3121, Ext. 301</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="666651719">
+    <county_name>LINN</county_name>
+    <state_id>41</state_id>
+    <name>Steven Druckenmiller </name>
+    <title>  Linn County Clerk </title>
+    <phone>  (541) 967-3831</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="187888866">
+    <county_name>KLAMATH</county_name>
+    <state_id>41</state_id>
+    <name>Linda Smith </name>
+    <title>  Klamath County Clerk </title>
+    <phone>  (541) 883-5157</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="571302383">
+    <county_name>CROOK</county_name>
+    <state_id>41</state_id>
+    <name>Deanna (Dee) Berman </name>
+    <title>  Crook County Clerk </title>
+    <phone>  (541) 447-6553</phone>
+    <fax>  </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1140559547">
+    <county_name>LINCOLN</county_name>
+    <state_id>41</state_id>
+    <name>Dana Jenkins </name>
+    <title>  Lincoln County Clerk </title>
+    <phone>  (541) 265-4131</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1980422176">
+    <county_name>DESCHUTES</county_name>
+    <state_id>41</state_id>
+    <name>Nancy Blankenship </name>
+    <title>  Deschutes County Clerk </title>
+    <phone>  (541) 388-6546</phone>
+    <fax>  (541) 383-4424</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1865728730">
+    <county_name>LAKE</county_name>
+    <state_id>41</state_id>
+    <name>Stacie Geaney </name>
+    <title>  Lake County Clerk </title>
+    <phone>  (541) 947-6006</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="359831833">
+    <county_name>MULTNOMAH</county_name>
+    <state_id>41</state_id>
+    <name>Tim Scott</name>
+    <title>  Director of Elections </title>
+    <phone>  (503) 988-3720 </phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="897983818">
+    <county_name>MALHEUR</county_name>
+    <state_id>41</state_id>
+    <name>Deborah R. DeLong </name>
+    <title>  Malheur County Clerk </title>
+    <phone>  (541) 473-5151</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1258705392">
+    <county_name>LANE</county_name>
+    <state_id>41</state_id>
+    <name>Annette Newingham </name>
+    <title>  Chief Deputy County Clerk </title>
+    <phone>  (541) 682-4234</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2017850502">
+    <county_name>JOSEPHINE</county_name>
+    <state_id>41</state_id>
+    <name>Art Harvey</name>
+    <title>  Josephine County Clerk </title>
+    <phone>  (541) 474-5243</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="140960503">
+    <county_name>UMATILLA</county_name>
+    <state_id>41</state_id>
+    <name>Patti Chapman</name>
+    <title> Director of Elections </title>
+    <phone> (541) 278-6254 </phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1310843215">
+    <county_name>COLUMBIA</county_name>
+    <state_id>41</state_id>
+    <name> Elizabeth (Betty) Huser </name>
+    <title>  Columbia County Clerk </title>
+    <phone>  (503) 397-7214, Ext. 8444</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="658583640">
+    <county_name>DOUGLAS</county_name>
+    <state_id>41</state_id>
+    <name>Barbara Nielsen </name>
+    <title>  Douglas County Clerk </title>
+    <phone>  (541) 440-4252 </phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1921302896">
+    <county_name>WHEELER</county_name>
+    <state_id>41</state_id>
+    <name>Barbara S. Sitton </name>
+    <title>  Wheeler County Clerk </title>
+    <phone>  (541) 763-2400</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1008252032">
+    <county_name>BAKER</county_name>
+    <state_id>41</state_id>
+    <name>Tamara J. Green </name>
+    <title>  Baker County Clerk </title>
+    <phone>  (541) 523-8207</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="817751037">
+    <county_name>TILLAMOOK</county_name>
+    <state_id>41</state_id>
+    <name>Tassi O'Neil </name>
+    <title> Tillamook County Clerk </title>
+    <phone> (503) 842-3402 </phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="32405694">
+    <county_name>SHERMAN</county_name>
+    <state_id>41</state_id>
+    <name>Linda Cornie </name>
+    <title>  Sherman County Clerk </title>
+    <phone> (541) 565-3606</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1918180101">
+    <county_name>JEFFERSON</county_name>
+    <state_id>41</state_id>
+    <name>Kathy Marston </name>
+    <title>  Jefferson County Clerk </title>
+    <phone>  (541) 475-4451</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1215015777">
+    <county_name>UNION</county_name>
+    <state_id>41</state_id>
+    <name>Robin Church</name>
+    <title> Union County Clerk </title>
+    <phone> (541) 963-1006 </phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="182273974">
+    <county_name>GRANT</county_name>
+    <state_id>41</state_id>
+    <name>Kathy McKinnon </name>
+    <title>  Grant County Clerk </title>
+    <phone>  (541) 575-1675</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="193115364">
+    <county_name>MORROW</county_name>
+    <state_id>41</state_id>
+    <name>Bobbi Childers </name>
+    <title> Morrow County Clerk </title>
+    <phone>  (541) 676-5604</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="150203211">
+    <county_name>CLACKAMAS</county_name>
+    <state_id>41</state_id>
+    <name>Sherry Hall </name>
+    <title>  Clackamas County Clerk </title>
+    <phone>  (503) 655-8510</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1573415877">
+    <county_name>JACKSON</county_name>
+    <state_id>41</state_id>
+    <name>Christine Walker</name>
+    <title>  Jackson County Clerk </title>
+    <phone>  (541) 774-6148</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1271104346">
+    <county_name>HOOD RIVER</county_name>
+    <state_id>41</state_id>
+    <name>Sandra Berry</name>
+    <title>  Director, Records/Assessment</title>
+    <phone>  (541) 386-1442</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="261902583">
+    <county_name>WASHINGTON</county_name>
+    <state_id>41</state_id>
+    <name>Mickie Kawai</name>
+    <title>   Elections Division</title>
+    <phone>  (503) 846-5800</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="970079522">
+    <county_name>BENTON</county_name>
+    <state_id>41</state_id>
+    <name>James Morales </name>
+    <title>  Manager of Records/Elections</title>
+    <phone>  (541) 766-6756</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1662451918">
+    <county_name>HARNEY</county_name>
+    <state_id>41</state_id>
+    <name>Maria Iturriaga </name>
+    <title>  Harney County Clerk </title>
+    <phone>  (541) 573-6641</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+</listings>

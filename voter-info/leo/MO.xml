@@ -1,0 +1,1049 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="1208418163">
+    <county_name>POLK</county_name>
+    <state_id>29</state_id>
+    <name>Wendy M. Flanigan </name>
+    <title> Board of Election Commissioners</title>
+    <phone> (816) 858-4400</phone>
+    <fax> (816) 858-3387</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1069673087">
+    <county_name>REYNOLDS</county_name>
+    <state_id>29</state_id>
+    <name>Mike Harper </name>
+    <title> County Clerk </title>
+    <phone> (573) 648-2494, X 12</phone>
+    <fax> (573) 648-2296</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1057947180">
+    <county_name>CRAWFORD</county_name>
+    <state_id>29</state_id>
+    <name>Connie Smith </name>
+    <title> County Clerk </title>
+    <phone> (573) 775-2376</phone>
+    <fax> (573) 775-3066</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="487728729">
+    <county_name>ATCHISON</county_name>
+    <state_id>29</state_id>
+    <name>Susette Taylor</name>
+    <title> County Clerk</title>
+    <phone> (660) 744-6214</phone>
+    <fax> (660) 744-5499</fax>
+    <email> atchdev@rpt.coop</email>
+  </election_official>
+  <election_official id="2037667515">
+    <county_name>DEKALB</county_name>
+    <state_id>29</state_id>
+    <name>Mary Berry </name>
+    <title> County Clerk </title>
+    <phone> (816) 449-5402</phone>
+    <fax> (816) 449-2440</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1361400759">
+    <county_name>GASCONADE</county_name>
+    <state_id>29</state_id>
+    <name>Lesa Lietzow </name>
+    <title> County Clerk </title>
+    <phone> (573) 486-5427</phone>
+    <fax> (573) 486-8893</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1959264587">
+    <county_name>MADISON</county_name>
+    <state_id>29</state_id>
+    <name>Donal Firebaugh </name>
+    <title> County Clerk </title>
+    <phone> (573) 783-2176</phone>
+    <fax> (573) 783-5351</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1178106561">
+    <county_name>RALLS</county_name>
+    <state_id>29</state_id>
+    <name>Ernie Duckworth</name>
+    <title> County Clerk </title>
+    <phone> (573) 985-7111</phone>
+    <fax> (573) 985-6100</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1928025149">
+    <county_name>CARROLL</county_name>
+    <state_id>29</state_id>
+    <name>Peggy McGaugh </name>
+    <title> County Clerk </title>
+    <phone> (660) 542-0615</phone>
+    <fax> (660) 542-0621</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1817313096">
+    <county_name>ADAIR</county_name>
+    <state_id>29</state_id>
+    <name>Sandy Collop </name>
+    <title> Adair County </title>
+    <phone> (660) 665-3350</phone>
+    <fax> (660) 785-3233</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="224181968">
+    <county_name>OSAGE</county_name>
+    <state_id>29</state_id>
+    <name>Stanley Strope </name>
+    <title> County Clerk </title>
+    <phone> (573) 897-2139</phone>
+    <fax> (573) 897-4741</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1687611593">
+    <county_name>HOWELL</county_name>
+    <state_id>29</state_id>
+    <name>Dennis K. Von Allmen </name>
+    <title> County Clerk  </title>
+    <phone> (417) 256-2591</phone>
+    <fax> (417) 256-2512</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1145850528">
+    <county_name>NEW MADRID</county_name>
+    <state_id>29</state_id>
+    <name>Clement Cravens </name>
+    <title> County Clerk </title>
+    <phone> (573) 748-2524</phone>
+    <fax> (573) 748-9269</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="32146001">
+    <county_name>LEWIS</county_name>
+    <state_id>29</state_id>
+    <name>Sharon Schlager </name>
+    <title> County Clerk</title>
+    <phone> (573) 767-5205</phone>
+    <fax> (573) 767-8245</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="477046907">
+    <county_name>DADE</county_name>
+    <state_id>29</state_id>
+    <name>Larry W. McGuire </name>
+    <title>County Clerk </title>
+    <phone> (417) 637-2724</phone>
+    <fax> (417) 637-1006</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="933324370">
+    <county_name>PULASKI</county_name>
+    <state_id>29</state_id>
+    <name>Diana Linnenbringer </name>
+    <title> County Clerk</title>
+    <phone> (573) 774-4701</phone>
+    <fax> (573) 774-5601</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1193566382">
+    <county_name>AUDRAIN</county_name>
+    <state_id>29</state_id>
+    <name>Shelley Harvey </name>
+    <title>County Clerk </title>
+    <phone>(573) 473-5820</phone>
+    <fax>(573) 581-2380</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1928210868">
+    <county_name>DALLAS</county_name>
+    <state_id>29</state_id>
+    <name>Pam Louderbaugh </name>
+    <title> County Clerk </title>
+    <phone> (417) 345-2632</phone>
+    <fax> (417) 345-5321</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="991649223">
+    <county_name>SAINT LOUIS CITY</county_name>
+    <state_id>29</state_id>
+    <name>Scott Leiendecker </name>
+    <title> Board of Election Commissioners</title>
+    <phone> (314) 622-4336</phone>
+    <fax> (314) 622-3587</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1107792866">
+    <county_name>GREENE</county_name>
+    <state_id>29</state_id>
+    <name>Richard T. Struckhoff </name>
+    <title> County Clerk </title>
+    <phone> (417) 868-4055</phone>
+    <fax>(417) 868-4170</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="976098097">
+    <county_name>SAINTE GENEVIEVE</county_name>
+    <state_id>29</state_id>
+    <name>Kay Basler </name>
+    <title>  County Clerk </title>
+    <phone>(573) 883-5779</phone>
+    <fax> (573) 883-5312</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="462581919">
+    <county_name>RANDOLPH</county_name>
+    <state_id>29</state_id>
+    <name>Jim Sears </name>
+    <title> County Clerk </title>
+    <phone> (660) 277-4717</phone>
+    <fax> (660) 277-3246</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="830672441">
+    <county_name>GENTRY</county_name>
+    <state_id>29</state_id>
+    <name>Carol Reidlinger </name>
+    <title> County Clerk </title>
+    <phone> (660) 726-3525</phone>
+    <fax> (660) 726-4478</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1308939553">
+    <county_name>OREGON</county_name>
+    <state_id>29</state_id>
+    <name>Gary Hensley </name>
+    <title> County Clerk </title>
+    <phone> (417) 778-7475</phone>
+    <fax> (417) 778-7488</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1079174141">
+    <county_name>MISSISSIPPI</county_name>
+    <state_id>29</state_id>
+    <name>Hubert (Junior) DeLay, Jr.</name>
+    <title> County Clerk </title>
+    <phone> (573) 683-2146 ext. 221</phone>
+    <fax> (573) 683-6071</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1990355712">
+    <county_name>CHARITON</county_name>
+    <state_id>29</state_id>
+    <name>Susan Littleton </name>
+    <title> County Clerk </title>
+    <phone> (660) 288-3273</phone>
+    <fax> (660) 288-3403</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1902911875">
+    <county_name>BARRY</county_name>
+    <state_id>29</state_id>
+    <name>Gary Youngblood </name>
+    <title> County Clerk</title>
+    <phone> (417) 847-2561</phone>
+    <fax> (417) 847-5311</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1230842763">
+    <county_name>MACON</county_name>
+    <state_id>29</state_id>
+    <name>Pat Clarke </name>
+    <title> County Clerk </title>
+    <phone> (660) 385-2913 </phone>
+    <fax> (660) 385-7203</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2032577702">
+    <county_name>LACLEDE</county_name>
+    <state_id>29</state_id>
+    <name>Glenda Mott </name>
+    <title> County Clerk </title>
+    <phone> (417) 532-5471</phone>
+    <fax> (417) 588-9288</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1989114890">
+    <county_name>MARION</county_name>
+    <state_id>29</state_id>
+    <name>Robert J. Ravenscraft </name>
+    <title> County Clerk </title>
+    <phone> (573) 769-2549</phone>
+    <fax> (573) 769-4312</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1782326767">
+    <county_name>GRUNDY</county_name>
+    <state_id>29</state_id>
+    <name>Kristy Urich </name>
+    <title> County Clerk </title>
+    <phone> (660) 359-4040 ext. 4</phone>
+    <fax> (660) 359-6786</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="262301603">
+    <county_name>SHANNON</county_name>
+    <state_id>29</state_id>
+    <name>Shelly McAfee </name>
+    <title> County Clerk</title>
+    <phone> (573) 226-3414</phone>
+    <fax> (573) 226-5321</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="114178498">
+    <county_name>LIVINGSTON</county_name>
+    <state_id>29</state_id>
+    <name>Kelly Christopher</name>
+    <title> County Clerk </title>
+    <phone> 660-646-8000, ext. 3</phone>
+    <fax> (660) 646-8105</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1289676993">
+    <county_name>BUCHANAN</county_name>
+    <state_id>29</state_id>
+    <name>Pat Conway </name>
+    <title> County Clerk </title>
+    <phone> (816) 271-1412</phone>
+    <fax> (816) 271-1535</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1159695456">
+    <county_name>MCDONALD</county_name>
+    <state_id>29</state_id>
+    <name>Barbara Williams</name>
+    <title> County Clerk </title>
+    <phone> (417) 223-7532</phone>
+    <fax> (417) 223-7519</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2116844239">
+    <county_name>RAY</county_name>
+    <state_id>29</state_id>
+    <name>Lynn Rogers </name>
+    <title> County Clerk </title>
+    <phone> (816) 776-4502</phone>
+    <fax> (816) 776-4512</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1979268697">
+    <county_name>HENRY</county_name>
+    <state_id>29</state_id>
+    <name>Gene Pogue </name>
+    <title> County Clerk </title>
+    <phone> (660) 885-7204 </phone>
+    <fax> (660) 890-2963</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="439733315">
+    <county_name>WARREN</county_name>
+    <state_id>29</state_id>
+    <name>Barbara Daly </name>
+    <title> County Clerk </title>
+    <phone> (636) 456-3331</phone>
+    <fax> (636) 456-1801</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="961352518">
+    <county_name>MILLER</county_name>
+    <state_id>29</state_id>
+    <name>Clayton E. Jenkins </name>
+    <title> County Clerk </title>
+    <phone> (573) 369-1910</phone>
+    <fax> (573) 369-1905</fax>
+    <email> coclerk@millercountymo.org</email>
+  </election_official>
+  <election_official id="1744433374">
+    <county_name>BARTON</county_name>
+    <state_id>29</state_id>
+    <name>Kristina Crockett </name>
+    <title> County Clerk </title>
+    <phone> (417) 682-3529</phone>
+    <fax> (417) 682-4100</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="569326738">
+    <county_name>MONITEAU</county_name>
+    <state_id>29</state_id>
+    <name>Anita E. Groepper </name>
+    <title> County Clerk </title>
+    <phone> (573) 796-4661</phone>
+    <fax> (573) 796-3082</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1284527563">
+    <county_name>CEDAR</county_name>
+    <state_id>29</state_id>
+    <name>Peggy Kenney </name>
+    <title> County Clerk </title>
+    <phone>(417) 276-6700 Ext. 221</phone>
+    <fax> (417) 276-3461</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="646662071">
+    <county_name>LINN</county_name>
+    <state_id>29</state_id>
+    <name>Peggy Ward </name>
+    <title> County Clerk </title>
+    <phone> (660) 895-5417</phone>
+    <fax> (660) 895-5527</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="110135763">
+    <county_name>WAYNE</county_name>
+    <state_id>29</state_id>
+    <name>Alan R. Lutes</name>
+    <title> County Clerk </title>
+    <phone> (573) 224-3012</phone>
+    <fax> (573) 224-5609</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1735797628">
+    <county_name>BATES</county_name>
+    <state_id>29</state_id>
+    <name>Marlene Wainscott </name>
+    <title> County Clerk </title>
+    <phone> (660) 679-3371</phone>
+    <fax> (660) 679-9922</fax>
+    <email>  bates@sos.mo.gov</email>
+  </election_official>
+  <election_official id="571948438">
+    <county_name>CLAY</county_name>
+    <state_id>29</state_id>
+    <name>Dave Reinhart</name>
+    <title> Board of Election Commissioners</title>
+    <phone> (816) 415-8683</phone>
+    <fax> (816) 792-5334</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="541984786">
+    <county_name>LINCOLN</county_name>
+    <state_id>29</state_id>
+    <name>Elaine Luck </name>
+    <title> County Clerk </title>
+    <phone> (636) 528-6300, X 1</phone>
+    <fax> (636) 528-5528</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1128166723">
+    <county_name>JOHNSON</county_name>
+    <state_id>29</state_id>
+    <name>Gilbert Powers </name>
+    <title> County Clerk </title>
+    <phone> (660) 747-6161</phone>
+    <fax> (660) 747-1243</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="914979094">
+    <county_name>WORTH</county_name>
+    <state_id>29</state_id>
+    <name>Lisa M. Hargrave </name>
+    <title> County Clerk </title>
+    <phone> (660) 564-2219</phone>
+    <fax> (660) 564-2432</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="251306966">
+    <county_name>LAFAYETTE</county_name>
+    <state_id>29</state_id>
+    <name>Linda Niendick </name>
+    <title> County Clerk </title>
+    <phone> (660) 259-4315</phone>
+    <fax> (660) 259-6109</fax>
+    <email> niendick@lafayettecountymo.com</email>
+  </election_official>
+  <election_official id="679693599">
+    <county_name>BOONE</county_name>
+    <state_id>29</state_id>
+    <name>Wendy Noren </name>
+    <title> County Clerk </title>
+    <phone> (573) 886-4295</phone>
+    <fax> (573) 886-4300</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="413154864">
+    <county_name>RIPLEY</county_name>
+    <state_id>29</state_id>
+    <name>Becky York </name>
+    <title> County Clerk </title>
+    <phone> (573) 996-3215</phone>
+    <fax> (573) 996-9774</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1454657620">
+    <county_name>TEXAS</county_name>
+    <state_id>29</state_id>
+    <name>Donald R. Troutman </name>
+    <title> County Clerk</title>
+    <phone> (417) 967-2112</phone>
+    <fax> (417) 967-3837</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="138839522">
+    <county_name>SAINT CLAIR</county_name>
+    <state_id>29</state_id>
+    <name>Debbie Peden </name>
+    <title> County Clerk </title>
+    <phone> (417) 646-2315</phone>
+    <fax> (417) 646-8080</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1798900144">
+    <county_name>CALLAWAY</county_name>
+    <state_id>29</state_id>
+    <name>Linda Love </name>
+    <title> County Clerk </title>
+    <phone> (573) 642-0730</phone>
+    <fax> (573) 642-7181</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1308039964">
+    <county_name>PHELPS</county_name>
+    <state_id>29</state_id>
+    <name>Carol Bennett </name>
+    <title> County Clerk </title>
+    <phone> (573) 458-6101</phone>
+    <fax> (573) 458-6119</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1540351427">
+    <county_name>STONE</county_name>
+    <state_id>29</state_id>
+    <name>Judy Berkstresser </name>
+    <title> County Clerk </title>
+    <phone> (417) 357-6127</phone>
+    <fax> (417) 357-6861</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1416654778">
+    <county_name>CALDWELL</county_name>
+    <state_id>29</state_id>
+    <name>Beverly Bryant </name>
+    <title> County Clerk </title>
+    <phone> (816) 586-2571</phone>
+    <fax> (816) 586-3600</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="173795938">
+    <county_name>VERNON</county_name>
+    <state_id>29</state_id>
+    <name>Tammi Beach </name>
+    <title> County Clerk </title>
+    <phone> (417) 448-2500</phone>
+    <fax> (417) 667-6035</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1564508163">
+    <county_name>SCHUYLER</county_name>
+    <state_id>29</state_id>
+    <name>Bree Shaw </name>
+    <title> County Clerk </title>
+    <phone> (660) 457-3842</phone>
+    <fax> (660) 457-3016</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="804392973">
+    <county_name>DAVIESS</county_name>
+    <state_id>29</state_id>
+    <name>Linda Steward  </name>
+    <title>County Clerk </title>
+    <phone> (660) 663-2641</phone>
+    <fax> (660) 663-3075</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2004784364">
+    <county_name>PUTNAM</county_name>
+    <state_id>29</state_id>
+    <name>Sue Ann Varner </name>
+    <title> County Clerk Putnam </title>
+    <phone> (660) 947-2674</phone>
+    <fax> (660) 947-4214</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1106390019">
+    <county_name>BUTLER</county_name>
+    <state_id>29</state_id>
+    <name>Tonyi Deffendall </name>
+    <title> County Clerk </title>
+    <phone> (573) 686-8050</phone>
+    <fax> (573) 686-8066</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1920976572">
+    <county_name>SHELBY</county_name>
+    <state_id>29</state_id>
+    <name>Tracy Smith </name>
+    <title> County Clerk </title>
+    <phone> (573) 633-2181</phone>
+    <fax> (573) 633-1004</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1971917438">
+    <county_name>HOWARD</county_name>
+    <state_id>29</state_id>
+    <name>Kathyrne Harper</name>
+    <title> County Clerk </title>
+    <phone> (660) 248-2284</phone>
+    <fax> (660) 248-1075</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1081674701">
+    <county_name>COLE</county_name>
+    <state_id>29</state_id>
+    <name>Marvin Register </name>
+    <title> County Clerk </title>
+    <phone> (573) 634-9106</phone>
+    <fax> (573) 681-9678</fax>
+    <email> mregister@colecounty.org</email>
+  </election_official>
+  <election_official id="1738504231">
+    <county_name>HOLT</county_name>
+    <state_id>29</state_id>
+    <name>Kathy Kunkel </name>
+    <title> County Clerk </title>
+    <phone> (660) 446-3303</phone>
+    <fax> (660) 446-3353</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1489957973">
+    <county_name>PETTIS</county_name>
+    <state_id>29</state_id>
+    <name>Pamela Doane </name>
+    <title> County Clerk </title>
+    <phone> (660) 826-5000, X 918 </phone>
+    <fax> (660) 829-0717</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1481625960">
+    <county_name>HARRISON</county_name>
+    <state_id>29</state_id>
+    <name>Sherry Seltman </name>
+    <title> County Clerk </title>
+    <phone> (660) 425-6424</phone>
+    <fax> (660) 425-3772</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="831383541">
+    <county_name>MONROE</county_name>
+    <state_id>29</state_id>
+    <name>Sandra Francis </name>
+    <title> County Clerk </title>
+    <phone> (660) 327-5106</phone>
+    <fax> (660) 327-1019</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1414400547">
+    <county_name>KANSAS CITY</county_name>
+    <state_id>29</state_id>
+    <name>Shawn Kieffer </name>
+    <title> Board of Election Commissioners </title>
+    <phone> (816) 842-4820</phone>
+    <fax> (816) 472-4960 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="623279614">
+    <county_name>JASPER</county_name>
+    <state_id>29</state_id>
+    <name>Bonnie Earl </name>
+    <title> County Clerk </title>
+    <phone> (417) 358-0416</phone>
+    <fax> (417) 359-1297</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1879503113">
+    <county_name>CASS</county_name>
+    <state_id>29</state_id>
+    <name>Janet Burlingame </name>
+    <title> County Clerk </title>
+    <phone> (816) 380-8102</phone>
+    <fax> (816) 380-8101 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1837174763">
+    <county_name>TANEY</county_name>
+    <state_id>29</state_id>
+    <name>Donna Neeley</name>
+    <title> County Clerk </title>
+    <phone> (417) 546-7203</phone>
+    <fax> (417) 546-2519</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1169324673">
+    <county_name>PLATTE</county_name>
+    <state_id>29</state_id>
+    <name>Mary Beth Erickson </name>
+    <title> Board of Election Commissioners</title>
+    <phone> (816) 858-4400</phone>
+    <fax> (816) 858-3387</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1100806448">
+    <county_name>DENT</county_name>
+    <state_id>29</state_id>
+    <name>Angie Curley </name>
+    <title> County Clerk </title>
+    <phone> (573) 729-4144</phone>
+    <fax> (573) 729-6106</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="422705995">
+    <county_name>CAPE GIRARDEAU</county_name>
+    <state_id>29</state_id>
+    <name>Kara Clark </name>
+    <title> County Clerk </title>
+    <phone> (573) 243-3547</phone>
+    <fax> (573) 204-2418</fax>
+    <email> kclark@capecounty.us</email>
+  </election_official>
+  <election_official id="1389126532">
+    <county_name>DOUGLAS</county_name>
+    <state_id>29</state_id>
+    <name>Karry Davis </name>
+    <title> County Clerk </title>
+    <phone> (417) 683-4714</phone>
+    <fax> (417) 683-1017</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2084763224">
+    <county_name>STODDARD</county_name>
+    <state_id>29</state_id>
+    <name>Don White </name>
+    <title> County Clerk </title>
+    <phone> (573) 568-3339</phone>
+    <fax> (573) 568-2194</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1859304348">
+    <county_name>HICKORY</county_name>
+    <state_id>29</state_id>
+    <name>Jeanne Lindsey </name>
+    <title> County Clerk </title>
+    <phone> (417) 745-6450</phone>
+    <fax> (417) 745-6057</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1462572552">
+    <county_name>KNOX</county_name>
+    <state_id>29</state_id>
+    <name>Debbie McCurren </name>
+    <title> County Clerk </title>
+    <phone> (660) 397-2184</phone>
+    <fax> (660) 397-2642</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1351312019">
+    <county_name>WEBSTER</county_name>
+    <state_id>29</state_id>
+    <name>Stanley D. Whitehurst </name>
+    <title> County Clerk </title>
+    <phone> (417) 468-2223</phone>
+    <fax> (417) 468-5307</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1399316837">
+    <county_name>PEMISCOT</county_name>
+    <state_id>29</state_id>
+    <name>Larry Ray </name>
+    <title> County Clerk</title>
+    <phone> (573) 333-4203</phone>
+    <fax> (573) 333-0440</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="799115020">
+    <county_name>JEFFERSON</county_name>
+    <state_id>29</state_id>
+    <name>Wes Wagner </name>
+    <title> County Clerk </title>
+    <phone> (636) 797-5483</phone>
+    <fax> (636) 797-5360</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="618013454">
+    <county_name>CARTER</county_name>
+    <state_id>29</state_id>
+    <name>Rebecca Simpson Gibbs </name>
+    <title> County Clerk </title>
+    <phone> (573) 323-4527</phone>
+    <fax> (573) 323-4182</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="268246623">
+    <county_name>WRIGHT</county_name>
+    <state_id>29</state_id>
+    <name>Tony Dugger </name>
+    <title> County Clerk </title>
+    <phone>(417) 741-6661</phone>
+    <fax> (417) 741-6142</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="201985918">
+    <county_name>SCOTT</county_name>
+    <state_id>29</state_id>
+    <name>Rita Milam </name>
+    <title> County Clerk </title>
+    <phone> (573) 545-3549</phone>
+    <fax> (573) 545-3540</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1891700686">
+    <county_name>SAINT LOUIS</county_name>
+    <state_id>29</state_id>
+    <name>Mary Wheeler Jones </name>
+    <title> Board of Election Commissioners</title>
+    <phone> (314) 622-4336</phone>
+    <fax> (314) 622-3587</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1978921749">
+    <county_name>SALINE</county_name>
+    <state_id>29</state_id>
+    <name>Kenneth R. Bryant </name>
+    <title> County Clerk </title>
+    <phone> (660) 886-3331</phone>
+    <fax> (660) 886-2644</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="201817818">
+    <county_name>NEWTON</county_name>
+    <state_id>29</state_id>
+    <name>Kay Baum </name>
+    <title> County Clerk </title>
+    <phone>  (417) 451-8221</phone>
+    <fax> (417) 451-7434</fax>
+    <email/>
+  </election_official>
+  <election_official id="309938008">
+    <county_name>SAINT CHARLES</county_name>
+    <state_id>29</state_id>
+    <name>Rich Chrismer</name>
+    <title> St. Charles County Election Authority</title>
+    <phone> (636) 949-7550</phone>
+    <fax> (636) 949-7552</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2037975889">
+    <county_name>FRANKLIN</county_name>
+    <state_id>29</state_id>
+    <name>Debbie Door </name>
+    <title> County Clerk </title>
+    <phone>(636) 583-6355</phone>
+    <fax> (636) 583-7324</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1598637420">
+    <county_name>CHRISTIAN</county_name>
+    <state_id>29</state_id>
+    <name>Kay Brown</name>
+    <title> County Clerk </title>
+    <phone> (417) 581-6360</phone>
+    <fax> (417) 581-8331</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1982321204">
+    <county_name>MARIES</county_name>
+    <state_id>29</state_id>
+    <name>Rhonda Brewer </name>
+    <title> County Clerk </title>
+    <phone> (573) 422-3388</phone>
+    <fax> (573) 422-3269</fax>
+    <email/>
+  </election_official>
+  <election_official id="260380982">
+    <county_name>BOLLINGER</county_name>
+    <state_id>29</state_id>
+    <name>Diane H. Holzum </name>
+    <title> County Clerk </title>
+    <phone> (573) 238-1900 x-333 </phone>
+    <fax> (573) 238-4511</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1497027153">
+    <county_name>OZARK</county_name>
+    <state_id>29</state_id>
+    <name>Kelly Maddox</name>
+    <title> County Clerk </title>
+    <phone> (417) 679-3516</phone>
+    <fax> (417) 679-3209</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2041964105">
+    <county_name>NODAWAY</county_name>
+    <state_id>29</state_id>
+    <name>Beth Walker </name>
+    <title> County Clerk </title>
+    <phone> (660) 582-2251</phone>
+    <fax> (660) 582-5282</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1934952597">
+    <county_name>DUNKLIN</county_name>
+    <state_id>29</state_id>
+    <name>Carol Hinesly </name>
+    <title> County Clerk</title>
+    <phone> (573) 888-1374</phone>
+    <fax> (573) 888-2832</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="110153456">
+    <county_name>LAWRENCE</county_name>
+    <state_id>29</state_id>
+    <name>Gary Emerson </name>
+    <title> County Clerk </title>
+    <phone> (417) 466-2638</phone>
+    <fax> (417) 466-4348 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1137899881">
+    <county_name>PERRY</county_name>
+    <state_id>29</state_id>
+    <name>Randy Taylor </name>
+    <title> County Clerk </title>
+    <phone> (573) 547-4242</phone>
+    <fax> (573) 547-7367</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="671283902">
+    <county_name>JACKSON</county_name>
+    <state_id>29</state_id>
+    <name>Robert C. Nichols</name>
+    <title> Board of Election Commissioners</title>
+    <phone> (816) 325-4600</phone>
+    <fax> (816) 325-4609</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="294734747">
+    <county_name>MERCER</county_name>
+    <state_id>29</state_id>
+    <name>Judith Hamilton </name>
+    <title> County Clerk </title>
+    <phone> (660) 748-3425</phone>
+    <fax> (660) 748-3180</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="589843626">
+    <county_name>COOPER</county_name>
+    <state_id>29</state_id>
+    <name>Darryl Kempf </name>
+    <title> County Clerk </title>
+    <phone> (660) 882-2114</phone>
+    <fax> (660) 882-5645</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="348907552">
+    <county_name>SCOTLAND</county_name>
+    <state_id>29</state_id>
+    <name>Betty Lodewegen </name>
+    <title> County Clerk </title>
+    <phone> (660) 465-7027</phone>
+    <fax> (660) 465-7785</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1759549054">
+    <county_name>WASHINGTON</county_name>
+    <state_id>29</state_id>
+    <name>Janet Adams</name>
+    <title> County Clerk </title>
+    <phone> (573) 438-6111, X 221 </phone>
+    <fax> (573) 438-4038</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1057819648">
+    <county_name>BENTON</county_name>
+    <state_id>29</state_id>
+    <name>Mary Lutman </name>
+    <title> County Clerk </title>
+    <phone>(660) 438-7326</phone>
+    <fax> (660) 438-3275</fax>
+    <email> benton@sos.mo.gov</email>
+  </election_official>
+  <election_official id="1755559049">
+    <county_name>SAINT FRANCOIS</county_name>
+    <state_id>29</state_id>
+    <name>Mark Hedrick </name>
+    <title> County Clerk </title>
+    <phone> (573) 756-5411, X 5</phone>
+    <fax> (573) 431-6967</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="755449966">
+    <county_name>MORGAN</county_name>
+    <state_id>29</state_id>
+    <name>Cathy Daniels </name>
+    <title> County Clerk </title>
+    <phone> (573) 378-5436 Ext. 132</phone>
+    <fax> (573) 378-5991</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="320440892">
+    <county_name>SULLIVAN</county_name>
+    <state_id>29</state_id>
+    <name>Mike Hepler </name>
+    <title> County Clerk</title>
+    <phone> (660) 265-3786 </phone>
+    <fax> (660) 265-3724</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="244258368">
+    <county_name>MONTGOMERY</county_name>
+    <state_id>29</state_id>
+    <name>Pam Cartee </name>
+    <title> County Clerk </title>
+    <phone> (573) 564-3357</phone>
+    <fax> (573) 564-8088</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="823100587">
+    <county_name>CLINTON</county_name>
+    <state_id>29</state_id>
+    <name>Mary Blanton</name>
+    <title> County Clerk </title>
+    <phone> (816) 539-3713</phone>
+    <fax> (816) 539-3072</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="663791519">
+    <county_name>CAMDEN</county_name>
+    <state_id>29</state_id>
+    <name>Rowland Todd </name>
+    <title> County Clerk </title>
+    <phone> (573) 346-4440</phone>
+    <fax> (573) 346-8445</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="253524874">
+    <county_name>IRON</county_name>
+    <state_id>29</state_id>
+    <name>Virginia Queen </name>
+    <title> County Clerk </title>
+    <phone> (573) 546-2912</phone>
+    <fax> (573) 546-6499</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1745208357">
+    <county_name>ANDREW</county_name>
+    <state_id>29</state_id>
+    <name>Cynthia J. Merritt </name>
+    <title> Andrew County</title>
+    <phone> (816) 324-3624</phone>
+    <fax> (816) 324-6154</fax>
+    <email>clerk@andrewcounty.org</email>
+  </election_official>
+  <election_official id="2037449259">
+    <county_name>CLARK</county_name>
+    <state_id>29</state_id>
+    <name>Leih Ann Hayden </name>
+    <title> County Clerk </title>
+    <phone> (660) 727-3283</phone>
+    <fax> (660) 727-1051</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1601554316">
+    <county_name>PIKE</county_name>
+    <state_id>29</state_id>
+    <name>Bob Kirkpatrick </name>
+    <title> County Clerk </title>
+    <phone> (573) 324-2412</phone>
+    <fax> (573) 324-5154</fax>
+    <email> </email>
+  </election_official>
+</listings>

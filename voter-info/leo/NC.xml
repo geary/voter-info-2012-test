@@ -1,0 +1,905 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="1402438654">
+    <county_name>POLK</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Dale Edwards </name>
+    <title> Director</title>
+    <phone> 828-894-8181</phone>
+    <fax> 828-894-3565</fax>
+    <email> POLK.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1773137875">
+    <county_name>AVERY</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Sheila Ollis </name>
+    <title> 	Director</title>
+    <phone> 828-733-8282</phone>
+    <fax> 828-733-8283</fax>
+    <email> AVERY.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="2126251900">
+    <county_name>PAMLICO</county_name>
+    <state_id>37</state_id>
+    <name>Ms Lisa Bennett </name>
+    <title> Director</title>
+    <phone> 252-745-4821</phone>
+    <fax> 252-745-4114</fax>
+    <email> PAMLICO.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="943181532">
+    <county_name>PERQUIMANS</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Eula Forbes </name>
+    <title>Director</title>
+    <phone> 252-426-5598</phone>
+    <fax> 252-426-5068</fax>
+    <email> PERQUIMANS.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1234434588">
+    <county_name>VANCE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Faye Gill </name>
+    <title> Director</title>
+    <phone> 252-492-3730</phone>
+    <fax> 252-430-7370</fax>
+    <email> VANCE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="471852586">
+    <county_name>DAVIDSON</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Ruth Huneycutt </name>
+    <title> Director</title>
+    <phone> 336-242-2190</phone>
+    <fax> 336-242-2199</fax>
+    <email> DAVIDSON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1588777294">
+    <county_name>ALAMANCE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Kathy Holland </name>
+    <title> Director</title>
+    <phone> 336-570-6755</phone>
+    <fax> 336-570-6757</fax>
+    <email> ALAMANCE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1675581557">
+    <county_name>CRAVEN</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Tonya B. Pitts </name>
+    <title> Director</title>
+    <phone> 252-636-6610</phone>
+    <fax> 252-636-6687</fax>
+    <email> CRAVEN.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1964853062">
+    <county_name>MADISON</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Laura Smith </name>
+    <title> Director</title>
+    <phone> 828-649-3731</phone>
+    <fax> 828-649-0187</fax>
+    <email> MADISON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1023619577">
+    <county_name>SWAIN</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Joan Weeks </name>
+    <title> Director</title>
+    <phone> 828-488-6177</phone>
+    <fax> 828-488-6463</fax>
+    <email> SWAIN.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1511411314">
+    <county_name>CHEROKEE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Leighsa Jones </name>
+    <title> Director</title>
+    <phone> 828-837-6670</phone>
+    <fax> 828-837-7998</fax>
+    <email> CHEROKEE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1850238757">
+    <county_name>STOKES</county_name>
+    <state_id>37</state_id>
+    <name>Mr. Jason Perry </name>
+    <title> Director</title>
+    <phone> 336-593-2409</phone>
+    <fax> 336-593-4022</fax>
+    <email> STOKES.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="637534577">
+    <county_name>BRUNSWICK</county_name>
+    <state_id>37</state_id>
+    <name>Mr. Greg Bellamy </name>
+    <title> 	Director</title>
+    <phone> 910-253-2620</phone>
+    <fax> 910-253-2618</fax>
+    <email> BRUNSWICK.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="950217399">
+    <county_name>LEE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Nancy Kimble </name>
+    <title> Director</title>
+    <phone> 919-776-0515</phone>
+    <fax> 919-708-5347</fax>
+    <email> LEE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="613804499">
+    <county_name>NASH</county_name>
+    <state_id>37</state_id>
+    <name>Whitney Davis </name>
+    <title> Director</title>
+    <phone> 252-459-1350</phone>
+    <fax> 252-459-1371</fax>
+    <email> NASH.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1955081649">
+    <county_name>GREENE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Jane Monroe </name>
+    <title> Director</title>
+    <phone> 252-747-5921</phone>
+    <fax> 252-747-2426</fax>
+    <email> GREENE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="742243537">
+    <county_name>CUMBERLAND</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Terri Robertson </name>
+    <title> Director</title>
+    <phone> 910-678-7733</phone>
+    <fax> 910-678-7738</fax>
+    <email> CUMBERLAND.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="446796930">
+    <county_name>YADKIN</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Janet B. Choplin </name>
+    <title> Director</title>
+    <phone> 336-679-4227</phone>
+    <fax> 336-679-2289</fax>
+    <email> YADKIN.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="406047469">
+    <county_name>RANDOLPH</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Patricia S. Foscue </name>
+    <title> Director</title>
+    <phone> 336-318-6900</phone>
+    <fax> 336-318-6903</fax>
+    <email> RANDOLPH.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1790199902">
+    <county_name>FORSYTH</county_name>
+    <state_id>37</state_id>
+    <name>Mr. Robert H. Coffman </name>
+    <title> Director</title>
+    <phone> 336-703-2800</phone>
+    <fax> 336-727-2893</fax>
+    <email> FORSYTH.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="66045101">
+    <county_name>NORTHAMPTON</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Susie Squire </name>
+    <title> Director</title>
+    <phone> 252-534-5681</phone>
+    <fax> 252-534-1202</fax>
+    <email> NORTHAMPTON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1363222861">
+    <county_name>ROWAN</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Nancy Evans </name>
+    <title> Director</title>
+    <phone> 704-216-8140</phone>
+    <fax> 704-216-8145</fax>
+    <email> ROWAN.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1614934383">
+    <county_name>PERSON</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Brenda Whitlow </name>
+    <title> Director</title>
+    <phone> 336-597-1727</phone>
+    <fax> 336-598-0300</fax>
+    <email> PERSON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="354490818">
+    <county_name>SURRY</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Susan Jarrell </name>
+    <title> Director</title>
+    <phone> 336-401-8225</phone>
+    <fax> 336-401-8228</fax>
+    <email> SURRY.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1063192845">
+    <county_name>MACON</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Kimberley M. Bishop </name>
+    <title> Director</title>
+    <phone> 828-349-2034</phone>
+    <fax> 828-349-2557</fax>
+    <email> MACON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="860637679">
+    <county_name>PASQUOTANK</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Linda Page </name>
+    <title> Director</title>
+    <phone> 252-335-1739</phone>
+    <fax> 252-331-2560</fax>
+    <email> PASQUOTANK.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1596482521">
+    <county_name>LENOIR</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Dana King </name>
+    <title> Director</title>
+    <phone> 252-523-0636</phone>
+    <fax> 252-523-3472</fax>
+    <email> LENOIR.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1058470143">
+    <county_name>ALLEGHANY</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Kate Cosner </name>
+    <title> Director</title>
+    <phone> 336-372-4557</phone>
+    <fax> 336-372-5435</fax>
+    <email> ALLEGHANY.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1051230251">
+    <county_name>BURKE</county_name>
+    <state_id>37</state_id>
+    <name>Mr. C. Greer Suttlemyre Jr</name>
+    <title> 	Director</title>
+    <phone> 828-433-1703</phone>
+    <fax> 828-433-1706</fax>
+    <email> BURKE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1778035825">
+    <county_name>CASWELL</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Mary Jo Henderson </name>
+    <title>  Director</title>
+    <phone> 336-694-4010</phone>
+    <fax> 336-694-9924</fax>
+    <email> CASWELL.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="376452674">
+    <county_name>WARREN</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Deborah S. Formyduval </name>
+    <title> Director</title>
+    <phone> 252-257-2114</phone>
+    <fax> 252-257-5232</fax>
+    <email> WARREN.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1078646095">
+    <county_name>GRANVILLE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Tonya Burnette </name>
+    <title> Director</title>
+    <phone> 919-693-2515</phone>
+    <fax> 919-690-0245</fax>
+    <email> GRANVILLE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="251358795">
+    <county_name>CABARRUS</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Linda Grist </name>
+    <title> 	Director</title>
+    <phone> 704-920-2860</phone>
+    <fax> 704-920-2831</fax>
+    <email> CABARRUS.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="505752657">
+    <county_name>DUPLIN</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Suzanne W. Southerland </name>
+    <title> Director</title>
+    <phone> 910-296-2170</phone>
+    <fax> 910-296-2167</fax>
+    <email> DUPLIN.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="706307850">
+    <county_name>WAYNE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Vickie Reed </name>
+    <title> Director</title>
+    <phone> 919-731-1411</phone>
+    <fax> 919-731-1409</fax>
+    <email> WAYNE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="61834903">
+    <county_name>CLAY</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Julie Hall </name>
+    <title> Director</title>
+    <phone> 828-389-6812</phone>
+    <fax> 828-389-3757</fax>
+    <email> CLAY.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="630713587">
+    <county_name>MOORE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Glenda Clendenin </name>
+    <title> Director</title>
+    <phone> 910-947-3868</phone>
+    <fax> 910-947-2389</fax>
+    <email> MOORE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="907146374">
+    <county_name>WILSON</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Ann Cone </name>
+    <title> Director</title>
+    <phone> 252-399-2836</phone>
+    <fax> 252-399-2838</fax>
+    <email> WILSON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="653227559">
+    <county_name>LINCOLN</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Judy Caudill </name>
+    <title> Director</title>
+    <phone> 704-736-8480</phone>
+    <fax> 704-736-8804</fax>
+    <email> LINCOLN.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1250659575">
+    <county_name>MITCHELL</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Amy Woody</name>
+    <title> Director</title>
+    <phone> 828-688-3101</phone>
+    <fax> 828-688-1651</fax>
+    <email> MITCHELL.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1514510165">
+    <county_name>ROBESON</county_name>
+    <state_id>37</state_id>
+    <name>Mr. Dock Locklear </name>
+    <title> Director</title>
+    <phone> 910-671-3080</phone>
+    <fax> 910-671-3089</fax>
+    <email> ROBESON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="81875591">
+    <county_name>GASTON</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Frances Pinion </name>
+    <title> Director</title>
+    <phone> 704-852-6005</phone>
+    <fax> 704-852-6011</fax>
+    <email> GASTON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1081274062">
+    <county_name>MARTIN</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Faye Martin </name>
+    <title> Director</title>
+    <phone> 252-789-4317</phone>
+    <fax> 252-789-4319</fax>
+    <email> MARTIN.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="99366694">
+    <county_name>HERTFORD</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Sheila Fleetwood-Privott </name>
+    <title> Director</title>
+    <phone> 252-358-7812</phone>
+    <fax> 252-358-7803</fax>
+    <email> HERTFORD.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="285487248">
+    <county_name>CALDWELL</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Sandra Rich </name>
+    <title> 	Director</title>
+    <phone> 828-757-1326</phone>
+    <fax> 828-757-1195</fax>
+    <email> CALDWELL.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="74935452">
+    <county_name>CHATHAM</county_name>
+    <state_id>37</state_id>
+    <name>Ms. M. Dawn Stumpf </name>
+    <title> Director</title>
+    <phone> 919-545-8500</phone>
+    <fax> 919-542-6430</fax>
+    <email> CHATHAM.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1744432084">
+    <county_name>BERTIE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Shirlie Davenport </name>
+    <title> 	Director</title>
+    <phone> 252-794-5306</phone>
+    <fax> 252-794-5368</fax>
+    <email> BERTIE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1684724353">
+    <county_name>PITT</county_name>
+    <state_id>37</state_id>
+    <name>Mr. David Davis</name>
+    <title> Director</title>
+    <phone> 252-902-3300</phone>
+    <fax> 252-830-1157</fax>
+    <email> PITT.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="518662943">
+    <county_name>HYDE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Cindy B. Carawan </name>
+    <title> Director</title>
+    <phone> 252-926-4194</phone>
+    <fax> 252-926-3707</fax>
+    <email> HYDE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="261625760">
+    <county_name>CARTERET</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Lindy R. Lewis </name>
+    <title> 	Director</title>
+    <phone> 252-728-8460</phone>
+    <fax> 252-728-8571</fax>
+    <email> CARTERET.boe@ncmail.net </email>
+  </election_official>
+  <election_official id="909099996">
+    <county_name>HARNETT</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Sherre Toler </name>
+    <title> Director</title>
+    <phone> 910-893-7553</phone>
+    <fax> 910-893-4655</fax>
+    <email> HARNETT.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="910973958">
+    <county_name>EDGECOMBE</county_name>
+    <state_id>37</state_id>
+    <name>Mr. Jerry W. Spruell </name>
+    <title> Director</title>
+    <phone> 252-641-7852</phone>
+    <fax> 252-641-1740</fax>
+    <email> EDGECOMBE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1172218249">
+    <county_name>NEW HANOVER</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Bonnie Williams </name>
+    <title> Director</title>
+    <phone> 910-798-7330</phone>
+    <fax> 910-798-7295</fax>
+    <email> NEWHANOVER.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1678024130">
+    <county_name>WATAUGA</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Jane Ann Hodges </name>
+    <title> Director</title>
+    <phone> 828-265-8061</phone>
+    <fax> 828-265-8068</fax>
+    <email> WATAUGA.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1549337291">
+    <county_name>GATES</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Virginia C. Moore </name>
+    <title> Director</title>
+    <phone> 252-357-1780</phone>
+    <fax> 252-357-4341</fax>
+    <email> GATES.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="66644797">
+    <county_name>DARE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Melva B. Garrison </name>
+    <title> Director</title>
+    <phone> 252-475-5631</phone>
+    <fax> 252-475-1223</fax>
+    <email> DARE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="102727235">
+    <county_name>MCDOWELL</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Kimberly Welborn </name>
+    <title> Director</title>
+    <phone> 828-652-7121</phone>
+    <fax> 828-659-3294</fax>
+    <email> MCDOWELL.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1398691452">
+    <county_name>ORANGE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Tracy Reams </name>
+    <title> Director</title>
+    <phone> 919-245-2350</phone>
+    <fax> 919-644-3318</fax>
+    <email> ORANGE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="992446983">
+    <county_name>RICHMOND</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Connie H. Kelly </name>
+    <title> Director</title>
+    <phone> 910-997-8253</phone>
+    <fax> 910-417-4900</fax>
+    <email> RICHMOND.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="774064596">
+    <county_name>STANLY</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Kimberly Wilson </name>
+    <title> Director</title>
+    <phone> 704-986-3647</phone>
+    <fax> 704-986-3798</fax>
+    <email> STANLY.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1278853424">
+    <county_name>CATAWBA</county_name>
+    <state_id>37</state_id>
+    <name>Mr. Larry Brewer </name>
+    <title> Director</title>
+    <phone> 828-464-2424</phone>
+    <fax> 828-464-9832</fax>
+    <email> CATAWBA.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1618493333">
+    <county_name>HALIFAX</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Jacqueline Taylor </name>
+    <title> Director</title>
+    <phone> 252-583-4391</phone>
+    <fax> 252-583-1068</fax>
+    <email> HALIFAX.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="299189535">
+    <county_name>BUNCOMBE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Trena Parker </name>
+    <title> 	Director</title>
+    <phone> 828-250-4200</phone>
+    <fax> 828-250-6262</fax>
+    <email> BUNCOMBE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="872133769">
+    <county_name>CURRITUCK</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Mary Etheridge </name>
+    <title> Director</title>
+    <phone> 252-232-2525</phone>
+    <fax> 252-232-2427</fax>
+    <email> CURRITUCK.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1116558900">
+    <county_name>IREDELL</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Rebecca J. Galliher </name>
+    <title> Director</title>
+    <phone> 704-878-3140</phone>
+    <fax> 704-832-2312</fax>
+    <email> IREDELL.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1938012972">
+    <county_name>ANSON</county_name>
+    <state_id>37</state_id>
+    <name>Tasha A. Coleman</name>
+    <title> Director</title>
+    <phone> 704-694-3072</phone>
+    <fax> 704-695-1363</fax>
+    <email> ANSON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="578055066">
+    <county_name>BLADEN</county_name>
+    <state_id>37</state_id>
+    <name>Mr. Larry Hammond </name>
+    <title> 	Director</title>
+    <phone> 910-862-6951</phone>
+    <fax> 910-862-7820</fax>
+    <email> BLADEN.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1585417803">
+    <county_name>PENDER</county_name>
+    <state_id>37</state_id>
+    <name>Mr. Dennis E. Boyles </name>
+    <title> Director</title>
+    <phone> 910-259-1220</phone>
+    <fax> 910-259-1269</fax>
+    <email> PENDER.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1449546868">
+    <county_name>DAVIE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Margaret Shew </name>
+    <title> Director</title>
+    <phone> 336-753-6072</phone>
+    <fax> 336-751-0185</fax>
+    <email> DAVIE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1012786187">
+    <county_name>UNION</county_name>
+    <state_id>37</state_id>
+    <name>Mr. John Whitley </name>
+    <title> Director</title>
+    <phone> 704-283-3809</phone>
+    <fax> 704-282-1083</fax>
+    <email> UNION.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="2097998955">
+    <county_name>BEAUFORT</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Kellie Hopkins </name>
+    <title> 	Director</title>
+    <phone> 252-946-2321</phone>
+    <fax> 252-974-2962</fax>
+    <email> BEAUFORT.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1152441623">
+    <county_name>FRANKLIN</county_name>
+    <state_id>37</state_id>
+    <name>Ms.. Amy Southerland </name>
+    <title> Director</title>
+    <phone> 919-496-3898</phone>
+    <fax> 919-496-7418</fax>
+    <email> FRANKLIN.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="949779652">
+    <county_name>TYRRELL</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Deborah Swain </name>
+    <title> Director</title>
+    <phone> 252-796-0775</phone>
+    <fax> 252-796-0775</fax>
+    <email> TYRRELL.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="900336256">
+    <county_name>CLEVELAND</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Debra Blanton </name>
+    <title> Director</title>
+    <phone> 704-484-4858</phone>
+    <fax> 704-484-4958</fax>
+    <email> CLEVELAND.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1201619429">
+    <county_name>ASHE</county_name>
+    <state_id>37</state_id>
+    <name>Mr. John Shepherd </name>
+    <title> Director</title>
+    <phone> 336-846-5570</phone>
+    <fax> 336-846-5574</fax>
+    <email> ASHE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="749875508">
+    <county_name>GUILFORD</county_name>
+    <state_id>37</state_id>
+    <name>Mr. George Gilbert </name>
+    <title> Director</title>
+    <phone> 336-641-3836</phone>
+    <fax> 336-641-7676</fax>
+    <email> GUILFORD.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1875304926">
+    <county_name>ONSLOW</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Rose Whitehurst </name>
+    <title> Director</title>
+    <phone> 910-455-4484</phone>
+    <fax> 910-455-1390</fax>
+    <email> ONSLOW.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1374000316">
+    <county_name>HOKE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Caroline Shook </name>
+    <title> Director</title>
+    <phone> 910-875-8751</phone>
+    <fax> 910-875-9084</fax>
+    <email> HOKE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="977238388">
+    <county_name>SAMPSON</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Sylvia Thornton </name>
+    <title> Director</title>
+    <phone> 910-592-5796</phone>
+    <fax> 910-590-2818</fax>
+    <email> SAMPSON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="915368494">
+    <county_name>GRAHAM</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Susan Farley </name>
+    <title> Director</title>
+    <phone> 828-479-7969</phone>
+    <fax> 828-479-4264</fax>
+    <email> grahamco.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="905391033">
+    <county_name>HENDERSON</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Beverly Cunningham </name>
+    <title> Director</title>
+    <phone> 828-697-4970</phone>
+    <fax> 828-697-4590</fax>
+    <email> HENDERSON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="346131255">
+    <county_name>DURHAM</county_name>
+    <state_id>37</state_id>
+    <name>Mr. Michael H. Ashe </name>
+    <title> Director</title>
+    <phone> 919-560-0700</phone>
+    <fax> 919-560-0688</fax>
+    <email> DURHAM.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="414569829">
+    <county_name>WILKES</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Kim Caudill </name>
+    <title> Director</title>
+    <phone> 336-651-7338</phone>
+    <fax> 336-651-7560</fax>
+    <email> WILKES.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1717674972">
+    <county_name>CHOWAN</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Rebecca Lowe </name>
+    <title> Director</title>
+    <phone> 252-482-4010</phone>
+    <fax> 252-482-5920</fax>
+    <email> CHOWAN.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1761762794">
+    <county_name>HAYWOOD</county_name>
+    <state_id>37</state_id>
+    <name>Mr. Robert Inman </name>
+    <title> Director</title>
+    <phone> 828-452-6633</phone>
+    <fax> 828-452-6750</fax>
+    <email> HAYWOOD.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="574301099">
+    <county_name>JACKSON</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Lisa Lovedahl </name>
+    <title> Director</title>
+    <phone> 828-586-7538</phone>
+    <fax> 828-586-1951</fax>
+    <email> JACKSON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1339987691">
+    <county_name>JOHNSTON</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Leigh Anne Price </name>
+    <title> Director</title>
+    <phone> 919-989-5095</phone>
+    <fax> 919-989-5142</fax>
+    <email> JOHNSTON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="705135510">
+    <county_name>MECKLENBURG</county_name>
+    <state_id>37</state_id>
+    <name>Mr. Michael Dickerson </name>
+    <title> Director</title>
+    <phone> 704-336-2133</phone>
+    <fax> 704-343-0537</fax>
+    <email> MECKLENBURG.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1736206696">
+    <county_name>SCOTLAND</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Blondell Parker </name>
+    <title> Director</title>
+    <phone> 910-277-2595</phone>
+    <fax> 910-277-2928</fax>
+    <email> SCOTLAND.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1917522048">
+    <county_name>WASHINGTON</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Dora A. Bell </name>
+    <title> Director</title>
+    <phone> 252-793-6017</phone>
+    <fax> 252-793-5801</fax>
+    <email> WASHINGTON.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1471108080">
+    <county_name>MONTGOMERY</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Martha Griego </name>
+    <title> Director</title>
+    <phone> 910-572-2024</phone>
+    <fax> 910-576-2118</fax>
+    <email> MONTGOMERY.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1832081514">
+    <county_name>ROCKINGHAM</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Janet Odell </name>
+    <title> Director</title>
+    <phone> 336-342-8107</phone>
+    <fax> 336-342-8228</fax>
+    <email> ROCKINGHAM.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="585768797">
+    <county_name>CAMDEN</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Elaine Best </name>
+    <title> 	Director</title>
+    <phone> 252-338-5530</phone>
+    <fax> 252-338-1271</fax>
+    <email> CAMDEN.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1161136293">
+    <county_name>RUTHERFORD</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Deborah Jolley Bedford </name>
+    <title> Director</title>
+    <phone> 828-287-6030</phone>
+    <fax> 828-287-6140</fax>
+    <email> RUTHERFORD.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1460520230">
+    <county_name>TRANSYLVANIA</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Judith Mathews </name>
+    <title> Director</title>
+    <phone> 828-884-3114</phone>
+    <fax> 828-884-8682</fax>
+    <email> Transylvania.boe@transylvaniacounty.org</email>
+  </election_official>
+  <election_official id="1643071900">
+    <county_name>WAKE</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Cherie Poucher </name>
+    <title> Director</title>
+    <phone> 919-856-6240</phone>
+    <fax> 919-856-5864</fax>
+    <email> WAKE.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="475751011">
+    <county_name>JONES</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Gail Lee </name>
+    <title> Director</title>
+    <phone> 252-448-3921</phone>
+    <fax> 252-448-1040</fax>
+    <email> JONES.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1437614191">
+    <county_name>YANCEY</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Loretta Robinson </name>
+    <title> Director</title>
+    <phone> 828-682-3950</phone>
+    <fax> 828-682-2209</fax>
+    <email> YANCEY.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1377881461">
+    <county_name>ALEXANDER</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Linda Mundy </name>
+    <title> Director</title>
+    <phone> 828-632-2990</phone>
+    <fax> 828-632-1381</fax>
+    <email> ALEXANDER.boe@ncmail.net</email>
+  </election_official>
+  <election_official id="1066223699">
+    <county_name>COLUMBUS</county_name>
+    <state_id>37</state_id>
+    <name>Ms. Carla Strickland </name>
+    <title> Director</title>
+    <phone> 910-640-6609</phone>
+    <fax> 910-640-0916</fax>
+    <email> COLUMBUS.boe@ncmail.net</email>
+  </election_official>
+</listings>

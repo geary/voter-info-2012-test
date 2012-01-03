@@ -1,0 +1,14 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="1200508714">
+    <county_name>DISTRICT OF COLUMBIA</county_name>
+    <state_id>11</state_id>
+    <name>Teri Stroud</name>
+    <title>FOIA Officer</title>
+    <phone>(202) 727-2525</phone>
+    <fax>(202) 347-2648</fax>
+    <email>boee@dc.gov</email>
+  </election_official>
+</listings>

@@ -1,0 +1,401 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="1646917615">
+    <county_name>LEMHI</county_name>
+    <state_id>16</state_id>
+    <name>Terri Morton</name>
+    <title> Lemhi County Clerk</title>
+    <phone> (208) 756-2815</phone>
+    <fax> (208) 756-8424 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1140372762">
+    <county_name>OWYHEE</county_name>
+    <state_id>16</state_id>
+    <name>Charlotte Sherburn</name>
+    <title> Owyhee County Clerk</title>
+    <phone>(208) 495-2421</phone>
+    <fax> (208) 495-1173 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1273967995">
+    <county_name>BOISE</county_name>
+    <state_id>16</state_id>
+    <name>Constance Swearingen </name>
+    <title> Boise County Clerk</title>
+    <phone> (208) 392-4431</phone>
+    <fax> (208) 392-4473</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1406353988">
+    <county_name>ELMORE</county_name>
+    <state_id>16</state_id>
+    <name>Marsa Grimmett </name>
+    <title> Elmore County Clerk</title>
+    <phone> (208) 587-2131</phone>
+    <fax> (208) 587-2159 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="753828591">
+    <county_name>BOUNDARY</county_name>
+    <state_id>16</state_id>
+    <name>Glenda Poston </name>
+    <title> Boundary County Clerk</title>
+    <phone> (208) 267-2242</phone>
+    <fax> (208) 267-7814 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1800532151">
+    <county_name>MADISON</county_name>
+    <state_id>16</state_id>
+    <name>Marilyn Rigby Rasmussen</name>
+    <title> Madison County Clerk</title>
+    <phone>(208) 356-3662</phone>
+    <fax> (208) 356-8396 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="751929116">
+    <county_name>PAYETTE</county_name>
+    <state_id>16</state_id>
+    <name>Betty Dressen</name>
+    <title> Payette County Clerk</title>
+    <phone> (208) 642-6000</phone>
+    <fax> (208) 642-6011 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1629652851">
+    <county_name>BENEWAH</county_name>
+    <state_id>16</state_id>
+    <name>Michele Reynolds</name>
+    <title>Benewah County Clerk</title>
+    <phone>(208) 245-3212</phone>
+    <fax>(208) 245-3046</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="413414613">
+    <county_name>KOOTENAI</county_name>
+    <state_id>16</state_id>
+    <name>Dan English</name>
+    <title> Kootenai County Clerk</title>
+    <phone> (208) 446-1030</phone>
+    <fax> (208) 446-1039</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1165638584">
+    <county_name>LEWIS</county_name>
+    <state_id>16</state_id>
+    <name>Cathy Larson</name>
+    <title> Lewis County Clerk</title>
+    <phone> (208) 937-2661</phone>
+    <fax> (208) 937-9234 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="410288498">
+    <county_name>GEM</county_name>
+    <state_id>16</state_id>
+    <name>Shelly Gannon </name>
+    <title> Gem County Clerk</title>
+    <phone> (208) 365-4561</phone>
+    <fax> (208) 365-6172</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="129100788">
+    <county_name>BEAR LAKE</county_name>
+    <state_id>16</state_id>
+    <name>Kerry Haddock </name>
+    <title> Bear Lake County Clerk</title>
+    <phone> (208) 945-2212</phone>
+    <fax> (208) 945-2780 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="532914645">
+    <county_name>CARIBOU</county_name>
+    <state_id>16</state_id>
+    <name>Veda Mascarenas </name>
+    <title> Caribou County Clerk</title>
+    <phone> (208) 547-4324</phone>
+    <fax> (208) 547-4759</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="293504051">
+    <county_name>FREMONT</county_name>
+    <state_id>16</state_id>
+    <name>Abbie Mace</name>
+    <title> Fremont County Clerk</title>
+    <phone> (208) 624-7332</phone>
+    <fax> (208) 624-7335</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="467147695">
+    <county_name>IDAHO</county_name>
+    <state_id>16</state_id>
+    <name>Rose E. Gehring</name>
+    <title> Idaho County Clerk</title>
+    <phone> (208) 983-2751</phone>
+    <fax> (208) 983-1428</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1528780322">
+    <county_name>BONNEVILLE</county_name>
+    <state_id>16</state_id>
+    <name>Ron Longmore</name>
+    <title> Bonneville County Clerk</title>
+    <phone> (208) 529-1350x1363</phone>
+    <fax> (208) 529-1188</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="766236197">
+    <county_name>ADA</county_name>
+    <state_id>16</state_id>
+    <name>David Navarro</name>
+    <title> Ada County Clerk</title>
+    <phone> (208) 287-6860</phone>
+    <fax> (208) 287-6849</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="360317198">
+    <county_name>LINCOLN</county_name>
+    <state_id>16</state_id>
+    <name>Liz Kime</name>
+    <title> Lincoln County Clerk</title>
+    <phone> (208) 886-7641</phone>
+    <fax> (208) 886-2458</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="828357846">
+    <county_name>LATAH</county_name>
+    <state_id>16</state_id>
+    <name>Susan R. Petersen</name>
+    <title> Latah County Clerk</title>
+    <phone> (208) 882-8580</phone>
+    <fax> (208) 883-7203</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="592766120">
+    <county_name>SHOSHONE</county_name>
+    <state_id>16</state_id>
+    <name>Peggy Delange-White</name>
+    <title> Shoshone County Clerk</title>
+    <phone> (208) 752-1264</phone>
+    <fax> (208) 753-2711</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="205038379">
+    <county_name>NEZ PERCE</county_name>
+    <state_id>16</state_id>
+    <name>Patty Weeks</name>
+    <title> Nez Perce County Clerk</title>
+    <phone> (208) 799-3020</phone>
+    <fax> (208) 799-3070</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1898547404">
+    <county_name>CLEARWATER</county_name>
+    <state_id>16</state_id>
+    <name>Carrie Bird </name>
+    <title> Clearwater County Clerk</title>
+    <phone> (208) 476-5615</phone>
+    <fax> (208) 476-9315</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1192959783">
+    <county_name>BANNOCK</county_name>
+    <state_id>16</state_id>
+    <name>Dale Hatch </name>
+    <title>Bannock County Clerk</title>
+    <phone> (208) 236-7334</phone>
+    <fax> (208) 236-7345</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="510568848">
+    <county_name>BUTTE</county_name>
+    <state_id>16</state_id>
+    <name>Trilby McAffee</name>
+    <title> Butte County Clerk</title>
+    <phone> (208) 527-3021</phone>
+    <fax> (208) 527-3916</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1133186576">
+    <county_name>BINGHAM</county_name>
+    <state_id>16</state_id>
+    <name>Sara Staub</name>
+    <title> Bingham County Clerk</title>
+    <phone> (208) 785-8040</phone>
+    <fax> (208) 785-4131</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="573201927">
+    <county_name>CASSIA</county_name>
+    <state_id>16</state_id>
+    <name>Larry Mickelsen</name>
+    <title> Cassia County Clerk</title>
+    <phone> (208) 878-4367</phone>
+    <fax> (208) 878-5830</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1422909092">
+    <county_name>CAMAS</county_name>
+    <state_id>16</state_id>
+    <name>Rollie Bennett</name>
+    <title> Camas County Clerk</title>
+    <phone> (208) 764-2242</phone>
+    <fax> (208) 764-2349</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2055594737">
+    <county_name>CANYON</county_name>
+    <state_id>16</state_id>
+    <name>William "Bill" Hurst </name>
+    <title> Canyon County Clerk</title>
+    <phone> (208) 454-7562</phone>
+    <fax> (208) 454-6899 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1963827628">
+    <county_name>BONNER</county_name>
+    <state_id>16</state_id>
+    <name>Marie Scott</name>
+    <title> Bonner County Clerk</title>
+    <phone> (208) 265-1432</phone>
+    <fax> (208) 265-1447</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1602617240">
+    <county_name>GOODING</county_name>
+    <state_id>16</state_id>
+    <name>Denise Gill </name>
+    <title> Gooding County Clerk</title>
+    <phone> (208) 934-4841</phone>
+    <fax> (208) 934-5085</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1119932476">
+    <county_name>JEFFERSON</county_name>
+    <state_id>16</state_id>
+    <name>Christine Boulter</name>
+    <title> Jefferson County Clerk</title>
+    <phone> (208) 745-7756</phone>
+    <fax> (208) 745-9397</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1013692866">
+    <county_name>JEROME</county_name>
+    <state_id>16</state_id>
+    <name>Michelle Emerson</name>
+    <title> Jerome County Clerk</title>
+    <phone> (208) 324-8811</phone>
+    <fax> (208) 324-2719</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1921841620">
+    <county_name>BLAINE</county_name>
+    <state_id>16</state_id>
+    <name>Jolynn Drage </name>
+    <title> Blaine County Clerk</title>
+    <phone> (208) 788-5505</phone>
+    <fax> (208) 788-5501</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="990450761">
+    <county_name>ADAMS</county_name>
+    <state_id>16</state_id>
+    <name>Sherry Ward </name>
+    <title>Adams County Clerk</title>
+    <phone> (208) 253-4561</phone>
+    <fax>(208) 253-4880</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1510446372">
+    <county_name>FRANKLIN</county_name>
+    <state_id>16</state_id>
+    <name>V. Elliott Larsen</name>
+    <title> Franklin County Clerk</title>
+    <phone> (208) 852-1090</phone>
+    <fax> (208) 852-1094</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1663764340">
+    <county_name>VALLEY</county_name>
+    <state_id>16</state_id>
+    <name>Archie N. Banbury, Jr.</name>
+    <title> Valley County Clerk</title>
+    <phone> (208) 382-7100</phone>
+    <fax> (208) 382-7107</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1329246256">
+    <county_name>TWIN FALLS</county_name>
+    <state_id>16</state_id>
+    <name>Kristina Glascock</name>
+    <title> Twin Falls County Clerk</title>
+    <phone> (208) 736-4004</phone>
+    <fax> (208) 736-4182</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2072237546">
+    <county_name>MINIDOKA</county_name>
+    <state_id>16</state_id>
+    <name>Duane D. Smith</name>
+    <title> Minidoka County Clerk</title>
+    <phone> (208) 436-9511</phone>
+    <fax> (208) 436-0737 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1871562355">
+    <county_name>TETON</county_name>
+    <state_id>16</state_id>
+    <name>Mary Lou Hansen </name>
+    <title> Teton County Clerk</title>
+    <phone> (208) 354-2905</phone>
+    <fax> (208) 354-8410</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="752797298">
+    <county_name>WASHINGTON</county_name>
+    <state_id>16</state_id>
+    <name>Sharon Widner</name>
+    <title> Washington County Clerk</title>
+    <phone> (208) 414-2092</phone>
+    <fax> (208) 414-3925 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="879200957">
+    <county_name>CLARK</county_name>
+    <state_id>16</state_id>
+    <name>Lisa Black</name>
+    <title> Clark County Clerk</title>
+    <phone> (208) 374-5304</phone>
+    <fax> (208) 374-5609</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="895217983">
+    <county_name>POWER</county_name>
+    <state_id>16</state_id>
+    <name>Christine Steinlicht</name>
+    <title> Power County Clerk</title>
+    <phone> (208) 226-7611</phone>
+    <fax> (208) 226-7612 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1430895417">
+    <county_name>CUSTER</county_name>
+    <state_id>16</state_id>
+    <name>Barbara C. Breedlove </name>
+    <title> Custer County Clerk</title>
+    <phone> (208) 879-2360</phone>
+    <fax> (208) 879-5246</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1686222921">
+    <county_name>ONEIDA</county_name>
+    <state_id>16</state_id>
+    <name>Shirlee Blaisdell</name>
+    <title> Oneida County Clerk</title>
+    <phone> (208) 766-4116</phone>
+    <fax> (208) 766-2448</fax>
+    <email> </email>
+  </election_official>
+</listings>

@@ -1,0 +1,653 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="1139035392">
+    <county_name>POLK</county_name>
+    <state_id>55</state_id>
+    <name>Cathy Albrecht </name>
+    <title> County Clerk </title>
+    <phone> (715) 485-9226 </phone>
+    <fax> (715) 485-9104 </fax>
+    <email> Cathya@Co.Polk.Wi.Us </email>
+  </election_official>
+  <election_official id="1702087176">
+    <county_name>CRAWFORD</county_name>
+    <state_id>55</state_id>
+    <name>Janet Geisler </name>
+    <title> County Clerk</title>
+    <phone> (608) 326-0201 </phone>
+    <fax> (608) 326-0213 </fax>
+    <email> Jgeisler@Crawfordcountywi.Org </email>
+  </election_official>
+  <election_official id="1676248726">
+    <county_name>EAU CLAIRE</county_name>
+    <state_id>55</state_id>
+    <name>Janet Loomis </name>
+    <title> County Clerk</title>
+    <phone> (715) 839-4803 </phone>
+    <fax> (715) 839-4854 </fax>
+    <email> Janet.Loomis@Co.Eau-Claire.Wi.Us </email>
+  </election_official>
+  <election_official id="2142178002">
+    <county_name>SAINT CROIX</county_name>
+    <state_id>55</state_id>
+    <name>Cindy Campbell </name>
+    <title> County Clerk </title>
+    <phone> (715) 386-4610 </phone>
+    <fax> (715) 381-4400 </fax>
+    <email> Cindyc@Co.Saint-Croix.Wi.Us </email>
+  </election_official>
+  <election_official id="1100769826">
+    <county_name>DOOR</county_name>
+    <state_id>55</state_id>
+    <name>Jill Lau </name>
+    <title> County Clerk</title>
+    <phone> (920) 746-2200 </phone>
+    <fax> (920) 746-2330 </fax>
+    <email> Ljau@Co.Door.Wi.Us </email>
+  </election_official>
+  <election_official id="1391754144">
+    <county_name>MARQUETTE</county_name>
+    <state_id>55</state_id>
+    <name>James Thalacker </name>
+    <title> County Clerk</title>
+    <phone> (608) 297-3061 </phone>
+    <fax> (608) 297-7606 </fax>
+    <email> Jthalacker@Co.Marquette.Wi.Us </email>
+  </election_official>
+  <election_official id="609324524">
+    <county_name>PIERCE</county_name>
+    <state_id>55</state_id>
+    <name>Jamie B. Feuerhelm </name>
+    <title> County Clerk</title>
+    <phone> (715) 273-3531 </phone>
+    <fax> (715) 273-6861 </fax>
+    <email> Jamie.Feuerhelm@Co.Pierce.Wi.Us </email>
+  </election_official>
+  <election_official id="1915132403">
+    <county_name>GREEN</county_name>
+    <state_id>55</state_id>
+    <name>Michael Doyle </name>
+    <title> County Clerk</title>
+    <phone> (608) 328-9430 </phone>
+    <fax> (608) 328-2835 </fax>
+    <email> Mdoyle@Greencountywi.Org </email>
+  </election_official>
+  <election_official id="1456854433">
+    <county_name>SAUK</county_name>
+    <state_id>55</state_id>
+    <name>Beverly J. Mielke </name>
+    <title> County Clerk </title>
+    <phone> (608) 355-3286 </phone>
+    <fax> (608) 355-3522 </fax>
+    <email> Bmielke@Co.Sauk.Wi.Us </email>
+  </election_official>
+  <election_official id="720023874">
+    <county_name>BROWN</county_name>
+    <state_id>55</state_id>
+    <name>Darlene K. Marcelle </name>
+    <title> County Clerk </title>
+    <phone> (920) 448-4021 </phone>
+    <fax> (920) 448-4498 </fax>
+    <email> Marcelle_Dk@Co.Brown.Wi.Us </email>
+  </election_official>
+  <election_official id="230126001">
+    <county_name>ASHLAND</county_name>
+    <state_id>55</state_id>
+    <name>Patricia Somppi </name>
+    <title> County Clerk </title>
+    <phone> (715) 682-7001 </phone>
+    <fax> (715) 682-7032 </fax>
+    <email> Pat.Somppi@Co.Ashland.Wi.Us </email>
+  </election_official>
+  <election_official id="1590120238">
+    <county_name>SAWYER</county_name>
+    <state_id>55</state_id>
+    <name>Kris Mayberry </name>
+    <title> County Clerk </title>
+    <phone> (715) 634-4866 </phone>
+    <fax> (715) 634-6820 </fax>
+    <email> County.Clerk@Sawyercountygov.Org </email>
+  </election_official>
+  <election_official id="2023759291">
+    <county_name>PEPIN</county_name>
+    <state_id>55</state_id>
+    <name>Marcia Bauer </name>
+    <title> County Clerk</title>
+    <phone> (715) 672-8857 </phone>
+    <fax> (715) 672-8677 </fax>
+    <email> Countyclerk@Co.Pepin.Wi.Us </email>
+  </election_official>
+  <election_official id="2003190250">
+    <county_name>TREMPEALEAU</county_name>
+    <state_id>55</state_id>
+    <name>Paul L. Syverson </name>
+    <title> County Clerk</title>
+    <phone> (715) 538-2311 </phone>
+    <fax> (715) 538-4210 </fax>
+    <email> Tcclerk@Tremplocounty.Com </email>
+  </election_official>
+  <election_official id="1822889662">
+    <county_name>BURNETT</county_name>
+    <state_id>55</state_id>
+    <name>Wanda Hinrichs </name>
+    <title> County Clerk </title>
+    <phone> (715) 349-2173 </phone>
+    <fax> (715) 349-2169 </fax>
+    <email> Whinrichs@Burnettcounty.Or </email>
+  </election_official>
+  <election_official id="20074378">
+    <county_name>ROCK</county_name>
+    <state_id>55</state_id>
+    <name>Kay O'connell </name>
+    <title> County Clerk </title>
+    <phone> (608) 757-5667 </phone>
+    <fax> (608) 757-5662 </fax>
+    <email> Kayo@Co.Rock.Wi.Us </email>
+  </election_official>
+  <election_official id="1444067058">
+    <county_name>WAUSHARA</county_name>
+    <state_id>55</state_id>
+    <name>John C. Benz </name>
+    <title> County Clerk </title>
+    <phone> (920) 787-0442 </phone>
+    <fax> (920) 787-0425 </fax>
+    <email> John.Courthouse@Co.Waushara.Wi.Us </email>
+  </election_official>
+  <election_official id="1727023008">
+    <county_name>OUTAGAMIE</county_name>
+    <state_id>55</state_id>
+    <name>Nancy J. Christensen </name>
+    <title> County Clerk</title>
+    <phone> (920) 832-5079 </phone>
+    <fax> (920) 832-2200 </fax>
+    <email> Christnc@Co.Outagamie.Wi.Us </email>
+  </election_official>
+  <election_official id="1161562551">
+    <county_name>DODGE</county_name>
+    <state_id>55</state_id>
+    <name>Karen J. Gibson </name>
+    <title> County Clerk </title>
+    <phone> (920) 386-3602 </phone>
+    <fax> (920) 386-3928 </fax>
+    <email> Kgibson@Co.Dodge.Wi.Us </email>
+  </election_official>
+  <election_official id="1117552916">
+    <county_name>GREEN LAKE</county_name>
+    <state_id>55</state_id>
+    <name>Margaret (Marge) R. </name>
+    <title> County Clerk</title>
+    <phone> (920) 294-4007 </phone>
+    <fax> (920) 294-4009 </fax>
+    <email> Mbostelmann@Co,Green-Lake.Wi.Us </email>
+  </election_official>
+  <election_official id="1155771793">
+    <county_name>BARRON</county_name>
+    <state_id>55</state_id>
+    <name>Deeann Cook </name>
+    <title> County Clerk</title>
+    <phone> (715) 537-6200 </phone>
+    <fax> (715) 537-6277 </fax>
+    <email> Deeann.Cook@Co.Barron.Wi.Us</email>
+  </election_official>
+  <election_official id="1810795393">
+    <county_name>WAUKESHA</county_name>
+    <state_id>55</state_id>
+    <name>Kathy Nickolaus </name>
+    <title> County Clerk </title>
+    <phone> (262) 548-7010 </phone>
+    <fax> (262) 548-7722 </fax>
+    <email> Knickolaus@Waukeshacounty.Gov </email>
+  </election_official>
+  <election_official id="932019672">
+    <county_name>WASHBURN</county_name>
+    <state_id>55</state_id>
+    <name>Lynn Hoeppner </name>
+    <title> County Clerk </title>
+    <phone> (715) 468-4600 </phone>
+    <fax> (715) 468-4725 </fax>
+    <email> Lhoeppne@Co.Washburn.Wi.Us </email>
+  </election_official>
+  <election_official id="2146579444">
+    <county_name>RICHLAND</county_name>
+    <state_id>55</state_id>
+    <name>Victor V. Vlasak </name>
+    <title> County Clerk </title>
+    <phone> (608) 647-2197 </phone>
+    <fax> (608) 647-6134 </fax>
+    <email> Vlasakv@Co.Richland.Wi.Us</email>
+  </election_official>
+  <election_official id="1598195200">
+    <county_name>WINNEBAGO</county_name>
+    <state_id>55</state_id>
+    <name>Susan T. Ertmer </name>
+    <title> County Clerk </title>
+    <phone> (920) 236-4890 </phone>
+    <fax> (920) 303-3025 </fax>
+    <email> Sertmer@Co.Winnebago.Wi.Us</email>
+  </election_official>
+  <election_official id="627959395">
+    <county_name>MARINETTE</county_name>
+    <state_id>55</state_id>
+    <name>Kathy Brandt </name>
+    <title> County Clerk</title>
+    <phone> (715) 732-7407 </phone>
+    <fax> (715) 732-7532 </fax>
+    <email> Mcclerk@Marinettecounty.Com </email>
+  </election_official>
+  <election_official id="256360166">
+    <county_name>LINCOLN</county_name>
+    <state_id>55</state_id>
+    <name>Robert Kunkel </name>
+    <title> County Clerk </title>
+    <phone>  (715) 536-0359 </phone>
+    <fax> (715) 536-6528 </fax>
+    <email> Bkunkel@Co.Lincoln.Wi.Us </email>
+  </election_official>
+  <election_official id="1729660155">
+    <county_name>FLORENCE</county_name>
+    <state_id>55</state_id>
+    <name>Geraldine L. Meyer </name>
+    <title> County Clerk </title>
+    <phone> (715) 528-3201 </phone>
+    <fax> (715) 528-4762 </fax>
+    <email> Jmeyer@Co.Florence.Wi.Us </email>
+  </election_official>
+  <election_official id="375846217">
+    <county_name>WAUPACA</county_name>
+    <state_id>55</state_id>
+    <name>Mary A. Robbins </name>
+    <title> County Clerk </title>
+    <phone> (715) 258-6200 </phone>
+    <fax> (715) 258-6212 </fax>
+    <email> Mrobbi@Co.Waupaca.Wi.Us </email>
+  </election_official>
+  <election_official id="733532943">
+    <county_name>LAFAYETTE</county_name>
+    <state_id>55</state_id>
+    <name>Linda Bawden </name>
+    <title> County Clerk</title>
+    <phone> (608) 776-4850 </phone>
+    <fax> (608) 776-8893 </fax>
+    <email> Linda.Bawden@Lafayettecountywi.Org </email>
+  </election_official>
+  <election_official id="1676929059">
+    <county_name>SHAWANO</county_name>
+    <state_id>55</state_id>
+    <name>Rosemary Bohm </name>
+    <title> County Clerk </title>
+    <phone> (715) 526-9150 </phone>
+    <fax> (715) 524-5157 </fax>
+    <email> Clkrosie@Co.Shawano.Wi.Us </email>
+  </election_official>
+  <election_official id="1275328467">
+    <county_name>MENOMINEE</county_name>
+    <state_id>55</state_id>
+    <name>Ruth Wapoose </name>
+    <title> County Clerk </title>
+    <phone> (715) 799-3311 </phone>
+    <fax> (715) 799-1322 </fax>
+    <email> Ruthwa@Co.Menominee.Wi.Us </email>
+  </election_official>
+  <election_official id="824982173">
+    <county_name>VERNON</county_name>
+    <state_id>55</state_id>
+    <name>Ron Hoff </name>
+    <title> County Clerk </title>
+    <phone> (608) 637-5380 </phone>
+    <fax> (608) 637-5556 </fax>
+    <email> Rhoff@Vernoncounty.Org </email>
+  </election_official>
+  <election_official id="1165743818">
+    <county_name>KENOSHA</county_name>
+    <state_id>55</state_id>
+    <name>Edna Highland </name>
+    <title> County Clerk </title>
+    <phone> (262) 653-2477 </phone>
+    <fax> (262) 653-2564 </fax>
+    <email> Ehighlan@Co.Kenosha.Wi.Us </email>
+  </election_official>
+  <election_official id="114334958">
+    <county_name>FOND DU LAC</county_name>
+    <state_id>55</state_id>
+    <name>Joyce Buechel </name>
+    <title> County Clerk</title>
+    <phone>  (920) 929-3000 </phone>
+    <fax> (920) 929-3293 </fax>
+    <email> Joyce.Buechel@Fdlco.Wi.Gov </email>
+  </election_official>
+  <election_official id="1672912129">
+    <county_name>DUNN</county_name>
+    <state_id>55</state_id>
+    <name>Marilyn Hoyt </name>
+    <title> County Clerk </title>
+    <phone> (715) 232-1677 </phone>
+    <fax> (715) 232-2534 </fax>
+    <email> Mhoyt@Co.Dunn.Wi.Us </email>
+  </election_official>
+  <election_official id="1541496087">
+    <county_name>MANITOWOC</county_name>
+    <state_id>55</state_id>
+    <name>Lois Kiel</name>
+    <title> County Clerk </title>
+    <phone> (920) 683-4004 </phone>
+    <fax> (920) 683-4007 </fax>
+    <email> Loiskiel@Co.Manitowoc.Wi.Us </email>
+  </election_official>
+  <election_official id="1092803660">
+    <county_name>FOREST</county_name>
+    <state_id>55</state_id>
+    <name>Ann Mihalko </name>
+    <title> County Clerk</title>
+    <phone> (715) 478-2422 </phone>
+    <fax> (715) 478-5175 </fax>
+    <email> Amihaldo@Co.Forest.Wi.Us </email>
+  </election_official>
+  <election_official id="1085970216">
+    <county_name>MONROE</county_name>
+    <state_id>55</state_id>
+    <name>Susan A. Matson </name>
+    <title> County Clerk</title>
+    <phone> (608) 269-8705 </phone>
+    <fax> (608) 269-8747 </fax>
+    <email> Smatson@Co.Monroe.Wi.Us </email>
+  </election_official>
+  <election_official id="1799211039">
+    <county_name>COLUMBIA</county_name>
+    <state_id>55</state_id>
+    <name>Sue Moll </name>
+    <title> County Clerk</title>
+    <phone> (608) 742-9654 </phone>
+    <fax> (608) 742-9602 </fax>
+    <email> Sue.Moll@Ces.Uwex.Edu </email>
+  </election_official>
+  <election_official id="1016755920">
+    <county_name>DANE</county_name>
+    <state_id>55</state_id>
+    <name>Robert(Bob) Ohlsen </name>
+    <title> County Clerk </title>
+    <phone> (608) 266-4121 </phone>
+    <fax> (608) 266-2611 </fax>
+    <email> Ohlsen@Co.Dane.Wi.Us </email>
+  </election_official>
+  <election_official id="2010052957">
+    <county_name>DOUGLAS</county_name>
+    <state_id>55</state_id>
+    <name>Susan T. Sandvick </name>
+    <title> County Clerk</title>
+    <phone> (715) 395-1568 </phone>
+    <fax> (715) 395-1421 </fax>
+    <email> Sue.Sandvick@Douglascountywi.Org </email>
+  </election_official>
+  <election_official id="1879193987">
+    <county_name>JUNEAU</county_name>
+    <state_id>55</state_id>
+    <name>Kathleen Kobylski </name>
+    <title> County Clerk </title>
+    <phone> (608) 847-9300 </phone>
+    <fax> (608) 847-9402 </fax>
+    <email> Jcclerk@Co.Juneau.Wi.Us </email>
+  </election_official>
+  <election_official id="1601040412">
+    <county_name>PRICE</county_name>
+    <state_id>55</state_id>
+    <name>Jean Gottwald </name>
+    <title> County Clerk</title>
+    <phone> (715) 339-3325 </phone>
+    <fax> (715) 339-3089 </fax>
+    <email> Jean.Gottwald@Co.Price.Wi.Us </email>
+  </election_official>
+  <election_official id="64343071">
+    <county_name>JEFFERSON</county_name>
+    <state_id>55</state_id>
+    <name>Barbara A. Frank </name>
+    <title> County Clerk</title>
+    <phone> (920) 674-7144 </phone>
+    <fax> (920) 674-7368 </fax>
+    <email> Barbf@Co.Jefferson.Wi.Us</email>
+  </election_official>
+  <election_official id="945282875">
+    <county_name>BAYFIELD</county_name>
+    <state_id>55</state_id>
+    <name>Scott Fibert </name>
+    <title> County Clerk </title>
+    <phone> (715) 373-6100 </phone>
+    <fax> (715) 373-6153 </fax>
+    <email> Sfibert@Bayfieldcounty.Org </email>
+  </election_official>
+  <election_official id="91622014">
+    <county_name>WOOD</county_name>
+    <state_id>55</state_id>
+    <name>Cindy Cepress </name>
+    <title> County Clerk</title>
+    <phone> (715) 421-8460 </phone>
+    <fax> (715) 421-8808 </fax>
+    <email> Ccepress@Co.Wood.Wi.Us </email>
+  </election_official>
+  <election_official id="1208244767">
+    <county_name>MARATHON</county_name>
+    <state_id>55</state_id>
+    <name>Nan Kottke </name>
+    <title> County Clerk</title>
+    <phone> (715) 261-1500 </phone>
+    <fax> (715) 261-1515 </fax>
+    <email> Nrkottke@Mail.Co.Marathon.Wi.Us </email>
+  </election_official>
+  <election_official id="1387050788">
+    <county_name>GRANT</county_name>
+    <state_id>55</state_id>
+    <name>Chris Carl </name>
+    <title> County Clerk</title>
+    <phone> (608) 723-2675 </phone>
+    <fax> (608) 723-4048 </fax>
+    <email> Ccarl@Co.Grant.Wi.Gov </email>
+  </election_official>
+  <election_official id="242460109">
+    <county_name>TAYLOR</county_name>
+    <state_id>55</state_id>
+    <name>Bruce Strama </name>
+    <title> County Clerk </title>
+    <phone> (715) 748-1460 </phone>
+    <fax> (715) 748-1415 </fax>
+    <email> Bruce.Strama@Co.Taylor.Wi.Us </email>
+  </election_official>
+  <election_official id="1183374496">
+    <county_name>ADAMS</county_name>
+    <state_id>55</state_id>
+    <name>Cindy Phillippi </name>
+    <title> County Clerk </title>
+    <phone> (608) 339-4200 </phone>
+    <fax> (608) 339-4514 </fax>
+    <email> Cphillippi@Co.Adams.Wi.Us </email>
+  </election_official>
+  <election_official id="1956630005">
+    <county_name>RUSK</county_name>
+    <state_id>55</state_id>
+    <name>Denise Wetzel </name>
+    <title> County Clerk </title>
+    <phone> (715) 532-2100 </phone>
+    <fax> (715) 532-2237 </fax>
+    <email> Dwetzel@Ruskcountywi.Us </email>
+  </election_official>
+  <election_official id="1739422069">
+    <county_name>OZAUKEE</county_name>
+    <state_id>55</state_id>
+    <name>Julianne Winkelhorst </name>
+    <title> County Clerk </title>
+    <phone> (262) 284-8111</phone>
+    <fax> (262) 284-8100 </fax>
+    <email> Jwinkelhorst@Co.Ozaukee.Wi.Us </email>
+  </election_official>
+  <election_official id="37026068">
+    <county_name>KEWAUNEE</county_name>
+    <state_id>55</state_id>
+    <name>Linda J. Teske </name>
+    <title> County Clerk</title>
+    <phone> (920) 388-7133 </phone>
+    <fax> (920) 388-7195 </fax>
+    <email> Teskel@Kewauneeco.Org </email>
+  </election_official>
+  <election_official id="1075152133">
+    <county_name>VILAS</county_name>
+    <state_id>55</state_id>
+    <name>David R. Alleman </name>
+    <title> County Clerk </title>
+    <phone> (715) 479-3600 </phone>
+    <fax> (715) 479-3605 </fax>
+    <email> Daalle@Co.Vilas.Wi.Us </email>
+  </election_official>
+  <election_official id="1290074664">
+    <county_name>WALWORTH</county_name>
+    <state_id>55</state_id>
+    <name>Kimberly Bushey </name>
+    <title> County Clerk </title>
+    <phone> (262) 741-4245 </phone>
+    <fax> (262) 741-4287 </fax>
+    <email> Kbushey@Co.Walworth.Wi.Us </email>
+  </election_official>
+  <election_official id="2053739426">
+    <county_name>SHEBOYGAN</county_name>
+    <state_id>55</state_id>
+    <name>Julie M. Glancey </name>
+    <title> County Clerk </title>
+    <phone> (920) 459-3002 </phone>
+    <fax> (920) 459-0304 </fax>
+    <email> Glancjmg@Co.Sheboygan.Wi.Us </email>
+  </election_official>
+  <election_official id="1703433439">
+    <county_name>MILWAUKEE</county_name>
+    <state_id>55</state_id>
+    <name>Lisa Weiner</name>
+    <title> County Clerk</title>
+    <phone> (414) 278-4061 </phone>
+    <fax> (414) 223-1866 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="273528605">
+    <county_name>CHIPPEWA</county_name>
+    <state_id>55</state_id>
+    <name>Kathleen Bernier </name>
+    <title> County Clerk </title>
+    <phone> (715) 726-7980 </phone>
+    <fax> (715) 726-7987 </fax>
+    <email> Kbernier@Co.Chippewa.Wi.Us </email>
+  </election_official>
+  <election_official id="10194909">
+    <county_name>JACKSON</county_name>
+    <state_id>55</state_id>
+    <name>Kyle Deno </name>
+    <title> County Clerk</title>
+    <phone> (715) 284-0201 </phone>
+    <fax> (715) 284-0278 </fax>
+    <email> Kyle.Deno@Co.Jackson.Wi.Us </email>
+  </election_official>
+  <election_official id="1416713510">
+    <county_name>WASHINGTON</county_name>
+    <state_id>55</state_id>
+    <name>Brenda Jaszewski </name>
+    <title> County Clerk </title>
+    <phone> (262) 335-4305 </phone>
+    <fax> (262) 306-2208 </fax>
+    <email> Clkbrenda@Co.Washington.Wi.Us </email>
+  </election_official>
+  <election_official id="2028827267">
+    <county_name>PORTAGE</county_name>
+    <state_id>55</state_id>
+    <name>Shirley M. Simoinis </name>
+    <title> County Clerk</title>
+    <phone> (715) 346-1351 </phone>
+    <fax> (715) 346-1486 </fax>
+    <email> Simoniss@Co.Portage.Wi.Us </email>
+  </election_official>
+  <election_official id="1359048444">
+    <county_name>BUFFALO</county_name>
+    <state_id>55</state_id>
+    <name>Roxann Halverson </name>
+    <title> County Clerk</title>
+    <phone> (608) 685-6209 </phone>
+    <fax> (608) 685-6213 </fax>
+    <email> Roxann.Halverson@Buffalocounty.Com </email>
+  </election_official>
+  <election_official id="670104136">
+    <county_name>IOWA</county_name>
+    <state_id>55</state_id>
+    <name>Greg Klusendorf </name>
+    <title> County Clerk</title>
+    <phone> (608) 935-0399 </phone>
+    <fax> (608) 935-3024 </fax>
+    <email> Greg.Klusendorf@Iowacounty.Org </email>
+  </election_official>
+  <election_official id="826197014">
+    <county_name>IRON</county_name>
+    <state_id>55</state_id>
+    <name>Michael Saari </name>
+    <title> County Clerk</title>
+    <phone> (715) 561-3375 </phone>
+    <fax> (715) 561-2928 </fax>
+    <email> Clerk@Ironcountywi.Org </email>
+  </election_official>
+  <election_official id="43448294">
+    <county_name>LANGLADE</county_name>
+    <state_id>55</state_id>
+    <name>Kathryn Jacob </name>
+    <title> County Clerk </title>
+    <phone> (715) 627-6200 </phone>
+    <fax> (715) 627-6303 </fax>
+    <email> Kjacob@Co.Langlade.Wi.Us </email>
+  </election_official>
+  <election_official id="1146748479">
+    <county_name>CALUMET</county_name>
+    <state_id>55</state_id>
+    <name>Beth Hauser </name>
+    <title> County Clerk </title>
+    <phone> (920) 849-1458 </phone>
+    <fax> (920) 849-1469 </fax>
+    <email> Beth@Co.Calumet.Wi.Us </email>
+  </election_official>
+  <election_official id="318604421">
+    <county_name>CLARK</county_name>
+    <state_id>55</state_id>
+    <name>Christina Jensen </name>
+    <title> County Clerk </title>
+    <phone> (715) 743-5148 </phone>
+    <fax> (715) 743-5154 </fax>
+    <email> Christina.Jensen@Co.Clark.Wi.Us </email>
+  </election_official>
+  <election_official id="632297129">
+    <county_name>OCONTO</county_name>
+    <state_id>55</state_id>
+    <name>Judy Ferris </name>
+    <title> County Clerk </title>
+    <phone> (920) 834-6804 </phone>
+    <fax> (920) 834-6805 </fax>
+    <email> Judy.Ferris@Co.Oconto.Wi.Us</email>
+  </election_official>
+  <election_official id="1673154945">
+    <county_name>ONEIDA</county_name>
+    <state_id>55</state_id>
+    <name>Robert G. Bruso </name>
+    <title> County Clerk</title>
+    <phone> (715) 369-6144 </phone>
+    <fax> (715) 369-6230 </fax>
+    <email> Bbruso@Co.Oneida.Wi.Us </email>
+  </election_official>
+  <election_official id="1475556262">
+    <county_name>LA CROSSE</county_name>
+    <state_id>55</state_id>
+    <name>Marion Naegle </name>
+    <title> County Clerk</title>
+    <phone> (608) 785-9581 </phone>
+    <fax> (608) 785-9741 </fax>
+    <email> Naegle.Marion@Co.La-Crosse.Wi.Us </email>
+  </election_official>
+  <election_official id="305004026">
+    <county_name>RACINE</county_name>
+    <state_id>55</state_id>
+    <name>Joan C. Rennert </name>
+    <title> County Clerk </title>
+    <phone> (262) 636-3482 </phone>
+    <fax> (262) 636-3491 </fax>
+    <email> Joanr@Racineco.Com </email>
+  </election_official>
+</listings>

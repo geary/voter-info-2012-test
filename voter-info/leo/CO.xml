@@ -1,0 +1,581 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="788093390">
+    <county_name>MINERAL</county_name>
+    <state_id>8</state_id>
+    <name>Eryn Follman</name>
+    <title> Clerk</title>
+    <phone> (719) 658-2440</phone>
+    <fax> (719) 658-2931</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1840695741">
+    <county_name>GUNNISON</county_name>
+    <state_id>8</state_id>
+    <name>Stella Dominguez</name>
+    <title> Clerk</title>
+    <phone> (970) 641-7927</phone>
+    <fax> (970) 641-7956</fax>
+    <email> sdominguez@gunnisoncounty.org</email>
+  </election_official>
+  <election_official id="1758584901">
+    <county_name>WELD</county_name>
+    <state_id>8</state_id>
+    <name>Steve Moreno</name>
+    <title> Clerk</title>
+    <phone>970-304-6530 </phone>
+    <fax>970-304-6566</fax>
+    <email>smoreno@co.weld.co.us</email>
+  </election_official>
+  <election_official id="111578324">
+    <county_name>GILPIN</county_name>
+    <state_id>8</state_id>
+    <name>Jessica D. Lovingier</name>
+    <title> Clerk</title>
+    <phone> (303) 582-5321</phone>
+    <fax> (303) 565-1797</fax>
+    <email> gcclerk@co.gilpin.co.us</email>
+  </election_official>
+  <election_official id="793069681">
+    <county_name>HUERFANO</county_name>
+    <state_id>8</state_id>
+    <name>Judy Benine</name>
+    <title> Clerk</title>
+    <phone> (719)-738-2380</phone>
+    <fax> (719)-738-2060</fax>
+    <email> judy@huerfano.us</email>
+  </election_official>
+  <election_official id="1275506786">
+    <county_name>LAS ANIMAS</county_name>
+    <state_id>8</state_id>
+    <name>Bernard Gonzales</name>
+    <title> Clerk</title>
+    <phone> 719.845.2568</phone>
+    <fax> 719.845.2598</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="221803724">
+    <county_name>PARK</county_name>
+    <state_id>8</state_id>
+    <name>Debbi Green</name>
+    <title> Clerk</title>
+    <phone> (719) 836-4333</phone>
+    <fax> (719) 836-4348</fax>
+    <email>pcclerk@parkco.us</email>
+  </election_official>
+  <election_official id="728280343">
+    <county_name>PHILLIPS</county_name>
+    <state_id>8</state_id>
+    <name>Beth Cumming</name>
+    <title> Clerk</title>
+    <phone>970.854.2454</phone>
+    <fax>970.854.3811 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="228104567">
+    <county_name>ALAMOSA</county_name>
+    <state_id>8</state_id>
+    <name>Melanie Woodward</name>
+    <title> Clerk</title>
+    <phone> 719-589-6681</phone>
+    <fax>(719) 589-6118</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2016205851">
+    <county_name>TELLER</county_name>
+    <state_id>8</state_id>
+    <name>Patricia Crowson</name>
+    <title> Clerk</title>
+    <phone>(719)689-2951</phone>
+    <fax>(719)686-8030</fax>
+    <email>crowsonp@co.teller.co.us</email>
+  </election_official>
+  <election_official id="1889915459">
+    <county_name>DOLORES</county_name>
+    <state_id>8</state_id>
+    <name>LaRita Randolph</name>
+    <title> Clerk</title>
+    <phone> (970) 677-2381</phone>
+    <fax> (970) 677-4144</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2121466627">
+    <county_name>FREMONT</county_name>
+    <state_id>8</state_id>
+    <name>Norma Hatfield</name>
+    <title> Clerk</title>
+    <phone> (719) 276-7332</phone>
+    <fax> (719) 276-7338</fax>
+    <email> normahat@fremontco.com</email>
+  </election_official>
+  <election_official id="744678813">
+    <county_name>YUMA</county_name>
+    <state_id>8</state_id>
+    <name>Beverly Wenger</name>
+    <title> Clerk</title>
+    <phone> 970-332-5809</phone>
+    <fax> 970-332-5919</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1044886561">
+    <county_name>BROOMFIELD</county_name>
+    <state_id>8</state_id>
+    <name>Russ Ragsdale</name>
+    <title> Clerk</title>
+    <phone> (303) 464-5819</phone>
+    <fax> (303) 438-6228</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1371413908">
+    <county_name>DELTA</county_name>
+    <state_id>8</state_id>
+    <name>Ann B. Eddins</name>
+    <title> Clerk</title>
+    <phone> (970) 874-2150</phone>
+    <fax> (970) 874-2161</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1717142993">
+    <county_name>OURAY</county_name>
+    <state_id>8</state_id>
+    <name>Michelle Nauer</name>
+    <title> Clerk</title>
+    <phone>  (970) 325-4961</phone>
+    <fax> ((970) 325-0452</fax>
+    <email> clerk@ouraycountyco.gov</email>
+  </election_official>
+  <election_official id="1444908444">
+    <county_name>HINSDALE</county_name>
+    <state_id>8</state_id>
+    <name>Linda Pavich Ragle</name>
+    <title> Clerk</title>
+    <phone> (970) 944-2228</phone>
+    <fax> (970) 944-2202</fax>
+    <email> hinsdaleclerk@yahoo.com</email>
+  </election_official>
+  <election_official id="253769288">
+    <county_name>ARCHULETA</county_name>
+    <state_id>8</state_id>
+    <name>June Madrid</name>
+    <title> Clerk</title>
+    <phone> (970) 264-8350</phone>
+    <fax> (970) 264-8357</fax>
+    <email> jmadrid@archuletacounty.org</email>
+  </election_official>
+  <election_official id="929065951">
+    <county_name>BENT</county_name>
+    <state_id>8</state_id>
+    <name>Patti Nickell</name>
+    <title> Clerk</title>
+    <phone> 719-456-1600</phone>
+    <fax> 719-456-0375</fax>
+    <email> bentadmin@bentcounty.net</email>
+  </election_official>
+  <election_official id="1074094700">
+    <county_name>MONTROSE</county_name>
+    <state_id>8</state_id>
+    <name>Francine Tipton-Long</name>
+    <title> Clerk</title>
+    <phone> (970) 249-3362</phone>
+    <fax> (970) 249-0757</fax>
+    <email> flong@co.montrose.co.us</email>
+  </election_official>
+  <election_official id="1039675662">
+    <county_name>MOFFAT</county_name>
+    <state_id>8</state_id>
+    <name>Elaine Sullivan</name>
+    <title> Clerk</title>
+    <phone> (970) 824-9104</phone>
+    <fax> (970) 826-3413</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1355829157">
+    <county_name>GRAND</county_name>
+    <state_id>8</state_id>
+    <name>Sara Rosene</name>
+    <title> Clerk</title>
+    <phone> 970-725-3347</phone>
+    <fax> 970-725-0100</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1812571526">
+    <county_name>LINCOLN</county_name>
+    <state_id>8</state_id>
+    <name>Corinne M. Lengel</name>
+    <title> Clerk</title>
+    <phone> (719) 743-2444</phone>
+    <fax> (719) 743-2524</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="835487579">
+    <county_name>SAN JUAN</county_name>
+    <state_id>8</state_id>
+    <name>Dorothy Zanoni</name>
+    <title> Clerk</title>
+    <phone>(970) 387-5671</phone>
+    <fax>(970) 387-5671</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1191029929">
+    <county_name>LAKE</county_name>
+    <state_id>8</state_id>
+    <name>Patricia Berger</name>
+    <title> Clerk</title>
+    <phone> (719) 486-1410</phone>
+    <fax> (719) 486-3972</fax>
+    <email> pberger@co.lake.co.us</email>
+  </election_official>
+  <election_official id="2130807273">
+    <county_name>KIOWA</county_name>
+    <state_id>8</state_id>
+    <name>Debra Lening</name>
+    <title> Clerk</title>
+    <phone> 719-438-5421</phone>
+    <fax> 719-438-5327</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1548120805">
+    <county_name>ELBERT</county_name>
+    <state_id>8</state_id>
+    <name>Amy Fordyce</name>
+    <title> Clerk</title>
+    <phone> (303) 621-3127</phone>
+    <fax> (303) 621-3168</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="471232080">
+    <county_name>SUMMIT</county_name>
+    <state_id>8</state_id>
+    <name>Cheri Brunvand</name>
+    <title> Clerk</title>
+    <phone>970.453.3470</phone>
+    <fax>970.453.3540</fax>
+    <email>cherib@co.summit.co.us</email>
+  </election_official>
+  <election_official id="1796947642">
+    <county_name>SAGUACHE</county_name>
+    <state_id>8</state_id>
+    <name>Melinda Myers</name>
+    <title> Clerk</title>
+    <phone>(719) 655-2512</phone>
+    <fax>(719) 655-2730</fax>
+    <email>sagclk@centurytel.net</email>
+  </election_official>
+  <election_official id="842051726">
+    <county_name>RIO GRANDE</county_name>
+    <state_id>8</state_id>
+    <name>Sandy jackson</name>
+    <title> Clerk</title>
+    <phone>(719) 657-3344</phone>
+    <fax>(719) 657-2621</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1160283024">
+    <county_name>KIT CARSON</county_name>
+    <state_id>8</state_id>
+    <name>Della Calhoon</name>
+    <title> Clerk</title>
+    <phone> (719) 346-8638</phone>
+    <fax> (719) 346-8721</fax>
+    <email> clerkandrecorder@kitcarsoncounty.org </email>
+  </election_official>
+  <election_official id="1081941108">
+    <county_name>RIO BLANCO</county_name>
+    <state_id>8</state_id>
+    <name>Nancy R. Amick</name>
+    <title> Clerk</title>
+    <phone>(970) 878-9460</phone>
+    <fax>(970) 878-3587</fax>
+    <email>clerk@co.rio-blanco.co.us</email>
+  </election_official>
+  <election_official id="1852106388">
+    <county_name>EL PASO</county_name>
+    <state_id>8</state_id>
+    <name>Robert "Bob" Balink</name>
+    <title> Clerk</title>
+    <phone> (719) 520-6222</phone>
+    <fax> (719) 520-7327</fax>
+    <email> robertbalink@elpasoco.com</email>
+  </election_official>
+  <election_official id="184097086">
+    <county_name>PROWERS</county_name>
+    <state_id>8</state_id>
+    <name>Dorothy McCaslin</name>
+    <title> Clerk</title>
+    <phone> (719) 336-8011</phone>
+    <fax> (719) 336-5306</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="308175381">
+    <county_name>CONEJOS</county_name>
+    <state_id>8</state_id>
+    <name>Lawrence Gallegos</name>
+    <title> Clerk</title>
+    <phone>(719) 376-5422 </phone>
+    <fax> (719) 376-5997</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="703733224">
+    <county_name>CHEYENNE</county_name>
+    <state_id>8</state_id>
+    <name>Kay Feyh</name>
+    <title> Clerk</title>
+    <phone> (719) 767-5685</phone>
+    <fax> (719) 767-8730</fax>
+    <email> cheyclrk@rebeltec.net</email>
+  </election_official>
+  <election_official id="636242834">
+    <county_name>BACA</county_name>
+    <state_id>8</state_id>
+    <name> Sheila Emick</name>
+    <title> Clerk</title>
+    <phone>(719) 523-4372</phone>
+    <fax> (719) 523-4881</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1160401930">
+    <county_name>DOUGLAS</county_name>
+    <state_id>8</state_id>
+    <name>Jack Arrowsmith</name>
+    <title> Clerk</title>
+    <phone> (303) 660-7444</phone>
+    <fax> (303) 688-3067</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1134631042">
+    <county_name>MONTEZUMA</county_name>
+    <state_id>8</state_id>
+    <name> Carol Tullis</name>
+    <title> Clerk</title>
+    <phone> (970) 565-3728</phone>
+    <fax> (970) 564-0215</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1238168758">
+    <county_name>DENVER</county_name>
+    <state_id>8</state_id>
+    <name>Stephanie O'Malley</name>
+    <title> Clerk</title>
+    <phone> (720) 913-8683</phone>
+    <fax> (720) 913-8600</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="687765317">
+    <county_name>CLEAR CREEK</county_name>
+    <state_id>8</state_id>
+    <name>Pam Phipps</name>
+    <title> Clerk</title>
+    <phone> (303) 679-2339</phone>
+    <fax> (303) 679-2416</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1110139465">
+    <county_name>JEFFERSON</county_name>
+    <state_id>8</state_id>
+    <name>Pam Anderson</name>
+    <title> Clerk</title>
+    <phone> (303) 271-8111</phone>
+    <fax> (303) 271-8197</fax>
+    <email> countyclerk@jeffco.us</email>
+  </election_official>
+  <election_official id="125982525">
+    <county_name>GARFIELD</county_name>
+    <state_id>8</state_id>
+    <name>Jean Alberico</name>
+    <title> Clerk</title>
+    <phone> 970.945.2377</phone>
+    <fax> 970.947.1078</fax>
+    <email> jalberico@garfield-county.com</email>
+  </election_official>
+  <election_official id="858932244">
+    <county_name>SEDGWICK</county_name>
+    <state_id>8</state_id>
+    <name>Patrice L Carter</name>
+    <title>Clerk</title>
+    <phone>(970) 474-3346</phone>
+    <fax>(970) 474-0954</fax>
+    <email>pcarter@pctelcom.coop</email>
+  </election_official>
+  <election_official id="884464179">
+    <county_name>PITKIN</county_name>
+    <state_id>8</state_id>
+    <name>Janice Vos Caudill</name>
+    <title> Clerk</title>
+    <phone>(970) 920-5180 </phone>
+    <fax>(970) 920-5196</fax>
+    <email>county_info@co.pitkin.co.us</email>
+  </election_official>
+  <election_official id="1180506022">
+    <county_name>CHAFFEE</county_name>
+    <state_id>8</state_id>
+    <name>Joyce M. Reno</name>
+    <title> Clerk</title>
+    <phone> (719) 539-4004</phone>
+    <fax> 719-539-8588</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1696506594">
+    <county_name>ROUTT</county_name>
+    <state_id>8</state_id>
+    <name>Kay Weinland</name>
+    <title> Clerk</title>
+    <phone>970-870-5556</phone>
+    <fax>970-870-1329</fax>
+    <email>clerk@co.routt.co.us</email>
+  </election_official>
+  <election_official id="1224047814">
+    <county_name>ADAMS</county_name>
+    <state_id>8</state_id>
+    <name>Karen Long</name>
+    <title>Clerk</title>
+    <phone> 303.654.6026</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="898940611">
+    <county_name>COSTILLA</county_name>
+    <state_id>8</state_id>
+    <name>Dolores Burns</name>
+    <title> Clerk</title>
+    <phone> 719.672.3301</phone>
+    <fax> 719.672.3781</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="390703633">
+    <county_name>LA PLATA</county_name>
+    <state_id>8</state_id>
+    <name>Linda Daley</name>
+    <title> Clerk</title>
+    <phone> (970) 382-6294</phone>
+    <fax> (970) 382-6285</fax>
+    <email> Daleylj@co.laplata.co.us</email>
+  </election_official>
+  <election_official id="691511355">
+    <county_name>OTERO</county_name>
+    <state_id>8</state_id>
+    <name>Sharon Sisnroy</name>
+    <title>Clerk</title>
+    <phone> 719.383.3000</phone>
+    <fax> 719.383.3090</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="72210755">
+    <county_name>JACKSON</county_name>
+    <state_id>8</state_id>
+    <name>Hayle Johnson</name>
+    <title> Clerk</title>
+    <phone> (970) 723-4334</phone>
+    <fax> (970) 723-3214</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="667623635">
+    <county_name>ARAPAHOE</county_name>
+    <state_id>8</state_id>
+    <name>Nancy Doty</name>
+    <title> Clerk</title>
+    <phone> (303) 795-4200</phone>
+    <fax> (303) 794-4625</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="593347334">
+    <county_name>WASHINGTON</county_name>
+    <state_id>8</state_id>
+    <name>Garland M. Wahl</name>
+    <title> Clerk</title>
+    <phone>970-345-6565</phone>
+    <fax>970-345-6607</fax>
+    <email>gwahl@co.washington.co.us</email>
+  </election_official>
+  <election_official id="153626905">
+    <county_name>PUEBLO</county_name>
+    <state_id>8</state_id>
+    <name>Gilbert Ortiz</name>
+    <title> Clerk</title>
+    <phone> (719) 583-6507</phone>
+    <fax>(719) 583-4894</fax>
+    <email>ortiz@co.pueblo.co.us</email>
+  </election_official>
+  <election_official id="2011198051">
+    <county_name>EAGLE</county_name>
+    <state_id>8</state_id>
+    <name>Teak Simonton</name>
+    <title> Clerk</title>
+    <phone> 970-328-8710</phone>
+    <fax> 970-328-8716</fax>
+    <email> teak.simonton@eaglecounty.us</email>
+  </election_official>
+  <election_official id="327139780">
+    <county_name>SAN MIGUEL</county_name>
+    <state_id>8</state_id>
+    <name>Peggy Nerlin</name>
+    <title> Clerk</title>
+    <phone>970-728-3954</phone>
+    <fax>970-728-4808 </fax>
+    <email>peggyn@sanmiguelcounty.org </email>
+  </election_official>
+  <election_official id="1992615096">
+    <county_name>MESA</county_name>
+    <state_id>8</state_id>
+    <name>Janice Rich</name>
+    <title> Clerk</title>
+    <phone> (970) 244-1607</phone>
+    <fax> (970) 255-5039</fax>
+    <email> Janice.Rich@mesacounty.us</email>
+  </election_official>
+  <election_official id="2001609791">
+    <county_name>CROWLEY</county_name>
+    <state_id>8</state_id>
+    <name>Lucile Nichols</name>
+    <title> Clerk</title>
+    <phone> 719.267.5555</phone>
+    <fax> 719.267.3114</fax>
+    <email> lnichols@crowleycounty.net</email>
+  </election_official>
+  <election_official id="1131678051">
+    <county_name>MORGAN</county_name>
+    <state_id>8</state_id>
+    <name>Connie Ingmire</name>
+    <title> Clerk</title>
+    <phone> 970-542-3521</phone>
+    <fax> 970-542-3525</fax>
+    <email> clerkmc@co.morgan.co.us</email>
+  </election_official>
+  <election_official id="1736050652">
+    <county_name>LARIMER</county_name>
+    <state_id>8</state_id>
+    <name>Scott Doyle</name>
+    <title> Clerk</title>
+    <phone> (970) 498-7860</phone>
+    <fax> (970) 498-7830</fax>
+    <email> sdoyle@larimer.org</email>
+  </election_official>
+  <election_official id="2238605">
+    <county_name>BOULDER</county_name>
+    <state_id>8</state_id>
+    <name>Hillary Hall</name>
+    <title> Clerk</title>
+    <phone> (303) 413-7740</phone>
+    <fax> (303) 413-7750</fax>
+    <email> clerkandrecorder@bouldercounty.org</email>
+  </election_official>
+  <election_official id="1357475702">
+    <county_name>CUSTER</county_name>
+    <state_id>8</state_id>
+    <name>Debbie Livengood</name>
+    <title> Clerk</title>
+    <phone> 719-783-2441</phone>
+    <fax> 719-783-2885</fax>
+    <email> ccclerk@centurytel.net</email>
+  </election_official>
+  <election_official id="227754747">
+    <county_name>LOGAN</county_name>
+    <state_id>8</state_id>
+    <name>Pamela M. Schneider</name>
+    <title> Clerk</title>
+    <phone> (970) 522-1544</phone>
+    <fax> (970) 522-2063</fax>
+    <email> loganclk@kci.net </email>
+  </election_official>
+</listings>

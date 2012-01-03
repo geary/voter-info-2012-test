@@ -1,0 +1,158 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="1830464394">
+    <county_name>MINERAL</county_name>
+    <state_id>32</state_id>
+    <name>Cherrie A. George</name>
+    <title> County Clerk</title>
+    <phone> (775)-945-2446    </phone>
+    <fax> 945-0706</fax>
+    <email> clerk-treasurer@mineralcountynv.org</email>
+  </election_official>
+  <election_official id="1788367912">
+    <county_name>CHURCHILL</county_name>
+    <state_id>32</state_id>
+    <name>Kelly G. Helton</name>
+    <title> County Clerk</title>
+    <phone> (775)-423-6028</phone>
+    <fax> 423-7069</fax>
+    <email> khelton@churchillcounty.org</email>
+  </election_official>
+  <election_official id="47528360">
+    <county_name>HUMBOLDT</county_name>
+    <state_id>32</state_id>
+    <name>Tami Rae Spero</name>
+    <title> County Clerk</title>
+    <phone> (775)-623-6343    </phone>
+    <fax> 623-6309</fax>
+    <email> coclerkts@hcnv.us</email>
+  </election_official>
+  <election_official id="105716046">
+    <county_name>PERSHING</county_name>
+    <state_id>32</state_id>
+    <name>Donna Giles</name>
+    <title> County Clerk</title>
+    <phone> (775)-273-2208    </phone>
+    <fax> 273-3015</fax>
+    <email> dgiles@pershingcounty.net.</email>
+  </election_official>
+  <election_official id="643117458">
+    <county_name>EUREKA</county_name>
+    <state_id>32</state_id>
+    <name>Jackie Berg </name>
+    <title> County Clerk</title>
+    <phone> (775)-237-5262    </phone>
+    <fax> 237-6015</fax>
+    <email> jberg_ecct@eurekanv.org</email>
+  </election_official>
+  <election_official id="182360337">
+    <county_name>ESMERALDA</county_name>
+    <state_id>32</state_id>
+    <name>Lacinda "Cindy" Elgan</name>
+    <title> County Clerk</title>
+    <phone> (775)-485-6367    </phone>
+    <fax> 485-6376</fax>
+    <email> celgan@citlink.net </email>
+  </election_official>
+  <election_official id="132237212">
+    <county_name>LINCOLN</county_name>
+    <state_id>32</state_id>
+    <name>Lisa Lloyd</name>
+    <title> County Clerk</title>
+    <phone> (775)-962-5390    </phone>
+    <fax> 962-5180</fax>
+    <email> llloyd@lincolnnv.com</email>
+  </election_official>
+  <election_official id="1284447349">
+    <county_name>LANDER</county_name>
+    <state_id>32</state_id>
+    <name>Gladys Burris</name>
+    <title> County Clerk</title>
+    <phone> (775)-635-5738    </phone>
+    <fax> 635-5761</fax>
+    <email> clerk@landercounty.org</email>
+  </election_official>
+  <election_official id="742909834">
+    <county_name>NYE</county_name>
+    <state_id>32</state_id>
+    <name>Sandra L. "Sam" Merlino</name>
+    <title> County Clerk</title>
+    <phone> (775)-482-8127    </phone>
+    <fax> 482-8133</fax>
+    <email> sam.merlino@co.nye.nv.us</email>
+  </election_official>
+  <election_official id="2084312013">
+    <county_name>STOREY</county_name>
+    <state_id>32</state_id>
+    <name>Vanessa Dixon</name>
+    <title> County Clerk </title>
+    <phone> (775)-847-0969    </phone>
+    <fax> 847-0921</fax>
+    <email> vdixon@storeycounty.org</email>
+  </election_official>
+  <election_official id="1943192263">
+    <county_name>WASHOE</county_name>
+    <state_id>32</state_id>
+    <name>Dan Burk</name>
+    <title> Registrar of Voters</title>
+    <phone> (775)-328-3670    </phone>
+    <fax> 328-3747</fax>
+    <email> dburk@mail.co.washoe.nv.us</email>
+  </election_official>
+  <election_official id="2033528137">
+    <county_name>DOUGLAS</county_name>
+    <state_id>32</state_id>
+    <name>Barbara Griffin</name>
+    <title> County Clerk</title>
+    <phone> (775)-782-9023    </phone>
+    <fax> 782-9016</fax>
+    <email> bjgriffin@co.douglas.nv.us</email>
+  </election_official>
+  <election_official id="1748775764">
+    <county_name>LYON</county_name>
+    <state_id>32</state_id>
+    <name>Nikki A Bryan</name>
+    <title> County Clerk</title>
+    <phone> (775)-463-6501    </phone>
+    <fax> 463-5305</fax>
+    <email> nbryan@lyon-county.org</email>
+  </election_official>
+  <election_official id="917253995">
+    <county_name>CARSON CITY</county_name>
+    <state_id>32</state_id>
+    <name>Alan Glover</name>
+    <title> County Clerk</title>
+    <phone> (775)-887-2087    </phone>
+    <fax> 887-2146</fax>
+    <email>  elections@ci.carson-city.nv.us</email>
+  </election_official>
+  <election_official id="2132105197">
+    <county_name>ELKO</county_name>
+    <state_id>32</state_id>
+    <name>Win Smith</name>
+    <title> County Clerk</title>
+    <phone> (775)-753-4600    </phone>
+    <fax> 753-4610</fax>
+    <email> wsmith@elkocountynv.net</email>
+  </election_official>
+  <election_official id="808492121">
+    <county_name>CLARK</county_name>
+    <state_id>32</state_id>
+    <name>Larry Lomax</name>
+    <title> Registrar of Voters</title>
+    <phone> (702)-455-2784</phone>
+    <fax> </fax>
+    <email> HLL@co.clark.nv.us</email>
+  </election_official>
+  <election_official id="238035218">
+    <county_name>WHITE PINE</county_name>
+    <state_id>32</state_id>
+    <name>Donna Bath</name>
+    <title> County Clerk </title>
+    <phone> (775)-289-2341</phone>
+    <fax> 289-2544</fax>
+    <email> wpclerk@mwpower.net</email>
+  </election_official>
+</listings>

@@ -1,0 +1,563 @@
+<?xml version='1.0' ?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <language>en</language>
+  <election_official id=""/>
+  <election_official id="1886474037">
+    <county_name>NEW YORK</county_name>
+    <state_id>36</state_id>
+    <name>George Gonzalez</name>
+    <title> New York City Board of Elections</title>
+    <phone> 212-487-5300</phone>
+    <fax> 212-487-5349</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="520622312">
+    <county_name>DUTCHESS</county_name>
+    <state_id>36</state_id>
+    <name>Frances A. Knapp</name>
+    <title> Dutchess County Board of Elections</title>
+    <phone> 845-486-2473</phone>
+    <fax> 845-486-2483</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1483126311">
+    <county_name>MADISON</county_name>
+    <state_id>36</state_id>
+    <name>Laura P. Costello</name>
+    <title> Madison County Board of Elections</title>
+    <phone> 315-366-2231</phone>
+    <fax> 315-366-2532</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="178685905">
+    <county_name>CAYUGA</county_name>
+    <state_id>36</state_id>
+    <name>Dennis Sedor</name>
+    <title> Cayuga County Board of Elections</title>
+    <phone> 315-253-1285</phone>
+    <fax> 315-253-1289</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1747549094">
+    <county_name>RENSSELAER</county_name>
+    <state_id>36</state_id>
+    <name>Edward G. McDonough</name>
+    <title> Rensselaer County Board of Elections</title>
+    <phone> 518-270-2990</phone>
+    <fax> 518-270-2909</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1363360970">
+    <county_name>QUEENS</county_name>
+    <state_id>36</state_id>
+    <name>Terrence C. O'Connor</name>
+    <title> Queens County Board of Elections</title>
+    <phone> 718-730-6730</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="926020649">
+    <county_name>ERIE</county_name>
+    <state_id>36</state_id>
+    <name>Dennis Ward</name>
+    <title> Erie County Board of Elections</title>
+    <phone> 716-858-8891</phone>
+    <fax> (716) 858-8282</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="213623865">
+    <county_name>BROOME</county_name>
+    <state_id>36</state_id>
+    <name>John Perticone</name>
+    <title> Broome County Board of Elections</title>
+    <phone> 607-778-2172</phone>
+    <fax> 607-778-2174</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1935312956">
+    <county_name>LEWIS</county_name>
+    <state_id>36</state_id>
+    <name>Elaine M. McLear</name>
+    <title> Lewis County Board of Elections</title>
+    <phone> 315-376-5329</phone>
+    <fax> 315-376-2860</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1027201243">
+    <county_name>HERKIMER</county_name>
+    <state_id>36</state_id>
+    <name>Toni M. Scalise</name>
+    <title> Herkimer County Board of Elections</title>
+    <phone> 315-867-1102</phone>
+    <fax> 315-867-1106</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1479821107">
+    <county_name>WYOMING</county_name>
+    <state_id>36</state_id>
+    <name>Anna Mae Balmas</name>
+    <title> Wyoming County Board of Elections</title>
+    <phone> 585-786-8931</phone>
+    <fax> 585-786-8843</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="795156948">
+    <county_name>GREENE</county_name>
+    <state_id>36</state_id>
+    <name>Thomas J. Burke</name>
+    <title> Greene County Board of Elections</title>
+    <phone> 518-719-3550</phone>
+    <fax> 518-719-3784</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1112661463">
+    <county_name>ONTARIO</county_name>
+    <state_id>36</state_id>
+    <name>Mary Q. Salotti</name>
+    <title> Ontario County Board of Elections</title>
+    <phone> 585-396-4005</phone>
+    <fax> 585-393-2941</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1748079763">
+    <county_name>NIAGARA</county_name>
+    <state_id>36</state_id>
+    <name>Nancy L. Smith</name>
+    <title> Niagara County Board of Elections</title>
+    <phone> 716-438-4040</phone>
+    <fax> 716-438-4054</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="417039766">
+    <county_name>KINGS</county_name>
+    <state_id>36</state_id>
+    <name>Julie Dent</name>
+    <title> Kings County Board of Elections</title>
+    <phone> 718-797-8800</phone>
+    <fax> 718-522-6227</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="705954765">
+    <county_name>YATES</county_name>
+    <state_id>36</state_id>
+    <name>Robert Brechko</name>
+    <title> Yates County Board of Elections</title>
+    <phone> 315-536-5135</phone>
+    <fax> 315-536-5523</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="506670593">
+    <county_name>OSWEGO</county_name>
+    <state_id>36</state_id>
+    <name>William W. Scriber</name>
+    <title> Oswego County Board of Elections</title>
+    <phone> 315-349-8350</phone>
+    <fax> 315-349-8357</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2032517220">
+    <county_name>ORLEANS</county_name>
+    <state_id>36</state_id>
+    <name>Helen L. Zelazny</name>
+    <title> Orleans County Board of Elections</title>
+    <phone> 585-589-3274</phone>
+    <fax> 585-589-2771</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1157821659">
+    <county_name>SENECA</county_name>
+    <state_id>36</state_id>
+    <name>Ruth V. Same</name>
+    <title> Seneca County Board of Elections</title>
+    <phone> 315-539-1760</phone>
+    <fax> 315-539-3710</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1526562581">
+    <county_name>CHEMUNG</county_name>
+    <state_id>36</state_id>
+    <name>Keith H. Osborne</name>
+    <title> Chemung County Board of Elections</title>
+    <phone> 607-737-5475</phone>
+    <fax> 607-737-5499</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="403814843">
+    <county_name>LIVINGSTON</county_name>
+    <state_id>36</state_id>
+    <name>Susan N. Guenther</name>
+    <title> Livingston County Board of Elections</title>
+    <phone> 585-243-7090</phone>
+    <fax> 585-243-7015</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="568715385">
+    <county_name>WARREN</county_name>
+    <state_id>36</state_id>
+    <name>William A. Montfort</name>
+    <title> Warren County Board of Elections</title>
+    <phone>518-761-6456</phone>
+    <fax> 518-761-6480</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1091053491">
+    <county_name>BRONX</county_name>
+    <state_id>36</state_id>
+    <name>Nero Graham</name>
+    <title> Bronx County Board of Elections</title>
+    <phone> 718-299-9017</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="579604803">
+    <county_name>ROCKLAND</county_name>
+    <state_id>36</state_id>
+    <name>Ann Marie Kelly</name>
+    <title> Rockland County Board of Elections</title>
+    <phone> 845-638-5172</phone>
+    <fax> 845-638-5196</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="976601869">
+    <county_name>WAYNE</county_name>
+    <state_id>36</state_id>
+    <name>Jack W. Bailey</name>
+    <title> Wayne County Board of Elections</title>
+    <phone> 315-946-7400</phone>
+    <fax>315-946-7409 </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="132418581">
+    <county_name>CHAUTAUQUA</county_name>
+    <state_id>36</state_id>
+    <name>Norman P. Green</name>
+    <title> Chautauqua County Board of Elections</title>
+    <phone> 716-753-4580</phone>
+    <fax> 716-753-4111</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="193160184">
+    <county_name>WESTCHESTER</county_name>
+    <state_id>36</state_id>
+    <name>Reginald A. LaFayette</name>
+    <title> Westchester County Board of Elections</title>
+    <phone> 914-995-5700</phone>
+    <fax> 914-995-3190</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="673353771">
+    <county_name>CHENANGO</county_name>
+    <state_id>36</state_id>
+    <name>Carol A. Franklin</name>
+    <title> Chenango County Board of Elections</title>
+    <phone> 607-337-1760</phone>
+    <fax> 607-337-1766</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1677167653">
+    <county_name>STEUBEN</county_name>
+    <state_id>36</state_id>
+    <name>Sandra Dennison</name>
+    <title> Steuben County Board of Elections</title>
+    <phone> 607-664-2260</phone>
+    <fax> 607-664-1200</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="811395965">
+    <county_name>SCHUYLER</county_name>
+    <state_id>36</state_id>
+    <name>John L. Vona</name>
+    <title> Schuyler County Board of Elections</title>
+    <phone> 607-535-8195</phone>
+    <fax> 607-535-8364</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1019642010">
+    <county_name>TIOGA</county_name>
+    <state_id>36</state_id>
+    <name>Cinda Lou Goodrich</name>
+    <title> Tioga County Board of Elections</title>
+    <phone> 607-687-8261</phone>
+    <fax> 607-687-6348</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1458730419">
+    <county_name>PUTNAM</county_name>
+    <state_id>36</state_id>
+    <name>Robert J. Bennett</name>
+    <title> Putnam County Board of Elections</title>
+    <phone> 845-278-6970</phone>
+    <fax> 845-278-6798</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1504852275">
+    <county_name>ULSTER</county_name>
+    <state_id>36</state_id>
+    <name>John Parete</name>
+    <title> Ulster County Board of Elections</title>
+    <phone> 845-334-5470</phone>
+    <fax> 845-334-5434</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="703462317">
+    <county_name>ESSEX</county_name>
+    <state_id>36</state_id>
+    <name>David Mace</name>
+    <title> Essex County Board of Elections</title>
+    <phone> 518-873-3474</phone>
+    <fax> 518-873-3479</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1280628416">
+    <county_name>MONROE</county_name>
+    <state_id>36</state_id>
+    <name>Thomas F. Ferrarese</name>
+    <title> Monroe County Board of Elections</title>
+    <phone> 585-753-1550</phone>
+    <fax> 585-753-1521</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="641492129">
+    <county_name>SARATOGA</county_name>
+    <state_id>36</state_id>
+    <name>William Fruci</name>
+    <title> Saratoga County Board of Elections</title>
+    <phone> 518-885-2249</phone>
+    <fax> 518-884-4751</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1128851787">
+    <county_name>COLUMBIA</county_name>
+    <state_id>36</state_id>
+    <name>David Cohen</name>
+    <title> Columbia County Board of Elections</title>
+    <phone> 518-828-3115</phone>
+    <fax> 518-828-2624</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1374454198">
+    <county_name>NASSAU</county_name>
+    <state_id>36</state_id>
+    <name>William T. Biamonte</name>
+    <title> Nassau County Board of Elections</title>
+    <phone> 516-571-2411</phone>
+    <fax> 516-571-2058</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="564108822">
+    <county_name>ORANGE</county_name>
+    <state_id>36</state_id>
+    <name>Susan Bahren</name>
+    <title> Orange County Board of Elections</title>
+    <phone> 845-291-2444</phone>
+    <fax> 845-291-2437</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1914485119">
+    <county_name>GENESEE</county_name>
+    <state_id>36</state_id>
+    <name>Dawn E. Cassidy</name>
+    <title> Genesee County Board of Elections</title>
+    <phone> 585-344-2550</phone>
+    <fax> 585-344-8562</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="2092525677">
+    <county_name>RICHMOND</county_name>
+    <state_id>36</state_id>
+    <name>James Joseph Sampel</name>
+    <title> Richmond County Board of Elections</title>
+    <phone> 718-876-0079</phone>
+    <fax> </fax>
+    <email> </email>
+  </election_official>
+  <election_official id="865099692">
+    <county_name>JEFFERSON</county_name>
+    <state_id>36</state_id>
+    <name>Sean M. Hennessey</name>
+    <title> Jefferson County Board of Elections</title>
+    <phone> 315-785-3027</phone>
+    <fax> 315-785-5197</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="901967375">
+    <county_name>ALLEGANY</county_name>
+    <state_id>36</state_id>
+    <name>John F. Colligan</name>
+    <title> Allegany County Board of Elections</title>
+    <phone> 585-268-9294</phone>
+    <fax> 585-268-9406</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1090752662">
+    <county_name>CORTLAND</county_name>
+    <state_id>36</state_id>
+    <name>William J. Wood</name>
+    <title> Cortland County Board of Elections</title>
+    <phone> 607-753-5032</phone>
+    <fax> 607-758-5513</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="161205338">
+    <county_name>HAMILTON</county_name>
+    <state_id>36</state_id>
+    <name>Cathleen E. Rogers</name>
+    <title> Hamilton County Board of Elections</title>
+    <phone> 518-548-4684</phone>
+    <fax> 518-548-6345</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1162044030">
+    <county_name>FRANKLIN</county_name>
+    <state_id>36</state_id>
+    <name>Kathy M. Fleury</name>
+    <title> Franklin County Board of Elections</title>
+    <phone> 518-481-1663</phone>
+    <fax> 518-481-6018</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1958856065">
+    <county_name>SCHOHARIE</county_name>
+    <state_id>36</state_id>
+    <name>Clifford C. Hay</name>
+    <title> Schoharie County Board of Elections</title>
+    <phone> 518-295-8388</phone>
+    <fax> 518-295-8419</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="35777331">
+    <county_name>OTSEGO</county_name>
+    <state_id>36</state_id>
+    <name>Henry J. Nicols</name>
+    <title> Otsego County Board of Elections</title>
+    <phone> 607-547-4247</phone>
+    <fax> 607-547-4248</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1382381585">
+    <county_name>FULTON</county_name>
+    <state_id>36</state_id>
+    <name>Linda L. Coons</name>
+    <title> Fulton County Board of Elections</title>
+    <phone> 518-736-5526</phone>
+    <fax> 518-736-1612</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1795163846">
+    <county_name>DELAWARE</county_name>
+    <state_id>36</state_id>
+    <name>William J. Buccheri</name>
+    <title> Delaware County Board of Elections</title>
+    <phone> 607-746-2315</phone>
+    <fax> 607-746-6516</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="335862547">
+    <county_name>SCHENECTADY</county_name>
+    <state_id>36</state_id>
+    <name>Brian Quail</name>
+    <title> Schenectady County Board of Elections</title>
+    <phone> 518-377-2469</phone>
+    <fax> 518-377-2716</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="836680185">
+    <county_name>WASHINGTON</county_name>
+    <state_id>36</state_id>
+    <name>Jeffrey J. Curtis</name>
+    <title> Washington County Board of Elections</title>
+    <phone> 518-746-2180</phone>
+    <fax> 518-746-2179</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="164324813">
+    <county_name>SUFFOLK</county_name>
+    <state_id>36</state_id>
+    <name>Anita S. Katz</name>
+    <title> Suffolk County Board of Elections</title>
+    <phone> 631-852-4500</phone>
+    <fax> 631-852-4590</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="626871108">
+    <county_name>SULLIVAN</county_name>
+    <state_id>36</state_id>
+    <name>Faith Kaplan</name>
+    <title> Sullivan County Board of Elections</title>
+    <phone> 845-794-3000</phone>
+    <fax> 845-794-0183</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="758913872">
+    <county_name>MONTGOMERY</county_name>
+    <state_id>36</state_id>
+    <name>Joan M. Grainer</name>
+    <title> Montgomery County Board of Elections</title>
+    <phone> 518-853-8180</phone>
+    <fax> 518-853-8392</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1711832144">
+    <county_name>CLINTON</county_name>
+    <state_id>36</state_id>
+    <name>John W. Brunell</name>
+    <title> Clinton County Board of Elections</title>
+    <phone> 518-565-4740</phone>
+    <fax> 518-565-4508</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="1311013295">
+    <county_name>TOMPKINS</county_name>
+    <state_id>36</state_id>
+    <name>Stephen M. DeWitt</name>
+    <title>Tompkins County Board of Elections</title>
+    <phone> 607-274-5522</phone>
+    <fax> 607-274-5533</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="969906319">
+    <county_name>SAINT LAWRENCE</county_name>
+    <state_id>36</state_id>
+    <name>Robin M. St. Andrews</name>
+    <title> St. Lawrence County Board of Elections</title>
+    <phone> 315-379-2202</phone>
+    <fax> 315-386-2737</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="78763923">
+    <county_name>ALBANY</county_name>
+    <state_id>36</state_id>
+    <name>Matthew J. Clyne</name>
+    <title> Albany County Board of Elections</title>
+    <phone> 518-487-5060</phone>
+    <fax> 518-487-5077</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="741715435">
+    <county_name>CATTARAUGUS</county_name>
+    <state_id>36</state_id>
+    <name>Kevin C. Burleson</name>
+    <title> Cattaraugus County Board of Elections</title>
+    <phone> 716-938-9111</phone>
+    <fax> 716-938-6347</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="36937074">
+    <county_name>ONEIDA</county_name>
+    <state_id>36</state_id>
+    <name>Angela Pedone Longo</name>
+    <title> Oneida County Board of Elections</title>
+    <phone> 315-798-5765</phone>
+    <fax> 315-798-6412</fax>
+    <email> </email>
+  </election_official>
+  <election_official id="943955203">
+    <county_name>ONONDAGA</county_name>
+    <state_id>36</state_id>
+    <name>Edward F. Ryan</name>
+    <title> Onondaga County Board of Elections</title>
+    <phone> 315-435-3312</phone>
+    <fax> 315-435-8451</fax>
+    <email> </email>
+  </election_official>
+</listings>
