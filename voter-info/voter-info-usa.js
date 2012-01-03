@@ -231,11 +231,11 @@ function generalInfo( state ) {
 			'</span>',
 		'</div>'
 	);
-
+	
         // TEMP HACK for Iowa Caucuses
 	if( state.abbr == 'IA' )
           return T('iowaTemp');
-	  return S(
+	return S(
 		'<div style="margin-bottom:0.5em;">',
 			'<div class="heading" style="margin-bottom:0.75em;">',
 				fix( 'How to vote in %S' ),
@@ -248,7 +248,7 @@ function generalInfo( state ) {
 			comments,
 			formatLeos(),
 		'</div>'
-	  );
+	);
 	
 	function fix( text, prefix ) {
 		return( text
