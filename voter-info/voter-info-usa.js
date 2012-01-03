@@ -232,20 +232,21 @@ function generalInfo( state ) {
 		'</div>'
 	);
 	
-	return S(
-		'<div style="margin-bottom:0.5em;">',
-			'<div class="heading" style="margin-bottom:0.75em;">',
-				fix( 'How to vote in %S' ),
-			'</div>',
-			infolink( 'election_website', '%S election website' ),
-			infolink( 'are_you_registered', 'Are you registered to vote?' ),
-			absentee,
-			//infolink( 'registration_info', state.abbr == 'ND' ? '%S voter qualifications' : 'How to register in %S', true ),
-			hotline,
-			comments,
-			formatLeos(),
-		'</div>'
-	);
+        return '';
+//	return S(
+//		'<div style="margin-bottom:0.5em;">',
+//			'<div class="heading" style="margin-bottom:0.75em;">',
+//				fix( 'How to vote in %S' ),
+//			'</div>',
+//			infolink( 'election_website', '%S election website' ),
+//			infolink( 'are_you_registered', 'Are you registered to vote?' ),
+//			absentee,
+//			//infolink( 'registration_info', state.abbr == 'ND' ? '%S voter qualifications' : 'How to register in %S', true ),
+//			hotline,
+//			comments,
+//			formatLeos(),
+//		'</div>'
+//	);
 	
 	function fix( text, prefix ) {
 		return( text
