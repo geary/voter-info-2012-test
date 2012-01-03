@@ -54,7 +54,7 @@
 	<EnumValue value="px" display_value="Pixels (px)"/>
 </UserPref>
 
-<UserPref name="state" datatype="enum" display_name="Preview&#160;State" default_value="IA">
+<UserPref name="state" datatype="enum" display_name="Preview&#160;State" default_value="">
 	<EnumValue value="" display_value="Automatic"/>
 	<EnumValue value="US" display_value="USA"/>
 	<EnumValue value="AL" display_value="Alabama"/>
