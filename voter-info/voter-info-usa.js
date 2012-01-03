@@ -233,7 +233,7 @@ function generalInfo( state ) {
 	);
 
         // TEMP HACK for Iowa Caucuses
-	if( state.abbr == 'IA' ) {
+	if( state.abbr == 'IA' )
           return T('iowaTemp');
 	  return S(
 		'<div style="margin-bottom:0.5em;">',
