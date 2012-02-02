@@ -223,6 +223,10 @@ function generalInfo( state ) {
 		infolink( 'absentee_info', absenteeLinkTitle )
 	);
 	
+	// TEMP for NV caucus
+	if( state.state_abbr == 'NV' ) absentee = '';
+	// END TEMP
+	
 	var hotline = ! state.hotline ? '' : S(
 		'<div style="margin:1.0em 0 0.5em 0;">',
 			state.name, ' voter hotline: ',
@@ -232,9 +236,11 @@ function generalInfo( state ) {
 		'</div>'
 	);
 	
-        // TEMP HACK for Iowa Caucuses
+	// TEMP HACK for IA/NV Caucuses
 	if( state.abbr == 'IA' )
-          return T('iowaTemp');
+		return T('iowaTemp');
+	if( state.abbr == 'NV' )
+		return '';
 	return S(
 		'<div style="margin-bottom:0.5em;">',
 			'<div class="heading" style="margin-bottom:0.75em;">',
@@ -403,6 +409,11 @@ function perElectionInfo( state, electionDay, electionName ) {
 		deadline( state, 'abs_vote_postmark', 'avmail' ),
 		deadline( state, 'abs_vote_receive', 'avreceive' )
 	);
+	
+	// TEMP for NV caucus
+	if( state.state_abbr == 'NV' ) absentee = '';
+	// END TEMP
+	
 	var deadlines = (
 		deadline( state, 'postmark', 'mail' )  || deadline( state, 'receive', 'receive' )
 	) + deadline( state, 'in_person', 'inperson' );
