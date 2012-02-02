@@ -361,7 +361,7 @@ function perElectionInfo( state, electionDay, electionName ) {
 	
 	var sameDay = state.same_day != 'TRUE' ? '' : S(
 		'<div style="margin-bottom:0.5em;">',
-			state.name, ' residents may register to vote at their polling place on Election Day:<br />',
+			state.name, ' residents may register to vote at their voting location on Election Day:<br />',
 			formatDayDate( electionDay ),
 		'</div>'
 	);
