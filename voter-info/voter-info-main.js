@@ -1066,17 +1066,14 @@ function formatPlaces( places ) {
 // Return an 'info' object for either home.info or vote.info
 function mapInfo( place, extra ) {
 	extra = extra || {};
-	if( place  &&  ! isGeocodeAccurate(place) ) {
-		log( 'Not accurate enough' );
-		return null;
-	}
 	
 	var formatted = oneLineAddress( place.formatted_address );
 	log( 'Formatted address:', formatted );
 	return {
 		place: place,
+		accurate: isGeocodeAccurate( place ),
 		address: formatted,
-		latlng: place.geometry.location,
+		latlng: place && place.geometry.location,
 		location: extra.address && extra.address.location_name,
 		directions: extra.directions,
 		hours: extra.hours,

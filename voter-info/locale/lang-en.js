@@ -22,6 +22,7 @@ loadStrings({
 "getDirections": "Get directions", 
 "homePrompt": "Get your voter info! Enter the *full home address* where you&#8217;re registered to vote, including city and state:", 
 "languageName": "English", 
+"locationApproximate": "Location is approximate", 
 "locationMayChange": "Your voting location may change before the election. Check it again before you vote.", 
 "map": "Map", 
 "monthName01": "January", 

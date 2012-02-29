@@ -567,8 +567,8 @@ function setVoteHtml() {
 	//);
 	
 	var extra =
-		home.info && home.info.latlng &&
-		vote.info && vote.info.latlng &&
+		home.info && home.info.latlng && home.info.accurate &&
+		vote.info && vote.info.latlng && vote.info.accurate &&
 		directionsLink( home, vote );
 	
 	function voteLocation( infowindow ) {
@@ -576,13 +576,13 @@ function setVoteHtml() {
 		if( !( vote.locations && vote.locations.length ) )
 			return '';
 		if( vote.info )
-			return formatLocations( vote.locations, null,
+			return formatLocations( vote.locations, null, vote.info.accurate,
 				infowindow
 					? { url:'vote-icon-50.png', width:50, height:50 }
 					: { url:'vote-pin-icon.png', width:29, height:66 },
 				loc, infowindow, extra, true
 			);
-		return infowindow ? '' : formatLocations( vote.locations, null,
+		return infowindow ? '' : formatLocations( vote.locations, null, false,
 			{ url:'vote-icon-32.png', width:32, height:32 },
 			loc + ( vote.locations.length > 1 ? 's' : '' ), false, extra, false
 		);
@@ -657,7 +657,9 @@ function getContests() {
 	return contests && contests.length && contests;
 }
 
-function formatLocations( locations, info, icon, title, infowindow, extra, mapped ) {
+function formatLocations(
+		locations, info, accurate, icon, title, infowindow, extra, mapped
+) {
 	
 	function formatLocationRow( info ) {
 		var address = T( 'address', {
@@ -671,6 +673,7 @@ function formatLocations( locations, info, icon, title, infowindow, extra, mappe
 			address: address,
 			directions: info.directions || '',
 			hours: info.hours ? 'Hours: ' + info.hours : '',
+			approximate: accurate ? '' : T('locationApproximate'),
 			extra: extra || ''
 		});
 	}
@@ -705,6 +708,7 @@ function formatHome( infowindow ) {
 			formatLocations(
 				null,
 				home.info,
+				home.info.accurate,
 				infowindow
 					? { url:'home-icon-50.png', width:50, height:50 }
 					: { url:'home-pin-icon.png', width:29, height:57 },
