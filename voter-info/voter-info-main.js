@@ -757,6 +757,10 @@ function loadMap( a ) {
 			map.setCenter( voteLatLng );
 			map.setZoom( 15 );
 		}
+		else if( homeLatLng ) {
+			map.setCenter( homeLatLng );
+			map.setZoom( 13 );
+		}
 		
 		ready();
 		spin( false );
