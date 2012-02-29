@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Google Election Center</title>
+	
+	<script type="text/javascript">
+		
+		function is( re ) { return navigator.userAgent.match( re ); }
+		if(
+		   ( is(/AppleWebKit/i) && is(/Mobile/i) ) ||
+		   is(/Android/i) ||
+		   is(/webOS/i) || 
+		   is(/iPhone/i) ||
+		   is(/iPod/i)
+		) {
+			window.open( 'http://m.googleelectioncenter.com/', '_self' );
+		}
+		
+	</script>
+	
+	<style type="text/css">
+		body { margin:0; padding:0; overflow:hidden; }
+	</style>
+	
+</head>
+<body scroll="no">
+	
+	<script type="text/javascript">
+		
+		function getWH( what ) {
+			return window[ 'inner' + what ] || document.documentElement[ 'offset' + what ];
+		}
+		
+		function width() { return getWH('Width'); }
+		function height() { return getWH('Height'); }
+		
+		var address = '';
+		var hash = decodeURIComponent( location.hash );
+		var match = hash.match( /^#+address=(.*)$/ );
+		if( match ) address = encodeURI( decodeURI( match[1] ) ).replace( /#/g, '%23' );
+		
+		document.write(
+			'<iframe  id="gadget" frameborder="0" scrolling="no" ',
+				'style="width:', width(), 'px; height:', height(), 'px;" ',
+				'src="http://www.gmodules.com/ig/ifr?url=http://staging.election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget-staging.xml&amp;up_gadgetType=iframe&amp;up_fontFamily=Arial%2Csans-serif&amp;up_fontSize=17&amp;up_fontUnits=px&amp;up_logo=1&amp;up_sidebar=1&amp;up_electionId=2000&amp;synd=open',
+				address ? '&amp;up_onebox=1&amp;up_submit=1&amp;up_example=' + address : '',
+				'" ',
+			'></iframe>'
+		);
+		
+		window.onresize = function() {
+			var style = document.getElementById('gadget').style;
+			style.width = width() + 'px';
+			style.height = height() + 'px';
+		};
+		
+	</script>
+	
+</body>
+</html>
