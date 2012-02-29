@@ -697,7 +697,7 @@ function formatLocations(
 		}),
 		rows.join(''),
 		T( 'locationFoot', {
-			unable: info && info.latlng || mapped ? '' : T('locationUnable')
+			unable: info && info.latlng && info.accurate || mapped ? '' : T('locationUnable')
 		})
 	);
 }
