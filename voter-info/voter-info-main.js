@@ -677,14 +677,14 @@ function loadMap( a ) {
 	function ready() {
 		setTimeout( function() {
 			var only = ! vote.info  ||  ! vote.info.latlng;
-			if( home.info  &&  home.info.latlng )
+			if( home.info  &&  home.info.latlng  &&  home.info.accurate )
 				setMarker({
 					place: home,
 					image: 'marker-green.png',
 					open: only,
 					html: ! only ? formatHome(true) : vote.htmlInfowindow || formatHome(true)
 				});
-			if( vote.info  &&  vote.info.latlng )
+			if( vote.info  &&  vote.info.latlng  &&  vote.info.accurate )
 				setMarker({
 					place: vote,
 					html: vote.htmlInfowindow,
