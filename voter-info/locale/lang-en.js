@@ -43,7 +43,7 @@ loadStrings({
 "runoffDate": "Runoff date:", 
 "search": "Search", 
 "troubleLoading": "Sorry, we are having trouble loading the Google Election Center app.<br>Please try again later.", 
-"unableToLocate": "We were unable to locate this voting place on the map. Please check with your election officals for the exact address.", 
+"unableToLocate": "We were unable to locate your voting place on the map. Please check with your election officals for the exact address.", 
 "viewCandidates": "View Candidates and Details", 
 "viewDetails": "View Election Details", 
 "voterIdPrompt": "Enter your voter ID number", 
