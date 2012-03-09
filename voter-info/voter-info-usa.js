@@ -223,8 +223,8 @@ function generalInfo( state ) {
 		infolink( 'absentee_info', absenteeLinkTitle )
 	);
 	
-	// TEMP for NV caucus
-	if( state.state_abbr == 'NV' ) absentee = '';
+	// TEMP for KS and NV caucuses
+	if( state.state_abbr == 'KS'  ||  state.state_abbr == 'NV' ) absentee = '';
 	// END TEMP
 	
 	var hotline = ! state.hotline ? '' : S(
