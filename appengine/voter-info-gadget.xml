@@ -7,8 +7,8 @@
     author="Google, Inc."
     author_affiliation="Google, Inc."
     author_email="elections@google.com"
-    thumbnail="http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget-thumbnail.png"
-    screenshot="http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget-screenshot.png"
+    thumbnail="http://voter-info-2012-test.googlecode.com/hg/voter-info/voter-info-gadget-thumbnail.png"
+    screenshot="http://voter-info-2012-test.googlecode.com/hg/voter-info/voter-info-gadget-screenshot.png"
     title_url="http://maps.google.com/vote"
     width="620"
     height="480">
@@ -127,7 +127,7 @@
 	
 	var opt = {
 		debug: '{{debug}}',
-		codeUrl: 'http://election-gadgets.googlecode.com/hg/voter-info/',
+		codeUrl: 'http://voter-info-2012-test.googlecode.com/hg/voter-info/',
 		gadgetUrl: 'http://election-gadgets.appspot.com/{{debug}}voter-info-gadget.xml',
 		
 		MODULE_ID: __MODULE_ID__,
