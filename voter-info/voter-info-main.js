@@ -368,7 +368,7 @@ var prefInit = {
 	onebox: false,
 	state: '',
 	homePrompt: '',
-	electionId: '',
+	electionId: '4000',
 	sidebar: false
 };
 for( var name in prefInit )
