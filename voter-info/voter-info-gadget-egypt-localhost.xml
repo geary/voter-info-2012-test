@@ -7,8 +7,8 @@
     author="Google, Inc."
     author_affiliation="Google, Inc."
     author_email="elections@google.com"
-    thumbnail="http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget-thumbnail.png"
-    screenshot="http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget-screenshot.png"
+    thumbnail="http://voter-info-2012-test.googlecode.com/hg/voter-info/voter-info-gadget-thumbnail.png"
+    screenshot="http://voter-info-2012-test.googlecode.com/hg/voter-info/voter-info-gadget-screenshot.png"
     title_url="http://maps.google.com/vote"
     width="620"
     height="480">
@@ -72,8 +72,8 @@
 	var opt = {
 		// Change the debug path as needed - use your own hostname and path
 		debug: 'localhost/election-gadgets/hg/voter-info/',
-		codeUrl: 'http://election-gadgets.googlecode.com/hg/voter-info/',
-		gadgetUrl: 'http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget-egypt.xml',
+		codeUrl: 'http://voter-info-2012-test.googlecode.com/hg/voter-info/',
+		gadgetUrl: 'http://voter-info-2012-test.googlecode.com/hg/voter-info/voter-info-gadget-egypt.xml',
 		localJS: 'voter-info-egypt.js',
 		
 		MODULE_ID: __MODULE_ID__,
