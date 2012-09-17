@@ -152,7 +152,7 @@ function loadState( abbr, callback ) {
 		if( pollOK(poll) )
 			callback( state );
 	}, {
-		electionId: 1766,  // TEMP TEST
+		electionId: 4000,  // TEMP TEST
 		noaddress: true
 	});
 }
