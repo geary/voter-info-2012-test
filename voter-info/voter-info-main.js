@@ -491,7 +491,8 @@ function initialMap() {
 var
 	gm,  // google.maps
 	gme,  // google.maps.events
-	map;  // the google.maps.Map object
+	map,  // the google.maps.Map object
+	geocoder;
 
 var
 	home,  // home information
@@ -640,10 +641,44 @@ function initMap( go ) {
 			gme = gm.event;
 			var mt = google.maps.MapTypeId;
 			map = new gm.Map( $map[0], {
-				mapTypeId: mt.ROADMAP
+				mapTypeId: mt.ROADMAP,
+				draggableCursor: 'crosshair'
+			});
+			geocoder = new gm.Geocoder;
+			addSingleClicker( map );
+			gme.addListener( map, 'singleclick', function( event ) {
+				reverseLookup( event.latLng );
 			});
 			go();
 		}
+	});
+}
+
+function reverseLookup( latLng ) {
+	geocoder.geocode({
+		location: latLng
+	}, function( results, status ) {
+		if( status == 'OK' ) {
+			$('#Poll411Input').val( results[0].formatted_address );
+			$('#Poll411Form').submit();
+		}
+		else {
+			$('#Poll411Input').val( status );
+		}
+	});
+}
+
+function addSingleClicker( map ) {
+	var dblClickTime = 500;  // usually OK, no way to measure
+	var timer;
+	gme.addListener( map, 'click', function( event ) {
+		timer = setTimeout( function() {
+			gme.trigger( map, 'singleclick', event );
+		}, dblClickTime );
+	});
+	gme.addListener( map, 'dblclick', function() {
+		clearTimeout( timer );
+		timer = null;
 	});
 }
 
