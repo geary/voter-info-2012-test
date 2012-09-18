@@ -28,11 +28,6 @@ $.fn.visibleWidth = function() {
 
 var GoogleElectionMap = {};
 
-// Code and data normally both come from the same place, except
-// for local testing with a PHP proxy
-opt.dataUrl = opt.codeUrl;
-if( opt.debug ) opt.dataUrl += 'proxy-local.php?jsonp=?&file=';
-
 // Load Google API loader
 
 function writeScript( url ) {
@@ -165,21 +160,7 @@ function linkIf( text, href, title ) {
 
 // Fetch JSON or other content. TODO: clean up
 function fetch( url, callback, cache ) {
-	if( cache === false ) {
-		$.getJSON( url, callback );
-	}
-	else if( opt.debug  &&  url.indexOf(opt.dataUrl) == 0 ) {
-		$.getJSON( url, function( data ) {
-			if( ! data ) data = { error: 'Null data' };
-			if( data.error ) alert( data.error + ':\n' + url );
-			else callback( data.result );
-		});
-	}
-	else {
-		_IG_FetchContent( url, callback, {
-			refreshInterval: cache != null ? cache : opt.debug ? 1 : opt.cache || 600
-		});
-	}
+	$.getJSON( url, callback );
 }
 
 // Load a string from a template file, T.variables, or a localization file.
@@ -202,7 +183,7 @@ function T( name, values, give ) {
 	if( T.urls[url] )
 		return ready();
 	
-	fetch( url, function( data ) {
+	$.get( url, function( data ) {
 		var o = T.urls[url] = {};
 		var a = data
 			.replace( /\r/g, '' )
@@ -213,7 +194,7 @@ function T( name, values, give ) {
 			o[k] = $.trim(v);
 		}
 		ready();
-	}, 60 );
+	});
 	
 	function ready() {
 		var text = T.urls[url][part];
@@ -237,7 +218,7 @@ function T( name, values, give ) {
 T.urls = {};  // URLs that T() has loaded
 
 // T() options
-T.baseUrl = opt.dataUrl + 'templates/';
+T.baseUrl = 'templates/';
 T.file = 'gadget';
 T.error = function( url, part ) {
 	if( part == 'ignore' ) {
@@ -269,17 +250,13 @@ function H( str ) {
 // TODO: investigate the IG caching again.
 function cacheUrl( url, cache, always ) {
 	if( opt.debug  &&  ! always ) return url + '?q=' + new Date().getTime();
-	//if( opt.debug ) cache = 0;
-	//if( typeof cache != 'number' ) cache = 3600;
-	//url = _IG_GetCachedUrl( url, { refreshInterval:cache } );
-	//if( ! url.match(/^http:/) ) url = 'http://' + location.host + url;
 	return url;
 }
 
 // Return an IG cached URL for an image in our image directory
 // (but see note re cacheURL)
 function imgUrl( url, cache, always ) {
-	return cacheUrl( opt.codeUrl + 'images/' + url, cache, always );
+	return cacheUrl( 'images/' + url, cache, always );
 }
 
 // Build a query string from the params object, append it to the
@@ -317,6 +294,7 @@ function minimarkdown( text ) {
 
 // Report Analytics for the given path, with a bunch of ad hoc fixups.
 function analytics( path ) {
+	return;
 	function fixHttp( url ) {
 		return url.replace( /http:\/\//, 'http/' ).replace( /mailto:/, 'mailto/' );
 	}
@@ -346,7 +324,7 @@ function analytics( path ) {
 		path = ( maker ? '/creator/' : pref.onebox ? '/onebox/' : inline ? '/inline/' : '/gadget/' ) + fixHttp(path);
 		path = '/' + fixHttp(document.referrer) + '/' + path;
 		//console.log( 'analytics', path );
-		_IG_Analytics( 'UA-5730550-1', path );
+		//_IG_Analytics( 'UA-5730550-1', path );
 	}
 }
 
@@ -359,15 +337,15 @@ var userAgent = navigator.userAgent.toLowerCase(),
 var prefInit = {
 	gadgetType: 'iframe',
 	details: 'tab',
-	example: '',
+	example: 'Ex: 1600 Pennsylvania Ave, Washington DC',
 	address: '',
 	fontFamily: 'Arial,sans-serif',
 	fontSize: '16',
 	fontUnits: 'px',
-	logo: false,
+	logo: true,
 	onebox: false,
 	state: '',
-	homePrompt: '',
+	homePrompt: 'Get your voter info! Enter the *full home address* where you&#8217;re registered to vote, including city and state:',
 	electionId: '4000',
 	sidebar: false
 };
@@ -395,7 +373,7 @@ var maker = decodeURIComponent(location.href).indexOf('source=http://www.gmodule
 // Set up {{foo}} variables for T().
 // T.variables includes pref.strings and other values set up here.
 
-var fontStyle = S( 'font-family:', escape(pref.fontFamily), '; font-size:', pref.fontSize, pref.fontUnits, '; ' );
+var fontStyle = S( 'font-family:', /*escape(*/pref.fontFamily/*)*/, '; font-size:', pref.fontSize, pref.fontUnits, '; ' );
 
 function loadStrings( strings ) {
 	pref.strings = strings;
@@ -982,7 +960,7 @@ function setLayout() {
 		});
 	}
 	var formHeight = $('#Poll411Gadget').visibleHeight();
-	if( formHeight ) formHeight += 8;  // TODO: WHY DO WE NEED THIS?
+	if( formHeight ) formHeight += 20;  // TODO: WHY DO WE NEED THIS?
 	var height = winHeight() - headerHeight - formHeight - $tabs.visibleHeight();
 	$map.height( height );
 	$detailsbox.height( height );

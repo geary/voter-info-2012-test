@@ -11,10 +11,14 @@ var supportedLanguages = {
 	_: null
 };
 
-var prefs = new _IG_Prefs();
+var prefs = {
+	getBool: function() { return false; },
+	getString: function() { return ''; }
+};
+
 var pref = {
-	country: prefs.getString( '.country' ),
-	lang: prefs.getString( '.lang' )
+	country: 'us', // prefs.getString( '.country' ),
+	lang: 'en' // prefs.getString( '.lang' )
 };
 
 if( ! supportedLanguages[pref.lang] )
@@ -957,7 +961,7 @@ function polyState( abbr ) {
 		});
 		addOverlay( polygon );
 	};
-	$.getScript( cacheUrl( S( opt.codeUrl, 'shapes/json/', abbr, '.js' ) ) );
+	$.getScript( cacheUrl( S( 'shapes/json/', abbr, '.js' ) ) );
 }
 
 function zoomTo( abbr ) {
