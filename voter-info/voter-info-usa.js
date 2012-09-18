@@ -939,29 +939,29 @@ function gadgetReady() {
 
 function polyState( abbr ) {
 	GoogleElectionMap.currentAbbr = abbr = abbr.toLowerCase();
-	GoogleElectionMap.shapeReady = function( json ) {
-		if( json.state != GoogleElectionMap.currentAbbr ) return;
-		clearOverlays();
-		var paths = new gm.MVCArray;
-		json.shapes.forEach( function( poly ) {
-			var path = new gm.MVCArray;
-			paths.push( path );
-			var points = poly.points;
-			for( var point, i = -1;  point = points[++i]; )
-				path.push( new gm.LatLng( point.y, point.x ) );
-			path.push( new gm.LatLng( points[0].y, points[0].x ) );
-		});
-		var polygon = new gm.Polygon({
-			paths: paths,
-			strokeColor: '#000000',
-			strokeWeight: 2,
-			strokeOpacity: .7,
-			fillColor: '#000000',
-			fillOpacity: .07
-		});
-		addOverlay( polygon );
-	};
-	$.getScript( cacheUrl( S( 'shapes/json/', abbr, '.js' ) ) );
+	//GoogleElectionMap.shapeReady = function( json ) {
+	//	if( json.state != GoogleElectionMap.currentAbbr ) return;
+	//	clearOverlays();
+	//	var paths = new gm.MVCArray;
+	//	json.shapes.forEach( function( poly ) {
+	//		var path = new gm.MVCArray;
+	//		paths.push( path );
+	//		var points = poly.points;
+	//		for( var point, i = -1;  point = points[++i]; )
+	//			path.push( new gm.LatLng( point.y, point.x ) );
+	//		path.push( new gm.LatLng( points[0].y, points[0].x ) );
+	//	});
+	//	var polygon = new gm.Polygon({
+	//		paths: paths,
+	//		strokeColor: '#000000',
+	//		strokeWeight: 2,
+	//		strokeOpacity: .7,
+	//		fillColor: '#000000',
+	//		fillOpacity: .07
+	//	});
+	//	addOverlay( polygon );
+	//};
+	//$.getScript( cacheUrl( S( 'shapes/json/', abbr, '.js' ) ) );
 }
 
 function zoomTo( abbr ) {
