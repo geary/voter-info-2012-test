@@ -603,7 +603,7 @@ function setVoteHtml() {
 		//electionInfo()
 	) );
 	vote.htmlInfowindow = infoWrap( S(
-		log.print(),
+		//log.print(),
 		electionHeader(),
 		homeAndVote( true )//,
 		//'<div style="padding-top:1em">',
