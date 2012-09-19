@@ -768,11 +768,11 @@ function loadMap( a ) {
 		}
 		else if( voteLatLng ) {
 			map.setCenter( voteLatLng );
-			map.setZoom( 15 );
+			map.setZoom( Math.max( map.getZoom(), 15 ) );
 		}
 		else if( homeLatLng ) {
 			map.setCenter( homeLatLng );
-			map.setZoom( 13 );
+			map.setZoom( Math.max( map.getZoom(), 13 ) );
 		}
 		
 		ready();
