@@ -767,11 +767,11 @@ function loadMap( a ) {
 			});
 		}
 		else if( voteLatLng ) {
-			map.setCenter( voteLatLng );
+			map.panTo( voteLatLng );
 			map.setZoom( Math.max( map.getZoom(), 15 ) );
 		}
 		else if( homeLatLng ) {
-			map.setCenter( homeLatLng );
+			map.panTo( homeLatLng );
 			map.setZoom( Math.max( map.getZoom(), 13 ) );
 		}
 		
