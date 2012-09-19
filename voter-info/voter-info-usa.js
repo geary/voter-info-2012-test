@@ -12,8 +12,8 @@ var supportedLanguages = {
 };
 
 var prefs = {
-	getBool: function() { return false; },
-	getString: function() { return ''; }
+	getBool: function( name ) { return params[name] == '1' || params[name] == 'true'; },
+	getString: function( name ) { return params[name] || ''; }
 };
 
 var pref = {
@@ -25,12 +25,6 @@ if( ! supportedLanguages[pref.lang] )
 	pref.lang = defaultLanguage;
 
 function localPrefs( pref ) {
-	if( pref.example in {
-		'Enter your home address':1  // onebox sends us this on a no-entry click
-	}) {
-		pref.example = 'Ex: 1600 Pennsylvania Ave, Washington DC';
-		pref.ready = false;
-	}
 }
 
 // State data
@@ -930,10 +924,7 @@ function gadgetReady() {
 		});
 		
 		setupTabs();
-		if( pref.ready )
-			submit( pref.address || pref.example );
-		else
-			zoomTo( abbr );
+		zoomTo( abbr );
 	});
 }
 
@@ -978,6 +969,10 @@ function zoomTo( abbr ) {
 		);
 		map.fitBounds( bounds );
 		polyState( abbr );
+		if( pref.ready ) {
+			pref.ready = false;
+			submit( pref.address || pref.example );
+		}
 		spin( false );
 	});
 }
