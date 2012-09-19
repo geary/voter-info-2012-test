@@ -524,7 +524,7 @@ function tabLinks( active ) {
 	return T( 'tabLinks', {
 		tab1: tab( '#detailsbox', 'Details' ),
 		tab2: includeMap() ? tab( '#mapbox', 'Map' ) : '',
-		tab3: pref.ready ? '' : tab( '#Poll411Gadget', 'Search' )
+		tab3: tab( '#Poll411Gadget', 'Search' )
 	});
 }
 
@@ -875,7 +875,7 @@ function getJSON( url, callback, cache ) {
 // section of maker.html.
 function setGadgetPoll411() {
 	var input = $('#Poll411Input')[0];
-	input.value = pref.example;
+	input.value = pref.address || pref.example;
 	Poll411 = {
 		
 		focus: function() {
@@ -1162,8 +1162,7 @@ function gadgetSetup() {
 		$spinner = $('#spinner'),
 		$directions = $('#directions');
 	
-	if( pref.ready ) $search.hide();
-	else setGadgetPoll411();
+	setGadgetPoll411();
 	setLayout();
 	
 	analytics( 'view' );
