@@ -278,86 +278,144 @@ function generalInfo( state ) {
 	}
 	
 	function formatLeos() {
-		var leos = vote && vote.poll && vote.poll.leoInfo || {};
-		
 		var out = [];
-		leos.city_leo && leos.city_leo.forEach( function( leo ) {
+		var leos = vote && vote.poll && vote.poll.regions || [];
+		leos.forEach( function( leo ) {
 			addLeo( out, leo );
 		});
-		addLeo( out, leos.county_leo );
 		
 		return ! out.length ? '' : S(
 			'<div style="padding:0.5em 0 0.75em 0;">',
 				'<div class="heading" style="margin-bottom:0.75em">',
-					'Your Local Election Office',
+					'Your Local Election Offices',
 				'</div>',
-				out.length < 2 ? '' : S(
-					'<div style="font-style:italic; margin-bottom:0.75em;">',
-						'Your local election offices are listed below, but we were unable to determine which one serves your location. Please contact each office for more information:',
-					'</div>'
-				),
+				//out.length < 2 ? '' : S(
+				//	'<div style="font-style:italic; margin-bottom:0.75em;">',
+				//		'Your local election offices are listed below, but we were unable to determine which one serves your location. Please contact each office for more information:',
+				//	'</div>'
+				//),
 				out.join('<div style="padding:0.5em;"></div>'),
 			'</div>'
 		);
 	}
 	
 	function addLeo( out, leo ) {
-		//if( ! leo  ||  ! leo.authority_name ) return;
-		//
-		//var a = {
-		//	name: H( leo.authority_name ),
-		//	place: H( leo.municipality_name || leo.county_name ),
-		//	line1: H( leo.street || leo.mailing_street ),
-		//	city: H( leo.city || leo.mailing_city ),
-		//	state: H( leo.state || leo.mailing_state || vote.poll.stateInfo.state_abbr ),
-		//	zip: H( leo.zip || leo.mailing_zip ),
-		//	hours: H( leo.hours ),
-		//	phone: H( leo.phone ),
-		//	fax: H( leo.fax ),
-		//	email: H( leo.email ),
-		//	url: H( leo.website )
-		//}
+		if( ! leo ) return;
+		addOneLeo( out, leo );
+		addLeo( out, leo.sub_region );
+	}
+	
+	function leoAddr( addr, type ) {
+		return {
+			type: type,
+			line1: H( addr.line1 ),
+			city: H( addr.city ),
+			state: H( addr.state ),
+			zip: H( addr.zip )
+		}
+	}
+	
+	function formatSources( sources ) {
+		return ! sources ? '' : S(
+			'<div>',
+				sources.mapjoin( function( source ) {
+					return S(
+						'<div style="margin-top:0.5em;">',
+							'Source: ', H( source.name ), ' ',
+							source.official ? '(official)' : '(unofficial)',
+						'</div>'
+					);
+				}),
+			'</div>'
+		);
+	}
+	
+	function addOneLeo( out, leo ) {
+		if( ! leo  ||  ! leo.name ) return;
+		
+		var eab = leo.election_administration_body;
+		if( ! eab ) return;
+		
+		var mailing = leoAddr( eab.correspondence_address, 'Mailing Address' );
+		var street = leoAddr( eab.physical_address, 'Street Address' );
+		var a = {
+			name: H( eab.name ),
+			place: H( leo.name ),
+			mailingAddr: mailing,
+			streetAddr: street,
+			//hours: H( leo.hours ),
+			//phone: H( leo.phone ),
+			//fax: H( leo.fax ),
+			//email: H( leo.email ),
+			urlRegistration: H( eab.election_registration_url ),
+			urlConfirmation: H( eab.election_registration_confirmation_url ),
+			urlAbsentee: H( eab.absentee_voting_info_url ),
+			urlLocationFinder: H( eab.voting_location_finder_url ),
+			sources: leo.source
+		}
 		//if( /^\d/.test(a.url) ) a.url = '';  // weed out phone numbers
-		//
-		//var directions =
-		//	a.line1 && a.city && a.state && a.zip &&
-		//	! /^PO /i.test(a.line1) &&
-		//	! /^P\.O\. /i.test(a.line1) &&
-		//	! /^BOX /i.test(a.line1);
-		//
-		//out.push( S(
-		//	'<div>',
-		//		'<div style="margin-bottom:0.15em;">',
-		//			linkIf( a.name, a.url ),
-		//		'</div>',
-		//		'<div>',
-		//			a.line1,
-		//		'</div>',
-		//		'<div>',
-		//			a.city ? S( a.city, ', ', a.state, ' ', a.zip || '' ) : '',
-		//		'</div>',
-		//		'<div>',
-		//			'<table cellspacing="0" cellpadding="0">',
-		//				a.phone ? '<tr><td>Phone:&nbsp;</td><td>' + a.phone + '</td></tr>' : '',
-		//				a.fax ? '<tr><td>Fax:&nbsp;</td><td>' + a.fax + '</td></tr>' : '',
-		//			'</table>',
-		//		'</div>',
-		//		//a.email ? S( '<div>', 'Email: ', linkto(a.email), '</div>' ) : '',
-		//		'<div>',
-		//			a.hours ? S( 'Hours: ', a.hours ) : '',
-		//		'</div>',
-		//		! directions ? '' : S(
-		//			'<div style="margin-top:0.1em;">',
-		//			'</div>',
-		//			directionsLink( home, {
-		//				info: {
-		//					accuracy: Accuracy.address,
-		//					address: oneLineAddress( a )
-		//				}
-		//			})
-		//		),
-		//	'</div>'
-		//) );
+		
+		var directions =
+			street.line1 && street.city && street.state && street.zip &&
+			! /^PO /i.test(street.line1) &&
+			! /^P\.O\. /i.test(street.line1) &&
+			! /^BOX /i.test(street.line1);
+		
+		function formatAddr( a ) {
+			return S(
+				'<div style="font-weight:bold; margin-top:0.5em;">',
+					a.type,
+				'</div>',
+				'<div>',
+					a.line1,
+				'</div>',
+				'<div>',
+					a.city ? S( a.city, ', ', a.state, ' ', a.zip || '' ) : '',
+				'</div>'
+			);
+		}
+		
+		out.push( S(
+			'<div>',
+				'<div style="margin-bottom:0.15em;">',
+					'<div style="font-weight:bold;">',
+						linkIf( a.name, a.urlRegistration ),
+					'</div>',
+					'<div>',
+						linkIf( 'Registration Status', a.urlConfirmation ),
+					'</div>',
+					'<div>',
+						linkIf( 'Absentee Voter Info', a.urlAbsentee ),
+					'</div>',
+					'<div>',
+						linkIf( 'Voting Location Finder', a.urlLocationFinder ),
+					'</div>',
+				'</div>',
+				formatAddr( a.mailingAddr ),
+				formatAddr( a.streetAddr ),
+				//'<div>',
+				//	'<table cellspacing="0" cellpadding="0">',
+				//		a.phone ? '<tr><td>Phone:&nbsp;</td><td>' + a.phone + '</td></tr>' : '',
+				//		a.fax ? '<tr><td>Fax:&nbsp;</td><td>' + a.fax + '</td></tr>' : '',
+				//	'</table>',
+				//'</div>',
+				//a.email ? S( '<div>', 'Email: ', linkto(a.email), '</div>' ) : '',
+				//'<div>',
+				//	a.hours ? S( 'Hours: ', a.hours ) : '',
+				//'</div>',
+				! directions ? '' : S(
+					'<div style="margin-top:0.1em;">',
+					'</div>',
+					directionsLink( home, {
+						info: {
+							//accuracy: Accuracy.address,
+							address: oneLineAddress( a.streetAddr )
+						}
+					})
+				),
+				formatSources( a.sources ),
+			'</div>'
+		) );
 	}
 }
 
