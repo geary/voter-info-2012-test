@@ -694,6 +694,7 @@ function setVoteHtml() {
 	
 	function longInfo() {
 		return T( 'longInfo', {
+			pollingApiUrl: pollingApiUrl,
 			log: log.print(),
 			header: electionHeader(),
 			home: formatHome(),
