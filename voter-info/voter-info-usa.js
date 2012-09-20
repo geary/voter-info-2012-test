@@ -693,7 +693,14 @@ function setVoteHtml() {
 	}
 	
 	function longInfo() {
+		var mapUrl = S(
+			location.href.replace( /\?.*$/, '' ),
+			'?submit=true&address=',
+			encodeURIComponent(home.info.address).replace( /%20/g, '+' )
+		);
+		
 		return T( 'longInfo', {
+			mapUrl: mapUrl,
 			pollingApiUrl: pollingApiUrl,
 			log: log.print(),
 			header: electionHeader(),
