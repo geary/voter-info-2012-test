@@ -824,6 +824,7 @@ function getAddressComponent( place, type ) {
 
 // Decide if geocoded result is accurate enough for map display
 function isGeocodeAccurate( place ) {
+	return true;
 	var type = place.geometry.location_type;
 	return type == 'ROOFTOP' || type == 'RANGE_INTERPOLATED';
 }
@@ -837,7 +838,7 @@ function pollingApi( address, callback, options ) {
 	}
 	var electionId = options.electionId || pref.electionId;
 	var url = S(
-		'https://pollinglocation.googleapis.com/?api_version=1.1&bypass=true&',
+		'https://pollinglocation.googleapis.com/?api_version=1.2&bypass=true&',
 		electionId ? 'electionid=' + electionId + '&' : '',
 		options.noaddress ? 'nofulladdress&' : '',
 		'q=', encodeURIComponent(address)
