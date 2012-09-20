@@ -829,6 +829,8 @@ function isGeocodeAccurate( place ) {
 	return type == 'ROOFTOP' || type == 'RANGE_INTERPOLATED';
 }
 
+var pollingApiUrl;  // hack
+
 // Call the polling location API for an address and call the callback
 function pollingApi( address, callback, options ) {
 	options = options || {};
@@ -837,7 +839,7 @@ function pollingApi( address, callback, options ) {
 		return;
 	}
 	var electionId = options.electionId || pref.electionId;
-	var url = S(
+	var url = pollingApiUrl = S(
 		'https://pollinglocation.googleapis.com/?api_version=1.2&bypass=true&',
 		electionId ? 'electionid=' + electionId + '&' : '',
 		options.noaddress ? 'nofulladdress&' : '',
