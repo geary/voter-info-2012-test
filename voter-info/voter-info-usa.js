@@ -173,6 +173,7 @@ function stateLocator() {
 }
 
 function locationWarning() {
+	return '';
 	return home && home.info && vote.locations && vote.locations.length ?
 		T('locationWarning') :
 		'';
