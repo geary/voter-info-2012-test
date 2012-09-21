@@ -659,7 +659,7 @@ function reverseLookup( latLng ) {
 		location: latLng
 	}, function( results, status ) {
 		if( status == 'OK' ) {
-			$('#Poll411Input').val( results[0].formatted_address );
+			$('#Poll411Input').val( results[0].formatted_address.replace( /, USA$/, '' ) );
 			$('#Poll411Form').submit();
 		}
 		else {
