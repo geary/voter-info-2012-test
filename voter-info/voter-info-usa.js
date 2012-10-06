@@ -147,7 +147,7 @@ function loadState( abbr, callback ) {
 	// END HACK
 	
 	pollingApiState( abbr, function( poll ) {
-		if( pollOK(poll) )
+		if( pollOK(poll)  ||  poll.status == 'ADDRESS_UNPARSEABLE' )
 			callback( state );
 	}, {
 		electionId: 4000,  // TEMP TEST
