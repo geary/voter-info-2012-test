@@ -307,7 +307,7 @@ function generalInfo( state ) {
 	}
 	
 	function leoAddr( addr, type ) {
-		return {
+		return addr && {
 			type: type,
 			line1: H( addr.line1 ),
 			city: H( addr.city ),
@@ -352,18 +352,19 @@ function generalInfo( state ) {
 			urlConfirmation: H( eab.election_registration_confirmation_url ),
 			urlAbsentee: H( eab.absentee_voting_info_url ),
 			urlLocationFinder: H( eab.voting_location_finder_url ),
+			officials: eab.election_officials || [],
 			sources: leo.source
 		}
 		//if( /^\d/.test(a.url) ) a.url = '';  // weed out phone numbers
 		
 		var directions =
-			street.line1 && street.city && street.state && street.zip &&
+			street && street.line1 && street.city && street.state && street.zip &&
 			! /^PO /i.test(street.line1) &&
 			! /^P\.O\. /i.test(street.line1) &&
 			! /^BOX /i.test(street.line1);
 		
 		function formatAddr( a ) {
-			return S(
+			return ! a ? '' : S(
 				'<div style="font-weight:bold; margin-top:0.5em;">',
 					a.type,
 				'</div>',
@@ -414,10 +415,25 @@ function generalInfo( state ) {
 						}
 					})
 				),
+				formatOfficials( a.officials ),
 				formatSources( a.sources ),
 			'</div>'
 		) );
 	}
+}
+
+function formatOfficials( officials ) {
+	return officials.mapjoin( function( official ) {
+		var email = official.email_address;
+		if( email ) email = 'mailto:' + email;
+		return S(
+			'<div style="margin-top:0.5em;">',
+				linkIf( official.name, email ),
+				', ', official.title, '<br>',
+				official.office_phone_number,
+			'</div>'
+		);
+	});
 }
 
 function perElectionInfo( state, electionDay, electionName ) {
