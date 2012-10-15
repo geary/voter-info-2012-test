@@ -840,7 +840,7 @@ function pollingApi( address, callback, options ) {
 	}
 	var electionId = options.electionId || pref.electionId;
 	var url = pollingApiUrl = S(
-		'https://pollinglocation.googleapis.com/?api_version=1.2&bypass=true&',
+		'https://pollinglocation.googleapis.com/?api_version=1.2&official=true&bypass=true&',
 		electionId ? 'electionid=' + electionId + '&' : '',
 		options.noaddress ? 'nofulladdress&' : '',
 		'q=', encodeURIComponent(address)
