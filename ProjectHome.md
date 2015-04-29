@@ -1,0 +1,1 @@
+Google Voter Information Gadget - test version
